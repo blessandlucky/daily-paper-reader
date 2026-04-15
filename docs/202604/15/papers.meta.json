@@ -1,0 +1,39 @@
+{
+  "label": "2026-04-15",
+  "date": "2026-04-15",
+  "generated_at": "2026-04-15T20:32:04",
+  "count": 2,
+  "papers": [
+    {
+      "paper_id": "202604/15/2604.08187v1-bulk-versus-interface-nucleation-of-co2-hydrates-from-computer-simulations",
+      "section": "quick",
+      "title_en": "Bulk versus interface nucleation of CO$_2$ hydrates from computer simulations",
+      "authors": "Joanna Grabowska, Samuel Blazquez, Carlos Vega, Eduardo Sanz",
+      "date": "2026-04-09",
+      "pdf": "https://arxiv.org/pdf/2604.08187v1",
+      "score": "6.0",
+      "evidence": "界面与体相中气体水合物的成核与演化",
+      "tldr": "本研究通过分子动力学模拟探讨了二氧化碳水合物的成核机制，旨在验证实验中提出的“界面成核”假说。研究者对比了水合物晶种在体相与界面处的生长演化，并分析了自发成核过程。结果表明，在深过冷条件下，成核并非优先发生在界面，而是源于体相中自发形成的局部高浓度区域，这一发现挑战了传统的界面成核观点。",
+      "tags": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "abstract_en": "Gas hydrates are of great relevance to both the oil industry and the environment. Understanding how these solid structures nucleate from aqueous solutions is essential to controlling their formation. Experimental studies have often suggested that hydrate nucleation originates at the interface between the aqueous phase and the guest-molecule reservoir. To assess this hypothesis, we perform molecular dynamics simulations of CO$_2$ hydrate nucleation. First, we place hydrate seeds at different positions relative to the interface and monitor their evolution, finding that seeds embedded in the bulk are more likely to grow than those located near or at the interface. Second, we analyse spontaneous nucleation simulations with and without an interface. Our previous work showed that nucleation rates are indistinguishable in both systems, strongly indicating that the interface does not play a role. Here, trajectory analysis reveals that hydrates nucleate in regions of locally high CO$_2$ concentration, which arise spontaneously in the bulk and are not associated with the interface. Our results indicate that hydrate nucleation does not preferentially occur at the interface, at least at the at deep supercooling conditions explored in this work. Further work at higher temperatures, and considering alternative nucleation locations, is needed to reconcile experiments and simulations, and thereby reach a deep understanding of the mechanism of hydrate formation.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202604/15/2604.10630v1-electrochemical-stability-and-lithium-insertion-at-the-lili3ocl-solid-electrolyte-interface",
+      "section": "quick",
+      "title_en": "Electrochemical stability and lithium insertion at the Li|Li3OCl solid electrolyte interface",
+      "authors": "Deobrat Singh, Li-Yun Tian, Moyses Araujo, Raquel Lizarraga",
+      "date": "2026-04-12",
+      "pdf": "https://arxiv.org/pdf/2604.10630v1",
+      "score": "6.0",
+      "evidence": "锂金属负极界面的电化学行为和稳定性",
+      "tldr": "本研究利用第一性原理计算深入探讨了金属锂负极与Li3OCl固体电解质的界面特性。通过构建多种界面取向并分析其电子结构与电荷分布，揭示了该界面的原子级行为。结果表明，Li|Li3OCl界面具有优异的结构稳定性和抗锂嵌入能力，为开发高安全性、高能量密度的固态锂电池提供了重要的理论依据和材料选择参考。",
+      "tags": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "abstract_en": "Solid-state lithium batteries have attracted considerable attention due to their potential to provide improved safety and higher energy density compared with conventional liquid electrolyte batteries. However, the stability of the interface between Li metal anodes and solid electrolytes remains a critical issue that strongly influences battery performance. In this work, first-principles density functional theory calculations are performed to investigate the interfacial properties of a solid-state battery system composed of Li metal anode and Li3OCl solid electrolyte. The structural stability, electronic structure, and electrochemical behavior of the Li|Li3OCl interface are systematically analyzed. Several interface orientations are constructed and compared in order to identify the most energetically favorable configuration. The electronic properties and interfacial charge redistribution are further examined to understand the nature of the interaction between Li metal and the Li3OCl electrolyte. Our results indicate that the Li|Li3OCl interface exhibits stable structural and electronic characteristics, with localized charge redistribution occurring near the interface region. The electrochemical stability against the insertion of an additional Li atom is also evaluated, showing that Li incorporation is energetically unfavorable in most layers of the electrolyte. These results suggest that the Li3OCl electrolyte maintains good electrochemical stability in contact with Li metal. The present study provides atomic-scale insight into the interfacial behavior of Li|Li3OCl and highlights the potential of Li3OCl as a promising solid electrolyte for solid-state lithium batteries.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}

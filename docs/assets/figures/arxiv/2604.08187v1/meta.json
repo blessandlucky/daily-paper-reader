@@ -1,0 +1,54 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.08187v1/fig-001.webp",
+      "caption": "FIG. 5. Snapshots of the system in unrestrained production runs at 0 and 40 ns. The starting radius of the seeds was 1.7 nm in all cases. The molecules of water that were found to belong to the biggest hydrate cluster (identified as in Ref. 55) are presented as red spheres. Water molecules in the liquid phase and CO2 molecules are shown as grey and cyan lines, respectively. The graphic was created using VMD69 software.",
+      "page": 6,
+      "index": 1,
+      "width": 1010,
+      "height": 275
+    },
+    {
+      "url": "assets/figures/arxiv/2604.08187v1/fig-002.webp",
+      "caption": "FIG. 6. Changes in time of the size of the hydrate seed during production runs. Results are shown in separate rows according to the average size of the seed in the first 3 nanosecond of a given production run. The average sizes of the seeds at the start of the runs presented within each row are indicated on the right-hand side of the figure. In the figure, the data for only a few starting seed sizes is shown (an extended figure with all initial sizes considered is presented in Supporting Information). The different seed locations/shapes are organized in different columns. Lines in the figure are coloured in red if the seed melts and in green if it grows, while grey lines are used for the runs in which the size of the seed is stable (not changing enough to label it as either \"growing\" or \"melting\"). The probability of growing was calculated in each plot based on the number of growing and melting seeds (the runs labelled as \"stable\" were not included in the calculations).",
+      "page": 6,
+      "index": 2,
+      "width": 924,
+      "height": 589
+    },
+    {
+      "url": "assets/figures/arxiv/2604.08187v1/fig-003.webp",
+      "caption": "FIG. 8. Dots indicate the coordinate perpendicular to the interface of the centre of mass of the of the largest hydrate nucleus in a spontaneous nucleation trajectory at 250 K and 400 bar. The average location of the interfaces is indicated with the dashed horizontal lines. Different dot colours represent different size ranges of the nucleus (see legend), in terms of number of water molecules. Only sizes larger than 10 water molecules were considered.",
+      "page": 8,
+      "index": 3,
+      "width": 428,
+      "height": 309
+    },
+    {
+      "url": "assets/figures/arxiv/2604.08187v1/fig-004.webp",
+      "caption": "FIG. 9. Top panel: size of the largest hydrate cluster in time in representative spontaneous nucleation trajectories in the one-phase (left column) and the two-phase systems (right column) at 400 bar and 250 K. For three moments in each trajectory, indicated by coloured dots in the top plots, snapshots framed in the corresponding color are shown below. The clusters of hydrate recognized by the MCG-3 order parameter are marked with orange (CO2 molecules) and red (water molecules) bonds. Areas of locally higher density of CO2 are also shown, as light blue (CO2 molecules) and dark blue (water molecules) bonds. The areas of high CO2 density were found by looking for molecules of CO2 that have 11 or more neighbouring molecules of CO2 (within distance of 0.9 nm).The graphic was created using VMD69 software.",
+      "page": 9,
+      "index": 4,
+      "width": 956,
+      "height": 1335
+    },
+    {
+      "url": "assets/figures/arxiv/2604.08187v1/fig-005.webp",
+      "caption": "FIG. 4. Changes of size of the hydrate seed during the seeding simulations in which all molecules in the inserted seed were kept in fixed positions. The radius of the seeds cut from the bulk hydrate was equal to 1.3 nm. Regression lines are included to show differences in the rates of growth of the seeds. The values of the slopes are (in 1/ns unit): 10.86 for bulk, 8.53 for tangential, 7.14 for 3/4 in water, 5.75 for 3/4 in water, cut, 7.30 for 1/2 in water and 3.32 for 1/2 in water, cut, respectively. The configurations obtained after 20 ns of simulation (indicated in the figure as a black dashed line) were used for the production runs (EQ3 equilibration protocol, described in Supporting Information).",
+      "page": 5,
+      "index": 5,
+      "width": 431,
+      "height": 338
+    },
+    {
+      "url": "assets/figures/arxiv/2604.08187v1/fig-006.webp",
+      "caption": "FIG. 3. Configurations of the systems during the seeding simulations in which all molecules in the inserted hydrate seed were kept in fixed positions. Columns correspond to different types of seed locations whereas rows correspond to different times as indicated in the figure. Water molecules that were labelled as hydrate using a linear combination of q3 and q12 order parameter are presented as red spheres. Molecules of water in the liquid phase and molecules of CO2 are shown as gray and cyan lines, respectively. It can be observed that the seeds retain a roughly spherical shape during the simulations and those which were originally only a part of a sphere recover the spherical shape as the simulations progress. The growth of the seeds occurs mainly towards the liquid phase; in some cases, a shift of the position of the interface can be observed in order to accommodate the growth. Keep in mind that during these simulations no melting of the seeds is possible, since the molecules of the original seed inserted into the systems are kept in fixed positions during the simulations. The graphic was created using VMD69 software.",
+      "page": 5,
+      "index": 6,
+      "width": 1010,
+      "height": 391
+    }
+  ]
+}

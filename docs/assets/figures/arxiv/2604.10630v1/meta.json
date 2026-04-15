@@ -1,0 +1,62 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.10630v1/fig-001.webp",
+      "caption": "Figure 6: Electrochemical insertion energy of an additional Li atom at different atomic layers (𝑁) on the Li3OCl side of the Li|Li3OCl interface. Positive energies indicate energetically unfavorable Li insertion and thus electrochemical stability, whereas negative energies suggest favorable Li incorporation near the interface. In some layers two energy values appear due to two possible",
+      "page": 11,
+      "index": 1,
+      "width": 862,
+      "height": 650
+    },
+    {
+      "url": "assets/figures/arxiv/2604.10630v1/fig-002.webp",
+      "caption": "Figure 1: Fully optimized atomic structure of (a) anti-",
+      "page": 7,
+      "index": 2,
+      "width": 440,
+      "height": 629
+    },
+    {
+      "url": "assets/figures/arxiv/2604.10630v1/fig-003.webp",
+      "caption": "Figure 2: Fully optimized structural configurations of Li|LiOC",
+      "page": 7,
+      "index": 3,
+      "width": 514,
+      "height": 273
+    },
+    {
+      "url": "assets/figures/arxiv/2604.10630v1/fig-004.webp",
+      "caption": "Figure 5: Interfacial electronic structure of the Li|Li3OCl system. (a) Charge density difference profile at the Li|Li3OCl interface, where yellow and cyan isosurfaces represent electron accumulation and depletion, respectively, revealing localized charge",
+      "page": 10,
+      "index": 4,
+      "width": 1012,
+      "height": 509
+    },
+    {
+      "url": "assets/figures/arxiv/2604.10630v1/fig-005.webp",
+      "caption": "Figure 3: The relaxed structure of configuration A of Li|Li3OCl interface. The light violet color area is the interface. LOC(1),",
+      "page": 8,
+      "index": 5,
+      "width": 498,
+      "height": 490
+    },
+    {
+      "url": "assets/figures/arxiv/2604.10630v1/fig-006.webp",
+      "caption": "Figure 7: Minimum energy pathway for Li migration across the",
+      "page": 12,
+      "index": 6,
+      "width": 489,
+      "height": 363
+    },
+    {
+      "url": "assets/figures/arxiv/2604.10630v1/fig-007.webp",
+      "caption": "Figure 4: Partical and projected density of states of Li|LOC interface for Li battery at few layers of Li side as shown by Li (1), Li",
+      "page": 9,
+      "index": 7,
+      "width": 829,
+      "height": 883
+    }
+  ]
+}

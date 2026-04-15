@@ -1,0 +1,92 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-04-15T20:31:15.424488+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 0,
+    "deep_cap": 6,
+    "deep_selected": 0,
+    "quick_candidates": 2,
+    "quick_skim_target": 11,
+    "quick_selected": 2
+  },
+  "deep_dive": [],
+  "quick_skim": [
+    {
+      "id": "2604.08187v1",
+      "source": "arxiv",
+      "title": "Bulk versus interface nucleation of CO$_2$ hydrates from computer simulations",
+      "abstract": "Gas hydrates are of great relevance to both the oil industry and the environment. Understanding how these solid structures nucleate from aqueous solutions is essential to controlling their formation. Experimental studies have often suggested that hydrate nucleation originates at the interface between the aqueous phase and the guest-molecule reservoir. To assess this hypothesis, we perform molecular dynamics simulations of CO$_2$ hydrate nucleation. First, we place hydrate seeds at different positions relative to the interface and monitor their evolution, finding that seeds embedded in the bulk are more likely to grow than those located near or at the interface. Second, we analyse spontaneous nucleation simulations with and without an interface. Our previous work showed that nucleation rates are indistinguishable in both systems, strongly indicating that the interface does not play a role. Here, trajectory analysis reveals that hydrates nucleate in regions of locally high CO$_2$ concentration, which arise spontaneously in the bulk and are not associated with the interface. Our results indicate that hydrate nucleation does not preferentially occur at the interface, at least at the at deep supercooling conditions explored in this work. Further work at higher temperatures, and considering alternative nucleation locations, is needed to reconcile experiments and simulations, and thereby reach a deep understanding of the mechanism of hydrate formation.",
+      "authors": [
+        "Joanna Grabowska",
+        "Samuel Blazquez",
+        "Carlos Vega",
+        "Eduardo Sanz"
+      ],
+      "primary_category": "cond-mat.mtrl-sci",
+      "categories": [
+        "cond-mat.mtrl-sci"
+      ],
+      "published": "2026-04-09T12:40:03+00:00",
+      "link": "https://arxiv.org/pdf/2604.08187v1",
+      "tags": [
+        "keyword:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries",
+        "query:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "nucleation and evolution of gas hydrates at interfaces versus bulk",
+      "llm_evidence_cn": "界面与体相中气体水合物的成核与演化",
+      "llm_evidence": "界面与体相中气体水合物的成核与演化",
+      "canonical_evidence": "界面与体相中气体水合物的成核与演化",
+      "llm_tldr_en": "Simulates gas hydrate nucleation and growth dynamics at aqueous interfaces.",
+      "llm_tldr_cn": "模拟水相界面处气体水合物的成核和生长动力学。",
+      "llm_tldr": "模拟水相界面处气体水合物的成核和生长动力学。",
+      "llm_tags": [
+        "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries"
+      ],
+      "matched_query_tag": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "matched_query_text": "Bubble evolution dynamics",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2604.10630v1",
+      "source": "arxiv",
+      "title": "Electrochemical stability and lithium insertion at the Li|Li3OCl solid electrolyte interface",
+      "abstract": "Solid-state lithium batteries have attracted considerable attention due to their potential to provide improved safety and higher energy density compared with conventional liquid electrolyte batteries. However, the stability of the interface between Li metal anodes and solid electrolytes remains a critical issue that strongly influences battery performance. In this work, first-principles density functional theory calculations are performed to investigate the interfacial properties of a solid-state battery system composed of Li metal anode and Li3OCl solid electrolyte. The structural stability, electronic structure, and electrochemical behavior of the Li|Li3OCl interface are systematically analyzed. Several interface orientations are constructed and compared in order to identify the most energetically favorable configuration. The electronic properties and interfacial charge redistribution are further examined to understand the nature of the interaction between Li metal and the Li3OCl electrolyte. Our results indicate that the Li|Li3OCl interface exhibits stable structural and electronic characteristics, with localized charge redistribution occurring near the interface region. The electrochemical stability against the insertion of an additional Li atom is also evaluated, showing that Li incorporation is energetically unfavorable in most layers of the electrolyte. These results suggest that the Li3OCl electrolyte maintains good electrochemical stability in contact with Li metal. The present study provides atomic-scale insight into the interfacial behavior of Li|Li3OCl and highlights the potential of Li3OCl as a promising solid electrolyte for solid-state lithium batteries.",
+      "authors": [
+        "Deobrat Singh",
+        "Li-Yun Tian",
+        "Moyses Araujo",
+        "Raquel Lizarraga"
+      ],
+      "primary_category": "cond-mat.mtrl-sci",
+      "categories": [
+        "cond-mat.mtrl-sci"
+      ],
+      "published": "2026-04-12T13:15:04+00:00",
+      "link": "https://arxiv.org/pdf/2604.10630v1",
+      "tags": [
+        "query:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "electrochemical behavior and stability of lithium metal anode interfaces",
+      "llm_evidence_cn": "锂金属负极界面的电化学行为和稳定性",
+      "llm_evidence": "锂金属负极界面的电化学行为和稳定性",
+      "canonical_evidence": "锂金属负极界面的电化学行为和稳定性",
+      "llm_tldr_en": "Analyzes the Li|Li3OCl solid electrolyte interface stability, relevant to metal battery electrode management.",
+      "llm_tldr_cn": "分析Li|Li3OCl固体电解质界面稳定性，与金属电池电极管理相关。",
+      "llm_tldr": "分析Li|Li3OCl固体电解质界面稳定性，与金属电池电极管理相关。",
+      "llm_tags": [
+        "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries:composite"
+      ],
+      "matched_query_tag": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries:composite",
+      "matched_query_text": "Papers central to 我正在撰写一篇聚焦「水系电池和水电解环境中气体动力学」的综述论文，核心主题为电池（尤其是金属电极体系）和水电解过程中的氢气泡/氧气泡/其他气体演化现象。虽然现有文献已分散覆盖背景、气泡演化及HER/OER影响，但我希望抓住最严谨、最吸睛的创新点：  系统整理各大电池及电催化反应的关键公式背景，以及电压/电池内部流道气阻的必要性；  气泡演化（成核-生长-聚合-脱离及多相流形成）仅作简要概述（已有大量微电极研究但至今无共识，故一笔带过）；  重点挖掘HER/OER对制氢制氧过程影响的最新进展或新视角。 核心亮点在于「调节手段」的完整汇总：按应用场景分为（1）电池、（2）水电解（特别参考第七章表格策略）、（3）性能提升三大类。目前该部分论文极为分散，缺乏系统3D/全面综述，急需深度搜索高影响力、近期论文以构建7-8幅核心图谱——整体示意图（最后绘制）、来源汇总、演化汇总、影响汇总（寻找新内容）、调节手段3D汇总。 请优先召回最新、最严谨、机制清晰的高质量论文，帮助我实现「分散文献→严谨吸睛综述」的突破。, especially work that connects or combines: m; g; Dendrite growth; Bubble evolution dynamics; Hydrogen evolution reaction; Gaseous bubble; Comprehensive review on gas bubble dynamics and regulation strategies in liquid electrolytes for metal batteries and water electrolysis, emphasizing novel synthesis of scattered literature into 7 8 high impact figures with focus on regulation methods (batteries vs. water electrolysis) and latest HER/OER insights beyond existing reviews..",
+      "matched_requirement_id": "req-composite-gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}
