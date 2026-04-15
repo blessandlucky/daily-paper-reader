@@ -1,0 +1,54 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2603.28511v1/fig-001.webp",
+      "caption": "Fig. 8. X-ray radiographic measurement of a chain of single bubbles through an open-porous nickel foam: time-averaged X-ray images highlighting either (a) the bubble motion paths or (b) immobile bubbles that are clogging pores; (c) local velocity of the bubbles along their paths.",
+      "page": 15,
+      "index": 1,
+      "width": 760,
+      "height": 475
+    },
+    {
+      "url": "assets/figures/arxiv/2603.28511v1/fig-002.webp",
+      "caption": "Fig. 4. Single bubble deformation without passage at moderate Bond number: shown is the bubble profile for a central slice of the simulation box with confinement ratio C = 0.5 and Bond number Bo = 1.0. Only the region of the simulation box containing the bubble is shown and the coordinates of the fluid nodes, cx and cz, are normalized by the diameter D and length L, respectively. The bubble approaches the constriction and clogs after around 25000 time with the left spherical cap deforming asymmetrically to satisfy the imposed contact angle. Gray rectangles denote regions of increased (A) and reduced (B) curvature with respect to the spherical cap approximation.",
+      "page": 10,
+      "index": 2,
+      "width": 591,
+      "height": 402
+    },
+    {
+      "url": "assets/figures/arxiv/2603.28511v1/fig-003.webp",
+      "caption": "Fig. 5. Normalized passage time vs. Bond number (a) and critical Bond number ratio (b) for bubble passage with and without breakup. Open symbols denote passage with breakup, while the closed symbols denote passage without breakup. Colors denote different confinement ratios, where the dashed lines show the critical Bond number, obtained from Eq. (14). Two reasons for deviations from the analytical predictions can be identified: viscous effects and violations of the spherical cap approximation.",
+      "page": 10,
+      "index": 3,
+      "width": 1006,
+      "height": 395
+    },
+    {
+      "url": "assets/figures/arxiv/2603.28511v1/fig-004.webp",
+      "caption": "Fig. 1. Schematic of a constricted circular capillary containing two bubbles. The channel has diameter D and length L, with a constriction of diameter d and length l. Bubbles 1 and 2 have radius R and are separated by a center-to-center distance r21. A gravity-induced acceleration a acts on both bubbles. Note that the dimensions are not drawn to scale.",
+      "page": 3,
+      "index": 4,
+      "width": 719,
+      "height": 242
+    },
+    {
+      "url": "assets/figures/arxiv/2603.28511v1/fig-005.webp",
+      "caption": "Fig. 6. State diagrams for two bubbles under (a) moderate confinement (0.5 ≤ C ≤ 0.8) and (b) strong confinement (C < 0.5). The marker shape indicates the state, while open or closed symbols distinguish between breakup and no breakup. For moderate confinement, passage and clogging separate at BoC2 = 0.295. Below this value, unclogging can occur if the offset Bond number exceeds the value predicted by Eq.(39). For strong confinement, the transition from passage to clogging occurs at BoC2 = 0.170, with unclogging possible down to BoC2 = 0.128 if the offset Bond number exceeds one. For comparison, the range in the experimental Cases 1, 2 and 3 (Tab. I) is indicated by the solid, dotted, and dashed horizontal lines, respectively.",
+      "page": 12,
+      "index": 5,
+      "width": 1022,
+      "height": 464
+    },
+    {
+      "url": "assets/figures/arxiv/2603.28511v1/fig-006.webp",
+      "caption": "Fig. 2. Two-dimensional schematic of a bubble entering a constriction. The left and right spherical caps have radii Rl and Rr, with maximum distances from the channel inlet zl and zr. The height of the constriction is d and the cap volumes are Vl and Vr. Finally, the background pressure is denoted by P0, and the bubble experiences a gravity-induced acceleration a.",
+      "page": 5,
+      "index": 6,
+      "width": 763,
+      "height": 457
+    }
+  ]
+}

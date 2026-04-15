@@ -1,0 +1,158 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.00612v1/fig-001.webp",
+      "caption": "FIG. 1. (a) Schematic of the experimental setup of the bubble generation system and threedimensional high-speed imaging. (b) Definition of dispersion angle α of the recorded bubble trajectories.",
+      "page": 6,
+      "index": 1,
+      "width": 973,
+      "height": 445
+    },
+    {
+      "url": "assets/figures/arxiv/2604.00612v1/fig-002.webp",
+      "caption": "FIG. 4. Trajectories of bubbles rising in a chain (d = 0.5mm, ν = 1mm2/s).",
+      "page": 11,
+      "index": 2,
+      "width": 974,
+      "height": 376
+    },
+    {
+      "url": "assets/figures/arxiv/2604.00612v1/fig-003.webp",
+      "caption": "TABLE I. Flat width of upward flow depends on the generation frequency f .",
+      "page": 11,
+      "index": 3,
+      "width": 977,
+      "height": 252
+    },
+    {
+      "url": "assets/figures/arxiv/2604.00612v1/fig-004.webp",
+      "caption": "FIG. 17. The trajectories of bubbles in the model with increasing range of initial x−position randomness from left to right. (f = 20Hz, d = 0.5mm, ν = 1mm2/s)",
+      "page": 25,
+      "index": 4,
+      "width": 684,
+      "height": 412
+    },
+    {
+      "url": "assets/figures/arxiv/2604.00612v1/fig-005.webp",
+      "caption": "FIG. 18. (left) Trajectories of bubbles in a chain near the origin and (middle and right) schematic of the two-dimensional constrained dispersion process.",
+      "page": 26,
+      "index": 5,
+      "width": 972,
+      "height": 412
+    },
+    {
+      "url": "assets/figures/arxiv/2604.00612v1/fig-006.webp",
+      "caption": "FIG. 8. Relationship between bubble rising velocity and height obtained from: (a) experiment, and (b) modeling. (f = 20Hz, d = 0.5mm, Silicone oil (ν = 1mm2/s)).",
+      "page": 15,
+      "index": 6,
+      "width": 974,
+      "height": 339
+    },
+    {
+      "url": "assets/figures/arxiv/2604.00612v1/fig-007.webp",
+      "caption": "FIG. 7. Trajectories of fixed diameter bubbles (d = 0.5mm) in the model. The generation frequency f increases from left to right.",
+      "page": 15,
+      "index": 7,
+      "width": 686,
+      "height": 410
+    },
+    {
+      "url": "assets/figures/arxiv/2604.00612v1/fig-008.webp",
+      "caption": "FIG. 14. Definition of the geometric dispersion parameters W1 and W2 for a cross-section of the bubble chain.",
+      "page": 21,
+      "index": 8,
+      "width": 394,
+      "height": 431
+    },
+    {
+      "url": "assets/figures/arxiv/2604.00612v1/fig-009.webp",
+      "caption": "FIG. 2. Schematic of the bubble chain model incorporating interactions with adjacent bubbles.",
+      "page": 7,
+      "index": 9,
+      "width": 781,
+      "height": 404
+    },
+    {
+      "url": "assets/figures/arxiv/2604.00612v1/fig-010.webp",
+      "caption": "FIG. 15. Relationship between the geometric dispersion parameters W1 and W2 and the height z.",
+      "page": 22,
+      "index": 10,
+      "width": 973,
+      "height": 564
+    },
+    {
+      "url": "assets/figures/arxiv/2604.00612v1/fig-011.webp",
+      "caption": "FIG. 3. Assumed upward flow profiles at different heights. The edge regions are modeled by a Gaussian distribution with a standard deviation σ = 0.5mm, while the central flat region expands with height z.",
+      "page": 10,
+      "index": 11,
+      "width": 781,
+      "height": 549
+    },
+    {
+      "url": "assets/figures/arxiv/2604.00612v1/fig-012.webp",
+      "caption": "FIG. 6. Relationship between dispersion angle α and generation frequency f for different bubble diameters.",
+      "page": 14,
+      "index": 12,
+      "width": 586,
+      "height": 383
+    },
+    {
+      "url": "assets/figures/arxiv/2604.00612v1/fig-013.webp",
+      "caption": "FIG. 11. Schematic of the two-way coupling between upward flow and bubbles rising in a chain.",
+      "page": 18,
+      "index": 13,
+      "width": 488,
+      "height": 533
+    },
+    {
+      "url": "assets/figures/arxiv/2604.00612v1/fig-014.webp",
+      "caption": "FIG. 16. Relationship between dispersion parameter W1 and W2 and (a) generation frequency f and (b) bubble separation S.",
+      "page": 23,
+      "index": 14,
+      "width": 974,
+      "height": 336
+    },
+    {
+      "url": "assets/figures/arxiv/2604.00612v1/fig-015.webp",
+      "caption": "FIG. 5. (a) Three-dimensional dispersions and (b) the corresponding bubble passage distributions in cross-sections at 20 mm intervals for bubble generation frequencies of: (i) f = 4Hz, (ii) f = 8Hz, (iii) f = 12Hz, and (iv) f = 20Hz. The centroid of the distributions in (b) is marked with a cross.",
+      "page": 13,
+      "index": 15,
+      "width": 586,
+      "height": 1225
+    },
+    {
+      "url": "assets/figures/arxiv/2604.00612v1/fig-016.webp",
+      "caption": "FIG. 12. Schematic of the formation mechanism of a U-shaped dispersion, with generated bubbles experiencing wake-induced lift that causes lateral migration, followed by bubbles rising vertically after exiting the wake region of a leading bubble.",
+      "page": 19,
+      "index": 16,
+      "width": 686,
+      "height": 401
+    },
+    {
+      "url": "assets/figures/arxiv/2604.00612v1/fig-017.webp",
+      "caption": "FIG. 10. Schematic of the three-dimensional dispersion of bubbles rising in a chain.",
+      "page": 17,
+      "index": 17,
+      "width": 618,
+      "height": 487
+    },
+    {
+      "url": "assets/figures/arxiv/2604.00612v1/fig-018.webp",
+      "caption": "FIG. 13. Formation mechanism of a V-shaped dispersion. Generated bubbles experience wakeinduced lift, causing lateral migration. After exiting the wake region of the leading bubble, bubbles experience shear-induced lift and rise obliquely.",
+      "page": 20,
+      "index": 18,
+      "width": 686,
+      "height": 468
+    },
+    {
+      "url": "assets/figures/arxiv/2604.00612v1/fig-019.webp",
+      "caption": "FIG. 9. Trajectories of 0.5mm diameter bubbles in the extended model including upward flow effects. The generation frequency f increases from left to right.",
+      "page": 16,
+      "index": 19,
+      "width": 686,
+      "height": 408
+    }
+  ]
+}

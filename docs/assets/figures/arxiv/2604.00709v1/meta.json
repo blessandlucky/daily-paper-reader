@@ -1,0 +1,38 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.00709v1/fig-001.webp",
+      "caption": "Figure 1. (a) Geometries along the minimum energy path (MEP) for recombinative desorption of H2 from a Cu(111) surface and a schematic of the electron and phonon bath in the two-temperature model. The transition state geometry is marked in blue. Only the first two of six total layers of the surface slab are shown. (b) Values of electronic friction tensor components along the MEP. (c) Potential energy along the MEP.",
+      "page": 2,
+      "index": 1,
+      "width": 506,
+      "height": 654
+    },
+    {
+      "url": "assets/figures/arxiv/2604.00709v1/fig-002.webp",
+      "caption": "Figure 2. (a): Temperature profiles for the phonon (Tph) and electron (Tel) thermostats in the TTM for a starting temperature of 300 K and a laser fluence of 100 J m-2. The laser intensity is indicated by the green shaded area and reaches the maximum at t = 0. (b): Average kinetic energies, Ekin,H of adsorbed H atoms over time for both electronic friction approximations. (c): Normalised distribution of desorption events over time for both electronic friction approximations.",
+      "page": 2,
+      "index": 2,
+      "width": 506,
+      "height": 519
+    },
+    {
+      "url": "assets/figures/arxiv/2604.00709v1/fig-003.webp",
+      "caption": "Figure 5. (a): Total energy of the two hydrogen atoms as a function of time during a trajectory for the potential energy EV , friction energy EΛ and thermal fluctuation energy EW . The EFT is represented with orbital-dependent friction. (b): Enlarged plot of the shaded region in (a) showing energy contributions immediately prior to laser-induced recombinative desorption. The energy contributions are set to zero at the onset of desorption for clarity. The distances between hydrogen atoms and between the molecule and the surface are shown as an indicator of the different stages of the trajectory. MD snapshots throughout the trajectory are shown below. The initial surface temperature was 100 K, the laser fluence 120 J m-2.",
+      "page": 5,
+      "index": 3,
+      "width": 1008,
+      "height": 466
+    },
+    {
+      "url": "assets/figures/arxiv/2604.00709v1/fig-004.webp",
+      "caption": "Figure 4. (a): Single-shot desorption probabilities for hydrogen on a Cu(111) surface as a function of absorbed laser fluence for simulations with LDFA and ODF. Statistical uncertainties from bootstrapping analysis are indicated where they are larger than the markers used. (b): Mean internal energies of desorbing H2 molecules determined from LDFA and ODF simulations for a Cu(111) surface with an initial temperature of 100 K and a laser fluence of 120 J m−2.",
+      "page": 4,
+      "index": 4,
+      "width": 506,
+      "height": 518
+    }
+  ]
+}

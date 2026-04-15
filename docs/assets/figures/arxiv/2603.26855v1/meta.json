@@ -1,0 +1,94 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2603.26855v1/fig-001.webp",
+      "caption": "Table 2: Averaged surface composition (in atomic %) of the electrodes determined by fitting high-resolution XPS spectra. Annotations: ⋆Fresh electrode samples without heat treatment.",
+      "page": 6,
+      "index": 1,
+      "width": 1008,
+      "height": 452
+    },
+    {
+      "url": "assets/figures/arxiv/2603.26855v1/fig-002.webp",
+      "caption": "Figure 6: Comparison of the pressure-induced losses EPL (see Eq. 8) measured at steady state at different current densities with the theoretical pressure-induced thermodynamic losses Etheor (see Eq. 3) caused by the increase in absolute pressure p for (a) the non-structured electrode (NSE), (b) Λ = 30 µm, (c) Λ = 60 µm, and (d) Λ = 100 µm.",
+      "page": 11,
+      "index": 2,
+      "width": 1008,
+      "height": 471
+    },
+    {
+      "url": "assets/figures/arxiv/2603.26855v1/fig-003.webp",
+      "caption": "Table 4: Relevant parameters and their SI units.",
+      "page": 15,
+      "index": 3,
+      "width": 708,
+      "height": 248
+    },
+    {
+      "url": "assets/figures/arxiv/2603.26855v1/fig-004.webp",
+      "caption": "Figure 2: (a) Bubble size distribution at 1 bar and −50mA/cm2 depending on the spatial period Λ, where Λ = 0 µm corresponds to the non-structured electrode (NSE). (b) Volumetric mean diameter d30 as a function of the applied current density j and spatial period Λ as well as the variation of the contact angle θ depending on spatial period Λ. The lines serve only to guide the reader’s eye.",
+      "page": 7,
+      "index": 4,
+      "width": 1008,
+      "height": 258
+    },
+    {
+      "url": "assets/figures/arxiv/2603.26855v1/fig-005.webp",
+      "caption": "Figure 5: Electrode potential E over time t at all studied current densities j for an example electrode with a spatial period Λ of 40µm featuring a switching point at −50mA/cm2.",
+      "page": 10,
+      "index": 5,
+      "width": 506,
+      "height": 652
+    },
+    {
+      "url": "assets/figures/arxiv/2603.26855v1/fig-006.webp",
+      "caption": "Figure 8: Ratio of resistances of transport of charges through electrolyte and blockage by bubbles, described via Π3, over the dimensionless pressure Π1.",
+      "page": 13,
+      "index": 6,
+      "width": 656,
+      "height": 264
+    },
+    {
+      "url": "assets/figures/arxiv/2603.26855v1/fig-007.webp",
+      "caption": "Figure 3: (a) Snapshots of the bubbles growing at the electrode with Λ = 40 µm at −100mA/cm2 depending on the absolute cell pressure p. (b) Example of the bubble segmentation using StarDist and (c) resulting bubble size distributions at −100mA/cm2. (d) Nearly monodisperse bubble carpet at the electrode with Λ = 100 µm at −100mA/cm2 and 6 bar with highlighted bubble segmentations inside the region of interest. (e) Shift of bimodal to a nearly monodisperse bubble size distribution with increasing pressure for the electrode with Λ = 100 µm at −100mA/cm2.",
+      "page": 8,
+      "index": 7,
+      "width": 1008,
+      "height": 817
+    },
+    {
+      "url": "assets/figures/arxiv/2603.26855v1/fig-008.webp",
+      "caption": "Table 1: Spatial period of pillar structure Λ, average surface roughness Sa, developed interfacial area ratio Sdr, and water contact angle θ of all electrodes in comparison to the non-structured Ni-foil (NSE).",
+      "page": 4,
+      "index": 8,
+      "width": 606,
+      "height": 217
+    },
+    {
+      "url": "assets/figures/arxiv/2603.26855v1/fig-009.webp",
+      "caption": "Figure 7: Influence of the absolute pressure on the relative bubble size Π2.",
+      "page": 12,
+      "index": 9,
+      "width": 656,
+      "height": 275
+    },
+    {
+      "url": "assets/figures/arxiv/2603.26855v1/fig-010.webp",
+      "caption": "Figure 4: (a) Volumetric mean diameter d30 of each size distribution measured as a function of pressure p and electrode surface at −50mA/cm2. (b) Comparison of measured H2 volume Vtot,H2 of all segmented bubbles with the theoretical H2 volume VH2,theor calculated using Eq. 7 at −50mA/cm2. The lines serve only to guide the reader’s eye.",
+      "page": 9,
+      "index": 10,
+      "width": 1008,
+      "height": 271
+    },
+    {
+      "url": "assets/figures/arxiv/2603.26855v1/fig-011.webp",
+      "caption": "Figure 1: Overview of all laser-structured electrodes: (a) Microscopic and (b) confocal images of electrode structures with definition of the spatial period Λ. (c) Wetting behavior of electrode surfaces with applied water droplet and highlighted contact angles θ",
+      "page": 5,
+      "index": 11,
+      "width": 1008,
+      "height": 548
+    }
+  ]
+}

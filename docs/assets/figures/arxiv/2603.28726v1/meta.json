@@ -1,0 +1,86 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2603.28726v1/fig-001.webp",
+      "caption": "Figure 3: Projected band structure and density of states at the HSE06 level theory. Color code: orange and blue for Pd and Te atoms, respectively.",
+      "page": 6,
+      "index": 1,
+      "width": 943,
+      "height": 419
+    },
+    {
+      "url": "assets/figures/arxiv/2603.28726v1/fig-002.webp",
+      "caption": "Table 3: Calculated d-band center for adsorbed intermediates on strained and unstrained penta-PdTe2. Here * represents the penta-PdTe2 monolayer.",
+      "page": 15,
+      "index": 2,
+      "width": 943,
+      "height": 220
+    },
+    {
+      "url": "assets/figures/arxiv/2603.28726v1/fig-003.webp",
+      "caption": "Figure 4: Band gap alignment of pristine penta-PdTe2 with respect to applied biaxial strain. The dotted red and blue lines represent the reduction and oxidation potentials at pH 0 and 7, respectively.",
+      "page": 7,
+      "index": 3,
+      "width": 671,
+      "height": 487
+    },
+    {
+      "url": "assets/figures/arxiv/2603.28726v1/fig-004.webp",
+      "caption": "Table 2: calculated carrier mobility 𝜇𝑐 (𝑐𝑚 2𝑉−1𝑆−1) along x/y-axis, and calculated overpotential for HER (𝜂𝐻𝐸𝑅) and OER (𝜂𝑂𝐸𝑅) and their comparison with hexagonal PdTe2 and other pentagonal materials at pH = 0 and U = 0.",
+      "page": 10,
+      "index": 4,
+      "width": 943,
+      "height": 445
+    },
+    {
+      "url": "assets/figures/arxiv/2603.28726v1/fig-005.webp",
+      "caption": "Figure 6: Calculated ∆G for the HER at 𝑈 = 0 (black), 𝑈 = 𝑈𝑒(red), and 𝑈 > 𝑅𝐷𝑆(blue) at (a) pH = 0 and (b) pH = 7, and for the OER at (c) pH = 0 and (d) pH = 7 under +3% biaxial strain.",
+      "page": 14,
+      "index": 5,
+      "width": 787,
+      "height": 619
+    },
+    {
+      "url": "assets/figures/arxiv/2603.28726v1/fig-006.webp",
+      "caption": "Figure 1: Top and side views of the optimized structure of the pristine pentagonal PdTe2 monolayer.",
+      "page": 4,
+      "index": 6,
+      "width": 901,
+      "height": 437
+    },
+    {
+      "url": "assets/figures/arxiv/2603.28726v1/fig-007.webp",
+      "caption": "Table 4: Calculated available photon energy (E), energy conversion efficiency of light absorption (𝜂𝑎𝑏𝑠), carrier utilization (𝜂𝑐𝑢), and theoretical STH (𝜂𝑆𝑇𝐻) of penta-PdTe2 monolayer with and without biaxial strain (Ɛ𝑥𝑦).",
+      "page": 17,
+      "index": 7,
+      "width": 943,
+      "height": 436
+    },
+    {
+      "url": "assets/figures/arxiv/2603.28726v1/fig-008.webp",
+      "caption": "Figure 5: Calculated free energy change for HER at potential U = 0 (black line), U = Ue (red line) and U > RDS (blue line) at a) pH = 0, b) pH = 7, and OER at c) pH = 0, d) pH = 7.",
+      "page": 12,
+      "index": 8,
+      "width": 877,
+      "height": 677
+    },
+    {
+      "url": "assets/figures/arxiv/2603.28726v1/fig-009.webp",
+      "caption": "Table 1: Calculated effective mass (𝑚∗), deformation 𝐸𝑑 (eV) and in plane elastic modulus C2D (N/m) along x and y-axis and their comparison with hexagonal-PdTe2 and other pentagonal materials.",
+      "page": 9,
+      "index": 9,
+      "width": 887,
+      "height": 448
+    },
+    {
+      "url": "assets/figures/arxiv/2603.28726v1/fig-010.webp",
+      "caption": "Figure 2: Pentagonal PdTe2 monolayer: (a) The charge density difference (CDD) plot, and (b) planaraverage projection along the z-axis ρ(z). The iso-surface value is 0.005 e/Å3.",
+      "page": 5,
+      "index": 10,
+      "width": 902,
+      "height": 390
+    }
+  ]
+}

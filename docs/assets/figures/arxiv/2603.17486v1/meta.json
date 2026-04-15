@@ -1,0 +1,38 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2603.17486v1/fig-001.webp",
+      "caption": "FIG. 1: Sketch of a system with a mixture of gas molecules and water without a bubble (a) and with a bubble (b). The red dots represent the gas molecules, the blue area represents water, and the white area denotes the bubble. The solution is in contact with a gas phase, depicted in grey. The contact angle, radius, and height of the bubble are denoted as θ, R, and h, respectively.",
+      "page": 2,
+      "index": 1,
+      "width": 752,
+      "height": 370
+    },
+    {
+      "url": "assets/figures/arxiv/2603.17486v1/fig-002.webp",
+      "caption": "FIG. 3: (a) Energy difference ∆G as a function of bubble radius at contact angle θ = 85◦ for different supersaturations ζ = 5 (blue), ζ = 10 (orange), ζ = 100 (green), ζ = 1000 (red). (b) Activation energy ∆Gmax and (c) critical nucleus size Rc as a function of the supersaturation ζ.",
+      "page": 5,
+      "index": 2,
+      "width": 981,
+      "height": 243
+    },
+    {
+      "url": "assets/figures/arxiv/2603.17486v1/fig-003.webp",
+      "caption": "FIG. 2: (a) Energy difference ∆G as a function of bubble radius R at supersaturation ζ = 100 for different contact angles θ = 0◦ (blue), θ = 60◦ (orange), θ = 120◦ (green), θ = 160◦ (red). (b) Activation energy as a function of the contact angle θ (symbols). The solid line represents the function ∆Gmax = C0(2 + 3 cos θ − cos3 θ), where",
+      "page": 5,
+      "index": 3,
+      "width": 990,
+      "height": 382
+    },
+    {
+      "url": "assets/figures/arxiv/2603.17486v1/fig-004.webp",
+      "caption": "FIG. 4: a) Schematic illustration of the anode side of PEMWE. The gas (red circles) diffuses away through the catalyst layer (light green) and the porous transport layer (dark blue) to a water channel (light blue). The bottom part (light grey) represents the membrane. The side and the top parts (dark grey) denote the bipolar plates. b) Sketch of bubble formation and gas transport in a catalyst layer. Bubbles (white) preferentially nucleate in the larger pores and at the CL–PTL interface, while in smaller pores, gas is generated and diffuses toward larger pores and the CL–PTL interface.",
+      "page": 6,
+      "index": 4,
+      "width": 880,
+      "height": 438
+    }
+  ]
+}
