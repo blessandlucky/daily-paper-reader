@@ -1,0 +1,110 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.13659v1/fig-001.webp",
+      "caption": "FIG. 14: Comparison between DFT and FT-M1 Model on the 260 configurations of the validation set. (a) Total energies for every configuration (b) Forces, 3 components for every atom for every configuration.",
+      "page": 11,
+      "index": 1,
+      "width": 514,
+      "height": 258
+    },
+    {
+      "url": "assets/figures/arxiv/2604.13659v1/fig-002.webp",
+      "caption": "FIG. 12: Ion-ion RDF comparison between DFT (revPBE-D3), M1 model and Fine-tuned M1 for NaCl and CsI systems. Concentration for NaCl run is 3.56 mol/kg (125 water molecules, 8 ionic pairs), 2.24 mol/kg for CsI runs (99 water molecules, 4 ionic pairs).",
+      "page": 10,
+      "index": 2,
+      "width": 489,
+      "height": 279
+    },
+    {
+      "url": "assets/figures/arxiv/2604.13659v1/fig-003.webp",
+      "caption": "FIG. 11: Oxygen RDF comparison between DFT (VASP, revPBE-D3), M1 model and Fine-tuned M1. Concentration for NaCl run is 3.56 mol/kg (125 water molecules, 8 ionic pairs), 2.24 mol/kg for CsI runs (99 water molecules, 4 ionic pairs).",
+      "page": 10,
+      "index": 3,
+      "width": 508,
+      "height": 338
+    },
+    {
+      "url": "assets/figures/arxiv/2604.13659v1/fig-004.webp",
+      "caption": "FIG. 10: RDF comparison between DFT, M1 and FT-M1 models for pure water at density 0.972 g/cm3, T=300 K, 125 water molecules.",
+      "page": 10,
+      "index": 4,
+      "width": 394,
+      "height": 689
+    },
+    {
+      "url": "assets/figures/arxiv/2604.13659v1/fig-005.webp",
+      "caption": "FIG. 19: The dependence of the diffusion coefficient of water molecules D on the inverse size of the simulation cell 1/L. The blue dashed line is the linear fit of this dependence.",
+      "page": 13,
+      "index": 5,
+      "width": 514,
+      "height": 239
+    },
+    {
+      "url": "assets/figures/arxiv/2604.13659v1/fig-006.webp",
+      "caption": "FIG. 18: The dependence of the diffusion coefficient of water molecules D on size of the block for the 0.89 mol/kg CsI aqueous solution with 500 water molecules. The red dashed line corresponds to the diffusion coefficient of water molecules selected as the resulting value for the given system size.",
+      "page": 13,
+      "index": 6,
+      "width": 516,
+      "height": 244
+    },
+    {
+      "url": "assets/figures/arxiv/2604.13659v1/fig-007.webp",
+      "caption": "FIG. 17: Comparison of angular distribution of the water molecules in the first hydration shells of ions with Avula et al.8 Avula’s values are represented by dots, our model values are represented by a continuous line. Avula concentration is 3 m both for NaCl and CsI solutions. The angle θ is defined between O-ion and O-p vectors, where O-p is the bisector of the HOH angle of the selected water molecule. The radial cutoffs used to select hydration water molecules are 3.4 Å for Na+, 3.9 Å for Cl− and Cs+ and 4.1 Å for I− and are the same values used by Avula et al.",
+      "page": 13,
+      "index": 7,
+      "width": 479,
+      "height": 330
+    },
+    {
+      "url": "assets/figures/arxiv/2604.13659v1/fig-008.webp",
+      "caption": "FIG. 8: Panel (a): Values of relative diffusion at 2.5 ps for total first solvation shells (pure first solvation shells + first shell overlap) and for pure first solvation shells. Panel (b): Two dimensional schematic diagram illustrating different shells of a cation (+) and an anion (-) and their overlap studied in this work. Panel (c): Values of the relative running diffusion for different systems at 2.5 ps for the analysis of the first solvation shells and the first solvation shell overlap. Panel (d): Values of running diffusion at 2.5 ps for the first and second solvation shells.",
+      "page": 8,
+      "index": 8,
+      "width": 1054,
+      "height": 1088
+    },
+    {
+      "url": "assets/figures/arxiv/2604.13659v1/fig-009.webp",
+      "caption": "FIG. 2: Radial distribution functions (RDFs) involving the oxygen as a function of concentration for NaCl and CsI solutions. O stands for the water oxygen and X denotes an ionic species. Systems with 250 water molecules for both NaCl and CsI solutions were used. For sake of clarity results for concentrations 0.89 m, 1.78 m and 3.56 m are shifted upwards by 0.5, 1.0 and 1.5 respectively in the gOO(r) functions and by 0.0, 0.5 and 1.0 in the other cases.",
+      "page": 4,
+      "index": 9,
+      "width": 905,
+      "height": 620
+    },
+    {
+      "url": "assets/figures/arxiv/2604.13659v1/fig-010.webp",
+      "caption": "FIG. 3: Ion-ion radial distribution functions (RDFs) as a function of concentration. Systems with 250 water molecules for both NaCl and CsI solutions were used. Note the large noise at small concentration due to the limited number of ions in the simulation box.",
+      "page": 4,
+      "index": 10,
+      "width": 749,
+      "height": 407
+    },
+    {
+      "url": "assets/figures/arxiv/2604.13659v1/fig-011.webp",
+      "caption": "FIG. 15: Oxygen-Oxygen RDFs comparison with Avula et al. DeePMD model8 for NaCl and CsI systems.",
+      "page": 12,
+      "index": 11,
+      "width": 473,
+      "height": 469
+    },
+    {
+      "url": "assets/figures/arxiv/2604.13659v1/fig-012.webp",
+      "caption": "FIG. 16: Radial distribution function comparison between our FT-M1 (concentration 3.56 m, Salt/Water Ratio 1:16) ) model and Zhang et al.18 (Salt/Water ratio 1:17) at P = 1 bar.",
+      "page": 12,
+      "index": 12,
+      "width": 505,
+      "height": 779
+    },
+    {
+      "url": "assets/figures/arxiv/2604.13659v1/fig-013.webp",
+      "caption": "FIG. 5: Reduced structure factor for NaCl (upper panel) and CsI (lower panel) solutions at various concentrations for a system of 1000 water molecules. For NaCl solutions we compare with experimental data1 and simulations from ref. 18. The arrows highlight the decrease in the first peak and the increase in second peak with the decrease of concentration of the solution, an effect reported by Mancinelli et al.1. For visual clarity the values for concentrations 1.40 m, 1.78 m, 3.56 m were vertically shifted by 1,2 and 3 units respectively.",
+      "page": 5,
+      "index": 13,
+      "width": 398,
+      "height": 574
+    }
+  ]
+}

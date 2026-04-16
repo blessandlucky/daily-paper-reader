@@ -1,0 +1,62 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.07077v1/fig-001.webp",
+      "caption": "Figure 7. (a) Schematic of the anode interface model; (b) Metadynamics simulation schematic for the charging process; (c) Charging simulation snapshots (0–10 ns) in carbonate electrolyte with Na2CO3-dominated SEI; (d) Sodium clusters after charging in a Na2CO3 SEI; (e) Charging simulation snapshots (0–10 ns) in ether electrolyte with NaF-dominated SEI; (f) Sodium clusters after charging in a NaF SEI; evolution with different electrolytes (EC vs DME) of (g) sodium deposition number, (h) minimum sodium charge, and (i) sodium/electrolyte loss percentages. Atoms are repre-",
+      "page": 25,
+      "index": 1,
+      "width": 948,
+      "height": 1125
+    },
+    {
+      "url": "assets/figures/arxiv/2604.07077v1/fig-002.webp",
+      "caption": "Figure 6. MD simulations of EC electrolytes: (a) Initial models and MD snapshots (3 ns) for 0.5 M and 2 M NaPF6 in EC systems; (b) Schematic of sodium ion solvation structures; (c) RDFs for 1 M NaPF6 in EC systems at 300 K; (d) Na–O Coordination numbers (CNs) for different electrolytes; Atoms are represented in a ball-and-stick model (C: grey, F: blue, H: white, Na: pink, O: red, P: orange).",
+      "page": 22,
+      "index": 2,
+      "width": 948,
+      "height": 556
+    },
+    {
+      "url": "assets/figures/arxiv/2604.07077v1/fig-003.webp",
+      "caption": "Figure 1. (a) Radial descriptors; (b) Angular descriptors; (c) Relationship between temperature and descriptor components; (d) Schematic of AIMD-guided configuration space exploration; (e) Schematic of a local potential energy surface; (f) Flowchart of the active learning process; (g) Comparison of the achievable simulation timescales for the trained NEP-MLP with those reported in the literature.",
+      "page": 10,
+      "index": 3,
+      "width": 948,
+      "height": 1244
+    },
+    {
+      "url": "assets/figures/arxiv/2604.07077v1/fig-004.webp",
+      "caption": "Figure 2. (a) Loss function during NEP-MLP training; (b) Energy parity plot for the NEP model; (c) Force parity plot; (d) PCA projection of the training set; (e) 1 ns sampling test for energy; (f) 1 ns sampling test for forces; (g) Comparison of computational speed between AIMD, ReaxFF-MD, and NEP-MD; (h) Predicted charges for the training set and their corresponding atomic environments.",
+      "page": 13,
+      "index": 4,
+      "width": 1000,
+      "height": 923
+    },
+    {
+      "url": "assets/figures/arxiv/2604.07077v1/fig-005.webp",
+      "caption": "Figure 4. Small-system results at 350 K: (a) Reaction snapshots of the Na-EC system from 0–60 ns;",
+      "page": 19,
+      "index": 5,
+      "width": 950,
+      "height": 913
+    },
+    {
+      "url": "assets/figures/arxiv/2604.07077v1/fig-006.webp",
+      "caption": "Figure 5. Experimental validation of interfacial decomposition products. (a) Gaseous product composition in distinct electrolytes; (b) Temperature dependence of CO2/CO ratios in EC system; (c)",
+      "page": 20,
+      "index": 6,
+      "width": 948,
+      "height": 623
+    },
+    {
+      "url": "assets/figures/arxiv/2604.07077v1/fig-007.webp",
+      "caption": "Figure 3. (a) Schematic of the model for 1M NaPF6 in EC on a Na electrode; (b) Schematic of the model for 1M NaPF6 in DME on a Na electrode. Species evolution diagrams: (c) Na-EC system at 350 K; (d) Na-EC system at 450 K; (e) Na-DME system at 350 K; (f) Na-DME system at 450 K (some curves are slightly offset to prevent overlap). Species transport diagrams at 450 K: (g) Na-EC",
+      "page": 16,
+      "index": 7,
+      "width": 950,
+      "height": 1302
+    }
+  ]
+}

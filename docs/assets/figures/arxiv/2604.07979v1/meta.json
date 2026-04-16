@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.07979v1/fig-001.webp",
+      "caption": "Figure 1. (a) Representative electrolyte design space: salts, solvents, and additives spanning the combinatorial formulation landscape. (b) Radar plot comparing classical FFs, standard MLIPs, and differentiable hybrid FFs across the speed–accuracy–calibratability trilemma. Throughputs approaching ∼50 ns/day mark the ultra-fast screening regime. (c) Hierarchical energy decomposition of the hybrid FF. The total energy separates into intramolecular bonding (EsGNN",
+      "page": 2,
+      "index": 1,
+      "width": 1044,
+      "height": 341
+    },
+    {
+      "url": "assets/figures/arxiv/2604.07979v1/fig-002.webp",
+      "caption": "Figure 2. Computational-experimental workflow for autonomous electrolyte discovery. The workflow begins with the hybrid FF (θ), parameterized bottom-up from quantum chemistry databases. (1, blue arrows) In the screening workflow, formulation inputs (e.g., DMC:EC:LiPF6 at specified ratios) are simulated via high-throughput MD; candidates ranked by predicted performance are passed to the ChemRobot platform for synthesis and electrochemical characterization. The resulting experimental observables (equilibrium properties ρ, σ, η, and spectroscopic signatures such as NMR and IR) then drive top-down calibration via differentiable MD (e.g., DMFF), updating the FF parameters θ by minimizing the loss L(θ). (2, orange arrows) Subsequent screening cycles use the fine-tuned FF, now quantitatively aligned with experimental measurements. Molecular structures are visualized using xyzrender [27].",
+      "page": 4,
+      "index": 2,
+      "width": 1037,
+      "height": 482
+    }
+  ]
+}

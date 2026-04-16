@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.07483v1/fig-001.webp",
+      "caption": "Fig. 1. Dissolution rates of Pd-based electrocatalysts recorded during the electrochemical protocol applying a 5 mV s−1 scan rate in a 0.05 KOH solution. Logarithmised data was used for better visibility of dissolution peaks.",
+      "page": 12,
+      "index": 1,
+      "width": 432,
+      "height": 462
+    }
+  ]
+}

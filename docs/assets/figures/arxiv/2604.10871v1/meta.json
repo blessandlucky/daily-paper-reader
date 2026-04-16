@@ -1,0 +1,54 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.10871v1/fig-001.webp",
+      "caption": "Fig. 2 | Characterization and quantification of 500 nm PS nanoparticles at different concentrations. a, SEM images of 500 nm PS-SiO₂@Au NPs deposition at different concentrations (103 ng/mL, 102 ng/mL, and 10 ng/mL). b, Raman map at 1000 cm-1 overlaid with the SEM image of 103 ng/mL 500 nm PS-SiO₂@Au NPs deposition. c, SERS spectrum obtained from 103 ng/mL 500 nm PS-SiO₂@Au NPs deposition. Inset: SERS normalized spectra obtained from 103 ng/mL, 102 ng/mL, 10 ng/mL cases. d, EDX elemental map overlaid with the SEM image of 103 ng/mL 500 nm PS-SiO₂@Au NPs deposition. e, EDX spectra collected at three points, corresponding to carbon-, Si-, O-, and Au-rich regions, respectively. f, SSBD enrichment capacity at different concentrations, presented in terms of nanoparticle number in single deposition spot and detection rate across approximately eight deposition spots in one experiment.",
+      "page": 6,
+      "index": 1,
+      "width": 867,
+      "height": 694
+    },
+    {
+      "url": "assets/figures/arxiv/2604.10871v1/fig-002.webp",
+      "caption": "Fig. 5 | Characterization and visualization of PA nanoplastics and PP microplastics in drinking water. a, SERS spectra of bottled water sample compared with benchmark PA [46] [47], highlighting characteristic vibrational modes (C–C stretching, amide III, and CH₂ scissoring). b, SEM and c, EDX images of PA fragments collected on the SSBD substrate, revealing irregular nanoscale morphologies. d, SERS spectra of fountain water sample compared with the measured benchmark PP, with distinct aromatic ring vibration peaks confirming PP presence. e, SEM and f, EDX images of PP microplastics.",
+      "page": 11,
+      "index": 2,
+      "width": 867,
+      "height": 391
+    },
+    {
+      "url": "assets/figures/arxiv/2604.10871v1/fig-003.webp",
+      "caption": "Fig. 3 | Characterization and quantification of 200 nm PS nanoparticles at different concentrations. a,b,c, SEM images of SSBD-prepared deposition spots of 200 nm PS NPs at different concentrations: (a) 103 ng/mL, (b) 10 ng/mL, and (c) 10-1 ng/mL. With decreasing concentration, the number of captured particles decreases while maintaining the characteristic spherical morphology. d, SERS spectrum obtained from 103 ng/mL, 10 ng/mL and 10-1 ng/mL 200 nm PS-SiO₂@Au NPs deposition. e, SSBD-enhanced detection sensitivity for 200 nm PS NPs as the concentration decreases, showing the number of PS NPs in a single deposition spot and the detection rate across multiple deposition spots within a single experiment.",
+      "page": 7,
+      "index": 3,
+      "width": 858,
+      "height": 852
+    },
+    {
+      "url": "assets/figures/arxiv/2604.10871v1/fig-004.webp",
+      "caption": "Table 1. Reported LODs of the Raman-driven detection technologies for nanoplastics of different sizes.",
+      "page": 10,
+      "index": 4,
+      "width": 867,
+      "height": 436
+    },
+    {
+      "url": "assets/figures/arxiv/2604.10871v1/fig-005.webp",
+      "caption": "Fig. 1 | Direct enrichment and detection of nanoplastics in water driven by the SSBD method. a, Optical setup for the SSBD process, mainly including 800 nm femtosecond pulsed laser, 20× objective lens, high-speed CCD camera, and PMMA cuvette. b, Characterization of pure PS NPs using SEM imaging (Supplementary Fig. 3) and Raman spectroscopy, showing diagnostic peaks at 1000 cm-1 (benzene ring breathing) and 1030 cm-1 (C–H in-plane bending). c, Schematics of the SSBD process: (1) optical pressure drives suspended SiO₂@Au NPs toward the glass slide to form the heat source; (2) a laser-generated thermal bubble induces Marangoni flow that transports NPs to the bubble surface; (3) concentrated NP deposition forms along the TPCL as the bubble shrinks and vanishes. Right inset: SEM image showing high-density deposition of 500 nm PS NPs from the PS solution. d, Schematic of the computational model and the applied boundary conditions for the finite-element simulation. e, Simulated Marangoni flow induced by laser heating of the suspension. Flow directions are indicated by arrows. The surface bubble has a diameter of ~40 µm, and the laser power is ~700 mW.",
+      "page": 4,
+      "index": 5,
+      "width": 850,
+      "height": 787
+    },
+    {
+      "url": "assets/figures/arxiv/2604.10871v1/fig-006.webp",
+      "caption": "Fig. 4 | Characterization of 30 nm PS nanoparticles at different concentrations. a, Raman map at 1000 cm-1 overlaid with the SEM image of 103 ng/mL 30 nm PS-SiO₂@Au NPs deposition. b, SERS spectra of 30 nm PS–SiO₂@Au NPs depositions at concentrations of 103 ng/mL, 1 ng/mL, and 10-3 ng/mL. c, SEM images of 103 ng/mL 30 nm PS-SiO₂@Au NPs deposition, with corresponding high-magnification views. d,e,f, EDX elemental maps overlaid with the SEM image of a 103 ng/mL 30 nm PS–SiO₂@Au NP deposition. Individual color maps of Au (d) and C (f) elements correspond to panel (e).",
+      "page": 9,
+      "index": 6,
+      "width": 869,
+      "height": 766
+    }
+  ]
+}
