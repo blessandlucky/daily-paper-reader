@@ -6,29 +6,44 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-04-15
-- 运行时间：2026-04-15 20:31:54 UTC
+- 最新运行日期：2026-03-18 ~ 2026-04-16
+- 运行时间：2026-04-16 02:06:19 UTC
 - 运行状态：成功
-- 本次总论文数：2
+- 本次总论文数：7
 - 精读区：0
-- 速读区：2
+- 速读区：7
 
 ### 今日简报（AI）
-今日聚焦能源与环境领域的界面微观机制，通过模拟探索了二氧化碳水合物成核与固态电池界面的稳定性。
-研究揭示了CO2水合物在体相与界面的成核差异，并深入分析了Li3OCl固态电解质界面的电化学演变过程。
-建议关注界面工程在碳捕集与全固态电池性能优化中的关键作用。
-- 详情：[/202604/15/README](/202604/15/README)
+今日深度复盘电催化析氢中的气泡演化规律与固态电池枝晶生长机制，共收录 7 篇高分前沿进展。
+核心结论揭示了高压碱性电解中气泡造成的电压损耗机理，并基于格里菲斯理论量化了陶瓷电解质内的金属枝晶生长过程。
+建议重点关注气泡管理技术以提升电解槽效率，并参考新模型优化固态电池的抗枝晶安全设计。
+- 详情：[/20260318-20260416/README](/20260318-20260416/README)
 
 ### 精读区论文标签
 - 本次无精读推荐。
 
 ### 速读区论文标签
-1. [Bulk versus interface nucleation of CO$_2$ hydrates from computer simulations](/202604/15/2604.08187v1-bulk-versus-interface-nucleation-of-co2-hydrates-from-computer-simulations)  
-   标签：评分：6.0/10、query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries
-   evidence：界面与体相中气体水合物的成核与演化
-2. [Electrochemical stability and lithium insertion at the Li|Li3OCl solid electrolyte interface](/202604/15/2604.10630v1-electrochemical-stability-and-lithium-insertion-at-the-lili3ocl-solid-electrolyte-interface)  
-   标签：评分：6.0/10、query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries
-   evidence：锂金属负极界面的电化学行为和稳定性
+1. [Free-Energy Analysis of Bubble Nucleation on Electrocatalytic Surfaces](/20260318-20260416/2603.17486v1-free-energy-analysis-of-bubble-nucleation-on-electrocatalytic-surfaces)  
+   标签：评分：10.0/10、query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries
+   evidence：电催化表面的气泡成核
+2. [Bubble-induced versus thermodynamic voltage losses during pressurized alkaline water electrolysis](/20260318-20260416/2603.26855v1-bubble-induced-versus-thermodynamic-voltage-losses-during-pressurized-alkaline-water-electrolysis)  
+   标签：评分：10.0/10、query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries
+   evidence：研究加压水电解中气泡引起的电压损失以及通过电极图案化进行的调节
+3. [An Analytical Model of Alkali Metal Dendrite Growth in Ceramic Solid Electrolytes based on Griffith's Theory](/20260318-20260416/2603.20113v1-an-analytical-model-of-alkali-metal-dendrite-growth-in-ceramic-solid-electrolytes-based-on-griffiths-theory)  
+   标签：评分：9.0/10、query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries
+   evidence：固体电解质中的碱金属枝晶生长
+4. [Bubbles in highly porous media: Clogging and unclogging at constrictions](/20260318-20260416/2603.28511v1-bubbles-in-highly-porous-media-clogging-and-unclogging-at-constrictions)  
+   标签：评分：9.0/10、query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries
+   evidence：水电解槽多孔传输层中的气泡传输和堵塞
+5. [Pentagonal PdTe2 Monolayer for Sustainable Solar-driven Hydrogen Production](/20260318-20260416/2603.28726v1-pentagonal-pdte2-monolayer-for-sustainable-solar-driven-hydrogen-production)  
+   标签：评分：8.5/10、query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries
+   evidence：制氢与析氧反应
+6. [Mechanistic Insights into Enhanced Alkaline Oxygen Evolution on Zn-Al Alloy Electrodes](/20260318-20260416/2603.17904v1-mechanistic-insights-into-enhanced-alkaline-oxygen-evolution-on-zn-al-alloy-electrodes)  
+   标签：评分：8.0/10、query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries
+   evidence：合金电极上的碱性析氧反应 (OER)
+7. [Cavitation-bubble Interaction with an Initially Perturbed Free Surface](/20260318-20260416/2604.04559v1-cavitation-bubble-interaction-with-an-initially-perturbed-free-surface)  
+   标签：评分：8.0/10、query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries
+   evidence：空化气泡相互作用与演化
 
 
 <div class="dpr-home-promo-card">

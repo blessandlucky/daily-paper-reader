@@ -1,0 +1,38 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2603.20113v1/fig-001.webp",
+      "caption": "Figure 1: Schematic cross section of a SSB with unspecified counter electrode, indicating relevant variables.",
+      "page": 2,
+      "index": 1,
+      "width": 494,
+      "height": 252
+    },
+    {
+      "url": "assets/figures/arxiv/2603.20113v1/fig-002.webp",
+      "caption": "Figure 2: Schematic depiction of the alkali metal volume injection in a crack-like interfacial defect via metal creep (left) and via crack growth (right).",
+      "page": 4,
+      "index": 2,
+      "width": 494,
+      "height": 279
+    },
+    {
+      "url": "assets/figures/arxiv/2603.20113v1/fig-003.webp",
+      "caption": "Figure 3: Schematic visualization of the current field jc(x) around a defect at xc for no current localization and the maximum possible current localization.",
+      "page": 6,
+      "index": 3,
+      "width": 494,
+      "height": 246
+    },
+    {
+      "url": "assets/figures/arxiv/2603.20113v1/fig-004.webp",
+      "caption": "Figure 4: Approximation of defect as an ellipsoid using the method of mirror charge. The defect surface is Γc. Hence, the surface of the full ellipsoid is Γc ∪ Γ′ c.",
+      "page": 7,
+      "index": 4,
+      "width": 494,
+      "height": 339
+    }
+  ]
+}

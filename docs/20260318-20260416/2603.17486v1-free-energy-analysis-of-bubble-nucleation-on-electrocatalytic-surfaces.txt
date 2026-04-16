@@ -1,0 +1,470 @@
+Title: Free-Energy Analysis of Bubble Nucleation on Electrocatalytic Surfaces
+
+URL Source: https://arxiv.org/pdf/2603.17486v1
+
+Published Time: Thu, 19 Mar 2026 01:00:05 GMT
+
+Number of Pages: 8
+
+Markdown Content:
+# Free-Energy Analysis of Bubble Nucleation on Electrocatalytic Surfaces 
+
+Qingguang Xie, 1, ∗ Paolo Malgaretti, 1 Othmane Aouane, 1 Simon Thiele, 1, 2 and Jens Harting 1, 3, †
+
+> 1
+
+Helmholtz Institute Erlangen-N¨ urnberg for Renewable Energy (IET-2), Forschungszentrum J¨ ulich, Cauerstraße 1, 91058 Erlangen, Germany 
+
+> 2
+
+Department of Chemical and Biological Engineering, Friedrich-Alexander-Universit¨ at Erlangen-N¨ urnberg, Egerlandstr. 3, 91058 Erlangen, Germany 
+
+> 3
+
+Department of Chemical and Biological Engineering and Department of Physics, Friedrich-Alexander-Universit¨ at Erlangen-N¨ urnberg, Cauerstraße 1, 91058 Erlangen, Germany 
+
+Bubble nucleation at catalyst surfaces plays a critical role in the operation of electrolyzers. How-ever, achieving controlled bubble nucleation remains challenging due to limited understanding of the underlying mechanisms. Here, we present a free-energy model that quantitatively predicts both the activation energy and critical nucleus size of bubbles at given supersaturation, temperature, pres-sure, and surface wettability. We find that the activation energy ∆ Gmax decreases with increasing supersaturation ζ, following a power-law scaling of ∆ Gmax ∼ ζ−2, while the critical nucleus radius 
+
+Rc scales as Rc ∼ ζ−1. Our theoretical predictions for the critical nucleus radius of hydrogen, oxygen and nitrogen bubbles are in quantitative agreement with experimental measurements. Finally, we present a simple model that couples gas diffusion and electrochemical reaction kinetics to determine the maximum gas supersaturation at a given current density. Our results advance the fundamental understanding of bubble nucleation at catalyst surfaces and provide practical guidelines for catalyst layer design to improve the performance of electrolyzers. 
+
+I. INTRODUCTION 
+
+The nucleation of bubbles at catalyst surfaces is a common phenomenon in electrochemical devices for hydrogen production, such as water electrolyzers [1–4]. The overall efficiency of electrolyzers is strongly influenced by bubble nucleation and the subsequent processes of bubble growth, departure, and transport. In proton exchange membrane water electrolyzers (PEMWE), for instance, oxygen bubbles may nucleate at the nanoporous anode catalyst layer (CL), migrate through the porous transport layer (PTL), and are eventually removed by convective water flow in the flow channels [1, 5–7]. However, bubbles growing at the catalyst layer may block active sites for oxygen evolution, leading to an increase in the overpotential and thus reducing the electrochemical performance of the device. Understanding and controlling bubble nucleation at nano- and microscales is therefore essential for optimizing CL design and improving the overall electrolyzer efficiency. Significant efforts have been made to understand the formation of bubbles at the catalyst layer. However, direct observation of nanobubbles is challenging due to the nanoscale, complex, and opaque nature of the porous material. These limitations have even led to ongoing debate about whether bubbles nucleate inside the CL or at the CL–PTL interface [5–7]. For example, Mo et al. [6, 7] observed bubble formation only on the CL surface adjacent to the PTL in PEMWE, challenging the assumption of uniform reaction activity. They attributed this to the high in-plane electrical resistance of the CL, which confines oxygen evolution to the CL–PTL interface. In contrast, Yuan et al. [5] reported evidence of nanobubble accumulation and transport within the CL. They observed sustained bubble growth on the CL surface even in the absence of oxygen evolution, as well as the formation of gas outlet pores at the surface. Theoretical predictions of bubble nucleation characteristics, including the activation energy and critical nucleus size of bubbles, may help to resolve these discrepancies. Since the early 20th century, numerous studies have sought to theoretically analyze the activation energy and critical nucleus size of bubbles both in the bulk liquid and at solid surfaces using classical nucleation theory [8–12], yet these predictions have largely remained qualitative [13]. Recently, Zargarzadeh et al. conducted a thermodynamic analysis of nucleating surface nanobubbles, considering closed systems with a finite number of molecules [14]. This work was later extended to a more quantitative framework by Lan et al. [15]. Very recently, Gadea et al. [16] extended these efforts to explore nanobubble formation in open environments. However, these analyses rely on the number of molecules as an input parameter, which is difficult to measure experimentally. Additionally, a direct link between key parameters (e.g., supersaturation) and electrochemical reactions is still lacking in these models.   
+
+> ∗q.xie@fz-juelich.de
+> †j.harting@fz-juelich.de
+> arXiv:2603.17486v1 [cond-mat.soft] 18 Mar 2026
+
+2In this work, we consider bubble nucleation in an unbounded volume of liquid-gas solution, reflecting the work environment of electrolyzers. The system is maintained at constant temperature and pressure, with negligible total volume change. We perform a free energy analysis of bubble nucleation to quantitatively predict the activation en-ergy required to nucleate a bubble with a critical radius at a catalyst surface under given conditions (e.g., pressure, temperature, supersaturation). We show that the wettability of the reactive surface largely affects the activation energy, whereas the critical nucleation size of bubbles remains constant, consistent with previous research [10–12]. We find that the activation energy ∆ Gmax decreases with increasing supersaturation ζ, following a power-law scaling of ∆Gmax ∼ ζ−2, while the critical nucleus radius Rc scales as Rc ∼ ζ−1. Furthermore, we compare theoretical predic-tions of the critical nucleation radius for hydrogen, nitrogen and oxygen bubbles with experimental results [17, 18] and find quantitative agreement. We then present a simple theoretical model to predict the maximal gas supersaturation achievable at a given current density. In addition, we propose possible descriptions for gas production, bubble for-mation, and transport within the catalyst layer and at the CL-PTL interface, which may explain the experimentally controversial reports [5–7].  
+
+> II. FREE ENERGY ANALYSIS
+
+We perform a free energy analysis of bubble nucleation at a catalyst surface to predict the energy difference between the states before and after nucleation. The system consists of a solution of water–or any solvent–and oxygen–or any gas–in contact with a solid surface at pressure P , temperature T , as illustrated in Fig. 1a. Furthermore, the system is in contact with a gas phase, where the gases are in equilibrium. We assume that the number of gas molecules in the bubble is much smaller than the total number of gas molecules in the water, since the bubble volume is much smaller than the total water volume. In addition, the solution is assumed to be isothermal, and its volume remains constant during bubble formation.  
+
+> (a) No bubble (b) Single bubble
+
+FIG. 1: Sketch of a system with a mixture of gas molecules and water without a bubble (a) and with a bubble (b). The red dots represent the gas molecules, the blue area represents water, and the white area denotes the bubble. The solution is in contact with a gas phase, depicted in grey. The contact angle, radius, and height of the bubble are denoted as θ, R, and h, respectively. In the following, we assume that during the nucleation process, the total number of oxygen molecules in the system (i.e., solution plus bubble), N , is conserved. Under these circumstances, the relevant thermodynamic potential is the Gibbs free energy, written as 
+
+G1(N, P ) = N μ l(P, n 1) + γws Sws , (1) where n1 is the number density of the oxygen molecules in the water before bubble nucleation, μl is their chemical potential at given pressure and number density, γws is the surface energy of the water-solid interface, and Sws is the area of the water-solid interface. After bubble formation, we assume that Ng molecules form a bubble of radius R, and the bubble adopts a spherical cap shape on the solid surface in the limit of a low Bond number Bo = ∆ρgR 2 
+
+> γwg
+
+≪ 1, where γwg is the water-gas surface 3energy as shown in Fig. 1b. Here, ∆ ρ is the density difference between water and the oxygen bubble, and g is the gravitational acceleration. The free energy after bubble formation is 
+
+G2(N, P ) = 2πγ wg R2(1 + cos θ) + ( N − Ng )μl(P, n 2) + Ng μg (Pb) + γws (Sws − Sgs ) + γgs Sgs , (2) where θ is the contact angle of the bubble on the catalyst surface, n2 is the number density of the oxygen molecules in the water after bubble nucleation, μg (Pb) is the chemical potential of oxygen molecules in the bubble, and Sgs is the footprint area of the bubble on the solid surface. γws and γgs are the surface energies of the water–solid and gas–solid interfaces, respectively. The free energy difference ∆ G = G2 − G1 reads ∆G = 2 πγ wg R2(1 + cos θ) + N ∆μl + Ng ∆μg + ( γgs − γws )Sgs , (3) where ∆ μl = μl(P, n 2) − μl(P, n 1) is the change in the chemical potential of the dissolved gas molecules, and ∆ μg =
+
+μg (Pb) − μl(P, n 2) is the chemical potential difference between the gas molecules in the bubble and those in the surrounding solution. With cos θ = γgs −γws  
+
+> γwg
+
+based on the Young’s equation, and Sgs = π(R sin θ)2, we get ∆G = 2 πγ wg R2(1 + cos θ) + πγ wg R2 cos θ sin 2 θ + N ∆μl + Ng ∆μg (4) In the following, we assume that the oxygen solution is diluted such that the chemical potential of oxygen molecules in gas and in solution can be written as [19] 
+
+μg (P ) = kB T ln 
+
+ PkB T Λ3
+
+
+
+(5) 
+
+μl(P, n ) = μ0 
+
+> l
+
+(T ) + kB T ln  nΛ3 . (6) Here, we assume the chemical potential of the oxygen in the gas bubble to be like an ideal gas. Λ is the thermal wavelength, and μ0 
+
+> l
+
+(T ) is the chemical potential of oxygen in a specific, defined standard state, serving as a reference point. When a bubble forms, the overall volume of the system changes due to two contributions: an increase in volume from the formation of the bubble and a reduction in the volume of the liquid solution as fewer oxygen molecules remain dissolved. In the limit of Ng ≪ N and neglecting the change in volume of the liquid solution, NG 
+
+> N
+
+≫ ∆vV , we obtain ∆μl = kB T ln  n2Λ3 − kB T ln  n1Λ3 ≈ − kB T Ng
+
+N (7) ∆μg = kB T ln 
+
+ Pb
+
+kB T Λ3
+
+
+
+− kB T ln  n2Λ3 − μ0 
+
+> l
+
+= kB T ln 
+
+ Pb
+
+kB T n 2
+
+
+
+− μ0 
+
+> l
+
+. (8) The number of molecules Ng in the gas bubble can be determined by the equation of state of an ideal gas as 
+
+Ng = VkB T
+
+
+
+P + 2γwg 
+
+R
+
+
+
+= πR 3
+
+3kB T
+
+
+
+P + 2γwg 
+
+R
+
+
+
+(2 − cos θ)(1 + cos θ)2, (9) where Pb = P + 2γwg  
+
+> R
+
+according to the Young–Laplace equation, and the volume of the spherical-cap-shaped bubble is taken as V = πR 3 
+
+> 3
+
+(2 − cos θ)(1 + cos θ)2. Inserting Eqns. 7-9 into Eq. (4), we obtain ∆G ≈ 2πγR 2(1 + cos θ) + πγR 2 cos θ sin 2 θ
+
+− πR 3
+
+3
+
+
+
+P + 2γR
+
+
+
+(2 − cos θ)(1 + cos θ)2 1 − ln P + 2γR
+
+kB T n 2
+
+!
+
+− μ0
+
+> l
+
+kB T
+
+!
+
+. (10) Here, γ = γwg . By combining the R2 and R3 terms separately, and unfolding the θ terms, we get ∆G ≈ π
+
+3 (2 + 3 cos θ − cos 3 θ) γR 2
+
+"
+
+1 + 2 ln P + 2γR
+
+kB T n 2
+
+!
+
++ 2 μ0
+
+> l
+
+kB T
+
+#
+
+− R3P
+
+"
+
+1 − ln P + 2γR
+
+kB T n 2
+
+!
+
+− μ0
+
+> l
+
+kB T
+
+#! 
+
+. (11) The expression above is a function of the number density, n2, of dissolved oxygen after bubble nucleation, whereas we would like to express it as a function of the number density (or preferably, the supersaturation) of the oxygen before 
+
+bubble nucleation, n1. Accordingly, due to mass conservation, we recall that 
+
+n2V2 + Ng = N. (12) 4Due to our assumptions, Ng ≪ N and V2 ≃ V , we have n2 ≃ n1. Next we aim to relate n1 to the supersaturation ζ,i.e. the ratio between n1 and the number density dissolved oxygen at equilibrium, neq  
+
+> 1
+
+. At equilibrium, the chemical potential of the oxygen in the gas phase equals that of the oxygen diluted in the solution, which leads to 
+
+kB T ln 
+
+ Pa
+
+kB T Λ3
+
+
+
+= μ0 
+
+> l
+
++ kB T ln  neq  
+
+> 1
+
+Λ3 , (13) where Pa is the partial pressure of oxygen in the gas phase. Accordingly we get 
+
+neq  
+
+> 1
+
+= Pa
+
+kB T e− μ0 
+
+> lkB T
+
+. (14) Finally, using n2 ≃ n1 = ζn eq  
+
+> 1
+
+, we obtain ∆G ≈ π
+
+3 (2 + 3 cos θ − cos 3 θ) γR 2
+
+"
+
+1 + 2 ln P + 2γR
+
+kB T ζn eq 
+
+> 1
+
+!
+
++ 2 μ0
+
+> l
+
+kB T
+
+#
+
+− R3P
+
+"
+
+1 − ln P + 2γR
+
+kB T ζn eq 
+
+> 1
+
+!
+
+− μ0
+
+> l
+
+kB T
+
+#! 
+
+. (15) Using Eq. (14) we can rewrite the last expression as ∆G ≈ π
+
+3 (2 + 3 cos θ − cos 3 θ) γR 2
+
+"
+
+1 + 2 ln P + 2γR
+
+Paζ
+
+!# 
+
+− R3P
+
+"
+
+1 − ln P + 2γR
+
+Paζ
+
+!#! 
+
+. (16) We note that θ = 0 ◦ corresponds to the case of bubble formation in the bulk, and Eq. (16) reduces to ∆G ≈ 43 π γR 2
+
+"
+
+1 + 2 ln P + 2γR
+
+Paζ
+
+!# 
+
+− R3P
+
+"
+
+1 − ln P + 2γR
+
+Paζ
+
+!#! 
+
+. (17)  
+
+> III. RESULTS AND DISCUSSIONS
+
+In the following, we apply our free-energy analysis to quantitatively predict the energy barrier and critical nucleation radius of a bubble at a catalyst surface. We take the oxygen evolution reaction in water as an example, a common phenomenon in PEMWE. The oxygen produced during PEMWE operation is normally released into the air, where the partial pressure of oxygen in air is about Pa = 2 .1 × 10 4 P a . In addition, we assume kB = 1 .38 × 10 −23 J/K , the surface tension of water γwg = 0 .072 N/m , the pressure P = 1 .01325 × 10 5 P a and room temperature at T = 293 K.Fig. 2a shows the dependence of the energy difference ∆ G (Eq. (16)) on the bubble radius R at supersaturation 
+
+ζ = 100 for different contact angles θ = 0 ◦ (blue), θ = 60 ◦ (orange), θ = 120 ◦ (green), θ = 160 ◦ (red). For all the contact angles, the energy difference increases at small bubble radii, reaches a maximum at R ≈ 80 nm , and then decreases sharply to zero at a critical nucleus size Rc ≈ 109 nm . We note that Fig. 2a is presented in a log-log scale, and the further decrease of the energy difference beyond Rc is therefore not shown. As shown in Fig. 2, while the critical nucleation radius of the bubble is independent of the contact angle, the activation energy (maximum energy difference) has a strong dependence on the contact angle, which is in qualitative agreement with previous work [12]. By taking the maximum of Eq. (16), we obtain the activation energy as a function of contact angle θ, as shown in Fig. 2b. At θ = 0 ◦, the activation energy takes its maximum, ∆ Gmax ≈ 1.41 × 10 −15 J ≈ 3.49 × 10 5 kB T . This demonstrates that bubble nucleation in the bulk ( θ = 0 ◦) requires a higher activation energy than heterogeneous nucleation, in agreement with previous work [8–12]. The activation energy decreases with increasing contact angle, following the relation ∆ Gθmax = ∆ Gθ=0 ◦ 
+
+> max
+
+(2 + 3 cos θ − cos 3 θ), as encoded in the functional form of Eq. (16). At 
+
+θ = 180 ◦ the activation energy vanishes, indicating the formation of a gas film at the solid surface. Based on Eq. (16), the activation energy and the critical nucleus size are expected to depend strongly on the supersaturation ζ. For a fixed contact angle of θ = 85 ◦, Fig. 3a shows the energy difference ∆ G as a function of bubble radius R for different supersaturation levels. Similar to Fig. 2a, the energy difference initially increases at small bubble radii, reaches a maximum, and then rapidly drops to zero at the critical nucleus size. However, both the activation energy and the critical nucleus size decrease with increasing supersaturation ζ, in line with the previous work [8–12, 16]. In Fig. 3c we show the dependence of the activation energy (circles) and the critical nucleus size (squares) on supersaturation. Surprisingly, the activation energy decreases with increasing ζ according to a power law, ∆ Gmax ∼ ζ−2, while the critical nucleus size follows Rc ∼ ζ−1.Our theoretical analysis is generally applicable to other solvent-gas systems, such as the nucleation of H2 and 
+
+N2 bubbles. Edwards et al. experimentally characterized the nuclei of single nanobubbles in a system where elec-trochemical generation creates a gas supersaturation at a nanoelectrode [17]. For hydrogen bubbles at atmospheric 510 0 10 1 10 2 10 3
+
+R (nm) 
+
+10 1
+
+10 2
+
+10 3
+
+10 4
+
+10 5
+
+> G (kBT)
+> = 0
+> = 60
+> = 120
+> = 160
+
+(a) 0 30 60 90 120 150 180 
+
+Contact angle ( )
+
+10 0
+
+10 1
+
+10 2
+
+10 3
+
+10 4
+
+10 5
+
+> Gmax  (kBT)
+
+theory 
+
+C0(2 + 3cos cos 3 ) (b) 
+
+FIG. 2: (a) Energy difference ∆ G as a function of bubble radius R at supersaturation ζ = 100 for different contact angles θ = 0 ◦ (blue), θ = 60 ◦ (orange), θ = 120 ◦ (green), θ = 160 ◦ (red). (b) Activation energy as a function of the contact angle θ (symbols). The solid line represents the function ∆ Gmax = C0(2 + 3 cos θ − cos 3 θ), where 
+
+C0 = ∆ Gθ=0 ◦ 
+
+> max
+
+is the activation energy at contact angle θ = 0 ◦.pressure ( P = 1 atm) and room temperature ( T = 293 K), the reported nucleation radius is rc ≈ 4.7 nm for a contact angle θ = 146 ◦ and supersaturation ζ = 312, with an activation energy ∆ Gmax ≈ 34 kB T . In the case of nitrogen bubbles under the same P and T , the measured nucleation radius is rc ≈ 8.1 nm for θ = 154 ◦ and ζ = 178, yielding ∆ Gmax ≈ 20 kB T . Using our theoretical model (Eq. (16)) with ζ = 312, Pa = P = 1 .01325 × 10 5 Pa, and θ = 146 ◦, we obtain a critical radius rc ≈ 4.5 nm and activation energy ∆ Gmax ≈ 35 .6 kB T for hydrogen—in close quantitative agreement with experiment. Similarly, for nitrogen with ζ = 178 and θ = 154 ◦, our model pre-dicts rc ≈ 8.1 nm and ∆ Gmax ≈ 19 .1 kB T , also consistent with the experimental results. Furthermore, for oxygen with ζ ≈ 168 and θ = 154 ◦, our model predicts rc ≈ 8.5 nm and ∆ Gmax ≈ 41 kB T , in good agreement with the experimental report [17, 18]. For given values of temperature, pressure, and supersaturation, our theoretical model can be employed to predict the activation energy and the critical nucleus size. However, in practice, it is highly challenging to directly measure the degree of supersaturation during electrolyzer operation. We therefore estimate the maximum supersaturation that can be achieved at a specified current density, to provide a practical link between experimentally accessible operating parameters and the nucleation characteristics predicted by our model. We assume that before bubble nucleation, the generated gas at the catalyst layer is removed by diffusion only. The gas flux in units of kg/ (m2 · s) generated by the electrochemical reaction is written as 
+
+Je = iM o
+
+neF , (18) where i is the electric current density, ne = 4 is the number of electrons needed for the production of an oxygen molecule from water, F is the Faraday constant, and Mo is the molar mass of the gas. In PEMWE, when bubbles are 10 0 10 1 10 2 10 3 10 4 
+
+> R(nm)
+> 10 2
+> 10 3
+> 10 4
+> 10 5
+> 10 6
+> 10 7
+> 10 8
+> G (kBT)
+> = 5
+> = 10
+> = 100
+> = 1000
+
+(a) 10 1 10 2 10 3  
+
+> 10 4
+> 10 5
+> 10 6
+> 10 7
+> 10 8
+> Gmax /kBT
+> Gmax
+> Gmax 2
+
+(b) 10 1 10 2 10 3  
+
+> 10 1
+> 10 2
+> 10 3
+> Rc [nm]
+> Rc
+> Rc1
+
+(c) 
+
+FIG. 3: (a) Energy difference ∆ G as a function of bubble radius at contact angle θ = 85 ◦ for different supersaturations ζ = 5 (blue), ζ = 10 (orange), ζ = 100 (green), ζ = 1000 (red). (b) Activation energy ∆ Gmax and (c) critical nucleus size Rc as a function of the supersaturation ζ.6 
+
+> (a) (b)
+
+FIG. 4: a) Schematic illustration of the anode side of PEMWE. The gas (red circles) diffuses away through the catalyst layer (light green) and the porous transport layer (dark blue) to a water channel (light blue). The bottom part (light grey) represents the membrane. The side and the top parts (dark grey) denote the bipolar plates. b) Sketch of bubble formation and gas transport in a catalyst layer. Bubbles (white) preferentially nucleate in the larger pores and at the CL–PTL interface, while in smaller pores, gas is generated and diffuses toward larger pores and the CL–PTL interface. absent, the gas diffuses away through the catalyst layer and the porous transport layer to a water channel [20, 21], as illustrated in Fig. 4a. Following Fick’s law, the mass flux of oxygen diffusion through the water solution can be estimated as 
+
+Jd = −D∆c = −D c0 − c∞
+
+L , (19) where D is the diffusion coefficient of gas in water, c∞ and c0 are the concentration of gas in water in the channel and at the catalyst layer, and L is the characteristic length. The total mass flux is the product of flux and surface area of the catalyst layer. We note that the current density i is defined as the total current through the electrolyzer divided by the geometrical surface area of the catalyst layer, effectively averaging over the CL depth (i.e., the thickness of the CL). Furthermore, we assume that the surface area of the catalyst layer represents the effective area for diffusion between the CL and the water channel, as shown in Fig. 4a. Accordingly, we directly compare the reaction flux with the diffusion flux and determine the maximal achievable supersaturation, ζm = c0/c s, at a given current density as 
+
+ζm =
+
+ iLM o
+
+Dn eF + c∞
+
+
+
+/c s, (20) where cs is the saturation concentration of gas in water. Again, we consider the oxygen evolution reaction in PEWME as an example case. We take the diffusivity of the oxygen molecule in water as D = 2 × 10 −9 m2/s [22], the Faraday constant as F = 96485 C/mol , and the molar mass of oxygen as M = 32 g/mol . The water in the flow channel is assumed to contain a saturated oxygen concentration c∞ = 9 .1 × 10 −3 kg/m 3 at 1 atm at T = 293 K. The oxygen needs to diffuse through the PTL to reach the water channel, and we take the characteristic diffusion length at the order of DL = 2 .5 × 10 −5 m, corresponding to the thickness of a thin PTL [23]. Typically, PEMWE operates at a current density of order 1 A/cm 2 [24], which may trigger a supersaturation level of ζm ≈ 1000 based on Eq. (20), resulting in a critical nucleus radius of Rc ≈ 8 nm (from Eq. (16)). The predicted supersaturation level is in agreement with experimental measurements that the supersaturation may lie in the range 100 −1000 before bubble nucleation [25–27]. We note that ζm ≈ 1000 is the maximal theoretically achievable supersaturation under the specified current density 1A/cm 2 and associated conditions (e.g., a thin PTL). In practice, however, nucleation can occur well before this supersaturation is reached, and the value of ζm may vary across experiments employing different current densities or PTLs of varying thickness. The porous structure of the catalyst layer typically exhibits a characteristic pore size distribution, ranging from a few nanometers up to about 1000 nm [28]. Based on our free energy analysis, we propose a possible description for gas generation, bubble formation, and transport within the catalyst layer. Electrochemical reactions occur at the catalyst surfaces of all pores in contact with water in PEMWE. The local reaction rate may vary depending on the 7ionic conductivity of the ionomer phase [29, 30] and the electronic conductivity of the catalyst layer [30, 31]. Bubbles preferentially nucleate in the larger pores and at the CL–PTL interface, while at the smaller pores, gas is generated and diffuses toward bigger pores and the CL–PTL interface, as depicted in Fig. 4b. These proposed descriptions are consistent with the experimental observations reported by Yuan et al.[5]: once electrolysis ceases, residual gas in small pores and bubbles in large pores (if any) in the CL continue to migrate toward the CL–PTL interface, where larger bubbles eventually form. Similarly, the findings of Mo et al. [6] can be explained as follows: the reaction rate is much higher near the PTL than farther away. In regions near the PTL, the reaction flux exceeds the diffusion flux, leading to a rapid increase in local gas supersaturation. This, in turn, it triggers bubble nucleation at the CL–PTL interface near the PTL. Another possible explanation for bubble formation next to the PTL is heterogeneous nucleation, which may occur if the PTL surface is less water-wettable.  
+
+> IV. CONCLUSIONS
+
+In summary, we present a free-energy analysis of bubble nucleation on a flat catalyst surface. The analysis provides quantitative predictions for both the activation energy barrier and the critical nucleus size as functions of supersatu-ration, temperature, and pressure, while also incorporating the influence of surface wettability. Our analysis reveals that the activation energy, ∆ Gmax , decreases with increasing supersaturation ζ, following a power-law scaling of ∆Gmax ∼ ζ−2, which has not been reported to the knowledge of the authors. Meanwhile, the critical nucleus radius is found to scale inversely with supersaturation as Rc ∼ ζ−1. Our theoretical predictions for the critical nucleation radius show quantitative agreement with the experimental results for hydrogen, oxygen and nitrogen nanobubbles [17]. Beyond the thermodynamic description, we further propose a simplified model that couples gas diffusion with elec-trochemical reaction kinetics to estimate the maximum achievable gas supersaturation as a function of the current density. This enables the prediction of nucleation characteristics under the operating conditions of electrochemical devices. In this work, we focused solely on bubble nucleation on flat surfaces. However, our methodology can be extended directly to investigate the bubble nucleation at curved surfaces [32] or in cavities [33, 34]. Furthermore, our work can incorporate variations in surface tension at the nanoscale, which may become significant for radii below approximately 10 nm [35, 36]. 
+
+> ACKNOWLEDGMENTS
+
+We acknowledge financial support from the German Federal Ministry of Education and Research (BMBF) – Project H2Giga/AEM-Direkt (Grant number 03HY103HF), and the Bavarian Ministry for Economy, State Development and Energy – Project H2Season (Grant number RMF-SG20-3410-6-10-11). 
+
+> DATA AVAILABILITY
+
+The data that support the findings of this study are openly available at 10.5281/zenodo.19084926.       
+
+> [1] S. Yuan, C. Zhao, X. Cai, L. An, S. Shen, X. Yan, and J. Zhang. Bubble evolution and transport in PEM water electrolysis: Mechanism, impact, and management. Prog. Energy Combust. Sci. , 96:101075, 2023. [2] L. Deng, L. Jin, L. Yang, C. Feng, A. Tao, X. Jia, Z. Geng, C. Zhang, X. Cui, and J. Shi. Bubble evolution dynamics in alkaline water electrolysis. eScience , 5:100353, 2025. [3] I. Vincent and D. Bessarabov. Low cost hydrogen production by anion exchange membrane electrolysis: A review. Renew. Sustain. Energy Rev. , 81:1690–1704, 2018. [4] M. E. Ivanova, R. Peters, M. M¨ uller, S. Haas, M. F. Seidler, G. Mutschke, K. Eckert, P. R¨ ose, S. Calnan, R. Bagacki, R. Schlatmann, C. Grosselindemann, L.-A. Sch¨ afer, N. H. Menzler, A. Weber, R. Van De Krol, F. Liang, F. F. Abdi, S. Brendelberger, N. Neumann, J. Grobbel, M. Roeb, C. Sattler, I. Duran, B. Dietrich, M. E. C. Hofberger, L. Stoppel, N. Uhlenbruck, T. Wetzel, D. Rauner, A. Hecimovic, U. Fantz, N. Kulyk, J. Harting, and O. Guillon. Technological pathways to produce compressed and highly pure hydrogen from solar power. Angew. Chem. Int. Ed. , 62(32):e202218850, 2023. [5] S. Yuan, C. Zhao, C. Fu, J. Li, Y. Su, R. Xue, S. Shen, J. Yin, X. Yan, and J. Zhang. Discovery of bubble accumulation behavior in catalyst layer of proton exchange membrane water electrolyzer. Int. J. Heat Mass Transf. , 227:125552, 2024.
+
+8
+
+[6] J. Mo, Z. Kang, S. T. Retterer, D. A. Cullen, T. J. Toops, J. B. Green, M. M. Mench, and F. Zhang. Discovery of true electrochemical reactions for ultrahigh catalyst mass activity in water splitting. Sci. Adv. , 2:e1600690, 2016. [7] J. Mo, Z. Kang, G. Yang, Y. Li, S. T. Retterer, D. A. Cullen, T. J. Toops, G. Bender, B. S. Pivovar, J. B. Green Jr, and F.-Y. Zhang. In situ investigation on ultrafast oxygen evolution reactions of water splitting in proton exchange membrane electrolyzer cells. J. Mater. Chem. A , 5:18469–18475, 2017. [8] M. Volmer and A. Weber. Keimbildung in ¨ ubers¨ attigten gebilden. Zeitschrift f¨ ur Physikalische Chemie , 119U:277–301, 1926. [9] L. Farkas. Keimbildungsgeschwindigkeit in ¨ ubers¨ attigten d¨ ampfen. Zeitschrift f¨ ur Physikalische Chemie , 125U:236–242, 1927. [10] K.F. Kelton and A.L. Greer. Beyond the classical theory. In K.F. Kelton and A.L. Greer, editors, Nucleation in Condensed Matter , volume 15 of Pergamon Materials Series , pages 85–123. Pergamon, 2010. [11] S. D. Lubetkin. The fundamentals of bubble evolution. Chem. Soc. Rev. , 24:243–250, 1995. [12] K. J. Vachaparambil and K. E. Einarsrud. Explanation of bubble nucleation mechanisms: A gradient theory approach. J. Electrochem. Soc. , 165:E504, 2018. [13] S. Meloni, A. Giacomello, and C. M. Casciola. Focus article: Theoretical aspects of vapor/gas nucleation at structured surfaces. J. Chem. Phys. , 145:211802, 2016. [14] L. Zargarzadeh and J. A. W. Elliott. Thermodynamics of surface nanobubbles. Langmuir , 32:11309–11320, 2016. [15] L. Lan, Y. Pan, L. Zhao, and B. Wen. Quantitative thermodynamic analyses of nucleation, evolution, and stabilization of surface nanobubbles. Langmuir , 42:5967–5976, 2026. [16] E. D. Gadea, V. Molinero, and D. A. Scherlis. Nanobubble stability and formation on solid–liquid interfaces in open environments. Nano Lett. , 23:7206–7212, 2023. [17] M. A. Edwards, H. S. White, and H. Ren. Voltammetric determination of the stochastic formation rate and geometry of individual H2, N2, and O2 bubble nuclei. ACS Nano , 13:6330–6340, 2019. [18] ´A. M. Soto, S. R. German, H. Ren, D. van der Meer, D. Lohse, M. A. Edwards, and H. S. White. The nucleation rate of single O2 nanobubbles at Pt nanoelectrodes. Langmuir , 34:7309–7318, 2018. [19] T. Solymosi, M. Geißelbrecht, S. Mayer, M. Auer, P. Leicht, M. Terlinden, P. Malgaretti, A. B¨ osmann, P. Preuster, J. Harting, M. Thommes, N. Vogel, and P. Wasserscheid. Nucleation as a rate-determining step in catalytic gas generation reactions from liquid phase systems. Sci. Adv. , 8:eade3262, 2022. [20] B. T. Sangtam and H. Park. Review on bubble dynamics in proton exchange membrane water electrolysis: Towards optimal green hydrogen yield. Micromachines , 14:2234, 2023. [21] O.F. Selamet, U. Pasaogullari, D. Spernjak, D.S. Hussey, D.L. Jacobson, and M.D. Mat. Two-phase flow in a proton exchange membrane electrolyzer visualized in situ by simultaneous neutron radiography and optical imaging. Int. J. Hydrogen Energy , 38:5823–5835, 2013. [22] M. Jamnongwong, K. Loubiere, N. Dietrich, and G. H´ ebrard. Experimental study of oxygen diffusion coefficients in clean water containing salt, glucose or surfactant: Consequences on the liquid-side mass transfer coefficients. Chem. Eng. J. ,165:758–768, 2010. [23] J. Mo, Z. Kang, G. Yang, S. T. Retterer, D. A. Cullen, T. J. Toops, J. B. Green, and F.-Y. Zhang. Thin liquid/gas diffusion layers for high-efficiency hydrogen production from water splitting. Applied Energy , 177:817–822, 2016. [24] S. Shiva Kumar and V. Himabindu. Hydrogen production by PEM water electrolysis – A review. Mater. Sci. Energy Technol. , 2:442–454, 2019. [25] G. Sakuma, Y. Fukunaka, and H. Matsushima. Nucleation and growth of electrolytic gas bubbles under microgravity. Int. J. Hydrogen Energy , 39:7638–7645, 2014. [26] H. Matsushima, D. Kiuchi, and Y. Fukunaka. Measurement of dissolved hydrogen supersaturation during water electrolysis in a magnetic field. Electrochimica Acta , 54:5858–5862, 2009. [27] X. Zhao, H. Ren, and L. Luo. Gas bubbles in electrochemical gas evolution reactions. Langmuir , 35:5392–5408, 2019. [28] H. Lv, S. Wang, Y. Sun, J. Chen, W. Zhou, and C. Zhang. Anode catalyst layer with hierarchical pore size distribution for highly efficient proton exchange membrane water electrolysis. J. Power Sources , 564:232878, 2023. [29] M. Bernt and H. A. Gasteiger. Influence of ionomer content in IrO 2 /TiO 2 electrodes on PEM water electrolyzer perfor-mance. J. Electrochem. Soc. , 163:F3179–F3189, 2016. [30] T.-C. Ma, A. Hutzler, R. Hanke-Rauschenbach, and S. Thiele. Anode catalyst layer optimization in polymer electrolyte membrane water electrolysis: Modeling catalyst layer properties and interface effects. Electrochem. Commun. , 178:107965, 2025. [31] M. Bernt, C. Schramm, J. Schr¨ oter, C. Gebauer, J. Byrknes, C. Eickes, and H. A. Gasteiger. Effect of the IrO x conductivity on the anode electrode/porous transport layer interfacial resistance in PEM water electrolyzers. J. Electrochem. Soc. ,168:084513, 2021. [32] A. O. Maksimov, A. M. Kaverin, and V. G. Baidakov. Heterogeneous vapor bubble nucleation on a rough surface. Langmuir ,29:3924–3934, 2013. [33] S.F. Jones, G.M. Evans, and K.P. Galvin. Bubble nucleation from gas cavities — a review. Adv. Colloid Interface Sci. ,80:27–50, 1999. [34] A. A. Atchley and A. Prosperetti. The crevice model of bubble nucleation. J. Acoust. Soc. Am. , 86:1065–1084, 1989. [35] L. S. Bartell. Tolman’s δ, surface curvature, compressibility effects, and the free energy of drops. J. Phys. Chem. B ,105:11615–11618, 2001. [36] S. R. German, M. A. Edwards, Q. Chen, and H. S. White. Laplace pressure of individual H 2 nanobubbles from pressure– addition electrochemistry. Nano Lett. , 16:6691–6694, 2016.

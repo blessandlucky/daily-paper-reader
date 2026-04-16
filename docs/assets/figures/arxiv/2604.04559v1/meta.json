@@ -1,0 +1,206 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.04559v1/fig-001.webp",
+      "caption": "Figure 13. Dependence of cavity length on governing parameters of 𝛾 and ℎ𝑚. The cavity lengths obtained with numerical simulation are presented with the blue contours. The 𝛾 value of critical conditions are plotted with the magenta line. The experimental observations of different cavity behaviors are plotted with circles (non-coalescence), diamonds (critical condition), and triangles (coalescence), respectively. The experimental uncertainty of ℎ𝑐 is approximately 0.004 (0.076 mm in dimensional form). The corresponding experimental images for the three different cavity–bubble interaction scenarios are presented on the right.",
+      "page": 25,
+      "index": 1,
+      "width": 664,
+      "height": 462
+    },
+    {
+      "url": "assets/figures/arxiv/2604.04559v1/fig-002.webp",
+      "caption": "Figure 21. (a) Comparison of non-dimensional bubble radius evolution in a free field among experimental data, theoretical predictions (derived from the RP equation), and numerical results (obtained from BI (Klaseboer & Khoo 2004) and FVM simulation). All calculations were conducted with identical 𝜀 and 𝑅0 values of 125 and 0.1623, respectively. (b) Computational domain verification of three different scales. We conduct simulations in the domain with radius of 10 𝑅𝑚, 20 𝑅𝑚, and 30 𝑅𝑚. The standoff parameter 𝛾 of all three cases are set as 1.36. The radius and time are scaled by 𝑅𝑚 and 𝑅𝑚 √︁ 𝜌𝑙/𝑃∞, respectively.",
+      "page": 38,
+      "index": 2,
+      "width": 727,
+      "height": 312
+    },
+    {
+      "url": "assets/figures/arxiv/2604.04559v1/fig-003.webp",
+      "caption": "Figure 14. (a) Maximum cavity length ℎ𝑐 as a function of the standoff parameter 𝛾. Magenta circles correspond to experimental data with ℎ𝑚 ranging from 0.2 to 0.8 mm, while blue solid lines represent simulation results. ℎ𝑐 decreases monotonically with increasing 𝛾. (b) The same data in (a) are presented in a doubly logarithmic plot. The plot within the range of 1.5 ≲ 𝛾 ≲ 3 reveals a power law of ℎ𝑐 ∝ 𝛾𝛼, with fitted exponents 𝛼 = −2.7 (experiments) and −2.6 (simulations). The experimental uncertainty of ℎ𝑐 is approximately 0.004 (0.076 mm in dimensional form).",
+      "page": 26,
+      "index": 3,
+      "width": 722,
+      "height": 366
+    },
+    {
+      "url": "assets/figures/arxiv/2604.04559v1/fig-004.webp",
+      "caption": "Figure 5. Four representative experiments of critical condition for 𝛾 = 1.36, 1.38, 1.36, and 1.34. The radius of the thin rod is 0.35 mm in all four experiments. (a) The cavity is highly elongated and forms a tapered shape when 𝛾 = 1.36. The cavity bottom surpasses the bubble’s upper surface and becomes invisible. After pinch-off, the cavity splits into two segments: The upper part forms an isolated bubble, while the lower part merges with the primary bubble, creating a roughened bubble surface (𝐻 = 25.2 mm, 𝑅𝑚 = 18.5 mm, ℎ𝑚 = 0.91 mm). Additionally, feathery bright spots (possibly caused by continuous discharge of the wire) can be observed in frames 1 and 2. Panels (b)–(d) show distinct cavity–bubble interaction patterns as 𝛾 varies slightly around 1.36, with emphasis on the dynamics just before cavity pinch-off. (b) Though the cavity is elongated, it does not reach deep enough to coalesce with the bubble. The bubble retains a smooth surface, and strong luminescence occurs at collapses (see the inset in figure 5b) (𝐻 = 25.0 mm, 𝑅𝑚 = 18.1 mm, ℎ𝑚 = 0.93 mm). (c) The cavity bottom forms a bulge inside the bubble. The primary bubble merges with the lower part of the cavity after pinch-off, forming a roughened surface (see the inset in figure 5c) (𝐻 = 25.5 mm, 𝑅𝑚 = 18.7 mm, ℎ𝑚 = 0.90 mm). (d) The cavity coalesces with the bubble, creating splashes and a microbubble cloud around the lower bubble surface (see the inset in figure 5d) (𝐻 = 24.6 mm, 𝑅𝑚 = 18.3 mm, ℎ𝑚 = 0.88 mm). The timescales are 1.84, 1.80, 1.86, and 1.82 ms, respectively.",
+      "page": 15,
+      "index": 4,
+      "width": 762,
+      "height": 612
+    },
+    {
+      "url": "assets/figures/arxiv/2604.04559v1/fig-005.webp",
+      "caption": "Figure 9. Comparison of cavity and bubble evolution between numerical simulation and experiment for the same case as in figure 5(a). Simulation results obtained from FVM (magenta lines) and the BI method (blue lines) are both plotted. FVM simulation results exhibit better agreement with the experimental observations than the BI method. The standoff parameter is set as 𝛾 = 1.36. The timescale is 1.84 ms.",
+      "page": 21,
+      "index": 5,
+      "width": 799,
+      "height": 326
+    },
+    {
+      "url": "assets/figures/arxiv/2604.04559v1/fig-006.webp",
+      "caption": "Figure 17. (a) Doubly logarithmic plot for variation of 𝑈0 with 𝛾. Experimental data, numerical results obtained from the FVM and BI method, and theoretical results obtained with (5.7) are brought into comparison. The FVM simulation results are the same as those when ℎ𝑚 = 0.8 mm in figure 14. ℎ 𝑓 obtained from (5.4), FVM simulation, and BI simulation are plotted in the inset. The experimental uncertainties of 𝑈0 and ℎ𝑐 are approximately 0.36 and 0.004, respectively (3.6 m s−1 and 0.076 mm in dimensional form). (b) Comparison among experimental data, FVM and BI simulation results, and theoretical results obtained with (5.7) and (5.8). The BI simulation and theoretical results converge with both experimental data and FVM simulation results as 𝛾 increases, and reveal a power law with a fitted exponent of 𝛼 = −2.2 and −2.1.",
+      "page": 30,
+      "index": 6,
+      "width": 727,
+      "height": 376
+    },
+    {
+      "url": "assets/figures/arxiv/2604.04559v1/fig-007.webp",
+      "caption": "Figure 2. (a) A schematic of the numerical model of free-surface–bubble interaction. The 𝑧 axis is coaxial with the thin rod while the origin 𝑂 is located on the free surface. The bubble is initiated at point 𝑂𝑏 located beneath the free surface at depth 𝐻 with a initial radius of 𝑅0. (b) Configuration of the computational domain. The cavity length ℎ is the distance from the cavity bottom to the initial undisturbed free surface. The radius and height of the cylindrical computational domain are set as 10𝑅𝑚 and 12.5𝑅𝑚, respectively, while the depth of the fluid is set as 10𝑅𝑚.",
+      "page": 7,
+      "index": 7,
+      "width": 743,
+      "height": 321
+    },
+    {
+      "url": "assets/figures/arxiv/2604.04559v1/fig-008.webp",
+      "caption": "Figure 24. Comparisons of experiments with different depths of the thin rod. The thin rod is highlighted with magenta frames. From left to right, the parameters of each frame are: (a) (i) 𝛾 = 2.16, ℎ𝑚 = 0.79 mm, 𝑅𝑚 = 15.7 mm, ℎ𝑐 = 4.1 mm; (ii) 𝛾 = 2.17, ℎ𝑚 = 0.80 mm, 𝑅𝑚 = 16.1 mm, ℎ𝑐 = 4.1 mm. The timescales are 1.56 and 1.60 ms. The thin rod depths are 0.4 and 4.2 mm, and the time scales are 1.56 and 1.60 ms, respectively. (b) (i) 𝛾 = 1.35, ℎ𝑚 = 0.80 mm, 𝑅𝑚 = 18.2 mm; (ii) 𝛾 = 1.35, ℎ𝑚 = 0.81 mm, 𝑅𝑚 = 18.2 mm. The thin rod depths are 2.0 and 23.8 mm, respectively. The timescale is 1.81 ms. Cavity behaviors and bubble morphology do not exhibit much differences between each one of the both two groups of experiments.",
+      "page": 39,
+      "index": 8,
+      "width": 799,
+      "height": 277
+    },
+    {
+      "url": "assets/figures/arxiv/2604.04559v1/fig-009.webp",
+      "caption": "Figure 23. (a) Doubly logarithmic plot for the variation of maximum cavity length ℎ𝑐 versus the standoff parameter 𝛾 for different radii of the thin rod. The radii of the thin rod are 0.2 mm (triangles), 0.35 mm (circles), and 0.5mm (diamonds). The experimental results exhibit the same fitted power-law relationship of −2.7 exponent. (b) Three typical experiments performed with the three thin rod radii. The maximum cavity lengths of the three cases are 9.54, 9.76, and 9.77 mm, and the timescales are 1.82, 1.84, and 1.86 ms, respectively.",
+      "page": 39,
+      "index": 9,
+      "width": 762,
+      "height": 301
+    },
+    {
+      "url": "assets/figures/arxiv/2604.04559v1/fig-010.webp",
+      "caption": "Figure 19. Comparison of cavity and bubble evolution between numerical simulation and experimental observation in a representative case without meniscus perturbation (𝐻 = 27.5 mm, 𝑅𝑚 = 18.5 mm, timescale is 1.84 ms). Under such circumstance, the cavity is significantly smaller than that of the regular cases (red frame on the right, 𝐻 = 28.2 mm, 𝑅𝑚 = 18.6 mm, ℎ𝑚 = 0.94 mm, timescale is 1.85 ms), and the cavity becomes an isolated bubble due to the much earlier surface-seal. The sealing surface creates a downwards jet piercing the bubble rapidly. Although slight deviation exists in the size and position of the isolated cavity between the two results, the numerical simulation successfully reproduces the main features.",
+      "page": 34,
+      "index": 10,
+      "width": 770,
+      "height": 235
+    },
+    {
+      "url": "assets/figures/arxiv/2604.04559v1/fig-011.webp",
+      "caption": "Figure 20. Comparison of cavity evolution across four distinct configurations: (i) free surface without perturbation (green solid lines), (ii) flat surface with no-slip BC (yellow solid lines), (iii) meniscus perturbed surface with no-slip BC (red solid lines), and (iv) meniscus perturbed surface with slip BC (blue dashed lines). Profiles of the interface at four different times are presented: (a) 0, (b) 0.62, (c) 1.17, (d) 1.86. The timescale is 1.69 ms, and the length scale is 𝑅𝑚 = 17.0 mm. The non-dimensional parameter of the bubble is the same as that in figure 4(a).",
+      "page": 35,
+      "index": 11,
+      "width": 799,
+      "height": 233
+    },
+    {
+      "url": "assets/figures/arxiv/2604.04559v1/fig-012.webp",
+      "caption": "Figure 11. Comparison of cavity and bubble evolution between numerical simulation and experiment for the same case as in figure 6(b). The standoff parameter is set as 𝛾 = 0.72. The timescale is 1.67 ms.",
+      "page": 23,
+      "index": 12,
+      "width": 761,
+      "height": 258
+    },
+    {
+      "url": "assets/figures/arxiv/2604.04559v1/fig-013.webp",
+      "caption": "Figure 10. Comparison of cavity and bubble evolution between numerical simulation and experiment for the same case as in figure 6(a). Frames 3, 5, and 7 show the three critical moments: (I) coalescence initiation, (II) surface-seal, and (III) cavity pinch-off. The standoff parameter is set as 𝛾 = 1.30. The timescale is 1.74 ms.",
+      "page": 23,
+      "index": 13,
+      "width": 783,
+      "height": 606
+    },
+    {
+      "url": "assets/figures/arxiv/2604.04559v1/fig-014.webp",
+      "caption": "Figure 16. Schematic of cavity evolution. (a) A small bowl-shaped depression forms due to the hindrance of the no-slip boundary condition around the thin rod during the rise of the water hump (blue dotted area). (b) The water hump reaches its maximum height ℎ 𝑓 when the bubble reaches its maximum radius. The cavity grows downwards due to the relatively large local pressure gradient (red dotted area) and attains its initial velocity of 𝑈0. (c) The cavity reaches its maximum length ℎ𝑐 .",
+      "page": 28,
+      "index": 14,
+      "width": 733,
+      "height": 214
+    },
+    {
+      "url": "assets/figures/arxiv/2604.04559v1/fig-015.webp",
+      "caption": "Figure 25. Comparisons between compressible and incompressible FVM models for the (a) cavity evolution and (b) fluid field pressure. The length and time scales are 17.0 mm and 1.70 ms, respectively. The experimental uncertainty of ℎ is approximately 0.004 (0.076 mm in dimensional form).",
+      "page": 40,
+      "index": 15,
+      "width": 697,
+      "height": 310
+    },
+    {
+      "url": "assets/figures/arxiv/2604.04559v1/fig-016.webp",
+      "caption": "Figure 26. Comparisons between experimental observations and numerical predictions obtained using different FVM configurations and the BI model. Results with compressible (magenta solid lines) and incompressible air (green dashed lines) show good agreement with the experiments, although the incompressible air model predicts a slightly smaller cavity. In contrast, simulation results with slip BC (blue solid lines), incompressible air with slip BC (yellow dashed lines), and the BI model (red solid lines) deviate markedly from the experiments, while remain relatively consistent with one another with respect to cavity length. The parameters of the bubble and surface perturbations are identical with those in figure 5(a).",
+      "page": 40,
+      "index": 16,
+      "width": 670,
+      "height": 262
+    },
+    {
+      "url": "assets/figures/arxiv/2604.04559v1/fig-017.webp",
+      "caption": "Figure 7. Comparison of cavity and bubble evolution between numerical simulation and experiment for the same case as in figure 4(a). The result obtained from the FVM simulation is presented in pressure contours and magenta solid lines in the right half, while the BI simulation results is plotted with blue solid lines in the left half, along with the experimental observations. The non-dimensional parameters in this simulation are set as 𝛾 = 1.80, 𝑅0 = 0.1623, 𝜀 = 125, and 𝜅 = 1.4. All the non-dimensional parameters for the numerical simulations in § 4 are the same except for 𝛾. The timescale is 1.69 ms.",
+      "page": 19,
+      "index": 17,
+      "width": 797,
+      "height": 299
+    },
+    {
+      "url": "assets/figures/arxiv/2604.04559v1/fig-018.webp",
+      "caption": "Figure 6. Three typical experiments of cavity–bubble coalescence scenario for 𝛾 = 1.30, 0.71, and 0.49. The radius of the thin rod is 0.35mm in all three experiments. (a) Cavity expands rapidly and coalesces with the bubble before the surface-seal, creating a channel that connects the bubble and the atmosphere and triggering the ventilation, allowing the air to flow into the bubble (𝐻 = 22.8 mm, 𝑅𝑚 = 17.5 mm, ℎ𝑚 = 0.83 mm). (b) The decreased 𝛾 gives rise to an earlier coalescence and causes the water dome to elevate rapidly. As a result, the cavity neck pinches off quickly and detaches from the bubble, which ceases the ventilation. Despite the advanced pinch-off, an adequate amount of air influx balances the pressure difference between the gas pressure of the bubble interior and the ambient hydrostatic pressure (𝐻 = 11.9 mm, 𝑅𝑚 = 16.8 mm, ℎ𝑚 = 0.90 mm). (c) The bubble is so close to the free surface that the surface perturbation has little influence on the coalescence and ventilation. The bubble bursts into the atmosphere and creates an open cavity (𝐻 = 7.9 mm, 𝑅𝑚 = 16.0 mm, ℎ𝑚 = 0.92 mm). The timescales are 1.74, 1.67, and 1.59 ms, respectively.",
+      "page": 17,
+      "index": 18,
+      "width": 762,
+      "height": 1035
+    },
+    {
+      "url": "assets/figures/arxiv/2604.04559v1/fig-019.webp",
+      "caption": "Figure 18. Comparisons between (a) numerical results obtained from FVM (blue solid lines) and (b) analytical results obtained from (5.11) (orange solid lines). The dependence between ℎ𝑚 and ℎ𝑐 are plotted in (a) and (b). 𝛾 increases from 1.4 to 3 at a 0.2 interval. Both results are normalized to [0,1] for clearer comparison. The analytical calculations exhibit a similar tendency to the numerical results. The nondimensional parameters in the FVM simulations are set to the same as § 4. The length scale is 𝑅𝑚 = 17.2 mm. The relationship between ℎ𝑚 and 𝜙0 is presented in (c).",
+      "page": 32,
+      "index": 19,
+      "width": 799,
+      "height": 266
+    },
+    {
+      "url": "assets/figures/arxiv/2604.04559v1/fig-020.webp",
+      "caption": "Figure 4. Two typical experiments of bubble interaction with a perturbed free surface for large standoff parameters 𝛾=1.80 and 1.43. The radius of the thin rod is 0.35 mm in both experiments. (a) The interaction between the bubble and the perturbed surface is mild; thus, the free surface elevates slightly with the bubble expansion, and the cavity maintains a smooth olive shape. A bursting jet occurs when the bubble reaches its minimum volume and rebounds (𝐻 = 30.6 mm, 𝑅𝑚 = 17.0 mm, ℎ𝑚 = 0.85 mm). (b) The cavity is elongated, and the bottom exhibits a taper shape as 𝛾 decreases to 1.43. A brought-forward surface-seal causes a splash when the cavity rebounds (𝐻 = 24.6 mm, 𝑅𝑚 = 17.2 mm, ℎ𝑚 = 0.84 mm). The timescale of each experiment is taken as 𝑇osc = 𝑅𝑚 √︁ 𝜌𝑙/𝑃∞, which are 1.69 and 1.71 ms, respectively. Two close-up views of the cavity are also presented on the right. The parameters of these two experiments are similar with those of (a) and (b): (i) 𝐻 = 31.1 mm, 𝑅𝑚 = 18.0 mm, ℎ𝑚 = 0.84 mm, 𝛾 = 1.73; (ii) 𝐻 = 27.1 mm, 𝑅𝑚 = 19.0 mm, ℎ𝑚 = 0.84 mm, 𝛾 = 1.43.",
+      "page": 12,
+      "index": 20,
+      "width": 799,
+      "height": 639
+    },
+    {
+      "url": "assets/figures/arxiv/2604.04559v1/fig-021.webp",
+      "caption": "Figure 15. Flow fields in the vicinity of the cavity. Contours of velocity magnitude (left) and pressure (right) are plotted. The arrows represent the velocity direction, while the black curves represents the contour line of pressure. The free surface is plotted with magenta lines. This is the same case as in figure 4(a).",
+      "page": 27,
+      "index": 21,
+      "width": 799,
+      "height": 399
+    },
+    {
+      "url": "assets/figures/arxiv/2604.04559v1/fig-022.webp",
+      "caption": "Figure 12. Comparison of the fluid field pressure between the simulations with (red circles) and without (blue diamonds) surface perturbation. A pressure monitoring point is located horizontally at a distance 𝑅𝑚 from the bubble inception location. (a) Critical condition in figure 9. No significant attenuation can be observed. (b) An evident attenuation in the fluid pressure field is observed in the case of figure 10, suggesting that coalescence and ventilation can attenuate the collapse intensity. (c) The collapse intensity is further attenuated by the coalescence and ventilation in figure 11.",
+      "page": 24,
+      "index": 22,
+      "width": 799,
+      "height": 320
+    },
+    {
+      "url": "assets/figures/arxiv/2604.04559v1/fig-023.webp",
+      "caption": "Figure 3. Schematic for the analytical model of the meniscus (a) and comparison between experimental and analytical results of the meniscoid interface (b). ℎ𝑚 is the distance from the initial undisturbed free surface to the meniscus apex. The analytical results calculated with (2.12) for ℎ𝑚 = 0.95 mm and 0.60 mm are plotted in red and yellow dashed lines, respectively. The control experiment for ℎ𝑚 = 0 is also given with the free surface plotted in a dashed blue line.",
+      "page": 9,
+      "index": 23,
+      "width": 743,
+      "height": 300
+    },
+    {
+      "url": "assets/figures/arxiv/2604.04559v1/fig-024.webp",
+      "caption": "Figure 8. Comparison between simulation results and experimental data for the evolution of (a) cavity length ℎ and (b) cavity velocity 𝑈 when 𝛾 = 1.77, 𝛾 = 1.45, and 𝛾 = 1.39. Solid lines represent simulation results, and circular markers denote experimental data. An inflection point is observed in both the ℎ and 𝑈 curves for each case, indicating a deceleration and rebound of the cavity during the final stage of bubble collapse. In panel a, the evolution of the pressure difference between the bubble and atmosphere is also plotted (dotted lines), scaled by 𝑃∞. The sharp drop in pressure difference coinciding with the cavity rebound suggests that the pressure gradient is a key factor in the cavity dynamics. Cavity velocity 𝑈 are scaled by √︁ 𝑃∞/𝜌𝑙 . The experimental uncertainties of ℎ and 𝑈 are approximately 0.004 and 0.36 (0.076 mm and 3.6 m s−1 in dimensional form), respectively.",
+      "page": 20,
+      "index": 24,
+      "width": 758,
+      "height": 376
+    },
+    {
+      "url": "assets/figures/arxiv/2604.04559v1/fig-025.webp",
+      "caption": "Figure 1. (a) Schematic of experimental setup. The bubble is initiated coaxially with the thin rod covered by super-hydrophilic coating in a 300 × 300 × 300 mm3 water tank. An image of the meniscus is shown in the inset on the top left. (b) Comparison between representative experiments of free-surface–bubble interaction (i) without and (ii) with perturbation. The standoff parameter 𝛾 for both experiments are 1.30. The bubble expands and collapses normally in the absence of the surface perturbation. Secondary cavitation caused by the rarefaction wave reflected by the free surface can be observed in the fluid field. In contrast, a cavity forms on the initially perturbed free surface and coalesces with the primary bubble, creating a channel that enables ventilation between the atmosphere and the bubble interior. Under such circumstances, the cavitation in the fluid field can not be observed, and the bubble exhibits a misty shape upon collapse.",
+      "page": 5,
+      "index": 25,
+      "width": 799,
+      "height": 345
+    }
+  ]
+}
