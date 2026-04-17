@@ -1,0 +1,69 @@
+{
+  "label": "2026-04-17",
+  "date": "2026-04-17",
+  "generated_at": "2026-04-17T20:39:07",
+  "count": 4,
+  "papers": [
+    {
+      "paper_id": "202604/17/2604.08198v1-existence-of-solutions-for-an-interaction-problem-between-a-bubble-and-a-compressible-viscous-fluid",
+      "section": "quick",
+      "title_en": "Existence of solutions for an interaction problem between a bubble and a compressible viscous fluid",
+      "authors": "Fabien Lespagnol, Matthieu Hillairet",
+      "date": "2026-04-09",
+      "pdf": "https://arxiv.org/pdf/2604.08198v1",
+      "score": "7.0",
+      "evidence": "可压缩流体中球形气泡的动力学及流体-气泡相互作用",
+      "tldr": "本研究探讨了受限三维空间内可压缩粘性流体与多个球形气泡的动力学相互作用。通过建立耦合非线性偏微分方程（流体密度、速度与压力）与常微分方程（气泡平移、旋转及径向运动）的数学模型，并借鉴流固耦合的惩罚法，证明了在气泡发生碰撞或坍塌前弱解的存在性。其核心贡献在于引入了气泡的径向胀缩模式，并解决了由此产生的复杂非线性项在紧致性论证中的处理难题。",
+      "tags": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "abstract_en": "In this paper, we study the dynamics of a finite number of spherical bubbles in a compressible fluid within a bounded open domain of R 3 . The fluid-bubble interaction is described by a system of nonlinear partial differential equations (PDEs) and ordinary differential equations (ODEs) coupling the fluid's density, velocity and pressure to the bubble's translational, rotational and radial velocities. We prove the existence of weak solutions for this model until the collision or collapse of the bubbles. The formulation of the fluid-bubble system, along with the techniques used for the existence proof, is inspired by penalization methods developed for fluid-solid interaction. The main contribution of this work is the addition of a radial expansion-contraction mode in the bubble motion, which introduces new nonlinear terms in the momentum equations that need to be treated carefully in the compactness arguments.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202604/17/2604.14864v1-deformation-and-instability-of-sessile-soap-bubbles-in-an-electric-field",
+      "section": "quick",
+      "title_en": "Deformation and instability of sessile soap bubbles in an electric field",
+      "authors": "Hongsik Kim, Sunghwan Jung",
+      "date": "2026-04-16",
+      "pdf": "https://arxiv.org/pdf/2604.14864v1",
+      "score": "7.0",
+      "evidence": "电场中气泡的变形与不稳定性研究",
+      "tldr": "本研究探讨了平行板电场中座滴式肥皂泡的变形与不稳定性。通过侧视成像技术，研究者追踪了气泡从稳定平衡到圆锥形不稳定的演变全过程。研究发现，在稳定阶段，气泡形状符合类球体模型，且长宽比随无量纲电场强度呈现统一规律；当超过临界值时，气泡顶端形成半角约为30度的锥体并产生喷流。该工作为电毛细变形及预喷流动力学提供了重要的实验基准。",
+      "tags": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "abstract_en": "Interfacial deformation under electric fields is a common phenomenon in many industrial processes. Particularly, we are interested in the dynamics of sessile soap bubbles in a parallel-plate electric field which exhibits a stable deformation regime followed by conical instability. Using side-view imaging, we track the equilibrium shapes, the transition to the unstable regime, and the pre-jet apex dynamics within one experimental system. In the stable regime, the meridional profile is well described by a spheroidal fit, and the aspect ratio collapses across initial bubble sizes onto a single steady-state branch when plotted against the dimensionless field $E^\\ast = \\sqrt{\\mathrm{Bo}_e}$ for data acquired within a fixed ambient session where the electric Bond number $\\mathrm{Bo}_e$ is defined as $\\varepsilon_0 E_0^2 R_0/(2γ)$. The endpoint of this branch marks the transition to the unstable regime. Above onset of instability, the apex sharpens into a cone with half-angle $30.0^{\\circ}$ $\\pm$ $0.6^{\\circ}$, below the classical Taylor value. To quantify the late pre-jet stage, we define the axial distance $b(t)$ from the instantaneous apex to a fixed reference vertex determined from the terminal cone geometry and measure its evolution. The corresponding rate grows as jetting is approached, and a near-tip inertia-capillary model captures the observed logarithmic trend as an approximation. Together, these measurements establish a single-system experimental benchmark in which stable electrocapillary deformation is organized by a single steady-state branch that leads into conical instability and pre-jet dynamics.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202604/17/2604.14919v1-a-numerical-and-experimental-evaluation-of-microbubble-communication-using-openfoam",
+      "section": "quick",
+      "title_en": "A Numerical and Experimental Evaluation of Microbubble Communication Using OpenFOAM",
+      "authors": "Annika Tjabben, Carolin Conrad, Hans D. Schotten",
+      "date": "2026-04-16",
+      "pdf": "https://arxiv.org/pdf/2604.14919v1",
+      "score": "7.0",
+      "evidence": "微气泡传输与动力学的数值分析",
+      "tldr": "针对血管或工业管道等受限环境中的通信难题，本文研究了将微泡作为生物纳米物联网（IoBNT）信息载体的可行性。通过结合SonoVue微泡实验与OpenFOAM计算流体力学模拟，分析了不同流速和介质（水与类血液）下的微泡传输特性。研究验证了数值模型的准确性，并探讨了流体属性和对流对微泡动力学的影响，为微型化通信系统提供了理论与实验支持。",
+      "tags": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "abstract_en": "Reliable communication in confined environments, such as blood vessels or industrial pipelines, remain challenging due to signal attenuation and limited sensor accessibility. Therefore, this work investigates microbubbles as robust information carriers within the Internet of Bio-Nano Things (IoBNT) paradigm, leveraging their established use as ultrasound contrast agents. It presents a combined experimental and numerical analysis characterizing microbubble transport under varying flow conditions relevant to biomedical and industrial applications. Experiments with SonoVue microbubbles in a recirculating water channel validate an OpenFOAM-based Computational Fluid Dynamics (CFD) simulation using the incompressibleDenseParticleFluid solver. Key cases examine water vs. blood-like media and high vs. physiological flow velocities, analyzing the relative influence of fluid properties and advection on microbubble dynamics. Recirculation effects are considered in relation to in vivo circulation timescales.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202604/17/2604.13659v1-ion-specific-anomalous-water-diffusion-in-aqueous-electrolytes-a-machine-learned-many-body-force-field-study-with-mace",
+      "section": "quick",
+      "title_en": "Ion-Specific Anomalous Water Diffusion in Aqueous Electrolytes: A Machine-Learned Many-Body Force Field Study with MACE",
+      "authors": "Massimo Ciacchi, Ilnur Saitov, Nico Di Fonte, Isabella Daidone, Carlo Pierleoni",
+      "date": "2026-04-15",
+      "pdf": "https://arxiv.org/pdf/2604.13659v1",
+      "score": "6.0",
+      "evidence": "水系电解质中的水扩散动力学",
+      "tldr": "本研究利用基于MACE等变图神经网络的机器学习力场，深入探讨了电解质溶液中水分子的离子特异性反常扩散现象。通过对NaCl和CsI溶液进行分子动力学模拟，研究成功复现了实验中观察到的扩散加速与抑制效应，并揭示了Na+和I-离子对水分子动力学影响的微观机制，在预测精度上显著优于以往的DeePMD模型。",
+      "tags": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "abstract_en": "The dynamics of water in electrolyte solutions exhibits a striking, ion-specific anomaly: the diffusion coefficient of water is enhanced relative to the neat liquid in chaotropic CsI solutions, yet suppressed in kosmotropic NaCl solutions. This phenomenon, long challenging for classical force-field-based molecular dynamics, is studied here using classical molecular dynamics simulations with a many-body machine-learned force field (MLFF) trained within the MACE equivariant graph neural network framework. The force field is trained on energies, forces, and stresses computed at the density functional theory level with the revPBE-D3 exchange--correlation functional, which provides a reliable balance between accuracy and computational efficiency for aqueous systems. Simulations of NaCl and CsI aqueous solutions at ambient conditions over a concentration range of 0.89--3.56~mol/kg reproduce the experimentally observed anomalous diffusion and show a quantitative improvement over previous results obtained with the DeePMD framework, trained on the same theory, particularly for NaCl solutions. This improvement is traced to a stronger Na$^{+}$--water interaction in the first hydration shell and the non-negligible retarding contribution of the second hydration shell of Na$^{+}$. For CsI solutions, the water acceleration is shown to be primarily driven by the anion I$^{-}$, whose diffuse and weakly structured hydration shell facilitates rapid water exchange with the bulk. These results are rationalised through a shell-decomposition analysis of time-dependent water diffusivities and ion--oxygen potentials of mean force providing a coherent microscopic picture of the acceleration--retardation mechanism in the studied aqueous electrolytes.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,166 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-04-17T20:38:22.379936+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 0,
+    "deep_cap": 6,
+    "deep_selected": 0,
+    "quick_candidates": 4,
+    "quick_skim_target": 11,
+    "quick_selected": 4
+  },
+  "deep_dive": [],
+  "quick_skim": [
+    {
+      "id": "2604.08198v1",
+      "source": "arxiv",
+      "title": "Existence of solutions for an interaction problem between a bubble and a compressible viscous fluid",
+      "abstract": "In this paper, we study the dynamics of a finite number of spherical bubbles in a compressible fluid within a bounded open domain of R 3 . The fluid-bubble interaction is described by a system of nonlinear partial differential equations (PDEs) and ordinary differential equations (ODEs) coupling the fluid's density, velocity and pressure to the bubble's translational, rotational and radial velocities. We prove the existence of weak solutions for this model until the collision or collapse of the bubbles. The formulation of the fluid-bubble system, along with the techniques used for the existence proof, is inspired by penalization methods developed for fluid-solid interaction. The main contribution of this work is the addition of a radial expansion-contraction mode in the bubble motion, which introduces new nonlinear terms in the momentum equations that need to be treated carefully in the compactness arguments.",
+      "authors": [
+        "Fabien Lespagnol",
+        "Matthieu Hillairet"
+      ],
+      "primary_category": "math.AP",
+      "categories": [
+        "math.AP"
+      ],
+      "published": "2026-04-09T12:55:38+00:00",
+      "link": "https://arxiv.org/pdf/2604.08198v1",
+      "tags": [
+        "keyword:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries",
+        "query:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "dynamics of spherical bubbles in a compressible fluid and fluid-bubble interaction",
+      "llm_evidence_cn": "可压缩流体中球形气泡的动力学及流体-气泡相互作用",
+      "llm_evidence": "可压缩流体中球形气泡的动力学及流体-气泡相互作用",
+      "canonical_evidence": "可压缩流体中球形气泡的动力学及流体-气泡相互作用",
+      "llm_tldr_en": "Provides a mathematical model for the dynamics and interaction of multiple bubbles in a compressible viscous fluid.",
+      "llm_tldr_cn": "为可压缩粘性流体中多个气泡的动力学和相互作用提供了数学模型。",
+      "llm_tldr": "为可压缩粘性流体中多个气泡的动力学和相互作用提供了数学模型。",
+      "llm_tags": [
+        "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries"
+      ],
+      "matched_query_tag": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "matched_query_text": "Bubble evolution dynamics",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2604.13659v1",
+      "source": "arxiv",
+      "title": "Ion-Specific Anomalous Water Diffusion in Aqueous Electrolytes: A Machine-Learned Many-Body Force Field Study with MACE",
+      "abstract": "The dynamics of water in electrolyte solutions exhibits a striking, ion-specific anomaly: the diffusion coefficient of water is enhanced relative to the neat liquid in chaotropic CsI solutions, yet suppressed in kosmotropic NaCl solutions. This phenomenon, long challenging for classical force-field-based molecular dynamics, is studied here using classical molecular dynamics simulations with a many-body machine-learned force field (MLFF) trained within the MACE equivariant graph neural network framework. The force field is trained on energies, forces, and stresses computed at the density functional theory level with the revPBE-D3 exchange--correlation functional, which provides a reliable balance between accuracy and computational efficiency for aqueous systems. Simulations of NaCl and CsI aqueous solutions at ambient conditions over a concentration range of 0.89--3.56~mol/kg reproduce the experimentally observed anomalous diffusion and show a quantitative improvement over previous results obtained with the DeePMD framework, trained on the same theory, particularly for NaCl solutions. This improvement is traced to a stronger Na$^{+}$--water interaction in the first hydration shell and the non-negligible retarding contribution of the second hydration shell of Na$^{+}$. For CsI solutions, the water acceleration is shown to be primarily driven by the anion I$^{-}$, whose diffuse and weakly structured hydration shell facilitates rapid water exchange with the bulk. These results are rationalised through a shell-decomposition analysis of time-dependent water diffusivities and ion--oxygen potentials of mean force providing a coherent microscopic picture of the acceleration--retardation mechanism in the studied aqueous electrolytes.",
+      "authors": [
+        "Massimo Ciacchi",
+        "Ilnur Saitov",
+        "Nico Di Fonte",
+        "Isabella Daidone",
+        "Carlo Pierleoni"
+      ],
+      "primary_category": "physics.chem-ph",
+      "categories": [
+        "physics.chem-ph",
+        "cond-mat.soft"
+      ],
+      "published": "2026-04-15T09:26:36+00:00",
+      "link": "https://arxiv.org/pdf/2604.13659v1",
+      "tags": [
+        "keyword:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries",
+        "query:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Water diffusion dynamics in aqueous electrolytes",
+      "llm_evidence_cn": "水系电解质中的水扩散动力学",
+      "llm_evidence": "水系电解质中的水扩散动力学",
+      "canonical_evidence": "水系电解质中的水扩散动力学",
+      "llm_tldr_en": "Uses machine-learned force fields to study ion-specific water diffusion anomalies in aqueous electrolytes.",
+      "llm_tldr_cn": "利用机器学习力场研究水系电解质中离子特定的水扩散异常现象。",
+      "llm_tldr": "利用机器学习力场研究水系电解质中离子特定的水扩散异常现象。",
+      "llm_tags": [
+        "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries"
+      ],
+      "matched_query_tag": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "matched_query_text": "Comprehensive review on gas bubble dynamics and regulation strategies in liquid electrolytes for metal batteries and water electrolysis, emphasizing novel synthesis of scattered literature into 7 8 high impact figures with focus on regulation methods (batteries vs. water electrolysis) and latest HER/OER insights beyond existing reviews.",
+      "matched_requirement_id": "req-7",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2604.14864v1",
+      "source": "arxiv",
+      "title": "Deformation and instability of sessile soap bubbles in an electric field",
+      "abstract": "Interfacial deformation under electric fields is a common phenomenon in many industrial processes. Particularly, we are interested in the dynamics of sessile soap bubbles in a parallel-plate electric field which exhibits a stable deformation regime followed by conical instability. Using side-view imaging, we track the equilibrium shapes, the transition to the unstable regime, and the pre-jet apex dynamics within one experimental system. In the stable regime, the meridional profile is well described by a spheroidal fit, and the aspect ratio collapses across initial bubble sizes onto a single steady-state branch when plotted against the dimensionless field $E^\\ast = \\sqrt{\\mathrm{Bo}_e}$ for data acquired within a fixed ambient session where the electric Bond number $\\mathrm{Bo}_e$ is defined as $\\varepsilon_0 E_0^2 R_0/(2γ)$. The endpoint of this branch marks the transition to the unstable regime. Above onset of instability, the apex sharpens into a cone with half-angle $30.0^{\\circ}$ $\\pm$ $0.6^{\\circ}$, below the classical Taylor value. To quantify the late pre-jet stage, we define the axial distance $b(t)$ from the instantaneous apex to a fixed reference vertex determined from the terminal cone geometry and measure its evolution. The corresponding rate grows as jetting is approached, and a near-tip inertia-capillary model captures the observed logarithmic trend as an approximation. Together, these measurements establish a single-system experimental benchmark in which stable electrocapillary deformation is organized by a single steady-state branch that leads into conical instability and pre-jet dynamics.",
+      "authors": [
+        "Hongsik Kim",
+        "Sunghwan Jung"
+      ],
+      "primary_category": "physics.flu-dyn",
+      "categories": [
+        "physics.flu-dyn"
+      ],
+      "published": "2026-04-16T10:55:15+00:00",
+      "link": "https://arxiv.org/pdf/2604.14864v1",
+      "tags": [
+        "keyword:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries",
+        "query:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "Deformation and instability of bubbles in an electric field",
+      "llm_evidence_cn": "电场中气泡的变形与不稳定性研究",
+      "llm_evidence": "电场中气泡的变形与不稳定性研究",
+      "canonical_evidence": "电场中气泡的变形与不稳定性研究",
+      "llm_tldr_en": "Analyzes the equilibrium shapes and conical instability of soap bubbles under parallel-plate electric fields.",
+      "llm_tldr_cn": "分析了平行板电场下肥皂泡的平衡形状和锥形不稳定性。",
+      "llm_tldr": "分析了平行板电场下肥皂泡的平衡形状和锥形不稳定性。",
+      "llm_tags": [
+        "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries"
+      ],
+      "matched_query_tag": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "matched_query_text": "Bubble evolution dynamics",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2604.14919v1",
+      "source": "arxiv",
+      "title": "A Numerical and Experimental Evaluation of Microbubble Communication Using OpenFOAM",
+      "abstract": "Reliable communication in confined environments, such as blood vessels or industrial pipelines, remain challenging due to signal attenuation and limited sensor accessibility. Therefore, this work investigates microbubbles as robust information carriers within the Internet of Bio-Nano Things (IoBNT) paradigm, leveraging their established use as ultrasound contrast agents. It presents a combined experimental and numerical analysis characterizing microbubble transport under varying flow conditions relevant to biomedical and industrial applications. Experiments with SonoVue microbubbles in a recirculating water channel validate an OpenFOAM-based Computational Fluid Dynamics (CFD) simulation using the incompressibleDenseParticleFluid solver. Key cases examine water vs. blood-like media and high vs. physiological flow velocities, analyzing the relative influence of fluid properties and advection on microbubble dynamics. Recirculation effects are considered in relation to in vivo circulation timescales.",
+      "authors": [
+        "Annika Tjabben",
+        "Carolin Conrad",
+        "Hans D. Schotten"
+      ],
+      "primary_category": "eess.SP",
+      "categories": [
+        "eess.SP"
+      ],
+      "published": "2026-04-16T12:02:39+00:00",
+      "link": "https://arxiv.org/pdf/2604.14919v1",
+      "tags": [
+        "keyword:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries",
+        "query:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "Numerical analysis of microbubble transport and dynamics",
+      "llm_evidence_cn": "微气泡传输与动力学的数值分析",
+      "llm_evidence": "微气泡传输与动力学的数值分析",
+      "canonical_evidence": "微气泡传输与动力学的数值分析",
+      "llm_tldr_en": "Evaluates microbubble transport and dynamics in flow using CFD simulations and experiments.",
+      "llm_tldr_cn": "通过CFD模拟和实验评估了流动中微气泡的传输和动力学。",
+      "llm_tldr": "通过CFD模拟和实验评估了流动中微气泡的传输和动力学。",
+      "llm_tags": [
+        "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries"
+      ],
+      "matched_query_tag": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "matched_query_text": "Bubble evolution dynamics",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    }
+  ]
+}
