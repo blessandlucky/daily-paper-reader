@@ -1,0 +1,110 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.10565v1/fig-001.webp",
+      "caption": "Table 1: Comparison of the proposed strategy with previous literature.",
+      "page": 6,
+      "index": 1,
+      "width": 814,
+      "height": 314
+    },
+    {
+      "url": "assets/figures/arxiv/2604.10565v1/fig-002.webp",
+      "caption": "Figure 1: Schematic diagram of the proposed coordinated operation framework for the windstorage-AWE system.",
+      "page": 6,
+      "index": 2,
+      "width": 583,
+      "height": 274
+    },
+    {
+      "url": "assets/figures/arxiv/2604.10565v1/fig-003.webp",
+      "caption": "Figure 8: HTO trajectories of the ten electrolyzer system under the representative day scenarios.",
+      "page": 25,
+      "index": 3,
+      "width": 729,
+      "height": 348
+    },
+    {
+      "url": "assets/figures/arxiv/2604.10565v1/fig-004.webp",
+      "caption": "Figure 9: Sensitivity of the energy utilization rate to the feedback optimization gain factor.",
+      "page": 26,
+      "index": 4,
+      "width": 432,
+      "height": 341
+    },
+    {
+      "url": "assets/figures/arxiv/2604.10565v1/fig-005.webp",
+      "caption": "Table 2: Parameters of electrolyzers.",
+      "page": 21,
+      "index": 5,
+      "width": 798,
+      "height": 525
+    },
+    {
+      "url": "assets/figures/arxiv/2604.10565v1/fig-006.webp",
+      "caption": "Figure 5: HTO trajectories of the four electrolyzer system under the representative day scenarios.",
+      "page": 22,
+      "index": 6,
+      "width": 742,
+      "height": 292
+    },
+    {
+      "url": "assets/figures/arxiv/2604.10565v1/fig-007.webp",
+      "caption": "Figure 6: Online solve time trajectories under the representative day scenarios.",
+      "page": 22,
+      "index": 7,
+      "width": 686,
+      "height": 258
+    },
+    {
+      "url": "assets/figures/arxiv/2604.10565v1/fig-008.webp",
+      "caption": "Table 3: Solve time statistics under the representative day scenarios.",
+      "page": 23,
+      "index": 8,
+      "width": 682,
+      "height": 345
+    },
+    {
+      "url": "assets/figures/arxiv/2604.10565v1/fig-009.webp",
+      "caption": "Figure 2: Annual wind power.",
+      "page": 19,
+      "index": 9,
+      "width": 430,
+      "height": 342
+    },
+    {
+      "url": "assets/figures/arxiv/2604.10565v1/fig-010.webp",
+      "caption": "Figure 10: Sensitivity of the storage energy usage to the CBF coefficient.",
+      "page": 27,
+      "index": 10,
+      "width": 406,
+      "height": 335
+    },
+    {
+      "url": "assets/figures/arxiv/2604.10565v1/fig-011.webp",
+      "caption": "Figure 7: Power allocation and utilization results of the ten electrolyzer system under the representative day scenarios.",
+      "page": 24,
+      "index": 11,
+      "width": 666,
+      "height": 335
+    },
+    {
+      "url": "assets/figures/arxiv/2604.10565v1/fig-012.webp",
+      "caption": "Figure 4: Power allocation and utilization results of the four electrolyzer system under the representative day scenarios.",
+      "page": 20,
+      "index": 12,
+      "width": 708,
+      "height": 294
+    },
+    {
+      "url": "assets/figures/arxiv/2604.10565v1/fig-013.webp",
+      "caption": "Figure 3: Wind power curves of the representative days.",
+      "page": 20,
+      "index": 13,
+      "width": 725,
+      "height": 258
+    }
+  ]
+}
