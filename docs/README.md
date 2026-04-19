@@ -6,38 +6,31 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-04-18
-- 运行时间：2026-04-18 19:55:16 UTC
+- 最新运行日期：2026-04-19
+- 运行时间：2026-04-19 20:17:39 UTC
 - 运行状态：成功
-- 本次总论文数：5
-- 精读区：0
-- 速读区：5
+- 本次总论文数：3
+- 精读区：1
+- 速读区：2
 
 ### 今日简报（AI）
-今日速读 5 篇前沿论文，深度覆盖微气泡通信仿真、锂电池老化建模及风电制氢安全调度。
-重点关注利用 OpenFOAM 评估微气泡通信的可靠性，以及通过电化学-热退化模型统一预测锂电池寿命。
-建议关注流体力学与通信的跨界融合，以及提升新能源系统安全性的动态建模技术。
-- 详情：[/202604/18/README](/202604/18/README)
+1. 深度解析电场中肥皂泡的形变奥秘，同步关注微气泡通信与风电制氢系统的协同优化。
+2. 核心研究揭示了电场诱导肥皂泡失稳的物理机制，并验证了微气泡通信在复杂流体环境下的可行性。
+3. 推荐对流体力学跨界应用感兴趣的读者，深入探索微观物理现象在通信与绿色能源中的工程价值。
+- 详情：[/202604/19/README](/202604/19/README)
 
 ### 精读区论文标签
-- 本次无精读推荐。
+1. [Deformation and instability of sessile soap bubbles in an electric field](/202604/19/2604.14864v1-deformation-and-instability-of-sessile-soap-bubbles-in-an-electric-field)  
+   标签：评分：8.0/10、query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries
+   evidence：电场中座滴气泡的动力学和不稳定性，与气泡调节相关。
 
 ### 速读区论文标签
-1. [A Numerical and Experimental Evaluation of Microbubble Communication Using OpenFOAM](/202604/18/2604.14919v1-a-numerical-and-experimental-evaluation-of-microbubble-communication-using-openfoam)  
+1. [A Numerical and Experimental Evaluation of Microbubble Communication Using OpenFOAM](/202604/19/2604.14919v1-a-numerical-and-experimental-evaluation-of-microbubble-communication-using-openfoam)  
    标签：评分：7.0/10、query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries
-   evidence：使用OpenFOAM进行微气泡输运和多相流模拟
-2. [Linking Calendar and Cycle Ageing in Lithium-Ion Batteries through Consistent Parameterisation of an Electrochemical-Thermal-Degradation Model](/202604/18/2604.09217v1-linking-calendar-and-cycle-ageing-in-lithium-ion-batteries-through-consistent-parameterisation-of-an-electrochemical-thermal-degradation-model)  
+   evidence：流动条件下微气泡输运和动力学的数值与实验分析。
+2. [Real-Time Coordinated Operation of Off-Grid Wind Powered Multi-Electrolyzer Systems Considering Thermal Dynamics and HTO Safety](/202604/19/2604.10565v1-real-time-coordinated-operation-of-off-grid-wind-powered-multi-electrolyzer-systems-considering-thermal-dynamics-and-hto-safety)  
    标签：评分：6.0/10、query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries
-   evidence：锂沉积和SEI生长的电化学-热降解模型
-3. [Real-Time Coordinated Operation of Off-Grid Wind Powered Multi-Electrolyzer Systems Considering Thermal Dynamics and HTO Safety](/202604/18/2604.10565v1-real-time-coordinated-operation-of-off-grid-wind-powered-multi-electrolyzer-systems-considering-thermal-dynamics-and-hto-safety)  
-   标签：评分：6.0/10、query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries
-   evidence：碱性水电解（AWE）系统的协调运行与安全约束
-4. [Ion-Specific Anomalous Water Diffusion in Aqueous Electrolytes: A Machine-Learned Many-Body Force Field Study with MACE](/202604/18/2604.13659v1-ion-specific-anomalous-water-diffusion-in-aqueous-electrolytes-a-machine-learned-many-body-force-field-study-with-mace)  
-   标签：评分：6.0/10、query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries
-   evidence：使用机器学习力场研究水系电解质中离子的特定水扩散
-5. [Deformation and instability of sessile soap bubbles in an electric field](/202604/18/2604.14864v1-deformation-and-instability-of-sessile-soap-bubbles-in-an-electric-field)  
-   标签：评分：6.0/10、query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries
-   evidence：该论文研究了电场中气泡的动力学、变形和不稳定性。
+   evidence：碱性水电解运行与安全约束
 
 
 <div class="dpr-home-promo-card">

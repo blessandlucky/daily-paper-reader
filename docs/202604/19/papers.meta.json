@@ -1,0 +1,54 @@
+{
+  "label": "2026-04-19",
+  "date": "2026-04-19",
+  "generated_at": "2026-04-19T20:17:52",
+  "count": 3,
+  "papers": [
+    {
+      "paper_id": "202604/19/2604.14864v1-deformation-and-instability-of-sessile-soap-bubbles-in-an-electric-field",
+      "section": "deep",
+      "title_en": "Deformation and instability of sessile soap bubbles in an electric field",
+      "authors": "Hongsik Kim, Sunghwan Jung",
+      "date": "2026-04-16",
+      "pdf": "https://arxiv.org/pdf/2604.14864v1",
+      "score": "8.0",
+      "evidence": "电场中座滴气泡的动力学和不稳定性，与气泡调节相关。",
+      "tldr": "本研究探讨了平行板电场中座滴式肥皂泡的变形与不稳定性。通过侧视成像技术，研究者系统地追踪了气泡从稳定变形到锥形不稳定的演变全过程。在稳定阶段，气泡形状符合类球体模型，且长宽比随无量纲电场强度呈现统一的演化规律；当超过临界值时，气泡顶端会形成半角约为30度的锥体并产生喷流。该研究为电毛细变形、不稳定性触发及预喷流动力学提供了单一系统的实验基准。",
+      "tags": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "abstract_en": "Interfacial deformation under electric fields is a common phenomenon in many industrial processes. Particularly, we are interested in the dynamics of sessile soap bubbles in a parallel-plate electric field which exhibits a stable deformation regime followed by conical instability. Using side-view imaging, we track the equilibrium shapes, the transition to the unstable regime, and the pre-jet apex dynamics within one experimental system. In the stable regime, the meridional profile is well described by a spheroidal fit, and the aspect ratio collapses across initial bubble sizes onto a single steady-state branch when plotted against the dimensionless field $E^\\ast = \\sqrt{\\mathrm{Bo}_e}$ for data acquired within a fixed ambient session where the electric Bond number $\\mathrm{Bo}_e$ is defined as $\\varepsilon_0 E_0^2 R_0/(2γ)$. The endpoint of this branch marks the transition to the unstable regime. Above onset of instability, the apex sharpens into a cone with half-angle $30.0^{\\circ}$ $\\pm$ $0.6^{\\circ}$, below the classical Taylor value. To quantify the late pre-jet stage, we define the axial distance $b(t)$ from the instantaneous apex to a fixed reference vertex determined from the terminal cone geometry and measure its evolution. The corresponding rate grows as jetting is approached, and a near-tip inertia-capillary model captures the observed logarithmic trend as an approximation. Together, these measurements establish a single-system experimental benchmark in which stable electrocapillary deformation is organized by a single steady-state branch that leads into conical instability and pre-jet dynamics.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202604/19/2604.14919v1-a-numerical-and-experimental-evaluation-of-microbubble-communication-using-openfoam",
+      "section": "quick",
+      "title_en": "A Numerical and Experimental Evaluation of Microbubble Communication Using OpenFOAM",
+      "authors": "Annika Tjabben, Carolin Conrad, Hans D. Schotten",
+      "date": "2026-04-16",
+      "pdf": "https://arxiv.org/pdf/2604.14919v1",
+      "score": "7.0",
+      "evidence": "流动条件下微气泡输运和动力学的数值与实验分析。",
+      "tldr": "针对生物纳米物联网（IoBNT）中受限环境（如血管或管道）通信受阻的问题，本文研究了利用微泡作为信息载体的可行性。通过结合SonoVue微泡实验与OpenFOAM计算流体动力学（CFD）模拟，分析了不同流速和介质（水与类血液）下的微泡传输特性。研究验证了数值模型的准确性，并探讨了流体属性和对流对微泡动力学的影响，为受限环境下的可靠通信提供了理论与实验支持。",
+      "tags": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "abstract_en": "Reliable communication in confined environments, such as blood vessels or industrial pipelines, remain challenging due to signal attenuation and limited sensor accessibility. Therefore, this work investigates microbubbles as robust information carriers within the Internet of Bio-Nano Things (IoBNT) paradigm, leveraging their established use as ultrasound contrast agents. It presents a combined experimental and numerical analysis characterizing microbubble transport under varying flow conditions relevant to biomedical and industrial applications. Experiments with SonoVue microbubbles in a recirculating water channel validate an OpenFOAM-based Computational Fluid Dynamics (CFD) simulation using the incompressibleDenseParticleFluid solver. Key cases examine water vs. blood-like media and high vs. physiological flow velocities, analyzing the relative influence of fluid properties and advection on microbubble dynamics. Recirculation effects are considered in relation to in vivo circulation timescales.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202604/19/2604.10565v1-real-time-coordinated-operation-of-off-grid-wind-powered-multi-electrolyzer-systems-considering-thermal-dynamics-and-hto-safety",
+      "section": "quick",
+      "title_en": "Real-Time Coordinated Operation of Off-Grid Wind Powered Multi-Electrolyzer Systems Considering Thermal Dynamics and HTO Safety",
+      "authors": "Chang Su, Ming Li, Zhanglin Shangguan, Zhaojian Wang, Bo Yang",
+      "date": "2026-04-12",
+      "pdf": "https://arxiv.org/pdf/2604.10565v1",
+      "score": "6.0",
+      "evidence": "碱性水电解运行与安全约束",
+      "tldr": "针对离网风电制氢系统中多电解槽协调运行的波动性和安全性挑战，本文提出一种集成反馈优化（FO）与投影安全层的两层实时控制框架。该方法利用离散时间控制屏障函数（CBF）处理碱性电解槽的热动力学与氢中氧（HTO）安全约束，在提高风能利用率的同时确保了系统的动态安全性，具有良好的在线计算性能和鲁棒性。",
+      "tags": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "abstract_en": "Coordinated operation of alkaline water electrolysis (AWE) systems with multiple electrolyzers under fluctuating renewable power input is challenging due to varying power availability and dynamic safety constraints. Moreover, the conventional separation between optimization and control may result in inconsistent decisions across timescales. To address these issues, this paper proposes a two-layer coordinated operation method integrating feedback optimization (FO) with a projection-based safety layer. The FO layer generates real-time reference inputs to improve renewable energy utilization, while the safety layer corrects these inputs to ensure compliance with operational and safety constraints. To explicitly address the safety constraints arising from the inertial dynamics of AWE systems, discrete-time control barrier function theory is incorporated into the safety layer, thereby enhancing safety assurance and online computational tractability. Theoretical analysis establishes the feasibility and effectiveness of the proposed method. Case studies based on annual wind generation data show that the proposed method achieves high energy utilization, maintains safe operation, and demonstrates online applicability, scalability, and robustness.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}

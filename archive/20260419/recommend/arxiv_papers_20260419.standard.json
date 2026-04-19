@@ -1,0 +1,129 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-04-19T20:16:28.514049+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 1,
+    "deep_cap": 6,
+    "deep_selected": 1,
+    "quick_candidates": 2,
+    "quick_skim_target": 11,
+    "quick_selected": 2
+  },
+  "deep_dive": [
+    {
+      "id": "2604.14864v1",
+      "source": "arxiv",
+      "title": "Deformation and instability of sessile soap bubbles in an electric field",
+      "abstract": "Interfacial deformation under electric fields is a common phenomenon in many industrial processes. Particularly, we are interested in the dynamics of sessile soap bubbles in a parallel-plate electric field which exhibits a stable deformation regime followed by conical instability. Using side-view imaging, we track the equilibrium shapes, the transition to the unstable regime, and the pre-jet apex dynamics within one experimental system. In the stable regime, the meridional profile is well described by a spheroidal fit, and the aspect ratio collapses across initial bubble sizes onto a single steady-state branch when plotted against the dimensionless field $E^\\ast = \\sqrt{\\mathrm{Bo}_e}$ for data acquired within a fixed ambient session where the electric Bond number $\\mathrm{Bo}_e$ is defined as $\\varepsilon_0 E_0^2 R_0/(2γ)$. The endpoint of this branch marks the transition to the unstable regime. Above onset of instability, the apex sharpens into a cone with half-angle $30.0^{\\circ}$ $\\pm$ $0.6^{\\circ}$, below the classical Taylor value. To quantify the late pre-jet stage, we define the axial distance $b(t)$ from the instantaneous apex to a fixed reference vertex determined from the terminal cone geometry and measure its evolution. The corresponding rate grows as jetting is approached, and a near-tip inertia-capillary model captures the observed logarithmic trend as an approximation. Together, these measurements establish a single-system experimental benchmark in which stable electrocapillary deformation is organized by a single steady-state branch that leads into conical instability and pre-jet dynamics.",
+      "authors": [
+        "Hongsik Kim",
+        "Sunghwan Jung"
+      ],
+      "primary_category": "physics.flu-dyn",
+      "categories": [
+        "physics.flu-dyn"
+      ],
+      "published": "2026-04-16T10:55:15+00:00",
+      "link": "https://arxiv.org/pdf/2604.14864v1",
+      "tags": [
+        "keyword:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries",
+        "query:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "Dynamics and instability of sessile bubbles in an electric field, relevant to bubble regulation.",
+      "llm_evidence_cn": "电场中座滴气泡的动力学和不稳定性，与气泡调节相关。",
+      "llm_evidence": "电场中座滴气泡的动力学和不稳定性，与气泡调节相关。",
+      "canonical_evidence": "电场中座滴气泡的动力学和不稳定性，与气泡调节相关。",
+      "llm_tldr_en": "Studies the deformation and conical instability of soap bubbles under parallel-plate electric fields.",
+      "llm_tldr_cn": "研究平行板电场下肥皂泡的变形和锥形不稳定性动力学。",
+      "llm_tldr": "研究平行板电场下肥皂泡的变形和锥形不稳定性动力学。",
+      "llm_tags": [
+        "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries"
+      ],
+      "matched_query_tag": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "matched_query_text": "Bubble evolution dynamics",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "2604.14919v1",
+      "source": "arxiv",
+      "title": "A Numerical and Experimental Evaluation of Microbubble Communication Using OpenFOAM",
+      "abstract": "Reliable communication in confined environments, such as blood vessels or industrial pipelines, remain challenging due to signal attenuation and limited sensor accessibility. Therefore, this work investigates microbubbles as robust information carriers within the Internet of Bio-Nano Things (IoBNT) paradigm, leveraging their established use as ultrasound contrast agents. It presents a combined experimental and numerical analysis characterizing microbubble transport under varying flow conditions relevant to biomedical and industrial applications. Experiments with SonoVue microbubbles in a recirculating water channel validate an OpenFOAM-based Computational Fluid Dynamics (CFD) simulation using the incompressibleDenseParticleFluid solver. Key cases examine water vs. blood-like media and high vs. physiological flow velocities, analyzing the relative influence of fluid properties and advection on microbubble dynamics. Recirculation effects are considered in relation to in vivo circulation timescales.",
+      "authors": [
+        "Annika Tjabben",
+        "Carolin Conrad",
+        "Hans D. Schotten"
+      ],
+      "primary_category": "eess.SP",
+      "categories": [
+        "eess.SP"
+      ],
+      "published": "2026-04-16T12:02:39+00:00",
+      "link": "https://arxiv.org/pdf/2604.14919v1",
+      "tags": [
+        "keyword:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries",
+        "query:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "Numerical and experimental analysis of microbubble transport and dynamics in flow conditions.",
+      "llm_evidence_cn": "流动条件下微气泡输运和动力学的数值与实验分析。",
+      "llm_evidence": "流动条件下微气泡输运和动力学的数值与实验分析。",
+      "canonical_evidence": "流动条件下微气泡输运和动力学的数值与实验分析。",
+      "llm_tldr_en": "Evaluates microbubble transport in confined flows using CFD and experiments for communication applications.",
+      "llm_tldr_cn": "结合实验与CFD模拟研究受限流道中微气泡的输运动力学。",
+      "llm_tldr": "结合实验与CFD模拟研究受限流道中微气泡的输运动力学。",
+      "llm_tags": [
+        "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries"
+      ],
+      "matched_query_tag": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "matched_query_text": "Bubble evolution dynamics",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2604.10565v1",
+      "source": "arxiv",
+      "title": "Real-Time Coordinated Operation of Off-Grid Wind Powered Multi-Electrolyzer Systems Considering Thermal Dynamics and HTO Safety",
+      "abstract": "Coordinated operation of alkaline water electrolysis (AWE) systems with multiple electrolyzers under fluctuating renewable power input is challenging due to varying power availability and dynamic safety constraints. Moreover, the conventional separation between optimization and control may result in inconsistent decisions across timescales. To address these issues, this paper proposes a two-layer coordinated operation method integrating feedback optimization (FO) with a projection-based safety layer. The FO layer generates real-time reference inputs to improve renewable energy utilization, while the safety layer corrects these inputs to ensure compliance with operational and safety constraints. To explicitly address the safety constraints arising from the inertial dynamics of AWE systems, discrete-time control barrier function theory is incorporated into the safety layer, thereby enhancing safety assurance and online computational tractability. Theoretical analysis establishes the feasibility and effectiveness of the proposed method. Case studies based on annual wind generation data show that the proposed method achieves high energy utilization, maintains safe operation, and demonstrates online applicability, scalability, and robustness.",
+      "authors": [
+        "Chang Su",
+        "Ming Li",
+        "Zhanglin Shangguan",
+        "Zhaojian Wang",
+        "Bo Yang"
+      ],
+      "primary_category": "eess.SY",
+      "categories": [
+        "eess.SY"
+      ],
+      "published": "2026-04-12T10:16:19+00:00",
+      "link": "https://arxiv.org/pdf/2604.10565v1",
+      "tags": [
+        "keyword:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries",
+        "query:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "alkaline water electrolysis operation and safety constraints",
+      "llm_evidence_cn": "碱性水电解运行与安全约束",
+      "llm_evidence": "碱性水电解运行与安全约束",
+      "canonical_evidence": "碱性水电解运行与安全约束",
+      "llm_tldr_en": "Develops a real-time coordinated operation method for multi-electrolyzer systems under fluctuating power.",
+      "llm_tldr_cn": "开发了一种波动功率下多电解槽系统的实时协调运行方法。",
+      "llm_tldr": "开发了一种波动功率下多电解槽系统的实时协调运行方法。",
+      "llm_tags": [
+        "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries"
+      ],
+      "matched_query_tag": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "matched_query_text": "Comprehensive review on gas bubble dynamics and regulation strategies in liquid electrolytes for metal batteries and water electrolysis, emphasizing novel synthesis of scattered literature into 7 8 high impact figures with focus on regulation methods (batteries vs. water electrolysis) and latest HER/OER insights beyond existing reviews.",
+      "matched_requirement_id": "req-7",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}
