@@ -1,0 +1,39 @@
+{
+  "label": "2026-04-20",
+  "date": "2026-04-20",
+  "generated_at": "2026-04-20T20:01:37",
+  "count": 2,
+  "papers": [
+    {
+      "paper_id": "202604/20/2604.10565v1-real-time-coordinated-operation-of-off-grid-wind-powered-multi-electrolyzer-systems-considering-thermal-dynamics-and-hto-safety",
+      "section": "quick",
+      "title_en": "Real-Time Coordinated Operation of Off-Grid Wind Powered Multi-Electrolyzer Systems Considering Thermal Dynamics and HTO Safety",
+      "authors": "Chang Su, Ming Li, Zhanglin Shangguan, Zhaojian Wang, Bo Yang",
+      "date": "2026-04-12",
+      "pdf": "https://arxiv.org/pdf/2604.10565v1",
+      "score": "7.5",
+      "evidence": "考虑热动力学和安全性的碱性水电解系统运行。",
+      "tldr": "针对离网风电驱动的多电解槽碱性电解水系统，本文提出了一种集成反馈优化与投影安全层的实时协调运行方法。该方法通过反馈优化层提升能源利用率，并利用离散时间控制屏障函数构建安全层，以应对电解槽热动力学和氢氧交叉带来的动态安全挑战，实现了波动电源下系统的高效、安全与实时运行。",
+      "tags": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "abstract_en": "Coordinated operation of alkaline water electrolysis (AWE) systems with multiple electrolyzers under fluctuating renewable power input is challenging due to varying power availability and dynamic safety constraints. Moreover, the conventional separation between optimization and control may result in inconsistent decisions across timescales. To address these issues, this paper proposes a two-layer coordinated operation method integrating feedback optimization (FO) with a projection-based safety layer. The FO layer generates real-time reference inputs to improve renewable energy utilization, while the safety layer corrects these inputs to ensure compliance with operational and safety constraints. To explicitly address the safety constraints arising from the inertial dynamics of AWE systems, discrete-time control barrier function theory is incorporated into the safety layer, thereby enhancing safety assurance and online computational tractability. Theoretical analysis establishes the feasibility and effectiveness of the proposed method. Case studies based on annual wind generation data show that the proposed method achieves high energy utilization, maintains safe operation, and demonstrates online applicability, scalability, and robustness.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202604/20/2604.14864v1-deformation-and-instability-of-sessile-soap-bubbles-in-an-electric-field",
+      "section": "quick",
+      "title_en": "Deformation and instability of sessile soap bubbles in an electric field",
+      "authors": "Hongsik Kim, Sunghwan Jung",
+      "date": "2026-04-16",
+      "pdf": "https://arxiv.org/pdf/2604.14864v1",
+      "score": "6.0",
+      "evidence": "电场中气泡的动力学与变形",
+      "tldr": "本研究探讨了平行板电场中座滴式肥皂泡的变形与不稳定性。通过侧视成像技术，研究者追踪了气泡从稳定变形到锥形不稳定的演变过程。在稳定阶段，气泡形状符合类球体模型，且长宽比随无量纲电场强度呈现统一规律；当超过临界值时，气泡顶端形成半角约为30度的锥体并产生喷流。该研究为电毛细变形及预喷流动力学提供了单一系统的实验基准。",
+      "tags": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "abstract_en": "Interfacial deformation under electric fields is a common phenomenon in many industrial processes. Particularly, we are interested in the dynamics of sessile soap bubbles in a parallel-plate electric field which exhibits a stable deformation regime followed by conical instability. Using side-view imaging, we track the equilibrium shapes, the transition to the unstable regime, and the pre-jet apex dynamics within one experimental system. In the stable regime, the meridional profile is well described by a spheroidal fit, and the aspect ratio collapses across initial bubble sizes onto a single steady-state branch when plotted against the dimensionless field $E^\\ast = \\sqrt{\\mathrm{Bo}_e}$ for data acquired within a fixed ambient session where the electric Bond number $\\mathrm{Bo}_e$ is defined as $\\varepsilon_0 E_0^2 R_0/(2γ)$. The endpoint of this branch marks the transition to the unstable regime. Above onset of instability, the apex sharpens into a cone with half-angle $30.0^{\\circ}$ $\\pm$ $0.6^{\\circ}$, below the classical Taylor value. To quantify the late pre-jet stage, we define the axial distance $b(t)$ from the instantaneous apex to a fixed reference vertex determined from the terminal cone geometry and measure its evolution. The corresponding rate grows as jetting is approached, and a near-tip inertia-capillary model captures the observed logarithmic trend as an approximation. Together, these measurements establish a single-system experimental benchmark in which stable electrocapillary deformation is organized by a single steady-state branch that leads into conical instability and pre-jet dynamics.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}
