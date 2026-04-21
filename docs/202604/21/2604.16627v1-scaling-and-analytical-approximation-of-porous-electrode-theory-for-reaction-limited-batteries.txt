@@ -1,0 +1,1462 @@
+Title: Scaling and Analytical Approximation of Porous Electrode Theory for Reaction-limited Batteries
+
+URL Source: https://arxiv.org/pdf/2604.16627v1
+
+Published Time: Tue, 21 Apr 2026 00:17:53 GMT
+
+Number of Pages: 37
+
+Markdown Content:
+# Scaling and Analytical Approximation of Porous Electrode Theory for Reaction-limited Batteries 
+
+Shakul Pathak 1, Martin Z. Bazant 1,2,z  
+
+> 1
+
+Department of Chemical Engineering, Massachusetts Institute of Technology, Cambridge, Massachusetts 02139, USA  
+
+> 2
+
+Department of Mathematics, Massachusetts Institute of Technology, Cambridge, Massachusetts 02139, USA  
+
+> z
+
+Corresponding author. E-mail: bazant@mit.edu (M.Z.B.) 
+
+Abstract. Porous electrode theory (PET) provides essential insights into electrochemical states, but its computational complexity hinders real-time control and obscures scaling relations. To bridge the gap between high-fidelity simulations and reduced-order models, we present a framework of scaling analysis and analytical approximations. By assuming high-performance electrodes minimize transport limitations and overpotentials, we derive a simplified “lean model” governed by four dimensionless numbers: (i) a traditional Damköhler number, 
+
+Da , scaling the characteristic reaction rate to the diffusion rate in the electrolyte-filled pores; (ii) the “process Damköhler number,” Da p, scaling the reaction rate to the applied capacity utilization rate (C-rate); (iii) the “wiring Damköhler number,” Da w, scaling the reaction rate to an effective electromigration rate for ions in the pores in series with electrons in the conducting matrix; and (iv) the “capacitive Damköhler number,” Da c, comparing the rates of Faradaic reactions and double-layer charging. For batteries, we derive analytical solutions for standard protocols, including galvanostatic discharge, chronoamperometry, and electrochemical impedance spectroscopy. Validated against numerical simulations of a practical NMC half-cell, our formulae show excellent agreement at negligible computational cost. This interpretable, physics-based framework accelerates battery design and state estimation while unifying the modeling of batteries, supercapacitors, fuel cells, and other porous electrode systems. 
+
+Keywords : lithium-ion batteries, porous electrode theory, equivalent circuit models 
+
+> arXiv:2604.16627v1 [eess.SY] 17 Apr 2026
+
+1. Introduction 
+
+Porous electrode theory (PET) provides a unifying and widely accepted mathematical framework for physics-based modeling of electrochemical systems [1], such as batteries, supercapacitors, fuel cells, electrolyzers, and desalination and electrosorption systems, which maximize capacity and power density through the use of porous electrodes. Mathematical models based on PET are used to support research, scale-up, and deployment of lithium-ion batteries (LIBs) [2], driven by growing demand for electric vehicles, portable electronics, robots, and grid-scale energy storage [3]. Mathematical modeling can also play a crucial in the engineering of battery-like systems for selective ion extraction [4], as well as in in electro-sorption based capacitive deionization, energy storage and energy harvesting [5]. Here we focus on the important case of a Li-ion battery constructed from two porous electrodes—a cathode (e.g., Li xNi yMn z Co wO2 (NMC), Li xCoO 2 (LCO)) and an anode (e.g., graphite, Li 4+ xTi 5O12 (LTO))—separated by a porous membrane. The battery’s response is governed by a complex interplay of physical phenomena occurring across multiple scales within the electrode’s composite matrix. This matrix consists of active material, conductive additives, binder, and electrolyte [1]. The complexity of these interactions makes predicting battery response difficult. Furthermore, interpreting datasets from experimental characterization including electrochemical tests (e.g., galvanostatic cycling, impedance spectroscopy) and materials analysis (e.g., X-ray diffraction, electron microscopy) is challenging and often requires sophisticated models [6]. A spectrum of battery models is available today, ranging in physical fidelity and computational cost [7, 8]. At one end, equivalent circuit models (ECMs) are widely applied in battery management systems (BMS) for state-of-charge estimation due to their computational efficiency [9, 10]. However, their empirical nature limits their predictive power, particularly as the cell degrades and develops internal heterogeneities, leading to physically inconsistent predictions [11]. At the other end of the spectrum are multiphysics models founded upon PET, as introduced by Newman and collaborators [12], building on de Levie’s transmission-line model of porous-electrode “wiring" and distributed capacitance [13]. Over the past 30 years, the Doyle–Fuller–Newman (DFN) model [14] and its variants have provided the standard macroscopic description of battery behavior rooted in microscopic transport and kinetics. These models are widely employed for cell design and performance prediction [7], although they have some limitations. In particular, the classical DFN framework is best suited for solid-solution active materials and inherently cannot describe common phase-separating materials, such as lithium iron phosphate (LFP) or graphite, where the cell voltage is an emergent property of inhomogeneous concentration profiles [15]. To address this limitation, Multiphase Porous Electrode Theory (MPET) was developed [16], which generalizes the classical framework using nonequilibrium thermodynamics [17] and Cahn-Hilliard phase-field 2models [18] to describe a wider range of active materials [19]. This approach successfully captures complex behaviors, such as mosaic instabilities [20, 21] and electro-autocatalysis [22, 23], and has been successful in predicting experimental data from phase-separating porous electrodes [24, 19, 25, 26]. While physics-based models such as DFN and MPET provide quantitative insights into battery operation, their complexity often limits their use in applications requiring real-time feedback, such as state estimation within a BMS or large-scale parameter optimization [27, 28, 29]. Volume-averaged approaches such as MPET and DFN perform numerical multiscale simulations of the internal battery state but rely on assumptions about system size, heterogeneity, and transport mechanisms. This creates a bottleneck in model fidelity, often leading to qualitative rather than quantitative agreement in commercial systems. Furthermore, simulations of ensembles of particles (often thousands) with more than 20 partially correlated parameters [30] are difficult to invert given limited experimental datasets of electrode response. Typical experimental datasets (e.g., constant current (CC), linear sweep voltammetry (LSV), voltage/current pulsing) represent the average behavior of millions of particles with diverse heterogeneities, such as size, coating density, and electrochemically active area [31]. Identifying all parameters in an MPET or DFN model is not only computationally challenging but is also an ill-posed problem requiring careful strategies to limit overfitting [32]. The identifiability and computational speed barriers presented by numerical simulations pose significant challenges to the widespread application of physics-based approaches [33, 34]. This highlights the need for reduced-order models that retain the predictive power of porous electrode theory but are amenable to solutions in a reduced space of essential physical parameters. The value of such reduced porous electrode models is already recognized. Examples include simpler numerical models such as the single particle model (SPM) [35, 36] or the single particle model with electrolyte (SPMe) [37, 38, 39], which require fewer parameters. The SPM considers the asymptotic limit of the DFN model under high electronic conductivity in the conductive backbone and high ionic transport in the electrolyte phase [35]. The SPMe builds beyond the SPM by making first-order corrections for ionic transport limitations in the electrolyte [27, 38]. More sophisticated reduced-order approaches, such as population-based approaches for particles in an electrolyte bath and basis function expansions for intra-particle transport, have also been proposed [40, 41]. In this work, we perform a general scaling analysis and derive analytical approximations to model reaction-limited solid-solution LIB electrodes. We begin from a full, coupled DFN model in the limit of fast transport in electrode particles. We then linearize the overpotential dependence of the intercalation kinetics, guided by coupled ion-electron transfer (CIET) theory [42] and extensive experimental data for Li-ion batteries [43]. These approximations allow us to obtain closed-form analytical solutions for key electrochemical variables, which are validated against 3full numerical simulations for typical electrochemical protocols such as galvanostatic (dis)charge, chronoamperometry, and electrochemical impedance spectroscopy. Our framework reveals specialized expressions that clarify the connection between key dimensionless groups and battery behavior. This can greatly accelerate cell design, especially when experimental data is limited. Furthermore, it enables high-fidelity battery state estimation via fast physics-based, data-driven, or hybrid onboard diagnostics through the integration of our model with machine learning approaches. Our solution approach forms a basis for powerful yet simple quantitative models of industrially relevant battery materials with challenging physics, such as phase change and degradation [44, 45, 46]. The rest of the paper is organized as follows: Section 2 formulates the governing equations, introduces assumptions for the reaction-limited regime, and derives scalings to reveal dimensionless groups that characterize battery response. Section 4 derives example solutions for key electrochemical protocols—including galvanostatic discharge, chronoamperometry, and electrochemical impedance spectroscopy. In Section 6, these solutions are benchmarked against high-fidelity numerical simulations (MPET and PyBaMM) for realistic NMC parameters. Finally, Section 7 summarizes the findings and discusses implications for battery state estimation. 
+
+2. Porous Electrode Theory 
+
+This section presents the governing equations and key assumptions. With the goal of developing a reduced-order model, our work builds upon the porous-electrode theory by Newman and Tiedemann [12], which adds electrochemical reactions and solid-state diffusion to the transmission line models of porous electrode charging introduced by de Levie [13]. The composite electrode is modeled using volume averaged mass and charge balance equations within the electronically conducting solid phase, the electrolyte phase and the active particles. The resulting system of equations forms the basis for analysis in the next section. This allows for the simplification that the intercalant concentration, cs, is spatially uniform within each particle. The evolution of this volume-averaged concentration is thus governed solely by the interfacial charge-transfer current density, j.
+
+2.1. Electron Transport 
+
+Charge conservation in the solid matrix is given by, 
+
+−∂i s
+
+∂x = −apj (1) 
+
+ϕs is the (Galvani) potential of electrons in the solid conductive phase, ap is the active internal surface area per volume of the porous electrode, and the solid-phase current density is is typically described by Ohm’s law, is = −σs∇ϕs, with an effective electronic conductivity, σs.42.2. Electrolyte Transport 
+
+Transport in the electrolyte is described using binary concentrated solution theory [1]. Combining the anionic and cationic species conservation into one, the species and charge balance equations in the electrolyte are given by, 
+
+ϵp
+
+∂c l
+
+∂t = ∂∂x 
+
+
+
+Deff 
+
+∂c l
+
+∂x 
+
+
+
+− 1 − t+
+
+F apj (2) 
+
+−∂i l
+
+∂x = apj (3) where Deff is the effective ionic diffusivity that may be a function of electrolyte composition and the ionic current density, il, is a function of gradients in electrolyte potential, ϕl, and salt concentration, typically expressed in mol/L or mol/m 3, is cl :
+
+il = −κl
+
+∂ϕ l
+
+∂x + κl
+
+2RgTF (1 − t+)∂ ln cl
+
+∂x (4) where κl is the electrolyte concentration dependent ionic conductivity and RgT /F =
+
+kB T /e is the thermal voltage. Note that ϕl is the potential with respect to a Li /Li +
+
+reference. 
+
+2.3. Charge Transfer Kinetics 
+
+An essential aspect of PET is the model of Faradaic reaction kinetics at the internal porous electrode/electrolyte interface. For example, in this paper, we focus on the lithium ion intercalation reaction, 
+
+Li + + e− ⇌ Li (int) (5) where Li (int) is the reduced state of the reaction, consisting of an intercalated Li + ion plus a nearby electron, which reduced the electrode matrix [17]. The Faradaic current density j generally depends on the overpotential, η = ( μLi (int) − μLi + − μe)/e , defined in terms of electrochemical potentials ( μi) of the reacting species, as the free energy of reaction per charge transferred [17]. Various models of the reaction mechanism can be used to derive the functional form of the reaction rate depending on overpotential, temperature, and concentrations. For the concentrated electrolytes, Frumkin effects of interfacial charge in the electric double layer [47] are usually neglected due to strong charge screening, which corresponds to the Helmholtz limit of PET [48]. The standard phenomenological model of electrochemical reaction kinetics is the Butler-Volmer equation [49, 50], 
+
+jBV = kBV fBV (˜ cs, ˜cl)(exp( −α˜η) − exp((1 − α)˜ η)) (6) where kBV is an empirical pre-factor and fBV (˜ cs, ˜cl) captures the concentration (or more generally, activity) dependence in the exchange current density. Although 5widely used in PET, departures from BV kinetics are often seen in the form of curved Tafel plots, especially for Li-ion batteries [51, 43]. To account for this, the BV equation is typically modified by adding a fitted film resistance that bends the Tafel plots [52]. This is a simple approach that often succeeds in fitting the curved Tafel plots but leaves open questions about the applicability of the framework beyond the fitting data [53]. Moreover, consistent departures from BV in kinetic measurements across different materials, solid concentrations ( ˜cs) and temperatures remain difficult to justify with a fitted film resistance. A more systematic, physics-based approach is provided by the quantum-mechanical theory of coupled ion-electron transfer (CIET) [17, 54]. The BV equation can be derived from CIET theory in the limit of “ion-coupled electron transfer" (ICET), 
+
+jICET = kICET fICET (˜ cs, ˜cl)(exp( −α˜η) − exp((1 − α)˜ η)) (7) where the free energy of ion transfer exceeds the Marcus reorganization energy, resulting in theoretical expression for the exchange current density and rate prefactor related to microscopic interfacial properties [17]. However, most common battery materials have been found to exhibit CIET kinetics which are better approximated by the opposite limit of “electron-coupled ion transfer"(ECIT) in which electron transfer is rate limiting [51, 43], 
+
+jECIT = kECIT 
+
+ ˜cs
+
+1 + exp( −˜ηf ) − ˜cl
+
+1 + exp(˜ ηf )
+
+
+
+erfc 
+
+ ˜λ +
+
+q
+
+1 + 
+
+p˜λ + ˜ η2
+
+> f
+
+2
+
+p˜λ
+
+ (8) where ˜cs and ˜cl are scaled solid filling fraction and electrolyte concentration respectively, ˜ηf is the formal overpotential scaled by RgT /F = kB T /e , ˜λ is the reorganization energy scaled by thermal voltage and kECIT and kICET , are lumped product pre-factors with terms having Arrhenius dependence on the activation energy and the coupling between the donor and acceptor states (chemisorption function)[42]. A uniformly valid approximation interpolating between the ICET and ECIT limits is also available [17]. As discussed earlier, kinetic studies of Li-ion battery electrodes often show significant deviation from exponential rise in current with overpotential predicted by Tafel’s law. The deviation typically leads to curved Tafel plots with scaling that is slower than exponential and motivates the following question: “ How well can intercalation in LIBs be approximated using a linear function of overpotential? ” To answer this, we compiled kinetic measurements for select cathode materials (NCM, LCO, NCA) [55, 56, 57] in Figure 1. Note that the plot is on a linear scale. Straight-line fits to the experimentally observed reaction kinetics reveal a visibly linear trend up to overpotentials as high as 5–10k BT/e. This covers a significant range of kinetic overpotentials in battery operation. Consequently, real-world battery kinetics may be 6approximated by relationships that are linear in overpotential. This approximation forms the basis for our approach in Section 4. 
+
+Figure 1: Experimental measurements of intercalation kinetics in LIBs (scatter) with linear fits (solid). Data taken from Ref. [57, 56, 55, 43]. Current densities are scaled by the maximum magnitude for each dataset. 
+
+2.4. Reaction-limited Active Particles 
+
+When transport of the intercalant (Li) within the particle can be described using a flux Fs, the species conservation equation within the active particle becomes, 
+
+∂c s
+
+∂t = −∇ · Fs (9) where Fs is based on irreversible thermodynamics and cs once again is the intercalation concentration in mol/m 3. This equation must be specified with an initial condition i.e. typically a homogeneous concentration profile. Since electrode particles undergo (de)insertion with the electrolyte, the boundary condition must include the charge transfer current. For a particle with a surface normal ˆn, this is given by matching the flux with the interfacial current density, 
+
+Fs · ˆn = − jF (10) The average concentration in the particle, ⟨cs⟩p, only depends on the integrated interfacial charge transfer current density and is given by, 
+
+∂⟨cs⟩p
+
+∂t =
+
+R 
+
+> Ap
+
+jdA F
+
+1
+
+Vp
+
+(11) 7where Ap and Vp denote electrochemically active area and volume of the particle. The integral in RHS must be evaluated at points on the surface where the concentration is a solution to Equation 9 and is generally not uniform. For a fixed particle geometry and interfacial kinetics, the description of Fs
+
+influences the dynamic concentration profile on the electrochemically active area in the RHS of Equation 11. Typically assumed to obey Fick’s law, Fs can be more complex depending on the non-equilibrium thermodynamic description of quasi-neutral polaron transport in the electrode material [58]. This introduces significant complexities requiring microscopic description of the transport in the electrode material having contributions from coupled anisotropic concentration, interfacial energy, strain, and temperature effects [59, 60]. Equation 11 is greatly simplified in the limit of fast intra-particle transport (reaction-limited electrode) as the average concentration ( ⟨cs⟩p) collapses to the concentration cs in the particle with Equation 11 now replaced by, 
+
+∂c s
+
+∂t ≈ jFAp
+
+Vp
+
+(12) where cs can still depend on the electrode position, x, through electrolyte polarization in j. Seemingly restrictive at first glance, there is growing evidence to suggest that LIB electrodes may be reaction-limited in practice. For instance, reaction-limited single crystal NMC particles exhibiting size-dependent fictitious phase transformations [23], agglomerate electrodes with electrolyte-infiltration enhanced transport [61] and sub-micron LFP platelets well described by the Allen-Cahn reaction model, which neglects solid-state diffusion in the active material [24, 31]. 
+
+3. Scaling Analysis 
+
+A critical step in simplifying PET and revealing its mathematical structure is the identification of dimensionless groups that govern the solutions, based on the characteristic scales for length, time, potential, and concentrations. Consider an electrode of thickness L, nominal porosity ϵ, active material fraction ϵam , electrolyte concentration cl, ref , potential ϕref , maximum solid concentration cs, max , and let tp be the process timescale (e.g., 1 hour for 1 C discharge). The following dimensionless variables, denoted by a tilde (~), can then be defined based on characteristic scales for length ( ˜x = x/L ), time ( ˜t = t/t p), particle concentration ( ˜cs = cs/c s, max ), electrolyte concentration ˜cl = cl/c l, ref and potentials ˜ϕl = ϕl/ϕ ref , ˜ϕs = ϕs/ϕ ref . While various choices are possible in computation, the most natural potential scale is the thermal voltage, ϕref = kB T /e = RgT /F , which arises in all models of thermally activated reaction kinetics. Therefore, thermal voltage is chosen as the potential scale henceforth. With these definitions, we arrive at the following systems of dimensionless 8equations for a reaction-limited porous electrode, 
+
+∂˜cs
+
+∂˜t = Da p˜j (13) 
+
+˜τl
+
+∂˜cl
+
+∂˜t = ∂∂ ˜x
+
+
+
+˜Deff 
+
+∂˜cl
+
+∂ ˜x
+
+
+
+− Da ˜j + Da −1
+
+> c
+
+∂∆ ˜ϕ∂˜t
+
+!
+
+(14) 
+
+∂2∆ ˜ϕ∂ ˜x2 = −Da w ˜j − Da −1
+
+> c
+
+∂∆ ˜ϕ∂˜t
+
+!
+
+(15) where ˜j = j/j 0 for a reference current per active area j0, ˜Deff = Deff /D ref for a reference electrolyte diffusivity Dref = D(cl, ref ). ∆ϕ = ϕl − ϕs is defined to combine the two charge balance equations into one equation (Appendix A.1). Five physically meaningful dimensionless groups appear naturally, 
+
+Da = L2j0ap(1 − t+)
+
+F ϵ pDref cl, ref 
+
+(16) 
+
+Da p = tpj0ap
+
+εam F c s,max 
+
+(17) 
+
+Da w = F L 2j0ap
+
+RgT σ eff 
+
+(18) 
+
+Da c = F j 0tp
+
+RgT C DL 
+
+(19) 
+
+˜τl = L2
+
+Dref tp
+
+(20) where the first four compare various porous-electrode time scales to the characteristic reaction time, set by the exchange current per volume, j0ap: (i) Da is a traditional Damköhler number, defined as the ratio of the reaction rate to a characteristic diffusion rate in the electrolyte; (ii) Da p is the “process” Damköhler number, which compares the reaction rate with the rate of capacity utilization (C-rate) set by the applied current; (iii) Da w is the “wiring Damköhler number,” defined as the ratio of the reaction rate to an effective charge transport rate, based on the combined electronic and ionic conductivity, 
+
+σeff =
+
+
+
+σ−1 
+
+> s
+
++ κ−1 
+
+> l
+
++ 2RgTF L 2j0ap
+
+(1 − t+)Da 
+
+−1
+
+, (21) which represents ionic, electronic and Faradaic charge transfer processes in series; and (iv) Da c is the “capacitive Damköhler number, which compares the reaction rate to the rate of capacitive charging of the electric double layers. Finally, ˜τl is the ratio of the electrolyte diffusion time to the process time. Note that Da w includes the ionic conductivity κl, which generally depends on the electrolyte concentration, ˜cl.Damköhler numbers are widely used in chemical engineering for reactor design [62], and those defined in Eqs. (16)-(21) could have similar impact on the design 9of electrochemical systems, well beyond the range of validity of the approximate models derived here. The importance of dimensionless groups is well known in fluid mechanics, where the Reynolds number governs transitions from creeping to turbulent flows, even when mathematical models are too complicated to solve analytically. In electrochemistry, various definitions of the traditional Damköhler number Da have been proposed to scale reaction rates to diffusion rates in fuel cells and flow batteries [63, 64, 65, 66, 67], electro-sorption based separations [68, 69], lithium-air batteries [70], electrodeposition [71, 72], and voltammetry [73]. Similarly, for electrocatalysis [74, 70, 75, 76, 77, 78], lithium-sulfur batteries [79] and thermoelectrochemical cells [80], the competition of reactions and diffusion in porous electrodes has also been expressed in terms of the equivalent Thiele modulus, ϕ =√Da . For phase-separating battery materials, Damkohler numbers have been defined that compare intercalation reaction kinetics with solid-state diffusion [81, 22, 82], and phase morphologies from diverse experiments and simulations have been collapsed by a universal scaling law [83], which compares Da with a process Damköhler number (ratio of exchange current to applied current) analogous to Da p. A capacitive Damköhler number similar to Da c has also been defined for reactive porous electrodes in capacitive deionization [48]. Building on these isolated cases, however, our scaling analysis based on four Damköhler numbers ( Da, Da p, Da w, Da c, ˜τl) covers a much wider range of engineering conditions for porous electrodes. 
+
+4. Lean Model Equations 
+
+Equations 13-15 derived in Section 3 present a system of coupled PDEs that could, in principle, exhibit widely different dynamics depending on the description of the reaction kinetics ( ˜j) and the electrode material thermodynamics ( ∆ ˜ϕeq ). The functional forms of ˜j and ∆ ˜ϕeq are generally non-linear, which makes general analytical solutions nearly impossible to derive. In this section, we derive a “lean model" of simplified dimensionless PET equations, which permits analytical solutions and fast computations, based on two key assumptions: (i) Linear reaction kinetics: Charge transfer kinetics is well approximated by a linearized overpotential dependence, ˜j ∼ − f (˜ cs, ˜cl)˜ η, where the exchange current prefactor generally depends nonlinearly on the concentrations and temperature. (ii) Fast solid diffusion: Concentration dependence in ˜j ∝ f (˜ cs, ˜cl) and ∆ϕeq are well approximated by ˜cs ∼ ⟨ ˜cs⟩ where ⟨.⟩ represents a spatial average. These approximations significantly simplify the PET equations, while retaining remarkable accuracy over a wide range of conditions, as illustrated below. The first assumption is both practically and theoretically motivated and asserts a nearly constant Faradaic resistance, which depends on reactive species concentrations and temperature. This assumption is supported by experimental measurements 10 of LIB intercalation rates discussed in Section 2.3 and is consistent with the predictions of coupled ion-electron transfer theory over the typical range of activation overpotentials [43, 42]. The second assumption considers the deviation of concentration from its spatial average, δ˜cs = ˜ cs − ⟨ ˜cs⟩ to be small ( δ˜cs ≪ ⟨ ˜cs⟩). This is motivated by both mathematical and practical considerations. From a mathematical standpoint, when the electrode behaves like a solid solution such that ∂∆ϕeq  
+
+> ∂˜cs
+
+< 0, the formation of lithiation zones with large boundary concentration gradients is unlikely [22]. We show this in Appendix A.2 by analyzing the leading order solution the governing equations in the limit of negligible electrolyte polarization effects. From a more practical perspective, experimental maps of internal lithiation profiles in solid-solution electrode materials such as NMC materials consistently show heterogeneities that have significant randomness at particle length scales ( ∼ 1μm) and at thin electrode scales (∼ 10 μm) [84]. These spatial profiles are not predicted by classical DFN porous electrode models assuming simple models of solid diffusion in spherical particles and liquid electrolyte diffusion in porous electrodes. In contrast, this heterogeneity can be largely captured by reaction-driven population dynamics assuming particles of nearly uniform concentration affected by electro-autocatalysis [23, 22]. This work suggests that the behavior of a porous electrode with millions of interacting particles reflects spatially averaged intra-particle concentration profiles, approximately described by ⟨˜cs⟩ at the porous electrode scale. It is expected that such an approximation is most realistic for thin ( O(10) μm) electrodes and will need correction terms for transport limitations in progressively thicker electrodes (> O (100) μm) [85, 86]. We later compute corrections to deal with this practical limitation. We are now ready to incorporate these two assumptions, which yields the following system of equations, 
+
+∂˜cs
+
+∂˜t = −Da pf (˜ cs, ˜cl)˜ η (22) 
+
+˜τl
+
+∂˜cl
+
+∂˜t = ∂∂ ˜x
+
+
+
+˜Deff 
+
+∂˜cl
+
+∂ ˜x
+
+
+
+− Da −f (⟨˜cs⟩, ˜cl)˜ η + Da −1
+
+> c
+
+∂∆ ˜ϕ∂˜t
+
+!
+
+(23) 
+
+∂2 ˜η∂ ˜x2 = Da w f (⟨˜cs⟩, ˜cl)˜ η + Da −1
+
+> c
+
+∂∆ ˜ϕ∂˜t
+
+!
+
+(24) where we define ˜η = ∆ ˜ϕ − ∆ ˜ϕeq to reformulate the equations in a more compact form. For most practical applications, the transport of ions in the electrolyte is much faster than the overall discharge process [38]. This separation of timescales can be formalized by evaluating ˜τl ≪ 1, which compares the electrolyte diffusion timescale (τl = L2/D eff ) to the discharge timescale ( tp). This justifies neglecting the transient accumulation term for ions in the electrolyte, ∂c l/∂t , which we assume for simplicity 11 hereafter. 
+
+5. Analytical Solutions of the Lean Model 
+
+5.1. Constant Current 
+
+We will first derive approximate solutions for galvanostatic (dis)charge. Consider a galvanostatic discharge with a specified C-rate. Then, the process timescale (in seconds) is naturally given by, tp ∼ 3600  
+
+> C-rate
+
+. For typical battery discharge, tp is on the order of O(10 min) [87, 88]. This is significantly longer than double layer charging and electrolyte transport timescales so that Da −1 
+
+> c
+
+, ˜τl ≪ 1. Therefore, to a first approximation, capacitive and accumulation terms in Equations 22-24 can be dropped. The final set of approximated governing equations is 
+
+∂˜cs
+
+∂˜t = −Da pf (˜ cs, ˜cl)˜ η (25) 
+
+∂2˜cl
+
+∂ ˜x2 ≈ − Daf (⟨˜cs⟩, ˜cl)˜ η (26) 
+
+∂2 ˜η∂ ˜x2 ≈ Da wf (⟨˜cs⟩, ˜cl)˜ η (27) where for small polarization effects, ˜Deff is approximated as ˜Deff ≈ 1. We now analytically compute the solution for ˜η.First consider the limit of negligible polarization i.e., Da ≪ Da p for which 
+
+˜cl ≈ ˜cl, 0. Equation 27 becomes a second order linear ODE with a Neumann boundary condition for current density at the current collector, ∂ ˜η∂ ˜x |˜x=1 = −Da w,σ  
+
+> Da p
+
+. The solution can be expressed in terms of hyperbolic cosine functions as, 
+
+˜η = (⟨˜η⟩Λ2 + Da w,σ /Da p) cosh(Λ(˜ x − 1)) − Da w,σ /Da p cosh(Λ˜ x)Λ sinh Λ (28) where Λ = pDa wf (⟨˜cs⟩) captures the combined impact of filling fraction dependent kinetics and wiring on the impedance. Da w,σ = F L 2j0ap/(RgT σ s) is the solid phase wiring Damköhler number and the process timescale, tp in Da p is tp = 3600 /C-rate seconds. The spatially averaged overpotential, ⟨˜η⟩ is set by the current constraint, 
+
+D∂˜cs
+
+∂˜t
+
+E
+
+= −Da pf (⟨˜cs⟩)⟨˜η⟩ (29) 
+
+=⇒ ⟨ ˜η⟩ = − 1
+
+Da pf (⟨˜cs⟩) (30) The voltage across a half cell is given by Vcell = ϕs(˜ x = 1) − ϕref (˜ x = 0) .This can be found by recasting the governing equation for ϕs (Appendix A.1) in terms of η,
+
+∂2 ˜ϕs
+
+∂ ˜x2 = Da w,σ 
+
+Da w
+
+∂2 ˜η∂ ˜x2 (31) 12 Using consistent boundary conditions of current density at current collector,    
+
+> ∂˜ϕs
+> ∂˜x
+
+|˜x=1 = −Da w,σ  
+
+> Da p
+
+and no electronic current at separator, ∂ ˜ϕs  
+
+> ∂˜x
+
+|˜x=0 = 0 results in an expression of ϕs in terms of η as, 
+
+˜ϕs = Da w,σ 
+
+Da w
+
+(˜ η − ˜η′|˜x=0 ˜x) + 
+
+
+
+1 − Da w,σ 
+
+Da w
+
+ 
+
+˜η|˜x=0 + ∆ ˜ϕeq (⟨˜cs⟩)
+
+
+
+(32) The voltage curves are obtained from simply plugging ˜x = 1 in Equation 28, 
+
+˜ϕs,app = Da w,σ 
+
+Da w
+
+(˜ η|˜x=1 − ˜η′|˜x=0 ) + 
+
+
+
+1 − Da w,σ 
+
+Da w
+
+ 
+
+˜η|˜x=0 + ∆ ˜ϕeq (⟨˜cs⟩)
+
+
+
+(33) Equation 33 will be used for galvanostatic (dis)charge voltage ( ∆ϕapp ) predictions in Section 6. 
+
+5.2. Voltage Pulse 
+
+A variety of experimental protocols apply current pulses (e.g. HPPC) [88] or voltage pulses (e.g., CV hold, chronoamperometry) [87]. The analysis for a constant current pulse largely follows the galvanostatic protocol, so we focus on the current response to voltage pulse. The approximate governing equations for a voltage pulse are given by, 
+
+∂˜cs
+
+∂˜t ≈ − Da pf ˜η (34) 
+
+∂2 ˜η∂ ˜x2 ≈ Da w f ˜η + Da −1
+
+> c
+
+∂∆ ˜ϕ∂˜t
+
+!
+
+(35) where we have assumed that the pulses are not severe enough to cause significant electrolyte polarization ( ˜cl ∼ 1) and f = f (⟨˜cs⟩, 1) . Taking the typical limit of long ( O(10 min)) chronoamperometry timescales, for which Da −1 
+
+> c
+
+· Da w ≪ 1, the pseudo-steady solution to Equation 35 is given by, 
+
+˜η = ˜ η0(˜ t)cosh(Λ(˜ x − 1)) cosh Λ (36) where ˜η0(˜ t) = ∆ ˜ϕapp − ∆ ˜ϕeq (⟨˜cs⟩) for a fixed applied potential ∆ϕapp and Λ = pDa wf (⟨˜cs⟩). Plugging this in Equation 34, and taking an average yields the scaled current, ˜I = ∂⟨˜cs⟩ 
+
+> ∂˜t
+
+as, 
+
+∂⟨˜cs⟩
+
+∂˜t ≈ − Da pf (⟨˜cs⟩) · (∆ ˜ϕapp − ∆ ˜ϕeq (⟨˜cs⟩)) tanh Λ Λ (37) The above equation can be compactly written as, 
+
+∂⟨˜cs⟩
+
+∂˜t = X (⟨˜cs⟩) (38) 13 for X (⟨˜cs⟩) = −Da pf (⟨˜cs⟩) · (∆ ˜ϕapp − ∆ ˜ϕeq (⟨˜cs⟩)) tanh Λ Λ .While complete analytical treatment of Equation 38 depends on the functional form of X (.), in most experiments the concentration change in a pulsing measurement is small. Therefore, a linear approximation about equilibrium concentration, 
+
+X (⟨˜cs⟩) ≈ ∂X 
+
+> ∂˜cs˜cs,eq
+
+(⟨˜cs⟩ − ˜cs,eq ), is sufficient. This yields an exponentially decaying current which is given by, 
+
+˜I = ∂⟨˜cs⟩
+
+∂˜t ≈ −X ′(˜ cs,eq )(˜ cs, 0 − ˜cs,eq ) exp( −F ′(˜ cs,eq )˜ t) (39) where the initial concentration is ˜cs, 0.
+
+5.3. Impedance 
+
+Finally, we derive the approximate electrochemical impedance spectrum (EIS) of a porous electrode. Since impedance analysis assumes linear response to sinusoidal forcing, no additional approximations are necessary. The impedance is defined as the ratio of complex voltage and current amplitudes, Z(ω) = ϕ∗ 
+
+> I∗
+
+, for a sinusoidal voltage perturbation, δϕ = ϕ∗ejωt , in response to a sinusoidal current perturbation, 
+
+δI = I∗ejωt . For small current perturbation amplitudes I∗, electrolyte polarization effects may be neglected, ˜cl ∼ 1.Accordingly, the key perturbed equations in this case are, 
+
+j ˜ω˜c∗ 
+
+> s
+
+≈ − Da pf ˜η∗ (40) 
+
+∂2∆ ˜ϕ∗
+
+∂ ˜x2 ≈ Da w(f ˜η∗ + Da −1 
+
+> c
+
+j ˜ω∆ ˜ϕ∗) (41) where complex amplitudes for perturbed variables are ˜c∗ 
+
+> s
+
+, ˜η∗, ∆ϕ∗ 
+
+> eq
+
+and ∆ϕ∗ and 
+
+˜ω = tpω is a dimensionless frequency. The choice of tp here is arbitrary since the process timescale is already set by the perturbation frequency 1/ω we can set 
+
+tp = 1 second and drop the tilde ( ˜) on frequency for derivations beyond this point. 
+
+f = f (˜ cs, ˜cl) ss is the value of the concentration dependent pre-factor at steady state. Using the definition of ˜η = ∆ ˜ϕ−∆ ˜ϕeq , the complex amplitudes can be expressed as, 
+
+˜η∗ = ∆ ˜ϕ∗ − ∂∆ ˜ϕeq 
+
+∂˜cs ˜cs,ss 
+
+˜c∗ 
+
+> s
+
+(42) Rearranging Equation 42 and differentiating in ˜x twice yields, 
+
+∂2 ˜η∗
+
+∂ ˜x2 = Da w
+
+1 − ∂∆ ˜ϕeq 
+
+> ∂˜cs
+> Da pfjω
+
+f ˜η∗ + Da −1 
+
+> c
+
+jω ˜η∗ + ∂∆ ˜ϕeq 
+
+∂˜cs ˜cs,ss 
+
+˜c∗
+
+> s
+
+!! 
+
+(43) Equations 40 and 43 are second-order linear PDEs that can be solved analytically to obtain 
+
+˜η∗ = Ξκ cosh(Ω(˜ x − 1)) + Ξ σ cosh(Ω˜ x)Ω sinh Ω (44) 14 with, 
+
+Ω = 
+
+vuut Da w
+
+1 − ∂∆ ˜ϕeq 
+
+> ∂˜cs
+> Da pfjω
+
+f + Da −1 
+
+> c
+
+jω − Da pfDa c
+
+∂∆ ˜ϕeq 
+
+∂˜cs ˜cs,ss 
+
+!
+
+(45) where the current matching boundary conditions 
+
+∂ ˜η∗
+
+∂ ˜x ˜x=1 
+
+= Ξ σ = − ˜I∗ Da w,σ 
+
+Da p
+
+11 − ∂∆ ˜ϕeq 
+
+> ∂˜cs
+> Da pfjω
+
+(46) and 
+
+−∂ ˜η∗
+
+∂ ˜x ˜x=0 
+
+= Ξ κ = − ˜I∗ Da w,κ 
+
+Da p
+
+11 − ∂∆ ˜ϕeq 
+
+> ∂˜cs
+> Da pfjω
+
+(47) The impedance of a half cell is, 
+
+Z = ϕ∗  
+
+> s˜x=1
+
+− ϕ∗
+
+> Li
+
+I∗ (48) where ϕ∗ 
+
+> Li
+
+= ϕ∗ 
+
+> l
+
+|˜x=0 = 0 for infinitely fast charge transfer kinetics at Li anode. Comparing the governing equation for ϕs (Appendix A.1) to that for η∗ in Equation 43 leads to the following relationship, 
+
+∂2 ˜ϕ∗
+
+> s
+
+∂ ˜x2 = 1 − ∂∆ ˜ϕeq 
+
+∂˜cs
+
+Da pfjω 
+
+!
+
+Da w,σ 
+
+Da w
+
+∂2 ˜η∗
+
+∂ ˜x2 (49) The solution is given by, 
+
+˜ϕ∗ 
+
+> s
+
+= 1 − ∂∆ ˜ϕeq 
+
+∂˜cs
+
+Da pfjω 
+
+! Da w,σ 
+
+Da w
+
+(˜ η∗ + Ξ κ ˜x) + 
+
+
+
+1 − Da w,σ 
+
+Da w
+
+
+
+˜η∗
+
+> ˜x=0
+
+
+
+(50) where boundary conditions of zero electronic current at separator, ∂ ˜ϕ∗   
+
+> s
+> ∂˜x˜x=0
+
+= 0 and 
+
+ϕ∗  
+
+> l˜x=0
+
+= 0 were used. Substituting Equations 42 in Equation 48, 
+
+Z = tpRgTLε am F 2cs,max 
+
+1 − ∂∆ ˜ϕeq 
+
+∂˜cs
+
+Da pfjω 
+
+! Da w,σ  
+
+> Da w
+
+(˜ η∗|˜x=1 + Ξ κ) + 
+
+
+
+1 − Da w,σ 
+
+> Da w
+
+
+
+˜η∗|˜x=0 
+
+˜I∗
+
+(51) Substituting the analytical solution for ˜η∗ in 44 yields the desired expression for area-normalized impedance, 
+
+Z = Zref 
+
+ΞκΞσ
+
+ 1 + 2Ω sinh Ω 
+
+ + (Ξ 2 
+
+> σ
+
++ Ξ 2
+
+> κ
+
+) cosh Ω Ω sinh Ω 
+
+(Ξ κ + Ξ σ)2 (52) where Zref is the identified scaling for Z, combining reaction and electrode wiring resistances, and is given by 
+
+Zref = Da w
+
+Da p
+
+· RgTF · tp
+
+F Lε am cs,max 
+
+(53) 15 6. Accuracy of the analytical approximations 
+
+In this section, we demonstrate the predictive capabilities of our analytical approximations. We begin by comparing our model predictions against the building blocks of (dis)charging protocols of Li-ion batteries. These are typically galvanostatic or constant current (CC) and, potentiostatic or constant voltage (CV) steps [87]. Following this, we compare the analytical solution in the frequency domain. This is done by comparing Nyquist curves obtained from the analytical formula against simulated frequency domain data for a NMC532 half-cell. Finally, we also visualize limits for which the approximations diverge from simulations. An open access codebase for simulating all the results can be found on Github [89]. To validate the example analytical solutions derived in Section 5.1, we compare model predictions against full numerical simulations of Li-ion batteries using two different software packages, MPET [16] and PyBaMM [90]. Both simulators numerically solve a pseudo-two-dimensional (P2D) model with finite volume spatial discretization and implicit time-stepping [91, 14]. The benchmark is built from default MPET electrode parameters for NMC532 to represent a practical 100 μmthick half-cell with 500 nm spherical single crystal particles and CIET kinetics at the electrode-electrolyte interface. The complete set of baseline simulation parameters are in Appendix A.6. Note that although the chosen reaction model is CIET, any model that can be approximated as linear in overpotential during operation would compare well against analytical solutions (e.g., Butler-Volmer (BV)+Film resistance model). The comparisons are made on three canonical electrochemical protocols: galvanostatic discharge (constant current), chronoamperometry (constant voltage), and electrochemical impedance spectroscopy (frequency domain). Figure 2 (left panel) compares the voltage response predicted by the analytical model (Equation 33) against numerical simulations for discharge at 0.5 C, 1 C, and 2 C rates. The analytical approximation accurately captures the voltage across the entire state-of-charge (SOC) range with RMSE of 76.7 mV. At moderate C-rates ( ≤ 1C), the agreement is excellent, with deviations remaining below ∼60 mV throughout discharge. At higher rates, slight discrepancies emerge near the end of discharge, where electrolyte transport limitations, neglected beyond leading order in the analytical model, begin to influence cell polarization. This is consistent with the scaling condition derived in Appendix A.2, beyond which the pseudo-steady electrolyte approximation breaks down. 16 Figure 2: Comparison of our analytical approximations with the results of full simulations of the same NMC532 porous electrode using two different software packages (PyBaMM [90] and MPET [16]) for both galvanostatic discharge (left) and chronoamperometry (right) on the same model half-cell. For the same half-cell, an initial galvanostatic discharge to 50% SOC, a range of discharge voltage pulses of magnitude ∆V = {25 , 50 , 100 } mV were applied. Figure 2 (right panel) shows the current decay as a function of time. The analytical prediction (Equation 39) exhibits exponential relaxation. The predictions show good agreement, with RMSE values of 0.03, 0.06, and 0.13 mA. The RMSE increases for larger pulses as the linear approximation breaks down. Figure 3 presents Nyquist plots comparing the analytical impedance formula (Equation 51) with simulated frequency-domain data over 10 −3 ≤ ω ≤ 10 3 Hz. The analytical model reproduces the characteristic features: a high-frequency intercept corresponding to the ohmic resistance, an arc feature reflecting interfacial charge-transfer kinetics, and a low-frequency tail associated with ionic transport in the electrolyte [92]. To explore the parametric sensitivity, Figure 3 shows impedance spectra for varying wiring Damköhler number Da w (left) by changing the solid conductivity σs and process Damköhler number Da p by changing the exchange current pre-factor, j0 (right). Reducing the solid phase conductivity enlarges the semicircle diameter, consistent with higher interfacial resistance. On the other hand, reducing the exchange current density increases the semicircle diameter and also shifts the characteristic frequency at which the semicircle appears [76]. The analytical model correctly captures these trends. 17 Figure 3: Comparison against simulated frequency domain EIS response for changing solid conductivity ( σs) (left, RMSE = 0.10 Ω-m2) and exchange current pre-factor (j0) (right, RMSE = 0.13 Ω-m2). Baseline parameters are in yellow. Figures 2 and 3 establish good agreement between our approximations and the simulations for the baseline parameters (Table 1 in Appendix A.6) and mild protocols. Yet, it is expected that the approximations made in Section 4 would break under more extreme conditions where concentration polarization and overpotentials are large. To test the limitations of the approximation, we computed the root-mean-squared error (RMSE) between analytical and simulated voltage curves for galvanostatic discharge. Figure 4 shows RMSE as a function of C-rate, electronic conductivity σs,and initial electrolyte concentration cl, 0. The error remains below 0.1 V for most practical operating conditions, increasing primarily in regimes where: (i) high C-rates induce significant electrolyte polarization ( Da ≫ Da p), violating the pseudosteady assumption; or (ii) low electronic conductivity ( Da w ≫ Da p) causes substantial ohmic losses through the electrode thickness, invalidating the spatially uniform overpotential approximation. 18 Figure 4: Root mean squared error, RMSE (in V) of analytical approximation versus simulated galvanostatic response across C-rates, conductivity ( σs) that impacts wiring, and electrolyte concentrations ( c0) that impacts polarization. 
+
+7. Conclusion 
+
+Lithium-ion batteries are complex electrochemical systems whose performance is governed by coupled transport and reaction phenomena across multiple length and time scales [12, 93]. Understanding and predicting their behavior through physics-based models has become essential for accelerating cell design, optimizing performance metrics, and enabling advanced battery management strategies [94]. However, the computational demands of high-fidelity models like the Doyle– Fuller–Newman (DFN) [14] or Multiphase Porous Electrode Theory (MPET) [16] frameworks have limited their deployment in applications requiring real-time feedback or large-scale parameter optimization. This study presents a systematic framework for reaction-limited single-phase electrodes that bridges the gap between computational tractability and predictive 19 accuracy. The main contributions of this work are (i) the derivation of four key dimensionless groups ( Da , Da w, Da p, Da c) that dictate the electrochemical response of porous electrodes, (ii) practical approximations of PET that yield a "lean model" of simplified, dimensionless governing equations that capture the essential physics, and (iii) analytical solutions of the lean model under conditions relevant for batteries. By exploiting simplifications in the reaction-limited regime and adopting a linearized kinetic description motivated by experimental data, we obtained explicit expressions that reveal the quantitative influence of these dimensionless groups on battery response under canonical battery operating protocols (discharge, pulsing, and EIS). Validation against full numerical simulations demonstrated quantitative agreement within practical operating regimes: voltage deviations remained below 60 mV for moderate C-rates ( ≤ 1C), chronoamperometry values matched within ∼ 90 %, and impedance predictions overlapped across the tested parameter space. This analytical framework enables rapid evaluation of electrode performance without sacrificing the physical basis of porous electrode theory. Another finding of this work is the identification of limits of the approximation given electrode design and operating conditions. The approximations perform well when the wiring and process Damköhler numbers satisfy Da w ≲ 10 2Da p,typically corresponding to thin to moderate ( L ≲ 100 μm ) thickness electrodes, good electronic conductivity, and moderate discharge rates. Beyond these regimes, particularly for thick poorly conducting electrodes or high C-rates where electrolyte polarization becomes significant, corrections accounting for concentration gradients are necessary. We outlined perturbation-based extensions in Appendix A.3 to address these limitations to leading order. Our framework provides a convenient foundation for the development of reduced-order electrochemical models that retain physical interpretability while achieving computational speeds compatible with embedded systems. The explicit dependence of performance metrics on dimensionless groups improves interpretability and facilitates sensitivity analysis [95], parameter identifiability studies [34, 96, 32], and design space exploration [97, 98] with limited experimental data. Further extension to a broader range of electrode materials and chemistries may be possible. Extension of the linearized kinetics approximation to phase-separating materials such as lithium iron phosphate (LFP) or graphite, where concentration heterogeneities and mosaic instabilities play a central role [24, 99], presents a promising avenue for future work on approximations of multiphase porous electrode theory (MPET) [16]. Integration with data-driven approaches, such as hybrid physics-machine learning (hybrid ML) models, could also leverage the computational efficiency of the analytical framework for state estimation and real-time diagnostics in battery management systems [100, 101, 102, 103]. In summary, the lean model and analytical solutions developed in this work provide an interpretable, quantitatively predictive and computationally light 20 alternative to full numerical simulations for reaction-limited single-phase electrodes. By making explicit the connection between electrode design parameters and performance, this framework can accelerate battery innovation and enable physics-guided control strategies in next-generation energy storage and ion separation systems. 
+
+8. Acknowledgments 
+
+This research was supported by Shell International Exploration and Production Inc. Additional support was provided by a MathWorks Fellowship from the School of Engineering at MIT (SP). The authors are grateful to Prof. Yang Shao-Horn, Ryan M. Stephens, Harsh Aggarwal, Shreyanil Bhuyan, Yash Samantaray, Armando R. C. Neto for useful discussions, and particularly Xiaomian Yang for proofreading the equations. 
+
+Appendix 
+
+A1. Derivation of Lean Model 
+
+Here we provide details of the derivation of the simplified PET equations of the lean model analyzed in the main text. Combining all the species and charge balance equations in Section 2, the full system of governing equations are, 
+
+∂c s
+
+∂t = jFAp
+
+Vp
+
+(54) 
+
+εp
+
+∂c l
+
+∂t = ∂∂x 
+
+
+
+εpDeff 
+
+∂c l
+
+∂x 
+
+
+
+− 1 − t+
+
+F apj (55) 
+
+− ∂∂x 
+
+
+
+−κl
+
+∂ϕ l
+
+∂x + κl
+
+2RgTF (1 − t+)∂ ln cl
+
+∂x 
+
+
+
+= apj (56) 
+
+− ∂∂x 
+
+
+
+−σs
+
+∂ϕ s
+
+∂x 
+
+
+
+= −apj (57) where j = −j0f (˜ cs, ˜cl)(∆ ˜ϕ − ∆ ˜ϕeq ) is the linearized form of reaction kinetics with a general non-linear concentration dependent pre-factor f (˜ cs, ˜cl). This is the functional form of kinetics in Section 2.3. The scaled species balance in the reaction-limited particles are derived as, 
+
+∂˜cs
+
+∂˜t = apj0tp
+
+εam F c s,max 
+
+˜j (58) 
+
+=⇒ ∂˜cs
+
+∂˜t = Da p˜j (59) where the concentration scale is cs,max , some process timescale tp and charge transfer current is scaled by j0.21 Next, the scaled electrolyte species balance equation in the liquid phase is derived as, 
+
+∂2˜cl
+
+∂ ˜x2 = j0L2
+
+F ϵ pDeff c0
+
+> l
+
+(1 − t+)ap ˜j − CDL ϕref 
+
+j0tp
+
+∂∆ ˜ϕ∂˜t
+
+!
+
+(60) 
+
+=⇒ ∂2˜cl
+
+∂ ˜x2 = Da ˜j − Da −1
+
+> c
+
+∂∆ ˜ϕ∂˜t
+
+!
+
+(61) where electrolyte concentration scale is c0 
+
+> l
+
+, the voltage scale is ϕref and length scale is electrode thickness L. Note that an additional capacitive term was introduced to account for any double layer effect which may be significant in related systems like supercapacitors. Finally, the scaled charge balance equations in the conducting phase and electrolyte phases are derived. For the solid phase, 
+
+εam σe
+
+∂2ϕs
+
+∂x 2 = −ap
+
+
+
+j + CDL 
+
+∂(ϕl − ϕs)
+
+∂t 
+
+
+
+(62) 
+
+=⇒ ∂2 ˜ϕs
+
+∂ ˜x2 = − L2apj0
+
+ϕref εam σe
+
+˜j − Da −1
+
+> c
+
+∂∆ ˜ϕ∂˜t
+
+!
+
+(63) where σe is the nominal effective conductivity of the conductive backbone. For the ionically conducting liquid phase, 
+
+2(1 − t+)RgT κ l
+
+F ϕ ref 
+
+∂∂ ˜x
+
+ 1˜cl
+
+∂˜cl
+
+∂ ˜x
+
+
+
+− κl
+
+∂2 ˜ϕl
+
+∂ ˜x2 = −L2apj0
+
+ϕref ϵp
+
+˜j − Da −1
+
+> c
+
+∂∆ ˜ϕ∂˜t
+
+!
+
+(64) We now assume up to mild concentration polarization which makes the following approximation reasonable: κl 
+
+> cl
+> ∂c l
+> ∂x
+
+≈ κl ∂˜cl 
+
+> ∂x
+
+(this would become exact in the limit of an ideal dilute electrolyte). Plugging this approximation into Equation 64 gives, 
+
+2(1 − t+)RgT κ l
+
+F ϕ ref 
+
+∂2˜cl
+
+∂ ˜x2 − κl
+
+∂2ϕl
+
+∂ ˜x2 ≈ − L2apj0
+
+ϕref ϵp
+
+˜j − Da −1
+
+> c
+
+∂∆ ˜ϕ∂˜t
+
+!
+
+(65) 
+
+=⇒ ∂2 ˜ϕl
+
+∂ ˜x2 =
+
+ L2apj0
+
+ϕref κlϵp
+
++ 2RgT (1 − t+)Da F ϕ ref 
+
+
+
+˜j − Da −1
+
+> c
+
+∂∆ ˜ϕ∂˜t
+
+!
+
+(66) Subtracting dimensionless equations 66 and 63 gives the combined equation for 
+
+∆ϕ,
+
+=⇒ ∂2∆ ˜ϕ∂ ˜x2 = −Da w ˜j − Da −1
+
+> c
+
+∂∆ ˜ϕ∂˜t
+
+!
+
+(67) Equations 59, 61 and 67 together form the system of scaled equations analyzed in the main text with ϕref = kB T /e = RgT /F .22 A2. Solid Solution Approximation 
+
+Consider the following partitioning of the concentration ( ˜cs) as ˜cs = ⟨˜cs⟩ + δ˜cs. The governing equations then become, 
+
+∂⟨˜cs⟩
+
+∂˜t + ∂δ ˜cs
+
+∂˜t = −Da pf (˜ cs)(˜ η + ∆ ˜ϕeq (⟨˜cs⟩) − ∆ ˜ϕeq ) (68) 
+
+∂2 ˜η∂ ˜x2 = Da wf (˜ cs)(˜ η + ∆ ˜ϕeq (⟨˜cs⟩) − ∆ ˜ϕeq ) (69) Expanding the concentration dependent functions about ⟨˜cs⟩ yields, 
+
+∂⟨˜cs⟩
+
+∂˜t + ∂δ ˜cs
+
+∂˜t = −Da pf ˜η − Da p
+
+∂f ∂˜cs ˜cs=⟨˜cs⟩
+
+˜η − f ∂∆ ˜ϕeq 
+
+∂˜cs ˜cs=⟨˜cs⟩
+
+!
+
+δ˜cs (70) 
+
+∂2 ˜η∂ ˜x2 = Da wf ˜η + Da w
+
+∂f ∂˜cs ˜cs=⟨˜cs⟩
+
+˜η − f ∂∆ ˜ϕeq 
+
+∂˜cs ˜cs=⟨˜cs⟩
+
+!
+
+δ˜cs (71) where f = f (⟨˜cs⟩). Spatial averaging of the first and second equations yield, 
+
+∂⟨˜cs⟩
+
+∂˜t = −Da pf ⟨˜η⟩ − Da p
+
+∂f ∂˜cs ˜cs=⟨˜cs⟩
+
+⟨˜ηδ ˜cs⟩ (72) 
+
+− ∂ ˜η∂ ˜x ˜x=0 
+
+= Da wf ⟨˜η⟩ + Da w
+
+∂f ∂˜cs ˜cs=⟨˜cs⟩
+
+⟨˜ηδ ˜cs⟩ (73) If the leading order solution for ˜η is computed such that one of the boundary conditions is ∂⟨˜cs⟩ 
+
+> ∂˜t
+
+= −Da pf ⟨˜η⟩, the following relations hold (to leading order), 
+
+⟨˜ηδ ˜cs⟩ = 0 (74) 
+
+∂δ ˜cs
+
+∂˜t = −Da pf (˜ η − ⟨ ˜η⟩) − Da p
+
+∂f ∂˜cs ˜cs=⟨˜cs⟩
+
+˜η − f ∂∆ ˜ϕeq 
+
+∂˜cs ˜cs=⟨˜cs⟩
+
+!
+
+δ˜cs (75) If the timescale of the chosen process is such that ∂˜cs 
+
+> ∂t
+
+∼ Da pf ⟨˜η⟩ ∼ 1 (e.g., galvanostatic (dis)charge), the above equation yields the following scaling, 
+
+∂δ ˜cs
+
+∂˜t ∼
+
+ ˜η
+
+⟨˜η⟩ − 1
+
+
+
++ 1
+
+f∂f ∂˜cs
+
+˜η
+
+⟨˜η⟩ + Da pf ∂∆ ˜ϕeq 
+
+∂˜cs
+
+!
+
+δ˜cs (76) where we have taken ∂⟨˜cs⟩ 
+
+> ∂˜t
+
+= −Da pf ⟨˜η⟩ ∼ 1. Comparing terms on RHS in the equation above yields a scaling estimate for the magnitude of δ˜cs,
+
+δ˜cs ∼ 1 − ˜η 
+
+> ⟨˜η⟩
+> 1
+> f∂f ∂˜cs
+> ˜η
+> ⟨˜η⟩
+
++ Da pf ∂∆ ˜ϕeq 
+
+> ∂˜cs
+
+(77) 23 Using the leading order solution for small Da w, ˜η 
+
+> ⟨˜η⟩
+
+= Λ cosh(Λ(˜ x − 1)) / sinh(Λ) , the condition at which the approximation breaks down is obtained as, max x|δ˜cs| ∼ 1 − Λ/ tanh Λ  
+
+> 1
+> f∂f ∂˜cs
+
+Λ/ tanh Λ + Da pf ∂∆ ˜ϕeq 
+
+> ∂˜cs
+
+∼ Λ21 
+
+> f∂f ∂˜cs
+
++ Da pf ∂∆ ˜ϕeq 
+
+> ∂˜cs
+
+< 1 (78) where 1 − Λ/ tanh Λ was approximated to leading order in Λ. Plugging Λ2 = Da wf ,
+
+Da w  
+
+> 1
+> f2
+> ∂f ∂˜cs
+
++ Da p ∂∆ ˜ϕeq 
+
+> ∂˜cs
+
+< 1 (79) for electrodes that behave like solid solution such as NMC532 or LCO, ∂∆ ˜ϕeq  
+
+> ∂˜cs
+
+is typically O(10 2) for typical filling fraction range of 0.2-0.8. Also, for IT-limited CIET kinetics, f (˜ cs) ∼ ˜cαs (1 − ˜cs) =⇒ 1  
+
+> f2
+> ∂f ∂˜cs
+
+∼ O(10) . Therefore, the approximation is reasonable as long as Da w ≲ 10 2Da p, which provides an upper bound on the applied current. 
+
+A3. Electrolyte Polarization 
+
+Ion concentration polarization in the electrolyte becomes significant at high discharge rates, where the Damköhler number Da is no longer negligible compared to Da p.This section derives the leading-order correction to the base model presented in the main text to account for weak electrolyte polarization. We begin with the coupled, pseudo-steady governing equations for the electrolyte concentration, ˜cl, and the overpotential, ˜η:
+
+∂2˜cl
+
+∂ ˜x2 ≈ − Daf (⟨˜cs⟩, ˜cl)˜ η (80) 
+
+∂2 ˜η∂ ˜x2 = Da wf (⟨˜cs⟩, ˜cl)˜ η (81) Combining these two equations yields a direct relationship between the concentration and overpotential gradients: 
+
+1
+
+Da ∂2˜cl
+
+∂ ˜x2 = − 1
+
+Da w
+
+∂2 ˜η∂ ˜x2 (82) Integrating this expression twice with respect to ˜x and applying boundary conditions leads to a simplified linear relationship between the local concentration and overpotential. For weak polarization, we consider a small deviation, δ˜cl, from the reference electrolyte concentration, such that ˜cl(˜ x, ˜t) = 1 − δ˜cl(˜ x, ˜t). The concentration dependence of the reaction kinetics, f (⟨˜cs⟩, ˜cl), can be linearized around ˜cl = 1 :
+
+f (⟨˜cs⟩, ˜cl) ≈ f (⟨˜cs⟩, 1)(1 − αδ ˜cl) (83) 24 where f (⟨˜cs⟩, 1) is the pre-factor at the reference concentration, and α = 1 
+
+> f∂f ∂˜cl˜cl=1
+
+captures the sensitivity of the reaction rate to electrolyte concentration. By spatially averaging the combined PDE and relating the local deviation of overpotential ˜η to the concentration deviation δ˜cl, we obtain: 
+
+δ˜cl ≈ Da Da w
+
+(˜ η − ⟨ ˜η⟩ − ˜η′|˜x=1 (˜ x − 1/2)) (84) where ⟨˜η⟩ is the spatial average of the overpotential. This allows us to reframe the problem as a single linearized ordinary differential equation for the concentration deviation δ˜cl:
+
+∂2δ˜cl
+
+∂ ˜x2 ≈ Daf (⟨˜cs⟩)
+
+
+
+⟨˜η⟩ + ˜ η′|˜x=1 
+
+
+
+˜x − 12
+
+
+
++
+
+
+
+−α˜η′|˜x=1 
+
+
+
+˜x − 12
+
+
+
+− α⟨˜η⟩ + Da w
+
+Da 
+
+
+
+δ˜cl
+
+
+
+(85) This equation can be solved subject to mass conservation, ⟨δ˜cl⟩ = 0 , and the no-flux boundary condition at the current collector, ∂δ ˜cl   
+
+> ∂˜x˜x=1
+
+= 0 . While the general solution of the above equation can be analytically found, the boundary conditions cannot be applied without numerically integrating Airy and Scorer functions. Therefore, to arrive at an approximate analytical form further simplifications become necessary. A reasonable simplification is to assume that under weak electrolyte polarization 
+
+Da is small compared to Da w such that, ˜η′|˜x=1 ∼ Da w,σ /Da p ≪ Da w/Da .Then, the equation can be analytically solved to obtain, 
+
+δ˜cl = (A2 − A1B) cosh( √B(˜ x − 1)) − A2 cosh( √B ˜x)
+
+√B sinh( √B) +
+
+
+
+A1 + A2
+
+
+
+˜x − 12
+
+ 
+
+(86) where B =
+
+
+
+Da w + α Da Da pf
+
+
+
+f (⟨˜cs⟩), A1 = Da Da pB and A2 = Da w,σ f A 1.The final step is to apply the galvanostatic current constraint, R 10 Da p˜jd ˜x = 1 .Substituting the linearized expressions for ˜j and keeping only leading-order terms yields an expression for the average overpotential: 
+
+⟨˜η⟩ ≈ 1
+
+Da pf (⟨˜cs⟩) (87) Finally, the overpotential, ˜η can be found by plugging δ˜cl in Equation 84 to obtain the overpotential ˜η(˜ x) as, 
+
+˜η = Da w
+
+Da 
+
+(A2 − A1B) cosh( √B(˜ x − 1)) − A2 cosh( √B ˜x)
+
+√B sinh( √B) (88) The above expression for ˜η can be substituted in Equation 32 in the main text to get the applied voltage ( ˜ϕs,app ). This completes the first-order correction for weak electrolyte polarization, linking the increased voltage drop to the Damköhler numbers (Da , Da w, Da p) and the kinetic parameters ( f , α). 25 A4. Hierarchical Electrodes 
+
+Hierarchical effects may be important in polycrystalline cathode microstructures with secondary particles composed of agglomerated primary particles and some internal porosity [104]. In this case, the governing equations are multiscale with (i) electrode and (ii) secondary particle (sp) levels. This picture is helpful and has been used in prior work [26]. Consider the agglomerate secondary particle to be spherical with a characteristic size R and an apparent surface current density of ˜jsp . Then the dimensionless system of equations at the electrode level may be re-framed with the scaled current density ˜jl appropriately replaced by ˜jsp .
+
+∂2˜cl
+
+∂ ˜x2 = Da ˜jsp (89) 
+
+∂2∆ ˜ϕ∂ ˜x2 = −Da w˜jsp (90) 
+
+jsp is dependent on the transport and charge transfer kinetics within an agglomerate particle. Define ˜csp l (˜ r = 1 , ˜x, ˜t) = ˜ cl(˜ x, ˜t) at a specific value of ˜x = ˜ x0.Similarly, also define ˜∆ ˜ϕsp l (˜ r = 1 , ˜x, ˜t) = ∆ ˜ϕ(˜ x, ˜t).
+
+∂˜cs
+
+∂˜t = Da sp p f (˜ cs, ˜cl)(∆ ˜ϕeq − ∆ ˜ϕsp ) (91) 
+
+˜∇2 
+
+> r
+
+˜csp l = Da sp f (˜ cs, ˜csp l )(∆ ˜ϕeq − ∆ ˜ϕsp ) (92) 
+
+˜∇2 
+
+> r
+
+(∆ ˜ϕsp ) = −Da sp w f (˜ cs, ˜csp l )(∆ ˜ϕeq − ∆ ˜ϕsp ) (93) where ˜∇r is the r-laplacian in dimensionless spherical coordinates scaled by particle size R. The boundary conditions for the governing equations in ˜csp l and 
+
+∆ ˜ϕsp are symmetry at ˜r = 0 and a matching Dirichlet boundary condition for each variable at ˜r = 1. These are given by ˜csp l (˜ r = 1, ˜x, ˜t) = ˜cl(˜ x, ˜t) and 
+
+˜∆ ˜ϕsp l (˜ r = 1 , ˜x, ˜t) = ∆ ˜ϕ(˜ x, ˜t).The new dimensionless groups at the secondary particle level Da sp p , Da sp and 
+
+Da sp w are analogously defined. 
+
+Da sp p = tpasp j0
+
+(1 − ϵsp )F c s,max 
+
+(94) 
+
+Da sp = j0R2asp (1 − t+)
+
+F ϵ sp Def f c0
+
+> l
+
+(95) 
+
+Da sp w = F j 0R2asp 
+
+RgT
+
+ 1
+
+σsp e
+
++ 1
+
+κsp l
+
+
+
++ 2(1 − t+)Da sp 
+
+κsp l
+
+(96) (97) where the characteristic size of the secondary particle ( R), its porosity ( ϵsp ), and the active surface area-to-volume ratio in the secondary particle ( asp ) are used. The effective electronic ( σsp e ) and ionic conductivity ( κsp l ) in the pores of the secondary particle are defined according to effective medium theory [105]. For 26 simplicity, assume negligible electrolyte polarization. Then, the solution to governing equation for ∆ ˜ϕsp is readily obtained in terms of spherical Bessel functions, 
+
+∆ ˜ϕsp (˜ r, ˜x, ˜t) − ∆ϕeq = (∆ ˜ϕ(˜ x, ˜t) − ∆ϕeq )sinh( pDa sp w f ˜r)sinh( pDa sp w f )˜ r (98) Scaled current density ˜jsp in the spherical secondary particle may be obtained as an integral over the particle, 
+
+˜jsp = 3 
+
+Z 1˜r=0 
+
+f (˜ cs, ˜cl)(∆ ϕeq − ∆ ˜ϕsp )˜ r2d˜r (99) 
+
+˜jsp = 3 f (˜ cs, ˜cl)(∆ ϕeq − ∆ ˜ϕ(˜ x, ˜t)) 
+
+Z sinh( pDa sp w f ˜r)sinh( pDa sp w f )˜ r ˜r2d˜r (100) where the factor of 3 outside the integral arises due to spherical geometry. Plugging this integral back in Equation 93 gives the electrode level governing equation for 
+
+∆ ˜ϕ(˜ x, ˜t) as, 
+
+∂2∆ ˜ϕ∂ ˜x2 = −3 Da w
+
+Da sp w
+
+(pDa sp w f (˜ cs, ˜cl) coth( pDa sp w f (˜ cs, ˜cl)) − 1)(∆ ˜ϕeq − ∆ ˜ϕ) (101) The solution has the same form as Equation 67, with an effective wiring pre-factor of Da ′ 
+
+> w
+
+= 3  
+
+> f(˜ cs,˜cl)
+> Da w
+> Da sp w
+
+(pDa sp w f (˜ cs, ˜cl) coth( pDa sp w f (˜ cs, ˜cl)) − 1) . This pre-factor scales differently with f (cs, ˜cl) depending on the magnitude of Da sp w f (˜ cs, ˜cl).
+
+Da ′ 
+
+> w
+
+∼ Da wf (˜ cs, ˜cl) when Da sp w f (˜ cs, ˜cl) ≪ 1 and Da ′ 
+
+> w
+
+∼ pDa wDa sp w f (˜ cs, ˜cl) when 
+
+Da sp w f (˜ cs, ˜cl) ≫ 1.
+
+A5. Model Identifiability 
+
+The parameters in a battery model are often fitted to observed data and then used to quantify battery performance and aging. This approach can be especially useful when the parameters are based on underlying physics. Yet, doing this reliably has remained difficult due to limited data availability and over-parameterized model structures. Definitive model-driven decisions require the parameters to be uniquely estimable from real-world data [106]. In other words, the parameters should be identifiable [107]. Several identifiability studies of MPET, DFN, and SPM models test this using a variety of methods, such as analyses of loss-function contours, chi-squared error, and sensitivity [32, 96, 108, 109]. In this section, we test key aspects of identifiability for our model. Practical identifiability of the model parameters is first tested using a Markov chain Monte Carlo (MCMC) algorithm [110]. This tests whether the model fit to observed data is sufficiently sensitive to yield unique parameter estimates. Furthermore, since our 27 model is nonlinear, we also analyze contours of the chi-square estimator to verify the existence of a well-defined global minimum. Synthetic 1C discharge data are generated for the analytical model using dimensionless numbers derived from NMC532 electrode parameters. To emulate experimental uncertainty, 5% multiplicative Gaussian noise is applied independently to the wiring and process Damköhler numbers ( Da w and Da p). Figure 5 shows the posterior distributions of Da w and Da p obtained via affine-invariant ensemble MCMC sampling [111]. Both marginal distributions are unimodal and centered on the true parameter values, confirming good practical identifiability. Complementing the MCMC analysis, Figure 6 displays the χ2 landscape in 
+
+(Da w, Da p) space. The landscape exhibits a single, well-defined global minimum whose location closely coincides with the true parameter values. The roughly elliptical contours, elongated along the direction of the Da w–Da p anti-correlation seen in the MCMC posterior, confirm that one complete galvanostatic voltage response contains enough information to get a good estimate for both dimensionless groups. 
+
+Figure 5: Noisy data and posterior MCMC ( Da w, Da p) inferred from galvanostatic (1 C) model data with Gaussian noise ( ± 5% s.d.) added to Da w and Da p
+
+28 Figure 6: χ2 landscape for fitting galvanostatic (1 C) model data with Gaussian noise (± 5% s.d.) added to Da w and Da p
+
+29 A6. Parameters for NMC Half-Cell 
+
+Table 1: Base parameters used in benchmark half-cell simulations Parameter Symbol Value Unit Positive electrode open circuit potential (OCP) ϕeq Ref. [112] VPositive electrode thickness L 10 −4 mPositive electrode porosity ε 0.5 -Positive electrode active material loading fraction - 0.69 -Cathode particle radius Rp 5 × 10 −7 mPositive electrode bulk conductivity σs 0.1 S m −1
+
+Cathode kinetics - Table 2 -Maximum concentration (NMC532) cs,max 4.95 × 10 4 mol m −3
+
+Separator thickness Lsep 5 × 10 −6 mSeparator porosity εsep 1 -Initial electrolyte concentration c0 1000 mol m −3
+
+Cation transference number t+ 0.38 -Electrolyte conductivity κl Ref. [113] S m −1
+
+Electrolyte diffusivity parameters D Ref. [114] m2 s−1
+
+Bruggeman exponent (positive electrode) - -0.5 -Reference temperature Tref 298.15 KThe baseline benchmark simulations use the ECIT expression (the ET-limited asymptotic form of CIET) [42]. The expression was introduced in Section 2.3 and is reiterated below, 
+
+jECIT = j0(1 − ˜cs)
+
+ ˜cs
+
+1 + exp( −˜ηf ) − ˜cl
+
+1 + exp(˜ ηf )
+
+
+
+erfc 
+
+ ˜λ +
+
+q
+
+1 + 
+
+p˜λ + ˜ η2
+
+> f
+
+2
+
+p˜λ
+
+
+
+(102) where j0 is the quantum mechanical pre-factor, ηf is the formal overpotential, λ is the reorganization energy in the electrode material, ˜cs is the solid filling fraction, ˜cl
+
+is the adsorbed Li + concentration at the interface for an electrolyte with Li + activity 
+
+a+ and adsorption free energy wads ,
+
+˜cl = a+e− ˜wads 
+
+1 + a+e− ˜wads 
+
+(103) 30 Table 2: Parameters for cathode kinetics Parameter Symbol Value Unit Exchange current pre-factor j0 5a A m −2
+
+Reorganization Energy λ 0.11 a eV Adsorption free energy wads 25 a meV Electrolyte activity a+ 1.9 a - 
+
+> a
+
+Nominal values based on CIET parameters for NMC electrode materials in Ref. [43] 
+
+References 
+
+[1] John Newman and Nitash P Balsara. Electrochemical systems . John Wiley & Sons, 2021. [2] Dongzhen Lyu, Simona Onori, Shengyu Tao, David A Howey, Bin Zhang, Katharina L Quade, Matthieu Dubarry, Billy Wu, and Weihan Li. Next steps for battery diagnostics. Cell Reports Physical Science , 2025. [3] Ghassan Zubi, Rodolfo Dufo-López, Monica Carvalho, and Guzay Pasaoglu. The lithium-ion battery: State of the art and future perspectives. Renewable and sustainable energy reviews , 89:292–308, 2018. [4] Lei Wu, Changyong Zhang, Seoni Kim, T Alan Hatton, Hengliang Mo, and T David Waite. Lithium recovery using electrochemical technologies: Advances and challenges. Water research , 221:118822, 2022. [5] Mohammad A Alkhadra, Xiao Su, Matthew E Suss, Huanhuan Tian, Eric N Guyes, Amit N Shocron, Kameron M Conforti, J Pedro De Souza, Nayeong Kim, Michele Tedesco, et al. Electrochemical methods for water purification, ion separations, and energy conversion. 
+
+Chemical reviews , 122(16):13547–13635, 2022. [6] Erhai Hu, Hong Han Choo, Wei Zhang, Afriyanti Sumboja, Ivandini T Anggraningrum, Anne Zulfia Syahrial, Qiang Zhu, Jianwei Xu, Xian Jun Loh, Hongge Pan, et al. Integrating machine learning and characterization in battery research: Toward cognitive digital twins with physics and knowledge. Advanced Functional Materials , 35(25):2422601, 2025. [7] Venkatasailanathan Ramadesigan, Paul WC Northrop, Sumitava De, Shriram San-thanagopalan, Richard D Braatz, and Venkat R Subramanian. Modeling and simulation of lithium-ion batteries from a systems engineering perspective. Journal of the electrochemical society , 159(3):R31–R45, 2012. [8] Ferran Brosa Planella, Weilong Ai, Adam M Boyce, Abir Ghosh, Ivan Korotkin, Smita Sahu, Valentin Sulzer, Robert Timms, Thomas G Tranter, Maxim Zyskin, et al. A continuum of physics-based lithium-ion battery models reviewed. Progress in Energy , 4(4):042003, 2022. [9] Xinfan Lin, Youngki Kim, Shankar Mohan, Jason B Siegel, and Anna G Stefanopoulou. Modeling and estimation for advanced battery management. Annual Review of Control, Robotics, and Autonomous Systems , 2(1):393–426, 2019. [10] Simeng Zheng, Jiashen Teh, Bader Alharbi, and Ching-Ming Lai. A review of equivalent-circuit model, degradation characteristics and economics of li-ion battery energy storage system for grid applications. Journal of Energy Storage , 101:113908, 2024. [11] Zhiqiang Chen, Dmitri L Danilov, Rüdiger-A Eichel, and Peter HL Notten. Porous electrode modeling and its applications to li-ion batteries. Advanced Energy Materials ,12(32):2201506, 2022. [12] John Newman and William Tiedemann. Porous-electrode theory with battery applications. 
+
+31 AIChE Journal , 21(1):25–41, 1975. [13] R De Levie. On porous electrodes in electrolyte solutions—iv. Electrochimica acta , 9(9):1231– 1245, 1964. [14] Marc Doyle, Thomas F Fuller, and John Newman. Modeling of galvanostatic charge and discharge of the lithium/polymer/insertion cell. Journal of The Electrochemical Society ,140(6):1526, 1993. [15] Todd R Ferguson and Martin Z Bazant. Nonequilibrium thermodynamics of porous electrodes. Journal of The Electrochemical Society , 159(12):A1967, 2012. [16] Raymond B Smith and Martin Z Bazant. Multiphase porous electrode theory. Journal of The Electrochemical Society , 164(11):E3291–E3310, 2017. [17] Martin Z Bazant. Theory of chemical kinetics and charge transfer based on nonequilibrium thermodynamics. Accounts of chemical research , 46(5):1144–1160, 2013. [18] John W Cahn and John E Hilliard. Free energy of a nonuniform system. i. interfacial free energy. The Journal of chemical physics , 28(2):258–267, 1958. [19] Yinsheng Guo, Raymond B Smith, Zhonghua Yu, Dmitri K Efetov, Junpu Wang, Philip Kim, Martin Z Bazant, and Louis E Brus. Li intercalation into graphite: direct optical imaging and cahn–hilliard reaction dynamics. The journal of physical chemistry letters ,7(11):2151–2156, 2016. [20] Todd R Ferguson and Martin Z Bazant. Phase transformation dynamics in porous battery electrodes. Electrochimica Acta , 146:89–97, 2014. [21] Yiyang Li, Farid El Gabaly, Todd R Ferguson, Raymond B Smith, Norman C Bartelt, Joshua D Sugar, Kyle R Fenton, Daniel A Cogswell, AL David Kilcoyne, Tolek Tyliszczak, et al. Current-induced transition from particle-by-particle to concurrent intercalation in phase-separating battery electrodes. Nature materials , 13(12):1149–1156, 2014. [22] Martin Z Bazant. Thermodynamic stability of driven open systems and control of phase separation by electro-autocatalysis. Faraday discussions , 199:423–463, 2017. [23] Jungjin Park, Hongbo Zhao, Stephen Dongmin Kang, Kipil Lim, Chia-Chin Chen, Young-Sang Yu, Richard D Braatz, David A Shapiro, Jihyun Hong, Michael F Toney, et al. Fictitious phase separation in li layered oxides driven by electro-autocatalysis. Nature materials , 20(7):991–999, 2021. [24] Hongbo Zhao, Haitao Dean Deng, Alexander E Cohen, Jongwoo Lim, Yiyang Li, Dimitrios Fraggedakis, Benben Jiang, Brian D Storey, William C Chueh, Richard D Braatz, et al. Learning heterogeneous reaction kinetics from x-ray videos pixel by pixel. Nature ,621(7978):289–294, 2023. [25] Karen E Thomas-Alyea, Changhoon Jung, Raymond B Smith, and Martin Z Bazant. In situ observation and mathematical modeling of lithium distribution within graphite. Journal of The Electrochemical Society , 164(11):E3063–E3072, 2017. [26] Huada Lian and Martin Z Bazant. Modeling lithium plating onset on porous graphite electrodes under fast charging with hierarchical multiphase porous electrode theory. Journal of The Electrochemical Society , 171(1):010526, 2024. [27] Scott J Moura, Federico Bribiesca Argomedo, Reinhardt Klein, Anahita Mirtabatabaei, and Miroslav Krstic. Battery state estimation for a single particle model with electrolyte dynamics. IEEE Transactions on Control Systems Technology , 25(2):453–468, 2016. [28] Andrew A Wang, Simon EJ O’Kane, Ferran Brosa Planella, J Le Houx, Kieran O’Regan, Maxim Zyskin, J Edge, Charles W Monroe, Samuel J Cooper, David A Howey, et al. Review of parameterisation and a novel database (liiondb) for continuum li-ion battery models. Progress in Energy , 4(3):032004, 2022. [29] Zihao Zhou, Antti Aitio, and David Howey. Learning li-ion battery health and degradation modes from data with aging-aware circuit models. Applied Energy , 397:126375, 2025. [30] Marc D Berliner, Daniel A Cogswell, Martin Z Bazant, and Richard D Braatz. Methods—PETLION: Open-source software for millisecond-scale porous electrode theory-
+
+32 based lithium-ion battery simulations. Journal of The Electrochemical Society ,168(9):090504, 2021. [31] Pierfrancesco Ombrini, Shakul Pathak, Dimitrios Ntagkras, Santosh K Pal, Pranav Karanth, Fokko M Mulder, Marnix Wagemaker, Martin Z Bazant, and Alexandros Vasileiadis. Modeling single-crystal electrodes as a network of primary particles. Energy & Environmental Science , 2025. [32] Marc D Berliner, Hongbo Zhao, Supratim Das, Michael Forsuelo, Benben Jiang, William H Chueh, Martin Z Bazant, and Richard D Braatz. Nonlinear identifiability analysis of the porous electrode theory model of lithium-ion batteries. Journal of The Electrochemical Society , 168(9):090546, 2021. [33] Joel C Forman, Scott J Moura, Jeffrey L Stein, and Hosam K Fathy. Genetic identification and fisher identifiability analysis of the doyle–fuller–newman model from experimental cycling of a lifepo4 cell. Journal of Power Sources , 210:263–275, 2012. [34] Adrien M Bizeray, Jin-Ho Kim, Stephen R Duncan, and David A Howey. Identifiability and parameter estimation of the single particle lithium-ion battery model. IEEE Transactions on Control Systems Technology , 27(5):1862–1877, 2018. [35] Sven Atlung, Keld West, and Torben Jacobsen. Dynamic aspects of solid solution cathodes for electrochemical power sources. Journal of The Electrochemical Society , 126(8):1311–1321, 1979. [36] Nalin A Chaturvedi, Reinhardt Klein, Jake Christensen, Jasim Ahmed, and Aleksandar Kojic. Algorithms for advanced battery-management systems. IEEE Control systems magazine ,30(3):49–68, 2010. [37] Paulo Kemper and Dongsuk Kum. Extended single particle model of li-ion batteries towards high current applications. In 2013 IEEE Vehicle Power and Propulsion Conference (VPPC) , pages 1–6. IEEE, 2013. [38] Scott G Marquis, Valentin Sulzer, Robert Timms, Colin P Please, and S Jon Chapman. An asymptotic derivation of a single particle model with electrolyte. Journal of The Electrochemical Society , 166(15):A3693, 2019. [39] Ferran Brosa Planella, Muhammad Sheikh, and W Dhammika Widanage. Systematic derivation and validation of a reduced thermal-electrochemical model for lithium-ion batteries using asymptotic methods. Electrochimica Acta , 388:138524, 2021. [40] Debbie Zhuang and Martin Z Bazant. Scaling analysis of mosaic phase separation in li-ion batteries. Physical Review E , 110(6):064142, 2024. [41] Hongbo Zhao and Martin Z Bazant. Population dynamics of driven autocatalytic reactive mixtures. Physical Review E , 100(1):012144, 2019. [42] Martin Z Bazant. Unified quantum theory of electrochemical kinetics by coupled ion–electron transfer. Faraday Discussions , 246:60–124, 2023. [43] Yirui Zhang, Dimitrios Fraggedakis, Tao Gao, Shakul Pathak, Debbie Zhuang, Cristina Grosu, Yash Samantaray, Armando RC Neto, Sravani R Duggirala, Botao Huang, et al. Lithium-ion intercalation by coupled ion-electron transfer. Science , 390(6768):eadq2541, 2025. [44] Simon EJ O’Kane, Weilong Ai, Ganesh Madabattula, Diego Alonso-Alvarez, Robert Timms, Valentin Sulzer, Jacqueline Sophie Edge, Billy Wu, Gregory J Offer, and Monica Marinescu. Lithium-ion battery degradation: How to model it. Physical Chemistry Chemical Physics ,24(13):7909–7922, 2022. [45] Valentin Sulzer, Peyman Mohtat, Suhak Lee, Jason B Siegel, and Anna G Stefanopoulou. Promise and challenges of a data-driven approach for battery lifetime prognostics. In 2021 American control conference (ACC) , pages 4427–4433. IEEE, 2021. [46] Jamie M Foster, Yoana Grudeva, Ivan Korotkin, Edmund JF Dickinson, Gregory Offer, and Giles Richardson. The newman model for phase-change electrodes: Physics-based hysteresis. Journal of The Electrochemical Society , 172(4):040501, 2025. [47] PM Biesheuvel, Michiel Van Soestbergen, and Martin Z Bazant. Imposed currents in galvanic 
+
+33 cells. Electrochimica Acta , 54(21):4857–4871, 2009. [48] PM Biesheuvel, Yeqing Fu, and Martin Z Bazant. Diffuse charge and faradaic reactions in porous electrodes. Physical Review E—Statistical, Nonlinear, and Soft Matter Physics ,83(6):061507, 2011. [49] John Alfred Valentine Butler. The mechanism of overvoltage and its relation to the combination of hydrogen atoms at metal electrodes. Transactions of the Faraday Society ,28:379–382, 1932. [50] Tibor Erdey-Grúz and Max Volmer. Zur frage der elektrolytischen metallüberspannung. 
+
+Zeitschrift für Physikalische Chemie , 157(1):165–181, 1931. [51] Peng Bai and Martin Z Bazant. Charge transfer kinetics at the solid–solid interface in porous electrodes. Nature communications , 5(1):3585, 2014. [52] Kevin Scanlan and Arumugam Manthiram. Equations and electrochemical methods for measuring the interfacial charge-transfer kinetics of li-ion battery active materials at high current densities. Electrochimica Acta , 520:145875, 2025. [53] Robert Morasch, Hubert A Gasteiger, and Bharatkumar Suthar. Li-ion battery active material impedance analysis i: comparison of measured ncm 111 kinetics with butler-volmer equation based predictions. Journal of The Electrochemical Society , 170(8):080522, 2023. [54] Dimitrios Fraggedakis, Michael McEldrew, Raymond B Smith, Yamini Krishnan, Yirui Zhang, Peng Bai, William C Chueh, Yang Shao-Horn, and Martin Z Bazant. Theory of coupled ion-electron transfer kinetics. Electrochimica Acta , 367:137432, 2021. [55] Ruoyu Xiong, Mengyuan Zhou, Longhui Li, Jia Xu, Maoyuan Li, Dequn Li, Yun Zhang, Huamin Zhou, et al. Decoupled measurement and modeling of interface reaction kinetics of ion-intercalation battery electrodes. Energy Storage Materials , 54:836–844, 2023. [56] Keisuke Ando, Mai Tsuta, and Kiyoshi Kanamura. Impact of active material ion diffusion coefficient on overpotential in lithium-ion batteries. Journal of Electroanalytical Chemistry ,948:117802, 2023. [57] Keisuke Ando, Yuto Yamada, Kei Nishikawa, Tomoyuki Matsuda, Daichi Imamura, and Kiyoshi Kanamura. Degradation analysis of lini0. 8co0. 15al0. 05o2 for cathode material of lithium-ion battery using single-particle measurement. ACS Applied Energy Materials ,1(9):4536–4544, 2018. [58] M Saiful Islam and Craig AJ Fisher. Lithium and sodium battery cathode materials: computational insights into voltage, diffusion and nanostructural properties. Chemical Society Reviews , 43(1):185–204, 2014. [59] Daniel A Cogswell and Martin Z Bazant. Coherency strain and the kinetics of phase separation in lifepo4 nanoparticles. ACS nano , 6(3):2215–2225, 2012. [60] Ruhul Amin and Yet-Ming Chiang. Characterization of electronic and ionic transport in li1-x ni0. 33mn0. 33co0. 33o2 (nmc333) and li1-x ni0. 50mn0. 20co0. 30o2 (nmc523) as a function of li content. Journal of The Electrochemical Society , 163(8):A1512–A1517, 2016. [61] Enrico Trevisanello, Raffael Ruess, Gioele Conforto, Felix H Richter, and Jürgen Janek. Polycrystalline and single crystalline ncm cathode materials—quantifying particle cracking, active surface area, and lithium diffusion. Advanced Energy Materials , 11(18):2003400, 2021. [62] H Scott Fogler. Elements of chemical reaction engineering . Pearson Educacion, 1999. [63] Barun Kumar Chakrabarti, Evangelos Kalamaras, Abhishek Kumar Singh, Antonio Bertei, Javier Rubio-Garcia, Vladimir Yufit, Kevin M Tenny, Billy Wu, Farid Tariq, Yashar S Hajimolana, et al. Modelling of redox flow battery electrode processes at a range of length scales: a review. Sustainable Energy & Fuels , 4(11):5433–5468, 2020. [64] Katharine V Greco, Jude K Bonesteel, Nicolas Chanut, Charles Tai-Chieh Wan, Yet-Ming Chiang, and Fikile R Brushett. Limited accessibility to surface area generated by thermal pretreatment of electrodes reduces its impact on redox flow battery performance. ACS Applied Energy Materials , 4(12):13516–13527, 2021. 
+
+34 [65] Madhu V Majji, Bertrand J Neyhouse, Nicholas J Matteucci, Kyle R Lennon, Christopher T Mallia, Alexis M Fenton Jr, James W Swan, and Fikile R Brushett. Modeling electrochemical and rheological characteristics of suspension-based electrodes for redox flow cells. Journal of The Electrochemical Society , 170(5):050532, 2023. [66] Shriram Manikandan and Balaji Krishnamurthy. Modeling the parameters affecting the transport–reaction process in enzymatic glucose fuel cells–effect of damkohler number. 
+
+Journal of Solid State Electrochemistry , pages 1–9, 2025. [67] Dario Maggiolo, Francesco Picano, Filippo Zanini, Simone Carmignato, Massimo Guarnieri, Srdjan Sasic, and Henrik Ström. Solute transport and reaction in porous electrodes at high schmidt numbers. Journal of Fluid Mechanics , 896:A13, 2020. [68] Lauren E Clarke, Katelyn M Ripley, and Fikile R Brushett. Insights into energetic penalties in electrochemical co2 separation systems. Industrial & Engineering Chemistry Research ,63(45):19707–19727, 2024. [69] Fan He, Martin Z Bazant, and T Alan Hatton. Theory of faradaically modulated redox active electrodes for electrochemically mediated selective adsorption processes. Journal of The Electrochemical Society , 168(5):053501, 2021. [70] Charles Tai-Chieh Wan, Katharine V Greco, Amira Alazmi, Robert M Darling, Yet-Ming Chiang, and Fikile R Brushett. Methods—a potential–dependent thiele modulus to quantify the effectiveness of porous electrocatalysts. Journal of The Electrochemical Society , 168(12):123503, 2021. [71] Edwin Khoo, Hongbo Zhao, and Martin Z Bazant. Linear stability analysis of transient electrodeposition in charged porous media: Suppression of dendritic growth by surface conduction. Journal of The Electrochemical Society , 166(10):A2280–A2299, 2019. [72] Dimitrios Fraggedakis and Martin Z Bazant. Tuning the stability of electrochemical interfaces by electron transfer reactions. The Journal of chemical physics , 152(18), 2020. [73] David Yan, Martin Z Bazant, PM Biesheuvel, Mary C Pugh, and Francis P Dawson. Theory of linear sweep voltammetry with diffuse charge: Unsupported electrolytes, thin films, and leaky membranes. Physical Review E , 95(3):033303, 2017. [74] Y Fu, S Poizeau, A Bertei, C Qi, A Mohanram, JD Pietras, and MZ Bazant. Heterogeneous electrocatalysis in porous cathodes of solid oxide fuel cells. Electrochimica Acta , 159:71–80, 2015. [75] Andrzej Lasia. Hydrogen evolution/oxidation reactions on porous electrodes. Journal of Electroanalytical Chemistry , 454(1-2):115–121, 1998. [76] Andrzej Lasia. Impedance of porous electrodes in the presence of electroactive species and solution resistance. Journal of Electroanalytical Chemistry , 951:117919, 2023. [77] Andrzej Lasia. Modeling of impedance of porous electrodes. In Modeling and Numerical Simulations , pages 67–137. Springer, 2008. [78] Mohammad Halhouli, Jochen Kieninger, Patrick Daubinger, Olena Yurchenko, and Gerald Urban. Sensitivity and selectivity of porous electrodes in heterogeneous liquid-based catalytic reactions: 3d simulation study. Journal of The Electrochemical Society ,163(10):E273–E281, 2016. [79] Yun-Wei Song, Jie Zhou, Zi-Xian Chen, Jun-Dong Zhang, Liang Shen, Furong Sun, Meng Zhao, and Bo-Quan Li. Reducing the cathode thiele modulus to promote the discharge capacity of lithium–sulfur batteries. Journal of Energy Chemistry , 106:993–1001, 2025. [80] Ju Hyeon Kim and Tae June Kang. Diffusion and current generation in porous electrodes for thermo-electrochemical cells. ACS applied materials & interfaces , 11(32):28894–28899, 2019. [81] Gogi K Singh, Gerbrand Ceder, and Martin Z Bazant. Intercalation dynamics in rechargeable battery materials: General theory and phase-transformation waves in lifepo4. 
+
+Electrochimica Acta , 53(26):7599–7613, 2008. [82] Neel Nadkarni, Tingtao Zhou, Dimitrios Fraggedakis, Tao Gao, and Martin Z Bazant. 
+
+35 Modeling the metal–insulator phase transition in lixcoo2 for energy and information storage. 
+
+Advanced Functional Materials , 29(40):1902821, 2019. [83] Dimitrios Fraggedakis, Neel Nadkarni, Tao Gao, Tingtao Zhou, Yirui Zhang, Yu Han, Ryan M Stephens, Yang Shao-Horn, and Martin Z Bazant. A scaling law to determine phase morphologies during ion intercalation. Energy & Environmental Science , 13(7):2142–2152, 2020. [84] Danwon Lee, Chihyun Nam, Juwon Kim, Sooseong Hwang, Bonho Koo, Hyejeong Hyun, Jinkyu Chung, Sungjae Seo, Munsoo Song, Jaejung Song, et al. Strain-associated nanoscale fluctuating lithium transport within single-crystalline lini1/3mn1/3co1/3o2 cathode particles. Nature Communications , 16(1):1–13, 2025. [85] Madhav Singh, Jörg Kaiser, and Horst Hahn. Thick electrodes for high energy lithium ion batteries. Journal of The Electrochemical Society , 162(7):A1196–A1201, 2015. [86] Kevin G Gallagher, Stephen E Trask, Christoph Bauer, Thomas Woehrle, Simon F Lux, Matthias Tschech, Peter Lamp, Bryant J Polzin, Seungbum Ha, Brandon Long, et al. Optimizing areal capacities through understanding the limitations of lithium-ion electrodes. 
+
+Journal of The Electrochemical Society , 163(2):A138–A149, 2016. [87] Allen J Bard, Larry R Faulkner, and Henry S White. Electrochemical methods: fundamentals and applications . John Wiley & Sons, 2022. [88] Alan G Li, Alan C West, and Matthias Preindl. Characterizing degradation in lithium-ion batteries with pulsing. Journal of Power Sources , 580:233328, 2023. [89] S. Pathak. Lean porous electrode theory. https://github.com/Oscuro-Phoenix/lean_pet ,2024. GitHub repository. [90] Valentin Sulzer, Scott G Marquis, Robert Timms, Martin Robinson, and S Jon Chapman. Python battery mathematical modelling (PyBaMM). Journal of Open Research Software ,9(1):14, 2021. [91] Thomas F Fuller, Marc Doyle, and John Newman. Simulation and optimization of the dual lithium ion insertion cell. Journal of the electrochemical society , 141(1):1–10, 1994. [92] Mark E Orazem and Bernard Tribollet. Electrochemical Impedance Spectroscopy . John Wiley & Sons, Hoboken, NJ, 2008. [93] John Newman, Karen E Thomas, Hooman Hafezi, and Dean R Wheeler. Modeling of lithium-ion batteries. Journal of power sources , 119:838–843, 2003. [94] Nitika G Panwar, Surinder Singh, Akhil Garg, Abhishek Kumar Gupta, and Liang Gao. Recent advancements in battery management system for li-ion batteries of electric vehicles: future role of digital twin, cyber-physical systems, battery swapping technology, and nondestructive testing. Energy Technology , 9(8):2000984, 2021. [95] Weihan Li, Decheng Cao, Dominik Jöst, Florian Ringbeck, Matthias Kuipers, Fabian Frie, and Dirk Uwe Sauer. Parameter sensitivity analysis of electrochemical model-based battery management systems for lithium-ion batteries. Applied Energy , 269:115104, 2020. [96] Yun Young Choi, Seongyoon Kim, Kyunghyun Kim, Sanghyun Kim, and Jung-Il Choi. Parameter identification and identifiability analysis of lithium-ion batteries. Energy Science & Engineering , 10(2):488–506, 2022. [97] Donal P Finegan, Juner Zhu, Xuning Feng, Matt Keyser, Marcus Ulmefors, Wei Li, Martin Z Bazant, and Samuel J Cooper. The application of data-driven methods and physics-based learning for improving battery safety. Joule , 5(2):316–329, 2021. [98] Hongyi Xu, Juner Zhu, Donal P Finegan, Hongbo Zhao, Xuekun Lu, Wei Li, Nathaniel Hoffman, Antonio Bertei, Paul Shearing, and Martin Z Bazant. Guiding the design of heterogeneous electrode microstructures for li-ion batteries: microscopic imaging, predictive modeling, and machine learning. Advanced Energy Materials , 11(19):2003908, 2021. [99] Yue Qi and Stephen J Harris. In situ observation of strains during lithiation of a graphite electrode. Journal of The Electrochemical Society , 157(6):A741–A747, 2010. [100] Muratahan Aykol, Chirranjeevi Balaji Gopal, Abraham Anapolsky, Patrick K Herring, Bruis 
+
+36 van Vlijmen, Marc D Berliner, Martin Z Bazant, Richard D Braatz, William C Chueh, and Brian D Storey. Perspective—combining physics and machine learning to predict battery lifetime. Journal of The Electrochemical Society , 168(3):030525, 2021. [101] Weihan Li, Jue Chen, Katharina Quade, Daniel Luder, Jingyu Gong, and Dirk Uwe Sauer. Battery degradation diagnosis with field data, impedance-based modeling and artificial intelligence. Energy storage materials , 53:391–403, 2022. [102] Hao Tu, Scott Moura, Yebin Wang, and Huazhen Fang. Integrating physics-based modeling with machine learning for lithium-ion batteries. Applied energy , 329:120289, 2023. [103] Manashita Borah, Qiao Wang, Scott Moura, Dirk Uwe Sauer, and Weihan Li. Synergizing physics and machine learning for advanced battery management. Communications Engineering , 3(1):134, 2024. [104] Zhengrui Xu, Zhisen Jiang, Chunguang Kuai, Rong Xu, Changdong Qin, Yan Zhang, Muhammad Mominur Rahman, Chenxi Wei, Dennis Nordlund, Cheng-Jun Sun, et al. Charge distribution guided by grain crystallographic orientations in polycrystalline battery materials. Nature communications , 11(1):83, 2020. [105] Von DAG Bruggeman. Berechnung verschiedener physikalischer konstanten von heterogenen substanzen. i. dielektrizitätskonstanten und leitfähigkeiten der mischkörper aus isotropen substanzen. Annalen der physik , 416(7):636–664, 1935. [106] Nicholas W Brady, Christian Alexander Gould, and Alan C West. Quantitative parameter estimation, model selection, and variable selection in battery science. Journal of The Electrochemical Society , 167(1):013501, 2020. [107] Diana Cole. Parameter redundancy and identifiability . Chapman and Hall/CRC, 2020. [108] Giacomo Galuppini, Marc D Berliner, Daniel A Cogswell, Debbie Zhuang, Martin Z Bazant, and Richard D Braatz. Nonlinear identifiability analysis of multiphase porous electrode theory-based battery models: A lithium iron phosphate case study. Journal of Power Sources , 573:233009, 2023. [109] Marc D Berliner, Minsu Kim, Xiao Cui, Vivek N Lam, Shakul Pathak, Yunhong Che, Patrick A Asinger, Martin Z Bazant, William C Chueh, and Richard D Braatz. Bayesian analysis of interpretable aging across thousands of lithium-ion battery cycles. 
+
+eTransportation , page 100486, 2025. [110] Charles J Geyer. Practical markov chain monte carlo. Statistical science , pages 473–483, 1992. [111] Daniel Foreman-Mackey, David W Hogg, Dustin Lang, and Jonathan Goodman. emcee: the mcmc hammer. Publications of the Astronomical Society of the Pacific , 125(925):306–312, 2013. [112] Andrew M Colclasure, Tanvir R Tanim, Andrew N Jansen, Stephen E Trask, Alison R Dunlop, Bryant J Polzin, Ira Bloom, Dave Robertson, LeRoy Flores, Michael Evans, et al. Electrode scale and electrolyte transport effects on extreme fast charging of lithium-ion cells. Electrochimica Acta , 337:135854, 2020. [113] Dawn M Bernardi and Joo-Young Go. Analysis of pulse and relaxation behavior in lithium-ion batteries. Journal of Power Sources , 196(1):412–427, 2011. [114] Lars Ole Valøen and Jan N Reimers. Transport properties of lipf6-based li-ion battery electrolytes. Journal of The Electrochemical Society , 152(5):A882, 2005. 
+
+37

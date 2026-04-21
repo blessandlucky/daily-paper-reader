@@ -1,0 +1,62 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.16627v1/fig-001.webp",
+      "caption": "Table 1: Base parameters used in benchmark half-cell simulations",
+      "page": 30,
+      "index": 1,
+      "width": 908,
+      "height": 595
+    },
+    {
+      "url": "assets/figures/arxiv/2604.16627v1/fig-002.webp",
+      "caption": "Figure 1: Experimental measurements of intercalation kinetics in LIBs (scatter) with linear fits (solid). Data taken from Ref. [57, 56, 55, 43]. Current densities are scaled by the maximum magnitude for each dataset.",
+      "page": 7,
+      "index": 2,
+      "width": 673,
+      "height": 506
+    },
+    {
+      "url": "assets/figures/arxiv/2604.16627v1/fig-003.webp",
+      "caption": "Figure 6: χ2 landscape for fitting galvanostatic (1 C) model data with Gaussian noise (± 5% s.d.) added to Daw and Dap",
+      "page": 29,
+      "index": 3,
+      "width": 673,
+      "height": 567
+    },
+    {
+      "url": "assets/figures/arxiv/2604.16627v1/fig-004.webp",
+      "caption": "Figure 3: Comparison against simulated frequency domain EIS response for changing solid conductivity (σs) (left, RMSE = 0.10 Ω-m2) and exchange current pre-factor (j0) (right, RMSE = 0.13 Ω-m2). Baseline parameters are in yellow.",
+      "page": 18,
+      "index": 4,
+      "width": 890,
+      "height": 323
+    },
+    {
+      "url": "assets/figures/arxiv/2604.16627v1/fig-005.webp",
+      "caption": "Figure 5: Noisy data and posterior MCMC (Daw, Dap) inferred from galvanostatic (1 C) model data with Gaussian noise (± 5% s.d.) added to Daw and Dap",
+      "page": 28,
+      "index": 5,
+      "width": 898,
+      "height": 306
+    },
+    {
+      "url": "assets/figures/arxiv/2604.16627v1/fig-006.webp",
+      "caption": "Figure 4: Root mean squared error, RMSE (in V) of analytical approximation versus simulated galvanostatic response across C-rates, conductivity (σs) that impacts wiring, and electrolyte concentrations (c0) that impacts polarization.",
+      "page": 19,
+      "index": 6,
+      "width": 898,
+      "height": 759
+    },
+    {
+      "url": "assets/figures/arxiv/2604.16627v1/fig-007.webp",
+      "caption": "Figure 2: Comparison of our analytical approximations with the results of full simulations of the same NMC532 porous electrode using two different software packages (PyBaMM [90] and MPET [16]) for both galvanostatic discharge (left) and chronoamperometry (right) on the same model half-cell.",
+      "page": 17,
+      "index": 7,
+      "width": 890,
+      "height": 298
+    }
+  ]
+}

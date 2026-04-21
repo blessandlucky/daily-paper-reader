@@ -1,0 +1,38 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.17793v1/fig-001.webp",
+      "caption": "Fig. 4, so that the molecules would fall onto the wall in the opposite direction, the sign in expression (116) would be opposite, since the upper limit would become negative. Thus, and this",
+      "page": 22,
+      "index": 1,
+      "width": 431,
+      "height": 302
+    },
+    {
+      "url": "assets/figures/arxiv/2604.17793v1/fig-002.webp",
+      "caption": "FIG. 3. Direction of velocities on the droplet surface in the presence of slip at the interface in the coordinate system in which the droplet is at rest (a), and in which it rises with velocity 0V (b).",
+      "page": 13,
+      "index": 2,
+      "width": 977,
+      "height": 410
+    },
+    {
+      "url": "assets/figures/arxiv/2604.17793v1/fig-003.webp",
+      "caption": "FIG. 2. Viscous flows of fluids 1 and 2 with partial slip condition at their interface, z = 0, initiated by motion of a plane z b  with velocity V and the no-slip boundary condition at z b  . The slip lengths in the liquids 1 and 2, respectively, are (a) λ < 0 and λ’ > 0; (b) λ > 0 and λ’ < 0.",
+      "page": 9,
+      "index": 3,
+      "width": 977,
+      "height": 356
+    },
+    {
+      "url": "assets/figures/arxiv/2604.17793v1/fig-004.webp",
+      "caption": "FIG. 1. Liquid velocity profile ( )xV z near liquid-solid interface (z = 0) with partial slip",
+      "page": 5,
+      "index": 4,
+      "width": 977,
+      "height": 431
+    }
+  ]
+}
