@@ -1,0 +1,244 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-04-22T20:27:48.837746+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 0,
+    "deep_cap": 6,
+    "deep_selected": 0,
+    "quick_candidates": 6,
+    "quick_skim_target": 11,
+    "quick_selected": 6
+  },
+  "deep_dive": [],
+  "quick_skim": [
+    {
+      "id": "2604.16627v1",
+      "source": "arxiv",
+      "title": "Scaling and Analytical Approximation of Porous Electrode Theory for Reaction-limited Batteries",
+      "abstract": "Porous electrode theory (PET) provides essential insights into electrochemical states, but its computational complexity hinders real-time control and obscures scaling relations. To bridge the gap between high-fidelity simulations and reduced-order models, we present a framework of scaling analysis and analytical approximations. By assuming high-performance electrodes minimize transport limitations and overpotentials, we derive a simplified \"lean model\" governed by four dimensionless numbers: (i) a traditional Damk\"ohler number, Da, scaling the characteristic reaction rate to the diffusion rate in the electrolyte-filled pores; (ii) the \"process Damk\"ohler number,\" Da_p, scaling the reaction rate to the applied capacity utilization rate (C-rate); (iii) the \"wiring Damk\"ohler number,\" Da_w, scaling the reaction rate to an effective electromigration rate for ions in the pores in series with electrons in the conducting matrix; and (iv) the \"capacitive Damk\"ohler number,\" Da_c, comparing the rates of Faradaic reactions and double-layer charging. For batteries, we derive analytical solutions for standard protocols, including galvanostatic discharge, chronoamperometry, and electrochemical impedance spectroscopy. Validated against numerical simulations of a practical NMC half-cell, our formulae show excellent agreement at negligible computational cost. This interpretable, physics-based framework accelerates battery design and state estimation while unifying the modeling of batteries, supercapacitors, fuel cells, and other porous electrode systems.",
+      "authors": [
+        "Shakul Pathak",
+        "Martin Z. Bazant"
+      ],
+      "primary_category": "eess.SY",
+      "categories": [
+        "eess.SY"
+      ],
+      "published": "2026-04-17T18:28:17+00:00",
+      "link": "https://arxiv.org/pdf/2604.16627v1",
+      "tags": [
+        "keyword:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries",
+        "query:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "Porous electrode theory and scaling analysis for reaction-limited batteries",
+      "llm_evidence_cn": "多孔电极理论及反应受限电池的比例分析",
+      "llm_evidence": "多孔电极理论及反应受限电池的比例分析",
+      "canonical_evidence": "多孔电极理论及反应受限电池的比例分析",
+      "llm_tldr_en": "Provides analytical approximations for porous electrode theory to understand electrochemical states in batteries.",
+      "llm_tldr_cn": "提供多孔电极理论的解析近似，以理解电池中的电化学状态。",
+      "llm_tldr": "提供多孔电极理论的解析近似，以理解电池中的电化学状态。",
+      "llm_tags": [
+        "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries:composite"
+      ],
+      "matched_query_tag": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries:composite",
+      "matched_query_text": "Papers central to 我正在撰写一篇聚焦「水系电池和水电解环境中气体动力学」的综述论文，核心主题为电池（尤其是金属电极体系）和水电解过程中的氢气泡/氧气泡/其他气体演化现象。虽然现有文献已分散覆盖背景、气泡演化及HER/OER影响，但我希望抓住最严谨、最吸睛的创新点：  系统整理各大电池及电催化反应的关键公式背景，以及电压/电池内部流道气阻的必要性；  气泡演化（成核-生长-聚合-脱离及多相流形成）仅作简要概述（已有大量微电极研究但至今无共识，故一笔带过）；  重点挖掘HER/OER对制氢制氧过程影响的最新进展或新视角。 核心亮点在于「调节手段」的完整汇总：按应用场景分为（1）电池、（2）水电解（特别参考第七章表格策略）、（3）性能提升三大类。目前该部分论文极为分散，缺乏系统3D/全面综述，急需深度搜索高影响力、近期论文以构建7-8幅核心图谱——整体示意图（最后绘制）、来源汇总、演化汇总、影响汇总（寻找新内容）、调节手段3D汇总。 请优先召回最新、最严谨、机制清晰的高质量论文，帮助我实现「分散文献→严谨吸睛综述」的突破。, especially work that connects or combines: m; g; Dendrite growth; Bubble evolution dynamics; Hydrogen evolution reaction; Gaseous bubble; Comprehensive review on gas bubble dynamics and regulation strategies in liquid electrolytes for metal batteries and water electrolysis, emphasizing novel synthesis of scattered literature into 7 8 high impact figures with focus on regulation methods (batteries vs. water electrolysis) and latest HER/OER insights beyond existing reviews..",
+      "matched_requirement_id": "req-composite-gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2604.14864v1",
+      "source": "arxiv",
+      "title": "Deformation and instability of sessile soap bubbles in an electric field",
+      "abstract": "Interfacial deformation under electric fields is a common phenomenon in many industrial processes. Particularly, we are interested in the dynamics of sessile soap bubbles in a parallel-plate electric field which exhibits a stable deformation regime followed by conical instability. Using side-view imaging, we track the equilibrium shapes, the transition to the unstable regime, and the pre-jet apex dynamics within one experimental system. In the stable regime, the meridional profile is well described by a spheroidal fit, and the aspect ratio collapses across initial bubble sizes onto a single steady-state branch when plotted against the dimensionless field $E^\\ast = \\sqrt{\\mathrm{Bo}_e}$ for data acquired within a fixed ambient session where the electric Bond number $\\mathrm{Bo}_e$ is defined as $\\varepsilon_0 E_0^2 R_0/(2γ)$. The endpoint of this branch marks the transition to the unstable regime. Above onset of instability, the apex sharpens into a cone with half-angle $30.0^{\\circ}$ $\\pm$ $0.6^{\\circ}$, below the classical Taylor value. To quantify the late pre-jet stage, we define the axial distance $b(t)$ from the instantaneous apex to a fixed reference vertex determined from the terminal cone geometry and measure its evolution. The corresponding rate grows as jetting is approached, and a near-tip inertia-capillary model captures the observed logarithmic trend as an approximation. Together, these measurements establish a single-system experimental benchmark in which stable electrocapillary deformation is organized by a single steady-state branch that leads into conical instability and pre-jet dynamics.",
+      "authors": [
+        "Hongsik Kim",
+        "Sunghwan Jung"
+      ],
+      "primary_category": "physics.flu-dyn",
+      "categories": [
+        "physics.flu-dyn"
+      ],
+      "published": "2026-04-16T10:55:15+00:00",
+      "link": "https://arxiv.org/pdf/2604.14864v1",
+      "tags": [
+        "keyword:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries",
+        "query:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries"
+      ],
+      "llm_score": 6.5,
+      "llm_evidence_en": "Dynamics and deformation of sessile bubbles under electric fields, relevant to regulation strategies.",
+      "llm_evidence_cn": "电场下座滴气泡的动力学与变形，与调节策略相关。",
+      "llm_evidence": "电场下座滴气泡的动力学与变形，与调节策略相关。",
+      "canonical_evidence": "电场下座滴气泡的动力学与变形，与调节策略相关。",
+      "llm_tldr_en": "Investigates the deformation and instability of sessile soap bubbles in response to external electric fields.",
+      "llm_tldr_cn": "研究了座滴肥皂泡在外部电场作用下的变形和不稳定性。",
+      "llm_tldr": "研究了座滴肥皂泡在外部电场作用下的变形和不稳定性。",
+      "llm_tags": [
+        "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries"
+      ],
+      "matched_query_tag": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "matched_query_text": "Bubble evolution dynamics",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2604.13659v1",
+      "source": "arxiv",
+      "title": "Ion-Specific Anomalous Water Diffusion in Aqueous Electrolytes: A Machine-Learned Many-Body Force Field Study with MACE",
+      "abstract": "The dynamics of water in electrolyte solutions exhibits a striking, ion-specific anomaly: the diffusion coefficient of water is enhanced relative to the neat liquid in chaotropic CsI solutions, yet suppressed in kosmotropic NaCl solutions. This phenomenon, long challenging for classical force-field-based molecular dynamics, is studied here using classical molecular dynamics simulations with a many-body machine-learned force field (MLFF) trained within the MACE equivariant graph neural network framework. The force field is trained on energies, forces, and stresses computed at the density functional theory level with the revPBE-D3 exchange--correlation functional, which provides a reliable balance between accuracy and computational efficiency for aqueous systems. Simulations of NaCl and CsI aqueous solutions at ambient conditions over a concentration range of 0.89--3.56~mol/kg reproduce the experimentally observed anomalous diffusion and show a quantitative improvement over previous results obtained with the DeePMD framework, trained on the same theory, particularly for NaCl solutions. This improvement is traced to a stronger Na$^{+}$--water interaction in the first hydration shell and the non-negligible retarding contribution of the second hydration shell of Na$^{+}$. For CsI solutions, the water acceleration is shown to be primarily driven by the anion I$^{-}$, whose diffuse and weakly structured hydration shell facilitates rapid water exchange with the bulk. These results are rationalised through a shell-decomposition analysis of time-dependent water diffusivities and ion--oxygen potentials of mean force providing a coherent microscopic picture of the acceleration--retardation mechanism in the studied aqueous electrolytes.",
+      "authors": [
+        "Massimo Ciacchi",
+        "Ilnur Saitov",
+        "Nico Di Fonte",
+        "Isabella Daidone",
+        "Carlo Pierleoni"
+      ],
+      "primary_category": "physics.chem-ph",
+      "categories": [
+        "physics.chem-ph",
+        "cond-mat.soft"
+      ],
+      "published": "2026-04-15T09:26:36+00:00",
+      "link": "https://arxiv.org/pdf/2604.13659v1",
+      "tags": [
+        "keyword:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries",
+        "query:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Water diffusion dynamics in aqueous electrolytes using machine-learned force fields",
+      "llm_evidence_cn": "使用机器学习力场研究水系电解质中的水扩散动力学",
+      "llm_evidence": "使用机器学习力场研究水系电解质中的水扩散动力学",
+      "canonical_evidence": "使用机器学习力场研究水系电解质中的水扩散动力学",
+      "llm_tldr_en": "Investigates ion-specific water diffusion in electrolytes, relevant to the liquid environment of water electrolysis.",
+      "llm_tldr_cn": "研究电解质中离子特定的水扩散，与水电解的液体环境相关。",
+      "llm_tldr": "研究电解质中离子特定的水扩散，与水电解的液体环境相关。",
+      "llm_tags": [
+        "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries:composite"
+      ],
+      "matched_query_tag": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries:composite",
+      "matched_query_text": "Papers central to 我正在撰写一篇聚焦「水系电池和水电解环境中气体动力学」的综述论文，核心主题为电池（尤其是金属电极体系）和水电解过程中的氢气泡/氧气泡/其他气体演化现象。虽然现有文献已分散覆盖背景、气泡演化及HER/OER影响，但我希望抓住最严谨、最吸睛的创新点：  系统整理各大电池及电催化反应的关键公式背景，以及电压/电池内部流道气阻的必要性；  气泡演化（成核-生长-聚合-脱离及多相流形成）仅作简要概述（已有大量微电极研究但至今无共识，故一笔带过）；  重点挖掘HER/OER对制氢制氧过程影响的最新进展或新视角。 核心亮点在于「调节手段」的完整汇总：按应用场景分为（1）电池、（2）水电解（特别参考第七章表格策略）、（3）性能提升三大类。目前该部分论文极为分散，缺乏系统3D/全面综述，急需深度搜索高影响力、近期论文以构建7-8幅核心图谱——整体示意图（最后绘制）、来源汇总、演化汇总、影响汇总（寻找新内容）、调节手段3D汇总。 请优先召回最新、最严谨、机制清晰的高质量论文，帮助我实现「分散文献→严谨吸睛综述」的突破。, especially work that connects or combines: m; g; Dendrite growth; Bubble evolution dynamics; Hydrogen evolution reaction; Gaseous bubble; Comprehensive review on gas bubble dynamics and regulation strategies in liquid electrolytes for metal batteries and water electrolysis, emphasizing novel synthesis of scattered literature into 7 8 high impact figures with focus on regulation methods (batteries vs. water electrolysis) and latest HER/OER insights beyond existing reviews..",
+      "matched_requirement_id": "req-composite-gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2604.13659v2",
+      "source": "arxiv",
+      "title": "Ion-Specific Anomalous Water Diffusion in Aqueous Electrolytes: A Machine-Learned Many-Body Force Field Study with MACE",
+      "abstract": "The dynamics of water in electrolyte solutions exhibits a striking, ion-specific anomaly: the diffusion coefficient of water is enhanced relative to the neat liquid in chaotropic CsI solutions, yet suppressed in kosmotropic NaCl solutions. This phenomenon, long challenging for classical force-field-based molecular dynamics, is studied here using classical molecular dynamics simulations with a many-body machine-learned force field (MLFF) trained within the MACE equivariant graph neural network framework. The force field is trained on energies, forces, and stresses computed at the density functional theory level with the revPBE-D3 exchange--correlation functional, which provides a reliable balance between accuracy and computational efficiency for aqueous systems. Simulations of NaCl and CsI aqueous solutions at ambient conditions over a concentration range of 0.89--3.56 mol/kg reproduce the experimentally observed anomalous diffusion and show a quantitative improvement over previous results obtained with the DeePMD framework, trained on the same theory, particularly for NaCl solutions. This improvement is traced to a stronger Na$^{+}$--water interaction in the first hydration shell and the non-negligible retarding contribution of the second hydration shell of Na$^{+}$. For CsI solutions, the water acceleration is shown to be primarily driven by the anion I$^{-}$, whose diffuse and weakly structured hydration shell facilitates rapid water exchange with the bulk. These results are rationalised through a shell-decomposition analysis of time-dependent water diffusivities and ion--oxygen potentials of mean force providing a coherent microscopic picture of the acceleration--retardation mechanism in the studied aqueous electrolytes.",
+      "authors": [
+        "Massimo Ciacchi",
+        "Ilnur Saitov",
+        "Nico Di Fonte",
+        "Isabella Daidone",
+        "Carlo Pierleoni"
+      ],
+      "primary_category": "physics.chem-ph",
+      "categories": [
+        "physics.chem-ph",
+        "cond-mat.soft"
+      ],
+      "published": "2026-04-15T09:26:36+00:00",
+      "link": "https://arxiv.org/pdf/2604.13659v2",
+      "tags": [
+        "keyword:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries",
+        "query:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Water diffusion dynamics in aqueous electrolytes using machine-learned force fields",
+      "llm_evidence_cn": "使用机器学习力场研究水系电解质中的水扩散动力学",
+      "llm_evidence": "使用机器学习力场研究水系电解质中的水扩散动力学",
+      "canonical_evidence": "使用机器学习力场研究水系电解质中的水扩散动力学",
+      "llm_tldr_en": "Investigates ion-specific water diffusion in electrolytes, relevant to the liquid environment of water electrolysis.",
+      "llm_tldr_cn": "研究电解质中离子特定的水扩散，与水电解的液体环境相关。",
+      "llm_tldr": "研究电解质中离子特定的水扩散，与水电解的液体环境相关。",
+      "llm_tags": [
+        "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries:composite"
+      ],
+      "matched_query_tag": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries:composite",
+      "matched_query_text": "Papers central to 我正在撰写一篇聚焦「水系电池和水电解环境中气体动力学」的综述论文，核心主题为电池（尤其是金属电极体系）和水电解过程中的氢气泡/氧气泡/其他气体演化现象。虽然现有文献已分散覆盖背景、气泡演化及HER/OER影响，但我希望抓住最严谨、最吸睛的创新点：  系统整理各大电池及电催化反应的关键公式背景，以及电压/电池内部流道气阻的必要性；  气泡演化（成核-生长-聚合-脱离及多相流形成）仅作简要概述（已有大量微电极研究但至今无共识，故一笔带过）；  重点挖掘HER/OER对制氢制氧过程影响的最新进展或新视角。 核心亮点在于「调节手段」的完整汇总：按应用场景分为（1）电池、（2）水电解（特别参考第七章表格策略）、（3）性能提升三大类。目前该部分论文极为分散，缺乏系统3D/全面综述，急需深度搜索高影响力、近期论文以构建7-8幅核心图谱——整体示意图（最后绘制）、来源汇总、演化汇总、影响汇总（寻找新内容）、调节手段3D汇总。 请优先召回最新、最严谨、机制清晰的高质量论文，帮助我实现「分散文献→严谨吸睛综述」的突破。, especially work that connects or combines: m; g; Dendrite growth; Bubble evolution dynamics; Hydrogen evolution reaction; Gaseous bubble; Comprehensive review on gas bubble dynamics and regulation strategies in liquid electrolytes for metal batteries and water electrolysis, emphasizing novel synthesis of scattered literature into 7 8 high impact figures with focus on regulation methods (batteries vs. water electrolysis) and latest HER/OER insights beyond existing reviews..",
+      "matched_requirement_id": "req-composite-gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2604.18084v1",
+      "source": "arxiv",
+      "title": "Thermodiffusion in Aqueous Alkali Halide Solutions from Ambient to Supercooled Conditions: Ion-Specific, Structural, and Mass Effects",
+      "abstract": "Thermodiffusion in aqueous electrolyte solutions exhibits complex dependencies on temperature, concentration, and salt composition, yet its microscopic origins remain incompletely understood. Here, we employ non-equilibrium molecular dynamics (NEMD) simulations to investigate thermal transport and thermodiffusion in aqueous alkali halide solutions over the temperature range 240-300 K at concentrations of 1 m and 4 m. Building on previous studies of NaCl and LiCl, we extend the analysis to systems containing K$^+$ and I$^-$ ions to assess ion-specific effects. Across all systems studied, the thermal conductivity decreases upon cooling and is generally reduced at higher salt concentration. The Soret coefficient generally increases with temperature, shifting the solutions from thermophilic behavior at low temperature toward more thermophobic behavior at high temperature. Clear ion-dependent trends are observed, with Na$^+$ and K$^+$ salts generally showing stronger thermophobic responses than Li$^+$ salts, especially in iodide solutions. We estimate that the shift in the inversion temperatures of the iodide salts relative to experiment corresponds to a small local offset of the effective heat of transport, 4-5 kJ/mol, showing that small changes in hydration thermodynamics or heat-mass coupling can strongly affect the sign change of the Soret coefficient. Structural analyses indicate that lower temperatures and lower concentrations favor more tetrahedrally ordered, LDL-like water environments, which are associated with enhanced thermophilicity. Analysis of inversion temperatures and mass effects further suggests that the heat of transport contains both structural and kinetic contributions. These findings provide molecular-level insight into the interplay between hydration structure, ionic mass, and thermodiffusive transport in aqueous electrolytes.",
+      "authors": [
+        "Guansen Zhao",
+        "Fernando Bresme"
+      ],
+      "primary_category": "cond-mat.soft",
+      "categories": [
+        "cond-mat.soft"
+      ],
+      "published": "2026-04-20T11:00:20+00:00",
+      "link": "https://arxiv.org/pdf/2604.18084v1",
+      "tags": [
+        "keyword:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries",
+        "query:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Thermodiffusion and transport in aqueous electrolyte solutions",
+      "llm_evidence_cn": "水系电解质溶液中的热扩散与传输",
+      "llm_evidence": "水系电解质溶液中的热扩散与传输",
+      "canonical_evidence": "水系电解质溶液中的热扩散与传输",
+      "llm_tldr_en": "Uses molecular dynamics to study thermal transport and ion-specific effects in aqueous alkali halide solutions.",
+      "llm_tldr_cn": "利用分子动力学研究了水系碱金属卤化物溶液中的热传输和离子特异性效应。",
+      "llm_tldr": "利用分子动力学研究了水系碱金属卤化物溶液中的热传输和离子特异性效应。",
+      "llm_tags": [
+        "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries"
+      ],
+      "matched_query_tag": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "matched_query_text": "Comprehensive review on gas bubble dynamics and regulation strategies in liquid electrolytes for metal batteries and water electrolysis, emphasizing novel synthesis of scattered literature into 7 8 high impact figures with focus on regulation methods (batteries vs. water electrolysis) and latest HER/OER insights beyond existing reviews.",
+      "matched_requirement_id": "req-7",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2604.18261v1",
+      "source": "arxiv",
+      "title": "DeepRitzSplit Neural Operator for Phase-Field Models via Energy Splitting",
+      "abstract": "The multi-scale and non-linear nature of phase-field models of solidification requires fine spatial and temporal discretization, leading to long computation times. This could be overcome with artificial-intelligence approaches. Surrogate models based on neural operators could have a lower computational cost than conventional numerical discretization methods.   We propose a new neural operator approach that bridges classical convex-concave splitting schemes with physics-informed learning to accelerate the simulation of phase-field models. It consists of a Deep Ritz method, where a neural operator is trained to approximate a variational formulation of the phase-field model. By training the neural operator with an energy-splitting variational formulation, we enforce the energy dissipation property of the underlying models.   We further introduce a custom Reaction-Diffusion Neural Operator (RDNO) architecture, adapted to the operators of the model equations. We successfully apply the deep learning approach to the isotropic Allen-Cahn equation and to anisotropic dendritic growth simulation. We demonstrate that our physically-informed training provides better generalization in out-of-distribution evaluations than data-driven training, while achieving faster inference than traditional Fourier spectral methods.",
+      "authors": [
+        "Chih-Kang Huang",
+        "Ludovick Gagnon",
+        "Miha Založnik",
+        "Benoît Appolaire"
+      ],
+      "primary_category": "math.AP",
+      "categories": [
+        "math.AP",
+        "cs.LG",
+        "math.NA"
+      ],
+      "published": "2026-04-20T13:34:50+00:00",
+      "link": "https://arxiv.org/pdf/2604.18261v1",
+      "tags": [
+        "keyword:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Neural operator for phase-field models of solidification",
+      "llm_evidence_cn": "用于凝固相场模型的神经算子",
+      "llm_evidence": "用于凝固相场模型的神经算子",
+      "canonical_evidence": "用于凝固相场模型的神经算子",
+      "llm_tldr_en": "Proposes a neural operator approach to accelerate phase-field simulations of solidification processes.",
+      "llm_tldr_cn": "提出了一种神经算子方法，用于加速凝固过程的相场模拟。",
+      "llm_tldr": "提出了一种神经算子方法，用于加速凝固过程的相场模拟。",
+      "llm_tags": [
+        "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries"
+      ],
+      "matched_query_tag": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "matched_query_text": "Dendrite growth",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}

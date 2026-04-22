@@ -1,0 +1,54 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.18084v1/fig-001.webp",
+      "caption": "Fig. 2 Thermal conductivity of aqueous NaCl, LiCl, KCl, NaI, LiI, and KI solutions over 240–300 K at concentrations of 1 m (left) and 4 m (right). Results for NaCl and LiCl are taken from our previous work [39]. Values are averaged over ten independent NEMD replicas, each analyzed in successive 10 ns trajectory segments, with error bars representing the standard deviation across replicas. Lines are included as visual guides to the eye.",
+      "page": 7,
+      "index": 1,
+      "width": 775,
+      "height": 262
+    },
+    {
+      "url": "assets/figures/arxiv/2604.18084v1/fig-002.webp",
+      "caption": "Fig. 6 Effect of ionic mass on the Soret coefficient sT of aqueous electrolyte solutions. The top panels show the temperature dependence of the Soret coefficient between 270 and 330 K for 4 m NaCl (left) and LiCl (right) solutions. These data are taken from our previous work [39]. Results for the reference systems are shown alongside cases in which the ionic masses were modified. The case labeled mtot → mH2O corresponds to setting the cation and anion masses equal to each other and equal to one half of the water molecular mass. The bottom panels show the Soret coefficient at 300 K as a function of the total ion mass. Circles denote the reference systems, triangles indicate cases where the cation mass is modified, squares correspond to modifications of the anion mass, and crosses represent cases where both ionic masses are changed. The dotted black lines connect all data points, while the solid colored lines connect systems with the same anion mass. The dashed horizontal line indicates sT = 0.",
+      "page": 14,
+      "index": 2,
+      "width": 777,
+      "height": 519
+    },
+    {
+      "url": "assets/figures/arxiv/2604.18084v1/fig-003.webp",
+      "caption": "Fig. 5 Perturbation of the oxygen–oxygen radial distribution function in aqueous salt solutions relative to pure water at the corresponding temperature, defined as ∆gOO(r) = gOO,solution(r) − gOO,pure water(r). Panels are arranged by cation identity, with Li+, Na+, and K+ shown in the left, middle, and right columns, respectively. The upper and lower rows correspond to temperatures of 240 K and 300 K, respectively. Solid curves represent 1 m solutions, while dashed curves correspond to 4 m. The NaCl and LiCl results were obtained by analyzing simulation trajectories from our previous work [39]. The oxygen–oxygen radial distribution functions of pure water used as reference are provided in Fig. C3 in Appendix C.",
+      "page": 13,
+      "index": 3,
+      "width": 775,
+      "height": 469
+    },
+    {
+      "url": "assets/figures/arxiv/2604.18084v1/fig-004.webp",
+      "caption": "Fig. 3 Soret coefficients of aqueous electrolyte solutions over the 240–300 K temperature range. Chloride salts (NaCl, LiCl, KCl) are shown in the top row and iodide salts (NaI, LiI, KI) in the bottom row, with 1 m concentrations in the left column and 4 m in the right column. The horizontal dashed black line denotes zero Soret coefficient. Results for NaCl and LiCl are reproduced from our previous work [39]. Star symbols connected by dotted lines show experimental data: iodide salts (NaI and KI) in the range ∼288–313 K from Ref. [17], and KCl from Ref. [64].",
+      "page": 8,
+      "index": 4,
+      "width": 777,
+      "height": 519
+    },
+    {
+      "url": "assets/figures/arxiv/2604.18084v1/fig-005.webp",
+      "caption": "Fig. 4 Probability density distributions of the tetrahedral order parameter, ξ, for aqueous chloride and iodide salt solutions at fixed cation identity. Results are shown for Li+ (left column), Na+ (middle column), and K+ (right column). The top and bottom rows correspond to temperatures of 240 K and 300 K, respectively. Solid and dashed lines denote concentrations of 1 m and 4 m. Results for NaCl and LiCl were previously reported in our earlier study [39].",
+      "page": 12,
+      "index": 5,
+      "width": 777,
+      "height": 469
+    },
+    {
+      "url": "assets/figures/arxiv/2604.18084v1/fig-006.webp",
+      "caption": "Fig. 1 (Top) Snapshot of the simulation cell used in a representative NEMD simulation of a 1 m LiI aqueous solution, visualized using OVITO [47]. The configuration corresponds to an average temperature of 241 K, a density of 1.089 g cm−3, and an average pressure of 15.7 bar during the simulation run. Oxygen and hydrogen atoms in water are shown as red and white spheres, respectively, while Li+ and I− ions are depicted in blue and green. The thermostatting regions are highlighted in red and blue, corresponding to the hot slab at the center of the simulation box and the cold slabs near the edges, respectively. (Bottom) Temperature profile along the z-direction for the imposed temperature difference.",
+      "page": 5,
+      "index": 6,
+      "width": 700,
+      "height": 609
+    }
+  ]
+}
