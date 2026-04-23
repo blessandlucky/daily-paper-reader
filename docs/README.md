@@ -6,41 +6,40 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-04-22
-- 运行时间：2026-04-22 20:28:39 UTC
+- 最新运行日期：2026-04-23
+- 运行时间：2026-04-23 20:14:38 UTC
 - 运行状态：成功
 - 本次总论文数：6
-- 精读区：0
-- 速读区：6
+- 精读区：1
+- 速读区：5
 
 ### 今日简报（AI）
-今日聚焦能源化学与流体物理前沿，深入解析了多孔电极理论缩放、电场下肥皂泡失稳及电解液中的反常扩散。
-最值得关注反应受限电池的解析近似模型，以及 MACE 机器学习力场在揭示离子特定水扩散规律中的应用。
-建议关注物理模型与机器学习的结合，这为优化电池性能和理解复杂流体行为提供了精准的理论工具。
-- 详情：[/202604/22/README](/202604/22/README)
+1) 今日聚焦电池电极理论与微尺度界面动力学，深度解析了 6 篇流体与电化学交叉领域的前沿进展。
+2) 重点关注多孔电极理论的解析近似模型，以及电场诱导的肥皂泡变形与微气泡通信等创新实验。
+3) 建议从电化学建模与微流体物理的结合点出发，探索能源存储与精密通信的底层物理机制。
+- 详情：[/202604/23/README](/202604/23/README)
 
 ### 精读区论文标签
-- 本次无精读推荐。
+1. [Scaling and Analytical Approximation of Porous Electrode Theory for Reaction-limited Batteries](/202604/23/2604.16627v1-scaling-and-analytical-approximation-of-porous-electrode-theory-for-reaction-limited-batteries)  
+   标签：评分：8.0/10、query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries
+   evidence：电池多孔电极理论的标度分析和解析近似
 
 ### 速读区论文标签
-1. [Scaling and Analytical Approximation of Porous Electrode Theory for Reaction-limited Batteries](/202604/22/2604.16627v1-scaling-and-analytical-approximation-of-porous-electrode-theory-for-reaction-limited-batteries)  
+1. [Deformation and instability of sessile soap bubbles in an electric field](/202604/23/2604.14864v1-deformation-and-instability-of-sessile-soap-bubbles-in-an-electric-field)  
    标签：评分：7.0/10、query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries
-   evidence：多孔电极理论及反应受限电池的比例分析
-2. [Deformation and instability of sessile soap bubbles in an electric field](/202604/22/2604.14864v1-deformation-and-instability-of-sessile-soap-bubbles-in-an-electric-field)  
+   evidence：电场中气泡的动力学和不稳定性，与气体管理策略相关。
+2. [A Numerical and Experimental Evaluation of Microbubble Communication Using OpenFOAM](/202604/23/2604.14919v1-a-numerical-and-experimental-evaluation-of-microbubble-communication-using-openfoam)  
+   标签：评分：7.0/10、query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries
+   evidence：水通道中微气泡输运与动力学的数值和实验评估
+3. [Tangential and normal partial slip at the liquid-fluid interfaces: application to a small liquid droplet, gas bubble, and aerosol](/202604/23/2604.17793v1-tangential-and-normal-partial-slip-at-the-liquid-fluid-interfaces-application-to-a-small-liquid-droplet-gas-bubble-and-aerosol)  
    标签：评分：6.5/10、query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries
-   evidence：电场下座滴气泡的动力学与变形，与调节策略相关。
-3. [Ion-Specific Anomalous Water Diffusion in Aqueous Electrolytes: A Machine-Learned Many-Body Force Field Study with MACE](/202604/22/2604.13659v1-ion-specific-anomalous-water-diffusion-in-aqueous-electrolytes-a-machine-learned-many-body-force-field-study-with-mace)  
+   evidence：液体-流体界面气泡运动和滑动边界条件的解析解
+4. [Drag reduction regimes in air lubrication](/202604/23/2604.17636v1-drag-reduction-regimes-in-air-lubrication)  
    标签：评分：6.0/10、query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries
-   evidence：使用机器学习力场研究水系电解质中的水扩散动力学
-4. [Ion-Specific Anomalous Water Diffusion in Aqueous Electrolytes: A Machine-Learned Many-Body Force Field Study with MACE](/202604/22/2604.13659v2-ion-specific-anomalous-water-diffusion-in-aqueous-electrolytes-a-machine-learned-many-body-force-field-study-with-mace)  
+   evidence：研究空气润滑中的气泡和气层状态及其减阻机制。
+5. [The evolution of a gas plume injected into a curved axisymmetric porous channel](/202604/23/2604.20007v1-the-evolution-of-a-gas-plume-injected-into-a-curved-axisymmetric-porous-channel)  
    标签：评分：6.0/10、query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries
-   evidence：使用机器学习力场研究水系电解质中的水扩散动力学
-5. [Thermodiffusion in Aqueous Alkali Halide Solutions from Ambient to Supercooled Conditions: Ion-Specific, Structural, and Mass Effects](/202604/22/2604.18084v1-thermodiffusion-in-aqueous-alkali-halide-solutions-from-ambient-to-supercooled-conditions-ion-specific-structural-and-mass-effects)  
-   标签：评分：6.0/10、query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries
-   evidence：水系电解质溶液中的热扩散与传输
-6. [DeepRitzSplit Neural Operator for Phase-Field Models via Energy Splitting](/202604/22/2604.18261v1-deepritzsplit-neural-operator-for-phase-field-models-via-energy-splitting)  
-   标签：评分：6.0/10、query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries
-   evidence：用于凝固相场模型的神经算子
+   evidence：气团演化与气液界面动力学
 
 
 <div class="dpr-home-promo-card">

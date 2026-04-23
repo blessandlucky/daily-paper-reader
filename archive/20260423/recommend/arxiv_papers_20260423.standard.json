@@ -1,0 +1,240 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-04-23T20:12:52.707767+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 1,
+    "deep_cap": 6,
+    "deep_selected": 1,
+    "quick_candidates": 5,
+    "quick_skim_target": 11,
+    "quick_selected": 5
+  },
+  "deep_dive": [
+    {
+      "id": "2604.16627v1",
+      "source": "arxiv",
+      "title": "Scaling and Analytical Approximation of Porous Electrode Theory for Reaction-limited Batteries",
+      "abstract": "Porous electrode theory (PET) provides essential insights into electrochemical states, but its computational complexity hinders real-time control and obscures scaling relations. To bridge the gap between high-fidelity simulations and reduced-order models, we present a framework of scaling analysis and analytical approximations. By assuming high-performance electrodes minimize transport limitations and overpotentials, we derive a simplified \"lean model\" governed by four dimensionless numbers: (i) a traditional Damk\"ohler number, Da, scaling the characteristic reaction rate to the diffusion rate in the electrolyte-filled pores; (ii) the \"process Damk\"ohler number,\" Da_p, scaling the reaction rate to the applied capacity utilization rate (C-rate); (iii) the \"wiring Damk\"ohler number,\" Da_w, scaling the reaction rate to an effective electromigration rate for ions in the pores in series with electrons in the conducting matrix; and (iv) the \"capacitive Damk\"ohler number,\" Da_c, comparing the rates of Faradaic reactions and double-layer charging. For batteries, we derive analytical solutions for standard protocols, including galvanostatic discharge, chronoamperometry, and electrochemical impedance spectroscopy. Validated against numerical simulations of a practical NMC half-cell, our formulae show excellent agreement at negligible computational cost. This interpretable, physics-based framework accelerates battery design and state estimation while unifying the modeling of batteries, supercapacitors, fuel cells, and other porous electrode systems.",
+      "authors": [
+        "Shakul Pathak",
+        "Martin Z. Bazant"
+      ],
+      "primary_category": "eess.SY",
+      "categories": [
+        "eess.SY"
+      ],
+      "published": "2026-04-17T18:28:17+00:00",
+      "link": "https://arxiv.org/pdf/2604.16627v1",
+      "tags": [
+        "keyword:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries",
+        "query:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "Scaling analysis and analytical approximations for porous electrode theory in batteries",
+      "llm_evidence_cn": "电池多孔电极理论的标度分析和解析近似",
+      "llm_evidence": "电池多孔电极理论的标度分析和解析近似",
+      "canonical_evidence": "电池多孔电极理论的标度分析和解析近似",
+      "llm_tldr_en": "Develops a reduced-order model for porous electrodes to analyze transport limitations and reaction rates.",
+      "llm_tldr_cn": "开发了多孔电极的降阶模型，用于分析电池中的传输限制和反应速率。",
+      "llm_tldr": "开发了多孔电极的降阶模型，用于分析电池中的传输限制和反应速率。",
+      "llm_tags": [
+        "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries"
+      ],
+      "matched_query_tag": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "matched_query_text": "Comprehensive review on gas bubble dynamics and regulation strategies in liquid electrolytes for metal batteries and water electrolysis, emphasizing novel synthesis of scattered literature into 7 8 high impact figures with focus on regulation methods (batteries vs. water electrolysis) and latest HER/OER insights beyond existing reviews.",
+      "matched_requirement_id": "req-7",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "2604.14864v1",
+      "source": "arxiv",
+      "title": "Deformation and instability of sessile soap bubbles in an electric field",
+      "abstract": "Interfacial deformation under electric fields is a common phenomenon in many industrial processes. Particularly, we are interested in the dynamics of sessile soap bubbles in a parallel-plate electric field which exhibits a stable deformation regime followed by conical instability. Using side-view imaging, we track the equilibrium shapes, the transition to the unstable regime, and the pre-jet apex dynamics within one experimental system. In the stable regime, the meridional profile is well described by a spheroidal fit, and the aspect ratio collapses across initial bubble sizes onto a single steady-state branch when plotted against the dimensionless field $E^\\ast = \\sqrt{\\mathrm{Bo}_e}$ for data acquired within a fixed ambient session where the electric Bond number $\\mathrm{Bo}_e$ is defined as $\\varepsilon_0 E_0^2 R_0/(2γ)$. The endpoint of this branch marks the transition to the unstable regime. Above onset of instability, the apex sharpens into a cone with half-angle $30.0^{\\circ}$ $\\pm$ $0.6^{\\circ}$, below the classical Taylor value. To quantify the late pre-jet stage, we define the axial distance $b(t)$ from the instantaneous apex to a fixed reference vertex determined from the terminal cone geometry and measure its evolution. The corresponding rate grows as jetting is approached, and a near-tip inertia-capillary model captures the observed logarithmic trend as an approximation. Together, these measurements establish a single-system experimental benchmark in which stable electrocapillary deformation is organized by a single steady-state branch that leads into conical instability and pre-jet dynamics.",
+      "authors": [
+        "Hongsik Kim",
+        "Sunghwan Jung"
+      ],
+      "primary_category": "physics.flu-dyn",
+      "categories": [
+        "physics.flu-dyn"
+      ],
+      "published": "2026-04-16T10:55:15+00:00",
+      "link": "https://arxiv.org/pdf/2604.14864v1",
+      "tags": [
+        "keyword:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries",
+        "query:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "Dynamics and instability of bubbles in an electric field, relevant to gas management strategies.",
+      "llm_evidence_cn": "电场中气泡的动力学和不稳定性，与气体管理策略相关。",
+      "llm_evidence": "电场中气泡的动力学和不稳定性，与气体管理策略相关。",
+      "canonical_evidence": "电场中气泡的动力学和不稳定性，与气体管理策略相关。",
+      "llm_tldr_en": "Studies the deformation and conical instability of sessile soap bubbles under electric fields.",
+      "llm_tldr_cn": "研究了电场作用下静止肥皂泡的变形和锥形不稳定性。",
+      "llm_tldr": "研究了电场作用下静止肥皂泡的变形和锥形不稳定性。",
+      "llm_tags": [
+        "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries"
+      ],
+      "matched_query_tag": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "matched_query_text": "Gaseous bubble",
+      "matched_requirement_id": "req-6",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2604.17793v1",
+      "source": "arxiv",
+      "title": "Tangential and normal partial slip at the liquid-fluid interfaces: application to a small liquid droplet, gas bubble, and aerosol",
+      "abstract": "An analytical solution is obtained for the problem of the slow movement of a small drop of a fluid in another immiscible fluid in an infinitely large reservoir with the boundary condition of the normal slip and/or tangential partial slip at the interface. That generalizes the conventional Navier and Maxwellian boundary conditions of partial slip. Normal slip is accompanied by the density gradient in the fluid and is applicable only if one of the phases in contact at the interface is a gas. Although tangential partial slip and the associated generalization of the Hadamard-Rybczynski equation (HRE) have been considered previously, they were done using the friction coefficient formalism. Here, this issue is discussed within the more general formalism of slip lengths. It is proven that each of the two fluids separated by an interface has its own slip length. New equations describing the terminal velocity of gas bubble rise and aerosol falling have been obtained. The result is compared with experiment. It has been shown that the gas density within a rising bubble and around a falling droplet in the air is not uniform. The relative magnitude of the density increment increases with the size of the bubble or aerosol. Presumably, the best applicability of the generalized HRE should be expected for the interface of hydrophobic liquid and hydrophilic one (water and hydrocarbons, water and higher alcohols, in general: aqueous emulsions, water, lipophilic organic liquids and oils, etc.). These are quite important emulsions in practical terms, for example, for the oil industry and medicine. Experimental methods for determining the slip length are considered.",
+      "authors": [
+        "Peter Lebedev-Stepanov"
+      ],
+      "primary_category": "physics.flu-dyn",
+      "categories": [
+        "physics.flu-dyn",
+        "cond-mat.soft"
+      ],
+      "published": "2026-04-20T04:35:17+00:00",
+      "link": "https://arxiv.org/pdf/2604.17793v1",
+      "tags": [
+        "keyword:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries",
+        "query:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries"
+      ],
+      "llm_score": 6.5,
+      "llm_evidence_en": "Analytical solution for gas bubble movement and slip boundary conditions at liquid-fluid interfaces",
+      "llm_evidence_cn": "液体-流体界面气泡运动和滑动边界条件的解析解",
+      "llm_evidence": "液体-流体界面气泡运动和滑动边界条件的解析解",
+      "canonical_evidence": "液体-流体界面气泡运动和滑动边界条件的解析解",
+      "llm_tldr_en": "Provides analytical solutions for gas bubble dynamics and slip conditions at interfaces, relevant to fluid modeling.",
+      "llm_tldr_cn": "提供气泡动力学和界面滑动条件的解析解，与流体建模相关。",
+      "llm_tldr": "提供气泡动力学和界面滑动条件的解析解，与流体建模相关。",
+      "llm_tags": [
+        "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries"
+      ],
+      "matched_query_tag": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "matched_query_text": "Bubble evolution dynamics",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2604.14919v1",
+      "source": "arxiv",
+      "title": "A Numerical and Experimental Evaluation of Microbubble Communication Using OpenFOAM",
+      "abstract": "Reliable communication in confined environments, such as blood vessels or industrial pipelines, remain challenging due to signal attenuation and limited sensor accessibility. Therefore, this work investigates microbubbles as robust information carriers within the Internet of Bio-Nano Things (IoBNT) paradigm, leveraging their established use as ultrasound contrast agents. It presents a combined experimental and numerical analysis characterizing microbubble transport under varying flow conditions relevant to biomedical and industrial applications. Experiments with SonoVue microbubbles in a recirculating water channel validate an OpenFOAM-based Computational Fluid Dynamics (CFD) simulation using the incompressibleDenseParticleFluid solver. Key cases examine water vs. blood-like media and high vs. physiological flow velocities, analyzing the relative influence of fluid properties and advection on microbubble dynamics. Recirculation effects are considered in relation to in vivo circulation timescales.",
+      "authors": [
+        "Annika Tjabben",
+        "Carolin Conrad",
+        "Hans D. Schotten"
+      ],
+      "primary_category": "eess.SP",
+      "categories": [
+        "eess.SP"
+      ],
+      "published": "2026-04-16T12:02:39+00:00",
+      "link": "https://arxiv.org/pdf/2604.14919v1",
+      "tags": [
+        "keyword:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries",
+        "query:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "Numerical and experimental evaluation of microbubble transport and dynamics in water channels",
+      "llm_evidence_cn": "水通道中微气泡输运与动力学的数值和实验评估",
+      "llm_evidence": "水通道中微气泡输运与动力学的数值和实验评估",
+      "canonical_evidence": "水通道中微气泡输运与动力学的数值和实验评估",
+      "llm_tldr_en": "Analyzes microbubble transport under varying flow conditions using CFD and experimental validation.",
+      "llm_tldr_cn": "通过计算流体动力学和实验验证，分析了不同流动条件下的微气泡输运过程。",
+      "llm_tldr": "通过计算流体动力学和实验验证，分析了不同流动条件下的微气泡输运过程。",
+      "llm_tags": [
+        "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries"
+      ],
+      "matched_query_tag": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "matched_query_text": "Bubble evolution dynamics",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2604.17636v1",
+      "source": "arxiv",
+      "title": "Drag reduction regimes in air lubrication",
+      "abstract": "Air lubrication regimes were studied using simultaneous drag force measurements and multi-plane imaging to characterize the regimes and identify the governing mechanisms of drag reduction. A bubbly, transitional, and air layer regime are identified over a large range of freestream velocities ($U_{\\infty}$), air flow rates ($Q_{air}$), and Froude-depth numbers ($Fr_d$). For the lowest $U_{\\infty}$, drag reduction lags significantly behind the non-wetted area coverage at all cases and no simple correlation exists. Within the bubbly regime, a drag increase is found for low $U_{\\infty}$ with large, slow-moving bubbles forming a single layer over the plate height. For higher velocities, bubbles become smaller and disperse vertically, while the drag starts decreasing. For higher $Q_{air}$, irrespective of $U_{\\infty}$, air patches start to form (transitional regime) and drag monotonically decreases, with the onset of the air layer regime at 60\\% drag reduction. A new scaling of the associated critical $Q_{air}$ is proposed, combining the air exit velocity, the liquid velocity close to the air layer and $Fr_d$. For a further increase of $Q_{air}$ and low $U_{\\infty}$, a thicker and smoother air layer is formed with even lower drag; for higher $U_{\\infty}$, marginal differences are observed. The air layer morphology is significantly altered however, depending on $Fr_d$: for $Fr_d>0.7$, it is unbounded, extending beyond the current test section length, and for subcritical conditions (deep water regime, $Fr_d<0.61$) a closure is formed and the air layer transitions to a cavity of a specific length.",
+      "authors": [
+        "Lina Nikolaidou",
+        "Ali R Khojasteh",
+        "Angeliki Laskari",
+        "Tom van Terwisga",
+        "Christian Poelma"
+      ],
+      "primary_category": "physics.flu-dyn",
+      "categories": [
+        "physics.flu-dyn"
+      ],
+      "published": "2026-04-19T22:12:33+00:00",
+      "link": "https://arxiv.org/pdf/2604.17636v1",
+      "tags": [
+        "keyword:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries",
+        "query:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Study of bubbly and air layer regimes in air lubrication with drag reduction mechanisms.",
+      "llm_evidence_cn": "研究空气润滑中的气泡和气层状态及其减阻机制。",
+      "llm_evidence": "研究空气润滑中的气泡和气层状态及其减阻机制。",
+      "canonical_evidence": "研究空气润滑中的气泡和气层状态及其减阻机制。",
+      "llm_tldr_en": "Investigates drag reduction regimes in air lubrication, identifying bubbly and air layer mechanisms.",
+      "llm_tldr_cn": "研究空气润滑中的减阻机制，识别了气泡流和气层流等不同状态。",
+      "llm_tldr": "研究空气润滑中的减阻机制，识别了气泡流和气层流等不同状态。",
+      "llm_tags": [
+        "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries"
+      ],
+      "matched_query_tag": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "matched_query_text": "Bubble evolution dynamics",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2604.20007v1",
+      "source": "arxiv",
+      "title": "The evolution of a gas plume injected into a curved axisymmetric porous channel",
+      "abstract": "We investigate gas injection into water-saturated porous channels with Gaussian and parabolic axisymmetric centrelines, as idealized models of underground gas storage in dome-shaped anticlines. Exploiting the slenderness of each channel, we derive an evolution equation for the gas/liquid interface using a composite asymptotic approximation that accommodates large channel slopes and has a simplified small-slope form describing spreading in weakly curved channels. In the high gas-mobility limit, in contrast with flat planar channels, buoyancy influences the dynamics through different mechanisms in each geometry. For gas injected steadily into a Gaussian channel, buoyancy can continually affect the flow due to the attenuation of the gas velocity caused by axisymmetry. In parabolic channels, the increasing channel slope ensures that buoyancy eventually influences the flow, at a timescale depending on injection rate and fluid properties. Asymptotic analysis of the parabolic channel flow reveals five temporal regimes, each with multiple spatial regions and a distinct spreading rate, reflecting the evolving spatiotemporal competition between injection and buoyancy. Initially, a thin film of gas spreads along the upper boundary; the channel slope and elongation of the film then generate a hydrostatic pressure gradient, which strengthens until buoyancy arrests the upper contact line and thickens the film. Beneath the film, liquid then drains until the interface flattens under buoyancy. Analytical solutions of reduced-order models capture interface evolution and contact-line motion through each regime and are validated against full numerical simulations. These results have implications for subsurface hydrogen and CO$_2$ storage, where a horizontal interface that advances vertically enhances both safety and storage efficiency.",
+      "authors": [
+        "Peter Castellucci",
+        "Radha Boya",
+        "Lin Ma",
+        "Igor L. Chernyavsky",
+        "Oliver E. Jensen"
+      ],
+      "primary_category": "physics.flu-dyn",
+      "categories": [
+        "physics.flu-dyn"
+      ],
+      "published": "2026-04-21T21:34:06+00:00",
+      "link": "https://arxiv.org/pdf/2604.20007v1",
+      "tags": [
+        "keyword:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries",
+        "query:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Gas plume evolution and gas/liquid interface dynamics",
+      "llm_evidence_cn": "气团演化与气液界面动力学",
+      "llm_evidence": "气团演化与气液界面动力学",
+      "canonical_evidence": "气团演化与气液界面动力学",
+      "llm_tldr_en": "Models the evolution of gas plumes in porous channels, focusing on buoyancy and interface dynamics.",
+      "llm_tldr_cn": "模拟了多孔通道中气团的演化，重点关注浮力和界面动力学。",
+      "llm_tldr": "模拟了多孔通道中气团的演化，重点关注浮力和界面动力学。",
+      "llm_tags": [
+        "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries"
+      ],
+      "matched_query_tag": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "matched_query_text": "Bubble evolution dynamics",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}
