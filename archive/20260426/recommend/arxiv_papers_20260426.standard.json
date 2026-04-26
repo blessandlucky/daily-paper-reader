@@ -1,0 +1,246 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-04-26T20:07:35.769371+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 0,
+    "deep_cap": 6,
+    "deep_selected": 0,
+    "quick_candidates": 6,
+    "quick_skim_target": 11,
+    "quick_selected": 6
+  },
+  "deep_dive": [],
+  "quick_skim": [
+    {
+      "id": "2604.21773v1",
+      "source": "arxiv",
+      "title": "Molecular dynamics simulations of Nafion thin films at a platinum catalyst surface: Correlating structure with charging behaviour",
+      "abstract": "Electrocatalysis is greatly influenced by the local reaction environment, which is governed by the structure of the catalyst, the distribution of the electrolyte, and the local electric field. In catalytic systems comprised of complex molecular species like ionomers, the distribution of electrolyte can vary substantially, resulting in divers local reaction environments. In order to gain atom-scale insight into this micro-environment we construct a model system consisting of a platinum surface, varying levels of water, and a Nafion thin film and conduct molecular dynamics simulations. We employ a construction based on Voronoi tesselation to assemble a dense film of ionomer that fully covers the platinum substrate. An energy analysis reveals that water film configurations with thickness of less then 1.3 nm are stable. Simulations with charged platinum surfaces are analysed in view of electrostatic conditions and differential capacitance of the interface configuration. Trends observed in these properties can be interpreted in view of the crowding of hydronium ions or the Nafion film at the platinum surface. The presented workflow can be easily applied to investigate novel ionomers for use in PEMFCs.",
+      "authors": [
+        "Dustin Vivod",
+        "Binny A. Davis",
+        "Tobias Binninger",
+        "Michael Eikerling"
+      ],
+      "primary_category": "physics.chem-ph",
+      "categories": [
+        "physics.chem-ph"
+      ],
+      "published": "2026-04-23T15:30:45+00:00",
+      "link": "https://arxiv.org/pdf/2604.21773v1",
+      "tags": [
+        "keyword:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries",
+        "query:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries"
+      ],
+      "llm_score": 7.5,
+      "llm_evidence_en": "Molecular dynamics of Nafion thin films at platinum catalyst surfaces for electrocatalysis micro-environments.",
+      "llm_evidence_cn": "铂催化剂表面Nafion薄膜的分子动力学模拟，涉及电催化微环境。",
+      "llm_evidence": "铂催化剂表面Nafion薄膜的分子动力学模拟，涉及电催化微环境。",
+      "canonical_evidence": "铂催化剂表面Nafion薄膜的分子动力学模拟，涉及电催化微环境。",
+      "llm_tldr_en": "Simulates the Nafion-platinum interface to understand how electrolyte distribution affects electrocatalytic environments.",
+      "llm_tldr_cn": "模拟Nafion-铂界面，以了解电解质分布如何影响电催化反应环境。",
+      "llm_tldr": "模拟Nafion-铂界面，以了解电解质分布如何影响电催化反应环境。",
+      "llm_tags": [
+        "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries"
+      ],
+      "matched_query_tag": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "matched_query_text": "Hydrogen evolution reaction",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2604.21000v1",
+      "source": "arxiv",
+      "title": "Surfactant effect on collective bubble bursting and aerosol emission",
+      "abstract": "Bubbles entrained by breaking waves rise to the ocean surface where they cluster and burst, emitting sea spray aerosols into the atmosphere. Bubble bursting thereby links seawater biogeochemistry and aerosol chemistry, influencing the ability of emitted aerosols to serve as cloud condensation nuclei or ice nucleating particles. The mechanisms of film drop and jet drop production are modulated by organic material present in seawater, which may affect the size, number, and composition of resulting aerosols. We disentangle the effect of surfactant on collective bursting processes using laboratory experiments with detailed bubble and aerosol measurements down to small sizes, multiple bubble size configurations, and measurements of bubble lifetime. Submicron aerosol emission, linked to film drop production, increased with surfactant up to an optimal concentration, while production of supermicron aerosols emitted through jet drop production was shut down. Our work paves the way to integrate organic composition into sea spray emission functions.",
+      "authors": [
+        "Megan Mazzatenta",
+        "Samuel M. Koblensky",
+        "Luc Deike"
+      ],
+      "primary_category": "physics.flu-dyn",
+      "categories": [
+        "physics.flu-dyn",
+        "physics.ao-ph"
+      ],
+      "published": "2026-04-22T18:46:16+00:00",
+      "link": "https://arxiv.org/pdf/2604.21000v1",
+      "tags": [
+        "keyword:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries",
+        "query:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries"
+      ],
+      "llm_score": 6.5,
+      "llm_evidence_en": "Surfactant effects on bubble clustering, bursting, and lifetime in aqueous environments.",
+      "llm_evidence_cn": "表面活性剂对水环境中气泡聚集、破裂和寿命的影响。",
+      "llm_evidence": "表面活性剂对水环境中气泡聚集、破裂和寿命的影响。",
+      "canonical_evidence": "表面活性剂对水环境中气泡聚集、破裂和寿命的影响。",
+      "llm_tldr_en": "Investigates how surfactants modulate bubble bursting and aerosol emission, relevant to bubble lifetime and dynamics.",
+      "llm_tldr_cn": "研究表面活性剂如何调节气泡破裂和气溶胶排放，与气泡寿命和动力学相关。",
+      "llm_tldr": "研究表面活性剂如何调节气泡破裂和气溶胶排放，与气泡寿命和动力学相关。",
+      "llm_tags": [
+        "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries"
+      ],
+      "matched_query_tag": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "matched_query_text": "Bubble evolution dynamics",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2604.17636v1",
+      "source": "arxiv",
+      "title": "Drag reduction regimes in air lubrication",
+      "abstract": "Air lubrication regimes were studied using simultaneous drag force measurements and multi-plane imaging to characterize the regimes and identify the governing mechanisms of drag reduction. A bubbly, transitional, and air layer regime are identified over a large range of freestream velocities ($U_{\\infty}$), air flow rates ($Q_{air}$), and Froude-depth numbers ($Fr_d$). For the lowest $U_{\\infty}$, drag reduction lags significantly behind the non-wetted area coverage at all cases and no simple correlation exists. Within the bubbly regime, a drag increase is found for low $U_{\\infty}$ with large, slow-moving bubbles forming a single layer over the plate height. For higher velocities, bubbles become smaller and disperse vertically, while the drag starts decreasing. For higher $Q_{air}$, irrespective of $U_{\\infty}$, air patches start to form (transitional regime) and drag monotonically decreases, with the onset of the air layer regime at 60\\% drag reduction. A new scaling of the associated critical $Q_{air}$ is proposed, combining the air exit velocity, the liquid velocity close to the air layer and $Fr_d$. For a further increase of $Q_{air}$ and low $U_{\\infty}$, a thicker and smoother air layer is formed with even lower drag; for higher $U_{\\infty}$, marginal differences are observed. The air layer morphology is significantly altered however, depending on $Fr_d$: for $Fr_d>0.7$, it is unbounded, extending beyond the current test section length, and for subcritical conditions (deep water regime, $Fr_d<0.61$) a closure is formed and the air layer transitions to a cavity of a specific length.",
+      "authors": [
+        "Lina Nikolaidou",
+        "Ali R Khojasteh",
+        "Angeliki Laskari",
+        "Tom van Terwisga",
+        "Christian Poelma"
+      ],
+      "primary_category": "physics.flu-dyn",
+      "categories": [
+        "physics.flu-dyn"
+      ],
+      "published": "2026-04-19T22:12:33+00:00",
+      "link": "https://arxiv.org/pdf/2604.17636v1",
+      "tags": [
+        "keyword:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries",
+        "query:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "Bubbly and transitional regimes in air lubrication and drag reduction mechanisms",
+      "llm_evidence_cn": "空气润滑中的气泡流和过渡流态及减阻机制",
+      "llm_evidence": "空气润滑中的气泡流和过渡流态及减阻机制",
+      "canonical_evidence": "空气润滑中的气泡流和过渡流态及减阻机制",
+      "llm_tldr_en": "Characterizes bubbly flow regimes and gas-liquid interface dynamics to identify drag reduction mechanisms.",
+      "llm_tldr_cn": "表征气泡流态和气液界面动力学，以识别减阻机制。",
+      "llm_tldr": "表征气泡流态和气液界面动力学，以识别减阻机制。",
+      "llm_tags": [
+        "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries"
+      ],
+      "matched_query_tag": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "matched_query_text": "Bubble evolution dynamics",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2604.17793v1",
+      "source": "arxiv",
+      "title": "Tangential and normal partial slip at the liquid-fluid interfaces: application to a small liquid droplet, gas bubble, and aerosol",
+      "abstract": "An analytical solution is obtained for the problem of the slow movement of a small drop of a fluid in another immiscible fluid in an infinitely large reservoir with the boundary condition of the normal slip and/or tangential partial slip at the interface. That generalizes the conventional Navier and Maxwellian boundary conditions of partial slip. Normal slip is accompanied by the density gradient in the fluid and is applicable only if one of the phases in contact at the interface is a gas. Although tangential partial slip and the associated generalization of the Hadamard-Rybczynski equation (HRE) have been considered previously, they were done using the friction coefficient formalism. Here, this issue is discussed within the more general formalism of slip lengths. It is proven that each of the two fluids separated by an interface has its own slip length. New equations describing the terminal velocity of gas bubble rise and aerosol falling have been obtained. The result is compared with experiment. It has been shown that the gas density within a rising bubble and around a falling droplet in the air is not uniform. The relative magnitude of the density increment increases with the size of the bubble or aerosol. Presumably, the best applicability of the generalized HRE should be expected for the interface of hydrophobic liquid and hydrophilic one (water and hydrocarbons, water and higher alcohols, in general: aqueous emulsions, water, lipophilic organic liquids and oils, etc.). These are quite important emulsions in practical terms, for example, for the oil industry and medicine. Experimental methods for determining the slip length are considered.",
+      "authors": [
+        "Peter Lebedev-Stepanov"
+      ],
+      "primary_category": "physics.flu-dyn",
+      "categories": [
+        "physics.flu-dyn",
+        "cond-mat.soft"
+      ],
+      "published": "2026-04-20T04:35:17+00:00",
+      "link": "https://arxiv.org/pdf/2604.17793v1",
+      "tags": [
+        "keyword:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries",
+        "query:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Analytical solution for gas bubble movement and interface slip conditions",
+      "llm_evidence_cn": "气泡运动及界面滑动条件的解析解",
+      "llm_evidence": "气泡运动及界面滑动条件的解析解",
+      "canonical_evidence": "气泡运动及界面滑动条件的解析解",
+      "llm_tldr_en": "Provides analytical solutions for gas bubble movement at interfaces, relevant to fundamental bubble dynamics.",
+      "llm_tldr_cn": "提供气泡在界面运动的解析解，与气泡动力学基础相关。",
+      "llm_tldr": "提供气泡在界面运动的解析解，与气泡动力学基础相关。",
+      "llm_tags": [
+        "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries"
+      ],
+      "matched_query_tag": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "matched_query_text": "Gaseous bubble",
+      "matched_requirement_id": "req-6",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-04-16-719040-v1",
+      "source": "biorxiv",
+      "title": "How the Azadithiolate Ligand Impacts O2-Stability of Group B -Hydrogenase ToHydA",
+      "abstract": "[FeFe]-hydrogenases are metalloenzymes that catalyze the reversible oxidation and production of H2, making them potential candidates for sustainable energy solutions. However, their practical application is restricted by their extreme O2 sensitivity, which leads to irreversible active site degradation. A newly characterized Group B hydrogenase, ToHydA from Thermosediminibacter oceani, has exhibited exceptional O2-stability even after longtime exposure to air. In ToHydA, the highly conserved proton-transporting cysteine (C212) safeguards the H-cluster from O2-induced degradation by formation of the Hinact state. In this study, we investigate the effects of replacing the azadithiolate (ADT) ligand of [2Fe]H with propanedithiolate (PDT), revealing that this substitution prevents the formation of the Hinact and Htrans states observed in ToHydA WT (bearing the ADT ligand). By combining ATR-FTIR spectroscopy and molecular dynamics (MD) simulations, we show that a hydrogen bond between the nitrogen bridgehead of the ADT ligand and the C212 sidechain is crucial for stabilizing these states. The absence of this interaction in ToHydAPDT (bearing the PDT ligand) prevents the C212 sidechain from approaching the Fed center of [2Fe]H, thereby reducing Hinact accumulation. Moreover, as-isolated ToHydAPDT predominantly exhibits the Hhyd state, which is unusual for [FeFe]-hydrogenases with bound PDT ligand. These findings demonstrate how ligand substitution at the [2Fe]H site of ToHydA affects the structural dynamics, offering detailed molecular insights into the ligand-dependent modulation of [FeFe]-hydrogenases.",
+      "authors": [
+        "Ghosh, S.",
+        "Das, C. K.",
+        "Naskar, S.",
+        "Schäfer, L. V.",
+        "Happe, T."
+      ],
+      "primary_category": "biophysics",
+      "categories": [
+        "biophysics"
+      ],
+      "published": "2026-04-21T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.04.16.719040v1.full.pdf",
+      "tags": [
+        "keyword:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries",
+        "query:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "Hydrogenase enzymes for reversible H2 oxidation and production",
+      "llm_evidence_cn": "用于可逆氢气氧化和生成的氢化酶",
+      "llm_evidence": "用于可逆氢气氧化和生成的氢化酶",
+      "canonical_evidence": "用于可逆氢气氧化和生成的氢化酶",
+      "llm_tldr_en": "Explores biological H2 evolution and O2 stability, providing insights for sustainable HER/OER catalysts.",
+      "llm_tldr_cn": "探索生物产氢与氧稳定性，为可持续HER/OER催化剂提供见解。",
+      "llm_tldr": "探索生物产氢与氧稳定性，为可持续HER/OER催化剂提供见解。",
+      "llm_tags": [
+        "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries"
+      ],
+      "matched_query_tag": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "matched_query_text": "Hydrogen evolution reaction",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2604.20007v1",
+      "source": "arxiv",
+      "title": "The evolution of a gas plume injected into a curved axisymmetric porous channel",
+      "abstract": "We investigate gas injection into water-saturated porous channels with Gaussian and parabolic axisymmetric centrelines, as idealized models of underground gas storage in dome-shaped anticlines. Exploiting the slenderness of each channel, we derive an evolution equation for the gas/liquid interface using a composite asymptotic approximation that accommodates large channel slopes and has a simplified small-slope form describing spreading in weakly curved channels. In the high gas-mobility limit, in contrast with flat planar channels, buoyancy influences the dynamics through different mechanisms in each geometry. For gas injected steadily into a Gaussian channel, buoyancy can continually affect the flow due to the attenuation of the gas velocity caused by axisymmetry. In parabolic channels, the increasing channel slope ensures that buoyancy eventually influences the flow, at a timescale depending on injection rate and fluid properties. Asymptotic analysis of the parabolic channel flow reveals five temporal regimes, each with multiple spatial regions and a distinct spreading rate, reflecting the evolving spatiotemporal competition between injection and buoyancy. Initially, a thin film of gas spreads along the upper boundary; the channel slope and elongation of the film then generate a hydrostatic pressure gradient, which strengthens until buoyancy arrests the upper contact line and thickens the film. Beneath the film, liquid then drains until the interface flattens under buoyancy. Analytical solutions of reduced-order models capture interface evolution and contact-line motion through each regime and are validated against full numerical simulations. These results have implications for subsurface hydrogen and CO$_2$ storage, where a horizontal interface that advances vertically enhances both safety and storage efficiency.",
+      "authors": [
+        "Peter Castellucci",
+        "Radha Boya",
+        "Lin Ma",
+        "Igor L. Chernyavsky",
+        "Oliver E. Jensen"
+      ],
+      "primary_category": "physics.flu-dyn",
+      "categories": [
+        "physics.flu-dyn"
+      ],
+      "published": "2026-04-21T21:34:06+00:00",
+      "link": "https://arxiv.org/pdf/2604.20007v1",
+      "tags": [
+        "keyword:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries",
+        "query:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Evolution of gas/liquid interface and gas plume dynamics in porous channels",
+      "llm_evidence_cn": "多孔通道中气液界面演化和气团动力学",
+      "llm_evidence": "多孔通道中气液界面演化和气团动力学",
+      "canonical_evidence": "多孔通道中气液界面演化和气团动力学",
+      "llm_tldr_en": "Investigates the evolution of gas plumes in porous channels, relevant to multiphase flow and interface dynamics.",
+      "llm_tldr_cn": "研究多孔通道中气团的演化，涉及多相流和界面动力学。",
+      "llm_tldr": "研究多孔通道中气团的演化，涉及多相流和界面动力学。",
+      "llm_tags": [
+        "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries"
+      ],
+      "matched_query_tag": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "matched_query_text": "Bubble evolution dynamics",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}

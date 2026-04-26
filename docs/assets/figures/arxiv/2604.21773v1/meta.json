@@ -1,0 +1,158 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.21773v1/fig-001.webp",
+      "caption": "Figure 2: Exemplary snapshots of the two initial Nafion layers used within this work. Hydronium ions were added for charge neutrality. Color code: H: white, C: black, O: red, F: green, S: yellow.",
+      "page": 6,
+      "index": 1,
+      "width": 533,
+      "height": 265
+    },
+    {
+      "url": "assets/figures/arxiv/2604.21773v1/fig-002.webp",
+      "caption": "Figure 14: Visual example of side-chain angles w.r.t. the platinum surface.",
+      "page": 25,
+      "index": 2,
+      "width": 700,
+      "height": 252
+    },
+    {
+      "url": "assets/figures/arxiv/2604.21773v1/fig-003.webp",
+      "caption": "Figure 13: Temporal evolution of the number of atoms that are within 4 Å of the platinum surface. Total number of each species shown as dashed grey line.",
+      "page": 25,
+      "index": 3,
+      "width": 843,
+      "height": 564
+    },
+    {
+      "url": "assets/figures/arxiv/2604.21773v1/fig-004.webp",
+      "caption": "Table 3: Minimum, maximum, and median areas calculated from the Voronoi tesselation for all simulation systems.",
+      "page": 26,
+      "index": 4,
+      "width": 817,
+      "height": 598
+    },
+    {
+      "url": "assets/figures/arxiv/2604.21773v1/fig-005.webp",
+      "caption": "Figure 18: Exemplary Voronoi diagrams for the square and hex Nafion layers (column wise) at both investigated temperatures (row wise) and 9000 added water molecules. Blue dots denote carbon backbone atoms, orange lines denote the region edges. Black dashed lines show the simulation cell boundaries.",
+      "page": 30,
+      "index": 5,
+      "width": 845,
+      "height": 818
+    },
+    {
+      "url": "assets/figures/arxiv/2604.21773v1/fig-006.webp",
+      "caption": "Figure 4: Snapshots during production runs of systems with different water content. (a): 0 water molecules, (b): 1000 water molecules, (c): 5000 water molecules, (d): 9000 water molecules. Color code: H: white, C: black, O: red, F: green, S: yellow, Pt: silver.",
+      "page": 7,
+      "index": 6,
+      "width": 446,
+      "height": 355
+    },
+    {
+      "url": "assets/figures/arxiv/2604.21773v1/fig-007.webp",
+      "caption": "Figure 17: Exemplary Voronoi diagrams for the square and hex Nafion layers (column wise) at both investigated temperatures (row wise) and 5000 added water molecules. Blue dots denote carbon backbone atoms, orange lines denote the region edges. Black dashed lines show the simulation cell boundaries.",
+      "page": 29,
+      "index": 7,
+      "width": 845,
+      "height": 818
+    },
+    {
+      "url": "assets/figures/arxiv/2604.21773v1/fig-008.webp",
+      "caption": "Figure 7: Densities along Z direction from the Pt surface for selected atom species (column wise) of the ‘dense’ layer with different amounts of added water molecules (row wise). Note the broken axes in columns 1 and 3.",
+      "page": 10,
+      "index": 8,
+      "width": 860,
+      "height": 471
+    },
+    {
+      "url": "assets/figures/arxiv/2604.21773v1/fig-009.webp",
+      "caption": "Figure 9: Comparison of charge densities (left) and electrostatic potentials (right) between uncharged and charged systems. Top row are references from the uncharged simulations for each water content. Rows 2–5 are differences in charge density (∆ρ (left)) and potentials (∆ϕ (right)) between the charged systems and the uncharged reference for 0, 1000, 5000 and 9000 added water molecules, respectively.",
+      "page": 14,
+      "index": 9,
+      "width": 640,
+      "height": 712
+    },
+    {
+      "url": "assets/figures/arxiv/2604.21773v1/fig-010.webp",
+      "caption": "Figure 22: Distribution of water dipole angles w.r.t. the surface normal for the charged systems.",
+      "page": 33,
+      "index": 10,
+      "width": 853,
+      "height": 588
+    },
+    {
+      "url": "assets/figures/arxiv/2604.21773v1/fig-011.webp",
+      "caption": "Figure 12: Comparison of Z densities between uncharged and charged systems of hydro-",
+      "page": 18,
+      "index": 11,
+      "width": 640,
+      "height": 713
+    },
+    {
+      "url": "assets/figures/arxiv/2604.21773v1/fig-012.webp",
+      "caption": "Figure 16: Exemplary Voronoi diagrams for the square and hex Nafion layers (column wise) at both investigated temperatures (row wise) and 1000 added water molecules. Blue dots denote carbon backbone atoms, orange lines denote the region edges. Black dashed lines show the simulation cell boundaries.",
+      "page": 28,
+      "index": 12,
+      "width": 845,
+      "height": 818
+    },
+    {
+      "url": "assets/figures/arxiv/2604.21773v1/fig-013.webp",
+      "caption": "Figure 11: (a) Electric surface potentials ϕs as a function of surface charge for each water content. The potential reference is chosen such that the uncharged systems have ϕs=0. (b) Differential capacitances Cdiff as a function of electric surface potential for each water content. Calculated using Eq. 4 using neighbouring charge steps and ϕs values as described in Sec. 2.2.",
+      "page": 17,
+      "index": 13,
+      "width": 421,
+      "height": 390
+    },
+    {
+      "url": "assets/figures/arxiv/2604.21773v1/fig-014.webp",
+      "caption": "Figure 21: Comparison of charge densities (left) and potentials (right) between uncharged and charged systems. Top row are references from the uncharged simulations for each water content. Rows 2–5 are differences in charge density (∆ρ (left)) and potentials (∆ϕ (right)) between the charged systems and the uncharged reference for 0, 1000, 5000 and 9000 added water molecules, respectively.",
+      "page": 32,
+      "index": 14,
+      "width": 852,
+      "height": 876
+    },
+    {
+      "url": "assets/figures/arxiv/2604.21773v1/fig-015.webp",
+      "caption": "Figure 8: Side-chain angles histograms of the ‘dense’ layer systems with different water content.",
+      "page": 12,
+      "index": 15,
+      "width": 429,
+      "height": 644
+    },
+    {
+      "url": "assets/figures/arxiv/2604.21773v1/fig-016.webp",
+      "caption": "Figure 15: Exemplary Voronoi diagrams for the square and hex Nafion layers (column wise) at both investigated temperatures (row wise) and 0 added water molecules. Blue dots denote carbon backbone atoms, orange lines denote the region edges. Black dashed lines show the simulation cell boundaries.",
+      "page": 27,
+      "index": 16,
+      "width": 845,
+      "height": 818
+    },
+    {
+      "url": "assets/figures/arxiv/2604.21773v1/fig-017.webp",
+      "caption": "Figure 19: Exemplary Voronoi diagrams for the dense Nafion layers at both investigated temperatures (row wise) and the four different amounts of water molecules added. Blue dots denote carbon backbone atoms, orange lines denote the region edges. Black dashed lines show the simulation cell boundaries.",
+      "page": 31,
+      "index": 17,
+      "width": 856,
+      "height": 438
+    },
+    {
+      "url": "assets/figures/arxiv/2604.21773v1/fig-018.webp",
+      "caption": "Figure 20: Left: Temporal evolution of the potentials at the platinum surface during the 1 ns simulation. Gray dashed lines denote the averaged potential of the last 100 ps. Right: Difference in the potential with the previous 100 ps.",
+      "page": 31,
+      "index": 18,
+      "width": 859,
+      "height": 446
+    },
+    {
+      "url": "assets/figures/arxiv/2604.21773v1/fig-019.webp",
+      "caption": "Figure 10: Centers of molecular excess charge (cf. Eq. 7) per water content with respect to surface charge.",
+      "page": 16,
+      "index": 19,
+      "width": 423,
+      "height": 310
+    }
+  ]
+}
