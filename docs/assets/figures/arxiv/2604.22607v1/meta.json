@@ -1,0 +1,142 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.22607v1/fig-001.webp",
+      "caption": "Figure 3: Surfactant injection apparatus",
+      "page": 6,
+      "index": 1,
+      "width": 663,
+      "height": 554
+    },
+    {
+      "url": "assets/figures/arxiv/2604.22607v1/fig-002.webp",
+      "caption": "Figure 8: Bubble shape oscillations in different surfactant concentration solutions (the time instance of each bubble in its series is (2i− 2) ·∆t for i = 1, 2, 3, . . . ). The full time series can be found in the supplementary material as ’Movie 1’, ’Movie 2’ etc. respectively, named in increasing order with surfactant concentrations",
+      "page": 11,
+      "index": 2,
+      "width": 693,
+      "height": 454
+    },
+    {
+      "url": "assets/figures/arxiv/2604.22607v1/fig-003.webp",
+      "caption": "Table 2: Average features of bubbles in different surfactant concentrations",
+      "page": 11,
+      "index": 3,
+      "width": 653,
+      "height": 207
+    },
+    {
+      "url": "assets/figures/arxiv/2604.22607v1/fig-004.webp",
+      "caption": "Figure 9: (a) Average aspect ratio profiles for different surfactant concentrations; (b) Peak aspect ratio vs surfactant concentration",
+      "page": 11,
+      "index": 4,
+      "width": 904,
+      "height": 398
+    },
+    {
+      "url": "assets/figures/arxiv/2604.22607v1/fig-005.webp",
+      "caption": "Table 4: Correlation of extracted features with surfactant concentration",
+      "page": 15,
+      "index": 5,
+      "width": 459,
+      "height": 587
+    },
+    {
+      "url": "assets/figures/arxiv/2604.22607v1/fig-006.webp",
+      "caption": "Figure 4: First 6 bubble images captured starting from the moment before detachment from the needle, rising in tap water, separated by ∆t = 8 ms. For scale, the outer diameter of the needle is 1.61 mm. These raw images can be found in ’A1’ from the supplementary material",
+      "page": 7,
+      "index": 6,
+      "width": 693,
+      "height": 278
+    },
+    {
+      "url": "assets/figures/arxiv/2604.22607v1/fig-007.webp",
+      "caption": "Figure 7: Aspect ratio as a function of time for bubbles released in clean water. Error bars are deduced from variations between repeated experiments.",
+      "page": 10,
+      "index": 7,
+      "width": 628,
+      "height": 445
+    },
+    {
+      "url": "assets/figures/arxiv/2604.22607v1/fig-008.webp",
+      "caption": "Table 3: Summary of extracted features from AR variation profiles.",
+      "page": 14,
+      "index": 8,
+      "width": 802,
+      "height": 1069
+    },
+    {
+      "url": "assets/figures/arxiv/2604.22607v1/fig-009.webp",
+      "caption": "Figure 12: ARDI against surfactant concentration with mean fit and ±σ envelopes",
+      "page": 18,
+      "index": 9,
+      "width": 666,
+      "height": 452
+    },
+    {
+      "url": "assets/figures/arxiv/2604.22607v1/fig-010.webp",
+      "caption": "Figure 10: Variation of features extracted from measured AR profiles with the strongest and weakest correlations to surfactant concentrations up to 2.9ppm: (a) Max rate of change, ȦRmax; (b) Time to dynamic equilibrium, teq",
+      "page": 13,
+      "index": 10,
+      "width": 692,
+      "height": 469
+    },
+    {
+      "url": "assets/figures/arxiv/2604.22607v1/fig-011.webp",
+      "caption": "Figure 5: Detected centroid vertical position against time for a typical bubble rising in tap water relative to the position where bubble is first fully detached from the needle at t = 0 ms",
+      "page": 8,
+      "index": 11,
+      "width": 595,
+      "height": 445
+    },
+    {
+      "url": "assets/figures/arxiv/2604.22607v1/fig-012.webp",
+      "caption": "Figure 1: Schematic diagram of experimental setup",
+      "page": 4,
+      "index": 12,
+      "width": 756,
+      "height": 388
+    },
+    {
+      "url": "assets/figures/arxiv/2604.22607v1/fig-013.webp",
+      "caption": "Figure 13: Predicted surfactant concentrations using ARDI(s)mean (eq. 11) of recorded bubbles compared against actual experimental concentrations; with standard deviation for each concentration case and relative error in percentage annotated in red.",
+      "page": 19,
+      "index": 13,
+      "width": 649,
+      "height": 508
+    },
+    {
+      "url": "assets/figures/arxiv/2604.22607v1/fig-014.webp",
+      "caption": "Figure 6: Average rise velocity, u against bubble diameter for different surfactant concentrations, and drag-based terminal rise velocity, UT predictions for clean bubbles by Lehrer (1976) and Clift et al. (1978)",
+      "page": 9,
+      "index": 14,
+      "width": 966,
+      "height": 539
+    },
+    {
+      "url": "assets/figures/arxiv/2604.22607v1/fig-015.webp",
+      "caption": "Figure 14: Predicted surfactant concentrations using derived ARDImean relationship (eq. 11, with uncertainties depicted for different injected concentrations",
+      "page": 20,
+      "index": 15,
+      "width": 607,
+      "height": 486
+    },
+    {
+      "url": "assets/figures/arxiv/2604.22607v1/fig-016.webp",
+      "caption": "Figure 2: Distribution of bubble diameters investigated for different concentration cases.",
+      "page": 5,
+      "index": 16,
+      "width": 644,
+      "height": 664
+    },
+    {
+      "url": "assets/figures/arxiv/2604.22607v1/fig-017.webp",
+      "caption": "Figure 11: Variation of prediction error, uncertainty and score with imposed threshold values",
+      "page": 16,
+      "index": 17,
+      "width": 641,
+      "height": 476
+    }
+  ]
+}
