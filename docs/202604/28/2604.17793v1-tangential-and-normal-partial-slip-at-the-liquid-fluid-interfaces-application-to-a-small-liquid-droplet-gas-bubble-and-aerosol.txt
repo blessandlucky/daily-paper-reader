@@ -1,0 +1,7033 @@
+Title: Microsoft Word - manuscript_lebedev-stepanov_full
+
+URL Source: https://arxiv.org/pdf/2604.17793v1
+
+Published Time: Tue, 21 Apr 2026 01:53:27 GMT
+
+Number of Pages: 51
+
+Markdown Content:
+1
+
+## Tangential and normal partial slip at the liquid-fluid interfaces: 
+
+## application to a small liquid droplet, gas bubble, and aerosol 
+
+Peter Lebedev-Stepanov 
+
+Shubnikov Institute of Crystallography, Kurchatov Complex of Crystallography and 
+
+Photonics, Leninskiy Prospekt 59, Moscow 119333, Russia 
+
+E-mail: lebstep.p@crys.ras.ru 
+
+Author ORCID https://orcid.org/0000-0002-7009-4319 
+
+An analytical solution is obtained for the problem of the slow movement of a small drop 
+
+of a fluid in another immiscible fluid in an infinitely large reservoir with the boundary condition 
+
+of the normal slip and/or tangential partial slip at the interface. That generalizes the conventional 
+
+Navier’s and Maxwellian boundary conditions of partial slip. Normal slip is accompanied by the 
+
+density gradient in the fluid and is applicable only if one of the phases in contact at the interface 
+
+is a gas. Although tangential partial slip and the associated generalization of the Hadamard-
+
+Rybczynski equation (HRE) have been considered previously, they were done using the friction 
+
+coefficient formalism. Here, this issue is discussed within the more general formalism of slip 
+
+lengths. It is proven that each of the two fluids separated by an interface has its own slip length. 
+
+New equations describing the terminal velocity of gas bubble rise and aerosol falling have been 
+
+obtained. The result is compared with experiment. It has been shown that the gas density within a 
+
+rising bubble and around a falling droplet in the air is not uniform. The relative magnitude of the 
+
+density increment increases with the size of the bubble or aerosol. Presumably, the best 
+
+applicability of the generalized HRE should be expected for the interface of hydrophobic liquid 
+
+and hydrophilic one (water – hydrocarbons, water – higher alcohols, in general: aqueous 
+
+emulsions, water – lipophilic organic liquids and oils, etc.). These are quite important emulsions 
+
+in practical terms, for example, for the oil industry and medicine. Experimental methods for 
+
+determining the slip length are considered. 2
+
+1. INTRODUCTION 
+
+Small spherical particles in various states of aggregation (solid, liquid, gas), which move 
+
+in an external fluid under the action of the buoyancy force, are an important object for studying 
+
+the properties of substances and materials, as well as a testing ground for theories at the intersection 
+
+of hydrodynamics and surface science. If a liquid particle is small enough, its velocity in the 
+
+external fluid is also low, and the deviation of the liquid particle or gas bubble from a sphere can 
+
+be neglected. This allows to apply the low-Reynolds-number hydrodynamics and to work with 
+
+relatively simple solutions to linear problems in a spherical coordinate system. However, even 
+
+with such a significant simplification, the range of problems under consideration is not trivial and 
+
+remains a subject for discussion. One such problem is the boundary condition for partial slip at a 
+
+liquid-liquid interface. 
+
+The problem of the partial slip of a liquid droplet in an external fluid with the boundary 
+
+condition in a spherical coordinate system ( , , )r   
+
+> r
+
+V Sl     , (1) 
+
+which dates back to the work of Basset [1] is considered in Ref. [2]. Here V is the tangential 
+
+relative velocity of the droplet, r is the tangential viscous shear stress on the spherical interface, 
+
+and Sl is a ‘slip coefficient’ that can be determined empirically. Condition (1) is expanded as                   
+
+> (,)'( ,)( , )r
+> R
+> VRVRR
+> 
+>   
+> 
+
+, (2) 
+
+where R is the radius of the liquid droplet; ( , ) V R  and '( , ) V R  are the polar components of 
+
+velocity of external and internal liquids, respectively; 
+
+1
+
+( , ) r 
+
+> r
+> rR
+
+V VV
+
+R r r r 
+
+> 
+> 
+> 
+
+ 
+
+      
+
+   , (3) 
+
+where η is the dynamical viscosity of the external liquid ; β is the dimensionless slip coefficient [2-
+
+4], 
+
+Sl 
+
+R
+
+   . (4) 
+
+In Ref. [2], based on the results of Refs. [3], in the limit of small Reynolds numbers ( 
+
+## Re 1 ) for the force 0F acting on a droplet moving in an external liquid with a constant velocity 
+
+> 0
+
+## V , the expression was obtained (see Eqs. (75)-(76) in Ref. [2]):  
+
+> 00
+
+2 3 6
+
+2 1 3
+
+F R V     
+
+       , (5) 3
+
+where '
+
+   is the ratio of the dynamic viscosity of the internal liquid (droplet), ' , to that of 
+
+the external liquid, . On the other hand, the force acting on a drop of liquid that rises or falls 
+
+under the influence of gravity and buoyancy is given by 
+
+> 3
+> 0
+
+4 ( ' )
+
+3
+
+F gR 
+
+
+
+    , (6) 
+
+where  and ' are the mass densities of external liquid and the liquid inside the droplet, 
+
+respectively ; g is the acceleration of gravity. By equating Eqs. (5) and (6), one can obtain an 
+
+expression 
+
+> 2
+> 0
+
+2( ' ) 1 3
+
+3 2 3 6
+
+gR 
+
+V        
+
+      . (7) 
+
+Eq. (7) describes the steady-state velocity of slow motion of a small spherical liquid droplet of 
+
+radius R in an external liquid. It is a solution of the Stokes equations  
+
+> 2
+
+p   V
+
+ , ( ) 0  V , (8) 
+
+> 2
+
+' ' 'p    V
+
+ , ( ') 0  V (9) 
+
+under the boundary condition (2). Here, the velocity 'V and the pressure 'p describe the flow 
+
+inside the liquid droplet. 
+
+Eq. (7) was also obtained in a different way in Ref. [4] (see Eq. (39) there) and the 
+
+Supplementary material, where this expression is obtained in a different way. 
+
+Note that under condition no-slip (β = 0) Eq. (7) transforms into the Hadamard-
+
+Rybczynski equation (HRE), [5-6]: 
+
+> 2
+
+2( ' ) 1
+
+3 2 3
+
+> HR
+
+gR 
+
+V      
+
+    , (10) 
+
+HRE turns into the Stokes formula in the limit of infinite viscosity of the liquid drop ( '   ,
+
+   ), [7]: 
+
+> 2
+
+2( ' )
+
+9
+
+> S
+
+gR 
+
+V    
+
+  . (11) 
+
+Thus, a rigid body is treated as a liquid with infinite viscosity and, accordingly, an infinitely long 
+
+relaxation time. 
+
+If    , i.e. the viscosity of the droplet is much greater than the viscosity of the 
+
+surrounding liquid, and λ has a value limited in absolute value, Eq. (7) takes the form 
+
+> 2
+
+2( ' ) 1 3
+
+9 1 2
+
+> B
+
+gR 
+
+V      
+
+    , (12) 4
+
+Eq. (12) describes the sliding of a solid sphere in an external fluid with viscosity η and slip 
+
+parameter β. It coincides with the classical result of Basset [1], [8-9]. At β=0, Eq. (12) becomes 
+
+the Stokes formula (11). 
+
+If 0  , i.e. the viscosity of the droplet is much smaller than the viscosity of the external 
+
+liquid, HRE given by Eq. (10) takes the form 
+
+> 2
+
+( ' )
+
+3
+
+> c
+
+gR 
+
+V    
+
+  . (13) 
+
+Formula (13) is expected to describe the rise of a small air bubble ( ' 0  ) in a liquid [7]. 
+
+There are two main approaches to interpreting the mechanism of momentum transfer at 
+
+an interface in the presence of partial slip. In one of them, the value 1/β is considered from the 
+
+same standpoint as the dimensionless coefficient of friction between solid contacting surfaces [1-
+
+3]. “This postulate is analogous to Coulomb's law of friction for solid surfaces moving relatively 
+
+to each other”, Ref. [3]. It is assumed that the friction coefficient should depend on the material 
+
+properties of the liquids, and not on the characteristics of the velocity field. 
+
+Another approach, which goes back to the study of sliding of polymeric materials, 
+
+introduces the concept of a thin intermediate layer near the interface with modified (reduced) 
+
+viscosity, Refs. [10-12]. It is assumed that momentum transfer between the two phases occurs due 
+
+to the viscosity of the intermediate layer. In this approach, instead of the slip coefficient β , the so-
+
+called slip length is usually introduced, [8,13-14], which, following the Ref. [8], we will denote 
+
+by λ. 
+
+When considering a liquid-solid interface with partial slip on the surface of a solid sphere 
+
+(in this case, Eq. (1) is usually called the Navier condition), one must set '( , ) 0V R   in the 
+
+boundary condition (2). At liquid-solid interface of arbitrary shape the tangential velocity V is 
+
+determined by 
+
+#  ( )
+
+
+
+   
+
+
+
+V I n n σ n , (14) 
+
+## ( ) 0  V n . (15) 
+
+where λ is the slip length, σ is the viscous stress tensor, n denotes the normal to the interface, 
+
+directed into the liquid. According to Eq. (14), the velocity of the liquid at the interface is 
+
+determined by the component of the stress tensor corresponding to the shear rate in the 
+
+corresponding direction. In the case of a flat sliding surface (Fig. 1a), this condition can be 
+
+rewritten as 5
+
+(0) (0) x xz V 
+
+ 
+
+ , (16) 
+
+where λ is the slip length, (0) xV is the velocity of liquid at liquid-solid interface (z = 0). 
+
+Considering that the tangential component of the viscous stress tensor has the form 
+
+> x
+> xz
+
+V
+
+z
+
+
+
+    , (17) 
+
+then Eq.(14) can be rewritten as 
+
+> 0
+
+( ) 
+
+(0) x
+
+> x
+> z
+
+V z
+
+V z 
+
+
+
+   . (18) 
+
+(a) (b) 
+
+FIG. 1. Liquid velocity profile ( ) xV z near liquid-solid interface ( z = 0) with partial slip 
+
+condition given by Eq. (18); λ is the slip length. 
+
+In the problems of fluid mechanics, the solid (rigid) state and the liquid differ only in 
+
+viscosity. Indeed, let us assume that there is an interface of separation between two immiscible 
+
+liquids, where one liquid slides over the other. If the viscosity of one of the liquids tends to infinity, 
+
+there is a liquid-solid interface with a boundary condition of partial slipping. Thus, it is possible 
+
+to transform a solid-liquid interface into a liquid-liquid interface by continuously changing the 
+
+viscosity of one of the liquids. One can obtain a generalization of the Navier boundary condition 
+
+to the liquid-liquid interface. 
+
+Indeed, molecular dynamics simulations of Couette and Poiseuille flows of two-layered 
+
+liquid systems have shown that a partial sliding regime can exist, when there is a significant drop 
+
+in average density in the liquid-liquid interface region [15]. In such case, the space immediately 6
+
+adjacent to the interface is proposed to be considered a region with altered (significantly lower 
+
+than that of the surrounding liquids) interfacial viscosity ( ) z , [10-11]. 
+
+Then the velocity profile near the interface will have the form shown in Fig. 1b. Since the 
+
+shear stress given by Eq. (6) must be constant in all three zones, one can write:   
+
+> 12
+> 12
+> 0
+
+( ) x x x  
+
+> zlz
+
+V V V
+
+z
+
+z z z 
+
+  
+
+     
+
+   , (19) 
+
+where 1xV and 2 xV are the velocities of the liquids 1 and 2, respectively. The velocity “jump” from 
+
+## 0z  to z l is   
+
+> 120
+> 0
+
+( ) (0) ( ) ( )  
+
+> l
+> x
+> xx
+> z
+
+V dz 
+
+V l V z z z
+
+
+
+     . (20) 
+
+As indicated in Ref. [11], on a macroscopic scale, the width of the transition zone between 
+
+both bulk liquids is vanishingly small, 0l  , and the viscosity η of this diffuse region is also very 
+
+small (although ratio, l/η , has a finite limit), so we can approximately move from Eq. (20) to the 
+
+following expression:  
+
+> 12
+
+## ( 0) (0) (0) x x xz V z V    (21) 
+
+or    
+
+> 12xxxz
+
+## V V   , (22) 
+
+where α is slip parameter of the interface; the values of 1xV , 2 xV , and xz  are taken at the infinitely 
+
+thin intermediate layer between two liquids, 1 and 2. 
+
+Comparing Eq.(11) and Eq.(5), we note that expression (22) can be rewritten similarly to 
+
+condition (14) as follows [11-12]: 
+
+#  1 2 ( )      V V I n n σ n , (23)  
+
+> 12
+
+## ( ) ( ) 0    V n V n . (24) 
+
+The left-hand side of Eq. (23) contains the relative tangential velocity at the liquid-liquid interface. 
+
+The above approaches to describing the partial sliding at a liquid-liquid interface require 
+
+further development. First, it should be noted that the coefficient Sl in formula (1) can be 
+
+nondimensionalized in two ways: through the viscosity of one or the other contacting liquid, so we 
+
+have two dimensionless slip coefficients or two corresponding slip lengths. In a generalized 
+
+approach, both liquids (and their properties) at the interface should be considered equally. 
+
+In the region of a liquid-liquid interface (Fig. 1 b), three zones can be generally 
+
+distinguished: two liquids and a thin transition layer that can sometimes be interpreted by analogy 
+
+with the dry friction of solid surfaces with all its attendant attributes, such as static friction, which 
+
+depends on the compressive external pressure. Therefore, from a physical perspective, it would be 
+
+appropriate to separate the friction coefficient of the surfaces (in a two-dimensional region) 1/β 7
+
+from the slip length, which describes the velocity profile in the three-dimensional volume of the 
+
+adjoining liquids. 
+
+It is known that the partial slip condition is realized at the hydrophobic-hydrophilic solid-
+
+liquid interface, [14, 16-18]. Similarly, systems that have a liquid-liquid interface where the partial 
+
+slip condition is expected to be satisfied are water-oil and oil-water emulsions. There is an interface 
+
+separating water and a hydrophobic liquid (oil). 
+
+In the 2 nd Section of the paper, an analysis is made that reveals the duality of the pair of 
+
+slip lengths at the liquid-liquid interface. 
+
+In the 3 rd Section, further development of the approach to slip boundary conditions allows 
+
+to obtain new results on the motion of spherical drops of some special fluids. 
+
+In the 4 th Section, it is shown that, in addition to the condition of tangential (transverse) 
+
+partial slip, normal (longitudinal) slip also occurs at the interface between gas and liquid (or solid). 
+
+Normal sliding is accompanied by a change in gas density. As follows from molecular kinetic 
+
+theory, the slip length in a gas is of the order of the mean free path of a molecule in the gas. A 
+
+formula is derived for the rise velocity of a small bubble, taking into account both normal and 
+
+tangential slip at the interface. 
+
+In the 5 th Section, an equation is derived for the terminal velocity of a small liquid droplet 
+
+(aerosol), taking into account tangential and normal slipping in the air. The result is compared with 
+
+the experiment. 
+
+In the 6 th Section, an experiment is proposed to determine slip lengths in contacting 
+
+liquids by measuring the velocity of a liquid droplet in another liquid. 
+
+2. DUALITY OF THE SLIP LENGTH AT THE LIQUID-LIQUID INTERFACE 
+
+Let us analyze the above-listed variants of partial slip boundary conditions at the liquid-
+
+liquid interface. First of all, we note that the case of a liquid-liquid interface differs from a liquid-
+
+solid one by the presence of two liquids, which means that there are two possibilities to 
+
+nondimensionalize the Sl coefficient in Eq. (1) that gives two slip lengths that are different in 
+
+magnitude but physically equal. 
+
+Indeed, condition (1), which relates the absolute value of the difference in the tangential 
+
+velocities of two liquids separated by an interface to the modulus of the corresponding tangential 
+
+component of the viscous stress tensor by means of a certain non-negative slip coefficient, is the 
+
+most universal. However, when, eliminating symbols of modulus in Eq.(1), we move to the 
+
+expression (2), a new requirement arises, related to the equivalence of the two liquids from the 
+
+standpoint of physical description. The requirement of symmetry with respect to the replacement 
+
+of one fluid by another requires the introduction of a second boundary condition, along with 8
+
+condition (2). Thus, in addition to Eq.(2), one can write a second boundary condition, where the 
+
+quantities related to droplet are replaced by ones related to the exterior liquid: 
+
+' ''1
+
+'( , ) ( , ) ' r 
+
+> rR
+
+V VV
+
+V R V R R r r r  
+
+> 
+> 
+> 
+
+ 
+
+       
+
+   , (25) 
+
+where the second dimensionless slip coefficient β’ is introduced. 
+
+Considering that the equality of the tangential components of the viscous stress tensor must 
+
+be satisfied at the interface 
+
+## 'r r    , (26) 
+
+i.e. 
+
+' ''1 1
+
+'r rV V V VV V
+
+r r r r r r   
+
+> 
+
+     
+
+         
+
+       , (27) 
+
+and comparing Eq. (2) and Eq. (25) one can get the following relationship between two slip 
+
+coefficients:    
+
+> '
+> '
+> 
+>  
+> 
+
+or ' ' 
+
+    
+
+  . (28) 
+
+Then, taking into account Eq. (4), we obtain 
+
+'
+
+' Sl 
+
+R
+
+
+
+   . (29) 
+
+Since 0Sl  by definition, then ' 0  . Thus, at the liquid-liquid interface there are two 
+
+slip coefficients, β and β’. One of them must be positive and the other negative. 
+
+Since in the problem under consideration there is not always a characteristic size R, for 
+
+example, on a flat interface such a size is absent, it is convenient to introduce a pair of slip lengths, 
+
+λ and λ’, positive and negative, according to the definition: 
+
+R Sl      , ' ' 'R Sl      , '   
+
+ . (30) 
+
+Let there be two parallel rigid planes. The z-axis is directed upward perpendicular to the 
+
+planes, so that one plane has coordinate z a , the second z b  , where a>0 and b>0. The upper 
+
+plane is stationary, the lower one moves with a constant velocity V (Fig.2). 
+
+Let us consider a plane flow (Couette flow) involving two immiscible fluids 1 (viscosity 
+
+# ) and 2 (viscosity ' ), the interaction between which is carried out according to the partial slip 
+
+condition Eq.(1) with a coefficient Sl at the interface at z=0. The pressure gradient, p , is zero.  
+
+> 2
+
+0 V
+
+ , ( ) 0  V , (31) 9
+
+> 2
+> 2
+
+( ) 0xV z
+
+z
+
+
+
+ 
+
+ , 0xV
+
+x
+
+ 
+
+ , (32) 
+
+Similarly, for the liquid 2 
+
+> 2
+> 2
+
+'( ) 
+
+' 0xV z
+
+z
+
+
+
+ 
+
+ , ' 0xV
+
+x
+
+ 
+
+ , (33) 
+
+The tangential component of the viscous stress tensor at the interface has the form (17). 
+
+Therefore, the partial slip conditions for fluids 1 and 2 have the form Eq.(34) and Eq.(35), 
+
+respectively: 
+
+> 0
+
+( (0) '(0)) x  
+
+> xz xx
+> z
+
+V V V
+
+z 
+
+ 
+
+    
+
+  , (34) 
+
+> 0
+
+' '
+
+' ' ( '(0) (0)) 
+
+'  
+
+> x
+> xz xx
+> z
+
+V V V
+
+z 
+
+ 
+
+    
+
+  . (35) 
+
+According to Eq. (26), viscous stresses Eq. (34) and Eq. (35) are identical, which yields 
+
+relations (30). 
+
+The solution of Eqs. (32) and (33) for the flow velocity in fluids 1 and 2, taking into 
+
+account the boundary conditions, has the form 
+
+> 1
+> 1
+
+( )
+
+( ) x
+
+a z V 
+
+V z b a
+
+> 
+> 
+
+   
+
+     , (36) 
+
+> 1
+> 1
+
+( )
+
+'( ) x
+
+z a V 
+
+V z b a
+
+> 
+> 
+
+ 
+
+     . (37) 
+
+Then, for the velocity difference at the interface, one can obtain 
+
+> 1
+
+(0) '(0) x x
+
+V
+
+V V b a
+
+
+
+      . (38) 
+
+(a) (b) 
+
+FIG. 2. Viscous flows of fluids 1 and 2 with partial slip condition at their interface, z = 0, initiated 
+
+by motion of a plane z b  with velocity V and the no-slip boundary condition at z b  . The 
+
+slip lengths in the liquids 1 and 2, respectively, are (a) λ < 0 and λ’ > 0; (b) λ > 0 and λ’ < 0. 10 
+
+For a positive velocity V in the coordinate axes shown in Fig. 2a, according to the concept 
+
+of momentum transfer through viscous friction, the velocity of fluid 1 ( ) xV z should decrease with 
+
+increasing z from –b to 0. In this case, the corresponding component of the viscous stress tensor 
+
+(35) will be negative. Given equality (26), the derivative of the velocity of fluid 2 with respect to 
+
+the z coordinate, 'xV
+
+z
+
+
+
+ , will also be negative. Therefore, the slope of the graphs describing the 
+
+velocity profile will be exactly as shown in Fig. 2a,b. 
+
+However, the velocity difference at interface (38) can formally be either positive (Fig. 2a) 
+
+or negative (Fig. 2b), or equal to zero if there is no slip at z=0. In the first case, (Fig. 2a), as follows 
+
+from (34), we have λ < 0, and in the second case, (Fig. 2b), λ > 0. 
+
+We will verify this by analyzing formulae (36)-(38). Obviously, the velocity field shown 
+
+in Fig. 2a corresponds to positive values of the velocity ( ) xV z , as well as non-negative values of 
+
+## '( ) xV z and their difference (0) '(0) x xV V . Let us find which λ corresponds to the set of these 
+
+conditions. 
+
+It is easy to show that 
+
+## ( ) 0, [ ,0] xV z z b   , if 1a b
+
+    or 1a
+
+   , (39) 
+
+## '( ) 0, [0, ] xV z z a  , if 1
+
+b a
+
+    . (40) 
+
+## (0) '(0) 0x xV V  , if 1
+
+b a
+
+    or 0 . (41) 
+
+The combination of conditions (39)-(41) results in 
+
+## 0 . (42) 
+
+On the other hand, if, when conditions (39)-(40) are satisfied, the velocity difference (38) 
+
+is less than zero, which corresponds to Fig. 2b, then condition (41) should be replaced by: 
+
+## (0) '(0) 0x xV V  , if 1
+
+b a
+
+    and 0 . (43) 
+
+The combination of conditions (39)-(41) and (43) results in 
+
+> 1
+
+## [0, ]a
+
+##   , i.e., 0 . (44) 
+
+It can be argued that steady-state flow with partial slip at the interface, satisfying 
+
+condition (44) or Fig. 2b, is not realized in practice. To explain this, let us consider how the energy 
+
+supplied to the system under consideration is dissipated. 
+
+Let us denote the external shear force acting on a unit area of the lower plane by σ. Then, 
+
+the power supplied to a unit area is equal to V (Fig. 2). This power is released as heat in the bulk 
+
+of the fluids due to viscosity and at the interface between the two fluids due to friction. 
+
+The dissipation of kinetic energy in an incompressible fluid is determined by Ref. [19] 11 
+
+> 2
+
+1
+
+2 2   
+
+> ik
+> ik ik
+> ki
+
+V V
+
+E dV dV 
+
+x x
+
+  
+
+        
+
+   
+
+#   , (45) 
+
+which in the case under consideration, taking into account ik ki   , gives the absorbed power per 
+
+unit length of the system along the axis of motion  
+
+> 220
+> 0
+
+( ) '( ) 
+
+' 
+
+> a
+> xx
+> V
+> b
+
+V z V z
+
+N dz dz 
+
+z z
+
+    
+
+       
+
+    
+
+#   . (46) 
+
+Differentiating Eq. (36) and Eq. (37) with respect to z, we obtain 
+
+> 1
+> x
+
+V V
+
+z b a
+
+ 
+
+     ,
+
+> 1
+> 1
+
+'xV V
+
+z b a
+
+> 
+> 
+
+ 
+
+
+
+     . (47) 
+
+Then   
+
+> 12
+> 12
+
+( )
+
+( )
+
+> V
+
+b a V
+
+N b a
+
+> 
+> 
+
+  
+
+     . (48) 
+
+The power released per unit area of the interface due to friction, which is equal to the 
+
+scalar product of the shear force and the velocity of displacement of one surface relative to the 
+
+other. The shear force is directed along the x-axis, as is the velocity of displacement of the bottom 
+
+plate V. The power dissipated by friction at the interface is equal to 
+
+## ( (0) '(0)) S x xN V V   . (49) 
+
+The external force in the bulk fluid is compensated by the corresponding component of 
+
+viscous stress. According to Newton's first law and taking into account Eq. (34) and Eq. (38), we 
+
+have 
+
+> 1
+
+( (0) '(0)) xz x x
+
+V
+
+V V b a
+
+ 
+
+        
+
+     . (50) 
+
+Substituting Eq. (50) into Eq. (49) and taking into account Eq. (38), we have  
+
+> 2
+> 12
+
+( )
+
+> S
+
+V
+
+N b a
+
+ 
+
+      . (51) 
+
+The total energy dissipation is the sum of the volumetric and surface contributions:  
+
+> 2
+> 1VS
+
+V
+
+N N N b a
+
+
+
+      . (52) 
+
+Taking into account Eq. (50), this result can be represented as the product of the external 
+
+shear force applied to the lower plane and the velocity of this plane V, which obviously expresses 
+
+the power supplied by the external force: 
+
+## N V  . (53) 
+
+This result is independent of λ and therefore holds for both Fig. 2(a) and Fig. 2(b). The 
+
+criterion for selecting the correct velocity profile is the sign of the power dissipated at the interface. 12 
+
+Since the friction process is accompanied by heat release, then 0SN  , which, taking into account 
+
+Eq. (51), implies 0 . Therefore, the correct velocity distribution corresponds to Fig. 2(a). The 
+
+velocity distribution shown in Fig. 2b, for which 0SN  , is not realized in stationary processes. 
+
+Thus 
+
+Sl     . (54) 
+
+Negative slip length (54) characterizes the fluid 1. Then fluid 2, in accordance with Eq. 
+
+(30), will have a positive-definite slip length: 
+
+' 'Sl      . (55) 
+
+Note also that Eqs. (36)-(37) can be rewritten in equivalent form concluding ' , using Eq. (55), 
+
+which reflects the symmetry of the partial slip boundary condition with respect to the fluids 1 and 
+
+2: 
+
+( ') 
+
+( ) '
+
+> x
+
+z a V
+
+V z b a
+
+    
+
+      , ( )
+
+'( ) '
+
+> x
+
+a z V 
+
+V z b a
+
+
+
+     . (56) 
+
+In the example discussed, we saw that fluid 1, directly connected to the friction source, 
+
+has a negative sliding length, while the driven fluid has a positive one. However, if we choose the 
+
+opposite direction for the z-axis in Fig. 2, the signs of the derivatives xV
+
+z
+
+
+
+ and xV
+
+z
+
+
+
+ will be 
+
+reversed. Therefore, for the case depicted in Fig. 2(a), we should assume λ > 0 and λ' < 0, while 
+
+for Fig. 2(b), we have λ < 0 and λ' > 0. Therefore, in the example considered, the choice of the 
+
+signs of the sliding lengths is tied to the choice of the coordinate system and is relative. Of course, 
+
+this cannot change the physically meaningful conclusion that, in reality, system given by Fig. 2(a) 
+
+is realized. 
+
+To summarize, based on thermodynamics, we can formulate the following rule: at a 
+
+liquid-liquid interface with partial sliding, the liquid transmitting the impulse of the external force 
+
+to the second liquid through the interface has a leading velocity in the direction of motion; This, 
+
+taking into account the choice of coordinate system, distributes the signs between the sliding 
+
+lengths of the contacting liquids in the formula '   , and for the ratio of viscosities the 
+
+inequality 0 is always satisfied. 13 
+
+3. SPHERICAL DROPLET SLIDING 
+
+Let us determine the sign distribution in the pair of slip lengths between a liquid droplet 
+
+and an external fluid. The correct choice of signs should ensure positive energy dissipation due to 
+
+friction at the interface between the two fluids. 
+
+For the sake of clarity, let us assume that the droplet rises. Consider it in a coordinate 
+
+system in which it is at rest as a whole [Fig. 3(a)]. The external liquid moves downward, and the 
+
+boundary condition at infinity for the external fluid is determined by the droplet rise velocity, taken 
+
+with the opposite sign. This boundary condition at infinity determines the boundary condition at 
+
+the droplet surface, taking into account the partial slip effect. 
+
+According to the rule established in Section 2, the leading fluid must have a higher 
+
+velocity at the interface than the trailing fluid. In the system under consideration, the leading fluid 
+
+is the external fluid, which is directly related to the boundary conditions at infinity, while the 
+
+droplet's fluid is the trailing fluid. Therefore, the correct relationship between the velocities of the 
+
+two fluids in contact at the interface is shown in Fig. 3(a) in the droplet resting frame. Fig. 3(b) 
+
+depicts the same situation in a system in which the vessel containing the external fluid is stationary 
+
+(assuming it has very large or infinite dimensions). 
+
+The resulting image allows us to establish the relationship between the signs of the slip 
+
+lengths in the internal and external fluids. 
+
+(a) (b) 
+
+FIG. 3. Direction of velocities on the droplet surface in the presence of slip at the interface in the 
+
+coordinate system in which the droplet is at rest (a), and in which it rises with velocity 0V (b). 
+
+The external force acting on a unit area of the droplet surface from the external liquid 
+
+is related to the corresponding component of the viscous stress tensor by formula (25), which can 
+
+be rewritten by analogy with Eq. (34) in terms of the slip length. 14 
+
+( , ) ( ( , ) '( , )) r R V R V R  
+
+
+
+     
+
+ . (57) 
+
+This force is applied to the droplet's surface. It counteracts the buoyancy force that causes the 
+
+droplet to rise. 
+
+As follows from Fig. 2(a), the algebraic value of the shear rate caused by the surface force 
+
+(57) should be taken as ( , ) '( , ) V R V R    . Therefore, the power released per unit area of the 
+
+interface is determined by the formula 
+
+> 2
+
+( , )( ( , ) '( , )) ( ( , ) '( , )) S rN R V R V R V R V R    
+
+
+
+         
+
+ . (58) 
+
+For (58) to be positive, the slip length in the external liquid must be positive; in this case, 
+
+the slip length of the liquid in the droplet will be negative: 
+
+## 0 , ' 0    . (59) 
+
+It can be shown that, in this formulation of the problem, the rise velocity of a liquid droplet, 
+
+> 0
+
+## V , is determined by formula (S.66) from Supplementary materials, which has the form: 
+
+> 12
+> 0
+
+( ' ) 6 2
+
+1 3
+
+3 '
+
+gR 
+
+V R
+
+> 
+
+       
+
+     
+
+    
+
+(60) 
+
+where λ is the slip length of the external liquid. The liquid flow is described by the following 
+
+equations [see Eqs. (S70)-(S77), Supplementary material]: 
+
+1) The external liquid ( r > R) 
+
+> 132
+
+( ' ) 6 2
+
+1 3 1 cos 
+
+3 '
+
+> r
+
+gR R R
+
+V r R r
+
+> 
+
+         
+
+          
+
+         
+
+, (61)  
+
+> 132
+
+( ' ) 6 2
+
+2 3 2 sin 
+
+6 '
+
+gR R R
+
+V r R r
+
+> 
+> 
+
+         
+
+          
+
+         
+
+, (62) 
+
+> 3
+> 2
+
+( ' ) cos 
+
+3
+
+gR 
+
+p r
+
+   
+
+   . (63) 
+
+Stream function is 
+
+#   
+
+> 1224
+> 2
+
+( ' ) 6 2
+
+, sin 3
+
+6 '
+
+gR r r R r
+
+r R R R r R
+
+> 
+
+           
+
+                        
+
+. (64) 
+
+2) The internal liquid (r < R)  
+
+> 122
+
+( ' ) 6 2
+
+' 3 1 cos 
+
+3 ' '
+
+> r
+
+gR r
+
+V R R 
+
+> 
+
+         
+
+        
+
+       
+
+, (65)  
+
+> 122
+
+( ' ) 6 2
+
+' 3 2 1 sin 
+
+3 ' '
+
+gR r
+
+V R R
+
+> 
+> 
+
+         
+
+        
+
+       
+
+, (66) 15                 
+
+> 1
+> 10( ')62
+> '3cos
+> 3'
+> gr
+> pR
+> 
+>    
+> 
+> 
+
+. (67) 
+
+Stream function is:   
+
+> 1424
+> 2
+
+( ' ) 6 2
+
+' sin 3
+
+6 ' '
+
+gR r r
+
+R R R 
+
+> 
+
+           
+
+          
+
+         
+
+. (68) 
+
+Taking into account Eq. (30), namely, 1 '
+
+    , Eq. (60) can be rewritten in terms of the slip 
+
+length of the liquid filling the drop, λ’: 
+
+> 12
+> 0
+
+( ' ) 2 3 '
+
+1 3 1
+
+3 '
+
+gR 
+
+V R
+
+> 
+
+        
+
+            
+
+. (69) 
+
+Eq. (60) can be also transformed, taking into account Eqs. (28):   
+
+> 21
+> 01
+
+2( ' ) 1 3
+
+3 2 3 6
+
+gR R
+
+V R
+
+> 
+> 
+
+       
+
+      , '   
+
+>   ,
+
+(70) 
+
+or   
+
+> 21
+> 01
+
+2( ' ) 1 3 '
+
+3 2 3 6 '
+
+gR R
+
+V R
+
+> 
+> 
+
+       
+
+      . (71) 
+
+By substituting R   [see Eqs.(28)], Eq. (70) transforms to Eq.(7). 
+
+Note that under the conditions of the problem under consideration, the Reynolds number 
+
+satisfies the following relations    
+
+> 02
+> Re 1
+> RV 
+> 
+> 
+
+. (72) 
+
+Formula (7) and its equivalent Eqs. (60), (70), (71) can be called generalized Hadamard-
+
+Rybczynski equations. 
+
+The HRE, Eq. (10), is usually applied to describe the motion of a small droplet of liquid 
+
+in another liquid. In its derivation, the no-slip boundary condition at the liquid-liquid interface was 
+
+used [7]. This somewhat contradicts the initial assumption that both liquids are immiscible (poorly 
+
+soluble in each other). Therefore, a more natural and generalizing condition is the partial slip of 
+
+one liquid on the surface of the other one given by Eqs. (1)-(4), which introduce a modification of 
+
+the Navier condition originally proposed for the liquid-solid interface. A generalized HRE given 
+
+by Eq.(7) can be transformed into the usual HRE (10) at λ=0. 
+
+The conditions of applicability of the generalization of the HRE are the same as for the 
+
+no-slip model. First of all, this is the condition Re 1 under which the linearized Navier-Stokes 
+
+equations are valid. For raising or falling droplets, the velocity of which is determined by Eq. 
+
+(70), this condition limits the maximum size of the droplet and, taking into account Eq. (72), has 
+
+the form 16  
+
+> 21
+> 3
+> 1
+
+2 3 6
+
+| ' | 1 3
+
+R
+
+R g R
+
+> 
+> 
+
+    
+
+         . (73) 
+
+Reducing the inequality by extracting the cubic root, we obtain  
+
+> 1
+> 321
+> 1
+
+2 3 6
+
+| ' | 1 3
+
+R
+
+R g R
+
+> 
+> 
+
+     
+
+  
+
+        
+
+(74) 
+
+Given that the second fraction in parentheses in Eq. (74), as a rule, has a value of the order 
+
+of 1, the expression can be used to roughly estimate the drop radius 
+
+> 1
+> 32
+
+| ' | 
+
+R g
+
+ 
+
+  
+
+     
+
+. (75) 
+
+The equation (70), which can be rewritten as   
+
+> 21
+> 01
+
+2( ' ) ' 3 '
+
+3 2 3 ' 6 '
+
+gR R
+
+V R
+
+> 
+> 
+
+        
+
+       . (76) 
+
+of course, does not exhaust all possible variants of boundary conditions, and therefore cannot claim 
+
+universality, but there is a fairly wide and important class of substances for the description of which 
+
+this equation can be applied. From a mathematical point of view, it is obvious that this is 
+
+approximately the range of substances for the description of which the Boussinesq equation can 
+
+be used [7,20]:   
+
+> 21
+> 01
+
+2( ' ) ' 2 (3 )
+
+3 2 3 ' 2
+
+gR e R
+
+V eR 
+
+> 
+> 
+
+       
+
+      , (77) 
+
+where e is the "coefficient of surface viscosity" introduced by Boussinesq. Indeed, the structure of 
+
+expression (77) almost coincides with the expression (76). In this case, the concept of the slip 
+
+length seems to make more physical sense. 
+
+At typical values of parameters 3
+
+10 Pa s 
+
+  , 3 3
+
+10 kg m 
+
+  , 3
+
+| ' | 100 kg m 
+
+  , we 
+
+have a limitation 4
+
+10 mR 
+
+ , i.e., it is an emulsion containing very small droplets with radius of 
+
+100 microns or less. These can be, for example, oil-in-water or water-in-oil emulsions. In such 
+
+systems with a hydrophobic-hydrophilic liquid-liquid interface, partial slip of liquid particles 
+
+should be expected in the dispersed phase. The study of electrophoresis or sedimentation processes 
+
+in such emulsions can provide information about the value of slip length λ. 
+
+If highly viscous liquids with viscosity 1Pa s   , such as glycerin or castor oil, are used 
+
+as the external liquid, then according to Eq. (75), within the framework of this concept, it is 
+
+permissible to consider the motion of drops several mm in size. 17 
+
+A different asymptotic behavior occurs in the obtained formula (76) in the limit   :
+
+in this case, Eq. (76) takes the form given by Eq. (13). An infinitely long slip length is the absolute 
+
+slip mode at the liquid-liquid interface. The HRE (10) has the same limit, but at  , i.e., when 
+
+the viscosity of the medium is many times greater than the viscosity of the droplet moving in it. 
+
+This is physically a completely different condition. Note that Eq. (76) takes on the same form for 
+
+finite slip length λ at  , as it should. 
+
+Let us consider the case where the slip coefficient in condition (1) is very large: 
+
+## Sl   . (78) 
+
+The slip coefficient Sl , according to Eqs. (30) and (45), is related to the slip lengths, taking 
+
+into account the sign distribution found above, by the relations 
+
+'
+
+'
+
+Sl  
+
+   
+
+  . (79) 
+
+Eq. (79) can be rewritten as 
+
+' ' 0         , (80) 
+
+where γ is a constant characterizing the interface, with dimensions 1
+
+## kg s 
+
+##  .
+
+Using Eq. (80), one can rewrite Eq. (79) as 
+
+'
+
+Sl 
+
+  . (81) 
+
+Given Eq. (81), condition (78) will be satisfied in two practically important cases: 
+
+1) if   , and the product ' is limited (the case of two liquids); 
+
+2) if γ and η are finite quantities, and ' 0  (the case when considering the rise of a gas 
+
+bubble). The constant γ can be bounded rather than infinite if it is a finite product of a very large 
+
+slip length λ and a very small viscosity coefficient η’ (the droplet resembles a gas bubble) or, 
+
+conversely, a very small λ and a very large η’ (when the droplet resembles a solid). 
+
+Substituting Eq. (80) into Eq. (57) yields the following expression for the droplet velocity.                      
+
+> 12
+> 0
+> (')62
+> 13
+> 3'
+> gR R
+> VR
+> 
+>      
+> 
+> 
+
+. (82) 
+
+Considering the above options, for normal liquids in the limit (78), Eq. (82) becomes formula (13), 
+
+i.e., the motion of a droplet of the same density in a medium of the same viscosity occurs 1.5 times 
+
+faster than the motion of a solid ball of the same size and density (11). Eqs (58)-(65) take the form: 
+
+1) The external liquid 
+
+1 cos r c
+
+R
+
+V V r
+
+ 
+
+   
+
+  , (83) 18 
+
+1 sin 
+
+2
+
+> c
+
+R
+
+V V r
+
+> 
+
+ 
+
+   
+
+  , (84) 
+
+> 2
+
+cos c
+
+R
+
+p V
+
+R r
+
+  
+
+   
+
+  (85) 
+
+##   22                 
+
+> 2
+> ,sin
+> 2
+> cV R rr
+> rRR
+> 
+> 
+> 
+
+. (86) 
+
+where cV is determined by Eq. (13). 
+
+2) The internal liquid 
+
+## ' ' 0rV V  , ' 0p  . (87) 
+
+It can be shown that the same solution, i.e., Eqs. (13), (83)-(87), is obtained by choosing 
+
+the condition of complete slip at the interface in the form:               
+
+> (,)'( ,)0rrRR  
+
+. (88) 
+
+Let us consider the directions of the velocities of the external and internal fluids on the 
+
+droplet surface ( r = R). Using Eq. (62) and Eq. (66), we find 
+
+> 1
+
+( ') 6 2
+
+( , ) '( , ) 3 sin 
+
+'
+
+gR 
+
+V R V R R 
+
+> 
+> 
+
+     
+
+        
+
+  
+
+, (89) 
+
+For ' 0    и 0 the difference in tangential velocities given by Eq.(89), given that 
+
+the angle θ is measured clockwise, is positive (Fig. 3). 
+
+For a sliding solid sphere, one can obtain 
+
+> 1
+
+( ') 2
+
+( , ) '( , ) 1 sin 
+
+3
+
+gR 
+
+V R V R R 
+
+> 
+> 
+
+    
+
+       
+
+   . (90) 
+
+For 0  Eq. (89) takes the form of a no-slip boundary condition, ( , ) '( , ) 0V R V R     ,
+
+as expected. 
+
+4. TANGENTIAL AND NORMAL PARTIAL SLIP AT THE GAS-LIQUID INTERFACE 
+
+Let us prove that for a gas, unlike an incompressible liquid, a normal (longitudinal) slip 
+
+condition have to be introduced at the interface with the dense phase (liquid or solid) in addition 
+
+to tangential slip. Consider the gas flow density, which, generally speaking, consists of convective 
+
+and diffusion components: 
+
+'n D n  j V , (91) 19 
+
+where D is the self-diffusion coefficient of the gas molecules in the bubble, 'V is the gas-dynamic 
+
+velocity responsible for gas convection, and n is the volume concentration of gas molecules 
+
+Let us represent the gas concentration in the bubble as follows: 
+
+> 0
+
+## ( , θ) ( ,θ) n r n n r    , (92) 
+
+where 0n is the volume-averaged concentration of the gas molecules. Then  
+
+> 0
+
+## ' 'n n D n     j V V . (93) 
+
+The steady-state flow satisfies the continuity relation: 
+
+> 2
+
+## ( ) ' ' 0n n D n         j V V . (94) 
+
+Assume, that 0( , )n r n
+
+  , n
+
+n R
+
+
+
+  , 0' VV , where V0 is the characteristic velocity, 
+
+conveniently chosen to be the bubble's rise velocity. 
+
+Let us suppose that the incompressible fluid approximation is valid for convective gas 
+
+motion 
+
+## ' 0 V . (95) 
+
+Substituting Eq. (95) into Eq. (94), one can obtain the well-known diffusion equation with 
+
+convection, [7]: 
+
+> 2
+
+' 0n D n    V . (96) 
+
+We emphasize that condition (95) is necessary for Eq. (96) to be true. 
+
+Let us assume that for a given bubble size, diffusion dominates over convection, i.e., the 
+
+inequality holds for the Peclet number. 
+
+> 0
+
+Pe 1
+
+V R 
+
+D
+
+  . (97) 
+
+Then Eq. (96) takes the form of a stationary diffusion equation  
+
+> 2
+
+0n   , (98) 
+
+and Eq. (91) can be rewritten as  
+
+> 0
+
+## 'n D n   j V . (99) 20 
+
+Consider a two-dimensional gas flow described by a gas-dynamic velocity 'V (Fig. 4) 
+
+near a flat liquid wall. Fig. 4 shows a plane in the gas, parallel to the wall, located at a distance 
+
+equal to the mean free path of a molecule in the gas, L The plane has a coordinate of 0 on the z-
+
+axis.  
+
+> FIG. 4.
+
+Two-dimensional gas flow ( ', ') x zV V near a flat wall; L is the mean free path of gas 
+
+molecules. 
+
+Let us find the force c acting on the gas due to its interaction with the wall (a stationary 
+
+plane of condensed matter). Consider a molecule whose coordinates ( ,0) x at a given moment in 
+
+time belong to this plane. The velocity of the molecule is composed of its thermal velocity v, which 
+
+has the Maxwellian statistical distribution corresponding to a given temperature T, and the gas-
+
+dynamic velocity '( , 0) xV :
+
+( ,0) '( , 0) x x U v V . (100) 
+
+The average value of the thermal velocity modulus is many is orders of magnitude greater than the 
+
+value of the gas-dynamic velocity. 
+
+We will consider the projection of velocity onto the z-axis. To simplify the notation, we 
+
+will omit the coordinates ( ,0) x in the equations from this section, assuming that we are talking 
+
+about the gas-dynamic velocity and viscous stress in the gas immediately near the wall. The 
+
+concentration of molecules whose thermal velocity is in the interval [ , ]z z zv v dv  is determined by 
+
+the Maxwell distribution (we assume the gas is near thermodynamic equilibrium): 
+
+> 1
+> 22
+
+exp 
+
+2π 2 
+
+> z
+> z
+> BB
+
+mv m
+
+dn n dv 
+
+k T k T 
+
+   
+
+    
+
+    . (101) 
+
+where m is the mass of the gas molecule, and Bk is the Boltzmann constant. 21 
+
+A gas molecule, upon colliding with a stationary liquid wall, transfers momentum zmU 
+
+to it, where 
+
+## 'z z zU v V  , (102) 
+
+and the molecule itself loses this momentum. The molecule then leaves the liquid, having only 
+
+thermal velocity, so the impact with the liquid can be classified as inelastic. Thus, we have two 
+
+stages of interaction: collision and reflection. 
+
+The number of collisions per unit area per unit time is equal to zU dn . Then the 
+
+momentum transferred by the liquid wall to the gas molecules, having a velocity projection 
+
+perpendicular to the interface, per unit area per unit time when falling on the wall, is determined 
+
+by the expression    
+
+> 12
+> 2
+> 22
+> 1
+
+exp 
+
+2π 2   
+
+> z
+> zz zzz
+
+mv m
+
+d mU dn mn U dv 
+
+kT kT 
+
+   
+
+      
+
+   
+
+. (103) 
+
+Integrating Eq. (103) taking into account Eq. (102), we obtain the transferred momentum 
+
+per unit area per unit time: 
+
+#   
+
+> 1
+> 222
+> 1
+> 0
+
+' exp 
+
+2 2   
+
+> z
+> zz zzz
+> B
+
+mv m
+
+mn v V dv 
+
+k T kT 
+
+ 
+
+> 
+
+   
+
+      
+
+    . (104) 
+
+Assuming that the term proportional to 2
+
+'zV can be neglected, since the average thermal velocity 
+
+given by [21] 
+
+
+
+> 1
+> 2
+
+8
+
+π
+
+> B
+> z
+
+k T 
+
+v m
+
+ 
+
+  
+
+  (105) 
+
+is much greater than the gas-dynamic velocity 'zV , we have 
+
+> 1
+> 2
+> 1
+
+21 1 3 '
+
+' '
+
+2 2π 2 2    
+
+> B
+> zz BzBz
+> B
+
+k T m
+
+nk T mn V nk T V
+
+k T m L
+
+
+
+  
+
+      
+
+  , (106) 
+
+where, in accordance with molecular kinetic theory, the dynamic viscosity of the gas has the form 
+
+' 3 z
+
+mn v L 
+
+  , (107) 
+
+where 'mn 
+
+ is the mass density of the gas. 
+
+Then the molecule detaches from the wall back into the gas phase, having a velocity 
+
+distribution corresponding to a stationary wall. In this case, instead of Eq. (103), we have  
+
+> 2
+> 2zz z
+
+d mv dn 
+
+##    . Similar to Eq. (104), one can obtain 22 
+
+> 2
+
+## 1
+
+## 2 
+
+> zz B
+
+## nk T 
+
+#    . (108) 
+
+Adding Eq. (106) and Eq.(108), we obtain the momentum transferred to the gas by the 
+
+wall per unit time per unit area during the inelastic collisions and thermalized reflections of gas 
+
+molecules.  
+
+> 12
+
+## 3 ' '
+
+## 2    
+
+> zz zz zz Bz
+
+## nk T V
+
+## L
+
+# 
+
+#        . (109) 
+
+Considering that the normal component of the viscous stress tensor is determined by the 
+
+formula [19] 
+
+> 0
+
+'
+
+' ' ' 2 ' z
+
+> zz
+
+V
+
+p p z
+
+ 
+
+     , (110) 
+
+where 0 'p and 'p are the static and dynamic contributions to the pressure, respectively. Then, 
+
+comparing Eq. (110) with Eq. (109), we obtain 
+
+> 0
+
+' 3 '
+
+' ' 2 ' '
+
+2 
+
+> z
+> Bz
+
+V
+
+p p nk T V
+
+z L
+
+
+
+ 
+
+     
+
+ . (111) 
+
+Similarly, considering the inelastic transfer of tangential momentum corresponding to the 
+
+velocity '( ,0) xV x , one can obtain  
+
+> 12
+> 2
+
+' ' 'exp 
+
+2π 2     
+
+> z
+> xz zxzxz
+
+mv m
+
+d mU V dn mn U V dv 
+
+kT kT 
+
+   
+
+      
+
+   
+
+. (112) 
+
+Then 
+
+> 1
+> 22
+> 0
+
+3 ' 
+
+' ' exp '
+
+2 2 4    
+
+> z
+> xz xzzx
+> B
+
+mv m
+
+mn V v dv V
+
+k T kT L
+
+
+
+ 
+
+> 
+
+   
+
+        
+
+    . (113) 
+
+On the other hand, the viscous tangential viscous stress tensor component is determined by 
+
+' '
+
+' ' x z
+
+> xz
+
+V V
+
+z x
+
+##     
+
+  
+
+   , (114) 
+
+where the second term in the brackets in the system under consideration is equal to zero. Therefore, 
+
+comparing Eq. (113) and Eq. (114), one can obtain 
+
+' 3 '
+
+4 
+
+> xx
+
+V V
+
+z L
+
+   
+
+ . (115) 
+
+Taking into account Eq. (35), it follows from Eq. (115) 
+
+4
+
+' 3 L
+
+   . (116) 
+
+Note that if we were to similarly consider the gas on the other side of the plane shown in 
+
+Fig. 4, so that the molecules would fall onto the wall in the opposite direction, the sign in 
+
+expression (116) would be opposite, since the upper limit would become negative. Thus, and this 23 
+
+clearly follows from the structure of formula (115), the sign of the slip length is determined by the 
+
+choice of the reference direction in the applied coordinate system. For a gas bubble in a spherical 
+
+coordinate system, the slip length is negative, as in the example discussed above, whereas for an 
+
+aerosol falling in air (FIG. 5), the slip length in air in the same system is positive. 
+
+Substituting Eq. (115) in Eq. (111), one can obtain 
+
+> 0
+
+' 2 '
+
+' ' 2 ' '
+
+' 
+
+> z
+> Bz
+
+V
+
+p p nk T V
+
+z
+
+
+
+
+
+
+
+
+
+     
+
+ . (117) 
+
+Derived here for the first time Eq. (117) that describes the normal component of viscous 
+
+stress tensor in a gas near a liquid wall, should be considered alongside the previously known Eq. 
+
+(35), describing tangential partial slippage. From the standpoint of molecular kinetic theory, Eq. 
+
+(117) and Eq. (35) have the same nature. 
+
+Given the idealization of the system under consideration, it is better to use a less strict 
+
+relation instead of (Eq. 116). 
+
+## ' kL    , (118) 
+
+where the coefficient k is a positive number near 1, so that ' is of the order of the mean free 
+
+path of a molecule in the gas phase L.
+
+Since normal slip condition (117) assumes a non-zero gas-dynamic velocity near the 
+
+interface 'zV , gas impermeability to a dense wall in a stationary system has to be achieved through 
+
+diffusion drift. Indeed, according to Eq. (91), zero gas flow through the wall corresponds to the 
+
+following condition at the interface: 
+
+' 0z
+
+n
+
+nV D z
+
+
+
+ 
+
+ . (119) 
+
+Thus, due to the compressibility of the gas, its density has to be non-uniform. Taking into account 
+
+Eq. (92) and Eq. (119), the expression (117) can be rewritten as  
+
+> 00
+
+' 2 '
+
+' ' 2 ' ' 
+
+> z
+> BB
+
+V D n
+
+p p n k T k T n
+
+z n z
+
+
+
+ 
+
+ 
+
+      
+
+  , (120) 
+
+where the static gas pressure is determined by the formula:  
+
+> 00
+
+' Bp n k T  . (121) 
+
+Since the diffusion coefficient of an ideal gas is related to the dynamic viscosity by the 
+
+formula 
+
+' mnD 
+
+  , (122) 
+
+then, taking into account Eq. (105), expression (120) can be rewritten as 24  
+
+> 00
+
+' '
+
+' ' 2 ' Δ π  
+
+> zB
+> BB
+
+V k T n
+
+p p n k T k T n 
+
+z z
+
+
+
+  
+
+      
+
+  . (123) 
+
+If in the reference frame under consideration the dense phase moves with velocity zV , then 
+
+the relative velocity at the interface has to be substituted in Eq. (116): 
+
+> 0
+
+2 '
+
+' ' ' ( ' )
+
+'  
+
+> zz zz
+
+p p V V
+
+
+
+
+
+
+
+     , where ' 0
+
+#   . (124) 
+
+Similarly, 
+
+' '
+
+'  
+
+> zzz
+
+V V V
+
+z
+
+
+
+ 
+
+
+
+ , where ' 0
+
+#   . (125) 
+
+Next, one can introduce the tangential viscous stress for the liquid at the gas interface 
+
+( ') xz x xV V
+
+
+
+ 
+
+  , (126) 
+
+and a similar relation for the normal component zz 
+
+#  .
+
+For air under normal conditions, the mean free path 67.3nm L  (air humidity changes 
+
+this by no more than a few percent), viscosity, and density are equal to 5
+
+' 1.84 10 Pa s 
+
+    and 
+
+> 3
+
+' 1.17kg m 
+
+   , respectively, Refs. [22-23]. 
+
+According to Eq.(116), the modulus of the slip length in the gas phase is estimated by the 
+
+mean free path in air: ' 100nm   . Then, the estimate of the corresponding slip length in the liquid 
+
+phase, assuming water, for which 3
+
+10 Pa s 
+
+  , is ' 5 m
+
+'
+
+
+
+    
+
+ . The slip coefficient, 
+
+determined by formula (79), is estimated by 2    
+
+> 0.005 m s kg Sl 
+
+. The limitation on the Reynolds 
+
+number for water (72) leads to the condition for the bubble radius 50 mR   .
+
+It can be shown [Supplementary mat, Eq.(S.120)] that the rate of rise of a small bubble, 
+
+taking into account tangential and normal slip in the gas, has the form     
+
+> 1
+> 222
+> 022
+
+3 ' 3 '( ' ) ' 3 ' 3 ' 3 '
+
+1 1
+
+3 2
+
+gR 
+
+V R R R R
+
+> 
+
+           
+
+         
+
+       
+
+. (127) 
+
+Here, the numerator and denominator represent the transverse slip, which is linear in the 
+
+slip length in the bubble, ' , defined by Eq. (116), while the normal slip is represented by terms 
+
+quadratic in this value. 
+
+Since for bubbles of the sizes under consideration 1
+
+' 1R
+
+  , and given that for an air 
+
+bubble under normal conditions, 1 2
+
+## ' 1.84 10  
+
+##     , the rise velocity of a bubble is determined 
+
+with high accuracy by the Hadamard-Rybczynski equation (13). The resulting contribution of 25 
+
+tangential slip is proportional to 2 2
+
+' R
+
+ , while that of normal slip is almost two orders of 
+
+magnitude smaller, i.e., 2 2 1
+
+## ' 'R 
+
+##    .
+
+In the zeroth-order expansion in powers of 1
+
+' R
+
+  [Supplementary material, Eq. (S.122)], 
+
+for the gas volume concentration inside the bubble, we have          
+
+> 01cos
+> a
+> gr
+> nnp
+> 
+> 
+> 
+
+, (128) 
+
+Thus, the bubble density is slightly lower at the top and slightly higher at the bottom than 
+
+at the center. However, at the Reynolds numbers considered, this effect is very small. 
+
+The characteristic relative increment in air density 
+
+> a
+
+gR 
+
+p
+
+ for a bubble of radius 
+
+10 mR   is 6
+
+## 10  . This value increases with increasing bubble radius, and as the radius 
+
+approaches 1 mm, it can reach a value that leads to noticeable deviations from the spherical shape 
+
+of the bubble. The regime of motion of such large bubbles meets the criteria Re>1 and Pe>1, which 
+
+goes beyond the limitations adopted here and requires taking into account higher-rank spherical 
+
+modes and the corresponding shape deformations. 
+
+5. APPLICATION TO THE AEROSOL 
+
+Let us consider a small liquid droplet of density ' that falls vertically downwards at a 
+
+constant velocity 0V in the still air of density  . The droplet has a spherical shape stabilized by 
+
+interfacial surface tension. The z axis is oriented vertically upwards (Fig. 5). 
+
+In this case, using the notation adopted here, Eq. (116) for air can be rewritten as 
+
+4
+
+3 L
+
+  , (129) 
+
+and the slippage of the liquid inside the droplet (the hatched parameters) will be described by the 
+
+negative quantity '   
+
+> '
+>    
+
+. Find the velocity of the fall of a liquid droplet in the atmosphere 
+
+within the same assumptions as in the previous discussion for the bubble: the small Reynolds and 
+
+Peclet numbers. 26 
+
+FIG 5. Polar coordinates that include the radial coordinate and polar angle, 
+
+respectively; the positive direction of the droplet's velocity V0 is indicated by the arrow. 
+
+In the frame of reference associated with the droplet, the velocity of the air at r   
+
+satisfies the boundary conditions 
+
+> 0
+
+( , ) cos rV V   , (130) 
+
+> 0
+
+( , ) sin V V     . (131) 
+
+The boundary conditions on the droplet surface are 
+
+'( , ) 0rV R   , (132) 
+
+where all the dashed quantities, like a radial velocity component, 'rV , characterizes the liquid 
+
+inside the droplet. Eq (130) means that the droplet does not change its spherical shape. 
+
+The normal slip of air on a falling liquid droplet can be described by condition (123), 
+
+which in spherical coordinates takes the form:  
+
+> 00
+
+2 π  
+
+> r
+> B
+> rRrR
+
+V n
+
+p p k T n n
+
+r z
+
+
+
+ 
+
+    
+
+             , (133) 
+
+At small Peclet numbers, diffusion dominates over convection, so the gas concentration 
+
+obeys the Laplace equation (98), the solution of which in spherical coordinates for the external 
+
+problem has the form: 
+
+> 1
+> 0
+> 0
+
+(cos ) 
+
+> k
+> kk
+> k
+
+R
+
+n n f P
+
+r
+
+> 
+> 
+
+ 
+
+   
+
+ 
+
+#  . (134) 
+
+where the sum on the right-hand side corresponds to Δn. Given the form of boundary conditions 
+
+(130)-(131), we restrict the sum in the Eq.(134) to the term corresponding to k=1:    
+
+> 2
+> 012
+
+cos 
+
+R
+
+n n f r
+
+  . (135) 
+
+according to Eq. (119), taking into account 0n n  , the boundary condition has the form 
+
+( , )r 27 
+
+При этом, согласно (119) с учетом 0n n  граничное условие имеет вид 
+
+> 1
+> 0
+
+2
+
+( , ) cos r 
+
+> rR
+
+Df D n
+
+V R n r n R 
+
+
+
+> 
+
+ 
+
+   
+
+ , (136) 
+
+where 1f is a constant. 
+
+Let us consider the boundary conditions caused by the continuity of viscous stresses 
+
+(tangential and normal components) acting at the interface of two liquids, [7,19]. 
+
+The static pressure in the air on the surface of the droplet is determined by       
+
+> 0cos pCgR   
+
+, (137) 
+
+where C is a constant. 
+
+Similarly, the liquid in droplet creates the pressure:          
+
+> 0'''cos pCgR   
+
+, (138) 
+
+where C is a constant. 
+
+The surface of the liquid sphere is affected by the resulting pressure equal to the difference 
+
+between Eq. (138) and Eq.(137)                     
+
+> 000( ) '(')cos 'pppgR CC      
+
+. (139) 
+
+It determines the Archimedean force acting on the droplet, 
+
+> 2
+> 0
+> 0
+
+2 ( )sin cos ( ' )zF R p d gv 
+
+> 
+
+            , (140) 
+
+where 34
+
+3
+
+v R  is the volume of the liquid droplet. 
+
+Considering that the equality of the normal components of the viscous stress tensor must 
+
+be satisfied at the interface, [7,19] 
+
+## 'rr rr    , (141) 
+
+i.e.  
+
+> 00
+
+'
+
+( ) 2 ( ' ') 2 'r rV V
+
+p p p p
+
+r r
+
+ 
+
+        
+
+  (142) 
+
+Eq. (142) can be conveniently rewritten taking into account Eq.(139) as  
+
+> 00
+
+'
+
+2 ' 2 ' ' ( ' ) cos r rV V
+
+p p p p gR 
+
+r r
+
+ 
+
+            
+
+  , (143) 
+
+where the right-hand side of the expression contains only terms proportional to cos .
+
+Similarly, condition (133) takes the form 
+
+> 1
+
+2 1 π  
+
+> r
+> B
+> rRrR
+
+V
+
+p k Tf 
+
+r R
+
+
+
+ 
+
+   
+
+           . (144) 28 
+
+The equality of the tangential viscous stresses of a liquid droplet and air at their interface 
+
+is given by Eqs. (26)-(27). The condition of the tangential partial slip is determined by 
+
+1
+
+( ) ( ( , ) '( , )) r 
+
+> r
+> rR
+
+V VV V R V R
+
+r r r   
+
+> 
+> 
+> 
+
+  
+
+          
+
+    (145) 
+
+or 
+
+' ''1 '
+
+'( ) ' ( '( , ) ( , )) 
+
+' 
+
+> r
+> r
+> rR
+
+V VV V R V R
+
+r r r   
+
+> 
+> 
+> 
+
+  
+
+          
+
+    , (146) 
+
+where λ and λ’ are the slip parameters of the external and internal liquids, respectively. Eq. (145) 
+
+and Eq. (146) generalize the Navier boundary condition of partial slip of a liquid over a solid. 
+
+Obviously, applying this condition to the liquid-liquid interface, we must use the relative velocity 
+
+of both liquids on the surface. Taking into account that there is a stitching of the tangential stresses 
+
+given by Eq. (27), we have 
+
+'
+
+'
+
+ 
+
+  
+
+  or ' '   
+
+> 
+>  
+> 
+
+. (147) 
+
+Since conditions (145) and (146) duplicate each other, we will further use only one of them, 
+
+namely, the condition for the external liquid given by Eq. (145). 
+
+It can be shown [(A27), Appendix A] that, within the framework of the considered 
+
+problem, the velocity of a droplet fall is described by     
+
+> 1222
+> 022
+
+2( ' ) 3 3 2 2
+
+1 1
+
+9 ' 2 3 '
+
+gR 
+
+V R R R R
+
+> 
+
+          
+
+        
+
+       , (148) 
+
+where the terms with λ to the first power in the numerator and denominator correspond to 
+
+tangential slip at the interface, and the terms containing λ 2 correspond to normal slip. In Eq.(148), 
+
+the fraction before the parentheses corresponds to the Stokes equation (11), and the remainder is a 
+
+factor that differs little from 1:     
+
+> 1222
+> 222
+
+3 3 2 2 (4 1) 
+
+1 1 1 ... 
+
+' 2 3 ' 3 ' 2R R R R R R
+
+> 
+
+            
+
+            
+
+        (149) 
+
+If the medium surrounding the drop is also a liquid, then there is no normal slip, so the 
+
+terms with λ 2 must be excluded in Eq. (148), and, taking into account Eqs.(30), we obtain the well-
+
+known formula (7) with R   [or its variants given by Eqs. (60), (70), (S.78)], describing the 
+
+tangential slip of a liquid drop in an external liquid. 
+
+For a water droplet falling in air under normal conditions, Eq. (72) is satisfied if 
+
+35 mR   . Experimental data corresponding to the terminal velocity of a microdroplet falling 
+
+in air, having a radius in the range 0.25 9.5 mR   satisfying the conditions of the problem under 
+
+consideration, are generalized in the Ref. [24] by following semi-empirical relation: 29 
+
+#   
+
+> 2
+> 1
+> exp
+
+2( ' )
+
+( ) 1 1.257 0.400exp 1.10 
+
+9
+
+gR 
+
+V x x x   
+
+      , (150) 
+
+where 1
+
+## x RL 
+
+##  is the ratio of the droplet radius R to the mean free path in air L. It is noted that the 
+
+error in this range can reach 7.4%., Ref. [24] Recalculating the slip length λ through the mean free 
+
+path in air using Eq. (129), we rewrite Eq. (148) as a function of x.  
+
+> 12
+> 022
+
+2( ' ) 4 8 2 8 16 
+
+( ) 1 1
+
+9 ' 3 3 ' 3 9
+
+gR 
+
+V x x x x x
+
+> 
+
+      
+
+        
+
+       . (151) 
+
+Fig. 6 shows a comparison of the correction functions corresponding to Eqs. (150)-(151) 
+
+in the range of the dimensionless parameter 3.7 136 x  , found taking into account that 
+
+70 nm L  in the air in normal conditions. 
+
+FIG.6. Graphs of the dimensionless functions 2 1
+
+> 0
+
+( ) 9 ( )[2( ' ) ]f x V x gR 
+
+    corresponding to: 
+
+red solid line is the experimental fitting (150), blue dotted line is the theoretical approach found 
+
+according to Eq. (151); 1
+
+## x RL 
+
+##  is dimensionless radius of the droplet. 
+
+The relative error of Eq.(151) in the region of its greatest deviation from Eq. (150) at 
+
+3.7 x  is approximately 10%, i.e., is approximately at the level of experimental error. Note that 
+
+accounting for normal slip improves the convergence of theory with experiment at the smallest 
+
+droplet radii, when this contribution is greatest. However, the relative contribution of normal slip 30 
+
+is estimated by 1 2
+
+x 
+
+ in the considered range of droplet sizes and the flow regime (Re<<1, Pe<<1), 
+
+and does not exceed 1%. 
+
+Let us determine the deviation of the air concentration near the droplet corresponding to 
+
+the presence of normal slip. Expressing 1f from Eq.(A22), using Eqs. (A26)-(A27), in the zeroth-
+
+order expansion in 1
+
+R
+
+ , one can obtain 
+
+> 1
+
+'
+
+3 B
+
+gR 
+
+f k T 
+
+## 
+
+  , (152) 
+
+where '
+
+ is the density of the liquid in the falling droplet. Substituting Eq. (152) into Eq. (135), 
+
+we find a solution for the concentration of air molecules near the droplet           
+
+> 3
+> 02
+> '
+> 1cos
+> 3a
+> gR
+> nnp r
+> 
+> 
+> 
+
+, (153) 
+
+where 0a Bp n k T  is the atmospheric pressure. 
+
+Considering Fig. 5, equation (153) suggests that in the air in contact with the falling 
+
+droplet along its forward motion, the concentration of molecules is increased, and the air is denser, 
+
+while in the air opposite the droplet motion, the density of the air is reduced. This corresponds to 
+
+basic ideas about air flow around a falling spherical body. 
+
+The characteristic relative air compaction '
+
+3 a
+
+gR 
+
+p
+
+ for a droplet with radius 3 m R   is 7
+
+## 10 
+
+. This value increases with the droplet radius, and as it approaches 1 mm, it can reach a value that 
+
+leads to noticeable deviation from the spherical shape of the droplet. However, the regime of such 
+
+large drop falling meets the criteria Re>1 and Pe>1, which exceeds the limitations adopted here 
+
+and requires consideration of higher-rank spherical modes and their corresponding shape 
+
+deformations. 
+
+6. OUTLOOK 
+
+A solution to the problem of low-Reynolds-number flow around a spherical fluid droplet 
+
+moving in another fluid is proposed. A generalization of the Hadamard-Rybczynski equation is 
+
+presented that takes into account partial tangential and normal slip at the interface. Normal slip is 
+
+accompanied by the density gradient in the fluid and is applicable only if one of the phases in 
+
+contact at the interface is a gas. 
+
+Although tangential partial slip and the associated generalization of the Hadamard-
+
+Rybczynski equation have been considered previously, they were done using the friction 
+
+coefficient formalism. Here, this issue is discussed within the more general formalism of slip 31 
+
+lengths. It is proven that each of the two fluids separated by an interface has its own slip length. 
+
+There is a relationship between the pair of slip lengths of the contacting fluids. 
+
+The existence of two slip lengths follows from the equality of the fluids that form the 
+
+interface. If the concept of slip length is introduced, a pair of slip lengths automatically arises. In 
+
+the case of steady flow, they are related by the value of the viscosity ratio taken with a minus sign., 
+
+i.e., they have opposite signs. 
+
+The choice of sign, generally speaking, is not absolute but is related to the choice of 
+
+coordinate axes, i.e., it depends on the coordinate system. However, if the choice of a specific 
+
+coordinate system has already been made, the signs of the two slip lengths are determined 
+
+unambiguously, namely, in such a way that slip at the interface occurs in the direction of the applied 
+
+external force. In this case, the power released during friction is positive, which corresponds to the 
+
+heat release at the interface. 
+
+In this case, the leading fluid at the interface moves faster than the trailing fluid and drags 
+
+it along in the direction of the external force. By leading fluid, we mean the fluid that is directly 
+
+driven by the external force. For example, if we consider the motion of a liquid droplet in an 
+
+external fluid, the leading fluid is the external fluid, as it directly interacts with the vessel walls or 
+
+the boundary conditions at infinity, which are the hydrodynamic analog of a thermostat. 
+
+The fluid inside the droplet interacts with the boundary conditions at infinity through the 
+
+external fluid and is therefore the trailing fluid. Considering the velocities of both fluids at the 
+
+interface from this point of view allows to unambiguously determine, within the adopted reference 
+
+frame, for which fluid the slip length is positive and for which it is negative. The choice of signs 
+
+for the slip lengths is demonstrated using the example of a plane flow, as well as the example of a 
+
+flow corresponding to the motion of a spherical liquid droplet in an external liquid. 
+
+Such a deep mutual dependence of the slip lengths of two contacting liquids allows us to 
+
+speak not simply of the twoness of these lengths, which is trivial, but of the deep duality of their 
+
+physical nature. 
+
+Developing a scientific foundation for methods for calculating the friction coefficient or 
+
+the corresponding slip length at the interface between two fluids is an actual problem in fluid 
+
+dynamics, generally unsolved. However, if a dense phase and a gas are in contact at the interface, 
+
+methods of the molecular kinetic theory of gases allow for well-founded estimates of the slip 
+
+length. 
+
+The so-called Maxwellian boundary condition, defined on the surface y=0, in the 
+
+approximation of complete, or diffuse accommodation has the form [25]: 32 
+
+> 0
+
+'
+
+'( 0) ( 0) x 
+
+> xx
+> y
+
+V
+
+V y V y L y 
+
+
+
+     , (154) 
+
+where 'xV is the gas velocity; xV is the velocity of the dense phase (liquid or solid), L is the mean 
+
+free path of the gas. From relation (154), it follows that the slip length is related to the mean free 
+
+path by the relation: 
+
+## L  . (155) 
+
+In Section 4 of this paper, a slightly different relation, defined by Eq. (116) or Eq. (129), is derived 
+
+using the molecular kinetic approach in the diffusion limit for an ideal gas, namely 4
+
+3 L  .
+
+In Section 5, in the limit of small Reynolds numbers, an expression is derived for the 
+
+aerosol terminal velocity in still air. This expression fits the experimental data well when using the 
+
+slip length defined by formula (129). Expression (155) yields significantly poorer agreement with 
+
+experiment. Taking normal slip into account significantly improves agreement with experiment at 
+
+small droplet radii, when the contribution of normal slip is more noticeable. 
+
+It is currently accepted that the HRE should describe the system under consideration well. 
+
+The existing deviations, according to Levich [7] and many other researchers [26-27], should be 
+
+associated with the difficulty of ensuring sufficient purity of liquids, and unaccounted surfactants 
+
+distort the interpretation of experimental result. There is another previously unaccounted 
+
+possibility for interpreting such deviations, related to the mechanism of partial slip at the liquid-
+
+liquid interface based on the Navier boundary condition. The question of how much the partial slip 
+
+mechanism manifests itself in every system with a liquid-liquid interface can be also resolved 
+
+experimentally. 
+
+First experiment that can be proposed in this connection is the following. Consider a system 
+
+of two immiscible liquids A and B. The first experiment consists of measuring the velocity AV of 
+
+a small spherical droplet of liquid A with radius R in a large reservoir filled with liquid B. Then, if 
+
+the motion of the droplet is determined by the condition of partial slip, the slip length, according 
+
+to (60), is determined by: 
+
+> 2
+
+( ) 3 1
+
+6( ) 3 2      
+
+> BABAB
+> B
+> BAA
+
+gR V R
+
+gR 
+
+      
+
+    
+
+    
+
+. (156) 
+
+In the second experiment, the liquids A and B are swapped, so that the velocity BV of a 
+
+droplet of liquid B of the same radius R is measured in a large reservoir filled with liquid A. Then, 
+
+instead of (156), we can write 
+
+> 2
+
+( ) 3 1
+
+6( ) 3 2      
+
+> ABABA
+> A
+> ABB
+
+gR V R
+
+gR 
+
+      
+
+    
+
+    
+
+. (157) 33 
+
+If the partial slip mechanism really operates in the liquid-liquid system under 
+
+consideration, relation (30) must be satisfied, namely:   
+
+> BB
+> AA
+
+ 
+
+  
+
+  . (158) 
+
+If there is a deviation from Eq. (158), that indicates a noticeable influence of other mechanisms of 
+
+interaction between liquids on the interface. 
+
+The field of application of the generalized HRE is the motion of hydrophobic (lipophilic) 
+
+liquids in water and vice versa, i.e. the description of stratification and sedimentation of aqueous 
+
+emulsions or vice versa – water droplets in oils, etc. Presumably, the best applicability of this 
+
+equation should be expected for the interface of hydrophobic liquid and hydrophilic one (water – 
+
+hydrocarbons, water – higher alcohols, in general: aqueous emulsions, water – lipophilic organic 
+
+liquids and oils, etc.). These are quite important emulsions in practical terms, for example, for the 
+
+oil industry and medicine. The use of such a parameter as slip length allows the experiment and 
+
+theory to be reconciled. 
+
+APPENDIX A 
+
+The general solution of the Stokes equations given by Eqs. (8)-(9) for an axisymmetric 
+
+problem in spherical coordinates is presented in Ref. [28] ; see also Supplementary Material, Table 
+
+1. Taking this into account, based on the form of boundary conditions (130)-(131), the desired 
+
+solution for the velocity of the fluid outside the droplet can be represented in the form  
+
+> 3
+> 0
+
+2 cos r
+
+R R
+
+V V b d
+
+r r
+
+   
+
+     
+
+   
+
+, (A1)  
+
+> 3
+> 0
+
+sin 
+
+2
+
+bR R
+
+V d V
+
+r r
+
+> 
+
+   
+
+     
+
+   
+
+, (A2) 
+
+> 2
+
+cos 
+
+R
+
+p b
+
+R r
+
+  
+
+   
+
+  . (A3) 
+
+Substituting Eq. (136) in Eq. (A1), we have 
+
+> 1
+> 0
+> 0
+
+2
+
+2 Df 
+
+b V d n R 
+
+   . (A4) 
+
+Substituting Eq. (A4) into Eqs. (A1)-(A3), we obtain  
+
+> 3
+> 1
+> 00
+> 0
+
+2
+
+2 2 cos r
+
+Df R R
+
+V V V d d
+
+n R r r
+
+    
+
+         
+
+    
+
+, (A5) 34  
+
+> 3
+> 1
+> 00
+> 0
+
+2
+
+2 sin 
+
+2
+
+Df R R
+
+V V d d V
+
+n R r r
+
+> 
+
+    
+
+         
+
+    
+
+, (A6) 
+
+> 2
+> 1
+> 0
+> 0
+
+2
+
+2 cos 
+
+Df R
+
+p V d
+
+R n R r
+
+   
+
+       
+
+  
+
+. (A7) 
+
+Obviously, solution for flow inside a droplet have to be described only by the solution of 
+
+the internal problem 
+
+> 2
+
+'
+
+' 2 ' cos 
+
+10 
+
+> r
+
+a r
+
+V c
+
+R
+
+   
+
+    
+
+   
+
+, (A8) 
+
+> 2
+
+4
+
+' ' 2 ' sin 
+
+10 
+
+r
+
+V a c
+
+R
+
+> 
+
+   
+
+     
+
+   
+
+. (A9)  
+
+> 02
+
+2 ' '
+
+' ' cos 
+
+a r
+
+p p R
+
+
+
+   . (A10) 
+
+Taking into account the condition (132), for the radial component of the velocity of the 
+
+internal fluid (A8) we have 
+
+## ' 10 ' a c  . (A11) 
+
+Then, the system of equations for the internal fluid (A8)-(A10) can be rewritten as 
+
+> 2
+
+' 2 ' 1 cos r
+
+r
+
+V c R
+
+   
+
+    
+
+   
+
+, (A12) 
+
+> 2
+
+' 2 ' 2 1 sin 
+
+r
+
+V c R
+
+> 
+
+   
+
+    
+
+   
+
+, (A13) 
+
+> 2
+
+20 ' '
+
+' cos 
+
+c r
+
+p R
+
+
+
+   . (A14) 
+
+Substituting (A6)-(A7) and (A12)-(A13) in condition (27), we obtain 
+
+' '
+
+c d
+
+
+
+  . (A15) 
+
+Then, the Eqs. (A12)-(A13) can be rewritten as 
+
+> 2
+
+' 2 1 cos 
+
+'
+
+> r
+
+r
+
+V d R
+
+    
+
+    
+
+    
+
+, (A16) 
+
+> 2
+
+' 2 2 1 sin 
+
+'
+
+r
+
+V d R
+
+> 
+
+    
+
+    
+
+    
+
+. (A17)  
+
+> 22
+
+20 ' 20 
+
+' cos cos 
+
+'
+
+r r
+
+p d d
+
+R R
+
+  
+
+     
+
+ . (A18) 
+
+To use the boundary condition (143), evaluate the expressions 35  
+
+> 1
+> 02
+> 0
+
+( , ) 63
+
+( , ) 2 ( 2 ) cos cos r
+
+> R
+
+V r Df 
+
+p R V d
+
+r R n R 
+
+  
+
+        
+
+ , (A19) 
+
+'( , ) 12 
+
+'( , ) 2 ' cos r
+
+> R
+
+V r d
+
+p R r R
+
+  
+
+     
+
+ . (A20) 
+
+Substituting Eqs. (A19) and (A20) into Eq. (143), one can obtain  
+
+> 1
+> 02
+> 0
+
+63 12 
+
+( 2 )cos cos ( ' ) cos 
+
+Df d
+
+V d gR 
+
+R n R R
+
+ 
+
+         . (A21) 
+
+On the other hand, using the normal slip condition (133), we obtain   
+
+> 2
+> 012
+
+3 3
+
+( 2 ) 1 π
+
+> B
+
+V d k Tf 
+
+R R R
+
+##  
+
+## 
+
+ 
+
+     
+
+  . (A22) 
+
+In deriving Eq. (A22), it was taken into account that, according to Eqs. (10), (116), and 
+
+(122), the following relation holds for the air outside the falling droplet 
+
+> 2
+
+2 BD nk T 
+
+
+
+ 
+
+ . (A23) 
+
+Expressing 1f from Eq. (A22) and substituting it into Eq. (A21), we obtain, writing out 
+
+terms up to the order 2 2
+
+R
+
+  
+
+> 22
+> 002
+
+3 ( ' )
+
+2 ( 2 ) 3
+
+gR 
+
+V d V d
+
+R
+
+    
+
+   
+
+  . (A24) 
+
+Finally, using the normal slip condition (145), we have  
+
+> 01
+> 0
+
+6 sin 2 2 sin 
+
+2 '
+
+V Df d d d
+
+R n R 
+
+ 
+
+        
+
+ 
+
+, (A25) 
+
+where, taking into account (A22), we find   
+
+> 122
+> 0
+> 22
+
+3 3 3
+
+1 1
+
+4 ' 2
+
+V
+
+d R R R
+
+> 
+
+     
+
+       
+
+     . (A26) 
+
+Substituting Eq.(A26) into Eq. (A24), one can obtain     
+
+> 1222
+> 022
+
+2( ' ) 3 3 2 2
+
+1 1
+
+9 ' 2 3 '
+
+gR 
+
+V R R R R
+
+> 
+
+          
+
+        
+
+       . (A27) 
+
+___________________________________________ 
+
+[1] A.B. Basset, Phil. Trans. R. Soc. 179 , 43 (1888). 
+
+[2] Z.-G. Feng, E. E. Michaelides, and S. Mao, Fluid Dyn. Res. 44 , 025502 (2012). 36 
+
+[3] E.E. Michaelides and Z.-G. Feng, Int. J. Multiph. Flow 21 , 315 (1995). 
+
+[4] S. Mandal, A. Bandopadhyay, and S. Chakraborty, Phys. Rev. E 92 , 023002 (2015). 
+
+[5] J.S. Hadamard, Compt. Rend. Acad. Sci. 152 , 1735 (1911). 
+
+[6] W. Rybczynski, Bull. Acad. Sci. Cracovie, A, 40 (1911). 
+
+[7] V.G. Levich, Physicochemical hydrodynamics (Prentice-Hall, Inc. Englewood Cliffs, 
+
+N.J., 1962). 
+
+[8] E. Lauga, M.P. Brenner, and H.A. Stone, Microfluidics: the no-slip boundary condition. 
+
+In: J. Foss, C. Tropea, and A.L. Yarin (Eds.) Handbook of Experimental Fluid Dynamics (Springer, 
+
+New York, 2007). 
+
+[9] U.C. Boehnke, T. Remmler, H. Motschmann, S. Wurlitzer, J. Hauwede, and M. Th. 
+
+Fischer, J. Colloid Int. Sci. 211 , 243 (1999). 
+
+[10] J. L.Goveas., G. H. Fredrickson, Eur. Phys. J. B 2, 79 (1998) 
+
+[11] A. Ramachandran, K. Tsigklifis, A. Roy, and G. Leal, J. Rheol. 56 , 45 (2012). 
+
+[12] A. Ramachandran and L. G. Leal, J. Rheol. 56 , 1555 (2012). 
+
+[13] C. Neto, D.R. Evans, E. Bonaccurso, H.-J. Butt, and V.S.J. Craig, Rep. Prog. Phys. 68 ,
+
+2859 (2005). 
+
+[14] J. P. Rothstein, Annu. Rev. Fluid Mech. 42 , 89 (2010). 
+
+[15] J. Koplik and J.R. Banavar, Phys. Rev. Lett. 96 , 044505 (2006). 
+
+[16] L.B. Boinovich. A.M. Emelyanenko, Russ. Chem. Rev. 77 , 583 (2008). 
+
+[17] O.I. Vinogradova, Langmuir 11 , 2213 (1995). 
+
+[18] O.I. Vinogradova, Int. J. Miner. Process. 56 , 31 (1999). 
+
+[19] L.D. Landau and E.M. Lifshitz, Fluid Mechanics: Landau and Lifshitz: Course of 
+
+Theoretical Physics. Vol. 6 (Pergamon Press, Oxford, 1987). 
+
+[20] J. Boussinesq, Compt. Rend. des Seances Acad. Sci. 156 , 1124 (1913). 
+
+[21] L.D. Landau and E.M. Lifshitz, Statistical Physics, Part 1: Landau and Lifshitz: 
+
+Course of Theoretical Physics. Vol. 5 (Pergamon Press, Oxford, 1980). 
+
+[22] S.G. Jennings, J. Aerosol Sci. 19 , 159 (1988). 
+
+[23] P. D. Roy, W. T. Josenhans, and C.H. Miller Canadian J. of Physiology and 
+
+Pharmacology. 48 , 50 (1970). 
+
+[24] I.E. Otung, J. of Electromagnetic Waves and Applications, 9:10, 1241 (1995 
+
+[25] E.B. Arkilic, K.S. Breuer, and M.A. Schmidt, J. Fluid Mech. 437 , 29 (2001). 
+
+[26] R.M. Griffith, Chemical Engineering Science. 17 , 1057 (1962). 
+
+[27] Å. Ervik, E. Bjørklund, European Journal of Mechanics - B/Fluids. 66 , 10 (2017). 
+
+[28] P. Lebedev-Stepanov, J. Fluid Mech. 1024 , A16 (2025) 37 
+
+## Supplementary material 
+
+## Tangential and normal partial slip at the liquid-fluid interfaces: 
+
+## application to a small liquid droplet, gas bubble, and aerosol 
+
+Peter Lebedev-Stepanov 
+
+Shubnikov Institute of Crystallography, Kurchatov Complex of Crystallography and 
+
+Photonics, Leninskiy Prospekt 59, Moscow 119333, Russia 
+
+E-mail: lebstep.p@crys.ras.ru 
+
+Author ORCID https://orcid.org/0000-0002-7009-4319 
+
+1. Boundary conditions 
+
+Let us consider a liquid droplet placed inside another liquid. Both liquids are insoluble in 
+
+each other, do not mix with each other, and have a clear interface. The drop has a spherical shape 
+
+stabilized by interfacial surface tension. The z axis is oriented vertically upwards (Fig. S1). If the 
+
+drop density ' is less than the liquid density  , it floats vertically upwards with a steady-state 
+
+velocity 0V .
+
+FIG S1. Polar coordinates that include the radial coordinate and polar angle, 
+
+respectively; the positive direction of the droplet's velocity V0 is indicated by the arrow. 
+
+In the frame of reference associated with the droplet, the velocity of the external liquid at 
+
+r   satisfies the boundary conditions 
+
+> 0
+
+( , ) cos rV V    , (S.1) 
+
+> 0
+
+( , ) sin V V      . (S.2) 
+
+The boundary conditions on the droplet surface are: 
+
+( , )r 38 
+
+( , ) 0rV R   , (S.3) 
+
+which means that the droplet does not change its spherical shape. 
+
+The continuity of viscous stresses (tangential and normal components) acting on the 
+
+interface between two fluids is used as boundary conditions, Ref. [S.1-S2]: 
+
+'r r    , (S.4) 
+
+i.e. 
+
+' ''1 1
+
+'r rV V V VV V
+
+r r r r r r   
+
+> 
+
+     
+
+         
+
+       , (S.5) 
+
+where all the dashed quantities, like a radial velocity component, 'rV , characterizes the liquid 
+
+inside the droplet ;
+
+'rr rr    , (S.6) 
+
+which in expanded form means  
+
+> 00
+
+'
+
+( ) 2 ( ' ') 2 'r rV V
+
+p p p p
+
+r r
+
+ 
+
+        
+
+  (S.7) 
+
+where p and p’ denote the hydrodynamic pressures in the external and internal liquids, respectively. 
+
+The hydrostatic pressure in the external liquid on the surface of the drop is determined by  
+
+> 0
+
+( cos ) p g h R    , (S.8) 
+
+where h is the depth of immersion of the center of the drop. The minus sign before the expression 
+
+on the right takes into account that the hydrostatic pressure is compressive. 
+
+Similarly, the internal liquid creates pressure:         
+
+> 0''cos pCgR   
+
+, (S.9) 
+
+where C is a constant. 
+
+The surface of the liquid sphere is affected by the resulting pressure equal to the difference 
+
+between Eq. (S.9) and Eq.(S.8)   
+
+> 000
+
+( ) ' ( ' ) cos p p p gR         , (S.10) 
+
+where we have neglected the terms independent of the polar angle. It determines the Archimedean 
+
+force acting on the drop, 
+
+> 2
+> 0
+> 0
+
+2 ( )sin cos ( ' )zF R p d gv 
+
+> 
+
+            , (S.11) 
+
+where 34
+
+3
+
+v R  is the volume of the liquid sphere. 
+
+Eq. (S.7) can be conveniently rewritten taking into account Eq. (S.10) as  
+
+> 00
+
+'
+
+2 ' 2 ' ' ( ' ) cos r rV V
+
+p p p p gR 
+
+r r
+
+ 
+
+            
+
+  . (S.12) 39 
+
+Conditions (S.1)-(S.3), (S.5), and (S.12) are common to all problems of motion in an 
+
+external fluid, including the derivation of the Hadamard–Rybczynski equation (HRE). If we 
+
+consider the sliding of a liquid droplet in an external fluid, it is necessary to add the condition of 
+
+immobility of the internal fluid at the interface in the droplet's rest frame: 
+
+'( , ) 0rV R   , (S.13) 
+
+as well as one of the sliding conditions. To describe the motion of liquids at the interface, we 
+
+introduce the condition of the transverse (tangential) partial slip of the surface of one liquid over 
+
+the surface of another, which has the form 
+
+1
+
+( ) ( ( , ) '( , )) r 
+
+> r
+> rR
+
+V VV V R V R
+
+r r r   
+
+> 
+> 
+> 
+
+  
+
+          
+
+    (S.14) 
+
+or 
+
+' ''1 '
+
+'( ) ' ( '( , ) ( , )) 
+
+' 
+
+> r
+> r
+> rR
+
+V VV V R V R
+
+r r r   
+
+> 
+> 
+> 
+
+  
+
+          
+
+    , (S.15) 
+
+where λ and λ’ are the slip parameters of the external and internal liquids, respectively. Eqs. (S.14) 
+
+and (S.15) generalize the Navier boundary condition of partial slip of a liquid over a solid. 
+
+Obviously, applying this condition to the liquid-liquid interface, we must use the relative velocity 
+
+of both liquids on the surface. Taking into account that there is a stitching of the tangential stresses 
+
+given by Eq. (S.4), we have 
+
+'
+
+'
+
+ 
+
+  
+
+  or ' '
+
+ 
+
+  
+
+  . (S.16) 
+
+Since conditions (S.14) and (S.15) duplicate each other, we will further use only one of them, 
+
+namely, the condition for the external liquid given by Eq. (S.14). 
+
+If we consider the motion of a bubble in an external fluid, conditions (S.14) and (S.15) 
+
+remain valid, but condition (S.13) is inapplicable due to the presence of longitudinal (normal) slip. 
+
+The longitudinal slip can be taken into account using condition (123) 1: 
+
+> 00
+
+' '
+
+' ' 2 ' π     
+
+> zB
+> BB
+> rRrR
+
+V k T n
+
+p p n k T k T n
+
+r r
+
+## 
+
+##  
+
+> 
+
+    
+
+              . (S.17) 
+
+At small Peclet numbers, diffusion dominates over convection, so the concentration obeys 
+
+the Laplace equation  
+
+> 2
+
+0n  , (S.18) 
+
+the solution of which in spherical coordinates is 
+
+> 0
+> 1
+
+(cos ) 
+
+> k
+> kk
+> k
+
+r
+
+n n f P
+
+R
+
+> 
+> 
+
+ 
+
+   
+
+ 
+
+#  . (S.19)  
+
+> 1Reference to equa Ɵon (123) in the main part of the ar Ɵcle .
+
+40 
+
+where the sum on the right-hand side corresponds to Δn . Given the form of boundary conditions 
+
+(S.1)-(S.2), we restrict ourselves in (S.19) to the term in the sum corresponding to k=1:   
+
+> 01
+
+cos 
+
+r
+
+n n f R
+
+   . (S.20) 
+
+Moreover, according to (119) 2 taking into account 0n n  the boundary condition at the 
+
+interface has the form 
+
+> 0
+
+'( , )r   
+
+> rRrR
+
+D n D n
+
+V R n r n r
+
+  
+
+  
+
+ 
+
+  . (S.21) 
+
+Substituting (S.20) into (S.21), we obtain 
+
+> 1
+> 0
+
+'( ,θ) cos r
+
+Df 
+
+V R n R 
+
+ . (S.22) 
+
+where 1f is a constant. 
+
+2. Liquid-liquid interface 
+
+Here we are dealing with axisymmetric boundary conditions. Thus, we have to solve an 
+
+axisymmetric problem. The general solution of the axisymmetric problem for the Stokes equations 
+
+in a spherical coordinate system is presented in Table S1. The derivation of the formulae is given 
+
+in Ref. [S3]. 
+
+We see that the boundary conditions (S.1)-(S.2) and (S.12) require solutions containing 
+
+cos  and sin . The solutions for rV and p have the form of a series expansion in Legendre 
+
+polynomials, and the solution for V is represented by a series in the associated Legendre 
+
+polynomial 1
+
+> l
+
+P . The orthogonality of the polynomials suggests that in order to satisfy the boundary 
+
+conditions, it is necessary to limit ourselves to the terms of the series that contain cos  or sin .
+
+The remaining terms must be discarded, since the boundary conditions do not allow nonzero 
+
+solutions corresponding to these excess terms to exist. Thus, in the solutions under consideration, 
+
+we leave only the terms with l=1.   
+
+> 2Reference to equa Ɵon (1 19) in the main part of the ar Ɵcle .
+
+41 
+
+Table S1. Solutions of internal and external axisymmetric problems in a spherical 
+
+coordinate system obtained in the representation of a vector potential. The radial and polar 
+
+components of the incompressible fluid velocity, pressure and stream function are shown in the 
+
+rows from top to bottom;  cos lP  is the Legendre polynomial,  1 cos lP  is the associated 
+
+Legendre function of the first order. 
+
+Internal problem External problem 
+
+    
+
+> 11
+> 1
+
+, ( 1) cos 
+
+4 6   
+
+> ll
+> l
+> rll
+> l
+
+a r r
+
+V r l l c P
+
+l R R 
+
+> 
+> 
+
+     
+
+        
+
+      
+
+#      22
+
+> 0
+> 1
+
+, ( 1) cos 
+
+4 2   
+
+> ll
+> l
+> rll
+> l
+
+b R R R
+
+V r l l d P d
+
+l r r r
+
+> 
+> 
+
+       
+
+             
+
+        
+
+## 
+
+    
+
+> 11
+> 1
+> 1
+
+3
+
+, ( 1) cos 
+
+4 6   
+
+> ll
+> lll
+> l
+
+l r r
+
+V r a c l P
+
+l R R 
+
+> 
+> 
+> 
+
+     
+
+        
+
+      
+
+#     
+
+> 2
+> 1
+> 1
+
+2
+
+, cos 
+
+4 2   
+
+> ll
+> lll
+> l
+
+l R R
+
+V r b d l P
+
+l r r
+
+> 
+> 
+> 
+
+     
+
+       
+
+      
+
+# 
+
+   
+
+> 0
+
+, ( 1) cos  
+
+> l
+> ll
+> l
+
+r
+
+p r l a P
+
+R R
+
+> 
+> 
+
+  
+
+    
+
+ 
+
+##     
+
+> 1
+> 1
+
+, cos  
+
+> l
+> ll
+> l
+
+R
+
+p r lb P
+
+R r
+
+> 
+> 
+
+  
+
+    
+
+ 
+
+# 
+
+                                      
+
+> 31
+> 21
+> 1
+> ,sin cos
+> 46
+> ll
+> l
+> ll
+> l
+> arr
+> rRcP
+> lRR
+> 
+> 
+> 
+>   
+> 
+
+                                        
+
+> 2
+> 212
+> 0
+> 1
+> ,sin cos cos
+> 42
+> ll
+> l
+> ll
+> l
+> bRR
+> rRdPd R
+> lrr
+> 
+> 
+> 
+>     
+> 
+
+
+
+For the internal problem, we have 
+
+> 2
+> 1
+
+2 10 
+
+> r
+
+a r
+
+V c P
+
+R
+
+   
+
+   
+
+   
+
+, (S.23) 
+
+> 2
+> 1
+> 1
+
+4 2
+
+10 
+
+r
+
+V a c P
+
+R
+
+> 
+
+   
+
+   
+
+   
+
+. (S.24)  
+
+> 012
+
+2a r
+
+p p P
+
+R
+
+
+
+  . (S.25) 
+
+For the external problem, we obtain 
+
+> 3
+
+2 cos 
+
+2
+
+> r
+
+b R R
+
+V d
+
+r r
+
+   
+
+     
+
+   
+
+, (S.26) 
+
+> 3
+
+sin 
+
+2
+
+bR R
+
+V d
+
+r r
+
+> 
+
+   
+
+    
+
+   
+
+, (S.27) 
+
+> 2
+
+cos 
+
+R
+
+p b
+
+R r
+
+  
+
+   
+
+  . (S.28) 
+
+The external fluid must satisfy the conditions at infinity. In this case, it is necessary to use 
+
+the solution of the internal problem given by Eqs. (S.23)-(S.25) for a=0. Indeed, this will allow us 
+
+to satisfy conditions (S.1)-(S.2). Substituting Eqs. (S.23)-(S.25) for a=0 into Eqs. (S.1)-(S.2) gives 
+
+> 0
+
+2c V . (S.29) 
+
+Substituting Eq. (S.29) in Eqs. (S.23)-(S.25), one can obtain  
+
+> 3
+> 0
+
+2 cos r
+
+R R
+
+V V b d
+
+r r
+
+   
+
+     
+
+   
+
+, (S.30) 42  
+
+> 3
+> 0
+
+sin 
+
+2
+
+bR R
+
+V d V
+
+r r
+
+> 
+
+   
+
+     
+
+   
+
+, (S.31) 
+
+> 2
+
+cos 
+
+R
+
+p b
+
+R r
+
+  
+
+   
+
+  . (S.32) 
+
+Substituting Eq. (S.30) in Eq. (S.3), we have 
+
+> 0
+
+( , ) ( 2 ) cos 0rV R V b d      . (S.33) 
+
+Hence  
+
+> 0
+
+2b V d  . (S.34) 
+
+Substituting Eq. (S.34) into Eqs. (S.30)-(S.32), we obtain  
+
+> 3
+> 0
+
+1 2 cos r
+
+R R R
+
+V V d
+
+r r r
+
+      
+
+         
+
+       
+
+, (S.35)  
+
+> 3
+> 0
+
+1 sin 
+
+2
+
+R R R
+
+V V d
+
+r r r
+
+> 
+
+      
+
+         
+
+       
+
+, (S.36) 
+
+> 2
+> 0
+
+( 2 ) cos 
+
+R
+
+p V d
+
+R r
+
+  
+
+    
+
+  . (S.37) 
+
+Obviously, the internal fluid must be described only by the solution of the internal 
+
+problem 
+
+> 2
+
+'
+
+' 2 ' cos 
+
+10 
+
+> r
+
+a r
+
+V c
+
+R
+
+   
+
+    
+
+   
+
+, (S.38) 
+
+> 2
+
+4
+
+' ' 2 ' sin 
+
+10 
+
+r
+
+V a c
+
+R
+
+> 
+
+   
+
+     
+
+   
+
+. (S.39)  
+
+> 02
+
+2 ' '
+
+' ' cos 
+
+a r
+
+p p R
+
+
+
+   . (S.40) 
+
+Taking into account the condition (S.8), for the radial component of the velocity of the 
+
+internal fluid (S.38) we have 
+
+'
+
+'( , ) 2 ' cos 0
+
+10 
+
+> r
+
+a
+
+V R c
+
+ 
+
+      
+
+  . (S.41) 
+
+Hence 
+
+' 10 ' a c  . (S.42) 
+
+Then, the system of equations for the internal fluid (S.38)-(S.40) can be rewritten as 
+
+> 2
+
+' 2 ' 1 cos r
+
+r
+
+V c R
+
+   
+
+    
+
+   
+
+, (S.43) 43 
+
+> 2
+
+' 2 ' 2 1 sin 
+
+r
+
+V c R
+
+> 
+
+   
+
+    
+
+   
+
+, (S.44) 
+
+> 2
+
+20 ' '
+
+' cos 
+
+c r
+
+p R
+
+
+
+   . (S.45) 
+
+Conditions given by Eqs. (S.3) and (S.13) imposed in Eq. (S.35) and (S.34) on the surface 
+
+of the drop give 
+
+' 0r r   
+
+> rRrR
+
+V V 
+
+> 
+
+ 
+
+ 
+
+  . (S.46) 
+
+Therefore, the condition of stitching stresses r giving by Eq. (S.5) is simplified 
+
+( ) ' '( )
+
+'   
+
+> rRrR
+
+V V R V V R
+
+r R r R    
+
+> 
+> 
+
+    
+
+       
+
+    
+
+. (S.47) 
+
+Next, we have 
+
+> 0
+
+1
+
+( ) 2 sin 
+
+2
+
+V R V d
+
+ 
+
+    
+
+  , (S.48)   
+
+> 4
+> 022
+
+3 sin 
+
+2
+
+V R R R
+
+V d
+
+r r r R r 
+
+> 
+
+       
+
+         
+
+        
+
+, (S.49) 
+
+> 0
+
+8 sin 
+
+2r R
+
+V d V
+
+r R
+
+> 
+> 
+
+ 
+
+ 
+
+ , (S.50) 
+
+> 0
+> 0
+
+( ) 8 1 1 6
+
+sin 2 sin sin 
+
+2 2r R
+
+V V R d V d
+
+V d
+
+r R R R R 
+
+> 
+> 
+
+   
+
+        
+
+   . (S.51) 
+
+Similarly, 
+
+'( ) 2 'sin V R c   , (S.52) 
+
+' 1
+
+2 ' 4 sin 
+
+V r
+
+c
+
+r R R
+
+> 
+
+  
+
+  
+
+   , (S.53) 
+
+' 1
+
+8 ' sin  
+
+> rR
+
+V c
+
+r R
+
+> 
+> 
+
+  
+
+ , (S.54) 
+
+' '( ) 6 ' sin  
+
+> rR
+
+V V R c
+
+r R R 
+
+> 
+> 
+
+   
+
+ , (S.55) 
+
+Substituting Eq. (S.51) and Eq. (S.55) into Eq. (S.47), we obtain 
+
+' '
+
+c d
+
+
+
+  . (S.56) 
+
+Then, the Eqs. (S.43)-(S.45) can be rewritten as 44 
+
+> 2
+
+' 2 1 cos 
+
+'
+
+> r
+
+r
+
+V d R
+
+    
+
+    
+
+    
+
+, (S.57) 
+
+> 2
+
+' 2 2 1 sin 
+
+'
+
+r
+
+V d R
+
+> 
+
+    
+
+    
+
+    
+
+. (S.58)  
+
+> 22
+
+20 ' 20 
+
+' cos cos 
+
+'
+
+r r
+
+p d d
+
+R R
+
+  
+
+     
+
+ . (S.59) 
+
+Let us calculate the expression, taking into account Eqs. (S.35) and (S.37) 
+
+> 0
+
+3
+
+( ) 2 ( 2 ) cos r
+
+> R
+
+V
+
+p R V d
+
+r R
+
+ 
+
+     
+
+ . (S.60) 
+
+Similarly, we find 
+
+' 20 8 ' 12 
+
+'( ) 2 ' cos cos cos 
+
+' 
+
+> r
+> rR
+
+V d
+
+p R d d
+
+r R R R
+
+    
+
+        
+
+  . (S.61) 
+
+The constancy of the steady-state velocity of the drop is ensured by the resistance force, 
+
+which depends on the velocity of the drop, is equal in magnitude to the force (S.11) and is directed 
+
+in the opposite direction. The resistance force is associated with the steady-state flow of the 
+
+external liquid around the drop and the flow of another liquid inside the drop. 
+
+Substituting Eq. (S.60) and Eq. (S.61) into the boundary condition Eq. (S.13), we obtain 
+
+> 2
+> 0
+
+( ' )
+
+2 3
+
+gR 
+
+V d    
+
+   (S.62) 
+
+The last boundary condition to be taken into account is the partial slip condition for the 
+
+liquid-liquid interface (S.14). Substituting Eq. (S.46) in Eq. (S.14), we have: 
+
+( , ) ( , ) '( , ) 
+
+> rR
+
+V V R V R V R
+
+r R  
+
+> 
+> 
+> 
+
+  
+
+      
+
+ 
+
+. (S.63) 
+
+Substituting into Eq. (S.63) the projections of the velocities V and 'V , determined by 
+
+Eqs. (S.36) and (S.58), respectively, as well as Eq. (S.51), we find an equation that allows us to 
+
+calculate the coefficient d:
+
+> 0
+
+6 1
+
+sin 2 2 sin 
+
+2 '
+
+d V d d
+
+R
+
+  
+
+           , (S.64) 
+
+or 
+
+> 12
+
+( ' ) 6 2
+
+3
+
+6 '
+
+gR 
+
+d R
+
+> 
+
+     
+
+       . (S.65) 
+
+Substituting Eq. (S.65) into Eq. (S.62), one can obtain 45 
+
+> 12
+> 0
+
+( ' ) 6 2
+
+1 3
+
+3 '
+
+gR 
+
+V R
+
+> 
+
+       
+
+     
+
+    
+
+(S.66) 
+
+The remaining undefined coefficients (S.34), (S.56) and (S.42) take the form 
+
+> 2
+
+( ' )
+
+3
+
+gR 
+
+b    
+
+  , (S.67) 
+
+> 12
+
+( ' ) 6 2
+
+' 3
+
+6 ' '
+
+gR 
+
+c R
+
+> 
+
+     
+
+       , (S.68) 
+
+> 12
+
+5( ' ) 6 2
+
+' 3
+
+3 ' '
+
+gR 
+
+a R
+
+> 
+
+     
+
+   
+
+   . (S.69) 
+
+Let us write out the solutions for the external and internal liquids by substituting Eq. 
+
+(S.65) in Eqs. (S.35)-(S.37) and Eqs. (S.57)-(S.59), respectively. 
+
+1) The external liquid  
+
+> 132
+
+( ' ) 6 2
+
+1 3 1 cos 
+
+3 '
+
+> r
+
+gR R R
+
+V r R r
+
+> 
+
+         
+
+          
+
+         
+
+, (S.70)  
+
+> 132
+
+( ' ) 6 2
+
+2 3 2 sin 
+
+6 '
+
+gR R R
+
+V r R r
+
+> 
+> 
+
+         
+
+          
+
+         
+
+, (S.71) 
+
+> 3
+> 2
+
+( ' ) cos 
+
+3
+
+gR 
+
+p r
+
+   
+
+   . (S.72) 
+
+Stream function is (Table S1): 
+
+#   
+
+> 1224
+> 2
+
+( ' ) 6 2
+
+, sin 3
+
+6 '
+
+gR r r R r
+
+r R R R r R
+
+> 
+
+           
+
+                        
+
+. (S.73) 
+
+2) The internal liquid  
+
+> 122
+
+( ' ) 6 2
+
+' 3 1 cos 
+
+3 ' '
+
+> r
+
+gR r
+
+V R R 
+
+> 
+
+         
+
+        
+
+       
+
+, (S.74)  
+
+> 122
+
+( ' ) 6 2
+
+' 3 2 1 sin 
+
+3 ' '
+
+gR r
+
+V R R
+
+> 
+> 
+
+         
+
+        
+
+       
+
+, (S.75) 
+
+> 1
+
+10( ' ) 6 2
+
+' 3 cos 
+
+3 '
+
+gr 
+
+p R
+
+> 
+
+     
+
+    
+
+ 
+
+. (S.76) 
+
+Stream function is (Table S1):   
+
+> 1424
+> 2
+
+( ' ) 6 2
+
+' sin 3
+
+6 ' '
+
+gR r r
+
+R R R 
+
+> 
+
+           
+
+          
+
+         
+
+. (S.77) 46 
+
+Eq. (S.66) describes the steady-state velocity of a spherical liquid drop in an external 
+
+fluid. It can also be represented in the equivalent form     
+
+> 211
+> 011
+
+2( ' ) 1 ' 3
+
+3 3 2 ' 6
+
+gR R
+
+V R  
+
+> 
+> 
+
+      
+
+      (S.78) 
+
+or   
+
+> 21
+> 01
+
+2( ' ) '(1 3 )
+
+3 2 3 '(1 2 )
+
+gR R
+
+V R
+
+> 
+> 
+
+       
+
+       , (S.79) 
+
+or   
+
+> 21
+> 01
+
+2( ' ) 1 3
+
+3 2 3 6
+
+gR R
+
+V R
+
+> 
+> 
+
+      
+
+      , (S.80) 
+
+where '
+
+
+
+   is the viscosity ratio. Note that Eq. (S.80) can also be represented as 
+
+> 12
+> 0
+
+( ' ) 6
+
+1 3 2
+
+3
+
+gR 
+
+V R
+
+> 
+
+      
+
+      
+
+    
+
+(S.81) 
+
+At λ=0, we have the no-slip condition, under which Eq. (S.79) becomes the Hadamard– 
+
+Rybczynski equation (HRE): 
+
+> 2
+> 0
+
+2( ' ) '
+
+3 2 3 '
+
+gR 
+
+V       
+
+     . (S.82) 
+
+At λ=0, condition given by Eq. (S.57) takes the form 
+
+( , ) '( , ) 0V R V R     . (S.83) 
+
+It is no-slip condition that corresponds to the Hadamard–Rybczynski model. Thus, the 
+
+resulting Eq. (S.66) generalizes the Hadamard–Rybczynski equation and its limit is the Stokes 
+
+formula by introducing partial slip. 
+
+If 0  , i.e. the viscosity of the drop is much greater than the viscosity of the 
+
+surrounding liquid, and λ has a value limited in absolute value from above, Eq. (S.80) takes the 
+
+form   
+
+> 21
+> 01
+
+2( ' ) 1 3
+
+9 1 2
+
+gR R
+
+V R
+
+> 
+> 
+
+    
+
+    , (S.84) 
+
+Eq. (S.84) describes the sliding of a solid sphere in an external fluid with viscosity η and 
+
+slip length λ. It coincides with the previously published result, Ref. [S4,S5]. At λ=0, Eq. (S.84) 
+
+becomes the Stokes equation that describes the motion of a solid sphere under the no-slip boundary 
+
+condition: 
+
+> 2
+> 0
+
+2( ' )
+
+9
+
+gR 
+
+V    
+
+  . (S.85) 47 
+
+Note that, taking into account Eq. (S.16), we have 
+
+'
+
+
+
+    . (S.86) 
+
+Then, the original formula (S.80) transforms to the Stokes equation in the limit 0  , when 
+
+simultaneously 1 0R
+
+  and 1
+
+( ') 0
+
+   , i.e., when the external liquid satisfies to a condition 
+
+close to no-slip, but at the same time, the partial slip regime must take place in the internal liquid. 
+
+This means that the Stokes limit (S.85) can be fulfilled not only for a solid sphere moving in the 
+
+no-slip mode, as was previously assumed, but also under the condition of partial slip of the internal 
+
+liquid, which is assumed to be much more viscous than the external one. 
+
+Another extreme case is when the viscosity of the external liquid is much higher than the 
+
+viscosity of the drop. If λ is a limited quantity, the substitution    transforms Eq. (S.80) into 
+
+the following expression 
+
+> 2
+> 0
+
+( ' )
+
+3
+
+gR 
+
+V    
+
+  . (S.87) 
+
+The HRE has the same limit. 
+
+Note that Eq. (S.80) gives another way to obtain Eq. (S.87), which is absent in the HRE: 
+
+i.e., let 1
+
+R
+
+   and, at the same time, α is a limited value. This means that the slip of the external 
+
+liquid is almost complete, and that of the internal liquid is the same, taking into account Eq. (S.86). 
+
+Considering that the force acting on a liquid drop in an external liquid is determined by 
+
+the formula 
+
+> 3
+> 0
+
+4 ( ' )
+
+3
+
+F gR 
+
+
+
+    . (S.88) 
+
+Then the friction coefficient is determined by the formula 
+
+> 1
+> 0
+> 1
+> 0
+
+2 3 6
+
+2 1 3
+
+F R
+
+R
+
+V R
+
+> 
+> 
+
+   
+
+         . (S.89) 
+
+In the limit 1 0R
+
+  and 0  that corresponds to a solid body with the boundary 
+
+condition no-slip, Eq. (S.89) takes the form 6 R    , which coincides with the Stokes friction 
+
+coefficient, as it should be. In the case of complete slip, i.e., 1
+
+R
+
+   , on can obtain 4 R    .
+
+We now obtain an expression for the frequently used drag coefficient DC , Ref. [S.6], that 
+
+is determined according to the relation    
+
+> 0
+> 222
+> 00
+
+2 2
+
+> D
+
+F
+
+C R V R V
+
+
+
+ 
+
+    . (S.90) 
+
+Using Eq. (S.89) and the Reynolds number 48 
+
+> 0
+
+2
+
+Re RV 
+
+  , (S.91) 
+
+rewrite Eq. (S.90) as 
+
+> 1
+> 1
+
+4 8 2 3 6
+
+Re Re 1 3
+
+> D
+
+R
+
+C R R
+
+> 
+> 
+
+    
+
+ 
+
+      . (S.92) 
+
+In the Hadamard–Rybczynski limit, i.e., if 1 0R
+
+  , we obtain the well-known 
+
+expression, Ref. [S7] 
+
+> ,
+
+8 2 3
+
+Re 1
+
+> D AR
+
+C   
+
+   . (S.93) 
+
+In the case of complete slip, i.e., if 1
+
+R
+
+   , one can obtain 
+
+16 
+
+Re 
+
+> D
+
+C  . (S.94) 
+
+3. Gas-liquid interface and small bubble rise 
+
+Let us consider the motion of a gas bubble. In this case, the normal slip condition (S.22) 
+
+should be used instead of condition (S.13). Taking into account Eq. (S.22), for the radial 
+
+component of the velocity of the internal fluid (S.38) we have 
+
+> 1
+> 0
+
+'
+
+'( , ) 2 ' cos cos 
+
+10 
+
+> r
+
+Df a
+
+V R c n R 
+
+ 
+
+      
+
+  . (S.95) 
+
+Hence 
+
+> 1
+> 0
+
+5
+
+' 10 ' 
+
+Df 
+
+a c
+
+n R 
+
+  . (S.96) 
+
+Then, the system of equations for the internal fluid (S.38)-(S.40) can be rewritten as  
+
+> 22
+> 1
+> 0
+
+' cos 2 ' 1 cos r
+
+Df r r
+
+V c
+
+n R R R
+
+     
+
+        
+
+     
+
+, (S.97)  
+
+> 22
+> 1
+> 0
+
+2
+
+' sin 2 ' 2 1 sin 
+
+Df r r
+
+V c
+
+n R R R
+
+> 
+
+     
+
+         
+
+     
+
+. (S.98)  
+
+> 1
+> 02
+> 0
+
+'
+
+' ' 10 2 ' cos 
+
+Df r
+
+p p c
+
+n R R
+
+  
+
+    
+
+ 
+
+. (S.99) 
+
+Eqs. (S.97)-(S.99) on the surface of the drop gives 
+
+> 1
+> 0
+
+' sin r 
+
+> rR
+
+V Df 
+
+n R 
+
+   
+
+ , (S.100) 
+
+> 1
+> 2
+> 0
+
+' 4 8 ' 
+
+sin sin  
+
+> rR
+
+V Df c
+
+r n R R
+
+> 
+> 
+
+     
+
+ , (S.101) 49 
+
+> 1
+> 2
+> 0
+
+'( , ) 2 2 ' 
+
+sin sin 
+
+V R Df c
+
+R n R R 
+
+> 
+
+      . (S.102) 
+
+Then 'r takes the form 
+
+> 1
+> 2
+> 0
+
+' '' 31 6 ' 
+
+' ' ' sin r 
+
+> r
+> rR
+
+V VV Df c
+
+R r R R n R  
+
+> 
+> 
+> 
+
+  
+
+              
+
+. (S.103) 
+
+Substituting (S.103) and (S.51) into (S.4), we obtain 
+
+> 1
+> 0
+
+' ' 2
+
+Df 
+
+c d n R 
+
+
+
+ 
+
+ . (S.104) 
+
+Then, the Eqs. (S.97)-(S.99) can be rewritten as    
+
+> 22
+> 11
+> 00
+
+' cos 2 1 cos 
+
+' 2
+
+> r
+
+Df Df r r
+
+V d
+
+n R R n R R
+
+       
+
+          
+
+       
+
+, (S.105)    
+
+> 22
+> 11
+> 00
+
+2
+
+' sin 2 2 1 sin 
+
+' 2
+
+Df Df r r
+
+V d
+
+n R R n R R
+
+> 
+
+       
+
+           
+
+       
+
+. (S.106)  
+
+> 02
+
+' ' 20 cos 
+
+dr 
+
+p p R
+
+
+
+   . (S.107) 
+
+Calculating the derivative on the interface 
+
+' 4 cos 
+
+' 
+
+> r
+> rR
+
+V d
+
+r R
+
+ 
+
+  
+
+  , (S.108) 
+
+we find 
+
+' 20 8 ' 12 
+
+'( ) 2 ' cos cos cos 
+
+' 
+
+> r
+> rR
+
+V d
+
+p R d d
+
+r R R R
+
+    
+
+        
+
+  . (S.109) 
+
+Substituting Eq. (S.60) and Eq. (S.109) into the boundary condition Eq. (S.12), we obtain 
+
+> 2
+> 0
+
+( ' )
+
+2 3
+
+gR 
+
+V d    
+
+   (S.110) 
+
+Let us use the longitudinal slip condition (S.17) 
+
+' '
+
+' 2 ' π    
+
+> zB
+> B
+> rRrR
+
+V k T n
+
+p k T n
+
+r r
+
+## 
+
+##  
+
+> 
+
+    
+
+            , (S.111) 
+
+which, when substituting (S.20), takes the form 
+
+> 1
+
+' '
+
+' 2 ' 1 π 
+
+> z
+> B
+> rR
+
+V
+
+p k Tf 
+
+r R
+
+## 
+
+##  
+
+   
+
+           , (S.112) 
+
+or, taking into account (S.109), 
+
+> 1
+
+12 '
+
+1 π
+
+> B
+
+d k Tf 
+
+R R
+
+##  
+
+     , (S.112) 
+
+we find 50 
+
+> 1
+> 1
+
+12 '
+
+1 πB
+
+d
+
+f Rk T R
+
+##   
+
+ 
+
+     . (S.113) 
+
+Finally, we use the transverse slip condition (S.63), taking into account the following 
+
+formulae 
+
+> 1
+> 0
+
+2
+
+'( ) sin sin 
+
+'
+
+Df 
+
+V R d
+
+n R 
+
+> 
+
+
+
+    
+
+ , (S.114) 
+
+> 0
+
+1
+
+( , ) 2 sin 
+
+2
+
+V R V d
+
+ 
+
+     
+
+  . (S.115) 
+
+Taking into account (S.51), one can obtain 
+
+> 1
+> 0
+> 0
+
+6 1
+
+sin 2 2 sin 
+
+2 '
+
+Df d V d d
+
+R n R 
+
+  
+
+         
+
+  
+
+. (S.116) 
+
+Substituting (S.113) into (S.116), we find  
+
+> 112
+> 02
+
+1 3 3 ' '
+
+1 1
+
+4 ' ' π
+
+d V R R R
+
+> 
+
+       
+
+             
+
+. (S.117) 
+
+Substituting (S.117) into (S.110), we arrive at the expression for the bubble's rise velocity      
+
+> 111222
+> 022
+
+2( ' ) 3 3 ' ' 6 2 6 ' '
+
+1 1 3 1
+
+3 ' ' π ' ' π
+
+gR 
+
+V R R R R R R 
+
+> 
+
+                     
+
+                             
+
+(S.118) 
+
+In formula (S.118), the terms containing the factor 2
+
+' are responsible for the longitudinal 
+
+slip. Eliminating these terms, we again arrive at formula (S.66) or, equivalently, (S.78). 
+
+Up to the second power, in the expansion of the numerator and denominator of (S.118) in 
+
+' , we have     
+
+> 1
+> 222
+> 022
+
+2( ' ) 3 3 ' 6 2 3 '
+
+1 1 3 1
+
+3 ' '
+
+gR 
+
+V R R R R
+
+> 
+
+                 
+
+            
+
+             
+
+(S.119) 
+
+or     
+
+> 1
+> 222
+> 022
+
+3 ' 3 '( ' ) ' 3 ' 3 ' 3 '
+
+1 1
+
+3 2
+
+gR 
+
+V R R R R
+
+> 
+
+           
+
+         
+
+       
+
+, (S.120) 
+
+where the slip length in the bubble ' is determined by formula (S.116). 
+
+Substituting (S.119) into (S.113), in the zeroth order of smallness in the expansion in 
+
+powers of 1
+
+' R
+
+  , we find  
+
+> 1
+> 0a
+
+f gR 
+
+n p
+
+## 
+
+  , (S.121) 
+
+where 0a Bp n k T  is an atmospheric pressure. 51 
+
+Taking into account (S.20), for the gas density inside the bubble we have  
+
+> 0
+
+1 cos 
+
+> a
+
+gr 
+
+n n p
+
+ 
+
+   
+
+ 
+
+, (S.122) 
+
+Thus, the bubble density is slightly lower at the top and slightly higher at the bottom than 
+
+at the center (Fig.S1). However, at the Reynolds numbers considered, this effect is very small. 
+
+The characteristic relative increment in air density 
+
+> a
+
+gR 
+
+p
+
+ for a bubble of radius 10 mR  
+
+is 6
+
+10  . This value increases with increasing bubble radius, and as the radius approaches 1 mm, 
+
+it can reach a value that leads to noticeable deformation of the bubble. However, the rise regime 
+
+of such large bubble meets the criteria Re>1 and Pe>1, which exceeds the limitations adopted here 
+
+and requires taking into account higher-rank spherical modes and the corresponding shape 
+
+deformations. 
+
+References to the Supplementary material 
+
+[S1] L.D. Landau and E.M. Lifshitz, Fluid Mechanics: Landau and Lifshitz: Course of 
+
+Theoretical Physics. Vol. 6 (Pergamon Press, Oxford, 1987) 
+
+[S2] V.G. Levich, Physicochemical hydrodynamics (Prentice-Hall, Inc. Englewood 
+
+Cliffs, N.J., 1962) 
+
+[S3] P. Lebedev-Stepanov, J. Fluid Mech. 1024, A16 (2025) 
+
+[S4] E. Lauga, M.P. Brenner, and H.A. Stone, Microfluidics: the no-slip boundary 
+
+condition. In: J. Foss, C. Tropea, and A.L. Yarin (Eds.) Handbook of Experimental Fluid Dynamics 
+
+(Springer, New York, 2007). 
+
+[S5] U.C. Boehnke, T. Remmler, H. Motschmann, S. Wurlitzer, J. Hauwede, and M. Th. 
+
+Fischer, J. Colloid Int. Sci. 211, 243 (1999). 
+
+[S6] J. Foss, C. Tropea, and A.L. Yarin (Eds.) Handbook of Experimental Fluid Dynamics 
+
+(Springer, New York, 2007). 
+
+[S7] M. Wegener, M. Kraume, and A. R. Paschedag, AIChE Journal 56 (1), 2 (2010).
