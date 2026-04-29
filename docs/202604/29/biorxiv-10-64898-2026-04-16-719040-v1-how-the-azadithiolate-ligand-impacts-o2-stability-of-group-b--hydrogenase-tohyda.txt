@@ -1,0 +1,204 @@
+Title: How the Azadithiolate Ligand Impacts O2-Stability of Group B [FeFe]-Hydrogenase ToHydA
+
+URL Source: https://www.biorxiv.org/content/10.64898/2026.04.16.719040v1.full.pdf
+
+Number of Pages: 7
+
+Markdown Content:
+# How the Azadithiolate Ligand Impacts O 2-Stability of Group B [FeFe]-Hydrogenase ToHydA 
+
+# Subhasri Ghosh a, Chandan K. Das b, c , Shuvankar Naskar a, Lars V. Schäfer b*, Thomas Happe a*
+
+> a
+
+Photobiotechnology, Ruhr University Bochum, 44801 Bochum, Germany. bCenter for Theoretical Chemistry, Ruhr University Bochum, 44801 Bochum, Germany. cComputational Biotechnology, RWTH Aachen University, 52074 Aachen, Germany. 
+
+KEYWORDS: [FeFe]-hydrogenases, O 2-stability, IR spectroscopy, MD simulations 
+
+ABSTRACT: [FeFe]-hydrogenases are metalloenzymes that catalyze the reversible oxidation and production of H 2, making them potential candidates for sustainable energy solutions. However, their practical application is restricted by their extreme O 2 sensitivity, which leads to irreversible active site degradation. A newly characterized Group B hydrogenase, ToHydA from 
+
+Thermosediminibacter oceani , has exhibited exceptional O 2-stability even after longtime exposure to air. In ToHydA, the highly conserved proton-transporting cysteine (C212) safeguards the H-cluster from O 2-induced degradation by formation of the H inact state. In this study, we investigate the effects of replacing the azadithiolate (ADT) ligand of [2Fe] H with propanedithiolate (PDT), revealing that this substitution prevents the formation of the H inact and H trans states observed in ToHydA WT (bearing the ADT ligand). By combining ATR-FTIR spectroscopy and molecular dynamics (MD) simulations, we show that a hydrogen bond between the nitrogen bridgehead of the ADT ligand and the C212 sidechain is crucial for stabilizing these states. The absence of this interaction in ToHydA PDT (bearing the PDT ligand) prevents the C212 sidechain from approaching the Fe d center of [2Fe] H, thereby reducing H inact 
+
+accumulation. Moreover, as-isolated ToHydA PDT predominantly exhibits the H hyd state, which is unusual for [FeFe]-hydrogenases with bound PDT ligand. These findings demonstrate how ligand substitution at the [2Fe] H site of ToHydA affects the structural dynamics, offering detailed molecular insights into the ligand-dependent modulation of [FeFe]-hydrogenases. 
+
+## Introduction 
+
+Hydrogenases are metalloenzymes that catalyze both the pro-duction and oxidation of molecular hydrogen. 1,2 Based on the metal composition of their active sites, these enzymes are clas-sified into [Fe]-hydrogenases, [NiFe]-hydrogenases, and [FeFe]-hydrogenases, with the latter being the most efficient in catalyzing H 2 production. 2–4 The active site of [FeFe]-hydro-genases, known as the H-cluster, consists of a canonical [4Fe4S] cluster ([4Fe] H) and a unique diiron cluster ([2Fe] H). 5–9 
+
+The [4Fe] H cluster is coordinated by four cysteine residues, one of which also serves to link it to the [2Fe] H diiron cluster. Each iron atom in the [2Fe] H cluster is coordinated by a carbon mon-oxide (CO) and a cyanide (CN -) ligand and a third CO ligand is found in a bridging position between both Fe ions. An addi-tional azadithiolate bridge links the Fe ions, the amine group serving as a proton relay. The iron atoms are designated as prox-imal Fe (Fe p) and distal Fe (Fe d) based on their positions relative to the [4Fe] H-cluster. In the resting state, known as the H ox state, the H-cluster features a combination of Fe d(I) and Fe p(II) oxi-dation states, with the Fe d center possessing an open coordina-tion site that serves as the ligand-binding site during catalytic turnover. 2,10 
+
+The catalytic states of [FeFe]-hydrogenases have been widely studied. Throughout the catalytic cycle, the oxidation states of the two iron atoms in the [2Fe] H cluster switch between Fe(I) and Fe(II), in conjunction with the 1+/2+ redox transitions of the [4Fe] H cluster. Through successive reduction and protona-tion of the H ox state, the system transitions to the H red and H sred 
+
+states, characterized by a [Fe p(I)-Fe d(I)] configuration. 2 How-ever, the precise structure and degree of protonation in these states remain subjects of debate, with alternative designations as H red H+ and H sred H+, suggesting additional protonation at the ADT bridge. 11,12 A structural rearrangement of the H sred H+ state results in the coordination of a terminal hydride at the Fe d site, giving rise to the H hyd state with a [Fe p(II)-Fe d(II)] configuration which is an essential intermediate in the catalytic cycle of [FeFe]-hydrogenases. 13–19 
+
+The Fe d site of [FeFe]-hydrogenases can bind various ligands, such as CO, CN -, SH -, and O 2, which can lead to either reversi-ble inactivation or irreversible degradation. 20–28 In particular, degradation due to O 2 exposure presents a significant challenge for large-scale biotechnological applications of these en-zymes. 29 Although most [FeFe]-hydrogenases are highly sensi-tive to O 2, a few exceptions have been identified: CbA5H from 
+
+Clostridium beijerinckii, CpIII from Clostridium pasteurianum 
+
+and ToHydA from Thermosediminibacter oceani are recog-nized as O 2-tolerant [FeFe]-hydrogenases. 30–33 In these en-zymes, under oxidative conditions, the thiol group of a proton-transporting cysteine residue shifts to the Fe d site, forming the Hinact state, which protects the active site from the damage caused by O 2. While CbA5H belongs to the well-characterized Group A [FeFe]-hydrogenases, CpIII and ToHydA are Group B (M2a type) hydrogenases. 30,33,34 ToHydA differs from Group 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 21, 2026. ;https://doi.org/10.64898/2026.04.16.719040 doi: bioRxiv preprint
+
+A hydrogenases in its amino acid sequence, which results in distinct catalytic behavior and spectroscopic properties. In our recent study, we showed that, unlike CbA5H and the O 2-sensi-tive Group A hydrogenases, ToHydA can form the H inact state even in its resting state and stabilizes an intermediate, the H trans 
+
+state, during its transition to the active H ox state. Both H inact and Htrans share a [Fe p(II)-Fe d(II)] configuration (Figure 1A). We further identified the amino acid residues critical for H inact for-mation, with particular emphasis on the differences between Group A and Group B (M2a) hydrogenases. From these find-ings, a tentative mechanism for H inact formation has been pro-posed. Nonetheless, the common structural features of various groups of [FeFe]-hydrogenases, such as the proton-transporting cysteine and ADT ligand, could also influence this process, un-derscoring the need for a deeper understanding of the inactiva-tion mechanism to guide the design of highly active, O 2-stable biocatalysts for H 2 production. 33 
+
+Figure 1. Schematic representations of A) the H inact /H trans state, pre-dominantly observed in the H-cluster of ToHydA ADT (WT) under various conditions, and B) the H-cluster of ToHydA PDT with un-known oxidation states and ligand at Fe d. C375 connects the [4Fe] H
+
+and [2Fe] H clusters, whereas C212 participates in proton transport and the formation of the H inact and H trans states. 
+
+To investigate the inactivation mechanism and catalytic fea-tures of ToHydA, this study focuses on the bridgehead position of the H-cluster by replacing the native ADT ligand with a pro-panedithiolate (PDT) ligand (Figure 1B). While the effects of this modification on catalytic properties have been studied in Group A hydrogenases, its impact in Group B hydrogenases has not yet been explored. We examined the different H-cluster states of the PDT variant using attenuated total reflection Fou-rier-transform infrared (ATR-FTIR) spectroscopy, which pro-vides insights into the H hyd state of ToHydA PDT under conditions where this state is typically absent in Group A [FeFe]-hydro-genases. In addition, we carried out all-atom molecular dynam-ics (MD) simulations of both ToHydA ADT and ToHydA PDT var-iants to obtain an atomic-level understanding of the structural consequences of this modification, particularly during H inact for-mation. Collectively, our findings provide deeper insight into the catalytic behavior of ToHydA, especially regarding H inact 
+
+formation, thereby fostering the future design of de-novo 
+
+[FeFe]-hydrogenases for biotechnological applications. 
+
+## Results 
+
+The ToHydA apoprotein was heterologously expressed and produced in E. coli . Following purification, the protein was ma-tured using synthetic diiron complexes, as previously de-scribed. 9,33 In this study, two diiron complexes were utilized (see Figure 1): [Fe 2[μ-(SCH 2)2NH](CN) 2(CO) 4]2-, which con-tains the native ADT ligand and results in catalytically active wild-type ToHydA upon maturation, and [Fe 2[μ-(SCH 2)2CH 2](CN) 2(CO) 4]2-, which incorporates the PDT lig-and. The resulting proteins are referred to as ToHydA ADT 
+
+(identical to ToHydA WT) and ToHydA PDT , respectively. To investigate the formation of various H-cluster states in the To-HydA PDT , ATR-FTIR spectroscopy was employed (Figure 2). In its as-isolated state, ToHydA ADT predominantly exhibits the Hinact and H trans states. Upon treatment with N 2 and O 2, it pre-dominantly accumulates the H inact state as demonstrated in our previous work. 33 
+
+Figure 2. FTIR spectra of ToHydA PDT in as-isolated state (upper panel), upon N 2 (8 L/min) purging (middle panel) and after O 2 (air, 2L/min) purging (lower panel). The spectra of the proteins are nor-malized to the second amide band (1535-1545 cm −1 ). 0.4 - 0.5 mM protein sample was prepared in 100 mM Tris/HCl buffer at pH 8.0. 
+
+In contrast to ToHydA ADT , the as-isolated ToHydA PDT accumu-lates a state that appears distinct from both the H inact and H trans 
+
+states (Figure 2, upper panel). The FTIR spectrum of the as-isolated ToHydA PDT reveals a single μCO peak at 1840 cm -1 ,two CO peaks at 1955 cm -1 and 1971 cm -1 , and two CN - ligand peaks at 2076 cm -1 and 2091 cm -1 , indicating the presence of a single state. The terminal CO peaks of the newly observed state appear close to those of the hydride-bound H hyd , H trans and H ox 
+
+states, indicating an H-cluster electronic configuration of either [4Fe] H⁺[Fe p(II)-Fe d(II)] H (for Hhyd and Htrans state) or [4Fe] H²⁺[Fe p(I)-Fe d(II)] H (for H ox state). 10,17,35 Moreover, the μCO peak of this state is blue-shifted relative to that of the H ox 
+
+state, suggesting ligand binding at the open coordination site. Since no additives were present in the protein preparation and the new state formed under reducing conditions, we suspected that the state may represent the H hyd state, resulting from the coordination of a hydride ligand at the Fe d site. In Group A hydrogenases, the H hyd state is typically observed in catalytically inactive variants with disrupted proton transport pathways under reducing conditions. 17,19 To elucidate the identity of the newly observed state, we generated a ToHydA C212A variant, in which the proton-shuttling cysteine (C212) was replaced by alanine, thereby disrupting the proton transfer pathway. The ToHydA C212A variant was matured with the diiron complex containing the ADT ligand, referred to here as C212A ADT , and characterized using ATR-FTIR spectroscopy. The spectrum of the as-isolated C212A ADT variant suggests the accumulation of the H ox CO state primarily together with H ox 
+
+(Figure 3, upper panel); however, the new state described above was not observed under these conditions. Since the H hyd state is 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 21, 2026. ;https://doi.org/10.64898/2026.04.16.719040 doi: bioRxiv preprint
+
+Figure 3. FTIR spectra of ToHydA C212A ADT variant in as-isolated state (upper panel) and upon treatment with 25mM NaDT (lower panel). The spectra of the proteins are normalized to the second amide band (1535-1545 cm −1 ). 0.4 - 0.5 mM protein sample was prepared in 100 mM Tris/HCl buffer at pH 8.0. 
+
+known to form under reducing conditions, 13,33 the C212A ADT 
+
+variant was treated with 25 mM NaDT, which led to the accu-mulation of the new state, supporting its assignment as the hy-dride-bound H hyd state (Figure 3, lower panel). To further investigate the binding of a hydride ligand, we employed a primary isotope effect by exchanging H 2O in the buffer by D 2O. As the H hyd state involves a terminal hydride, the isotope effect can be observed as a shift in the peak position of the bridging CO in the FTIR spectrum when D - occupies the axial position at the Fe d site instead of H -.14,16,17,36 In similar isotope exchange experiments, the μCO peak of ToHydA ADT 
+
+did not shift in the FTIR spectra, leading to the assignment of the H trans state in ToHydA. 33 The as-isolated ToHydA PDT in D2O-containing buffer displayed the new state, as evidenced by similar peak positions of the terminal CO and CN - ligands (Figure 4). However, the intensity of the bridging CO peak at 1840 cm -1 was significantly reduced, and a new, smaller peak appeared at 1831 cm -1 (Figure 4A, middle and right panel). This observation indicates that both H - and D - coordinate to the Fe d
+
+in the protein preparation, although the overall intensity of the μCO peaks at 1840 and 1831 cm -1 is relatively low compared to the other CO and CN - ligand peaks. A few unidentified peaks are observed in the as-isolated spectrum of ToHydA PDT in D 2O. These peaks are also present in the spectrum of the protein prepared in H 2O and are distinct from the H hyd state (SI Figure S1). Additionally, the FTIR spectrum in the range of 1000 to 4000 cm -1 showed peaks corresponding to both D 2O and H 2O(Figure 4A, left panel), 37 suggesting that under the alkaline experimental conditions and in presence of H 2 (2%), D 2O is partially converting to H 2O, as previously reported. 38 This supports the notion that either H - or D - may coordinate to the Fe d. A similar isotope exchange experiment was performed for the C212A ADT variant in the presence of 25 mM NaDT, prepared in D 2O-containing buffer. In this variant, a peak at 
+
+Figure 4. A) FTIR spectrum of ToHydA PDT in the as-isolated state, B) FTIR spectrum of ToHydA C212A ADT upon treatment with 25mM NaDT prepared in 100 mM Tris/HCl buffer in D 2O at pH 8.0. The left panel displays the full spectral range (4000–1000 cm −1 ), with peaks corresponding to the vibrational modes of H 2O/D 2O/HDO labeled in red. No post-processing (atmospheric compensation, baseline correction and normalization) was applied to the spectrum. The H-cluster region (2100-1800 cm -1 ) of the spectrum is shown in the middle panel. The right panel shows the baseline corrected H-cluster spectrum. 0.5 mM protein sample was prepared in 100 mM Tris/HCl buffer in D 2O at pH 8.0. The H hyd state peaks are colored in orange. 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 21, 2026. ;https://doi.org/10.64898/2026.04.16.719040 doi: bioRxiv preprint
+
+1836 cm -1 was observed alongside the peak at 1845 cm -1 ,corresponding to the binding of D - and H -, respectively (Figure 4B, middle and right panels). The presence of both H 2O and D2O was again confirmed by their characteristic peaks in the range of 1000 to 4000 cm -1 (Figure 4B, left panel). These isotope exchange experiments strongly support that the new state is indeed the H hyd state. FTIR spectroscopy shows that ToHydA PDT primarily forms an Hox -like state under N₂ treatment (Figure 2, middle panel). The broadening of peaks around 1934 cm -1 and 1958 cm -1 suggests the coexistence of either the H ox H or H red ’ state alongside the Hox state (together referred to as H ox -like states). However, unlike ToHydA ADT , the H inact state is almost absent in N 2-treated ToHydA PDT . Additionally, under air purging, the H-cluster peaks are significantly diminished, indicating severe degradation of the H-cluster (Figure 2, lower panel). Only a small fraction of the protein (~10%) is not degraded and forms the H inact state (SI Figure S2). 
+
+Figure 5. A) and B) Representative MD snapshots of ToHydA ADT 
+
+and ToHydA PDT , illustrating the most probable distance between C212:S γ and Fe d. C) Distance distribution between C212:S γ and Fe d
+
+in ToHydA ADT and ToHydA PDT . D) MD snapshot of ToHydA ADT 
+
+depicting an H trans -like state. 
+
+As the thiol group of C212 participates in the H inact formation of ToHydA to protect it from O 2-incuded degradation, understand-ing the structure and dynamics of the C212-bearing loop in To-HydA ADT and ToHydA PDT is crucial. To gain deeper atomic-level insights, molecular dynamics (MD) simulations were con-ducted using the AlphaFold-predicted models (ColabFold v1.3.0, AlphaFold2 using MMseqs2) 39,40 of ToHydA PDT and To-HydA ADT (as described previously 33 ). We analyzed a total of 1500 ns of MD trajectories for each system (see details in SI) and analyzed the distance between the sulfur atom of the C212 sidechain (C212:S γ) and the Fe d atom in the [2Fe] H cluster. In ToHydA ADT , the MD simulations show that the thiol group of C212 stays in close proximity to the Fe d site, whereas in To-HydA PDT , it is positioned further away (Figures 5A, B). The dis-tance distributions also reveal differences in the dynamics of the C212 residue (Figure 5C; the most likely distances and the pre-ferred orientation of C212 are depicted in Figures 5A and 5B). The simulations show that the presence of the ADT bridge is essential for the sulfur atom of C212 to closely approach Fe d.Further examination of the ToHydA ADT simulations, where the thiol group of C212 is in close proximity to the Fe d, shows a Htrans -like structure, in the sense that the C212:S γ…Fe d distance is only 3.5 Å and a hydrogen bond is present between the N adt 
+
+bridgehead and the S γ atom (Figure 5D). 
+
+## Discussion 
+
+In this study, we replaced the ADT ligand at the [2Fe] H site of ToHydA by a PDT ligand and investigated the resulting protein variants using ATR-FTIR spectroscopy. Unlike ToHydA ADT ,ToHydA PDT does not form the sulfide-bound H inact state under our experimental conditions (except small accumulation upon O2 treatment), nor is the H trans state observed. These findings suggest that in the presence of the PDT ligand the thiol sidechain of C212 is no longer in close proximity to Fe d. MD simulations reveal the molecular basis of this behavior, showing that despite sharing the same protein scaffold, the C212 sidechain in ToHydA PDT remains more distant from the Fe d site because no hydrogen bond can form between the CH 2 bridge-head of PDT and C212:S γ. In contrast, in ToHydA ADT , a hydro-gen bond is formed between N adt and C212:S γ. Notably, the C212:S γ…Fe d distance can be reduced to approximately 3 Å, allowing the formation of an H trans -like state (highlighted in yel-low in Figure 5C). Although the population of such H trans -like conformations is low in the MD simulation of ToHydA ADT , the observed accumulation of H inact and H trans states in ToHydA ADT 
+
+suggests a higher prevalence of conformations in which C212:S γ is closer to Fe d. The MD simulations further demon-strate that the H trans -like conformation, with a C212:S γ…Fe d dis-tance of 3 – 4 Å, is stabilized by a hydrogen bond between N adt 
+
+and the thiol group of the C212 sidechain. Thus, they support the notion that the formation of H trans and H inact in ToHydA ADT 
+
+is facilitated (Figure 6A). A comparable hydrogen bond inter-action is also observed during inhibition through extrinsic sul-fide binding. 26 In ToHydA PDT , the absence of this hydrogen bond prevents the stabilization of these conformations, signifi-cantly reducing the accumulation of the H inact and H trans states. 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 21, 2026. ;https://doi.org/10.64898/2026.04.16.719040 doi: bioRxiv preprint
+
+Figure 6. Schematic representation of A) the H inact /H trans state of ToHydA ADT (the dotted line shows the hydrogen bond between the bridgehead NH-group and C212:S γ), and B) the hydride-bound Hhyd state formed in ToHydA PDT .
+
+ToHydA and CpIII both belong to Group B [FeFe]-hydrogen-ases, but they exhibit different H-cluster states under different conditions (such as N 2, H 2, O 2 environment) and also differ in their inactivation properties. 32,33,41,42 A direct one-to-one com-parison is challenging due to the complex FTIR spectra of CpIII. 41 Under low-temperature and H 2 atmosphere, CpIII adopts a mixture of oxidized and reduced states. Among these, one state is characterized by a [4Fe] H⁺[Fe p(II)-Fe d(II)] H elec-tronic configuration of the H-cluster, potentially involving a lig-and coordinated to Fe d. However, FTIR spectra of deuterated CpIII recorded under the same conditions exhibit an overall very low intensity, with the μCO band at 1838 cm -1 being par-ticularly diminished. 41 As no shift in the wavenumber of this CO band was observed, the presence of a hydride ligand in the trans position to CO was excluded. Consequently, the corre-sponding state has been assigned as an H trans -like state, although the identity of the bound ligand remains unresolved. 41 Such low FTIR signal intensity has previously been reported for other [FeFe]-hydrogenases under deuterium exchange conditions, complicating the identification of the respective states. 43 In the case of ToHydA PDT , this effect is especially pronounced for the μCO peak of the H hyd state (at 1840 cm -1 ). Nevertheless, the H hyd 
+
+state typically appears in proton transport-disrupted variants of standard Group A [FeFe]-hydrogenases (such as CpI and CrHydA1), similar to the ToHydA C212A ADT variant. 14,17,44 In these variants, the lack of proton availability at the active site arrests catalytic turnover, resulting in accumulation of the hy-dride-bound H hyd state, a key intermediate in the catalytic cycle of [FeFe]-hydrogenases. FTIR spectroscopic characterization of the C212A ADT variant in presence of reducing agent confirms the formation and identification of the H hyd state. Additionally, the deuterium exchange experiment conducted for C212A ADT 
+
+demonstrates a clear shift in wavenumber of the μCO peak due to D - coordination, enabling the unequivocal assignment of the Hhyd state and the corresponding wavenumbers of the individual peaks associated with this state. Although the PDT variant also disrupts proton transport, the ab-sence of the H hyd state in this variant was unclear for a long time, 11,12 until recently reported by Depala et al. 45 It has been shown that the H hyd state is formed in CrHydA1 PDT under sig-nificantly low potential (< −0.66 V). A higher negative potential is required for the PDT variant to enable reduction of the [2Fe] H
+
+site, as the bridgehead CH 2 group is less electronegative com-pared to the native NH bridgehead. However, in ToHydA PDT ,the H hyd state is formed under mild reducing conditions. While it is hard to predict the redox potential of [2Fe] H in ToHydA compared to the Group A hydrogenases and why ToHydA PDT 
+
+forms H hyd readily, it could be assumed that stability of the [Fe p(II)-Fe d(II)] electronic configuration (as shown in Figure 6B) of the [2Fe] H cluster in ToHydA is one of the leading causes. Previously, in ToHydA ADT , states featuring ligand bind-ing to Fe d, such as H inact , H trans , and the secondary inactive state, have demonstrated a preference for the [Fe p(II)-Fe d(II)] config-uration. 33 The presence of the H hyd state in ToHydA PDT further supports the idea of enhanced stability of the [Fe p(II)-Fe d(II)] electronic configuration within the ToHydA protein scaffold. In addition, the redox potentials of the auxiliary [4Fe4S] clusters may influence the redox states of the [2Fe] H site. Nevertheless, further studies are required to elucidate the factors governing the formation of the [Fe p(II)–Fe d(II)] electronic configuration of the [2Fe] H site in ToHydA. 
+
+## Conclusions 
+
+In conclusion, this study demonstrates the impact of ligand sub-stitution at the [2Fe] H site of ToHydA on protein structure and dynamics. Replacing the ADT ligand by PDT prevents the for-mation of the H inact and H trans states observed in ToHydA ADT .Our experimental and theoretical approach combining ATR-FTIR spectroscopy and MD simulations highlights the crucial role of the hydrogen bond between N adt and the C212 sidechain in the formation of the H inact and H trans states. In the absence of this hydrogen bond in ToHydA PDT the thiol group of C212 is detached from Fe d, significantly reducing the population of the Hinact state. The as-isolated ToHydA PDT predominantly adopts the H hyd state, which is atypical for this variant under such ex-perimental conditions. These findings provide valuable insights into ligand-dependent modulation of [FeFe]-hydrogenases, po-tentially opening the way towards applications in enzyme engi-neering and the development of biomimetic catalysts for hydro-gen conversion. 
+
+ASSOCIATED CONTENT 
+
+Supporting Information .The supporting information includes experimental and simulation details, additional FTIR spectra of ToHydA PDT and comparison of O2-treated spectra of ToHydA ADT and ToHydA PDT .
+
+AUTHOR INFORMATION 
+
+Corresponding Authors 
+
+Thomas Happe - Photobiotechnology, Ruhr University Bochum, 44801 Bochum, Germany; orcid.org/0000-0003-1206-5234; Email: Thomas.Happe@rub.de 
+
+Lars V. Schäfer - Center for Theoretical Chemistry, Ruhr University Bochum, 44801 Bochum, Germany; orcid.org/0000-0002-8498-3061; Email: Lars.Schaefer@ruhr-uni-bochum.de 
+
+Authors 
+
+Subhasri Ghosh - Photobiotechnology, Ruhr University Bochum, 44801 Bochum, Germany; orcid.org/0009-0006-4168-0913 Chandan K. Das - Center for Theoretical Chemistry, Ruhr University Bochum, 44801 Bochum, Germany; Computational Biotechnology, RWTH Aachen University, 52074 Aachen, Germany; orcid.org/0009-0000-4838-8233 Shuvankar Naskar - Photobiotechnology, Ruhr University Bo-chum, 44801 Bochum, Germany 
+
+Author Contributions 
+
+The manuscript was written through contributions of all authors. All authors have given approval to the final version of the manu-script. All authors conducted research and/or analyzed data. S.G. expressed and isolated the proteins. S.G. and S.N. performed ATR-
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 21, 2026. ;https://doi.org/10.64898/2026.04.16.719040 doi: bioRxiv preprint
+
+FTIR spectroscopy. C.K.D. conducted all the MD simulations. S.G., C.K.D., S.N., L.V.S. and T.H. wrote and/or edited the manu-script. 
+
+Notes 
+
+The authors declare no competing financial interest. 
+
+ACKNOWLEDGMENT 
+
+S.G. thanks Deutscher Akademischer Austauschdienst (DAAD) for funding her doctoral scholarship. This project received funding from the Deutsche Forschungsgemeinschaft (DFG) under Germa-ny's Excellence Strategy – EXC 2033 – 390677874 – RESOLV. We thank Shanika Yadav and Ulf-Peter Apfel from the Faculty of Chemistry and Biochemistry at Ruhr University Bochum for their synthesis and provision of the [2Fe] MIM (with both ADT and PDT ligands) used in in-vitro maturation. 
+
+REFERENCES 
+
+(1) Lubitz, W.; Ogata, H.; Rüdiger, O.; Reijerse, E. Hydrogenases. 
+
+Chem. Rev. 2014 , 114 , 4081–4148. (2) Land, H.; Senger, M.; Berggren, G.; Stripp, S. T. Current State of [FeFe]-Hydrogenase Research: Biodiversity and Spectroscopic Investigations. ACS Catal. 2020 , 10 , 7069–7086. (3) Vignais, P. M.; Billoud, B.; Meyer, J. Classification and phylogeny of hydrogenases. FEMS Microbiol. Rev. 2001 , 25 , 455–501. (4) Madden, C.; Vaughn, M. D.; Díez-Pérez, I.; Brown, K. A.; King, P. W.; Gust, D.; Moore, A. L.; Moore, T. A. Catalytic turnover of [FeFe]-hydrogenase based on single-molecule imaging. J. Am. Chem. Soc. 2012 , 134 , 1577–1582. (5) Peters, J. W.; Lanzilotta, W. N.; Lemon, B. J.; Seefeldt, L. C. X-ray crystal structure of the Fe-only hydrogenase (CpI) from 
+
+Clostridium pasteurianum to 1.8 angstrom resolution. Science 1998 ,
+
+282 , 1853–1858. (6) Nicolet, Y.; Piras, C.; Legrand, P.; Hatchikian, C. E.; Fontecilla-Camps, J. C. Desulfovibrio desulfuricans iron hydrogenase: the structure shows unusual coordination to an active site Fe binuclear center. Structure 1999 , 7, 13–23. (7) Silakov, A.; Wenk, B.; Reijerse, E.; Lubitz, W. (14)N HYSCORE investigation of the H-cluster of [FeFe] hydrogenase: evidence for a nitrogen in the dithiol bridge. Phys. Chem. Chem. Phys. 
+
+2009 , 11 , 6592–6599. (8) Berggren, G.; Adamska, A.; Lambertz, C.; Simmons, T. R.; Esselborn, J.; Atta, M.; Gambarelli, S.; Mouesca, J. M.; Reijerse, E.; Lubitz, W. ; et al. Biomimetic assembly and activation of FeFe-hydrogenases. Nature 2013 , 499 , 66–69. (9) Esselborn, J.; Muraki, N.; Klein, K.; Engelbrecht, V.; Metzler-Nolte, N.; Apfel, U.-P.; Hofmann, E.; Kurisu, G.; Happe, T. A structural view of synthetic cofactor integration into [FeFe]-hydrogenases. Chem. Sci. 2016 , 7, 959–968. (10) Mulder, D. W.; Ratzloff, M. W.; Shepard, E. M.; Byer, A. S.; Noone, S. M.; Peters, J. W.; Broderick, J. B.; King, P. W. EPR and FTIR analysis of the mechanism of H2 activation by [FeFe]-hydrogenase HydA1 from Chlamydomonas reinhardtii . J. Am. Chem. Soc. 2013 , 135 , 6921–6929. (11) Birrell, J. A.; Rodríguez-Maciá, P.; Reijerse, E. J.; Martini, M. A.; Lubitz, W. The catalytic cycle of [FeFe] hydrogenase: A tale of two sites. Coord. Chem. Rev. 2021 , 449 , 214191. (12) Lachmann, M. T.; Duan, Z.; Rodríguez-Maciá, P.; Birrell, J. A. The missing pieces in the catalytic cycle of [FeFe] hydrogenases. 
+
+Chem. Sci. 2024 , 15 , 14062–14080. (13) Mulder, D. W.; Ratzloff, M. W.; Bruschi, M.; Greco, C.; Koonce, E.; Peters, J. W.; King, P. W. Investigations on the role of proton-coupled electron transfer in hydrogen activation by [FeFe]-hydrogenase. J. Am. Chem. Soc. 2014 , 136 , 15394–15402. (14) Reijerse, E. J.; Pham, C. C.; Pelmenschikov, V.; Gilbert-Wilson, R.; Adamska-Venkatesh, A.; Siebel, J. F.; Gee, L. B.; Yoda, Y.; Tamasaku, K.; Lubitz, W. ; et al. Direct Observation of an Iron-Bound Terminal Hydride in [FeFe]-Hydrogenase by Nuclear Resonance Vibrational Spectroscopy. J. Am. Chem. Soc. 2017 , 139 ,4306–4309. (15) Mulder, D. W.; Guo, Y.; Ratzloff, M. W.; King, P. W. Identification of a Catalytic Iron-Hydride at the H-Cluster of [FeFe]-Hydrogenase. J. Am. Chem. Soc. 2017 , 139 , 83–86. (16) Pelmenschikov, V.; Birrell, J. A.; Pham, C. C.; Mishra, N.; Wang, H.; Sommer, C.; Reijerse, E.; Richers, C. P.; Tamasaku, K.; Yoda, Y. ; et al. Reaction Coordinate Leading to H 2 Production in [FeFe]-Hydrogenase Identified by Nuclear Resonance Vibrational Spectroscopy and Density Functional Theory. J. Am. Chem. Soc. 2017 ,
+
+139 , 16894–16902. (17) Winkler, M.; Senger, M.; Duan, J.; Esselborn, J.; Wittkamp, F.; Hofmann, E.; Apfel, U.-P.; Stripp, S. T.; Happe, T. Accumulating the hydride state in the catalytic cycle of [FeFe]-hydrogenases. Nat. Commun. 2017 , 8, 16115. (18) Senger, M.; Kernmayr, T.; Lorenzi, M.; Redman, H. J.; Berggren, G. Hydride state accumulation in native [FeFe]-hydrogenase with the physiological reductant H 2 supports its catalytic relevance. 
+
+Chem. Commun. 2022 , 58 , 7184–7187. (19) Mebs, S.; Kositzki, R.; Duan, J.; Kertess, L.; Senger, M.; Witt-kamp, F.; Apfel, U.-P.; Happe, T.; Stripp, S. T.; Winkler, M. ; et al. 
+
+Hydrogen and oxygen trapping at the H-cluster of [FeFe]-hydrogenase revealed by site-selective spectroscopy and QM/MM calculations. 
+
+Biochim. Biophys. Acta - Bioenerg. 2018 , 1859 , 28–41. (20) Lemon, B. J.; Peters, J. W. Binding of exogenously added carbon monoxide at the active site of the iron-only hydrogenase (CpI) from Clostridium pasteurianum . Biochem. 1999 , 38 , 12969–12973. (21) Lemon, B. J.; Peters, J. W. Photochemistry at the Active Site of the Carbon Monoxide Inhibited Form of the Iron-Only Hydrogenase (CpI). J. Am. Chem. Soc. 2000 , 122 , 3793–3794. (22) Duan, J.; Hemschemeier, A.; Burr, D. J.; Stripp, S. T.; Hofmann, E.; Happe, T. Cyanide Binding to [FeFe]-Hydrogenase Stabilizes the Alternative Configuration of the Proton Transfer Pathway. Angew. Chem. 2023 , 62 , e202216903. (23) Martini, M. A.; Bikbaev, K.; Pang, Y.; Lorent, C.; Wiemann, C.; Breuer, N.; Zebger, I.; DeBeer, S.; Span, I.; Bjornsson, R. ; et al. 
+
+Binding of exogenous cyanide reveals new active-site states in [FeFe] hydrogenases. Chem. Sci. 2023 , 14 , 2826–2838. (24) Rodríguez-Maciá, P.; Reijerse, E. J.; van Gastel, M.; DeBeer, S.; Lubitz, W.; Rüdiger, O.; Birrell, J. A. Sulfide Protects [FeFe] Hydrogenases From O 2. J. Am. Chem. Soc. 2018 , 140 , 9346–9350. (25) Rodríguez-Maciá, P.; Galle, L. M.; Bjornsson, R.; Lorent, C.; Zebger, I.; Yoda, Y.; Cramer, S. P.; DeBeer, S.; Span, I.; Birrell, J. A. Caught in the H inact : Crystal Structure and Spectroscopy Reveal a Sulfur Bound to the Active Site of an O 2 -stable State of [FeFe] Hydrogenase. Angew. Chem. 2020 , 59 , 16786–16794. (26) Felbek, C.; Arrigoni, F.; Sancho, D. de; Jacq-Bailly, A.; Best, R. B.; Fourmond, V.; Bertini, L.; Léger, C. Mechanism of Hydrogen Sulfide-Dependent Inhibition of [FeFe] Hydrogenase. ACS Catal. 
+
+2021 , 11 , 15162–15176. (27) Stripp, S. T.; Goldet, G.; Brandmayr, C.; Sanganas, O.; Vincent, K. A.; Haumann, M.; Armstrong, F. A.; Happe, T. How oxygen attacks [FeFe] hydrogenases from photosynthetic organisms. Proc. Natl. Acad. Sci. 2009 , 106 , 17331–17336. (28) Esselborn, J.; Kertess, L.; Apfel, U.-P.; Hofmann, E.; Happe, T. Loss of Specific Active-Site Iron Atoms in Oxygen-Exposed [FeFe]-Hydrogenase Determined by Detailed X-ray Structure Analyses. J. Am. Chem. Soc. 2019 , 141 , 17721–17728. (29) Lu, Y.; Koo, J. O 2 sensitivity and H 2 production activity of hydrogenases-A review. Biotechnol. Bioeng. 2019 , 116 , 3124–3135. (30) Morra, S.; Arizzi, M.; Valetti, F.; Gilardi, G. Oxygen Stability in the New [FeFe]-Hydrogenase from Clostridium beijerinckii SM10 (CbA5H). Biochem. 2016 , 55 , 5897–5900. (31) Winkler, M.; Duan, J.; Rutz, A.; Felbek, C.; Scholtysek, L.; Lampret, O.; Jaenecke, J.; Apfel, U.-P.; Gilardi, G.; Valetti, F. ; et al. Asafety cap protects hydrogenase from oxygen attack. Nat. Commun. 
+
+2021 , 12 , 756. 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 21, 2026. ;https://doi.org/10.64898/2026.04.16.719040 doi: bioRxiv preprint
+
+(32) Fasano, A.; Jacq-Bailly, A.; Wozniak, J.; Fourmond, V.; Léger, C. Catalytic Bias and Redox-Driven Inactivation of the Group B [FeFe] Hydrogenase CpIII. ACS Catal. 2024 , 14 , 7001–7010. (33) Ghosh, S.; Das, C. K.; Uddin, S.; Stripp, S. T.; Engelbrecht, V.; Winkler, M.; Leimkühler, S.; Brocks, C.; Duan, J.; Schäfer, L. V. ; et al. Protein Dynamics Affect O2-Stability of Group B [FeFe]-Hydrogenase from Thermosediminibacter oceani . J. Am. Chem. Soc. 
+
+2025 , 147 , 15170–15180. (34) Das, C. K.; Ghosh, S.; Naskar, S.; Happe, T.; Schäfer, L. V. Tuning the H2 Production Activity of ToHydA by Molecular Simulation-Informed Protein Engineering. Biochem. 2026 , 65 , 527– 531. (35) Albracht, S. P. J.; Roseboom, W.; Hatchikian, E. C. The active site of the [FeFe]-hydrogenase from Desulfovibrio desulfuricans . I. Light sensitivity and magnetic hyperfine interactions as observed by electron paramagnetic resonance. J. Biol. Inorg. Chem. 2006 , 11 , 88– 101. (36) Lorent, C.; Katz, S.; Duan, J.; Kulka, C. J.; Caserta, G.; Teut-loff, C.; Yadav, S.; Apfel, U.-P.; Winkler, M.; Happe, T. ; et al. 
+
+Shedding Light on Proton and Electron Dynamics in [FeFe] Hydrogenases. J. Am. Chem. Soc. 2020 , 142 , 5493–5497. (37) Park, K.; Kim, Y.; Lee, K. J. Analysis of deuterated water contents using FTIR bending motion. J. Radioanal. Nucl. Chem. 2019 ,
+
+322 , 487–493. (38) Miller, S. L.; Rittenberg, D. The Catalysis of the H 2 -D 2OExchange by Aqueous Buffer Solutions. J. Am. Chem. Soc. 1958 , 80 ,64–65. (39) Jumper, J.; Evans, R.; Pritzel, A.; Green, T.; Figurnov, M.; Ronneberger, O.; Tunyasuvunakool, K.; Bates, R.; Žídek, A.; Potapenko, A. ; et al. Highly accurate protein structure prediction with AlphaFold. Nature 2021 , 596 , 583–589. (40) Mirdita, M.; Schütze, K.; Moriwaki, Y.; Heo, L.; Ovchinnikov, S.; Steinegger, M. ColabFold: making protein folding accessible to all. 
+
+Nat. Methods. 2022 , 19 , 679–682. (41) Kisgeropoulos, E. C.; Ratzloff, M. W.; Stroeva-Dahl, E. M.; Hasan, S.; Varghese, F.; Artz, J. H.; Peters, J. W.; Mulder, D. W.; King, P. W. H-cluster Intermediates and Catalytic Properties of Clostridium pasteurianum FeFe-Hydrogenase III. Biochem. 2025 , 64 , 2455–2466. (42) Artz, J. H.; Zadvornyy, O. A.; Mulder, D. W.; Keable, S. M.; Cohen, A. E.; Ratzloff, M. W.; Williams, S. G.; Ginovska, B.; Kumar, N.; Song, J. ; et al. Tuning Catalytic Bias of Hydrogen Gas Producing Hydrogenases. J. Am. Chem. Soc. 2020 , 142 , 1227–1235. (43) Birrell, J. A.; Pelmenschikov, V.; Mishra, N.; Wang, H.; Yoda, Y.; Tamasaku, K.; Rauchfuss, T. B.; Cramer, S. P.; Lubitz, W.; DeBeer, S. Spectroscopic and Computational Evidence that FeFe Hydrogenases Operate Exclusively with CO-Bridged Intermediates. J. Am. Chem. Soc. 2020 , 142 , 222–232. (44) Duan, J.; Senger, M.; Esselborn, J.; Engelbrecht, V.; Wittkamp, F.; Apfel, U.-P.; Hofmann, E.; Stripp, S. T.; Happe, T.; Winkler, M. Crystallographic and spectroscopic assignment of the proton transfer pathway in [FeFe]-hydrogenases. Nat. Commun. 2018 , 9, 4726. (45) Depala, A.; Lachmann, M. T.; Morra, S.; Birrell, J. A.; Rodríguez-Maciá, P. Terminal hydride formation in FeFe hydrogenase: understanding the role of the dithiolate bridgehead. Chem. Commun. 
+
+2025 , 61 , 6178–6181.
