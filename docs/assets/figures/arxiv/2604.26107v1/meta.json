@@ -1,0 +1,46 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.26107v1/fig-001.webp",
+      "caption": "FIG. 4. Droplet-size statistics and circularity of detached components. (a) Number distribution",
+      "page": 11,
+      "index": 1,
+      "width": 969,
+      "height": 762
+    },
+    {
+      "url": "assets/figures/arxiv/2604.26107v1/fig-002.webp",
+      "caption": "FIG. 2. (a) Box count N(Lbox) for the full reconstructed liquid–gas interface of the reference case with Maxlevel = 12. The overall fit gives D = 1.257, while separate ranges reveal a coarse-scale slope D1 = 1.464 and a fine-scale slope D2 = 1.064. (b) Time evolution of the global effective dimension, compared with the Euclidean values D = 1 and D = 2. (c) Same local interfacial region from a simulation with Maxlevel = 8, covered by box-counting grids with Lbox = 7, 8, and 9. The panel illustrates how the covering scale changes the geometry sampled by the count.",
+      "page": 7,
+      "index": 2,
+      "width": 435,
+      "height": 346
+    },
+    {
+      "url": "assets/figures/arxiv/2604.26107v1/fig-003.webp",
+      "caption": "FIG. 5. Reynolds-number dependence of the subset-relevant effective dimensions at fixed Weg = 200. The values are extracted using the fitting windows identified in Fig. 3: fine-scale fits for detached droplets and ligament-like fragments, and a coarse-scale fit for the connected main body. The figure is not intended as a scaling law for D(Rel), but as a robustness test of the geometrical hierarchy. Across Rel = 100–104, droplets remain closest to the near-Euclidean limit, ligament-like fragments occupy an intermediate level, and the connected main body retains the largest effective dimension.",
+      "page": 12,
+      "index": 3,
+      "width": 488,
+      "height": 391
+    },
+    {
+      "url": "assets/figures/arxiv/2604.26107v1/fig-004.webp",
+      "caption": "FIG. 3. (a) Geometrical decomposition of the reference interface at Maxlevel = 12 and ue,max = 10−6. Detached components are colored by circularity C = 4πA/P 2. We use C = 0.5 as an operational threshold: detached components with C > 0.5 are classified as droplets, while detached components with C < 0.5 are classified as ligament-like fragments. Slender structures that remain connected to the jet are retained as part of the connected main body. (b) Box-counting of the three geometrical subsets. Green symbols indicate the fitting range used to extract the subset-relevant effective dimension; blue guide fits show scale ranges that are not used for the relevant dimension. Droplets and detached ligament-like fragments are characterized by fine-scale fits, whereas the connected main body is characterized by a coarse-scale fit.",
+      "page": 9,
+      "index": 4,
+      "width": 970,
+      "height": 960
+    },
+    {
+      "url": "assets/figures/arxiv/2604.26107v1/fig-005.webp",
+      "caption": "FIG. 1. (a) Interface and vorticity field at t = 3.0 and ue,max = 10−6 for the reference case Rel = 5800 and Weg = 200, shown for increasing Maxlevel from 9 to 12. Higher refinement levels resolve smaller vortices and reveal finer interfacial corrugations, ligaments, and detached droplets. (b) Representative local geometrical subsets extracted from the refined interface: droplets, ligaments, and the connected main body. (c) Schematic of the box-counting procedure. A uniform grid is laid over the computational domain, and boxes intersecting the reconstructed interface are counted. Coarser boxes sample the large-scale jet envelope, whereas finer boxes probe local ligaments, droplets, and short interface segments.",
+      "page": 5,
+      "index": 5,
+      "width": 973,
+      "height": 399
+    }
+  ]
+}
