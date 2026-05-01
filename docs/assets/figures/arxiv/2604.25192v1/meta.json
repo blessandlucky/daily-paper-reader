@@ -1,0 +1,150 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.25192v1/fig-001.webp",
+      "caption": "Fig. 3. Illustration of load and temperature dynamics under state transitions of the AS process integrating MS-TES.",
+      "page": 6,
+      "index": 1,
+      "width": 769,
+      "height": 240
+    },
+    {
+      "url": "assets/figures/arxiv/2604.25192v1/fig-002.webp",
+      "caption": "Fig. 6. Optimal scheduling results for Scheme 2 (HS only). (a) Renewable power generation and hydrogen production. (b) Hydrogen production, AS hydrogen consumption, and the state of HS. (c) Operating state and load level of AS. (d) ASR temperature and heat duty of SUH.",
+      "page": 15,
+      "index": 2,
+      "width": 600,
+      "height": 731
+    },
+    {
+      "url": "assets/figures/arxiv/2604.25192v1/fig-003.webp",
+      "caption": "Fig. 16. Comparison of scheduling results across a year. (a) Ammonia production. (b) Number of AS start-ups and shutdowns. (c) Cumulative temperature variation. (d) Net revenue.",
+      "page": 21,
+      "index": 3,
+      "width": 900,
+      "height": 949
+    },
+    {
+      "url": "assets/figures/arxiv/2604.25192v1/fig-004.webp",
+      "caption": "Table 4. Statistics of annual start-up and shutdown counts and scenario-averaged metrics of all schemes across 24 annual scenarios",
+      "page": 22,
+      "index": 4,
+      "width": 1010,
+      "height": 321
+    },
+    {
+      "url": "assets/figures/arxiv/2604.25192v1/fig-005.webp",
+      "caption": "Fig. 18. Cumulative temperature variation reduction of (a) Scheme 5, and (b) Scheme 4, relative to Scheme 1 across 24 scenarios.",
+      "page": 22,
+      "index": 5,
+      "width": 765,
+      "height": 212
+    },
+    {
+      "url": "assets/figures/arxiv/2604.25192v1/fig-006.webp",
+      "caption": "Fig. 17. Net revenue improvement of Scheme 5 relative to (a) Scheme 1, (b) Scheme 2, (c) Scheme 3, and (d) Scheme 4, across 24 scenarios.",
+      "page": 22,
+      "index": 6,
+      "width": 761,
+      "height": 440
+    },
+    {
+      "url": "assets/figures/arxiv/2604.25192v1/fig-007.webp",
+      "caption": "Fig. 5. Optimal scheduling results for Scheme 1 (32 MWh BES+HS, no MS-TES). (a) Renewable power generation, hydrogen production power, and the state of BES. (b) Hydrogen production, AS hydrogen consumption, and the state of HS. (c) Operating state and load level of AS. (d) ASR temperature and SUH heat duty.",
+      "page": 14,
+      "index": 7,
+      "width": 597,
+      "height": 727
+    },
+    {
+      "url": "assets/figures/arxiv/2604.25192v1/fig-008.webp",
+      "caption": "Fig. 10. Optimal scheduling results for Scheme 5 (4 MWh BES+HS+MS-TES). (a) Renewable generation, hydrogen production power, and the state of BES. (b) Hydrogen production, AS hydrogen consumption, and the state of HS. (c) AS operating state and load level. (d) MS temperature and electric heating power of the MS-TES. (e) ASR temperature and heat duty of SUH and MS-TES.",
+      "page": 18,
+      "index": 8,
+      "width": 595,
+      "height": 925
+    },
+    {
+      "url": "assets/figures/arxiv/2604.25192v1/fig-009.webp",
+      "caption": "Table 1 Summary of studies on ReP2A system modeling and scheduling",
+      "page": 4,
+      "index": 9,
+      "width": 1050,
+      "height": 693
+    },
+    {
+      "url": "assets/figures/arxiv/2604.25192v1/fig-010.webp",
+      "caption": "Table 3. The scheduling results of the five schemes under the 15-day base-case scenario",
+      "page": 19,
+      "index": 10,
+      "width": 1054,
+      "height": 258
+    },
+    {
+      "url": "assets/figures/arxiv/2604.25192v1/fig-011.webp",
+      "caption": "Fig. 11. IGDT-based comparison of uncertainty boundaries across different schemes. (a) Robustness. (b) Opportunity.",
+      "page": 19,
+      "index": 11,
+      "width": 526,
+      "height": 401
+    },
+    {
+      "url": "assets/figures/arxiv/2604.25192v1/fig-012.webp",
+      "caption": "Fig. 9. Optimal scheduling results for Scheme 4 (32 MWh BES+HS+MS-TES). (a) Renewable generation, hydrogen production power, and the state of BES. (b) Hydrogen production, AS hydrogen consumption, and the state of HS. (c) AS operating state and load level. (d) MS temperature and electric heating power of the MS-TES. (e) ASR temperature and heat duty of SUH and MS-TES.",
+      "page": 17,
+      "index": 12,
+      "width": 599,
+      "height": 924
+    },
+    {
+      "url": "assets/figures/arxiv/2604.25192v1/fig-013.webp",
+      "caption": "Fig. 12. Sensitivity of (a) net revenue, and (b) cumulative temperature variation, to BES capacity and MS-TES sizing.",
+      "page": 20,
+      "index": 13,
+      "width": 856,
+      "height": 321
+    },
+    {
+      "url": "assets/figures/arxiv/2604.25192v1/fig-014.webp",
+      "caption": "Fig. 14. Sensitivity of (a) net revenue, and (b) cumulative temperature variation, to MS-TES sizing and HS capacity.",
+      "page": 20,
+      "index": 14,
+      "width": 856,
+      "height": 324
+    },
+    {
+      "url": "assets/figures/arxiv/2604.25192v1/fig-015.webp",
+      "caption": "Fig. 13. Sensitivity of (a) net revenue, and (b) cumulative temperature variation, to BES and HS capacity.",
+      "page": 20,
+      "index": 15,
+      "width": 856,
+      "height": 325
+    },
+    {
+      "url": "assets/figures/arxiv/2604.25192v1/fig-016.webp",
+      "caption": "Fig. 1. Schematic diagram of the ReP2A system with an MS-TES-integrated AS process.",
+      "page": 5,
+      "index": 16,
+      "width": 1006,
+      "height": 388
+    },
+    {
+      "url": "assets/figures/arxiv/2604.25192v1/fig-017.webp",
+      "caption": "Fig. 8. Heat flow in the AS loop under hot standby (at t=270 h).",
+      "page": 16,
+      "index": 17,
+      "width": 614,
+      "height": 296
+    },
+    {
+      "url": "assets/figures/arxiv/2604.25192v1/fig-018.webp",
+      "caption": "Fig. 7. Optimal scheduling results for Scheme 3 (MS-TES only, no BES and HS). (a) Renewable power generation and hydrogen production. (b) AS operating state and load level. (c) MS temperature and electric heating power of the MS-TES. (d) ASR temperature and heat duty of SUH and MS-TES.",
+      "page": 16,
+      "index": 18,
+      "width": 580,
+      "height": 721
+    }
+  ]
+}
