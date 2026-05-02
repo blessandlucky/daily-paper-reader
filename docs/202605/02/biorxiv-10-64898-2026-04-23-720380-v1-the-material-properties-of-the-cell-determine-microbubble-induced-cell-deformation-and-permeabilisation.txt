@@ -1,0 +1,1605 @@
+Title: 82970088
+
+URL Source: https://www.biorxiv.org/content/10.64898/2026.04.23.720380v1.full.pdf
+
+Number of Pages: 38
+
+Markdown Content:
+The material properties of the cell determine microbubble -
+
+# induced cell deformation and permeabilisation 
+
+## Sloan S †1,2 , Pattinson O † 1,2 , Ben Issa A 1, Stride E 3, Tilley S 1,4 , Kanczler J 1,
+
+## Carugo D 3, Pierron F 5*, Evans ND 1,2 * 
+
+> 1
+
+Centre for Human Development, Stem Cells and Regenerative Medicine, Bone and Joint 
+
+Research group, University of Southampton  
+
+> 2
+
+Bioengineering Sciences Group, Institute for Life Sciences, University of Southampton  
+
+> 3
+
+Botnar Research Centre, Nuffield Department of Orthopaedics, Rheumatology and 
+
+Musculoskeletal Sciences (NDORMS), University of Oxford  
+
+> 4
+
+Trauma and Orthop aedics, University Hospital Southampton  
+
+> 5
+
+MatchID NV, Ghent, Belgium  
+
+> †
+
+Equal contribution. 
+
+*Corresponding authors  n.d.evans@soton.ac.uk ; fabrice.pierron@matchid.eu 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 27, 2026. ;https://doi.org/10.64898/2026.04.23.720380 doi: bioRxiv preprint
+
+Summary 
+
+Ultrasound -stimulated microbubbles can transiently permeabilise cells and enhance targeted 
+
+therapeutic delivery, yet clinical efficacy varies markedly across tissues with distinct mechanical 
+
+properties. How cellular material properties govern microbubble -cell interactions under megahertz -
+
+rate loading - far beyond the frequency range accessible to conventional cell mechanobiology -
+
+remains unresolved, limiting control of sonoporation. Here we combine ultra -high -speed imaging 
+
+with digital image correlation to resol ve the propagation of microbubble -induced deformation at 
+
+megahertz frequencies in living cells . Microbubble oscillations generate harmonic mechanical 
+
+waves whose spatial decay defines a micrometre -scale attenuation length governed by cytoskeletal 
+
+or ganisation and intracellular viscoelastic dissipation. Perturbing cytoskeletal mechanics 
+
+determines deformation propagation distance and deformation wave speed, which in parallel alter s
+
+permeabilisation efficiency in both tumour -derived and primary human bone -marrow stromal cells. 
+
+These findings identify intracellular viscoelasticity as a determinant of microbubble bioeffects at 
+
+ultrasound rates and position tissue mechanical state as a design parameter for optimising 
+
+ultrasound -mediated therapeutic deliver y.
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 27, 2026. ;https://doi.org/10.64898/2026.04.23.720380 doi: bioRxiv preprint
+
+Introduction 
+
+Microbubbles are micrometre -sized, surfactant -stabilised, gas -filled particles routinely used as 
+
+contrast agents in ultrasound imaging 1,2 . Beyond diagnostics , they are being developed for targeted 
+
+drug delivery 3 and ultrasound -accelerated thrombolysis 4,5 . Acting as cavitation nuclei, 
+
+microbubbles convert incident acoustic energy into mechanical motion 6. As an ultrasound pressure 
+
+wav e propagates through fluid, oscillation of the compressible gas core generat es local pressure 
+
+fields and flow that mechanically perturb nearby cells and tissues 7. These perturbations can induce 
+
+transient membrane permeabilisation ( eg via pore formation, known as sonoporation ), endothelial 
+
+barrier modulation and extracellular matrix disruption, which have been exploited to deliver 
+
+macromolecules into cells 8,9 and tissues 7 , and to accelerate clot breakdown 10 . Microbubble -
+
+enabled ultrasound therapies have progressed to clinical evaluation, including early -phase studies 
+
+in oncology for minimally invasive, targeted delivery of chemotherapeutics 11,12 and disruption of 
+
+thromboembolism 13 . Despite clinical progress, the therapeutic outcomes of ultrasound and 
+
+microbubble exposure are not uniform , and vary substantially with tissue microenvironmental 
+
+context 14,15 . Emerging in vivo work suggests that tumour mechanical state - manifesting as stiffness 
+
+and the perfusion constraints that impose s - can markedly change the effectiveness of ultrasound -
+
+microbubble delivery 14,16 . A key unresolved question is therefore how microbubbles oscillations 
+
+generate deformation in viscoelastic cells and tissues, and how this is affected by changes in the 
+
+mechanical properties of the cell .
+
+Answering this question quantitatively , however, is challenging because microbubble oscillation 
+
+occurs at ultrasound frequencies (~1 MHz), so time -dependent effects must be resolved at sub -
+
+microsecond timescales. Ultra -high -speed (UHS) video microscopy at >5 Mfps has therefore been 
+
+used to visualise cell –microbubble interactions, demonstrating membra ne motion near oscillating 
+
+bubbles 17 , and the dependence of sonoporation on bubble –cell contact 18 . These observations 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 27, 2026. ;https://doi.org/10.64898/2026.04.23.720380 doi: bioRxiv preprint
+
+support the prevailing view that microbubble -driven membrane strain and strain rate are key 
+
+determinants of permeabili sation 19,20 .
+
+However, the deformation experienced by a cell is not determined solely by bubble dynamics . It
+
+also depend s on the cell’s own material and mechanical properties - particularly its cytoskeletal 
+
+organisation and the frequency -dependent viscoelastic response of the cytoplasm and cortex 21 .
+
+This point is especially important for translation, because the stiffness of target tissues can vary by 
+
+more than an order of magnitude across tumour types and disease states . Indirect evidence supports 
+
+a role for cell mechanics , with Fan et al. reporting higher permeabilisation efficiency during S 
+
+phase than in G1 or G2/M, which they attributed to stiffness differences across the cell cycle and 
+
+altered resistance to cyclic loading 22,23 . At the tissue scale, microbubble activity in microvessels 
+
+can transmit deformation tens of micro metre s into the surrounding parenchyma 24 , implying that 
+
+tissue viscoelasticity can determine both the magnitude and spatial distribution of microbubble -
+
+induced strain. Because viscoelasticity varies substantially between tissues and is altered in many 
+
+disease states 25 , the mechanical properties of the microenvironment are likely to influence the 
+
+efficacy of ultrasonic -microbubble -mediated drug delivery . Consistent with this hypothesis , in vivo 
+
+studies have reported that the efficacy of microbubble -mediated ultrasound delivery can depend 
+
+strongly on the tumour microenvironment 14 . It is therefore plausible that mechanical state is a 
+
+major contributor to the heterogeneity of therapeutic outcome. To date, however , direct quantitative 
+
+measurements linking cell mechanical state to microbubble -driven deformation fields and 
+
+downstream phenotypic effects remain limited, largely because conventional cell mechanobiology 
+
+assays probe much lower frequencies than ultrasound. 
+
+While UHS imaging has transformed our qualitative understanding, it cannot on its own provide 
+
+the full -field deformation maps needed to relate spatial strain patterns to cellular mechanics. Digital 
+
+image correlation (DIC) is a full -field technique for reco vering displacement and strain from 
+
+patterned images 26 that can quantify the spatial distribution and magnitude of microbubble -driven 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 27, 2026. ;https://doi.org/10.64898/2026.04.23.720380 doi: bioRxiv preprint
+
+deformation . Here, we combine UHS imaging with DIC to quantify microbubble -induced cell 
+
+deformation at ultrasound frequencies. By extracting spatially and temporally -resolved 
+
+deformation amplitudes, we test whether cytoskeletal mechanics regulate deformation transmission 
+
+and predict microbubble -induced permeabilisation efficiency . Specifically, we quantify (i) the 
+
+spatial decay of deformation away from the oscillating bubble and (ii) the propagation speed of the 
+
+deformation field, then relate these to cytos keletal perturbations that soften or stiffen cells and to 
+
+permeabilisation measured by uptake of a cell -impermeant dye. In doing so, we establish a link 
+
+between cell mechanical state and sonoporation efficiency, providing a mechanistic basis for how 
+
+tissue - and disease -specific differences in stiffness may govern therapeutic response. More broadly, 
+
+this framework offers a r oute to predict and optimise ultrasound –microbubble delivery, and 
+
+suggests that microbubbles could act not only as therapeutic actuators but also as probes of local 
+
+mechanical state in living tissues. 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 27, 2026. ;https://doi.org/10.64898/2026.04.23.720380 doi: bioRxiv preprint
+
+Results 
+
+Sub -microsecond quantification of microbubble -induced cell displacement using DIC 
+
+Figure 1: Sub -microsecond quantification of microbubble -induced cell displacement using DIC . a) Schematic of the 
+
+acoustic device developed to induce cell -microbubble interactions under an ultrasound field, placed within the high -speed 
+
+imaging microscopy apparatus . b) T he first 5 frames of the Shimadzu HPV -X images captured at 5 million FPS showing an 
+
+example of a cell -microbubble interaction, with three distinct regions in the cell identified ( Video 1 , scale bar = 10 μm) c)
+
+Reference image of the cell -microbubble interaction (scale bar = 50 μm) with 5 points defined within the cell around the 
+
+microbubble, at different orientations and distances. d) DIC spatial maps in the region of interest showing the i) horizontal 
+
+displacement ( Video 2), ii ) vertical displacement ( Video 3 ), and iii ) absolute displacement (Video 4 ) (scale bar = 25 μm). 
+
+In previous work we developed a custom acoustic chamber enabling imaging of cell -microbubble 
+
+interactions under ultrasound stimulation at time resolutions exceeding 1 Mfps 27 . Using this 
+
+platform, we observed dynamic, spatially heterogeneous deformations within the cytoplasm 
+
+surrounding oscillating microbubbles. We hypothesised that the magnitude and spatial distribution 
+
+of these deformations may reveal cell mechanical/material properties, and also may relat e to the 
+
+likelihood of biological effects such as sonoporation . Although approaches such as microscopic 
+
+shear -wave elastography 28 and a variety of techniques have been applied to determine cell 
+
+mechanical properties 29 , none currently resolve the mechanical response at the MHz frequencies 
+
+of microbubble oscillation. 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 27, 2026. ;https://doi.org/10.64898/2026.04.23.720380 doi: bioRxiv preprint
+
+To quantify microbubble -induced cell deformation, we combined ultra -high -speed imaging with 
+
+DIC, exploiting the intrinsic speckle pattern of mammalian cells in bright -field microscopy. MG63 
+
+cells were seeded in the device's fluidic chamber (Figure 1 a). After chamber inversion to promote 
+
+bubble -cell contact, frequent cell -microbubble interactions were observed. Under ultrasound 
+
+stimulation, microbubbles oscillated synchronously with the driving acoustic frequency, imparting 
+
+visible displacement to the cell body and cytoplasm detectable by video microscopy and grey -scale 
+
+flu ctuation analysis (Figure 1b, Video 1 and Supplementary Figure 1) . Because bright -field images 
+
+of cells contain intrinsic speckle, DIC could be applied without exogenous fiduciary markers. Using 
+
+MatchID software, directional and absolute displacements were calculated across the entire cell for 
+
+each frame of the UHS recordings (Video 2 , Video 3 and Video 4 ).
+
+To quantify the magnitude of cell displacement with respect to the microbubble, we examined a 
+
+series of individual subsets within the cell body that varied in distance and distribution from the 
+
+microbubble edge (Figure 1c ). Horizontal displacement in subsets on approximately opposite sides 
+
+of the microbubble was similar in magnitude but opposite in direction (Figure 1d(i) ). The p eak 
+
+vector displacement during each oscillation cycle was -0.5 ± 0.02 μm, on the left side of the cell 
+
+and 1.5 ± 0.09 μm on the opposite si de (points I and II ; Figure 1d(i) ). Vertical displacement 
+
+declined as a function of distance perpendicular to the microbubble periphery , from 0.9 ± 0.2 μm 
+
+at point III to 0.4 ± 0.02 μm at point IV to 0.1 ± 0.02 μm at point V (Figure 1d(ii)) . Absolute 
+
+displacement oscillated at the same frequency as the microbubble and showed comparable 
+
+amplitudes at points equidistant from the bubble boundary, but varied with radial angle (magnitude 
+
+of displacement at 1.21 ± 0. 01 μm, 1.49 ± 0.09 μm, 1.5 ± 0.08 μm, 0.49 ± 0.02 μm, and 0. 17 ±
+
+0.02 μm for points I, II, III, IV and V , respectively ; Figure 1d(iii) ). Together, these results 
+
+demonstrate that DIC can quantify spatial distributions of cell deformation during microbubble 
+
+oscillation without exogenous markers, providing a framework for quantitative analysis of 
+
+microbubble -cell mechanical interactions. 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 27, 2026. ;https://doi.org/10.64898/2026.04.23.720380 doi: bioRxiv preprint
+
+Microbubble -induced dynamic cell displacement is sinusoidal and its amplitude decays 
+
+exponentially with distance 
+
+Figure 2: Microbubble -induced dynamic cell displacement is sinusoidal and its amplitude decays exponentially with 
+
+distance . a i) First 5 frames showing a single microbubble oscillation cycle (scale bar = 10 μm). ii ) The first 10 μs of the 
+
+microbubble oscillation measurements with a fitted sine function . The fi rst 5 green data points correspond to the frames shown 
+
+in i. b) i) 5 frames showing the absolute displacement over a single oscillation cycle in the DIC map (top, scale bar = 5 , ( Video 
+
+4). The cross refers to a point near the microbubble, where ii ) an example plot of radial deformation against time is shown .
+
+From this , iii) an FFT of the radial deformation is produced, where iv) the magnitude at 1MHz is mapped across the cell's 
+
+surface, showing the deformation induced by the microbubbles' oscillation (scale bar = 25 μm). c) Induced displacement 
+
+throughout the cell with distance from the microbubble, with inverse square and exponential decay models fit. d) R 2 values for 
+
+each model compared across all data sets. (* = p < 0.05, ** = p < 0.01, *** = p < 0.001, **** = p < 0.0001) .
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 27, 2026. ;https://doi.org/10.64898/2026.04.23.720380 doi: bioRxiv preprint
+
+As u ltrasound at MHz frequenc ies induces sinusoidal oscillation in microbubble s, we hypothesised 
+
+that adjacent cells would undergo similar deformation. To confirm this, microbubble edge -
+
+detection data were fitted to a sinusoidal function, Eq . 1 (Fig. 2a(i –ii)). The fit showed strong 
+
+agreement (R² = 0.9720) with an oscillation frequency of 0.99 MHz, matching the driving 
+
+ultrasound frequency, and a recovered oscillation amplitude of 1.03 μm representing the mean 
+
+radial expansion and contraction over the video sequence. Next, the spatial pat tern of the induced 
+
+deformation oscillation amplitude throughout the entire cell was determined by performing FFTs 
+
+for every subset of data generated via MatchID (Figure 2b) . Points near the microbubble exhibited 
+
+harmonic oscillations at 1 MHz with peak displacement of 1.06 μm, comparable to the bubble 
+
+oscillation (Figure 2b(i) ). The amplitude of the 1 MHz FFT component was therefore extracted for 
+
+all subsets and mapped to reconstruct the spatial deformation field across the cell (Figure 2b( ii -iv)) .
+
+In materials under dynamic loading, spatial decay of deformation away from the loading point 
+
+reflects attenuation of a propagating mechanical wave and can reveal damping properties 30 .
+
+Quantifying the displacement around the microbubble with respect to, for example, microbubble 
+
+size or amplitude of oscillation, may offer the opportunity to determine the rheological properties 
+
+of complex cell structures at high frequency, which has been c hallenging in the past 29 .
+
+We therefore examined the relationship between displacement amplitude and distance from the 
+
+microbubble boundary. In the example cell (Fig. 2b), displacement decreased smoothly from ~1 
+
+μm at the bubble interface to ~0 μm at ~25 μm distance (Fig. 2c). Two m odels were tested to 
+
+describe this decay: exponential (Eq. 2) and inverse -square (Eq. 3). Across datasets, the exponential 
+
+model provided a significantly better fit (R² = 0.944 ± 0.022 vs 0.937 ± 0.026; p < 0.001; n = 31) 
+
+(Fig. 2d). Using this model we def ined the half -decay distance, hereafter which we name 
+
+“attenuation length scale ”, D1/ 2 (Eq. 4), yielding a mean value of 2.85 ± 0.69 μm (n = 31) , (Figure 
+
+2c; note that a ll decay data is provided in Supplementary Information 1). Exponential attenuation 
+
+is characteristic of wave propagation in viscoelastic media, where internal friction dissipates 
+
+mechanical energy and produces spatial decay of deformation 31,32 . The cytoplasm is commonly 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 27, 2026. ;https://doi.org/10.64898/2026.04.23.720380 doi: bioRxiv preprint
+
+described as a complex viscoelastic composite comprising cytoskeletal filaments embedded in 
+
+viscous cytosol. Relative motion between filaments, crosslinkers, organelles and surrounding fluid 
+
+generates frequency -dependent damping. While cellular viscoelasti city is typically measured by 
+
+microrheology at frequencies below ~100 kHz 33 , our measurements infer dissipation from 
+
+deformation decay under MHz excitation. These results therefore suggest that intracellular 
+
+architecture acts as a lossy viscoelastic transmission medium. If cytoskeletal organisation 
+
+dominates dissipation and load tr ansfer, we next hypothesised that perturbing it should 
+
+systematically shift the attenuation length scale D1/ 2, a parameter rarely accessible for living cells 
+
+under ultrasound -rate (MHz) loading. 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 27, 2026. ;https://doi.org/10.64898/2026.04.23.720380 doi: bioRxiv preprint
+
+Cell material properties determine D 1/2 and microbubble -induced permeabilisation 
+
+Figure 3: Disruption of the cell cytoskeleton reduces D 1/2 and protects against microbubble -induced permeabilisation . a )
+
+Confocal images with DAPI -stained nuclei (blue) and phalloidin -stained actin (green) for untreated, blebbistatin, Y -27632 -
+
+treated (softening agents) and calyculin A or nocodazole -treated (stiffening agents) MG63 cells (scale bar = 50 μm). b) D 1/2 
+
+was reduced in softened cells and increased in stiffened cells, as exemplified by comparison of decay curves for untreated 
+
+and latrunculin or calyculin A-treated cells c) Comparison of D 1/2 across all treatment groups. d) A schematic showing the 
+
+experimental appr oach to test ultrasound microbubble -induced permeabili sation as a function of treatment with softening or 
+
+stiffening agents and e) PI uptake in control, untreated, Y27632 and calyculin A-treated cells, with f) showing the significant 
+
+decrease in permeablisation in softened cells relative to untreated or stiffened cells. g) Normalised permeabilsation 
+
+correlates with D 1/2 modulated with softening or stiffening agents compared to controls . h) Effect of cytochalasin D on 
+
+permeabilisation efficiency in HBMSCs compared with the MG63 cells, showing a consistent effect in both cell types but a 
+
+significantly high permeabili sation effect in HBMSCs relative to MG63s. (* = p < 0.05, ** = p < 0.01, *** = p < 0.001, 
+
+**** = p < 0.0001). 
+
+To test this hypothesis, c ells were treated with agents that disrupt cytoskeletal structure and reduce 
+
+stiffness (cytochalasin D, latrunculin A, blebbistatin and Y -27632) or with agents that promote 
+
+actin polymerisation and increase stiffness (calyculin A and nocodazole) . Confocal imaging of 
+
+phalloidin -stained cells confirmed a reduction or increase in filamentous actin in cells treated with 
+
+softening or stiffening agents , respectively (Figure 3a and Supplementary Figure 2) . To quantify 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 27, 2026. ;https://doi.org/10.64898/2026.04.23.720380 doi: bioRxiv preprint
+
+the effect of these stiffness modifications on deformation propagation, we calculated mean values 
+
+of the attenuation length scale , D1/2 . Normalised decay curves revealed clear differences between 
+
+groups, with stiffening agents increasing D1/2 and softening agents decreasing it (Figure 3b ). All 
+
+individual groups are shown in Fig. 3c and statistical analyses in Supplementary Table 1. Pooled 
+
+analysis showed that D1/2 was significantly larger in cells treated with stiffening agents (ca lyculin 
+
+A and nocadozole) than in cells treated with softening agents (cytochalasin D, latrunculin A,
+
+blebbistatin and Y -27632; 3.31 ± 0.92 μm vs. 2.44 ± 0.46 μm; p < 0.0001 ). Untreated cells showed 
+
+intermediate behaviour, differing significantly from both softened (p = 0.010) and stiffened (p = 
+
+0.019) groups. 
+
+These data indicate that cytoskeletal organisation does regulate microbubble -driven cell 
+
+deformation. In viscoelastic media, changes in attenuation length reflect shifts in how mechanical 
+
+energy is transmitted and dissipated through the material, with the decay length capturing the 
+
+balance between loss and load -bearing pathways in the cytoplas m 33,34 . That these differences 
+
+remain resolvable under ultrasound -rate (MHz) stimulation demonstrates that intracellular 
+
+dissipation pathways determine deformation propagation even at the extreme strain rates imposed 
+
+by oscillating microbubbles. The direction of the effect - more rapid attenuation in softened 
+
+conditions - mirrors trends often reported at the tissue scale in shear -wave elastography, where 
+
+softer biological materials commonly exhibit stronger attenuation 35,36 Although the material 
+
+properties of viscoelastic systems have rarely been measured directly at MHz frequencies, theory 
+
+suggests that the bulk response becomes increasingly important in this regime 31,34 . Nevertheless, 
+
+our data demonstrate that cell stiffness modulates deformation attenuation even at these much 
+
+higher frequencies. 
+
+We next asked whether the cellular mechanical state also regulates microbubble -induced 
+
+permeabilisation. While indirect evidence suggests that cell stiffness influences microbubble -
+
+induced permeabilisation 22,23,37 this has not (to the best of our knowledge) been tested directly .
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 27, 2026. ;https://doi.org/10.64898/2026.04.23.720380 doi: bioRxiv preprint
+
+MG63 cells were treated with the same panel of softening or stiffening agents and exposed to 
+
+ultrasound in the presence of microbubbles and the cell -impermeant dye propidium iodide (PI) 
+
+(Figure 3d). Compared with untreated cells (1 7.14 ± 8.62 %), softening treatments significantly 
+
+reduced permeabilisation efficiency: cytochalasin D , 4.82 ± 4.58 % (p < 0.01), latrunculin A, 5.13 
+
+± 0.64 % (p < 0.01), blebbistatin , 9.04 ± 1.27 % (p < 0.05), and Y-27632 , 8.86 ± 3.49 % (p < 0.01) 
+
+(Figure 3e ,f ). Although stiffeni ng treatments produced a non -significant increas e, when 
+
+permeabilization was plotted as a function of D1/2 there was a clear correlation, with an R 2 = 0.83 
+
+(Figure 3g). No significant PI uptake occurred in control experiments with drug treatment alone or 
+
+ultrasound in the absence of microbubble s (Supplementary Figure 3).
+
+Tumour -derived cell lines such as MG63 are typically softer than primary stromal cells such as 
+
+HBMSCs, which may influence their susceptibility to microbubble -induced permeabilisation 38 .
+
+Consistent with this, cytochalasin D treatment significantly reduced PI uptake in primary human 
+
+bone marrow stromal cells ( HBMSCs ; 53.0 ± 13.5 % vs 27.8 ± 1 0.3 % (p < 0.0 1), similar to that 
+
+found in MG63 cells (Figure 3h). Significant differences were also observed between MG63 and 
+
+HBMSC populations in both untreated (p < 0.0001) and cytochalasin -treated (p < 0.05) groups. 
+
+Controls again showed no PI uptake from drug treatment alone or ultrasound without microbubbles 
+
+(Supplementary Figure 3 ). 
+
+Together , these data indicate that cellular mechanical state influences microbubble -induced 
+
+permeabilisation, with pharmacological softening reducing PI uptake in parallel with shortening 
+
+the attenuation length. This is possibly due to a reduced area of the membrane experiencing 
+
+stretching, and a similarly reduced area active for microbubble -induced permeabilisation , hence 
+
+the reduction in uptake. Another possible explanation involves cytoskeletal control of membrane –
+
+cortex coupling and prestress. During microbubble oscillation, radial bubble expansion produces 
+
+deformation normal to the cell surface, generating membrane strain parallel to the membrane. In 
+
+untreated cells, the actin cytoskeleton forms an interconnected network anchored to the membrane 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 27, 2026. ;https://doi.org/10.64898/2026.04.23.720380 doi: bioRxiv preprint
+
+via integrins, constraining membrane motion so that applied forces generate higher local stresses 
+
+and increase susceptibility to rupture. Disruption of the actin network reduces this prestress and 
+
+structural constraint, allowing the membrane to deform more and absorb energy without failure. 
+
+Future experiments using membrane -tension probes or additiona l fluorescent markers may help 
+
+resolve these mechanisms 39 –41 .
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 27, 2026. ;https://doi.org/10.64898/2026.04.23.720380 doi: bioRxiv preprint
+
+Spatial phase variation reflects the propagation of the displacement wave through the cell 
+
+Figure 4: Mechanical waves can be observed transiting MG63 cells and wave speed depends on material properties of the 
+
+cell. a ) Spatial colour map of the phase change. A region of interest has been highlighted where a gradual change in phase 
+
+was observed with distance from the microbubble (scale bar = 25 μm). b) Phase change plotted against distance from the 
+
+microbubble for the highlighted region of interest. A linear regression (Red line) is applied to the data to recover wave 
+
+velocity. c). Wave velocity is affected by chemicals that modify the cytoskeleton, with slower velocities recorded in softened 
+
+compared to stiffened cells. 
+
+For deformation to propagate through the cell, mechanical energy must be transmitted as a 
+
+travelling deformation wave. We therefore examined the phase spectrum of the FFT of the radial 
+
+component of the deformation (expressed in polar coordinates about the microbubble centre) and 
+
+mapped the phase at 1 MHz,  𝜙 𝑅𝑂𝐼  across the cell. A gradual phase shift with distance from the 
+
+microbubble was observed (Figure 4a), consistent with propagation of a deformation wave . Plotting 
+
+𝜙 𝑅𝑂𝐼  against distance from the microbubble revealed an approximately linear relationship (Figure 
+
+4b), allowing the wave propagation speed to be calculated from the phase gradient using Eq 5. 
+
+Across all untreated microbubble -cell interactions , the average propagation speed was 253 ± 216 
+
+ms -1 (n = 31) . This velocity is substantially lower than compression wave speeds in soft tissues 
+
+(1450 to 1600 ms -1) but much higher than typical shear -wave speeds 1 and 10 ms -1 35 . The 
+
+intermediate velocity may suggest the possible existence of non -classical mechanical wave modes, 
+
+such as surface or Lamb waves , including possible contributions from the glass substrate . At MHz 
+
+frequencies, theoretical and experimental treatments suggest that shear -wave behaviour in 
+
+viscoelastic soft materials becomes strongly attenuated 42 , such that the measured response may 
+
+increasingly reflect bulk/compressional contributions and geometry -dependent guided modes .
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 27, 2026. ;https://doi.org/10.64898/2026.04.23.720380 doi: bioRxiv preprint
+
+Experimental factors may also influence the measured speeds. Widefield microscopy collects light 
+
+from above and below the focal plane (≈0.5 μm), and deformation waves generated by the 
+
+microbubble –cell interaction may propagate obliquely relative to the ima ging plane. Both effects 
+
+would lead to an underestimation of the true propagation velocity and an overestimation of the 
+
+attenuation length. Mechanically, propagation speeds were higher in cells treated with stiffening 
+
+agents (calyculin A and nocodazole) th an in cells treated with softening agents (cytochalasin D, 
+
+latrunculin A, blebbistatin and Y -27632; 281.3 ± 75.2 vs 182.3 ± 97.6 m s⁻¹; p = 0.0066). Speeds 
+
+were also greater in stiffened than untreated cells (281.3 ± 75.2 vs 217.8 ± 157.6 m s⁻¹; p = 0.0270 ), 
+
+while softened cells showed a non -significant reduction relative to untreated cells. Together with 
+
+the shorter attenuation length observed in softened cells, these results are consistent with increased 
+
+mechanical dissipation and reduced load transfer fo llowing cytoskeletal disruption (Figure 4c). It 
+
+is also worth noting that there was a larger variance observed in untreated cells compared to those 
+
+treated with pharmacological inhibitors. This may reflect greater heterogeneity in cell cycle state 
+
+in these populations due to differences in stages of cell cycle (which are unlikely present in treated 
+
+cells), as cell cycle stage can significantly affect cell stiffness and has been implicated as a factor 
+
+affecting microbubble -induced permeabilisation 22,23 .
+
+The reduced wave speed indicates increased damping associated with changes in effective shear or 
+
+bulk modulus, depending on the wave mode involved . Although experimental data remain limited, 
+
+Grasland -Mongrain et al. measured optical shear -wave propagation in isolated murine oocytes and 
+
+reported a lower shear modulus in cytochalasin -treated cells compared with controls 28,43 consistent 
+
+with increased damping in softer cells. However, the excitation frequencies in shear -wave 
+
+elastography (~15 kHz) are orders of magnitude lower than those in our experiments (~1 MHz). 
+
+Because shear -wave behaviour is strongly frequency -dependent, attenuation of shear waves in our 
+
+experiments is significant, and we remain uncertain as to whether the observed displacements are 
+
+caused by shear waves . Nonetheless, the differences observed here are most plausibly explained by 
+
+cytoskeletal structural ch anges that alter energy transmission and dissipation within the cytoplasm. 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 27, 2026. ;https://doi.org/10.64898/2026.04.23.720380 doi: bioRxiv preprint
+
+In summary, our results show that the response of cells to oscillating microbubbles is governed not 
+
+only by bubble dynamics but also by the material properties of the cell. By combining ultra -high -
+
+speed imaging with digital image correlation we quantified microbubble -induced deformation 
+
+fields at ultrasound frequencies and identified measurable descriptors of this response - the 
+
+attenuation length scale (D ₁/₂ ) and the propagation speed of the deformation wave. Both parameters 
+
+were modulated by cytoskeletal organisation, demonstrating that intracellular viscoelasticity 
+
+determines how mechanical energy introduced by microbubble oscillation is transmitted and 
+
+dis sipated within the cell. 
+
+Importantly, these mechanical changes were accompanied by corresponding changes in 
+
+microbubble -induced permeabilisation, linking MHz -rate deformation physics directly to 
+
+sonoporation outcome. These findings therefore suggest that tissue mechanical state ma y be an 
+
+important determinant of the heterogeneous therapeutic response observed in ultrasound –
+
+microbubble delivery. More broadly, the approach presented here raises the possibility that a better 
+
+knowledge of tissue mechanical properties may enable better tuned parameters for maximising the 
+
+chance of microbubble -induced permeabilsiation, including sonoporation , and therefore 
+
+therapeutic success. In addition, oscillating microbubbles could serve not only as therapeutic 
+
+actuators but also as local mechanical probes. Extending similar measurements to microvessels or 
+
+intact tissues, coupled with appropriate models of wave propagation and boundary conditions, may 
+
+ultimately enable recovery of effective tissue mechanical properties during ultrasound -mediated 
+
+thera pies. 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 27, 2026. ;https://doi.org/10.64898/2026.04.23.720380 doi: bioRxiv preprint
+
+Methods 
+
+Acoustic Device Manufacture 
+
+The design and manufacture of the acoustic device have been described previously 27 . Briefly, a 
+
+polydimethylsiloxane (PDMS) manifold was prepared by mixing PDMS precursor and curing 
+
+agent (Sylgard 184, Farnell, Leeds, UK) at a 10:1 weight ratio, followed by degassing in a 
+
+desiccator connected to a vacuum pump. A 3 -D-printed poly(lactic a cid) (PLA) mould was made 
+
+using an Ultimaker S5 printer and filled with liquid PDMS, which was then cured for 48 -72 hours. 
+
+The solid PDMS manifold was subsequently plasma -bonded to a 170 μm thick (length × width: 75 
+
+× 25 mm) glass cover -slide, to create a water -tight chamber. The manifold included an inlet into 
+
+which a 10 mm element -size transducer (Precision Acoustics, Dorchester, UK) could be inserted 
+
+to deliver acoustic stimulation through the fluid -filled chamber. These devices had reproducible 
+
+architec tures over multiple manufactured replicas. Over the course of the study, a new device was 
+
+fabricated each time a different type of cell -microbubble interaction was captured. 
+
+Microbubble Production 
+
+Air -filled microbubbles were produced using a 2 -stage sonication technique adapted from a 
+
+previously described method 44 . Briefly, 1,2 -distearoyl -sn -glycero -3-phosphocholine (DSPC) and 
+
+polyoxyethylene (40) stearate (PEG -40s) were first combined at a molar ratio of 9:1 from stock 
+
+concentrations of 10 mg/mL (in chloroform). The organic solvent was left to evaporate overnight, 
+
+and the obtained dry lipid film was hydrated in Dulbecco’s phosphate -buffered saline (DPBS). The 
+
+lipid dispersion was then sonicated using a Fisherbrand ™ Model 120 Sonic tip sonicator (tip 
+
+diameter: 3.175 mm, Fisher Scientific, Leicestershire, UK). A firs t sonication stage at 40% intensity 
+
+for 2.5 minutes at the base of the suspension was followed by a sonication at 70% intensity for 30 s
+
+with the tip positioned at the liquid -air interface. The resulting microbubble suspension was 
+
+subsequently placed in ic e until use. 
+
+Cell Culture 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 27, 2026. ;https://doi.org/10.64898/2026.04.23.720380 doi: bioRxiv preprint
+
+MG -63 cells were cultured in Dulbecco's modified Eagle's medium (DMEM) with 10% (v/v) fetal 
+
+bovine serum (FBS), 50 IU/mL penicillin and 50 μg/mL streptomycin sulphate in T75 culture 
+
+flasks. Primary human bone marrow stromal cells (HBMSC) were isolated from patients 
+
+undergoing hip replacement surgery at Southampton General Hospital and Spire Southampton 
+
+Hospital (with local ethics committee approval from the University of Southampton and Research 
+
+Governance Office (ERGO 31875.A12) and the Northwest -Greater M anchester East Research 
+
+Ethics Committee (18/NW/0231)). The bone marrow was washed multiple times in Minimum 
+
+Essential Medium α (α -MEM) and poured through a 0.6 μm cell strainer to remove fat and bone 
+
+fragments. HBMSCs were cultured in α -MEM with 10% fetal bovine serum (FBS) and 50 IU/mL 
+
+penicillin and 50 μg/mL streptomycin sulphate. Once at 80% confluence, the cells were split and 
+
+seeded into the manufactured acoustic devices at seeding densities of 30,000 cells per cm 2. The 
+
+devices were filled with 2 mL o f the required culture medium, and the cells within the manufactured 
+
+devices were kept in a 5% CO 2 incubator for 24 hours. Cells were also seeded at a density of 40,000 
+
+cells/cm 2 for microbubble -induced permeabilisation experiments in a 35 mm glass Ibidi cell culture 
+
+dish (Thistle Scientific, Glasgow, UK). 
+
+Modulation of cytoskeletal integrity 
+
+To investigate the effect of the material properties of cells on microbubble -induced cell strain, cells 
+
+were treated with various cytoskeletal inhibitors that are reported to reduce or increase cell stiffness 
+
+(as measured by quasi -static techniques, like a tomic force microscopy). To reduce cell stiffness 
+
+MG63 cells were incubated in DMEM for 30 minutes at 37 °C with either 2 μM cytochalasin -D
+
+(Merck, Dorset, UK), or 1 μM latrunculin -A (Merck, Dorset, UK) to disrupt actin polymerisation; 
+
+7 μM blebbistatin (M erck, Dorset, UK) to disrupt myosin -II; or 5 μM Y -27632 (Tocris, Bristol, 
+
+UK) to disrupt Rho -associated, coiled -coil -containing protein kinase (ROCK). To stiffen cells, 
+
+MG63 cells were incubated in DMEM for 15 minutes at 37 °C with 2 nM Calyculin A (Merck, 
+
+Dorset, UK), or 1 μM Nocodazole (Merck, Dorset, UK), which promote s actin polymerisation. 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 27, 2026. ;https://doi.org/10.64898/2026.04.23.720380 doi: bioRxiv preprint
+
+HBMSCs were treated in α -MEM for 30 minutes at 37 °C with 2 μM cytochalasin -D (Merck, 
+
+Dorset, UK) to disrupt actin polymerisation and soften the cells. Cells were washed in DPBS, and 
+
+they were imaged with microbubbles immediately after treatment. 
+
+Ultra -High Speed Imaging of Cell -Microbubble Interactions 
+
+To image cell -microbubble interactions, the acoustic device containing cultured cells was filled 
+
+with 8 mL of DPBS, supplemented with 100 μL of microbubble suspension (~1×10 7 microbubbles 
+
+per mL). The device was sealed by inserting an immersion transducer into the dedicated port of the 
+
+PDMS manifold and was inverted for up to 5 minutes to induce the natural adhesion between 
+
+microbubbles and cells, then reinverted to leave appro ximately 1 -2 microbubbles adhered per cell. 
+
+The device was placed on the stage of an Olympus IX 71 microscope (Olympus, Tokyo, Japan). A 
+
+Hypervision HPV -X camera (Shimadzu, Kyoto, Japan) was attached to the microscope's camera 
+
+port, and pulsed laser illumination was provided by a Cavilux pulsed diode laser (640 nm 
+
+wavelength, 400 W, Ca vitar Ltd, Tampere, Finland). A single 100 -cycle pulse ultrasound wave was 
+
+generated by a 1 MHz transducer (Precision Acoustics, Dorchester, UK), driven by a power 
+
+amplifier fed by a signal generator (Aim -TTi, Cambridgeshire, UK). A HS3 Handyscope 
+
+oscillos cope (TiePie, Sneek, The Netherlands) was employed to monitor the electrical signal 
+
+driving the transducer. The acoustic stimulation also triggered the camera to image at 5 million 
+
+FPS under an objective of magnification 80×, capturing the dynamic interact ion of stimulated 
+
+microbubbles and cells. Candidate cells with microbubbles in close proximity were identified by 
+
+light microscopy imaging, and UHS videos of 128 frames were acquired by the camera, with each 
+
+frame at an image resolution of 400 × 250 pixels . To analyse the images prior to DIC application, 
+
+the grey level (an intensity value between 0 and 65536, indicating the light level of each pixel) of 
+
+specific regions within images were compared spatially and temporally to quantify dynamic 
+
+changes within the images. 
+
+Digital Image Correlation 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 27, 2026. ;https://doi.org/10.64898/2026.04.23.720380 doi: bioRxiv preprint
+
+For measurements of microbubble -induced displacement of the cell, MatchID software (MatchID 
+
+2D, 2024.2.5, Gent, Belgium) was used to perform digital image correlation (DIC) using the 
+
+speckle pattern naturally present in the cells. The initial frame of each UHS video was used as the 
+
+reference frame, and a region of interest was defined, encompass ing the cell to be studied. DIC was 
+
+performed using a zero -normalised sum of squared differences (ZNSSD) correlation with an affine 
+
+shape function, with a subset size of 17 and a step size of 1 (see full DIC reporting table in 
+
+Supplementary Table 2 ). The s ubset size determined the size in pixels of a region of the image 
+
+which was analysed as a single point, and each subset generated a single value of displacement data 
+
+for each frame, with the step size determining the spacing between analysed subsets and, t herefore, 
+
+the final density of the grid of data points. Directional displacements and strains were generated at 
+
+each data point across the region of interest and for every subsequent frame in the UHS video. 
+
+During this study, a total of 153 UHS videos were collected in which microbubble -induced cell 
+
+displacement was sufficient to support the application of DIC and the convergence of the MatchID 
+
+software, with no significant or obvious erroneous data. 
+
+Digital Image Correlation Data Processing 
+
+To extract data relevant to the microbubble -induced displacement, processing was carried out using 
+
+Python 3.12.0. The displacement data in the horizontal and vertical directions were obtained from 
+
+the DIC and transformed from Cartesian to polar coordinates , with the origin at the centre of the 
+
+microbubble. It was initially assumed that the displacement induced in the cell by the harmonic 
+
+motion of the microbubble would also be harmonic. Therefore, for each data point across the region 
+
+of interest (ROI), a F ourier transform was performed on the radial component of the deformation 
+
+using the SciPy fast Fourier transform (FFT) function. The absolute magnitude of the peak at the 
+
+driving frequency, 1 MHz, could then be taken as the magnitude of the deformation ind uced by the 
+
+microbubble at each point across the ROI. By considering the angle of the complex output from 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 27, 2026. ;https://doi.org/10.64898/2026.04.23.720380 doi: bioRxiv preprint
+
+the FFT 45 , the phase spectrum for each point within the ROI could be plotted, and therefore, the 
+
+phase at 1 MHz  (
+
+𝑅𝑂𝐼 ) of each oscillating point across the ROI could also be mapped. 
+
+Bubble Oscillation 
+
+To determine microbubble oscillation amplitude, an edge -detection method was implemented, as 
+
+previously described 27 , to confirm the harmonic oscillation of the microbubble. The microbubble 
+
+oscillations were assumed to be approximately spherical, and so the radius and centre of the 
+
+microbubble could be tracked through time. Using the SciPy curve fit function, Equation 1 was 
+
+fitted to th e radial oscillations to find the oscillation magnitude: 
+
+Equation 1:  𝑅 (𝑡 ) = (𝐴 + 𝐵𝑡 )Cos (2π f 𝑡 +
+
+𝑀𝐵 ) + 𝐶𝑡 + 𝐷 
+
+where  𝑅 (𝑡 ) is the radius of the microbubble at time t, f is the frequency of oscillation, A corresponds 
+
+to the amplitude, B is the temporal change in amplitude, 
+
+𝑀𝐵 , the phase of microbubble oscillation, 
+
+C the temporal offset, and D the absolute offset. 
+
+Fitting Data to a Regression Model 
+
+To determine and quantify the mechanical decay of microbubble -induced displacement as a 
+
+function of distance from the microbubble, data collected from UHS videos were fit to three 
+
+regression models. An exponential function (Equation 2) was examined, as it has been 
+
+demonstrated to fit the attenuation of a mechanical wave in other viscoelastic materials and also in 
+
+biological cells 29,30 . An inverse -square function (Equation 3) was also examined, as it describes 
+
+the contact between two elastic bodies and the resulting deformation pattern in the well -studied 
+
+Hertzian contact model. 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 27, 2026. ;https://doi.org/10.64898/2026.04.23.720380 doi: bioRxiv preprint
+
+Equation 2:  𝑌 = 𝐴 𝑒 −𝐵𝑥 + 𝐶 
+
+Equation 3:  𝑌 = 𝐴  
+
+> (𝑥 −𝐵 )2
+
++ 𝐶 
+
+In equations (2) and (3), Y represents the absolute displacement of the cell at a specific distance 
+
+from the microbubble boundary, x represents the radial distance from the microbubble boundary, 
+
+and A, B and C are coefficients to be determined. By calculating the R 2 value for each decay fit 
+
+function, it was found that exponential decay best represented the data. Using the regression 
+
+models, descriptors could be applied to compare the difference in displacement responses between 
+
+interactions. This was define d as the distance from the bubble boundary at which the displacement 
+
+is half that at the bubble/cell boundary. This is called the ‘half decay distance’, defined by the 
+
+following equation: 
+
+Equation 4:  𝐷 1/2 = 𝑙𝑜𝑔 (2)
+
+> 𝐵
+
+where D1/2 represents the half decay distance and B the exponential decay coefficient found from 
+
+Equation 2. 
+
+Propagation Speed using Phase Change 
+
+After calculating the corresponding phase from the FFT, the phase change with distance from the 
+
+microbubble boundary represents a temporal delay deformation through the cell. To account for 
+
+any asymmetries in the microbubbles' oscillation and to account fo r variations in cell morphology 
+
+and heterogeneity, a narrow radial slice of the ROI was selected where there was an evident gradual 
+
+decay in 
+
+𝑅𝑂𝐼  with distance from the microbubble . A linear regression was then performed on 𝑅𝑂𝐼  with distance x from the microbubble boundary and the gradient was then used to determine 
+
+the propagation speed using Equation 5. 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 27, 2026. ;https://doi.org/10.64898/2026.04.23.720380 doi: bioRxiv preprint
+
+Equation 5:  𝑣 𝑝 = −2𝜋𝑓 
+
+> 𝑀
+> 𝑅𝑂𝐼
+
+where  𝑣 𝑝  is the wave speed in the cell,  𝑓  is the driving frequency of 1 MHz, and  𝑀  
+
+> 𝑅𝑂𝐼
+
+is the spatial 
+
+gradient of the phase provided by the linear regression (A complete derivation can be found in 
+
+Supplementary Information 2 ). 
+
+Assessment of microbubble -induced cell permeabilisation 
+
+MG63 cells were cultured on a 35 mm glass Ibidi cell culture dish (Thistle Scientific, Glasgow, 
+
+UK) seeded at 40,000 cells/cm 2, 24 hours ahead of time. Cells were treated as previously described 
+
+with calyculin A, nocodazole, cytochalasin D, latrunculin A, blebbestatin, and Y -27632 , each with 
+
+their own corresponding untreated control to account for minor variations in microbubble batch 
+
+production. Propidium iodide (PI) was used as a marker for successful microbubble -induced 
+
+permeabilisation (Fisher Scientific, Leicestershire, UK). An acoustically compatible PDMS lid 46 
+
+was then attached to the cell culture dish and filled with 10 mL of DMEM, 10 L of 4 mg/mL PI, 
+
+and 100 L of microbubble suspension (~1×10 7 microbubbles per mL), resulting in a final 
+
+concentration of 4 g/mL of PI. The dish was then inverted, allowing the microbubbles to float in 
+
+contact with the cell culture area. The dish was then suspended in a 0.3 L water bath, and was 
+
+ultrasonically stimulated at a frequency of 1 MHz, a peak acoustic pressure of 300 kPa, a 30% duty 
+
+cycle, and a 1000 kHz pulse repetiti on frequency using a 0.9 MHz focused transducer (Precision 
+
+Acoustics, Dorchester, UK), which was driven by the same power amplifier fed from a signal 
+
+generator (Aim -TTi, Cambridgeshire, UK), and was monitored by the HS3 Handyscope 
+
+oscilloscope (TiePie, Sne ek, The Netherlands). Cells were then removed from the water bath and 
+
+washed 3  with PBS before being imaged. 
+
+Fluorescent Microscopy 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 27, 2026. ;https://doi.org/10.64898/2026.04.23.720380 doi: bioRxiv preprint
+
+To determine the number of cells permeabilised as a proportion of total cells, phase contrast and 
+
+fluorescence imaging was performed using a Zeiss Observer inverted microscope (Zeiss AG, 
+
+Oberkochen, Germany) at 10× magnification using the Cy5 channel (ex λ = 628 – 648 nm, em  =
+
+673 – 712 nm) for imaging PI uptake. The number of cells taking up PI and the total number of 
+
+cells in each image were counted using ImageJ and were taken as a percentage for comparison. 
+
+Confocal Microscopy 
+
+For assessing the cytoskeletal structure, MG63 cells were fixed with 4% (w/v) PFA for 20 minutes 
+
+at room temperature and permeabilised with 0.5% (v/v) Triton X -100 in PBS for 20 minutes , after 
+
+which they were washed and incubated with 1 μg/mL Alexa Flour 488 phalloidin (Fisher Scientific, 
+
+Leicestershire, UK) for 30 minutes at room temperature. Cells were then washed and stained with 
+
+4′,6 -diamidino -2-phenylindole (DAPI, Fisher Scientific, Leicestershire, UK) at room temperature 
+
+for 5 minutes (1:1000). Confoc al images were acquired using a Leica TCS SP5 confocal 
+
+microscope (Leica Microsystems, Milton Keynes, UK). Z -stacks were collected at 0.5 μm intervals 
+
+using a 63× objective. DAPI and Alexa Fluor 488 phalloidin were imaged using excitation 
+
+wavelengths of  = 405 nm and  = 488 nm, respectively. 
+
+Statistical Analysis 
+
+All fitting data functions were described using the coefficient of determination, R 2. Subsequently, 
+
+statistical analysis was performed using GraphPad Prism 8.3 (GraphPad Software, La Jolla, CA, 
+
+USA). Figure 2E uses a Wilcoxon matched -pairs test. Figure 3C and 4C uses a one -way ANOVA 
+
+with Tukey’s multiple comparison test. Figures 3F use a one -way ANOVA with Dunnett’s post 
+
+hoc test. Figure 3H use a two -way ANOVA with Fisher's LSD post hoc test. 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 27, 2026. ;https://doi.org/10.64898/2026.04.23.720380 doi: bioRxiv preprint
+
+References 
+
+(1) Gramiak, R.; Shah, P. M. Echocardiography of the Aortic Root. Invest. Radiol. 1968 ,
+
+3 (5), 356 –366. https://doi.org/10.1097/00004424 -196809000 -00011. 
+
+(2) Balen, F. G.; Allen, C. M.; Lees, W. R. Ultrasound Contrast Agents. Clin. Radiol. 
+
+1994 , 49 (2), 77 –82. https://doi.org/10.1016/s0009 -9260(05)83446 -4. 
+
+(3) Snipstad, S.; Sulheim, E.; de Lange Davies, C.; Moonen, C.; Storm, G.; Kiessling, F.; 
+
+Schmid, R.; Lammers, T. Sonopermeation to Improve Drug Delivery to Tumors: From 
+
+Fundamental Understanding to Clinical Translation. Expert Opin. Drug Deliv. 2018 , 15 (12), 
+
+1249 –1261. https://doi.org/10.1080/17425247.2018.1547279. 
+
+(4) Doelare, S. A. N.; Jean Pierre, D. M.; Nederhoed, J. H.; Smorenburg, S. P. M.; Lely, 
+
+R. J.; Jongkind, V.; Hoksbergen, A. W. J.; Ebben, H. P.; Yeung, K. K.; Wisselink, W.; van der 
+
+Meijs, B. B.; Meijerink, M. R.; Wiersema, A. M.; Kievit, J.; Musters, R. J. P.; Blankensteijn, 
+
+J. D.; Kamp, O.; Slikkerveer, J. Microbubbles and Ultrasound Accelerated Thrombolysis for 
+
+Peripheral Arterial Occlusions: The Outcomes of a Single Arm Phase II Trial. Eur. J. Vasc. 
+
+Endovasc. Surg. 2021 , 62 (3), 463 –468. https://doi.or g/10.1016/j.ejvs.2021.05.030. 
+
+(5) Bautista, K. J. B.; Kim, J.; Xu, Z.; Jiang, X.; Dayton, P. A. Current Status of Sub -
+
+Micron Cavitation -Enhancing Agents for Sonothrombolysis. Ultrasound Med. Biol. 2023 , 49 
+
+(5), 1049 –1057. https://doi.org/10.1016/j.ultrasmedbio.2023.01.018. 
+
+(6) Stride, E.; Segers, T.; Lajoinie, G.; Cherkaoui, S.; Bettinger, T.; Versluis, M.; Borden, 
+
+M. Microbubble Agents: New Directions. Ultrasound Med. Biol. 2020 , 46 (6), 1326 –1343. 
+
+https://doi.org/10.1016/j.ultrasmedbio.2020.01.027. 
+
+(7) Shohet, R. V.; Chen, S.; Zhou, Y. -T.; Wang, Z.; Meidell, R. S.; Unger, R. H.; 
+
+Grayburn, P. A. Echocardiographic Destruction of Albumin Microbubbles Directs Gene 
+
+Delivery to the Myocardium. Circulation 2000 , 101 (22), 2554 –2556. 
+
+https://doi.org/10.1161/01.CIR.101.22.2554. 
+
+(8) Bao, S.; Thrall, B. D.; Miller, D. L. Transfection of a Reporter Plasmid into Cultured 
+
+Cells by Sonoporation in Vitro. Ultrasound Med. Biol. 1997 , 23 (6), 953 –959. 
+
+https://doi.org/10.1016/s0301 -5629(97)00025 -2. 
+
+(9) Greenleaf, W. J.; Bolander, M. E.; Sarkar, G.; Goldring, M. B.; Greenleaf, J. F. 
+
+Artificial Cavitation Nuclei Significantly Enhance Acoustically Induced Cell Transfection. 
+
+Ultrasound Med. Biol. 1998 , 24 (4), 587 –595. https://doi.org/10.1016/S0301 -5629(98)00003 -
+
+9. 
+
+(10) Tachibana, K.; Tachibana, S. Albumin Microbubble Echo -Contrast Material as an 
+
+Enhancer for Ultrasound Accelerated Thrombolysis. Circulation 1995 , 92 (5), 1148 –1150. 
+
+https://doi.org/10.1161/01.cir.92.5.1148. 
+
+(11) Moore -Palhares, D.; Dasgupta, A.; Saifuddin, M.; Pena, M. L. A.; Prasla, S.; Ho, L.; 
+
+Lu, L.; Kung, J.; McNabb, E.; Sannachi, L.; Vesprini, D.; Chen, H.; Karam, I.; Soliman, H.; 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 27, 2026. ;https://doi.org/10.64898/2026.04.23.720380 doi: bioRxiv preprint
+
+Szumacher, E.; Chow, E.; Gandhi, S.; Trudeau, M.; Curpen, B.; Stanisz, G. J.; Kolios, M.; 
+
+Czarnota, G. J. Radiation Enhancement Using Focussed Ultrasound -Stimulated Microbubbles 
+
+for Breast Cancer: A Phase 1 Clinical Trial. PLOS Med. 2024 , 21 (5), e1004408. 
+
+https://doi.org/10.1371/journal.pmed.1004408. 
+
+(12) Woodworth, G. F.; Anastasiadis, P.; Ozair, A.; Chabros, J.; Bettegowda, C.; Chen, C.; 
+
+Gerstl, J. V. E.; Douville, C.; Mekary, R. A.; Smith, T. R.; Meng, Y.; Hawkins, C.; Pople, C. 
+
+B.; Abrahao, A.; Llinas, M.; Heyn, C.; Bunevicius, A.; Rezai, A. R.; Ball, A. J. S.; Henry, K.; 
+
+Sahgal, A.; Torio, E.; Ren, H.; Ahmad, H.; Arora, H.; Eisenberg, H.; Perry, J.; Carpenter, J. S.; 
+
+Hynynen, K.; Pham, L. C.; Anketell, M. B.; Lim -Fat, M. J.; Xu, Z.; Cifarelli, C. P.; Sheehan, 
+
+J. P.; McDannold, N. J.; Gandhi, D.; Go lby, A. J.; Lipsman, N. Microbubble -Enhanced 
+
+Transcranial Focused Ultrasound with Temozolomide for Patients with High -Grade Glioma 
+
+(BT008NA): A Multicentre, Open -Label, Phase 1/2 Trial. Lancet Oncol. 2025 , 26 (12), 1651 –
+
+1664. https://doi.org/10.1016/S1470 -2045(25)00492 -9. 
+
+(13) Porter, T. R.; Xie, F.; Lof, J.; Powers, J.; Vignon, F.; Shi, W.; White, M. The 
+
+Thrombolytic Effect of Diagnostic Ultrasound –Induced Microbubble Cavitation in Acute 
+
+Carotid Thromboembolism. Invest. Radiol. 2017 , 52 (8), 477. 
+
+https://doi.org/10.1097/RLI.0000000000000369. 
+
+(14) Einen, C.; Snipstad, S.; Wesche, H. F.; Nordlund, V.; Devold, E. J.; Amini, N.; 
+
+Hansen, R.; Sulheim, E.; Davies, C. de L. Impact of the Tumor Microenvironment on 
+
+Delivery of Nanomedicine in Tumors Treated with Ultrasound and Microbubbles. J. 
+
+Controlled Release 2025 , 378 , 656 –670. https://doi.org/10.1016/j.jconrel.2024.12.037. 
+
+(15) Sutton, J. T.; Ivancevich, N. M.; Perrin, S. R.; Vela, D. C.; Holland, C. K. Clot 
+
+Retraction Affects the Extent of Ultrasound -Enhanced Thrombolysis in an Ex Vivo Porcine 
+
+Thrombosis Model. Ultrasound Med. Biol. 2013 , 39 (5), 813 –824. 
+
+https://doi.org/10.1016/j.ultrasmedbio.2012.12.008. 
+
+(16) Sulheim, E.; Hanson, I.; Snipstad, S.; Vikedal, K.; Mørch, Y.; Boucher, Y.; Davies, C. 
+
+de L. Sonopermeation with Nanoparticle -Stabilized Microbubbles Reduces Solid Stress and 
+
+Improves Nanomedicine Delivery to Tumors. Adv. Ther. 2021 , 4 (10), 2100147. 
+
+https://doi.org/10.1002/adtp.202100147. 
+
+(17) van Wamel, A.; Bouakaz, A.; Versluis, M.; de Jong, N. Micromanipulation of 
+
+Endothelial Cells: Ultrasound -Microbubble -Cell Interaction. Ultrasound Med. Biol. 2004 , 30 
+
+(9), 1255 –1258. https://doi.org/10.1016/j.ultrasmedbio.2004.07.015. 
+
+(18) van Wamel, A.; Kooiman, K.; Harteveld, M.; Emmer, M.; ten Cate, F. J.; Versluis, M.; 
+
+de Jong, N. Vibrating Microbubbles Poking Individual Cells: Drug Transfer into Cells via 
+
+Sonoporation. J. Control. Release Off. J. Control. Release Soc. 2006 , 112 (2), 149 –155. 
+
+https://doi.org/10.1016/j.jconrel.2006.02.007. 
+
+(19) Meijering, B. D. M.; Juffermans, L. J. M.; van Wamel, A.; Henning, R. H.; Zuhorn, I. 
+
+S.; Emmer, M.; Versteilen, A. M. G.; Paulus, W. J.; van Gilst, W. H.; Kooiman, K.; de Jong, 
+
+N.; Musters, R. J. P.; Deelman, L. E.; Kamp, O. Ultrasound and Microbubble -Tar geted 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 27, 2026. ;https://doi.org/10.64898/2026.04.23.720380 doi: bioRxiv preprint
+
+Delivery of Macromolecules Is Regulated by Induction of Endocytosis and Pore Formation. 
+
+Circ. Res. 2009 , 104 (5), 679 –687. https://doi.org/10.1161/CIRCRESAHA.108.183806. 
+
+(20) Prentice, P.; Cuschieri, A.; Dholakia, K.; Prausnitz, M.; Campbell, P. Membrane 
+
+Disruption by Optically Controlled Microbubble Cavitation. Nat. Phys. 2005 , 1 (2), 107 –110. 
+
+https://doi.org/10.1038/nphys148. 
+
+(21) Low, J.; Chan, B.; Tay, A. Targeted Therapeutics Delivery by Exploiting Biophysical 
+
+Properties of Senescent Cells. Adv. Funct. Mater. 2022 , 32 (2), 2107990. 
+
+https://doi.org/10.1002/adfm.202107990. 
+
+(22) Fan, P.; Yang, D.; Wu, J.; Yang, Y.; Guo, X.; Tu, J.; Zhang, D. Cell -Cycle -
+
+Dependences of Membrane Permeability and Viability Observed for HeLa Cells Undergoing 
+
+Multi -Bubble -Cell Interactions. Ultrason. Sonochem. 2019 , 53 , 178 –186. 
+
+https://doi.org/10.1016/j.ultsonch.2019.01.005. 
+
+(23) Fan, P.; Zhang, Y.; Guo, X.; Cai, C.; Wang, M.; Yang, D.; Li, Y.; Tu, J.; Crum, L. A.; 
+
+Wu, J.; Zhang, D. Cell -Cycle -Specific Cellular Responses to Sonoporation. Theranostics 
+
+2017 , 7 (19), 4894 –4908. https://doi.org/10.7150/thno.20820. 
+
+(24) Bezer, J. H.; Prentice, P.; Lim Kee Chang, W.; Morse, S. V.; Christensen -Jeffries, K.; 
+
+Rowlands, C. J.; Kozlov, A. S.; Choi, J. J. Microbubble Dynamics in Brain Microvessels. 
+
+PLOS ONE 2025 , 20 (2), e0310425. https://doi.org/10.1371/journal.pone.0310425. 
+
+(25) Discher, D. E.; Janmey, P.; Wang, Y. -L. Tissue Cells Feel and Respond to the Stiffness 
+
+of Their Substrate. Science 2005 , 310 (5751), 1139 –1143. 
+
+https://doi.org/10.1126/science.1116995. 
+
+(26) Schreier, H.; Orteu, J. -J.; Sutton, M. A. Image Correlation for Shape, Motion and 
+
+Deformation Measurements: Basic Concepts,Theory and Applications ; Springer US: Boston, 
+
+MA, 2009. https://doi.org/10.1007/978 -0-387 -78747 -3. 
+
+(27) Pattinson, O.; Keller, S. B.; Evans, N. D.; Pierron, F.; Carugo, D. An Acoustic Device 
+
+for Ultra High -Speed Quantification of Cell Strain During Cell -Microbubble Interaction. ACS 
+
+Biomater. Sci. Eng. 2023 , 9 (10), 5912 –5923. 
+
+https://doi.org/10.1021/acsbiomaterials.3c00757. 
+
+(28) Grasland -Mongrain, P.; Zorgani, A.; Nakagawa, S.; Bernard, S.; Paim, L. G.; 
+
+Fitzharris, G.; Catheline, S.; Cloutier, G. Ultrafast Imaging of Cell Elasticity with Optical 
+
+Microelastography. Proc. Natl. Acad. Sci. 2018 , 115 (5), 861 –866. 
+
+https://doi.org/10.1073/pnas.1713395115. 
+
+(29) Kollmannsberger, P.; Fabry, B. Linear and Nonlinear Rheology of Living Cells. Annu. 
+
+Rev. Mater. Res. 2011 , 41 (Volume 41, 2011), 75 –97. https://doi.org/10.1146/annurev -matsci -
+
+062910 -100351. 
+
+(30) Knopoff, L.; MacDonald, G. J. F. Attenuation of Small Amplitude Stress Waves in 
+
+Solids. Rev. Mod. Phys. 1958 , 30 (4), 1178 –1192. 
+
+https://doi.org/10.1103/RevModPhys.30.1178. 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 27, 2026. ;https://doi.org/10.64898/2026.04.23.720380 doi: bioRxiv preprint
+
+(31) Fabry, B.; Maksym, G. N.; Butler, J. P.; Glogauer, M.; Navajas, D.; Taback, N. A.; 
+
+Millet, E. J.; Fredberg, J. J. Time Scale and Other Invariants of Integrative Mechanical 
+
+Behavior in Living Cells. Phys. Rev. E Stat. Nonlin. Soft Matter Phys. 2003 , 68 (4 Pt 1), 
+
+041914. https://doi.org/10.1103/PhysRevE.68.041914. 
+
+(32) Hu, J.; Jafari, S.; Han, Y.; Grodzinsky, A. J.; Cai, S.; Guo, M. Size - and Speed -
+
+Dependent Mechanical Behavior in Living Mammalian Cytoplasm. Proc. Natl. Acad. Sci. U. 
+
+S. A. 2017 , 114 (36), 9529 –9534. https://doi.org/10.1073/pnas.1702488114. 
+
+(33) Rigato, A.; Miyagi, A.; Scheuring, S.; Rico, F. High -Frequency Microrheology 
+
+Reveals Cytoskeleton Dynamics in Living Cells. Nat. Phys. 2017 , 13 (8), 771 –775. 
+
+https://doi.org/10.1038/nphys4104. 
+
+(34) Laloy -Borgna, G.; Zorgani, A.; Catheline, S. Micro -Elastography: Toward Ultrasonic 
+
+Shear Waves in Soft Solids. Appl. Phys. Lett. 2021 , 118 (11), 113701. 
+
+https://doi.org/10.1063/5.0039816. 
+
+(35) Sarvazyan, A. P.; Rudenko, O. V.; Swanson, S. D.; Fowlkes, J. B.; Emelianov, S. Y. 
+
+Shear Wave Elasticity Imaging: A New Ultrasonic Technology of Medical Diagnostics. 
+
+Ultrasound Med. Biol. 1998 , 24 (9), 1419 –1435. https://doi.org/10.1016/S0301 -
+
+5629(98)00110 -0. 
+
+(36) Frontiers | Viscoelasticity Imaging of Biological Tissues and Single Cells Using Shear 
+
+Wave Propagation .
+
+https://www.frontiersin.org/journals/physics/articles/10.3389/fphy.2021.666192/full 
+
+(accessed 2026 -03 -04). 
+
+(37) van den Broek, M. R. P.; Klassen, R.; Versluis, M.; Yu, A. C. H.; Segers, T. Role of 
+
+Cell Culture Scaffold Stiffness on Sonoporation Efficiency. Ultrasound Med. Biol. 2026 , 52 
+
+(2), 336 –345. https://doi.org/10.1016/j.ultrasmedbio.2025.09.018. 
+
+(38) Docheva, D.; Padula, D.; Popov, C.; Mutschler, W.; Clausen -Schaumann, H.; 
+
+Schieker, M. Researching into the Cellular Shape, Volume and Elasticity of Mesenchymal 
+
+Stem Cells, Osteoblasts and Osteosarcoma Cells by Atomic Force Microscopy. J. Cell. Mol. 
+
+Med. 2008 , 12 (2), 537 –552. https://doi.org/10.1111/j.1582 -4934.2007.00138.x. 
+
+(39) Irmscher, M.; de Jong, A. M.; Kress, H.; Prins, M. W. J. Probing the Cell Membrane 
+
+by Magnetic Particle Actuation and Euler Angle Tracking. Biophys. J. 2012 , 102 (3), 698 –
+
+708. https://doi.org/10.1016/j.bpj.2011.12.054. 
+
+(40) Aron, M.; Vince, O.; Gray, M.; Mannaris, C.; Stride, E. Investigating the Role of 
+
+Lipid Transfer in Microbubble -Mediated Drug Delivery. Langmuir 2019 , 35 (40), 13205 –
+
+13215. https://doi.org/10.1021/acs.langmuir.9b02404. 
+
+(41) Boyd, M. A.; Kamat, N. P. Visualizing Tension and Growth in Model Membranes 
+
+Using Optical Dyes. Biophys. J. 2018 , 115 (7), 1307 –1315. 
+
+https://doi.org/10.1016/j.bpj.2018.08.021. 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 27, 2026. ;https://doi.org/10.64898/2026.04.23.720380 doi: bioRxiv preprint
+
+(42) Torres, J.; Callejas, A.; Gomez, A.; Rus, G. Optical Micro -Elastography with 
+
+Magnetic Excitation for High Frequency Rheological Characterization of Soft Media. 
+
+Ultrasonics 2023 , 132 , 107021. https://doi.org/10.1016/j.ultras.2023.107021. 
+
+(43) Flé, G.; Van Houten, E.; Rémillard -Labrosse, G.; FitzHarris, G.; Cloutier, G. Imaging 
+
+the Subcellular Viscoelastic Properties of Mouse Oocytes. Proc. Natl. Acad. Sci. U. S. A. 
+
+2023 , 120 (21), e2213836120. https://doi.org/10.1073/pnas.2213836120. 
+
+(44) Polydorou, A. E.; May, J. P.; Makris, K.; Ferri, S.; Wu, Q.; Stride, E.; Carugo, D.; 
+
+Evans, N. D. An Investigation into the Cytotoxic Effects of Microbubbles and Their 
+
+Constituents on Osteosarcoma and Bone Marrow Stromal Cells. Biochim. Biophys. Acta BBA 
+
+- Gen. Subj. 2023 , 1867 (12), 130481. https://doi.org/10.1016/j.bbagen.2023.130481. 
+
+(45) Ming, X.; Kang, D. CORRECTIONS FOR FREQUENCY, AMPLITUDE AND 
+
+PHASE IN A FAST FOURIER TRANSFORM OF A HARMONIC SIGNAL. Mech. Syst. 
+
+Signal Process. 1996 , 10 (2), 211 –221. https://doi.org/10.1006/mssp.1996.0015. 
+
+(46) Carugo, D.; Owen, J.; Crake, C.; Lee, J. Y.; Stride, E. Biologically and Acoustically 
+
+Compatible Chamber for Studying Ultrasound -Mediated Delivery of Therapeutic 
+
+Compounds. Ultrasound Med. Biol. 2015 , 41 (7), 1927 –1937. 
+
+https://doi.org/10.1016/j.ultrasmedbio.2015.03.020. 
+
+# SUPPLEMENTARY MATERIALS 
+
+Video files 1 -4 have been submitted in addition to the manuscript 
+
+Supplementary Figure 1: Grey scale oscillations            
+
+> Figure 2: Using fluctuations in the grey scale from the high -speed imaging to infer possible deformation in the cell
+> cytoplasm. a) 5 frames from Video 1 showing ultrasound microbubble -induced displacement on the cell. Points 1, 2 and 3
+> have been selected at increasing distance, and b) the oscillation in the grey scale values through the first 10 s is shown. c)
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 27, 2026. ;https://doi.org/10.64898/2026.04.23.720380 doi: bioRxiv preprint
+
+The mean amplitude of these oscillations is then plotted for each point, showing a clear decrease with distance from the 
+
+microbubble. 
+
+Supplementary Figure 2: Additional images of cells treated with cytoskeletal disrupting 
+
+agents. 
+
+Figure 2: Confocal images with DAPI -stained nuclei (blue) and phalloidin -stained actin (green) for untreated, calyculin or 
+
+nocodazole -treated (stiffening agents) and latrunculin A, cytochalasin D, blebbistatin, or Y-27632 -treated (softening agents) 
+
+in (A) MG63 cells and (B) BMSCs (scale bar = 50 μm). 
+
+# A
+
+# v
+
+# B
+
+# v
+
+.CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 27, 2026. ;https://doi.org/10.64898/2026.04.23.720380 doi: bioRxiv preprint Supplementary Figure 3: Sonopermeablisation data with controls (Figure 3f & h )
+
+Figure 3: Sonopermeabilisation data showing % PI uptake in ; a) untreated MG63 cells or treated with cytochalasin 
+
+D, latrunculin A, blebbistatin, Y -27632, calyculin A, and nocodazole and b) HBMSCs compared with MG63 cells 
+
+untreated and treated with cytochalasin D. Both figures contain microbubble free (300 kPa) and a microbubble and 
+
+ultrasound -free (control) group. 
+
+Supplementary Table 1: Statistical analysis of the effect of cytoskeletal inhibitors on D 1/2 
+
+Appendix Table 3: All P values relating to the half decay distance between treatment groups (Figure 3b)                             
+
+> Calyculin A Nocodazole Untreated Latrunculin A Cytochalasin D Blebbistatin Y-27632
+> Y-27632 10.6012 0.7254 0.4813 0.9798 0.9996
+> Blebbistatin 0.1543 0.1056 0.0457 0.9738 0.9994
+> Cytochalasin D0.0031 0.0049 0.4081 0.7888
+> Latrunculin A 0.0001 0.0495 0.1403
+> Untreated 0.0033 0.0145
+> Nocodazole 0.0004
+> Calyculin A
+
+.CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 27, 2026. ;https://doi.org/10.64898/2026.04.23.720380 doi: bioRxiv preprint Supplementary Table 2 : MatchID Hardware and Software Tables 
+
+Appendix Table 1: DIC Hardware Parameters 
+
+Camera  Shimadzu Hypervision HPV -X Camera 
+
+Image Resolution  400 × 250 pixels 2
+
+Microscope  Olympus IX71 
+
+Magnification  80× 
+
+Image scale  0.42 μm/pixel 
+
+Working Distance  10 mm 
+
+Frame Rate  5 million frames per second (FPS) 
+
+Patterning Technique  Natural speckle pattern in cells 
+
+Laser  Cavitar CAVILUX 
+
+Exposure  110 ns 
+
+Laser Pulse  50 ns 
+
+Appendix Table 2: DIC Hardware Parameters 
+
+DIC Software  MatchID 2D 202 4.2.5 
+
+Image Filtering  Gaussian 5×5 kernel 
+
+Subset Size  17 pixels 
+
+Step Size  1 pixel 
+
+Matching Criteria  Zero Normalised Sum of Square D ifferences (ZNSSD) 
+
+Interpolation  Bi -cubi c Spline 
+
+Camera Noise  0.335% 
+
+Displacement Noise  0.1 pixel ( 40 nm) 
+
+Supplementary Information 1: All data can be found in zipped and indexed folder 
+
+Supplementary Information 2: Wave Speed Derivation 
+
+Consider the harmonic oscillation ;
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 27, 2026. ;https://doi.org/10.64898/2026.04.23.720380 doi: bioRxiv preprint
+
+𝑦 (𝑡 , 𝑥 ) = A(x)sin (2𝜋𝑓 (𝑡 − 𝜕𝑡 (𝑥 ))) = A(x)sin (2𝜋𝑓𝑡 +
+
+𝑅𝑂𝐼 )
+
+where  𝑦 (𝑥 , 𝑡 ) is the deformation of a point at a distance  𝑥  from the microbubble and at time 
+
+𝑡 , 𝐴 (𝑥 ) is the amplitude of the oscillation at a point at a distance  𝑥  from the microbubble , 𝑓  is 
+
+the driving frequency in Hz , 𝜕𝑡 (𝑥 ) is the lag time of a poi nt a distance  𝑥  from the 
+
+microbubble and 
+
+𝑅𝑂𝐼 (𝑥 ) = −2𝜋𝑓𝜕𝑡 (𝑥 ) is the phase change , in radians, of a point a distance 
+
+𝑥  from the microbubble. Therefore; 
+
+𝜕 
+
+𝑅𝑂𝐼 (𝑥 )
+
+𝜕𝑥 = −2𝜋𝑓 𝜕𝑡 (𝑥 )
+
+𝜕𝑥 
+
+or;
+
+𝑣 𝑝 = 𝜕𝑥 
+
+𝜕𝑡 (𝑥 ) = −2𝜋𝑓 
+
+𝜕 
+
+𝑅𝑂𝐼 (𝑥 )
+
+𝜕𝑥 
+
+Assuming linearity ,
+
+𝑅𝑂𝐼 (𝑥 ) = 𝑀 
+
+𝑅𝑂𝐼 𝑥 + 𝐶 , where  𝑀 
+
+𝑅𝑂𝐼  is the fitted gradient of a linear 
+
+regression and  𝐶  is a constant . You therefore find , 𝜕 
+
+𝑅𝑂𝐼 (𝑥 )
+
+𝜕𝑥 = 𝑀 
+
+𝑅𝑂𝐼  , and Equation 5: 
+
+𝑣 𝑝 = −2𝜋𝑓 
+
+𝑀 
+
+𝑅𝑂𝐼 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 27, 2026. ;https://doi.org/10.64898/2026.04.23.720380 doi: bioRxiv preprint
+
+.CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 27, 2026. ;https://doi.org/10.64898/2026.04.23.720380 doi: bioRxiv preprint .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 27, 2026. ;https://doi.org/10.64898/2026.04.23.720380 doi: bioRxiv preprint .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 27, 2026. ;https://doi.org/10.64898/2026.04.23.720380 doi: bioRxiv preprint .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 27, 2026. ;https://doi.org/10.64898/2026.04.23.720380 doi: bioRxiv preprint

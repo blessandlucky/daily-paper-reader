@@ -1,0 +1,171 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-05-02T20:17:05.787153+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 2,
+    "deep_cap": 6,
+    "deep_selected": 2,
+    "quick_candidates": 2,
+    "quick_skim_target": 11,
+    "quick_selected": 2
+  },
+  "deep_dive": [
+    {
+      "id": "2604.22607v1",
+      "source": "arxiv",
+      "title": "A Surfactant Prediction Model for Rising Bubbles",
+      "abstract": "Bubbles released from a needle show shape deformations that depend on the surfactant concentration of the surrounding liquid. We develop a model that predicts the surfactant concentration based on experimental early-stage observations of these deformations. Using high-speed imaging, we examine bubbles within the first 144 ms of ascent, corresponding to a vertical rise distance of approximately 40 mm and extract the instantaneous aspect ratio (AR) and analyse its temporal evolution. In clean conditions, bubbles exhibit pronounced shape oscillations resulting from the periodic exchange between surface and kinetic energy. The presence of surfactants leads to an immediate damping of these oscillations, characterised by reduced AR amplitudes and earlier peak deformations. This damping effect intensifies with increasing surfactant concentration until a near-saturation regime is reached, beyond which bubbles remain largely spherical and further increases in concentration produce indistinguishable AR profiles within the early-stage observation window. To develop the prediction model, an aspect-ratio-based analysis methodology is proposed, which yields an empirical relationship capable of estimating surfactant concentrations between 0 ppm and 2.9 ppm. We finally test the reliability of the model on unknown surfactant-laden bubbles. The model successfully detected the presence and relative extent of surfactant contamination as higher concentrations were introduced.",
+      "authors": [
+        "Lim Chi Tung James",
+        "Ivo R. Peters",
+        "Swathi Krishna"
+      ],
+      "primary_category": "physics.flu-dyn",
+      "categories": [
+        "physics.flu-dyn"
+      ],
+      "published": "2026-04-24T14:32:32+00:00",
+      "link": "https://arxiv.org/pdf/2604.22607v1",
+      "tags": [
+        "keyword:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries",
+        "query:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "bubble evolution dynamics and shape oscillations",
+      "llm_evidence_cn": "气泡演化动力学与形状振荡",
+      "llm_evidence": "气泡演化动力学与形状振荡",
+      "canonical_evidence": "气泡演化动力学与形状振荡",
+      "llm_tldr_en": "Predicts surfactant concentration by analyzing the temporal evolution of rising bubble shape deformations.",
+      "llm_tldr_cn": "通过分析上升气泡形状变形的时间演变来预测表面活性剂浓度。",
+      "llm_tldr": "通过分析上升气泡形状变形的时间演变来预测表面活性剂浓度。",
+      "llm_tags": [
+        "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries"
+      ],
+      "matched_query_tag": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "matched_query_text": "Bubble evolution dynamics",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2604.24520v1",
+      "source": "arxiv",
+      "title": "Mass-Transfer Control With Microbubbles in Highly Turbulent Decaying Flows",
+      "abstract": "We hypothesize that combining extreme turbulence with a minute reduction in surface tension $σ$ (surface tension of the liquid) using surfactant provides a simple and scalable route for controlling micron scale bubble size in gas--liquid systems. To test this, we generate high-intensity turbulence using a multiphase pump [turbulent intensity $\\ge 40\\%$; Taylor Reynolds number $Re_λ=\\mathcal{O}(10^3)$; bulk Reynolds number $Re=\\mathcal{O}(10^5)$] feeding a straight duct, which produces a decaying turbulent flow where, without additives, bubble coalescence dominates and causes monotonic downstream growth in the mean diameter $d_\\mathrm{avg}$ of the bubbles. This growth is governed by the turbulent dissipation rate $\\varepsilon$. High-speed imaging, back-lit shadowgraph and particle shadow velocimetry (PSV) quantify bubble statistics ($d_\\mathrm{avg}$, and the bubble-size distribution) and turbulence metrics (turbulent kinetic energy $k$, turbulence intensity $\\mathcal{I}$, and dissipation rate $\\varepsilon$). We then introduce a minute amount ($\\sim 0.01\\%$ critical micelle concentration) of additive that produces a slight reduction in $σ$, used here only as an interfacial tuning knob because the same change in surface tension can be achieved with non surface active agents. This small decrease in $σ$ enhances breakup, slightly suppresses coalescence, and makes smaller bubbles more breakup prone, resulting in reduced $d_\\mathrm{avg}$ and a narrower bubble-size distribution. Turbulence statistics remain unchanged within experimental uncertainty, indicating that the effect arises entirely from interface rather than hydrodynamic changes. Overall, combining extreme turbulence with a minute reduction in surface tension offers a low complexity and tunable lever for setting bubble-size distributions and intensifying mass transfer in industrial multiphase flows.",
+      "authors": [
+        "Vivek Kumar",
+        "Prasoon Suchandra",
+        "Jason Rom",
+        "Shivam Prajapati",
+        "Suhas Jain",
+        "Cyrus Aidun"
+      ],
+      "primary_category": "physics.flu-dyn",
+      "categories": [
+        "physics.flu-dyn"
+      ],
+      "published": "2026-04-27T14:22:14+00:00",
+      "link": "https://arxiv.org/pdf/2604.24520v1",
+      "tags": [
+        "keyword:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries",
+        "query:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "controlling micron scale bubble size in gas-liquid systems",
+      "llm_evidence_cn": "控制气液系统中的微米级气泡尺寸",
+      "llm_evidence": "控制气液系统中的微米级气泡尺寸",
+      "canonical_evidence": "控制气液系统中的微米级气泡尺寸",
+      "llm_tldr_en": "Investigates controlling microbubble size in turbulent flows using surface tension and surfactants.",
+      "llm_tldr_cn": "研究了利用表面张力和表面活性剂控制湍流中微气泡尺寸的方法。",
+      "llm_tldr": "研究了利用表面张力和表面活性剂控制湍流中微气泡尺寸的方法。",
+      "llm_tags": [
+        "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries"
+      ],
+      "matched_query_tag": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "matched_query_text": "Bubble evolution dynamics",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "2604.23695v1",
+      "source": "arxiv",
+      "title": "A well posed and stable canonical evaporation model problem for phase-change in two-phase flows",
+      "abstract": "We formulate a well posed interface formulation for canonical one-dimensional evaporation two-phase model problems (the Stefan and Sucking problems) commonly used to validate production codes. We focus on the interface between the vapor and the liquid and derive conditions leading to an energy bound and well-posedness. Next, by mimicking the continuous analysis, we discretize using high order accurate numerical methods on summation-by-parts form, impose the interface conditions weakly and prove energy stability.",
+      "authors": [
+        "Jan Nordström"
+      ],
+      "primary_category": "math.NA",
+      "categories": [
+        "math.NA"
+      ],
+      "published": "2026-04-26T13:21:05+00:00",
+      "link": "https://arxiv.org/pdf/2604.23695v1",
+      "tags": [
+        "keyword:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries",
+        "query:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "phase-change in two-phase flows and interface formulation",
+      "llm_evidence_cn": "两相流中的相变与界面公式",
+      "llm_evidence": "两相流中的相变与界面公式",
+      "canonical_evidence": "两相流中的相变与界面公式",
+      "llm_tldr_en": "Formulates a stable interface model for evaporation in two-phase flows, relevant to bubble dynamics.",
+      "llm_tldr_cn": "制定了两相流中蒸发的稳定界面模型，与气泡动力学相关。",
+      "llm_tldr": "制定了两相流中蒸发的稳定界面模型，与气泡动力学相关。",
+      "llm_tags": [
+        "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries"
+      ],
+      "matched_query_tag": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "matched_query_text": "Bubble evolution dynamics",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-04-23-720380-v1",
+      "source": "biorxiv",
+      "title": "The material properties of the cell determine microbubble-induced cell deformation and permeabilisation",
+      "abstract": "Ultrasound-stimulated microbubbles can transiently permeabilise cells and enhance targeted therapeutic delivery, yet clinical efficacy varies markedly across tissues with distinct mechanical properties. How cellular material properties govern microbubble-cell interactions under megahertz-rate loading - far beyond the frequency range accessible to conventional cell mechanobiology - remains unresolved, limiting control of sonoporation. Here we combine ultra-high-speed imaging with digital image correlation to resolve the propagation of microbubble-induced deformation at megahertz frequencies in living cells. Microbubble oscillations generate harmonic mechanical waves whose spatial decay defines a micrometre-scale attenuation length governed by cytoskeletal organisation and intracellular viscoelastic dissipation. Perturbing cytoskeletal mechanics determines deformation propagation distance and deformation wave speed, which in parallel alters permeabilisation efficiency in both tumour-derived and primary human bone-marrow stromal cells. These findings identify intracellular viscoelasticity as a determinant of microbubble bioeffects at ultrasound rates and position tissue mechanical state as a design parameter for optimising ultrasound-mediated therapeutic delivery.",
+      "authors": [
+        "Sloan, S. P.",
+        "Pattinson, O.",
+        "Ben Issa, A. A.",
+        "Stride, E.",
+        "Tilley, S.",
+        "Kanczler, J.",
+        "Carugo, D.",
+        "Pierron, F.",
+        "Evans, N. D."
+      ],
+      "primary_category": "bioengineering",
+      "categories": [
+        "bioengineering"
+      ],
+      "published": "2026-04-27T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.04.23.720380v1.full.pdf",
+      "tags": [
+        "keyword:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries",
+        "query:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "microbubble-induced deformation and oscillations",
+      "llm_evidence_cn": "微气泡诱导的变形与振荡",
+      "llm_evidence": "微气泡诱导的变形与振荡",
+      "canonical_evidence": "微气泡诱导的变形与振荡",
+      "llm_tldr_en": "Investigates how cellular properties govern microbubble-cell interactions under high-frequency loading.",
+      "llm_tldr_cn": "研究细胞特性如何在超声刺激下控制微气泡与细胞的相互作用。",
+      "llm_tldr": "研究细胞特性如何在超声刺激下控制微气泡与细胞的相互作用。",
+      "llm_tags": [
+        "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries"
+      ],
+      "matched_query_tag": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "matched_query_text": "Gaseous bubble",
+      "matched_requirement_id": "req-6",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}

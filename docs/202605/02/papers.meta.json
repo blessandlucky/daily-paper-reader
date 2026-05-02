@@ -1,0 +1,69 @@
+{
+  "label": "2026-05-02",
+  "date": "2026-05-02",
+  "generated_at": "2026-05-02T20:18:41",
+  "count": 4,
+  "papers": [
+    {
+      "paper_id": "202605/02/2604.22607v1-a-surfactant-prediction-model-for-rising-bubbles",
+      "section": "deep",
+      "title_en": "A Surfactant Prediction Model for Rising Bubbles",
+      "authors": "Lim Chi Tung James, Ivo R. Peters, Swathi Krishna",
+      "date": "2026-04-24",
+      "pdf": "https://arxiv.org/pdf/2604.22607v1",
+      "score": "8.0",
+      "evidence": "气泡演化动力学与形状振荡",
+      "tldr": "本研究针对上升气泡在不同表面活性剂浓度下的形变特性，开发了一种预测模型。通过高速摄像技术捕捉气泡上升前144毫秒内的瞬时长宽比（AR）演化，发现表面活性剂会显著抑制气泡的形状振荡。研究建立了一种基于AR分析的经验关系，能够有效估算0至2.9 ppm范围内的表面活性剂浓度，为流体污染检测提供了一种快速可靠的实验手段。",
+      "tags": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "abstract_en": "Bubbles released from a needle show shape deformations that depend on the surfactant concentration of the surrounding liquid. We develop a model that predicts the surfactant concentration based on experimental early-stage observations of these deformations. Using high-speed imaging, we examine bubbles within the first 144 ms of ascent, corresponding to a vertical rise distance of approximately 40 mm and extract the instantaneous aspect ratio (AR) and analyse its temporal evolution. In clean conditions, bubbles exhibit pronounced shape oscillations resulting from the periodic exchange between surface and kinetic energy. The presence of surfactants leads to an immediate damping of these oscillations, characterised by reduced AR amplitudes and earlier peak deformations. This damping effect intensifies with increasing surfactant concentration until a near-saturation regime is reached, beyond which bubbles remain largely spherical and further increases in concentration produce indistinguishable AR profiles within the early-stage observation window. To develop the prediction model, an aspect-ratio-based analysis methodology is proposed, which yields an empirical relationship capable of estimating surfactant concentrations between 0 ppm and 2.9 ppm. We finally test the reliability of the model on unknown surfactant-laden bubbles. The model successfully detected the presence and relative extent of surfactant contamination as higher concentrations were introduced.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202605/02/2604.24520v1-mass-transfer-control-with-microbubbles-in-highly-turbulent-decaying-flows",
+      "section": "deep",
+      "title_en": "Mass-Transfer Control With Microbubbles in Highly Turbulent Decaying Flows",
+      "authors": "Vivek Kumar, Prasoon Suchandra, Jason Rom, Shivam Prajapati, Suhas Jain, Cyrus Aidun",
+      "date": "2026-04-27",
+      "pdf": "https://arxiv.org/pdf/2604.24520v1",
+      "score": "8.0",
+      "evidence": "控制气液系统中的微米级气泡尺寸",
+      "tldr": "本研究探讨了在高强度湍流衰减流中，通过微量表面活性剂降低表面张力来控制微米级气泡尺寸的方法。研究利用多相泵产生极高强度的湍流，并结合高速成像和阴影测速技术分析气泡分布。结果表明，极小的表面张力变化即可显著增强气泡破碎并抑制合并，从而减小平均粒径并收窄分布。该方法为工业多相流中的传质强化提供了一种低复杂度且可调控的有效途径。",
+      "tags": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "abstract_en": "We hypothesize that combining extreme turbulence with a minute reduction in surface tension $σ$ (surface tension of the liquid) using surfactant provides a simple and scalable route for controlling micron scale bubble size in gas--liquid systems. To test this, we generate high-intensity turbulence using a multiphase pump [turbulent intensity $\\ge 40\\%$; Taylor Reynolds number $Re_λ=\\mathcal{O}(10^3)$; bulk Reynolds number $Re=\\mathcal{O}(10^5)$] feeding a straight duct, which produces a decaying turbulent flow where, without additives, bubble coalescence dominates and causes monotonic downstream growth in the mean diameter $d_\\mathrm{avg}$ of the bubbles. This growth is governed by the turbulent dissipation rate $\\varepsilon$. High-speed imaging, back-lit shadowgraph and particle shadow velocimetry (PSV) quantify bubble statistics ($d_\\mathrm{avg}$, and the bubble-size distribution) and turbulence metrics (turbulent kinetic energy $k$, turbulence intensity $\\mathcal{I}$, and dissipation rate $\\varepsilon$). We then introduce a minute amount ($\\sim 0.01\\%$ critical micelle concentration) of additive that produces a slight reduction in $σ$, used here only as an interfacial tuning knob because the same change in surface tension can be achieved with non surface active agents. This small decrease in $σ$ enhances breakup, slightly suppresses coalescence, and makes smaller bubbles more breakup prone, resulting in reduced $d_\\mathrm{avg}$ and a narrower bubble-size distribution. Turbulence statistics remain unchanged within experimental uncertainty, indicating that the effect arises entirely from interface rather than hydrodynamic changes. Overall, combining extreme turbulence with a minute reduction in surface tension offers a low complexity and tunable lever for setting bubble-size distributions and intensifying mass transfer in industrial multiphase flows.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202605/02/2604.23695v1-a-well-posed-and-stable-canonical-evaporation-model-problem-for-phase-change-in-two-phase-flows",
+      "section": "quick",
+      "title_en": "A well posed and stable canonical evaporation model problem for phase-change in two-phase flows",
+      "authors": "Jan Nordström",
+      "date": "2026-04-26",
+      "pdf": "https://arxiv.org/pdf/2604.23695v1",
+      "score": "6.0",
+      "evidence": "两相流中的相变与界面公式",
+      "tldr": "本研究针对两相流相变中的经典一维蒸发模型（如Stefan和Sucking问题），提出了一种适定且稳定的界面公式。通过深入分析汽液界面，推导出了确保能量界限和适定性的界面条件。随后，研究采用基于分部求和（SBP）形式的高阶数值方法进行离散化，并以弱形式施加界面条件，在离散层面证明了能量稳定性，为验证生产代码提供了可靠的基准。",
+      "tags": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "abstract_en": "We formulate a well posed interface formulation for canonical one-dimensional evaporation two-phase model problems (the Stefan and Sucking problems) commonly used to validate production codes. We focus on the interface between the vapor and the liquid and derive conditions leading to an energy bound and well-posedness. Next, by mimicking the continuous analysis, we discretize using high order accurate numerical methods on summation-by-parts form, impose the interface conditions weakly and prove energy stability.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202605/02/biorxiv-10-64898-2026-04-23-720380-v1-the-material-properties-of-the-cell-determine-microbubble-induced-cell-deformation-and-permeabilisation",
+      "section": "quick",
+      "title_en": "The material properties of the cell determine microbubble-induced cell deformation and permeabilisation",
+      "authors": "Sloan, S. P., Pattinson, O., Ben Issa, A. A., Stride, E., Tilley, S., Kanczler, J., Carugo, D., Pierron, F., Evans, N. D.",
+      "date": "2026-04-27",
+      "pdf": "https://www.biorxiv.org/content/10.64898/2026.04.23.720380v1.full.pdf",
+      "score": "6.0",
+      "evidence": "微气泡诱导的变形与振荡",
+      "tldr": "本研究探讨了细胞材料特性如何影响超声微泡诱导的细胞变形与通透化。通过结合超高频成像与数字图像相关技术，研究者在兆赫兹频率下观察了活细胞内的变形传播。研究发现，细胞骨架组织和细胞内粘弹性耗散决定了机械波的衰减长度和传播速度，进而影响声孔效应的效率。这一发现揭示了细胞力学状态在超声介导治疗中的关键作用，为优化药物递送提供了新思路。",
+      "tags": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "abstract_en": "Ultrasound-stimulated microbubbles can transiently permeabilise cells and enhance targeted therapeutic delivery, yet clinical efficacy varies markedly across tissues with distinct mechanical properties. How cellular material properties govern microbubble-cell interactions under megahertz-rate loading - far beyond the frequency range accessible to conventional cell mechanobiology - remains unresolved, limiting control of sonoporation. Here we combine ultra-high-speed imaging with digital image correlation to resolve the propagation of microbubble-induced deformation at megahertz frequencies in living cells. Microbubble oscillations generate harmonic mechanical waves whose spatial decay defines a micrometre-scale attenuation length governed by cytoskeletal organisation and intracellular viscoelastic dissipation. Perturbing cytoskeletal mechanics determines deformation propagation distance and deformation wave speed, which in parallel alters permeabilisation efficiency in both tumour-derived and primary human bone-marrow stromal cells. These findings identify intracellular viscoelasticity as a determinant of microbubble bioeffects at ultrasound rates and position tissue mechanical state as a design parameter for optimising ultrasound-mediated therapeutic delivery.",
+      "source": "biorxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}
