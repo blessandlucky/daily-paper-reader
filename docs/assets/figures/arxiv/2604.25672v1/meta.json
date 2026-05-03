@@ -1,0 +1,102 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.25672v1/fig-001.webp",
+      "caption": "Figure 3.2. Illustration of the boundary and inner boundary of element Ii,j.",
+      "page": 11,
+      "index": 1,
+      "width": 352,
+      "height": 341
+    },
+    {
+      "url": "assets/figures/arxiv/2604.25672v1/fig-002.webp",
+      "caption": "Figure 5.6. Numerical results computed by the DG (P 2) in the gas-liquid Riemann problem. Top left: pressure p. Top right: mixture density ρ. Bottom left: energy density ρe. Bottom right: volume fraction z1.",
+      "page": 25,
+      "index": 2,
+      "width": 926,
+      "height": 756
+    },
+    {
+      "url": "assets/figures/arxiv/2604.25672v1/fig-003.webp",
+      "caption": "Figure 5.7. Numerical results computed by the DG (P 2) in case 5.3. Top left: logarithm of pressure log10(p). Top right: mixture density ρ. Bottom left: velocity u. Bottom right: volume fraction z1.",
+      "page": 26,
+      "index": 3,
+      "width": 933,
+      "height": 741
+    },
+    {
+      "url": "assets/figures/arxiv/2604.25672v1/fig-004.webp",
+      "caption": "Table 5.2. Numerical errors in the volume fraction z1 and convergence orders for the Kapila-split scheme in case 5.1.",
+      "page": 21,
+      "index": 4,
+      "width": 716,
+      "height": 434
+    },
+    {
+      "url": "assets/figures/arxiv/2604.25672v1/fig-005.webp",
+      "caption": "Figure 5.11. Water shock hitting air bubble at different times",
+      "page": 30,
+      "index": 5,
+      "width": 938,
+      "height": 626
+    },
+    {
+      "url": "assets/figures/arxiv/2604.25672v1/fig-006.webp",
+      "caption": "Figure 5.10. Initial configuration of shock-bubble interaction in water.",
+      "page": 29,
+      "index": 6,
+      "width": 579,
+      "height": 451
+    },
+    {
+      "url": "assets/figures/arxiv/2604.25672v1/fig-007.webp",
+      "caption": "Figure 5.3. Numerical results computed by the DG (P 2) in case 5.2. Top left: mixture density ρ. Top right: pressure p. Bottom left: velocity u. Bottom right: volume fraction z1.",
+      "page": 22,
+      "index": 7,
+      "width": 934,
+      "height": 735
+    },
+    {
+      "url": "assets/figures/arxiv/2604.25672v1/fig-008.webp",
+      "caption": "Figure 3.1. Illustration of the 4x4 Gauss-Lobatto points and the discontinuous characteristic on element’s interface.",
+      "page": 10,
+      "index": 8,
+      "width": 373,
+      "height": 348
+    },
+    {
+      "url": "assets/figures/arxiv/2604.25672v1/fig-009.webp",
+      "caption": "Figure 5.4. Numerical results computed by the DG (P 2) in case 5.3. Top left: pressure p. Top right: internal energy ρe. Bottom left: velocity u. Bottom right: mixture density ρ.",
+      "page": 23,
+      "index": 9,
+      "width": 930,
+      "height": 758
+    },
+    {
+      "url": "assets/figures/arxiv/2604.25672v1/fig-010.webp",
+      "caption": "Figure 5.9. Air shock hitting helium bubble: BP-OEDG (P 2) vs experiment",
+      "page": 28,
+      "index": 10,
+      "width": 938,
+      "height": 1192
+    },
+    {
+      "url": "assets/figures/arxiv/2604.25672v1/fig-011.webp",
+      "caption": "Figure 5.5. Volume fraction z1 in case 5.3.",
+      "page": 24,
+      "index": 11,
+      "width": 545,
+      "height": 435
+    },
+    {
+      "url": "assets/figures/arxiv/2604.25672v1/fig-012.webp",
+      "caption": "Table 4.1. Computational Procedure Flow with Limiters.",
+      "page": 20,
+      "index": 12,
+      "width": 975,
+      "height": 235
+    }
+  ]
+}
