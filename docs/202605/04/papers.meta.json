@@ -1,0 +1,69 @@
+{
+  "label": "2026-05-04",
+  "date": "2026-05-04",
+  "generated_at": "2026-05-04T20:29:10",
+  "count": 4,
+  "papers": [
+    {
+      "paper_id": "202605/04/2605.00609v1-coordination-engineering-of-dual-atom-catalysts-for-overall-water-splitting-mechanistic-insights-from-constant-potential-first-principles-and-machine-learning",
+      "section": "deep",
+      "title_en": "Coordination Engineering of Dual-Atom Catalysts for Overall Water Splitting: Mechanistic Insights from Constant-Potential First-Principles and Machine Learning",
+      "authors": "Jiahang Li, Suhang Li, Chong Yan, Jiajun Yu, Qinzhuang Liu, Ruo-Ya Wang, Dongwei Ma",
+      "date": "2026-05-01",
+      "pdf": "https://arxiv.org/pdf/2605.00609v1",
+      "score": "9.5",
+      "evidence": "HER和OER的双功能电催化剂",
+      "tldr": "本研究探讨了石墨烯负载的双原子催化剂（DACs）在全解水中的应用。通过调节C/N配位环境和金属组合（Fe, Co, Ni, Cu），构建了228种结构。结合恒电势密度泛函理论、动力学分析及机器学习，筛选出24种高活性双功能催化剂（如CoNi, CoCu等），其性能可媲美IrO2。研究揭示了配位工程在优化析氢与析氧反应中间体吸附强度中的关键作用，为设计高效双功能电催化剂提供了理论指导。",
+      "tags": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "abstract_en": "The rational design of bifunctional electrocatalysts for the hydrogen evolution reaction (HER) and oxygen evolution reaction (OER) is essential for achieving efficient and cost-effective overall water splitting. Atomically dispersed transition-metal catalysts, including single-atom catalysts and dual-atom catalysts (DACs), have emerged as a prominent class of heterogeneous catalysts, in which coordination engineering plays a decisive role in tuning catalytic performance. Herein, we explore coordination-engineered bifunctional overall water splitting electrocatalysts using graphene-supported DACs (TM1TM2-C6-xNx) as model systems. By tuning C/N coordination and dual-metal combinations (Fe, Co, Ni, and Cu), a library of 228 structures was constructed. A three-step screening strategy, combining constant-charge and constant-potential density functional theory with kinetic analysis of proton-coupled electron transfer (PCET), identifies 24 highly active candidates (TM1TM2 = CoNi, CoCu and Co2) with mixed C/N coordination for OER. These catalysts exhibit overpotentials comparable to that of IrO2 and low PCET barriers (lower than 0.40 eV), among which 22 also show high HER activity. Machine learning reveals clear coordination-dependent structure-performance relationships. Such bifunctionality arises from coordination engineering that enables the simultaneous optimization of OER intermediate adsorption and the hydrogen binding strength for HER. This work establishes coordination engineering as an effective strategy for designing high-performance bifunctional dual-atom electrocatalysts for overall water splitting.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202605/04/2604.24520v1-mass-transfer-control-with-microbubbles-in-highly-turbulent-decaying-flows",
+      "section": "quick",
+      "title_en": "Mass-Transfer Control With Microbubbles in Highly Turbulent Decaying Flows",
+      "authors": "Vivek Kumar, Prasoon Suchandra, Jason Rom, Shivam Prajapati, Suhas Jain, Cyrus Aidun",
+      "date": "2026-04-27",
+      "pdf": "https://arxiv.org/pdf/2604.24520v1",
+      "score": "7.5",
+      "evidence": "控制气液系统中的微米级气泡尺寸及气泡合并",
+      "tldr": "本研究探讨了在极高湍流环境下，通过微量降低表面张力来控制气液系统中微米级气泡尺寸的方法。研究利用多相泵产生高强度衰减湍流，发现加入极少量表面活性剂能显著增强气泡破碎并抑制合并，从而减小平均气泡直径并收窄尺寸分布。该方法在不改变流体动力学特性的前提下，通过界面调控实现了对气泡尺寸的精确控制，为工业多相流中的传质强化提供了一种简单且可扩展的方案。",
+      "tags": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "abstract_en": "We hypothesize that combining extreme turbulence with a minute reduction in surface tension $σ$ (surface tension of the liquid) using surfactant provides a simple and scalable route for controlling micron scale bubble size in gas--liquid systems. To test this, we generate high-intensity turbulence using a multiphase pump [turbulent intensity $\\ge 40\\%$; Taylor Reynolds number $Re_λ=\\mathcal{O}(10^3)$; bulk Reynolds number $Re=\\mathcal{O}(10^5)$] feeding a straight duct, which produces a decaying turbulent flow where, without additives, bubble coalescence dominates and causes monotonic downstream growth in the mean diameter $d_\\mathrm{avg}$ of the bubbles. This growth is governed by the turbulent dissipation rate $\\varepsilon$. High-speed imaging, back-lit shadowgraph and particle shadow velocimetry (PSV) quantify bubble statistics ($d_\\mathrm{avg}$, and the bubble-size distribution) and turbulence metrics (turbulent kinetic energy $k$, turbulence intensity $\\mathcal{I}$, and dissipation rate $\\varepsilon$). We then introduce a minute amount ($\\sim 0.01\\%$ critical micelle concentration) of additive that produces a slight reduction in $σ$, used here only as an interfacial tuning knob because the same change in surface tension can be achieved with non surface active agents. This small decrease in $σ$ enhances breakup, slightly suppresses coalescence, and makes smaller bubbles more breakup prone, resulting in reduced $d_\\mathrm{avg}$ and a narrower bubble-size distribution. Turbulence statistics remain unchanged within experimental uncertainty, indicating that the effect arises entirely from interface rather than hydrodynamic changes. Overall, combining extreme turbulence with a minute reduction in surface tension offers a low complexity and tunable lever for setting bubble-size distributions and intensifying mass transfer in industrial multiphase flows.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202605/04/2604.24075v1-interfacial-breathing-as-a-dynamic-failure-law-in-all-solid-state-batteries-amplitude-phase-lag-and-dual-timescale-memory-as-design-principles",
+      "section": "quick",
+      "title_en": "Interfacial breathing as a dynamic failure law in all-solid-state batteries: amplitude, phase lag and dual-timescale memory as design principles",
+      "authors": "Changdeuck Bae",
+      "date": "2026-04-27",
+      "pdf": "https://arxiv.org/pdf/2604.24075v1",
+      "score": "6.5",
+      "evidence": "全固态电池中的界面呼吸和反应记忆失效规律",
+      "tldr": "本研究揭示了全固态电池失效的动态规律，提出“界面呼吸”（锂接触的周期性波动）与“反应记忆”（电解质分解的缓慢积累）是导致性能下降的双重机制。通过相场模型和电化学基准分析，研究了堆叠压力对界面稳定性的影响，并识别出不同失效主导区域，为电池设计提供了抑制呼吸和控制记忆的新准则。",
+      "tags": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "abstract_en": "All-solid-state batteries fail not only by bulk transport limits, but by a reactive interface that evolves during cycling. We show that degradation is governed by two coupled processes: interfacial breathing, the cycle-scale oscillation of lithium contact, and reactive memory, the slow accumulation of electrolyte decomposition. Four descriptors capture breathing, together with a memory metric based on decomposed interphase thickness. A reduced electrochemical benchmark shows that ionic conductivity has little effect on mean discharge voltage, whereas cathode electrolyte interphase resistance causes major voltage and energy losses. A phase-field model of a sulfide-based cell shows that higher stack pressure strongly suppresses breathing-related fluctuations, but leaves reactive memory nearly unchanged. Thus, pressure controls breathing, not memory. The resulting regime map identifies void-growth-dominant, healing-dominant, and interphase-memory-dominant regions. The theory also predicts energy-density rank inversion with C rate, where an initially superior architecture loses advantage at higher rate as breathing intensifies and interphase memory locks in. The design target is therefore not merely higher conductivity or lower resistance, but simultaneous suppression of breathing and independent control of reactive memory through interphase chemistry.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202605/04/2604.26107v1-scale--and-structure-dependent-fractal-dimensions-in-a-two-dimensional-atomizing-liquid-jet",
+      "section": "quick",
+      "title_en": "Scale- and Structure-Dependent Fractal Dimensions in a Two-Dimensional Atomizing Liquid Jet",
+      "authors": "Guangnian Ji, Yash Kulkarni, Stéphane Zaleski",
+      "date": "2026-04-28",
+      "pdf": "https://arxiv.org/pdf/2604.26107v1",
+      "score": "6.5",
+      "evidence": "液气界面破碎与雾化",
+      "tldr": "本研究利用二维VOF直接数值模拟探讨了雾化液体射流中的分形特征。研究发现，分形维数并非单一的全局指数，而是具有尺度和结构依赖性。通过对界面进行分解，揭示了主射流、液带和液滴在不同尺度下的分形行为差异，为描述界面折叠和破碎状态提供了新的状态变量视角。",
+      "tags": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "abstract_en": "Atomization stretches and folds the liquid-gas interface before fragmenting it into ligaments and droplets, making fractal measures a natural descriptor of the breakup state. We examine this idea in two-dimensional volume-of-fluid direct numerical simulations, VOF-DNS, of a liquid jet with adaptive mesh refinement in Basilisk. Box counting of the full resolved interface does not yield a single scale-independent exponent. Instead, two scaling ranges appear, separated by a crossover near box-counting level Lbox about 7: coarser boxes measure the folded connected jet envelope, whereas finer boxes increasingly sample ligaments, droplets, and nearly smooth local interface segments. Decomposing the interface into detached droplets, ligaments, and the connected main body shows that the relevant effective dimension is structure dependent. Droplets remain near Euclidean at fine scales, ligaments occupy an intermediate level, and the main body carries the largest coarse-scale dimension. This hierarchy persists for liquid Reynolds numbers from 100 to 10000 at fixed gas Weber number 200. Thus, in this two-dimensional VOF-DNS setting, fractal dimension is best interpreted not as a single global exponent, but as a scale- and structure-resolved state variable for interfacial folding and breakup.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}

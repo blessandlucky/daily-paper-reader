@@ -6,36 +6,34 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-05-03
-- 运行时间：2026-05-03 19:44:25 UTC
+- 最新运行日期：2026-05-04
+- 运行时间：2026-05-04 20:28:56 UTC
 - 运行状态：成功
-- 本次总论文数：5
+- 本次总论文数：4
 - 精读区：1
-- 速读区：4
+- 速读区：3
 
 ### 今日简报（AI）
-今日聚焦复杂流体与能源安全，深度剖析了微气泡传质调控及固态电池失效的底层逻辑。
-核心结论揭示了微气泡
-- 详情：[/202605/03/README](/202605/03/README)
+今日深度解析了双原子催化剂在电解水中的配位工程机理，并同步涵盖固态电池失效及流体传质等前沿研究。
+核心结论指出机器学习与恒电势计算能精准预测催化活性，同时揭示了固态电池界面“呼吸”效应导致的动态失效规律。
+建议关注计算模拟在能源器件设计中的跨尺度应用，从微观机理出发探索提升电池寿命与催化效率的新路径。
+- 详情：[/202605/04/README](/202605/04/README)
 
 ### 精读区论文标签
-1. [Mass-Transfer Control With Microbubbles in Highly Turbulent Decaying Flows](/202605/03/2604.24520v1-mass-transfer-control-with-microbubbles-in-highly-turbulent-decaying-flows)  
-   标签：评分：8.5/10、query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries
-   evidence：多相流中的气泡尺寸控制与合并
+1. [Coordination Engineering of Dual-Atom Catalysts for Overall Water Splitting: Mechanistic Insights from Constant-Potential First-Principles and Machine Learning](/202605/04/2605.00609v1-coordination-engineering-of-dual-atom-catalysts-for-overall-water-splitting-mechanistic-insights-from-constant-potential-first-principles-and-machine-learning)  
+   标签：评分：9.5/10、query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries
+   evidence：HER和OER的双功能电催化剂
 
 ### 速读区论文标签
-1. [Interfacial breathing as a dynamic failure law in all-solid-state batteries: amplitude, phase lag and dual-timescale memory as design principles](/202605/03/2604.24075v1-interfacial-breathing-as-a-dynamic-failure-law-in-all-solid-state-batteries-amplitude-phase-lag-and-dual-timescale-memory-as-design-principles)  
+1. [Mass-Transfer Control With Microbubbles in Highly Turbulent Decaying Flows](/202605/04/2604.24520v1-mass-transfer-control-with-microbubbles-in-highly-turbulent-decaying-flows)  
    标签：评分：7.5/10、query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries
-   evidence：电池中的界面呼吸与反应记忆
-2. [A bound-preserving oscillation-eliminating discontinuous Galerkin scheme for compressible two-phase flow](/202605/03/2604.25672v1-a-bound-preserving-oscillation-eliminating-discontinuous-galerkin-scheme-for-compressible-two-phase-flow)  
-   标签：评分：7.0/10、query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries
-   evidence：使用间断伽辽金方案对气液两相流进行数值模拟
-3. [A well posed and stable canonical evaporation model problem for phase-change in two-phase flows](/202605/03/2604.23695v1-a-well-posed-and-stable-canonical-evaporation-model-problem-for-phase-change-in-two-phase-flows)  
+   evidence：控制气液系统中的微米级气泡尺寸及气泡合并
+2. [Interfacial breathing as a dynamic failure law in all-solid-state batteries: amplitude, phase lag and dual-timescale memory as design principles](/202605/04/2604.24075v1-interfacial-breathing-as-a-dynamic-failure-law-in-all-solid-state-batteries-amplitude-phase-lag-and-dual-timescale-memory-as-design-principles)  
    标签：评分：6.5/10、query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries
-   evidence：两相流中气液界面相变的数学建模
-4. [A High-Fidelity 3D Fluid-Structure Interaction Framework for Predictive Microfluidic Design](/202605/03/biorxiv-10-64898-2026-04-28-721227-v1-a-high-fidelity-3d-fluid-structure-interaction-framework-for-predictive-microfluidic-design)  
-   标签：评分：6.0/10、query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries
-   evidence：用于多尺度流体动力学行为的3D流固耦合框架
+   evidence：全固态电池中的界面呼吸和反应记忆失效规律
+3. [Scale- and Structure-Dependent Fractal Dimensions in a Two-Dimensional Atomizing Liquid Jet](/202605/04/2604.26107v1-scale--and-structure-dependent-fractal-dimensions-in-a-two-dimensional-atomizing-liquid-jet)  
+   标签：评分：6.5/10、query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries
+   evidence：液气界面破碎与雾化
 
 
 <div class="dpr-home-promo-card">

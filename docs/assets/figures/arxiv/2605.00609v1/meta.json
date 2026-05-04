@@ -1,0 +1,54 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2605.00609v1/fig-001.webp",
+      "caption": "Fig. 2. (a) OER overpotentials (ηOER) of TM1TM2-C6-xNx DACs, (TM1TM2 = Co2, Fe2, CoCu, CoNi, FeCu, FeNi, and FeCo). The upper-right inset shows representative adsorption configurations of key OER intermediates. Linear relationships of ΔG∗OH (b), ΔG∗OOH (c), and ηOER (d) versus ΔG∗O for all TM1TM2-C6-xNx DACs.",
+      "page": 25,
+      "index": 1,
+      "width": 864,
+      "height": 557
+    },
+    {
+      "url": "assets/figures/arxiv/2605.00609v1/fig-002.webp",
+      "caption": "Fig. 3. (a) Pearson correlation heatmap of 18 features. (b) Comparison of DFT calculated and BO–RF predicted ηOER. (c) Feature importance of ηOER calculated by the BO–RF model. (d) Comparison of DFT calculated and SISSO predicted ηOER.",
+      "page": 26,
+      "index": 2,
+      "width": 824,
+      "height": 666
+    },
+    {
+      "url": "assets/figures/arxiv/2605.00609v1/fig-003.webp",
+      "caption": "Fig. 6. (a) OER free energy diagram and electronic structure analysis of key intermediates on Co2-N6, including the free energy profile (left), projected density of states (PDOS) of *OH/*O and Co 3d orbitals, and crystal orbital Hamilton population (COHP) analysis of Co–O interactions (middle and right). (b) Same as in (a), but for Co2-C4N2-25. (c) HER free energy diagrams of Co2-N6 and Co2-C4N2-25 (left); PDOS of *H and N1 2p orbitals with COHP analysis of N–H interaction in Co2-N6 (middle); PDOS of *H, C1 2p, and Co 3d orbitals with COHP analyses of Co–H and C–H interactions in Co2-C4N2-25 (right). All free energy calculations were performed under constant-potential conditions at 0.00 VRHE. In the COHP plot, positive and negative values correspond to bonding and antibonding interactions, respectively. The Fermi level is set to 0 eV.",
+      "page": 29,
+      "index": 3,
+      "width": 860,
+      "height": 720
+    },
+    {
+      "url": "assets/figures/arxiv/2605.00609v1/fig-004.webp",
+      "caption": "Fig. 5. (a) Hydrogen adsorption free energy (ΔG*H) of TM1TM2-C6-xNx DACs with high OER activity (TM1TM2 = CoNi, CoCu, and Co2) at URHE = 0.00 V. The pink shaded region highlights near-optimal ΔG*H window (between −0.2 and +0.2 eV). (b) Volcano plots of exchange current density (i0) as a function of ΔG*H for all adsorption sites in TM1TM2-C6-xNx DACs (TM1TM2 = CoNi, CoCu and Co2).",
+      "page": 28,
+      "index": 4,
+      "width": 845,
+      "height": 604
+    },
+    {
+      "url": "assets/figures/arxiv/2605.00609v1/fig-005.webp",
+      "caption": "Fig. 4. (a) Calculated OER overpotentials (ηOER) of TM1TM2-C6-xNx DACs (TM1TM2 = CoNi, CoCu and Co2) at URHE = 0.00 V. (b) Free energy diagrams for the OER on CoNi-C3N3-124 and CoNi-C5N-2, along with the corresponding minimum energy paths for proton-coupled electron transfer (PCET) in the potential-determining steps (PDS), i.e., *OH → *O (upper) and *O → *OOH (lower), evaluated at URHE = ∆Gmax/e. The transition states (TS) correspond to image 03 (*OH → *O) and image 04 (*O → *OOH). (c) Summary of PCET energy barriers for the PDS of *O → *OOH (left) and *OH →",
+      "page": 27,
+      "index": 5,
+      "width": 1046,
+      "height": 966
+    },
+    {
+      "url": "assets/figures/arxiv/2605.00609v1/fig-006.webp",
+      "caption": "Fig. 1. (a) Structural models of TM1TM2-C6-xNx DACs (TM1TM2 = Co2, Fe2, CoCu, CoNi, FeCu, FeNi, and FeCo). The coordination environments span C6 to N6 (C6, C5N, C4N2, C3N3, C2N4, CN5, and N6). A single configuration is identified for C6 and N6. For mixed C/N coordination environments, C5N and CN5 exhibit three (heteronuclear) and two (homonuclear) configurations; C4N2 and C2N4 have nine and six configurations, respectively; and C3N3 has ten (heteronuclear) and six (homonuclear) configurations. Here, x denotes the number of N atoms; for x < 3, indices label N positions, whereas for x ≥ 3, they label C positions (see Figure S1). (b) Workflow for the design and screening of bifunctional OER/HER electrocatalysts based on thermodynamic and kinetic criteria.",
+      "page": 24,
+      "index": 6,
+      "width": 858,
+      "height": 842
+    }
+  ]
+}
