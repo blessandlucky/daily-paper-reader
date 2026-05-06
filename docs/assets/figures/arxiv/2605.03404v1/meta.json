@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2605.03404v1/fig-001.webp",
+      "caption": "Figure 1. Sparkling bubbles induced by odd interactions (SBIO). (a)–(c) Snapshot configurations of the homogeneous, bubble (BIO), and sparkling bubble (SBIO) phases, obtained at reduced chirality ω/ϵ = 600, 900, 1500 and packing fraction ϕ = 0.35. (d) Time evolution of a sparkling bubble (zoomed from (c)) at three different times for ω/ϵ = 1500 and ϕ = 0.35. (e) Phase diagram in the (ω/ϵ, ϕ) plane. In all panels, colors indicate the reference phase: homogeneous (gray), BIO (yellow), and SBIO (violet). The remaining simulation parameters are Tr = 20 and τI = m/γ = 10−2τ .",
+      "page": 3,
+      "index": 1,
+      "width": 1027,
+      "height": 386
+    },
+    {
+      "url": "assets/figures/arxiv/2605.03404v1/fig-002.webp",
+      "caption": "Figure 3. Vorticity induced by sparkling behavior. (a) Vorticity distribution P (Ω) and (b) speed distribution P (|v|) for several values of the chirality ω (rescaled by ϵ), spanning the homogeneous, BIO, and SBIO phases. (c)-(f) Snapshots of the system showing the magnitude of the vorticity ((c) and (e)) and the magnitude of the transverse force ((d) and (f)) as a color gradient. Gray regions indicate areas devoid of particles. Panels (c) and (d) correspond to a BIO configuration (ω/ϵ = 900), while panels (e) and (f) correspond to a SBIO configuration (ω/ϵ = 1500). The remaining simulation parameters are ϕ = 0.35, Tr = 20, and τI = m/γ = 10−2τ .",
+      "page": 5,
+      "index": 2,
+      "width": 955,
+      "height": 509
+    }
+  ]
+}
