@@ -6,40 +6,37 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-05-06
-- 运行时间：2026-05-06 21:01:28 UTC
+- 最新运行日期：2026-05-07
+- 运行时间：2026-05-07 20:32:38 UTC
 - 运行状态：成功
-- 本次总论文数：6
+- 本次总论文数：5
 - 精读区：1
-- 速读区：5
+- 速读区：4
 
 ### 今日简报（AI）
-今日深度解析双原子催化剂在全解水中的配位工程，并同步探讨电池颗粒降解与电解质动力学。
-核心结论指出恒电势第一性原理结合机器学习能精准揭示催化机理，同时揭示了裂纹浸润对电池性能的损耗路径。
-建议关注 AI 辅助的微观电化学建模，这是提升能源材料设计效率的前沿利器。
-- 详情：[/202605/06/README](/202605/06/README)
+今日深度解析了双原子催化剂在全解水中的配位工程，并同步追踪了流体雾化与电池退化等前沿动态。
+核心结论指出，结合机器学习与恒电势第一性原理能精准优化电催化机理，是实现高效能源转换的突破口。
+建议读者重点关注 AI 辅助的新材料设计，同时留意微观裂纹润湿对电池寿命的关键影响。
+- 详情：[/202605/07/README](/202605/07/README)
 
 ### 精读区论文标签
-1. [Coordination Engineering of Dual-Atom Catalysts for Overall Water Splitting: Mechanistic Insights from Constant-Potential First-Principles and Machine Learning](/202605/06/2605.00609v1-coordination-engineering-of-dual-atom-catalysts-for-overall-water-splitting-mechanistic-insights-from-constant-potential-first-principles-and-machine-learning)  
-   标签：评分：9.5/10、query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries
-   evidence：用于全解水制氢(HER)和制氧(OER)的双功能电催化剂。
+1. [Coordination Engineering of Dual-Atom Catalysts for Overall Water Splitting: Mechanistic Insights from Constant-Potential First-Principles and Machine Learning](/202605/07/2605.00609v1-coordination-engineering-of-dual-atom-catalysts-for-overall-water-splitting-mechanistic-insights-from-constant-potential-first-principles-and-machine-learning)  
+   标签：评分：9.0/10、query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries
+   evidence：双原子催化剂在析氢(HER)和析氧(OER)反应中的机理见解。
 
 ### 速读区论文标签
-1. [Modelling Intermediate-Current Transitions in Asymmetric-Valence Binary Electrolytes](/202605/06/2605.01013v1-modelling-intermediate-current-transitions-in-asymmetric-valence-binary-electrolytes)  
-   标签：评分：7.5/10、query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries
-   evidence：具有非对称价态电解质的电解池和电池建模
-2. [On the role of crack electrolyte wetting in the degradation and performance of battery active particles](/202605/06/2605.01806v1-on-the-role-of-crack-electrolyte-wetting-in-the-degradation-and-performance-of-battery-active-particles)  
-   标签：评分：6.5/10、query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries
-   evidence：电池颗粒中的电解液润湿现象及降解的电化学-力学耦合建模。
-3. [Sparkling bubbles in chiral active fluids](/202605/06/2605.03404v1-sparkling-bubbles-in-chiral-active-fluids)  
-   标签：评分：6.5/10、query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries
-   evidence：活性流体中的气泡演化动力学和闪烁行为
-4. [Scale- and Structure-Dependent Fractal Dimensions in a Two-Dimensional Atomizing Liquid Jet](/202605/06/2604.26107v1-scale--and-structure-dependent-fractal-dimensions-in-a-two-dimensional-atomizing-liquid-jet)  
+1. [Scale- and Structure-Dependent Fractal Dimensions in a Two-Dimensional Atomizing Liquid Jet](/202605/07/2604.26107v1-scale--and-structure-dependent-fractal-dimensions-in-a-two-dimensional-atomizing-liquid-jet)  
    标签：评分：6.0/10、query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries
-   evidence：液气界面动力学与破碎
-5. [A High-Fidelity 3D Fluid-Structure Interaction Framework for Predictive Microfluidic Design](/202605/06/biorxiv-10-64898-2026-04-28-721227-v1-a-high-fidelity-3d-fluid-structure-interaction-framework-for-predictive-microfluidic-design)  
+   evidence：液-气界面和雾化的直接数值模拟
+2. [On the role of crack electrolyte wetting in the degradation and performance of battery active particles](/202605/07/2605.01806v1-on-the-role-of-crack-electrolyte-wetting-in-the-degradation-and-performance-of-battery-active-particles)  
    标签：评分：6.0/10、query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries
-   evidence：微流控设计的3D流固耦合框架
+   evidence：电池颗粒裂纹中的电解液润湿及界面反应路径
+3. [Sparkling bubbles in chiral active fluids](/202605/07/2605.03404v1-sparkling-bubbles-in-chiral-active-fluids)  
+   标签：评分：6.0/10、query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries
+   evidence：活性流体中的旋转气泡和闪烁行为
+4. [A High-Fidelity 3D Fluid-Structure Interaction Framework for Predictive Microfluidic Design](/202605/07/biorxiv-10-64898-2026-04-28-721227-v1-a-high-fidelity-3d-fluid-structure-interaction-framework-for-predictive-microfluidic-design)  
+   标签：评分：6.0/10、query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries
+   evidence：用于多尺度流体动力学行为的高保真3D流固耦合框架。
 
 
 <div class="dpr-home-promo-card">
