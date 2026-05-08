@@ -1,0 +1,1152 @@
+Title: A de novo CO2 Reductase Featuring a Cysteine-Ligated Cobalt Porphyrin Cofactor
+
+URL Source: https://www.biorxiv.org/content/10.64898/2026.05.07.723500v1.full.pdf
+
+Number of Pages: 18
+
+Markdown Content:
+A de novo CO 2 Re ductase Featuring a Cysteine -Ligated Cobalt Porphyrin Cofactor 
+
+Emily J. Radley [a] †, Alessia C. Andrews [a] †, Indrek Kalvet [b], Yunling Deng [c], Colin W. Levy [a],
+
+Mary Ortmayer [a] , Derren J. Heyes [a] , Clare F. Megarity [a] , Reyes Núñez -Franco [b], Amy E. 
+
+Hutton [a] , Yi Lu [c], David Baker [b]*, Anthony P. Green [a] *
+
+[a] Department of Chemistry, University of Manchester, Manchester Institute of 
+
+Biotechnology, Manchester, UK. 
+
+[b] Institute for Protein Design, University of Washington, Seattle , USA ; Department of 
+
+Biochemistry and Howard Hughes Medical Institute, University of Washington, Seattle , USA. 
+
+[c] Department of Chemistry, University of Texas at Austin, Austin, USA. 
+
+† These authors contributed equally. 
+
+Abstract 
+
+Modern protein design methods based on deep learning allow generation of customi zed 
+
+protein scaffolds with diverse geometries and functionalities. Here, we capitali ze on these 
+
+recent advances to develop hyper -thermostable de novo CO 2 reductases featuring a cobalt 
+
+porphyrin IX cofactor (CoPPIX). CoPPIX containing enzymes were assembled in vivo through 
+
+media supplementation with cobalt salts and assessed for photocatalytic CO 2 reductase 
+
+activity. We identified two cysteine -ligated designs that exhibit high activity (>1000 turnovers 
+
+at rates of up to 25 min -1) while suppressing competing hydrogen evolution pathways . A 2.1 Å 
+
+crystal structure shows close agreement to the design model with the Co -Cys bond 
+
+programmed as intended. This study showcases the power of computational protein design in 
+
+developing artificial enzymes to activate challenging molecules such as CO 2.
+
+Introduction 
+
+Rising CO 2 levels in the atmosphere are a major driver of global warming. To facilitate the 
+
+transition to net -zero, new catalytic technologies to transform CO 2 into platform chemicals are 
+
+needed. In this regard, a variety of homogeneous and heterogeneous catalysts have been 
+
+developed for reducing CO 2 to CO and other C1 products 1–10 . Although these systems can 
+
+offer high catalytic rates, they commonly suffer from poor stability and/or compromised 
+
+selectivity as they are unable to discriminate between competing CO 2 and proton reduction 
+
+pathways 11,12 . In contrast , enzymes have evolved in nature to transform CO 2 with remarkable 
+
+efficiency and selectivi ty 13 –21 . Unfortunately, these natural systems are often only marginally 
+
+stable and can be challenging to produce and characteri ze22 –24 . As a result, the structural 
+
+features that underpin activation and transformation of CO 2 in native enzymes are still not fully 
+
+understood. One approach to overcome these limitations is to develop artificial 
+
+metalloenzymes within small stable protein scaffolds that are amenable to engineering 25 –27 .
+
+This approach can provide new insights into the factors governing selective CO 2 conversion 
+
+and lead to the development of biocatalysts with improved properties. As an example, we have 
+
+recently developed artificial CO 2 reductases by reconstituting myoglobin variants with a non -
+
+native cobalt protoporphyrin IX (CoPPIX) cofactor 28 . These artificial enzymes mediate 
+
+photocatalytic conversion of CO 2 to CO with enhanced activity and selectivity ( CO formation 
+
+vs H 2 production) compared to small synthetic Co -porphyrin cofactors 27 –31 .
+
+In principle , these myoglobin -based systems could serve as starting templates for evolutionary 
+
+optimi zation to deliver highly active, selective, and speciali zed CO 2 reductases. However, 
+
+establishing suitable high throughput directed evolution pipelines for this class of 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted May 8, 2026. ;https://doi.org/10.64898/2026.05.07.723500 doi: bioRxiv preprint
+
+transformation presents considerable challenges linked to difficulties in performing high 
+
+throughput quantitative analysis of gas phase products. In light of these constraints, we 
+
+instead turned to modern protein design methods in an effort to generate artificial 
+
+metalloenzymes with improved properties. Our labs have recently developed hyper -stable 
+
+peroxidases and carbene transferases featuring a histidine -ligated Fe -porphyrin in a de novo 
+
+α-helical solenoid repeat scaffold 32 . These studies provided insights into the factors leading to 
+
+high -affinity porphyrin binding within de novo proteins. Armed with this knowledge, and with 
+
+powerful deep learning -based methods now available for generating protein ligand complexes 
+
+(e.g. RFdiffusion All -Atom 33 and LigandMPNN 34 ), we have the opportunity to create porphyrin -
+
+binding proteins with diverse active site geometries, cofactor coordination environments, and 
+
+topologies that extend far beyond those found in nature. We set out to use these methods to 
+
+generate a family of structurally diverse CoPPIX binding proteins and investigate their CO 2
+
+reductase activities. 
+
+Results and Discussion 
+
+In vivo assembly of a de novo CO 2 reductase 
+
+As a starting template for engineering de novo CO 2 reductases we selected dnHEM1, a hyper -
+
+stable α-helical solenoid that employs an axial histidine ligand to coordinate iron 
+
+protoporphyrin IX (FePPIX) with high affinity (Figure 1B) 32 . To replace the FePPIX with 
+
+CoPPIX, we adapted a previously reported strategy for in vivo cofactor biogenesis and 
+
+incorporation 35 that obviates the need for costly in vitro cofactor replacement steps 36,37 . The 
+
+UV -Vis spectrum of purified CoPPIX loaded dnHEM1 exhibits a diagnostic Soret feature at 
+
+422 nm, shifted from 402 nm as observed with Fe PPIX loaded dnHEM1, consistent with 
+
+successful incorporation of CoPPIX 35 (Supplementary Figure 1) .
+
+We next evaluated the photocatalytic activity of dnHEM1 for CO 2 reduction under anaerobic 
+
+conditions, employing [Ru(bpy) 3]2+ as a photosensitiser, sodium bicarbonate as a CO 2 source 
+
+and sodium L-ascorbate as a sacrificial reductant under blue light irradiation (475 nm) for 30 
+
+minutes (Figure 1A) . Samples of the reaction headspace following photoirradiation were 
+
+analysed by gas chromatography (GC). Under these conditions, dnHEM1 produces 220 ppm 
+
+CO (94 turnovers in 30 min) alongside 424 ppm H 2. In an attempt to further improve activity, 
+
+we sampled an in -house panel of dnHEM1 variants that have previously been engineered to 
+
+enhance heme peroxidase or carbene transferase activity 32 . From these assays, we identified 
+
+dnHEM1.2B (dnHEM1_V11R_D39H_A47R , Figure 1D ) that displays a 2.6 -fold improvement 
+
+in CO 2 reductase activity (241 turnovers in 30 min), albeit with similar selectivity to that 
+
+observed with dnHEM1 (Figure 1 C). 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted May 8, 2026. ;https://doi.org/10.64898/2026.05.07.723500 doi: bioRxiv preprint
+
+Figure 1. Development of first generation 
+
+de novo CO 2 reductases. A) Proposed photocatalytic cycle for enzymatic 
+
+reduction of CO 2 to CO using [Ru(bpy) 3]2+ as a photosensitiser. AscH = sodium 
+
+L-ascorbate. B) Crystal structure of 
+
+dnHEM1 (PDB: 8C3W) highlighting the heme cofactor (atom -coloured sticks with dark grey carbons) and the axial 
+
+histidine (atom -coloured sticks with blue teal carbons). C) Bar chart comparing the CO 2 reductase activity of CoPPIX 
+
+loaded dnHEM1 and dnHEM1.2 B monitoring CO (plum) and H 2 (grey) production. Biotransformations were performed 
+
+using 0.3 μM holo -enzyme, 100 mM sodium L -ascorbate, 100 mM sodium bicarbonate, 100 μM [Ru(bpy) 3]2+ in 500 mM 
+
+potassium phosphate buffer (pH 7.0) , and irradiation under blue light (475 nm) for 30 minutes. Error bars represent the 
+
+range of values from measurements made in duplicate. D) Active sites of dnHEM1 (PDB: 8C3W) and dnHEM1.2B (design 
+
+model) showing axial histidine (atom -coloured sticks with blue te al carbons) and heme cofactor (atom -coloured sticks 
+
+with dark grey carbons), with the mutations between dnHEM1 and dnHEM1.2B highlighted in pink and blue, 
+
+respectively. 
+
+Design of enhanced CO 2 reductases 
+
+Having developed a first generation de novo CO 2 reductase, we next sought to explore a 
+
+broader range of protein sequences and scaffolds to identify more potent and selective 
+
+enzymes. We used multiple design strategies to generate heme binding proteins featuring 
+
+either cysteine or histidine as an axial ligand (Figure 2A). Sequence diverse artificial homologs 
+
+of myoglobin 38 and dnHEM1.2B were generated using a combination of ProteinMPNN and 
+
+RFjoint2 inpainting 39 . These approaches were extended to generate heme binders in de novo 
+
+NTF2 scaffolds 40 –42 . To explore a wider variety of protein topologies and active site 
+
+configurations, we turned to generative AI based protein design methods. We have previously 
+
+generated and characterized tens of de novo Cys -ligated heme -binding proteins based on 
+
+RFdiffusion All -Atom protein backbone ge neration 33 . To expand this set, we started new 
+
+design trajectories from a minimal active site model consisting of an axially ligated heme with 
+
+a spatial placeholder in the distal site. The amino acid sequences were then optimized by 
+
+iterative application of ProteinMPNN 43 , LigandMPNN 34 , Rosetta FastRelax 44 and 
+
+AlphaFold2 45 . Designed proteins were evaluated for AlphaFold2 confidence and accuracy, as 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted May 8, 2026. ;https://doi.org/10.64898/2026.05.07.723500 doi: bioRxiv preprint
+
+well as for Rosetta metrics describing the protein -ligand interface quality. Synthetic DNA 
+
+fragments encoding the designed proteins from each of the design pipelines were assembled 
+
+into the pET29b plasmid for expression in Escherichia coli 46,47 . Following evaluation of the 
+
+soluble expression levels and heme -binding properties of these designs, we selected a total 
+
+of 69 well -performing sequences from 26 unique protein folds for CoPPIX incorporation and 
+
+activity studies (Supplementary Table 1).
+
+The panel of designs was expressed in E. coli using the protocol described above for in vivo 
+
+CoPPIX incorporation. Of the 69 sequences selected, 67 were expressed in soluble form and 
+
+readily purified via nickel affinity chromatography. 63 of these designs displayed UV -Vis 
+
+spectral features diagnostic of CoPPIX incorporation ( λSoret values from 420 to 435 nm) 27,35,48 – 
+
+> 50
+
+(Supplementary Figure s 2-6). The remaining 4 designs have more complex UV -Vis 
+
+absorbance profiles (Supplementary Figure 7), potentially rising from mixed oxidation states 
+
+and/or partial spin states 35,51 .
+
+The above 67 purified designs were subsequently evaluated for photocatalytic CO 2 reduction 
+
+activity using the headspace GC assay (Figure 2B). While sequence redesigns of dnHEM1.2B 
+
+gave several variants with improved CO formation versus dnHEM1, this approach failed to 
+
+yield any artificial homologs with improved activity compared to dnHEM1.2B. Similarly, 
+
+redesigns based on myoglobin as a template (PDB: 3RGK) gave some improvements over 
+
+the wild -type sequence but again failed to surpass the activity of dnHEM1.2B. Greater success 
+
+was achieved using inpainting to introduce an axial cysteine ligand into dnHEM1 which gave 
+
+small improvements over dnHEM1.2B. Evaluation of designs generated using RFdiffusion All -
+
+Atom incorporating a c ysteine ligand led to the identification of eleven structurally diverse 
+
+designs that displayed activity greater than or equal to dnHEM1.2B. Of the top performing 
+
+designs, A2 and A3 share a common fold but had a propensity to precipitate during 
+
+purification. We therefore selected A4 and B6, which display s imilarly high activity, for further 
+
+characterisation. We note that these designs bear no resemblance to any protein observed in 
+
+nature, as indicated by template modelling (TM) scores of 0.54 and 0.56, respectively 52 
+
+(Supplementary Figure 8).
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted May 8, 2026. ;https://doi.org/10.64898/2026.05.07.723500 doi: bioRxiv preprint
+
+Figure 2. Design and screening of 
+
+de novo CO 2 reductases . A) Schematic of the heme -binding protein design pipeline s
+
+using multiple 
+
+de novo computational design methods . B) Bar chart displaying amount of CO (ppm) produced by the 
+
+panel of CoPPIX loaded 
+
+de novo designs compared to dnHEM1 and dnHEM1.2B (grey). The panel includes ProteinMPNN 
+
+redesigns of dnHEM1.2B (pink), ProteinMPNN redesigns of myoglobin (orange), NTF2 scaffold -based designs (yellow), 
+
+inpainting of Cys -ligated dnHEM1 designs (green), and designs generated by RFdiffusion All -Atom (teal). 
+
+Biotransformations were performed using enzyme normali zed to a λSoret absorbance of 0.1 , 100 mM sodium 
+
+L-ascorbate, 
+
+100 mM sodium bicarbonate, 100 μM [Ru(bpy) 3]2+ in 500 mM potassium phosphate buffer (pH 7.0) and i rradiat ed under 
+
+blue light (475 nm) for 30 minutes at room temperature . Error bars represent the range of values from measurements 
+
+made in duplicate. 
+
+Following production of A4 and B6 under optimi zed expression conditions, the designs were 
+
+purified by nickel affinity chromatography followed by size exclusion chromatography (SEC). 
+
+SEC allowed separation of apo - and holo -proteins to enable isolation of fully occupied 
+
+CoPPIX -loaded enzymes (Supplementary Figure 9). Both proteins eluted as monomeric 
+
+species as confirmed by SEC -MALS ( Supplementary Figure 10 ). UV -Vis spectroscopy 
+
+show ed that A4 exhibits a sharp Soret band at 434 nm with Q -band features at 542 and 577 
+
+nm, whereas B6 displays a Soret at 422 nm, with Q -band features at 53 3 and 563 nm (Figure 
+
+3A). CoPPIX incorporation was quantified using inductively coupled plasma optical emission 
+
+spectrometry (ICP -OES), and used to determine Soret extinction coefficients of 104.4 and 
+
+97.4 mM ⁻¹cm ⁻¹ for A4 and B6, respectively (Supplementary Table 2). No iron contamination 
+
+was detected in any sample by ICP -OES. A4 an d B6 are both hyper -thermostable (Tm > 95 
+
+°C), showing minimal changes in circular dichroism (CD) spectra from 25 –95 °C. Cofactor 
+
+retention was also preserved at 95 °C, with negligible shifts in Soret intensity or wavelength 
+
+(Supplementary Figure 11 ). 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted May 8, 2026. ;https://doi.org/10.64898/2026.05.07.723500 doi: bioRxiv preprint
+
+With purified enzymes in hand, we next compared the activity and selectivity of A4, B6, 
+
+dnHEM1, and dnHEM1.2B. Consistent with the initial panel screening, A4 and B6 exhibited 
+
+3.6 - and 3.7 -fold improvement s in CO 2 reduction activity compared to dnHEM1, respectively. 
+
+These activity gains were accompanied by a marked increase in selectivity for CO ₂ reduction 
+
+over H ₂ generation ( ca . 75 % selectivity with A4 and B6 vs . ca. 35 % with dnHEM1 and 
+
+dnHEM1.2B) (Figure 3B). It is known that photoactivated [Ru(bpy) 3]2+ can drive H 2 evolution 53 ,
+
+and control experiments show that hydrogen production is significantly reduced in the 
+
+presence of A4 and B6 ( Supplementary Figure 12). These observations suggest that the 
+
+intrinsic selectivity associated with A4 and B6 is likely substantially higher than 75%. Time -
+
+course experiments show that A4 and B6 can achieve TTN CO values of 580 and 620, prior to 
+
+deactivation (Supplementary Figure 1 3). Improvements in reaction rate, selectivity, and total 
+
+turnovers can be achieved by replacing bicarbonate with gaseou s CO 2 as the substrate. Using 
+
+A4 and B6 as biocatalysts, CO 2 can be converted to CO with >84% selectivity, at a rate of 25 
+
+min -1 and 18 min -1, respectively, and >1000 total turnovers was achieved for each prior to 
+
+enzyme deactivation ( Figure 3B , Supplementary Table 3, and Supplementary Figure 1 3).       
+
+> Figure 3 .Characterisation of designs A4 and B 6. A) AlphaFold2 predicted models of A4 (teal) and B6 (pink) showing the
+> axially -ligated heme as red atom -coloured sticks. UV -Vis spectra of A4 (teal) and B6 (pink). B) Bar chart comparing the
+> CO 2reductase (plum) and hydrogen evolution (grey) activity of dnHEM1, dnHEM1.2B, A4 and B6. Biotransformations
+> were performed using 0.3 μM holo -enzyme, 100 mM sodium
+
+L-ascorbate, 100 μM [Ru(bpy) 3]2+ in 500 mM potassium   
+
+> phosphate buffer (pH 7.0) with either 100 mM sodium bicarbonate or gaseous CO 2as the CO 2source , and i rradiation
+> under blue light (475 nm) for 30 minutes. Error bars represent the range of values from measurements made in duplicate.
+
+Structural analysis 
+
+We next sought to solve structures of A4 and B6 for comparison to the design models. While 
+
+B6 proved difficult to crystalli ze, the crystal structure of A4 was determined to a resolution of 
+
+2.1 Å (PD B: 9T8A). This structure closely agrees with the design model and with the 
+
+AlphaFold2 model of A4, with a backbone RMSD of 1.05 Å (Figure 4A). The CoPPIX cofactor 
+
+resides in a solvent -occluded pocket (solvent accessible surface area of 12 Å 2 vs . 112 Å 2 for 
+
+dnHEM1 , Supplementary Figure 14) and is ligated through Cys98 as intended. However 
+
+His73, designed to interact with one of the CoPPIX propionate groups, instead occupies the 
+
+vacant coordination site to generate a hexa -coordinated state, which also results in a minor 
+
+displacement of the porphyrin cofactor relative to the model. The His73 conformer observed 
+
+in the x -ray structure was occluded in the design model by the surrogate distal site ligand used 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted May 8, 2026. ;https://doi.org/10.64898/2026.05.07.723500 doi: bioRxiv preprint
+
+as a placeholder in the design pipeline (Figure 4B). In the A4 crystal structure, the porphyrin 
+
+also adopts a rotated geometry relative to the design model , leading to polar interactions 
+
+between the CoPPIX propionate and Thr64. An AlphaFold3 54 model o f A4 with heme agrees 
+
+with the crystal structure both regarding the orientation of the porphyrin, as well as the His73 
+
+conformer (Supplementary Figure 15). 
+
+To understand the functional significance of Cys98 and His73, we independently mutated 
+
+these residues to alanine. Substitution of Cys98 led to a decrease in CoPPIX binding, activity 
+
+and selectivity, demonstrating that the programmed cysteine ligand plays a key role in 
+
+CoPPIX -dependent CO 2 reduction ( Supplementary Figures 16 & 17). In contrast, the impact 
+
+of the His73A mutation was found to be negligible. A 1.8 Å resolution structure of A4 H73A 
+
+(PDB: 9T8B) shows that while the porphyrin still adopts the rotated geometry observed in A4, 
+
+its plane and the positioning of the axial Cys98 ligand now more closely resemble t hat of t he 
+
+design model. In this structure, the CoPPIX cofactor is now penta -coordinated as required for 
+
+catalysis (Figure 4C). 
+
+Figure 4. Structural Analysis of A4 and A4 H73A. A) A c rystal structure of A4 (teal) (PDB : 9T8A ) shows close agreement 
+
+to the AlphaFold2 design model (grey). The cysteine -ligated heme of the design model is shown as red atom -coloured 
+
+sticks. B) Comparison of the active site of A4 (teal atom -coloured sticks) and the A4 design model (grey atom -coloure d
+
+sticks) highlighting the differences in positioning of His73 and the porphyrin cofactor. In the design model, His73 forms 
+
+interactions with the propionate group of the cofactor, whereas in the crystal structure it coordinates the CoPPIX cofactor 
+
+to form a hexa -coordinated complex. C) Comparison of the active site of A4 H73A (PDB: 9T8B) (pink atom -coloured 
+
+sticks) and the A4 design model (grey atom -coloured sticks). In the A4 H73A structure the CoPPIX cofactor is penta -
+
+coordinated as required for catalysis, with the porphyrin plane and positioning of the axial cysteine now more clos ely 
+
+resembling the design model. 
+
+Conclusions 
+
+In summary, this study illustrates how deep learning -based protein design can be used to 
+
+generate artificial metalloenzymes to transform difficult -to -activate molecules such as CO 2. By 
+
+sampling designs with diverse topologies, active -site architectures and cofactor coordination 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted May 8, 2026. ;https://doi.org/10.64898/2026.05.07.723500 doi: bioRxiv preprint
+
+environments, we identified several enzymes featuring a Cys -ligated CoPPIX cofactor that 
+
+display enhanced CO 2 reductase activity while minimizing competing off -pathway H 2 evolution 
+
+processes. With limited guiding principles to steer active site design, and technically 
+
+challenging experimental protocols that preclude standard directed evolution methods to 
+
+optimize enzyme activity, these discoveries would not have been possible without access to 
+
+a diverse set of protein scaffolds hosting the catalytic cofacto r. Moving forward, there are 
+
+opportunities to extend our enzyme design pipeline to achieve more valuable conversions of 
+
+CO 2 into C 2 and C 3 platform chemicals that may also be more amenable to high -throughput 
+
+quantification to underpin directed evolution workflows. In this way, we aim to deliver a new 
+
+generation of efficient, selective and stable CO 2-transforming enzymes to help achieve our 
+
+net -zero goals. 
+
+Acknowledgements 
+
+We would like to acknowledge funding from EPSRC and bp through the bp International 
+
+Centre for Advanced Materials (bp -ICAM) for an ICASE to E.R. (EP/W522065/1), a Prosperity 
+
+Partnership funded by EPSRC, bp through the bp -ICAM (grant numbers ICAM75, ICAM80 
+
+and ICAM83) and Johnson Matthey plc to E.R . and A.A . (EP/V056565/1) , and the Engineering 
+
+and Physical Sciences Research Council to A.P.G . and D.B . (EPSRC Centre -to -Centre 
+
+Partnership, EP/Z531157/1). We are grateful to the Manchester SYNBIOCHEM Centre 
+
+(BB/M 017702/1), the Future Biomanufacturing Hub (EP/S01778X/1) and the Henry Royce 
+
+Institute for Advanced Materials (funded through EPSRC grants nos. EP/R00661X/1, 
+
+EP/S019367/1, EP/P025021/1 and EP/P025498/1) for access to their facilities. We 
+
+acknowledge assis tance given by Research IT and the use of the Computational Shared 
+
+Facility at the University of Manchester. We thank J. Tibble -Howlings from the Analytical 
+
+Services and Instrumentation at the University of Manchester for their expertise and support 
+
+in ICP -OES measurements. The authors would like to thank Diamond Light Source for 
+
+beamtime on i03 and i04 (proposal MX 38021 -12 & MX31850 -102). We thank the Open 
+
+Philanthropy Project Improving Protein Design Fund (D.B., I.K.), the Howard Hughes Medical 
+
+Institute (D.B., I.K.), MCIN/AEI/10.13039/501100011033 (grants PID2024 -160774OB -I00, 
+
+PID2021 -125946OB -I00; R.N.F), and NERSC for access to the Perl mutter high -performance 
+
+computing resources (award BER -ERCAP0022018). We thank Luki Goldschmidt and Kandise 
+
+VanWormer f or maintaining the computational and wet -lab resources at the Institute for 
+
+Protein Design. We thank Xinting Li for assistance with mass spectrometry experiments at the 
+
+Institute for Protein Design . We thank Dr. Florence Hardy and Dr. Nathan Ennist for helpful 
+
+discussions, Dr. Christopher Norn for providing the de novo designed NTF2 scaffolds, and Dr. 
+
+David Juergens for assistance with RFjoint2 inpainting. 
+
+Methods 
+
+Design of a library of heme -binding proteins 
+
+The library of diverse heme -binding proteins was constructed using several different design 
+
+methods, with the common goal of creating proteins with a proximal histidine or cysteine 
+
+ligation, and an open distal pocket. The following design strategies were u sed: (1) Creating 
+
+diverse sequence analogs of dnHEM1.2B peroxidase with ProteinMPNN. The design of these 
+
+proteins is described in more detail in Supplementary Methods, section 3. 2. (2) Installing heme 
+
+binding sites into previously designed nuclear transport factor 2 (NTF2) protein scaffolds using 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted May 8, 2026. ;https://doi.org/10.64898/2026.05.07.723500 doi: bioRxiv preprint
+
+Rosetta -based sequence design 40,55,56 and AlphaFold2 structure prediction. The design and 
+
+characterization of these proteins are described in more detail in Supplementary Methods, 
+
+section 3. 3. (3) Creating diverse sequence and structural analogs of myoglobin 57 (PDB: 3RG K)
+
+with ProteinMPNN and RFjoint2 inpainting. The design and characterization of these variants 
+
+ha ve been previously reported 38 . (4) Structurally modifying a de novo designed heme -binder, 
+
+dnHEM1, with RFjoint2 inpainting to incorporate a proximal C ys residue and to create 
+
+alternative pocket opening geometries. The design and characterization of these proteins are 
+
+described in more detail in Supplementary Methods, section 3. 4. (5) Creating new protein 
+
+scaffolds completely from scratch using RFdiffusion All -Atom. These proteins were created 
+
+starting from a heme model with a proximal cysteine residue and a distal substrate 
+
+placeholder . ProteinMPNN, LigandMPNN, Rosetta FastRelax and AlphaFold2 were used to 
+
+design and validate the sequences corresponding to the generated protein backbones. A
+
+subset of these designs have previously been reported 33 . Additional newly characterized 
+
+variants are described in Supplementary Methods, section 3. 5. Supplementary Table 1 lists 
+
+the plate layout of the heme -binder library. Amino acid and DNA sequences are displayed in 
+
+Supplementary Table 4. 
+
+Materials 
+
+All materials were obtained from commercial suppliers and used as received, unless otherwise 
+
+stated . Chemicals were sourced from Sigma -Aldrich unless otherwise indicated. LB agar, LB 
+
+media, 2×YT media, isopropyl -β-d-1-thiogalactopyranoside (IPTG) and L-arabinose were 
+
+purchased from Formedium. Terrific Broth II (TB -II, MP Biomedicals) powder was purchased 
+
+from Fisher Scientific. Escherichia coli strains BL21 (DE3) and 5α, Q5 DNA polymerase, T4 
+
+DNA ligase and restriction enzymes were purchased from New England Biolabs. Escherichia 
+
+coli strain BL21 -AI and sodium bicarbonate were purchased from Thermo Fisher. 
+
+Oligonucleotides and genes were synthesized by Integrated DNA Technologies (IDT). 
+
+Construction of variants 
+
+Genes encoding the design panel were purchased from IDT and assembled (Golden Gate 
+
+cloning) into pET29b(+) vector (LM627, AddGene 191551) 46 with a C -terminal SNAC cleavage 
+
+site 58 and subsequent hexa -histidine tag. The final expressed amino acid sequences were 
+
+obtained as MSG -design -GSGSHHWGSTHHHHHH. Constructs without a SNAC -cleavage 
+
+site were generated using overlap extension PCR and subcloned into a pET29b(+) vector. 
+
+Variants (A4 H73A and A4 C98A) were created using the QuikChange Lightning Mutagenesis 
+
+kit (Agilent) according to the published protocol. All constructs we re verified using Sanger 
+
+sequencing (Eurofins). 
+
+Protein expression and purification 
+
+Chemically competent E.coli BL21 -AI cells were transformed with the appropriate plasmid 
+
+encoding the designed protein. Single colonies of freshly transformed cells were cultured for 
+
+18 h in 10 mL modified M9 minimal media to minimi ze heme contamination (1x M9 salts, 0.2% 
+
+glucose, 0.1 mM CaCl 2, 2 mM MgSO 4, 4 mg mL -1 casamino acids, 10 μg mL -1 thiamine 
+
+chloride), supplemented with 25 μg ml -1 kanamycin. Starter cultures were used to inoculate 
+
+400 mL modified M9 media supplemented with 25 μg mL −1 kanamycin. Expression of in vivo 
+
+CoPPIX -loaded proteins was adapted from a previously reported strategy 35 . Cells were grown 
+
+at 37 °C with shaking at 180 rpm until OD 600 of 0.8. At this point, 1 mM δ -aminolevulinic acid 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted May 8, 2026. ;https://doi.org/10.64898/2026.05.07.723500 doi: bioRxiv preprint
+
+(δ -ALA) and 500 mM CoCl 2 were added. After an additional 30 minutes, temperature was 
+
+reduced to 25 °C, and gene expression was induced with 1 mM IPTG and 0.2% L-arabinose, 
+
+and grown for a further 18 hours. Cells were harvested by centrifugation (6880 x g, 4 °C for 
+
+10 min). 
+
+Pelleted cells were resuspended in lysis buffer (50 mM KPi, 200 mM NaCl, 20 mM imidazole, 
+
+pH 7.5) supplemented with 1 mg mL -1 lysozyme and 1 mg mL -1 DNase. Cells were lysed by 
+
+sonication (13 mm probe, 1s on, 1s off, 50% amplitude, total duration 20 mins). The lysate 
+
+was clarified by centrifugation at 10,000 × g for 30 mins. The supernatant was incubated with 
+
+nickel -nitrilotriacetic acid (Ni -NTA) resin for 1 hour at 4 °C, then packed onto a gravity flow 
+
+column. Proteins were eluted using a high imidazole buffer (250 mM imidazole, 50 mM KPi, 
+
+200 mM NaCl, pH 7.5). P roteins were concentrated by centrifugation using Vivaspin® 20, 10 
+
+kDa MWCO. Subsequently, designs were further purified by SEC ÄKTApure system using a 
+
+Superdex 75 16/600 column (GE Healthcare) pre -equilibrated with buffer (50 mM KPi, 200 
+
+mM NaCl pH 7.0 , Supplementary Figure 9). Proteins were aliquoted, flash frozen in liquid 
+
+nitrogen and stored at -80 °C. 
+
+Spectrophotometric assays 
+
+Analysis of the UV -Visible (UV -Vis) spectroscopic properties were carried out using an Agilent 
+
+Cary 8485 UV -Vis spectrophotometer (CoPPIX -loaded proteins), or Jasco Spec V -750 UV -
+
+Vis spectrophotometer and BioTek Synergy Neo2 microplate reader (heme -loaded proteins) .
+
+Size Exclusion Chromatography Multi -Angle Light Scattering (SEC -MALS) 
+
+The oligomeric state of A4 and B6 were assessed using SEC -MALS. Purified samples (0.2 
+
+mg mL -1) were loaded onto a Superdex 75 (GE Healthcare) at 0.75 mL min -1 with a constant 
+
+flow of storage buffer (50 mM KPi, 200 mM NaCl, pH 7.0) . The samples were passed through 
+
+a Wyatt Heleos II EOS 18 -angle laser photometer coupled to a Wyatt Optilab rEX refractive 
+
+index detector. Data analysis was performed (Hydrodynamic radii and molecular mass 
+
+measurements were analysed) using ASTRA 6 software ( Wyatt Technologies). 
+
+Circular dichroism 
+
+To determine the thermostability of the designs, far -ultraviolet circular dichroism (CD) 
+
+measurements were carried out on an Applied Photophysics Chiroscan CD instrument. The 
+
+200 to 260 nm wavelength scans were measured at 10 °C intervals from 25 °C to 95 °C, using 
+
+0.3 mg mL -1 enzyme in 50 mM KPi (pH 7.0) in a 1 mm path length cuvette. Spectra were 
+
+acquired once the temperature had stabili zed to within 0.1 °C of the target temperature for 30 
+
+seconds. The same conditions were also employed to collect UV -Vis spectra between 250 
+
+and 700 nm for protein samples with an absorbance of ~1.0 in the Soret region in a 1 cm path 
+
+length cuvette. 
+
+Determination of extinction coefficients 
+
+The extinction co -efficient of selected variants were determined using a combination of UV -
+
+Vis spectroscopy and ICP -OES as previously reported 28,59 . The Soret absorbance of variants 
+
+were measured on an Agilent Cary 8485 UV -Vis spectrophotometer. The concentration of 
+
+cobalt within the samples were measured using an AnalytikJena PlasmaQuant PQ 9000 Elite 
+
+High -Resolution ARRAY ICP -OES (argon axial mode and plasma power at 1200W). Samples 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted May 8, 2026. ;https://doi.org/10.64898/2026.05.07.723500 doi: bioRxiv preprint
+
+were prepared by adding highly concentrated protein stocks (50 -200 μL) to HPLC -analysis 
+
+grade nitric acid (1 mL) and stirred at 70 °C overnight. Samples were diluted with HPLC 
+
+ultrapure grade water to a final volume of 10 mL (5% nitric acid final concentra tion) and passed 
+
+through a 0.22 μm filtration system. Cobalt standard solutions were prepared from a 1000 ppm 
+
+atomic absorption standard in 5% nitric acid (calibration curve from 0.625 to 10 ppm). Cobalt 
+
+was measured at 237.863 nm and metal content was qua ntified by comparison to a standard 
+
+curve ( Supplementary Table 2).
+
+Mass spectrometry 
+
+Intact protein masses were acquired on a 1200 series LC QTOF 16600 MS (Agilent). Protein 
+
+samples (1 mg mL -1) were injected on the LC -MS system , and desalted using a PLRP -S
+
+cartridge and eluted over a 6 minute 5% - 95% ACN gradient at 0.8 mL min -1. The resulting 
+
+multiply charged spectrum was deconvoluted using the Agilent MassHunter BioConfirm 
+
+software. Data presented in ( Supplementary Table 5). 
+
+Photoreduction CO 2 assays 
+
+We evaluated a series of designed heme binding proteins for photocatalytic CO 2 reduction 
+
+activity. The panel comprises designed heme binding proteins previously reported 33,38 ,
+
+alongside a selection of new designs (A3 -A7 and B6 -B7) that have not been disclosed 
+
+previously. All reactions contained enzyme at the stated concentrations , 100 mM sodium L-
+
+ascorbate, 100 mM sodium bicarbonate (as CO 2 source), 100 μM [Ru(bpy) 3]2+ in 500 mM 
+
+potassium phosphate buffer at pH 7.0, to a final volume of 2 mL, within 10 mL gas tight vials 
+
+under anaerobic conditions. When pure CO 2 gas was used, the vials were purged for 60 
+
+seconds each. Reactions were initiated by irradiat ion at 475 nm with blue LED light for the 
+
+amount of time stated .
+
+Samples were then removed from the light and left to equilibrate in the dark for 30 minutes. 
+
+Directly after, 2 mL of the head space sample was injected onto an Agilent 490 Micro Gas 
+
+Chromatography (GC) equipped with a Thermal Conductivity Detector (TCD) an d a MS15A 
+
+column (Supplementary Figure 1 8). The inlet injector temperature was set at 110 °C, column 
+
+temperature at 80 °C and column pressure at 150 kPa. The detector response to CO and H 2
+
+was quantified using calibration curves made using gas analytic sta ndards containing fixed 
+
+amounts of CO, H 2, and Ar (Supplementary Figure 1 9).
+
+The number of moles of CO (or H 2) in the standard gas injections was calculated by first 
+
+rearranging the ideal gas equation. Turnover number (TON) was calculated by dividing the 
+
+mol es of CO or H 2 gas detected by the moles of protein. Selectivity for CO production was 
+
+calculated according to the following equation: 
+
+𝑆𝑒𝑙 𝐶𝑂 = [𝐶𝑂 ]
+
+[𝐶𝑂 ] + [𝐻 2] × 100 
+
+Protein crystalli zation and refinement 
+
+Crystals of A4 and A4 H73A were obtained from a pET29b(+) construct lacking the SNAC -tag 
+
+but retaining the C -terminal His -tag. SEC purified A4 and A4 H73A were concentrated to 7 mg 
+
+mL -1 in 50 mM HEPES buffer (pH 7.5). Crystalli zation conditions for A4 and A4 H73A were 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted May 8, 2026. ;https://doi.org/10.64898/2026.05.07.723500 doi: bioRxiv preprint
+
+identified using the BCS screen (Molecular Dimensions) and LMB screen (Molecular 
+
+Dimensions), respectively. 
+
+Crystals suitable for diffraction experiments were obtained by sitting drop vapor diffusion at 4 
+
+°C in 400 nL drops containing equal volumes of protein and precipitant using a nano -dispenser 
+
+(Mosquito TTP Labtech). Crystal s of A4 was found in BCS A8: 0.1 M Phosphate/Citrate pH 
+
+5.5 20 % v/v PEG Smear High. Crystals of A4 H73A were found in LMB C9: 26 % w/v PEG 
+
+2000 MME, 0.1 M Bis -Tris pH 5.8. Before data collection, crystals were cryoprotected by the 
+
+addition of 20% PEG 200 to the mother liquor and plunge -cooled in liquid nitrogen. 
+
+All data were collected on beamline iO3 (wavelength 0.9763  Å ) at the Diamond Light Source 
+
+Facility (Harwell, UK) and reduced and scaled with Xia2 DIALS. Structures were solved by 
+
+molecular replacement using the AlphaFold2 45 predicted model as the search model. Iterative 
+
+rounds of model building and refinement were performed in Coot 60 and phenix.refine 61 .
+
+Validation with MOLPROBITY 62 and PDBREDO 63 were incorporated into the iterative rebuild 
+
+and refinement process. Data refinement statistics are shown in Supplementary Table 6. The 
+
+coordinates and structure factors have been deposited in the Protein Data Bank under 
+
+accession numbers 9T8A and 9T8B. 
+
+Data Availability 
+
+The data generated in this study are provided within the paper and in the Supplementary 
+
+Information. Source Data are provided with this paper. The coordi nat es and str ucture factors 
+
+for the crystallographic data in this study are available in the Protein Data Bank under 
+
+accession numbers 9T8A and 9T8B for A4 and A4 H73A respectively. Computational models 
+
+of the designed proteins are available for download at Zenodo under the identifier 
+
+10.5281/zenodo.18615699 64 .
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted May 8, 2026. ;https://doi.org/10.64898/2026.05.07.723500 doi: bioRxiv preprint
+
+References 
+
+1. Chueh, W. C. & Haile, S. M. Ceria as a Thermochemical Reaction Medium for Selectively 
+
+Generating Syngas or Methane from H2O and CO2. ChemSusChem 2, 735 –739 (2009). 
+
+2. Yang, Y., Evans, J., Rodriguez, J. A., White, M. G. & Liu, P. Fundamental studies of 
+
+methanol synthesis from CO2 hydrogenation on Cu(111), Cu clusters, and Cu/ZnO(000). 
+
+Phys. Chem. Chem. Phys. 12 , 9909 –9917 (2010). 
+
+3. Deguchi, M., Yotsuhashi, S., Yamada, Y. & Ohkawa, K. Photoelectrochemical CO2 
+
+Conversion to Hydrocarbons Using an AlGaN/GaN -Si Tandem Photoelectrode. Adv. 
+
+Condens. Matter Phys. 2015 , 537860 (2015). 
+
+4. Almomani, F., Bhosale, R., Khraisheh, M., Kumar, A. & Tawalbeh, M. Photocatalytic 
+
+conversion of CO2 and H2O to useful fuels by nanostructured composite catalysis. Appl. 
+
+Surf. Sci. 483 , 363 –372 (2019). 
+
+5. Chu, W. -Y., Culakova, Z., Wang, B. T. & Goldberg, K. I. Acid -Assisted Hydrogenation of 
+
+CO2 to Methanol in a Homogeneous Catalytic Cascade System. ACS Catal. 9, 9317 –
+
+9326 (2019). 
+
+6. Scharnagl, F. K., Hertrich, M. F., Neitzel, G., Jackstell, R. & Beller, M. Homogeneous 
+
+Catalytic Hydrogenation of CO2 to Methanol – Improvements with Tailored Ligands. Adv. 
+
+Synth. Catal. 361 , 374 –379 (2019). 
+
+7. Kanega, R. et al. CO2 Hydrogenation and Formic Acid Dehydrogenation Using Ir Catalysts 
+
+with Amide -Based Ligands. Organometallics 39 , 1519 –1531 (2020). 
+
+8. Guo, J. et al. Catalytic reduction of CO2 by Al –Sn -CNTs composite for synthesizing formic 
+
+acid. Int. J. Hydrog. Energy 46 , 29960 –29971 (2021). 
+
+9. Ren, Y. -Y., Xia, W., Deng, B. -Y., Liu, J. & Wang, F. Host -guest assemblies of anchoring 
+
+molecular catalysts of CO2 reduction onto CuInS2/ZnS quantum dots for robust 
+
+photocatalytic syngas production in water. Mol. Catal. 520 , 112168 (2022). 
+
+10. Qian, C. et al. Catalytic CO2 reduction by palladium -decorated silicon –hydride 
+
+nanosheets. Nat. Catal. 2, 46 –54 (2019). 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted May 8, 2026. ;https://doi.org/10.64898/2026.05.07.723500 doi: bioRxiv preprint
+
+11. Nam, D. -H. et al. Molecular enhancement of heterogeneous CO2 reduction. Nat. Mater. 
+
+19 , 266 –276 (2020). 
+
+12. Zheng, T., Jiang, K. & Wang, H. Recent Advances in Electrochemical CO2 -to -CO 
+
+Conversion on Heterogeneous Catalysts. Adv. Mater. 30 , 1802066 (2018). 
+
+13. Rebelein, J. G., Hu, Y. & Ribbe, M. W. Differential Reduction of CO2 by Molybdenum and 
+
+Vanadium Nitrogenases. Angew. Chem. Int. Ed. 53 , 11543 –11546 (2014). 
+
+14. Jeoung, J. -H. & Dobbek, H. Carbon Dioxide Activation at the Ni,Fe -Cluster of Anaerobic 
+
+Carbon Monoxide Dehydrogenase. Science 318 , 1461 –1464 (2007). 
+
+15. Rebelein, J. G., Stiebritz, M. T., Lee, C. C. & Hu, Y. Activation and reduction of carbon 
+
+dioxide by nitrogenase iron proteins. Nat. Chem. Biol. 13 , 147 –149 (2017). 
+
+16. Spreitzer, R. J. & Salvucci, M. E. RUBISCO: Structure, Regulatory Interactions, and 
+
+Possibilities for a Better Enzyme. Annu. Rev. Plant Biol. 53 , 449 –475 (2002). 
+
+17. Hügler, M., Krieger, R. S., Jahn, M. & Fuchs, G. Characterization of acetyl -CoA/propionyl -
+
+CoA carboxylase in Metallosphaera sedula. Eur. J. Biochem. 270 , 736 –744 (2003). 
+
+18. Terholsen, H. et al. Photocatalytic CO2 Reduction Using CO2 -Binding Enzymes. Angew. 
+
+Chem. Int. Ed. 63 , e202319313 (2024). 
+
+19. Oehlmann, N. N., Schmidt, F. V., Herzog, M., Goldman, A. L. & Rebelein, J. G. The iron 
+
+nitrogenase reduces carbon dioxide to formate and methane under physiological 
+
+conditions: A route to feedstock chemicals. Sci. Adv. 10 , eado7729 (2024). 
+
+20. Bassegoda, A., Madden, C., Wakerley, D. W., Reisner, E. & Hirst, J. Reversible 
+
+Interconversion of CO2 and Formate by a Molybdenum -Containing Formate 
+
+Dehydrogenase. J. Am. Chem. Soc. 136 , 15473 –15476 (2014). 
+
+21. Wang, V. C. -C., Ragsdale, S. W. & Armstrong, F. A. Investigations of Two Bidirectional 
+
+Carbon Monoxide Dehydrogenases from Carboxydothermus hydrogenoformans by 
+
+Protein Film Electrochemistry. ChemBioChem 14 , 1845 –1851 (2013). 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted May 8, 2026. ;https://doi.org/10.64898/2026.05.07.723500 doi: bioRxiv preprint
+
+22. Bolivar, J. M. et al. Evaluation of different immobilization strategies to prepare an industrial 
+
+biocatalyst of formate dehydrogenase from Candida boidinii . Enzyme Microb. Technol. 40 ,
+
+540 –546 (2007). 
+
+23. Jasniewski, A. J., Lee, C. C., Ribbe, M. W. & Hu, Y. Reactivity, Mechanism, and Assembly 
+
+of the Alternative Nitrogenases. Chem. Rev. 120 , 5107 –5157 (2020). 
+
+24. Einsle, O. & Rees, D. C. Structural Enzymology of Nitrogenase Enzymes. Chem. Rev. 
+
+120 , 4969 –5004 (2020). 
+
+25. Schneider, C. R., Manesis, A. C., Stevenson, M. J. & Shafaat, H. S. A photoactive 
+
+semisynthetic metalloenzyme exhibits complete selectivity for CO2 reduction in water. 
+
+Chem. Commun. 54 , 4681 –4684 (2018). 
+
+26. Liu, X. et al. A genetically encoded photosensitizer protein facilitates the rational design 
+
+of a miniature photocatalytic CO2 -reducing enzyme. Nat. Chem. 10 , 1201 –1206 (2018). 
+
+27. Alcala -Torano, R., Halloran, N., Gwerder, N., Sommer, D. J. & Ghirlanda, G. Light -Driven 
+
+CO2 Reduction by Co -Cytochrome b562. Front. Mol. Biosci. 8, (2021). 
+
+28. Deng, Y. et al. Engineering an Oxygen -Binding Protein for Photocatalytic CO2 Reductions 
+
+in Water. Angew. Chem. Int. Ed. 62 , e202215719 (2023). 
+
+29. Manbeck, G. F. & Fujita, E. A review of iron and cobalt porphyrins, phthalocyanines and 
+
+related complexes for electrochemical and photochemical reduction of carbon dioxide. J. 
+
+Porphyr. Phthalocyanines 19 , 45 –64 (2015). 
+
+30. Shen, J. et al. Electrocatalytic reduction of carbon dioxide to carbon monoxide and 
+
+methane at an immobilized cobalt protoporphyrin. Nat. Commun. 6, 8177 (2015). 
+
+31. Call, A. et al. Highly Efficient and Selective Photocatalytic CO2 Reduction to CO in Water 
+
+by a Cobalt Porphyrin Molecular Catalyst. ACS Catal. 9, 4867 –4874 (2019). 
+
+32. Kalvet, I. et al. Design of Heme Enzymes with a Tunable Substrate Binding Pocket 
+
+Adjacent to an Open Metal Coordination Site. J. Am. Chem. Soc. 145 , 14307 –14315 
+
+(2023). 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted May 8, 2026. ;https://doi.org/10.64898/2026.05.07.723500 doi: bioRxiv preprint
+
+33. Krishna, R. et al. Generalized biomolecular modeling and design with RoseTTAFold All -
+
+Atom. Science 384 , eadl2528 (2024). 
+
+34. Dauparas, J. et al. Atomic context -conditioned protein sequence design using 
+
+LigandMPNN | Nature Methods. Nat. Methods 22 , 717 –723 (2025). 
+
+35. Perkins, L. J., Weaver, B. R., Buller, A. R. & Burstyn, J. N. De novo biosynthesis of a 
+
+nonnatural cobalt porphyrin cofactor in E. coli and incorporation into hemoproteins. Proc. 
+
+Natl. Acad. Sci. 118 , e2017625118 (2021). 
+
+36. Teale, F. W. J. Cleavage of the haem -protein link by acid methylethylketone. Biochim. 
+
+Biophys. Acta 35 , 543 (1959). 
+
+37. Kawakami, N., Shoji, O. & Watanabe, Y. Single -Step Reconstitution of Apo -Hemoproteins 
+
+at the Disruption Stage of Escherichia coli Cells. ChemBioChem 13 , 2045 –2047 (2012). 
+
+38. Sumida, K. H. et al. Improving Protein Expression, Stability, and Function with 
+
+ProteinMPNN. J. Am. Chem. Soc. 146 , 2054 –2061 (2024). 
+
+39. Kim, D. E. et al. Parametrically guided design of beta barrels and transmembrane 
+
+nanopores using deep learning. Proc. Natl. Acad. Sci. 122 , e2425459122 (2025). 
+
+40. Lee, G. R. et al. Small -molecule binding and sensing with a designed protein family. 
+
+2023.11.01.565201 Preprint at https://doi.org/10.1101/2023.11.01.565201 (2023). 
+
+41. Basanta, B. et al. An enumerative algorithm for de novo design of proteins with diverse 
+
+pocket structures. Proc. Natl. Acad. Sci. 117 , 22135 –22145 (2020). 
+
+42. Marcos, E. et al. Principles for designing proteins with cavities formed by curved β sheets. 
+
+Science 355 , 201 –206 (2017). 
+
+43. Dauparas, J. et al. Robust deep learning –based protein sequence design using 
+
+ProteinMPNN. Science 378 , 49 –56 (2022). 
+
+44. Tyka, M. D. et al. Alternate States of Proteins Revealed by Detailed Energy Landscape 
+
+Mapping. J. Mol. Biol. 405 , 607 –618 (2011). 
+
+45. Jumper, J. et al. Highly accurate protein structure prediction with AlphaFold. Nature 596 ,
+
+583 –589 (2021). 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted May 8, 2026. ;https://doi.org/10.64898/2026.05.07.723500 doi: bioRxiv preprint
+
+46. Wicky, B. I. M. et al. Hallucinating symmetric protein assemblies. Science 378 , 56 –61 
+
+(2022). 
+
+47. Qian, J. et al. Accelerating protein design by scaling experimental characterization. 
+
+2025.08.05.668824 Preprint at https://doi.org/10.1101/2025.08.05.668824 (2025). 
+
+48. Labidi, R. J. et al. Light -Activated Artificial CO2 -Reductase: Structure and Activity. J. Am. 
+
+Chem. Soc. 146 , 28296 –28305 (2024). 
+
+49. Sommer, D. J., Vaughn, M. D. & Ghirlanda, G. Protein secondary -shell interactions 
+
+enhance the photoinduced hydrogen production of cobalt protoporphyrin IX. Chem. 
+
+Commun. 50 , 15852 –15855 (2014). 
+
+50. Yadav, R. & Scott, E. E. Endogenous insertion of non -native metalloporphyrins into human 
+
+membrane cytochrome P450 enzymes. J. Biol. Chem. 293 , 16623 –16634 (2018). 
+
+51. Sakurai, H., Ishizu, K., Sugimoto, H. & Gunsalus, I. C. Model of the coordination site for 
+
+cobalt -substituted cytochrome P450cam. J. Inorg. Biochem. 26 , 55 –62 (1986). 
+
+52. Zhang, Y. & Skolnick, J. TM -align: a protein structure alignment algorithm based on the 
+
+TM -score. Nucleic Acids Res. 33 , 2302 –2309 (2005). 
+
+53. Hawecker, J., Lehn, J. -M. & Ziessel, R. Photochemical reduction of carbon dioxide to 
+
+formate mediated by ruthenium bipyridine complexes as homogeneous catalysts. J. 
+
+Chem. Soc. Chem. Commun. 56 –58 (1985) doi:10.1039/C39850000056. 
+
+54. Abramson, J. et al. Accurate structure prediction of biomolecular interactions with 
+
+AlphaFold 3. Nature 630 , 493 –500 (2024). 
+
+55. Maguire, J. B. et al. Perturbing the energy landscape for improved packing during 
+
+computational protein design. Proteins Struct. Funct. Bioinforma. 89 , 436 –449 (2021). 
+
+56. Yeh, A. H. -W. et al. De novo design of luciferases using deep learning. Nature 614 , 774 –
+
+780 (2023). 
+
+57. Hubbard, S. R., Hendrickson, W. A., Lambright, D. G. & Boxer, S. G. X -ray crystal structure 
+
+of a recombinant human myoglobin mutant at 2·8 Å resolution. J. Mol. Biol. 213 , 215 –218 
+
+(1990). 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted May 8, 2026. ;https://doi.org/10.64898/2026.05.07.723500 doi: bioRxiv preprint
+
+58. Dang, B. et al. SNAC -tag for sequence -specific chemical protein cleavage. Nat. Methods 
+
+16 , 319 –322 (2019). 
+
+59. Wójtowicz, H. et al. The Porphyromonas gingivalis HmuY haemophore binds gallium( iii ), 
+
+zinc( ii ), cobalt( iii ), manganese( iii ), nickel( ii ), and copper( ii ) protoporphyrin IX but in 
+
+a manner different to iron( iii ) protoporphyrin IX. Metallomics 5, 343 –351 (2013). 
+
+60. Emsley, P., Lohkamp, B., Scott, W. G. & Cowtan, K. Features and development of Coot. 
+
+Acta Crystallogr. D Biol. Crystallogr. 66 , 486 –501 (2010). 
+
+61. Adams, P. D. et al. PHENIX: a comprehensive Python -based system for macromolecular 
+
+structure solution. Acta Crystallogr. D Biol. Crystallogr. 66 , 213 –221 (2010). 
+
+62. Davis, I. W. et al. MolProbity: all -atom contacts and structure validation for proteins and 
+
+nucleic acids. Nucleic Acids Res. 35 , W375 –W383 (2007). 
+
+63. Joosten, R. P., Long, F., Murshudov, G. N. & Perrakis, A. The PDB_REDO server for 
+
+macromolecular structure model optimization. IUCrJ 1, 213 –220 (2014). 
+
+64. Radley, E. et al. A de novo CO2 Reductase Featuring a Custeine -Ligated Cobalt Porphyrin 
+
+Cofactor. Zenodo.

@@ -1,0 +1,86 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2605.06348v1/fig-001.webp",
+      "caption": "Figure 7. HER potential vs. RHE at −10 mA/cm² plotted against residual strain. Currents were normalized to the corresponding ECSA. Error bars represent the standard deviation from repeated LSV measurements at different positions of each sample. Positive strain values correspond to tensile strain, while negative values indicate compressive strain.",
+      "page": 25,
+      "index": 1,
+      "width": 688,
+      "height": 531
+    },
+    {
+      "url": "assets/figures/arxiv/2605.06348v1/fig-002.webp",
+      "caption": "Figure 4. TEM assessment of the Pt thin films microstructure and analysis of selected area diffraction patterns (ND – not detected). Patterns were acquired using the smallest available",
+      "page": 21,
+      "index": 2,
+      "width": 720,
+      "height": 1218
+    },
+    {
+      "url": "assets/figures/arxiv/2605.06348v1/fig-003.webp",
+      "caption": "Table 1. Deposition parameters for Pt thin films deposited by RF magnetron sputtering at constant RF power (60 W). Film thickness values represent the total thickness of the Ta adhesion layer and Pt layer.",
+      "page": 7,
+      "index": 3,
+      "width": 1006,
+      "height": 744
+    },
+    {
+      "url": "assets/figures/arxiv/2605.06348v1/fig-004.webp",
+      "caption": "Figure 9. a) Quadratic fit of the coverage-dependent hydrogen adsorption free energy, G⁰(θ) (equation 5), on unstrained and strained Pt(111) under tensile and compressive strain. b) Corresponding Frumkin isotherms of hydrogen coverage θ as a function of total free energy ΔG (equation 6).",
+      "page": 29,
+      "index": 4,
+      "width": 974,
+      "height": 364
+    },
+    {
+      "url": "assets/figures/arxiv/2605.06348v1/fig-005.webp",
+      "caption": "Figure 5. Correlation of average lattice parameters and sputter pressure, with a linear fit.",
+      "page": 22,
+      "index": 5,
+      "width": 388,
+      "height": 314
+    },
+    {
+      "url": "assets/figures/arxiv/2605.06348v1/fig-006.webp",
+      "caption": "Figure 6 (a) Cyclic voltammograms of selected Pt thin films illustrating the dependence on hydrogen adsorption and desorption features with sputter pressure. (b) ECSA and AFM roughness parameters in dependence of sputter pressure.",
+      "page": 23,
+      "index": 6,
+      "width": 886,
+      "height": 367
+    },
+    {
+      "url": "assets/figures/arxiv/2605.06348v1/fig-007.webp",
+      "caption": "Figure 3. (a) XRD patterns of Pt thin films deposited at different sputter pressures shown as a stacked intensity plot to illustrate the evolution of diffraction features with sputter pressure. (b) Average out-of-plane elastic strain ε⊥ of the Pt thin films in dependence of sputter pressure derived from the Pt(111) peak position.",
+      "page": 19,
+      "index": 7,
+      "width": 879,
+      "height": 306
+    },
+    {
+      "url": "assets/figures/arxiv/2605.06348v1/fig-008.webp",
+      "caption": "Figure 2. AFM height maps (1 µm × 1 µm) of Pt thin films sputtered at Ar pressures of 0.27, 1.07, 1.60, and 3.33 Pa, corresponding to samples p2, p8, p12, and p25, respectively. The images reveal a progressive increase in surface roughness with increasing sputter pressure. The color scale is normalized across all images to allow direct comparison of the surface morphology.",
+      "page": 17,
+      "index": 8,
+      "width": 906,
+      "height": 413
+    },
+    {
+      "url": "assets/figures/arxiv/2605.06348v1/fig-009.webp",
+      "caption": "Figure 8. (a) Experimental HER polarization curves (LSVs) for Pt thin films deposited at different sputter pressures, corresponding to different residual strain states, showing the current density as a function of potential vs. RHE. Current densities were normalized to the ECSA. (b) Theoretical HER polarization curves for Pt(111) surface under tensile and compressive strain. Compressive strain is indicated according to the sign convention used in the experimental data (negative: compressive; positive: tensile).",
+      "page": 27,
+      "index": 9,
+      "width": 954,
+      "height": 366
+    },
+    {
+      "url": "assets/figures/arxiv/2605.06348v1/fig-010.webp",
+      "caption": "Figure 1. Relationship between sputter pressure and residual strain in Pt thin films. Strain values were calculated from residual stress measurements obtained by DHM. The horizontal line at y = 0 represents the unstrained state, and error bars indicate the uncertainty associated with the DHMderived strain values.",
+      "page": 16,
+      "index": 10,
+      "width": 477,
+      "height": 367
+    }
+  ]
+}
