@@ -6,43 +6,40 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-05-08
-- 运行时间：2026-05-08 20:06:35 UTC
+- 最新运行日期：2026-05-09
+- 运行时间：2026-05-09 20:43:19 UTC
 - 运行状态：成功
-- 本次总论文数：7
-- 精读区：4
-- 速读区：3
+- 本次总论文数：6
+- 精读区：2
+- 速读区：4
 
 ### 今日简报（AI）
-今日聚焦电催化前沿，深度解析了双原子催化析水与应力调控析氢的底层机制。
-重点关注恒电势第一性原理结合机器学习在催化设计中的应用，以及沉积应力对铂薄膜活性的显著影响。
-建议优先研读两篇 9 分高分力作，掌握从原子配位到宏观应力的催化性能调控新路径。
-- 详情：[/202605/08/README](/202605/08/README)
+今日深挖能源催化前沿，重点解析了双原子催化析水机制与铂薄膜应力对反应活性的调控。
+研究揭示了配位工程与沉积应力在提升析氢效率中的核心作用，并展示了机器学习在机理探索中的潜力。
+建议关注催化剂微观结构优化及电池颗粒裂纹对性能衰减的深层影响。
+- 详情：[/202605/09/README](/202605/09/README)
 
 ### 精读区论文标签
-1. [Coordination Engineering of Dual-Atom Catalysts for Overall Water Splitting: Mechanistic Insights from Constant-Potential First-Principles and Machine Learning](/202605/08/2605.00609v1-coordination-engineering-of-dual-atom-catalysts-for-overall-water-splitting-mechanistic-insights-from-constant-potential-first-principles-and-machine-learning)  
+1. [Coordination Engineering of Dual-Atom Catalysts for Overall Water Splitting: Mechanistic Insights from Constant-Potential First-Principles and Machine Learning](/202605/09/2605.00609v1-coordination-engineering-of-dual-atom-catalysts-for-overall-water-splitting-mechanistic-insights-from-constant-potential-first-principles-and-machine-learning)  
    标签：评分：9.0/10、query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries
-   evidence：利用第一性原理和机器学习深入研究全解水过程中HER和OER的双原子催化剂机理。
-2. [From Deposition Stress to Surface Reactivity: Strain-Dependent Hydrogen Evolution on Sputtered Platinum Thin Films](/202605/08/2605.06348v1-from-deposition-stress-to-surface-reactivity-strain-dependent-hydrogen-evolution-on-sputtered-platinum-thin-films)  
-   标签：评分：9.0/10、query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries
-   evidence：研究了铂薄膜上应变相关的析氢反应（HER）活性。
-3. [Modelling Intermediate-Current Transitions in Asymmetric-Valence Binary Electrolytes](/202605/08/2605.01013v1-modelling-intermediate-current-transitions-in-asymmetric-valence-binary-electrolytes)  
-   标签：评分：8.5/10、query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries
-   evidence：用于电池电解池的PNP模型
-4. [Sparkling bubbles in chiral active fluids](/202605/08/2605.03404v1-sparkling-bubbles-in-chiral-active-fluids)  
+   evidence：使用双原子催化剂进行全解水的HER和OER机制见解
+2. [From Deposition Stress to Surface Reactivity: Strain-Dependent Hydrogen Evolution on Sputtered Platinum Thin Films](/202605/09/2605.06348v1-from-deposition-stress-to-surface-reactivity-strain-dependent-hydrogen-evolution-on-sputtered-platinum-thin-films)  
    标签：评分：8.0/10、query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries
-   evidence：利用流体动力学理论研究手性活性流体中气泡的演化动力学、形成和不稳定性。
+   evidence：应变相关的析氢反应（HER）活性
 
 ### 速读区论文标签
-1. [Time-step restrictions for numerical approximations of the Poisson-Nernst-Planck (PNP) equations](/202605/08/biorxiv-10-64898-2026-04-30-721819-v1-time-step-restrictions-for-numerical-approximations-of-the-poisson-nernst-planck-pnp-equations)  
-   标签：评分：6.5/10、query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries
-   evidence：电扩散PNP方程的数值近似
-2. [On the role of crack electrolyte wetting in the degradation and performance of battery active particles](/202605/08/2605.01806v1-on-the-role-of-crack-electrolyte-wetting-in-the-degradation-and-performance-of-battery-active-particles)  
+1. [Sparkling bubbles in chiral active fluids](/202605/09/2605.03404v1-sparkling-bubbles-in-chiral-active-fluids)  
+   标签：评分：7.0/10、query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries
+   evidence：旋转气泡的形成与动态不稳定性
+2. [On the role of crack electrolyte wetting in the degradation and performance of battery active particles](/202605/09/2605.01806v1-on-the-role-of-crack-electrolyte-wetting-in-the-degradation-and-performance-of-battery-active-particles)  
    标签：评分：6.0/10、query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries
-   evidence：电池颗粒中的电解液润湿和界面反应路径
-3. [A de novo CO2 Reductase Featuring a Cysteine-Ligated Cobalt Porphyrin Cofactor](/202605/08/biorxiv-10-64898-2026-05-07-723500-v1-a-de-novo-co2-reductase-featuring-a-cysteine-ligated-cobalt-porphyrin-cofactor)  
+   evidence：电池电解液润湿和界面反应的电化学-力学耦合模型
+3. [State-Specific Kinetic Modeling of Atomic H for H$_2$/ He Entry Flows](/202605/09/2605.02382v1-state-specific-kinetic-modeling-of-atomic-h-for-h2-he-entry-flows)  
    标签：评分：6.0/10、query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries
-   evidence：提到在二氧化碳还原中抑制竞争性的析氢路径。
+   evidence：H2进入流中原子氢的动力学建模及速率常数文献综述
+4. [A de novo CO2 Reductase Featuring a Cysteine-Ligated Cobalt Porphyrin Cofactor](/202605/09/biorxiv-10-64898-2026-05-07-723500-v1-a-de-novo-co2-reductase-featuring-a-cysteine-ligated-cobalt-porphyrin-cofactor)  
+   标签：评分：6.0/10、query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries
+   evidence：抑制竞争性析氢反应路径
 
 
 <div class="dpr-home-promo-card">

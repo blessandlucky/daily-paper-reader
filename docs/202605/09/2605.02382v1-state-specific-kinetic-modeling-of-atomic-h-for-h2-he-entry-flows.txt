@@ -1,0 +1,1794 @@
+Title: State-Specific Kinetic Modeling of Atomic H for H$_2$/ He Entry Flows
+
+URL Source: https://arxiv.org/pdf/2605.02382v1
+
+Published Time: Tue, 05 May 2026 02:08:19 GMT
+
+Number of Pages: 48
+
+Markdown Content:
+# State-Specific Kinetic Modeling of Atomic H for H 2/ He Entry Flows 
+
+Alex T. Carroll ∗ and Guillaume Blanquart †
+
+California Institute of Technology, Pasadena, CA, 91125 
+
+Aaron M. Brandis ‡
+
+NASA Ames Research Center, Mountain View, CA, 94035 
+
+Brett A. Cruden §
+
+Analytical Mechanics Associates, Inc. at NASA Ames Research Center, Mountain View, CA, 94035 
+
+An 11-species thermochemical model for H 2/ He mixtures with state-specific kinetics for atomic H is developed and used to simulate 1-D shocks at conditions relevant for ice and gas giant entry flows. To implement this kinetic model, a literature review of the state-specific excitation and ionization rate constants of atomic H is first performed. While electron-impact rate constants from various sources are found to be in good agreement, large discrepancies are found in the limited data available on heavy-particle-impact rate constants. To validate the kinetic model, 1-D steady shocks are simulated using a space-marching code that explicitly accounts for shock tube boundary layer effects. The resulting radiance profiles are compared to experimental data from the NASA Ames Electric Arc Shock Tube (EAST) facility, and are found to reproduce the measured values reasonably accurately while capturing the distinct induction zone behavior observed in the experiments. A sensitivity analysis of the kinetic rates and boundary layer treatment reveals avenues for further improvement of the model. Finally, a comparison to alternate models from the literature underscores the improved accuracy of the present model in predicting ionization and radiation profiles. 
+
+# Nomenclature 
+
+𝑎 0 = Bohr radius, 5 .2918 × 10 −11 [m] 
+
+𝐴 𝑛 →𝑛 ′ = bound-bound Einstein coefficient for spontaneous emission [s −1]
+
+𝐴 ∞→ 𝑛 = free-bound radiative transition rate constant [m 3/s] 
+
+𝐴 𝑛 , 𝐵 𝑛 = Bethe coefficients in Johnson’s [1] formulation [-] 
+
+> ∗
+
+PhD Candidate, Department of Mechanical and Civil Engineering, AIAA Student Member. Contact: amoricar@caltech.edu. 
+
+> †
+
+Professor, Department of Mechanical and Civil Engineering. 
+
+> ‡
+
+Senior Research Scientist, Aerothermodynamics Branch, AIAA Associate Fellow. 
+
+> §
+
+Senior Research Scientist, Aerothermodynamics Branch, AIAA Associate Fellow. 
+
+> arXiv:2605.02382v1 [physics.chem-ph] 4 May 2026
+
+𝐶 (𝑛 → 𝑛 ′) = Arrhenius pre-exponential constant for state-specific electronic excitation [m 3/s/K𝛾 (n→n′ ) ]
+
+𝐶 (𝑛 → ∞) = Arrhenius pre-exponential constant for state-specific ionization [m 3/s/K𝛾 (n→∞) ]
+
+𝑑 = shock tube driven section diameter [m] 
+
+𝑒 = specific energy [J/kg] 
+
+𝑒 rv = specific rovibrational energy [J/kg] 
+
+𝑒 e = specific electronic energy [J/kg] 
+
+𝐸 = relative translational/ collision energy [J] 
+
+𝐸 H(𝑛 ) = electronic energy of H( 𝑛 ) relative to the ground state [J] 
+
+𝐸 H+ = ionization energy of H relative to the ground state, 2 .1787 × 10 −18 [J] 
+
+𝐸 𝑛 →𝑛 ′ = threshold energy for state-specific electronic excitation [J] 
+
+𝐸 𝑛 →∞ = threshold energy for state-specific ionization [J] 
+
+𝑔 = degeneracy [-] 
+
+𝑔 𝐽 = statistical weight due to nuclear spin-splitting [-] 
+
+ℎ = specific enthalpy [J/kg] 
+
+ℎP = Planck constant, 6 .6261 × 10 −34 [J ·s] 
+
+𝑗 = diffusive mass flux [kg/m 2/s] 
+
+𝐽 = rotational quantum number [-] 
+
+𝑘 AI = associative ionization rate constant [m 3/s] 
+
+𝑘 B = Boltzmann constant, 1 .3806 × 10 −23 [J/K] 
+
+𝑘 d = macroscopic dissociation rate constant [m 3/s] 
+
+𝑘 (𝑛 → 𝑛 ′) = state-specific electronic excitation rate constant [m 3/s] 
+
+𝑘 (𝑛 → ∞) = state-specific ionization rate constant [m 3/s] 
+
+𝑘 (∞ → 𝑛 ) = state-specific recombination rate constant [m 6/s] 
+
+𝐾 eq = macroscopic equilibrium constant [m −3]
+
+𝐿 = shock tube test slug length [m] 
+
+𝑚 = mass [kg] ¯𝑚 = reduced mass [kg] 
+
+𝑛 = principal quantum number [-] 
+
+𝑁 = number density [m −3]
+
+𝑃 = pressure [Pa] 
+
+𝑞 = heat flux [J/m 2/s] 
+
+𝑄 = internal partition function [-] 2𝑄 t = translational partition function [m −3]
+
+𝑟 = radial spatial coordinate [m] 
+
+𝑟 𝑛 , 𝑦 𝑛 , 𝑧 𝑛 = normalized threshold energy terms in Johnson’s [1] formulation [-] 
+
+𝑡 = time [s] 
+
+𝑇 t = translational temperature [K] 
+
+𝑇 rv = rovibrational temperature [K] 
+
+𝑇 e = electronic temperature [K] 
+
+𝑢 = axial velocity [m/s] 
+
+𝑢 r = radial velocity [m/s] 
+
+𝑥 = axial spatial coordinate [m] 
+
+𝑌 = mass fraction [-] 
+
+𝛼 = degree of dissociation [-] 
+
+𝛽 = Mirels’s [2] boundary layer thickness parameter [-] 
+
+𝛾 (𝑛 → 𝑛 ′) = Arrhenius temperature exponent for state-specific electronic excitation [-] 
+
+𝛾 (𝑛 → ∞) = Arrhenius temperature exponent for state-specific ionization [-] 
+
+𝜂 = pre-QSS correction factor [-] 
+
+𝜃 rv = characteristic rovibrational temperature relative to the ground state [K] 
+
+Λ𝑛 →𝑛 ′ = bound-bound radiative transition escape factor [-] 
+
+Λ∞→ 𝑛 = free-bound radiative transition escape factor [-] 
+
+𝜇 = dynamic viscosity [kg/m/s] 
+
+𝜈 = vibrational quantum number [-] 
+
+𝜌 = density [kg/m 3]
+
+𝜎 (𝑛 → 𝑛 ′) = state-specific electronic excitation cross section [m 2]¯𝜎 = thermally-averaged elastic-scattering cross section [m 2]
+
+𝜏 = viscous stress tensor [Pa] 
+
+¤𝜔 = species source term [kg/m 3/s] 
+
+¤Ω = energy source term [J/m 3/s] Subscripts 0 = initial/ pre-shock condition eff = effective f = post-shock frozen state h = heavy (non-electron) species 3M = through collisions with the third-body M nr = non-recombining limit of the QSS regime pre-QSS = pre-QSS regime rad = radiative processes th = thermal equilibrium limit w = wall properties 
+
+# I. Introduction 
+
+Following the prioritization of Saturn and Uranus probe missions in the latest planetary science decadal surveys [3, 4], there have been a number of studies investigating the aerothermal environments for ice and gas giant entry flows [5– 17]. The atmospheres of all of the giant planets (Jupiter, Saturn, Uranus, and Neptune) are primarily composed of molecular hydrogen (H 2) and helium (He). During atmospheric entry, a shock wave forms in front of the probe. At the high temperatures found in the post-shock region, H 2 molecules dissociate, H atoms get electronically excited, and ionization ultimately occurs forming protons (H +) and electrons (e − ). Since the heat loads encountered by an entry probe are controlled by the state and composition of the surrounding gas, modeling each of these thermochemical processes accurately is critical for the mass-efficient design of thermal protection systems. There are two potential mechanisms of heating for an entry vehicle: convection and radiation. While convective heating is often dominant in many entry flows of interest, the analysis of Palmer et al. [5] suggested that there is currently a large associated uncertainty for H 2/ He radiation in state-of-the-art computational fluid dynamics (CFD) codes. To better characterize this radiative heating component for H 2/ He shocks, Cruden and Bogdanoff [6] conducted experiments in the Electric Arc Shock Tube (EAST) facility for a range of Saturn and Uranus entry flow conditions. A representative gas mixture of 89% H 2 and 11% He (by mole) was used, and radiance was measured from the vacuum-ultraviolet through the near-infrared for shots with freestream velocities ranging from approximately 25 to 30 km/s. For most shot conditions, a delayed rise in radiance or induction zone was observed in the post-shock region, along with equilibration lengths on the order of several centimeters. Evidence of non-Boltzmann state distributions for atomic H was also observed. Radiation for H 2/ He shocks was also investigated by Liu et al. [9, 10] in the X2 expansion tube facility. In these experiments, the gas substitution technique proposed by Stalker and Edwards [18] was used with a 20% H 2 and 80% He (by mole) mixture. This technique was used to achieve flight-representative post-shock temperatures at a relatively lower freestream velocity of approximately 18 km/s. Consistent with the results of Cruden and Bogdanoff, a slow ionization/ equilibration process was observed in the post-shock flow. Several computational studies have tried to reproduce the measured radiance and/ or inferred quantities of interest 4from either set of these experiments. Higdon et al. [7] used the direct simulation Monte Carlo (DSMC) method with the rate constants of Leibowitz [19, 20] and a Boltzmann assumption for the radiation to simulate two of the lower pressure shot conditions from Cruden and Bogdanoff. While some qualitative agreement was obtained, in general, the simulated radiance significantly overpredicted the experimental values (likely due to the Boltzmann assumption), and the post-shock induction behavior was not captured. Hansson et al. [11] performed CFD simulations corresponding to the experiments of Liu et al. [9], and found that the rate constants of Leibowitz, Park [21], and Boyd [22] predicted vastly different ionization profiles. Moreover, none of these models reproduced the experimental radiance values accurately, even with the use of a non-Boltzmann quasi-steady-state (QSS) solver for radiation. Liu et al. [10] performed accompanying CFD simulations for their experiments, and did find good agreement for electron number densities, but only after applying an ad hoc modification factor to the ionization rate constants of Leibowitz. Finally, Colonna et al. [8] performed inviscid 1-D shock calculations with a detailed State-to-State (StS) kinetic model which explicitly treats the non-Boltzmann distributions for the vibrational mode of H 2, the electronic modes of H 2, H, and He, and a non-Maxwellian electron translational energy. With this model, Colonna et al. were only able to obtain reasonable estimates of electron number densities and H electronic temperatures (when compared to the experiments of Cruden and Bogdanoff) by also including the trace species H + 
+
+> 3
+
+and H − , as these species allowed for an alternate pathway to ionization earlier in the shock layer. Ultimately, it is not clear from these previous investigations if the discrepancies between experiments and simulations are due to “missing” reactions in heritage kinetic models or simply inaccurate rate constants. In light of these issues, the objective of the present work is twofold. First, to determine which rate constants should be used to model the critical processes of H excitation and ionization. Second, to determine if the conventional approach of modeling just H 2 dissociation and H ionization is sufficient for the accurate prediction of radiation in H 2/ He shocks, or if the inclusion of additional minority species (e.g., H + 
+
+> 2
+
+, H + 
+
+> 3
+
+, and H − ) and their associated kinetics [23–25] is necessary. The paper is organized as follows. In section II, the electronic excitation and ionization of H by both electron and heavy-particle-impact are reviewed. Next, in section III, an 11-species kinetic model is constructed using the best estimates of the H excitation and ionization rate constants along with the H 2 dissociation model developed recently by the present authors [26, 27]. This kinetic model is then implemented in a quasi-1-D framework that explicitly accounts for shock tube boundary layer effects. Finally, in section IV, the resulting radiance predictions from this model are compared to the EAST measurements of Cruden and Bogdanoff to assess the model’s accuracy and identify critical sensitivities for future improvements. 
+
+# II. Rate Constant Review for the Excitation and Ionization of H 
+
+Modeling atomic ionization is complicated by the fact that the processes of thermal and chemical non-equilibrium, i.e., electronic energy relaxation and ionization, are inherently coupled. To capture this coupling explicitly, state-specific 5rate constants for the electronic excitation and ionization of H are considered in the present work. The state-specific excitation and ionization of H can be written as H(n) + M ↔ H(n′) + M (1) and H(n) + M ↔ H+ + M + e− , (2) respectively. In these reactions, the electronic states of H are binned by principal quantum number, 𝑛 , and the underlying angular momentum states are assumed to follow a statistical distribution. As a consequence, all electronic state degeneracies and energies are given by 𝑔 H(𝑛 ) = 2𝑛 2 and the Rydberg formula, 𝐸 H(𝑛 ) = 𝐸 H+ (1 − 𝑛 −2), respectively. Section II.A reviews the available rate constants in the literature for electron-impact (M = e− ) excitation and ionization, while section II.B discusses rate constants for heavy-particle-impact (M ≠ e− ) excitation and ionization. 
+
+A. Electron-Impact 
+
+1. Excitation 
+
+For the electron-impact excitation of H, rate constants are fortunately available from several different sources. The majority of the available data can be split into three categories: experimental data, semi-empirical formulations, and ab initio calculations. Experimental data mostly consists of cross section measurements for specific transitions at select collision energies, while the semi-empirical formulations combine experimental data with theory to construct analytical formulas for cross sections and rate constants for arbitrary transitions/ quantum numbers. Since the majority of the experimental data of interest has been considered and/ or incorporated into the semi-empirical formulations, experimental data are not included separately in the present review. The semi-empirical formulations of Mansbach and Keck [28], Park [29], Johnson [1], and Vriens and Smeets [30] are considered in the present work. In contrast to the experimental and semi-empirical approaches, ab initio calculations use numerical methods to solve the close-coupling equations and compute cross sections and rate constants. For a more detailed discussion of the relevant ab initio methods, the reader is referred to the works by Bray and Stelbovics [31] and Bartschat [32]. The ab initio rate constants of Scholz et al. [33], Aggarwal et al. [34], Callaway [35], Anderson et al. [36, 37], and Przybilla and Butler [38] are considered in the present work. In general, the ab initio calculations are believed to be more accurate than the semi-empirical formulations, as they resolve more of the details/ resonances of the cross sections, especially at the near-threshold energies to which the thermally-averaged rate constants are most sensitive. As an additional point of comparison, the recommended cross sections of Janev and Smith [24] (based on a review of experimental, semi-empirical, and ab initio data available at the time) are presented here as well. These cross 6sections have been integrated over a Maxwellian electron distribution as 
+
+𝑘 M=e− (𝑛 → 𝑛 ′) =
+
+√
+
+8𝑘 B𝑇 t,e−
+
+𝜋𝑚 e−
+
+¹ ∞
+
+> 𝐸 𝑛 →𝑛 ′
+> 𝑘 B𝑇 t,e−
+
+𝜎 M=e− (𝑛 → 𝑛 ′) 𝐸 
+
+𝑘 B𝑇 t,e−
+
+exp 
+
+(
+
+− 𝐸 
+
+𝑘 B𝑇 t,e−
+
+)
+
+d
+
+( 𝐸 
+
+𝑘 B𝑇 t,e−
+
+)
+
+, (3) where 𝐸 𝑛 →𝑛 ′ ≡ 𝐸 H(𝑛 ′ ) − 𝐸 H(𝑛 ) , to obtain corresponding thermally-averaged rate constants. Figure 1 shows the excitation rate constants for the dominant mono-quantum transitions, 𝑛 = 1 → 2, 𝑛 = 2 → 3, and 𝑛 = 3 → 4. The same plots normalized by the ab initio rate constants of Przybilla and Butler are also shown. The 𝑛 = 1 → 2 rate constants show a large variation with 𝑇 t,e− , as they have a large associated threshold energy of 𝐸 1→2 = 10 .2 eV. As the quantum numbers increase, this variation with temperature diminishes, such that for the 
+
+𝑛 = 3 → 4 transition, the rate constants only vary by a factor of approximately four over 5,000 to 20,000 K. In general, all of the ab initio rate constants (given by the solid lines) are in excellent agreement with each other, with an estimated uncertainty of approximately ±15%. The semi-empirical rate constants on the other hand (given by the dashed lines) fail to reproduce the ab initio rate constants. For the 𝑛 = 1 → 2 transition, all of the semi-empirical rate constants except that of Johnson consistently underpredict the ab initio results; for the 𝑛 = 2 → 3 and 𝑛 = 3 → 4 transitions, the rate constants of Mansbach and Keck and Vriens and Smeets underpredict, while the Park and Johnson rate constants overpredict the ab initio results. Based on the consistency between the ab initio rate constants, any of these datasets would likely give accurate estimates of the electron-impact excitation rate constants. In the present work, the rate constants of Przybilla and Butler are used, as they provide rate constants for the largest range of quantum numbers ( 𝑛 ≤ 7) among the reviewed ab initio datasets. 
+
+2. Ionization 
+
+For the electron-impact ionization of H, the semi-empirical formulations of Mansbach and Keck [28], Johnson [1], and Vriens and Smeets [30] are considered, along with the recommended cross sections of Janev and Smith [24] and the ab initio cross sections of Griffin et al. [39]. The cross sections of Janev and Smith and Griffin et al. have been integrated over a Maxwellian electron distribution using Eq. (3) as before, but with the threshold energy given instead by 𝐸 𝑛 →∞ ≡ 𝐸 H+ − 𝐸 H(𝑛 ) . The ionization rate constants for the 𝑛 = 1, 2, and 3 states along with the same plots normalized by the rate constants of Griffin et al. are shown in Fig. 2. In general, the rate constants of Mansbach and Keck and Vriens and Smeets overpredict the ab initio rate constants of Griffin et al., while the rate constants of Johnson and Janev and Smith are consistently within a factor of two of the ab initio results. Since the 1s → ∞ and 2s → ∞ ionization cross sections of Griffin et al. have been validated extensively against other computational [40–42] and experimental [43, 44] results, and as discussed, ab initio calculations are generally believed to more accurate than semi-empirical formulations, the rate constants of Griffin et al. are used throughout the present work where possible. 70.05 0.1 0.15 0.2          
+
+> 10 5
+> 10 10
+> 10 15
+> 0.05 0.1 0.15 0.2
+> 10 15
+> 10 16
+> 10 17
+> 0.05 0.1 0.15 0.2
+> 10 17
+> 10 18
+> 0.05 0.1 0.15 0.2
+> 0.4 0.6 0.8 11.2
+
+(a) 𝒏 = 1 → 2   
+
+> 0.05 0.1 0.15 0.2
+> 0.5 11.5 2
+
+(b) 𝒏 = 2 → 3   
+
+> 0.05 0.1 0.15 0.2
+> 01234
+
+(c) 𝒏 = 3 → 4
+
+Fig. 1 Electron-impact excitation rate constants (top) and the same rate constants normalized by those of Przybilla and Butler [38] (bottom) for the 𝒏 = 1 → 2 (left), 𝒏 = 2 → 3 (middle), and 𝒏 = 3 → 4 (right) transitions.             
+
+> 0.05 0.1 0.15 0.2
+> 10 -4
+> 10 0
+> 10 4
+> 10 8
+> 10 12
+> 0.05 0.1 0.15 0.2
+> 10 13
+> 10 14
+> 10 15
+> 10 16
+> 10 17
+> 0.05 0.1 0.15 0.2
+> 10 15
+> 10 16
+> 10 17
+> 10 18
+> 0.05 0.1 0.15 0.2
+> 1357
+
+(a) 𝒏 = 1 → ∞    
+
+> 0.05 0.1 0.15 0.2
+> 1357
+
+(b) 𝒏 = 2 → ∞    
+
+> 0.05 0.1 0.15 0.2
+> 13579
+
+(c) 𝒏 = 3 → ∞ 
+
+Fig. 2 Electron-impact ionization rate constants (top) and the same rate constants normalized by those of Griffin et al. [39] (bottom) for the 𝒏 = 1 → ∞ (left), 𝒏 = 2 → ∞ (middle), and 𝒏 = 3 → ∞ (right) reactions. 
+
+8Unfortunately, the rate constants of Griffin et al. are limited to quantum numbers 𝑛 ≤ 4. Hence, the use of a semi-empirical formulation is still necessary to compute ionization rate constants for the 𝑛 > 4 states. For this purpose, a modified version of the Johnson rate constants are used. Johnson’s formulation is based on high-energy approximations (Born-Bethe) with an empirical correction applied at low collision energies. The rate constants are given by 
+
+𝑘 M=e− (𝑛 → ∞) =
+
+√
+
+8𝑘 B𝑇 t,e−
+
+𝜋𝑚 e−
+
+2𝑛 2𝜋𝑎 20 𝑦 2
+
+> 𝑛
+
+[
+
+𝐴 𝑛 
+
+( Ei 1 (𝑦 𝑛 )
+
+𝑦 𝑛 
+
+− Ei 1 (𝑧 𝑛 )
+
+𝑧 𝑛 
+
+)
+
++
+
+(
+
+𝐵 𝑛 − 𝐴 𝑛 ln 
+
+(
+
+2𝑛 2)) 
+
+(𝜉 (𝑦 𝑛 ) − 𝜉 (𝑧 𝑛 )) 
+
+]
+
+, (4) where 
+
+𝑦 𝑛 ≡ 𝐸 𝑛 →∞ 
+
+𝑘 B𝑇 t,e−
+
+and 𝑧 𝑛 ≡ 𝑟 𝑛 + 𝐸 𝑛 →∞ 
+
+𝑘 B𝑇 t,e−
+
+, (5) and Ei 𝑖 (𝑦 𝑛 ) ≡ 
+
+¹ ∞
+
+> 1
+
+exp (− 𝑦 𝑛 ℓ)
+
+ℓ𝑖 dℓ (𝑖 = 0, 1, 2, ... ) (6) is the generalized exponential integral with 
+
+𝜉 (𝑦 𝑛 ) ≡ Ei 0 (𝑦 𝑛 ) − 2Ei 1 (𝑦 𝑛 ) + Ei 2 (𝑦 𝑛 ). (7) In this formulation, the only free parameter is the empirical correction factor, 𝑟 𝑛 . For this, Johnson proposed the fit 
+
+𝑟 𝑛 =1 = 0.45 and 𝑟 𝑛 ≥2 = 1.94 𝑛 −1.57 . To obtain a better agreement with the ab initio rate constants of Griffin et al., this fit is modified in the present work to be 𝑟 𝑛 =1 = 0.50 and 𝑟 𝑛 ≥2 = 0.97 𝑛 −0.75 . As shown in Fig. 2, these modified Johnson rate constants reproduce the ab initio results more accurately than any of the other semi-empirical formulations. Figure 3 shows the same ionization rate constants of Johnson and Griffin et al., but now plotted as a function of 𝑛 
+
+at a fixed temperature of 𝑇 t,e− = 10,000 K. Both Johnson and Griffin et al. predict a smooth trend in the rate constants for 𝑛 ≥ 2 resembling a power law, but with slightly different coefficients. After the modification, the Johnson rate constants are within 5% of the rate constants of Griffin et al. for 𝑛 ≤ 4, and lead to a more consistent extension of the rate constants for higher 𝑛 .
+
+B. Heavy-Particle-Impact 
+
+1. Datasets with Multiple Transitions 
+
+As reviewed by Barklem [45], there are unfortunately very limited kinetic data available in the literature for the heavy-particle-impact excitation and ionization of H. More specifically, while a plethora of experimental and computational cross section data does exist for all third-bodies of interest [46–50], nearly all of this data is in the keV collision energy range, and therefore does not resolve the near-threshold behavior that is relevant for the present work. 91 2 3 4 5 6 7   
+
+> 10 8
+> 10 12
+> 10 16
+> 10 20
+> 1234
+> 0.7 0.8 0.9 11.1
+
+Fig. 3 Electron-impact ionization rate constants as a function of 𝒏 (left) and the same rate constants normalized by those of Griffin et al. [39] (right) at 𝑻 t,e− = 10,000 K. 
+
+In light of this, many computational studies investigating weakly-ionized hydrogen plasmas, including the StS model of Colonna et al. [8, 51, 52], use the classical rate constants of Drawin [53, 54]. The Drawin formulation extends the formula of Thomson [55] for electron-impact to the heavy-particle-impact process by assuming that the efficiency of the energy transfer for atom-atom collisions is the same as that for atom-electron collisions. In other words, the interaction is treated classically, and the impact of the nucleus of the perturbing atom is neglected [56]. Despite their widespread use, the validity of the Drawin rate constants is questionable. The works by Fleischmann and Dehmel [57], Steenbock and Holweger [58], and Lambert [59] all suggest that there is an error for the threshold energy in the derivation by Drawin due to the confusion of the center-of-mass and laboratory frames. Additionally, while ab initio calculations have not yet been performed for the H + H system to the authors’ knowledge, they have been performed for several other systems of astrophysical relevance, including Li + H [60, 61], Na + H [62, 63], and Mg + H [64, 65]; in each of these cases, the Drawin formulation has not been able to reproduce the ab initio results [56]. In contrast to the theoretical approach of Drawin, Park [66] extracted heavy-particle-impact rate constants using an empirical/ inverse approach. Namely, Park simulated H 2/ He shocks in a 1-D CFD code and tuned rate constant parameters to match the measured equilibration distances from the experiments by Livingston and Poon [67] and Leibowitz [19]. To do this, the functional form given by 
+
+𝑘 M=H (𝑛 → 𝑛 ′) =
+
+( 12000 
+
+𝑇 t,h
+
+)𝛾 M=H
+
+√
+
+8𝑘 B𝑇 t,h
+
+𝜋 ¯𝑚 H,H
+
+𝜎 M=H exp 
+
+(
+
+− 𝐸 𝑛 →𝑛 ′
+
+𝑘 B𝑇 t,h
+
+)
+
+(8) was assumed for all excitation rate constants, where ¯ 𝑚 H,H = 𝑚 2H/( 𝑚 H + 𝑚 H) = 𝑚 H/2, and 𝛾 M=H = 0 for all transitions except 𝑛 = 1 → 2. This functional form comes from assuming that all transitions can be described using the same constant/ energy-independent cross section, 𝜎 M=H, and then applying an ad hoc, temperature-dependent modification factor for just the 𝑛 = 1 → 2 transition. Park argued that the energy/ temperature-independent cross sections were justified for all 𝑛 ≥ 2 transitions, as the relevant collision energies are substantially larger than the threshold energies for 10 these transitions, which leads to a Maxwellian-integrated 𝜎 M=H value with effectively no temperature dependence. Park also assumed that the same cross section and temperature exponent could be used for computing rate constants with M = He as a collision partner, i.e., with 𝜎 M=He = 𝜎 M=H, 𝛾 M=He = 𝛾 M=H, and with the reduced mass adjusted accordingly. The values 𝛾 M=H = 6 and 𝜎 M=H = 4 × 10 −21 m2 were found to give the best agreement with the experimental data. While Park did also implement state-specific ionization rate constants, the form of these rate constants were not stated explicitly. For the present work, the ionization rate constants of Park are interpreted as also following Eq. (8), but with the threshold energy, 𝐸 𝑛 →𝑛 ′ , replaced accordingly with 𝐸 𝑛 →∞ .The most relevant post-shock temperatures investigated in Park’s study were in the range of 15,000 to 20,000 K. As will be shown later in section IV.C, equilibration distances are most sensitive to the heavy-particle-impact 𝑛 = 1 → 2transition, as it has the largest associated threshold energy of all of the mono-quantum transitions, and thus acts as a rate-limiting step for H ionization. Therefore, the accuracy of Park’s proposed rate constants in all other temperature ranges and for all other transitions is uncertain, due to the inherently reduced sensitivity to them in an inverse approach based on equilibration distances. Finally, semi-classical rate constants have also been computed by Mihajlov et al. [68] and Dimitrijević et al. [69] for excitation, and by Mihajlov et al. [70] and Srećković et al. [71] for ionization. For simplicity, this entire set of rate constants will be referred to as the Mihajlov et al. rate constants throughout the present work. These calculations are based on the quasi-resonant energy transfer mechanism of Janev and Mihajlov [72], and are believed to be more accurate than the classical theory of Drawin due to the more sophisticated theoretical treatment of the H + H interaction [45]. However, due to the fundamental assumption of the quasi-resonant energy transfer mechanism of treating the H + H system as the interaction between an outer electron and the internal H + + H(1s) subsystem, rate constants were only computed for quantum numbers 𝑛 ≥ 4 for excitation and 𝑛 ≥ 5 for ionization ∗.
+
+2. Data for Individual Transitions 
+
+While limited, there are also some data available for individual transitions of interest. For the 𝑛 = 1 → 2 transition with M = He, experimental measurements of the cross section near threshold energies have been obtained by Birely and McNeal [73], Sauers and Thomas [74], Grosser and Krüger [75], and Van Zyl and Gealy [76]. Additionally, estimates of the 2s → 1s de-excitation cross section have been obtained via ab initio methods by Vegiri [77]. The cross section data from all of these sources are plotted in Fig. 4. The cross section of Vegiri has been converted to a 1s → 2s excitation cross section by applying micro-reversibility. In general, there is good agreement between the different datasets, especially for the dominant excitation to the H(2p) state. To obtain a corresponding rate constant, separate fits for the 1s → 2s and 1s → 2p cross sections are first computed   
+
+> ∗Mihajlov et al. [70] and Srećković et al. [71] do provide estimates of the ionization rate constants for the 𝑛 = 2, 3, and 4 states; however these are based on extrapolations, and are therefore not considered in the present work.
+
+11 10 0 10 1 10 2 10 3
+
+> 10 -20
+> 10 -19
+> 10 -18
+> 10 -17
+> 10 -16
+
+Fig. 4 He-impact excitation cross sections for the 𝒏 = 1 → 2 transition. 
+
+using a threshold-energy-normalized version of the polynomial functional form of Janev et al. [23] given by ln (𝜎 M=He (1s → 2s , 2p )) =
+
+> 4
+
+Õ
+
+> 𝑖 =0
+
+𝑝 𝑖 
+
+(
+
+ln 
+
+( 𝐸 
+
+𝐸 1→2
+
+)) 𝑖 
+
+, (9) with fitting coefficients provided in Table 2. These cross sections are then integrated over a Maxwellian distribution to obtain a thermally-averaged rate constant as 
+
+𝑘 M=He (1 → 2) =
+
+√
+
+8𝑘 B𝑇 t,h
+
+𝜋 ¯𝑚 H,He 
+
+¹ ∞
+
+> 𝐸 1→2
+> 𝑘 B𝑇 t,h
+
+(𝜎 M=He (1s → 2s ) + 𝜎 M=He (1s → 2p )) 𝐸 
+
+𝑘 B𝑇 t,h
+
+exp 
+
+(
+
+− 𝐸 
+
+𝑘 B𝑇 t,h
+
+)
+
+d
+
+( 𝐸 
+
+𝑘 B𝑇 t,h
+
+)
+
+. (10) 
+
+Table 2 Fitting Coefficients for Eq. (9) 
+
+𝑝 𝑖 [ln (m2)] 𝑖 = 0 𝑖 = 1 𝑖 = 2 𝑖 = 3 𝑖 = 4
+
+1s → 2s −4.453 × 10 1 3.855 × 10 0 −1.017 × 10 0 1.235 × 10 −1 −6.128 × 10 −3
+
+1s → 2p −4.277 × 10 1 4.706 × 10 0 −1.508 × 10 0 2.136 × 10 −1 −1.167 × 10 −2
+
+Separately, the rate constant for the 𝑛 = 3 → 2 transition with M = H has been computed by Bates and Lewis [78] using the Landau-Zener model. In their work, the ionic-curve-crossing mechanism was used to compute cross sections and rate constants for the mutual-neutralization reaction, H− + H+ → H(n = 1) + H(n = 2)→ H(n = 1) + H(n = 3).
+
+(11) These cross sections are in reasonable agreement with more recent experimental [79] and computational results [80]. Then, treating 𝑛 = 3 → 2 as the double transition of reaction (11) (i.e., H (n = 1) + H(n = 3) → H− + H+ → H(n =
+
+1) + H(n = 2)), a corresponding rate constant was obtained for the 𝑛 = 3 → 2 transition. 12 3. Comparison of Rate Constants 
+
+Figure 5 shows the H-impact excitation rate constants for select transitions. For the cross-section-fitted rate constant computed from Fig. 4, it has been assumed that 𝜎 M=H = 𝜎 M=He , such that 𝑘 M=H = √ ¯𝑚 H,He / ¯𝑚 H,H 𝑘 M=He . In general, there is very little agreement between the plotted rate constants, with discrepancies on the order of several magnitudes. For the 𝑛 = 1 → 2 transition, the Drawin and cross-section-fitted rate constants show similar temperature dependencies. In particular, the temperature dependence of the cross-section-fitted rate constant is effectively characterized by the Arrhenius exponential factor, exp (− 𝐸 1→2/( 𝑘 B𝑇 t,h)) . In contrast, the rate constant of Park displays a much shallower temperature dependence, due to the (12000 /𝑇 t,h)6 modification factor applied for this specific transition. Interestingly, near 17,000 K where Park’s 𝑛 = 1 → 2 rate constant is expected to be most reliable, there is good agreement with the cross-section-fitted rate constant. For the 𝑛 = 2 → 3 transition, while there is reasonable agreement between the Drawin and Park rate constants, the rate constant of Bates and Lewis has a shallower temperature dependence, resulting in approximately a magnitude of difference at 20,000 K. Finally, as 𝑛 increases further, the rate constants of Drawin increase in magnitude faster than those of Park, such that for all 𝑛 ≥ 3 transitions, Drawin’s rate constants are larger than Park’s. The apparent agreement for the 𝑛 = 4 → 5 transition between the rate constants of Mihajlov et al. and Drawin is coincidental; they diverge from each other as 𝑛 increases further (not shown).                         
+
+> 0.05 0.1 0.15 0.2
+> 10 -2
+> 10 2
+> 10 6
+> 10 10
+> (a) 𝒏 =1→2
+> 0.05 0.1 0.15 0.2
+> 10 11
+> 10 12
+> 10 13
+> (b) 𝒏 =2→3
+> 0.05 0.1 0.15 0.2
+> 10 13
+> 10 14
+> 10 15
+> 10 16
+> (c) 𝒏 =4→5
+
+Fig. 5 H-impact excitation rate constants for the 𝒏 = 1 → 2 (left), 𝒏 = 2 → 3 (middle), and 𝒏 = 4 → 5 (right) transitions. 
+
+The H-impact ionization rate constants for the 𝑛 = 1, 2, and 5 states are shown in Fig. 6. In general, similar trends are observed as for the excitation rate constants. Namely, the rate constants of Park are greater than those of Drawin for 
+
+𝑛 ≤ 2, and lower for 𝑛 > 2. While there is some agreement between the rate constants of Mihajlov et al. and Drawin for the 𝑛 = 5 → ∞ reaction, they diverge from each other for higher 𝑛 .
+
+4. Proposed Rate Constants 
+
+The review presented in the previous sections shows that the cross-section-fitted and Mihajlov et al. rate constants are the most reliable of the available heavy-particle-impact rate constants. However, the cross-section-fitted and 13 0.05 0.1 0.15 0.2 
+
+> 10 -5
+> 10 0
+> 10 5
+> 10 10
+
+(a) 𝒏 = 1 → ∞    
+
+> 0.05 0.1 0.15 0.2
+> 10 9
+> 10 10
+> 10 11
+> 10 12
+> 10 13
+
+(b) 𝒏 = 2 → ∞    
+
+> 0.05 0.1 0.15 0.2
+> 10 13
+> 10 14
+> 10 15
+> 10 16
+
+(c) 𝒏 = 5 → ∞ 
+
+Fig. 6 H-impact ionization rate constants for the 𝒏 = 1 → ∞ (left), 𝒏 = 2 → ∞ (middle), and 𝒏 = 5 → ∞ 
+
+(right) reactions. 
+
+Mihajlov et al. datasets alone are not enough to specify rate constants for all transitions of interest; it is still necessary to specify rate constants for the 𝑛 = 1 → 𝑛 ′ ≥ 3, 𝑛 = 2 → 𝑛 ′ ≥ 3, 𝑛 = 3 → 𝑛 ′ ≥ 4, and 𝑛 ≤ 4 → ∞ transitions separately, as well as the relevant third-body efficiencies. To specify these remaining rate constants, two assumptions are first made about the functional form of the heavy-particle-impact rate constants. First, it is assumed that for any given excitation transition or ionization reaction, the cross sections are the same for all heavy third-bodies, such that 𝑘 M≠e− = √ ¯𝑚 H,H/ ¯𝑚 H,M≠e− 𝑘 M=H. Second, it is assumed that the rate constants for all excitation transitions are described by the Arrhenius functional form, 𝑘 M=H (𝑛 → 𝑛 ′) =
+
+𝐶 M=H (𝑛 → 𝑛 ′) exp (− 𝐸 𝑛 →𝑛 ′ /( 𝑘 B𝑇 t,h)) , where 𝐶 M=H (𝑛 → 𝑛 ′) is not a function of temperature. This assumption is motivated by Fig. 7, which shows the “effective” 𝐶 M=H (𝑛 → 𝑛 + 1) for all mono-quantum transitions, computed as 
+
+𝑘 M=H (𝑛 → 𝑛 + 1)/ exp (− 𝐸 𝑛 →𝑛 +1 /( 𝑘 B𝑇 t,h)) , evaluated at 20,000 K and normalized by the same quantity evaluated at 5,000 K. The plotted ratio is very close to one for the cross-section-fitted and Mihajlov et al. rate constants, indicating that the assumption of a temperature-independent 𝐶 M=H (𝑛 → 𝑛 ′) is reasonable for the heavy-particle-impact excitation rate constants.     
+
+> 13579
+> 10 -1
+> 10 0
+> 10 1
+
+Fig. 7 Ratio of the effective Arrhenius pre-exponential factor evaluated at 20,000 K versus 5,000 K. For Park [66] at 𝒏 = 1, this ratio has a value of 4 .9 × 10 −4 (not shown). 
+
+14 Next, three additional assumptions are made about the scaling of the heavy-particle-impact rate constants with 𝑛 
+
+and 𝑛 ′. For the 𝑛 = 2 and 3 mono-quantum transitions, it is assumed that the pre-exponential factors can be described by the power law, 𝐶 M=H (𝑛 → 𝑛 + 1)/ 𝐶 M=H (1 → 2) = 𝑛 5. This assumption is based on Fig. 8, which shows the scalings, 
+
+𝐶 M,eff (𝑛 → 𝑛 + 1)/ 𝐶 M,eff (1 → 2), from various sources alongside the proposed scaling. In this plot, the electron-impact scaling is computed using the proposed rate constants from section II.A, and the hard-sphere scaling is computed assuming the radius of H scales with the Bohr radius, 𝑎 0𝑛 2, such that 𝐶 M (𝑛 → 𝑛 + 1)/ 𝐶 M (1 → 2) = (𝑛 2 + 1)2/4. Notably, the electron-impact scaling closely follows the hard-sphere scaling. The proposed scaling is chosen to follow the power-law-type dependence of the Drawin, electron-impact, and hard-sphere scalings, while still matching the scaling of the Mihajlov et al./ cross-section-fitted rate constants at 𝑛 = 4.     
+
+> 13579
+> 10 0
+> 10 5
+> 10 10
+
+Fig. 8 Scalings of effective Arrhenius pre-exponential factors for mono-quantum 𝒏 → 𝒏 + 1 transitions. 
+
+For the remaining multi-quantum transitions, 𝑛 → 𝑛 + Δ𝑛 where 𝑛 = 1, 2, and 3 and Δ𝑛 ≥ 2, it is assumed that 
+
+𝐶 M=H (𝑛 → 𝑛 + Δ𝑛 )/ 𝐶 M=H (𝑛 → 𝑛 + 1) = 𝐶 M=H (4 → 4 + Δ𝑛 )/ 𝐶 M=H (4 → 5). This assumption is based on Fig. 9 (a) and (b), which show that the scalings of Mihajlov et al. for the multi-quantum transitions are nearly constant with 𝑛 .Interestingly, the proposed scaling also nearly matches that of the electron-impact rate constants at 𝑛 = 1. Finally, the remaining ionization rate constants for the 𝑛 = 1 to 4 states are assumed to follow the electron-impact scaling, as this leads to a more consistent extension to low 𝑛 when compared to the Drawin and Park scalings, as evidenced in Fig. 9 (c). It is worth noting that while Fig. 8 and Fig. 9 only show the rate constant scalings at 10,000 K, similar trends were observed for all relevant temperatures. 
+
+# III. Methodology 
+
+In the present work, simulations of 1-D normal shocks in a H 2/ He mixture are performed using a space-marching CFD code. The resulting flowfield solutions are used to compute radiance values which are compared to the measure-ments from the EAST experiments of Cruden and Bogdanoff [6]. The governing equations for the flowfield calculations are first discussed in section III.A. Then, the implementation of the thermochemical model and radiance calculations 15 1 3 5 7 9                    
+
+> 00.2 0.4 0.6 0.8 1
+> (a) 𝒏 →𝒏 +2
+> 13579
+> 00.2 0.4 0.6 0.8 1
+> (b) 𝒏 →𝒏 +3
+> 13579
+> 00.2 0.4 0.6 0.8 1
+> (c) 𝒏 → ∞
+
+Fig. 9 Scalings of effective Arrhenius pre-exponential factors for the 𝒏 → 𝒏 + 2 (left), 𝒏 → 𝒏 + 3 (middle), and 
+
+𝒏 → ∞ (right) transitions relative to the mono-quantum 𝒏 → 𝒏 + 1 transitions. 
+
+are described in sections III.B and III.C, respectively. Finally, details of the simulated shot conditions are discussed in section III.D. 
+
+A. Governing Equations 
+
+1. Previous Work 
+
+Most previous studies in the literature investigating H 2/ He flows in shock tubes have assumed that the post-shock flow can be modeled adequately using the 1-D steady Euler equations in the shock-fixed frame (referred to as the Rankine-Hugoniot approach in the present work). This includes the previous studies by Park [66] and Furudate [81], which simulated the experiments of Livingston and Poon [67] and Leibowitz [19], as well as the more recent study by Colonna et al. [8] which simulated the experiments of Cruden and Bogdanoff [6]. Such an approach is often used because post-shock flow solutions can be obtained efficiently using a space-marching numerical scheme. However, this approach does not allow for the modeling of real shock tube flow non-uniformities, namely boundary layer effects. In an idealized shock described by the Rankine-Hugoniot relations, the post-shock speed is nearly constant. Consequently, in the shock frame-of-reference, the post-shock flow does not stagnate. However, in an actual shock tube, the presence of a boundary layer behind the shock displaces mass away from the core flow, eventually resulting in a steady-state configuration with stagnated flow at the contact surface [2, 82]. This difference in post-shock speed profiles results in a spatial “distortion” of the thermochemical processes and therefore the radiance seen in shock tube experiments. To address this shortcoming of the Rankine-Hugoniot approach, Clarke et al. [83] proposed a simple post-shock spatial transformation based on the theory of Mirels [2], which can be applied a posteriori to a Rankine-Hugoniot flow solution. However, as noted by Clarke et al., this spatial transformation alone does not account for the associated compression effect that would result from a stagnated post-shock flow. In a subsequent study, Clarke et al. [84] proposed an alternative approach, which captures the effect of the spatial transformation and the coupled compression effect 16 simultaneously. Unfortunately, the governing equations for this alternative approach are elliptic, and therefore cannot be solved in a simple space-marching manner. A third approach is proposed here which accounts for the spatial transformation and compression effect in a quasi-1-D framework, but neglects viscous effects in the core flow such that solutions can still be obtained rapidly using a space-marching method. The derivation of this method is described in the following sections. 
+
+2. Navier-Stokes Equations 
+
+In the general case, the compressible Navier-Stokes equations for reacting flows are given by 
+
+𝜕 𝜌 
+
+𝜕𝑡 + 𝜕 
+
+𝜕𝑥 i
+
+(𝜌𝑢 i) = 0 (12) for continuity, 
+
+𝜕 
+
+𝜕𝑡 (𝜌𝑌 s) + 𝜕 
+
+𝜕𝑥 i
+
+(𝜌𝑢 i𝑌 s) = − 𝜕 𝑗 s,i
+
+𝜕𝑥 i
+
++ ¤ 𝜔 s (13) for continuity of species s, 
+
+𝜕 
+
+𝜕𝑡 (𝜌𝑢 i) + 𝜕 
+
+𝜕𝑥 j
+
+(𝜌𝑢 i𝑢 j) = − 𝜕𝑃 
+
+𝜕𝑥 i
+
++ 𝜕𝜏 ij 
+
+𝜕𝑥 j
+
+(14) for momentum, and 
+
+𝜕 
+
+𝜕𝑡 
+
+(
+
+𝜌 
+
+(
+
+𝑒 + 𝑢 2i
+
+2
+
+)) 
+
++ 𝜕 
+
+𝜕𝑥 j
+
+(
+
+𝜌𝑢 i
+
+(
+
+ℎ + 𝑢 2i
+
+2
+
+)) 
+
+= − 𝜕𝑞 i
+
+𝜕𝑥 i
+
++ 𝜕 
+
+𝜕𝑥 i
+
+(𝜏 ij 𝑢 j) (15) for total energy. Here, the subscripts i and j indicate spatial directions, and the specific energy and specific enthalpy are related as ℎ = 𝑒 + 𝑃 /𝜌 , where ℎ = Ís 𝑌 s ℎs. To simplify calculations, radiative processes are assumed to be negligible in the flowfield governing equations, i.e., only collisional processes are considered in the kinetic model. The validity of this assumption is discussed in Appendix A. As will be discussed in section III.B, the non-equilibrium kinetic mechanism for H 2 dissociation used in the present work does not rely on the solution of separate rotational and/ or vibrational energy equations. However, the electron translational mode is not assumed to be in equilibrium with the heavy gas translational mode, and hence the solution of a separate electron energy equation is still required. Assuming a Maxwellian electron distribution, the electron energy equation is given by 
+
+𝜕 
+
+𝜕𝑡 (𝜌𝑒 e− ) + 𝜕 
+
+𝜕𝑥 i
+
+(𝜌𝑢 i𝑒 e− ) = − 𝜕𝑞 e− ,i
+
+𝜕𝑥 i
+
++ ¤ Ωe− , (16) where 𝑒 e− = 3𝑌 e− 𝑘 B𝑇 t,e− /( 2𝑚 e− ). Assuming the work done on electrons by the electron-pressure-gradient-induced electric field is negligible, the source term of Eq. (16) is computed as the sum of the contributions from elastic and 17 inelastic electron-impact collisions, i.e., 
+
+¤Ωe− = ¤Ωe− ,elastic + ¤ Ωe− ,inelastic . (17) Following the formulation of Appleton and Bray [85], the elastic term is computed as 
+
+¤Ωe− ,elastic = 3𝜌𝑌 e− 𝑘 B (𝑇 t,h − 𝑇 t,e− )
+
+√
+
+8𝑘 B𝑇 t,e−
+
+𝜋𝑚 e−
+
+( Õ
+
+> s≠e−
+
+𝑁 s
+
+𝑚 s
+
+¯𝜎 e− ,s
+
+)
+
+, (18) where ¯ 𝜎 e− ,s is computed by averaging the cross sections from the IST-Lisbon LXCAT database [86] over a Maxwellian electron distribution for s = H and He, and by similarly averaging the cross section of Zammit et al. [87] for s = H 2. The resulting fits for ¯ 𝜎 e− ,s as a function of 𝑇 t,e− are provided in Table 3. For the case where s is an ion, the Coulomb cross section with the Debye cutoff approximation from Park [88] is used. Assuming that all of the energy for electron-impact excitation and ionization comes from the translational energy of electrons, the inelastic term is computed as 
+
+¤Ωe− ,inelastic = 𝑁 e−
+
+[
+
+− 
+
+> 𝑛 max −1
+
+Õ
+
+> 𝑛 =1
+> 𝑛 max
+
+Õ 
+
+> n′>n
+
+𝑁 H(n) 𝑘 M=e− (𝑛 → 𝑛 ′)𝐸 𝑛 →𝑛 ′ + 
+
+> 𝑛 max −1
+
+Õ
+
+> 𝑛 =1
+> 𝑛 max
+
+Õ 
+
+> n′>n
+
+𝑁 H(n′ ) 𝑘 M=e− (𝑛 ′ → 𝑛 )𝐸 𝑛 →𝑛 ′
+
+−
+
+> 𝑛 max
+
+Õ
+
+> 𝑛 =1
+
+𝑁 H(n) 𝑘 M=e− (𝑛 → ∞) 𝐸 𝑛 →∞ + 𝑁 e− 𝑁 H+
+
+> 𝑛 max
+
+Õ
+
+> 𝑛 =1
+
+𝑘 M=e− (∞ → 𝑛 )𝐸 𝑛 →∞ 
+
+]
+
+.
+
+(19) 
+
+Table 3 Fits of Thermally-Averaged Elastic-Scattering Cross Sections 
+
+s ¯𝜎 e− ,s [m 2]
+
+H2 −1.463 × 10 −21 [ln (𝑇 t,e− )] 2 + 4.229 × 10 −20 [ln (𝑇 t,e− )] − 1.255 × 10 −19 
+
+H 1.111 × 10 −21 [ln (𝑇 t,e− )] 2 − 1.193 × 10 −19 [ln (𝑇 t,e− )] + 1.239 × 10 −18 
+
+He −3.621 × 10 −21 [ln (𝑇 t,e− )] 2 + 6.699 × 10 −20 [ln (𝑇 t,e− )] − 2.423 × 10 −19 
+
+3. Proposed Quasi-1-D Formulation 
+
+To derive the relevant governing equations, Eq. (12)-(16) are applied to the shock tube core flow in the shock-fixed frame. It is assumed that the core flow is steady, inviscid, and quasi-1-D (all quantities except 𝑢 r only vary with 𝑥 ). Under these assumptions, the governing equations in cylindrical coordinates are given by 
+
+𝜕 
+
+𝜕𝑥 (𝜌𝑢 ) + 1
+
+𝑟 𝜕 
+
+𝜕𝑟 (𝑟 𝜌𝑢 r) = 0, (20) 
+
+𝜕 
+
+𝜕𝑥 (𝜌𝑢𝑌 s) + 1
+
+𝑟 𝜕 
+
+𝜕𝑟 (𝑟 𝜌𝑢 r𝑌 s) = ¤𝜔 s, (21) 
+
+𝜕 
+
+𝜕𝑥 (𝜌𝑢 2) + 1
+
+𝑟 𝜕 
+
+𝜕𝑟 (𝑟 𝜌𝑢 r𝑢 ) = − 𝜕𝑃 
+
+𝜕𝑥 , (22) 18 𝜕 
+
+𝜕𝑥 
+
+(
+
+𝜌𝑢 
+
+(
+
+ℎ + 𝑢 2
+
+2
+
+)) 
+
++ 1
+
+𝑟 𝜕 
+
+𝜕𝑟 
+
+(
+
+𝑟 𝜌𝑢 r
+
+(
+
+ℎ + 𝑢 2
+
+2
+
+)) 
+
+= 0, (23) and 
+
+𝜕 
+
+𝜕𝑥 (𝜌𝑢𝑒 e− ) + 1
+
+𝑟 𝜕 
+
+𝜕𝑟 (𝑟 𝜌𝑢 r𝑒 e− ) = ¤Ωe− . (24) Mirels’s [2] theory gives that the axial momentum profile at any post-shock location in the core flow is described by 
+
+𝜌𝑢 = 𝜌 0𝑢 0
+
+(
+
+1 −
+
+√ 𝑥 
+
+𝐿 
+
+)
+
+. (25) The estimation of test slug lengths, 𝐿 , is discussed separately in section III.D.2. Substituting Eq. (25) into Eq. (20) yields the corresponding radial momentum profile as 
+
+𝜌𝑢 r = 𝑟 𝜌 0𝑢 0
+
+4√𝑥𝐿 . (26) Equations (20)-(26) are consistent with the formulation of Clarke et al. [84] when the transport terms (diffusion, viscosity, and conduction) are neglected. Substituting both Eq. (25) and (26) into Eq. (21)-(24) gives the final set of governing equations as d𝑌 s
+
+d𝑥 = ¤𝜔 s
+
+𝜌 0𝑢 0
+
+(
+
+1 − √𝑥 /𝐿 
+
+) , (27) d
+
+d𝑥 (𝑃 + 𝜌𝑢 2) = − 𝜌 0𝑢 0𝑢 
+
+2√𝑥𝐿 , (28) 
+
+ℎ + 𝑢 2
+
+2 = ℎ0 + 𝑢 20
+
+2 , (29) and d𝑒 e−
+
+d𝑥 = ¤Ωe−
+
+𝜌 0𝑢 0
+
+(
+
+1 − √𝑥 /𝐿 
+
+) . (30) As expected, in the limit where 𝐿 → ∞ , the standard Rankine-Hugoniot shock invariants are recovered. The system of equations is closed by using the ideal gas equation of state, 
+
+𝑃 = 𝜌𝑘 B
+
+( Õ
+
+> s≠e−
+
+𝑌 s
+
+𝑚 s
+
+𝑇 t,h + 𝑌 e−
+
+𝑚 e−
+
+𝑇 t,e−
+
+)
+
+. (31) To compute the flowfield solution, these equations are solved numerically in a space-marching manner as follows. Starting from a given grid point in the post-shock, 𝑥 𝑖 , Eq. (27) and (30) are first integrated to 𝑥 𝑖 +1 to obtain 𝑌 s (𝑥 𝑖 +1) and 
+
+𝑒 e− (𝑥 𝑖 +1) using a modified version of the implicit method of Beardsell and Blanquart [89]. Equation (28) is similarly 19 integrated using the explicit RK4 method to obtain (𝑃 + 𝜌𝑢 2)| 𝑥 𝑖 +1 . These quantities along with Eq. (29) and (31) are then solved iteratively to compute the remaining flowfield variables: 𝑃 (𝑥 𝑖 +1), 𝜌 (𝑥 𝑖 +1), 𝑢 (𝑥 𝑖 +1), ℎ(𝑥 𝑖 +1), and 𝑇 t,h (𝑥 𝑖 +1).This entire procedure is then repeated at each point in the post-shock domain length of interest. 
+
+B. Thermochemical Model 
+
+1. Thermodynamics 
+
+Four bulk species, H 2, He, H +, and e − , and seven electronic states of H( 𝑛 =1-7) are included in the thermochemical model for a total of 11 species. Including seven electronic states of H effectively covers the list of relevant spectral features (discussed in section III.C) while minimizing computational cost †. The impact of considering the additional species H + 
+
+> 2
+
+is discussed separately in Appendix B. The thermodynamic properties of H 2 are computed using the non-equilibrium expression proposed by Carroll et al. [26]. In the work of Carroll et al., the rovibrational master equations were used to derive macroscopic chemical source term and rovibrational energy expressions that hold in the three key limits/ regimes of dissociation-dominated flows: the thermal equilibrium limit, the quasi-steady-state (QSS) regime, and the pre-QSS regime. In contrast to the widely used multi-temperature [90–92] and coarse-graining [93–95] methods, this new method does not rely on the solution of additional energy and/ or species equations, and is ultimately only a function of the heavy-gas translational temperature, 𝑇 t,h, and the degree of dissociation, 𝛼 ≡ 𝑁 H(n=1) /( 𝑁 H(n=1) + 2𝑁 H2 ). The macroscopic rovibrational energy of H 2 in this formulation is given by 
+
+𝑒 rv ,H2 =
+
+(
+
+1 − 𝑁 2H
+
+𝑁 H2
+
+𝐾 −1eq 
+
+)
+
+𝑒 rv ,H2 ,pre −QSS +
+
+( 𝑁 2H
+
+𝑁 H2
+
+𝐾 −1eq 
+
+)
+
+𝑒 rv ,H2 ,th , (32) where 
+
+𝑒 rv ,H2 ,pre −QSS = 𝑒 rv ,H2 ,nr 
+
+[
+
+1 −
+
+(
+
+1 − 𝑒 rv ,H2 ,0
+
+𝑒 rv ,H2 ,nr 
+
+)
+
+exp 
+
+(
+
+−
+
+√
+
+− ln (1 − 𝛼 )
+
+𝜂 
+
+)] 
+
+. (33) Here, 𝐾 eq (𝑇 t,h) is the macroscopic equilibrium constant for H 2 dissociation, 𝜂 (𝑇 t,h) is a pre-QSS correction factor, and 
+
+𝑒 rv ,H2 ,nr (𝑇 t,h) and 𝑒 rv ,H2 ,th (𝑇 t,h) are the rovibrational energy of H 2 in the QSS regime when recombination is neglected and in the thermal equilibrium limit, respectively. For further details on the implementation of this model, the reader is referred to section III.D of [26]. For He, the lowest-lying electronically excited state and the ionized state have energies of 19.8 eV and 24.6 eV, respectively. At the post-shock temperatures relevant for the present work, these energies are sufficiently high such that the electronic excitation and ionization of He can be neglected. Therefore, only the translational partition function is considered when computing thermodynamic properties for He. Similarly for H + and e − , there are no internal energy modes to consider, so thermodynamic properties are computed directly from the translational partition functions. 
+
+> †Calculations were also performed with up to 20 electronic states of H, but the difference in results was found to be negligible.
+
+20 Finally, thermodynamic properties of H( 𝑛 =1-7) are evaluated on a state-specific basis. The internal partition function for each individual H( 𝑛 ) state is computed as 
+
+𝑄 H(𝑛 ) (𝑇 ) = 𝑔 H(𝑛 ) exp 
+
+(
+
+− 𝐸 H(𝑛 )
+
+𝑘 B𝑇 
+
+)
+
+. (34) The corresponding thermodynamic properties are computed from the standard statistical mechanics expressions [96]. 
+
+2. Chemical Kinetics 
+
+Table 4 summarizes the reactions and corresponding sources of rate constants for the present kinetic model. Consistent with the thermodynamics, the formulation of Carroll et al. [26] is used for modeling the dissociation of H 2.In this formulation, the chemical source term for H 2 dissociation with the third-body M is given by d𝑁 H
+
+d𝑡 = 2𝑁 M 𝑁 H2 𝑘 d,pre −QSS − 2𝑁 M 𝑁 2H 𝑘 d,pre −QSS 𝐾 −1eq , (35) where 
+
+𝑘 d,pre −QSS = 𝑘 d,nr 
+
+[
+
+1 −
+
+(
+
+1 − 𝑘 d,0
+
+𝑘 d,nr 
+
+)
+
+exp 
+
+(
+
+−
+
+√
+
+− ln (1 − 𝛼 )
+
+𝜂 
+
+)] 
+
+. (36) Here, 𝜂 (𝑇 t,h) is the same pre-QSS correction factor as from Eq. (33), and 𝑘 d,nr (𝑇 t,h) is the macroscopic dissociation rate constant in the QSS regime when recombination is neglected. Fits of 𝑘 d,nr (𝑇 t,h) were evaluated by Carroll et al. [27] for M = H 2, H, and He by reviewing data from a wide range of experimental and computational sources. These fits are used throughout the present work. 
+
+Table 4 Reactions Included in the Kinetic Model 
+
+Type Reaction Third-bodies, M Source 
+
+Dissociation H2 + M ↔ 2H( 𝑛 =1) + M H2, H, He Carroll et al. [26, 27] Excitation H( 𝑛 ) + e − ↔ H( 𝑛 ′) + e − Przybilla and Butler [38] H( 𝑛 ) + M ↔ H( 𝑛 ′) + M H2, H, He, H + Present work for 𝑛 ≤ 3Mihajlov et al. [68, 69] for 𝑛 > 3Ionization H( 𝑛 ) + e − ↔ H+ + 2e − Griffin et al. [39] for 𝑛 ≤ 4Present work for 𝑛 > 4H( 𝑛 ) + M ↔ H+ + e − + M H2, H, He, H + Present work for 𝑛 ≤ 4Mihajlov et al. [70, 71] for 𝑛 > 4
+
+The proposed rate constants from section II are used for the electron and heavy-particle-impact excitation and ionization reactions of H( 𝑛 ). These rate constants have been fit to the modified-Arrhenius functional form and are reported in the supplementary material. The associated reverse reaction rate constants are computed via micro-21 reversibility [97] as 
+
+𝑘 M=e− (𝑛 → 𝑛 ′)
+
+𝑘 M=e− (𝑛 ′ → 𝑛 ) = 𝑄 H(𝑛 ′ ) (𝑇 t,e− )
+
+𝑄 H(𝑛 ) (𝑇 t,e− ) = 𝑔 H(𝑛 ′ )
+
+𝑔 H(𝑛 )
+
+exp 
+
+(
+
+− 𝐸 𝑛 →𝑛 ′
+
+𝑘 B𝑇 t,e−
+
+)
+
+, (37) 
+
+𝑘 M≠e− (𝑛 → 𝑛 ′)
+
+𝑘 M≠e− (𝑛 ′ → 𝑛 ) = 𝑄 H(𝑛 ′ ) (𝑇 t,h)
+
+𝑄 H(𝑛 ) (𝑇 t,h) = 𝑔 H(𝑛 ′ )
+
+𝑔 H(𝑛 )
+
+exp 
+
+(
+
+− 𝐸 𝑛 →𝑛 ′
+
+𝑘 B𝑇 t,h
+
+)
+
+, (38) 
+
+𝑘 M=e− (𝑛 → ∞) 
+
+𝑘 M=e− (∞ → 𝑛 ) = 𝑄 t,e− (𝑇 t,e− )𝑔 e− 𝑄 t,H+ (𝑇 t,e− )𝑔 H+
+
+𝑄 t,H (𝑛 ) (𝑇 t,e− )𝑄 H(𝑛 ) (𝑇 t,e− ) exp 
+
+(
+
+− 𝐸 H+
+
+𝑘 B𝑇 t,e−
+
+)
+
+= 𝑔 e− 𝑔 H+
+
+𝑔 H(𝑛 )
+
+( 2𝜋𝑚 e− 𝑘 B𝑇 t,e−
+
+ℎ2P
+
+)3/2
+
+exp 
+
+(
+
+− 𝐸 𝑛 →∞ 
+
+𝑘 B𝑇 t,e−
+
+)
+
+,
+
+(39) and 
+
+𝑘 M≠e− (𝑛 → ∞) 
+
+𝑘 M≠e− (∞ → 𝑛 ) = 𝑄 t,e− (𝑇 t,e− )𝑔 e− 𝑄 t,H+ (𝑇 t,h)𝑔 H+
+
+𝑄 t,H(𝑛 ) (𝑇 t,h)𝑄 H(𝑛 ) (𝑇 t,h) exp 
+
+(
+
+− 𝐸 H+
+
+𝑘 B𝑇 t,h
+
+)
+
+= 𝑔 e− 𝑔 H+
+
+𝑔 H(𝑛 )
+
+( 2𝜋𝑚 e− 𝑘 B𝑇 t,e−
+
+ℎ2P
+
+)3/2
+
+exp 
+
+(
+
+− 𝐸 𝑛 →∞ 
+
+𝑘 B𝑇 t,h
+
+)
+
+,
+
+(40) where 𝑔 e− = 2, 𝑔 H+ = 1, and 𝑄 t,s = (2𝜋𝑚 s 𝑘 B𝑇 t/ℎ2P)3/2. In the second line of Eq. (39) and (40), it has been assumed that 𝑚 H ≈ 𝑚 H+ such that 𝑄 t,H(𝑛 ) ≈ 𝑄 t,H+ . Unlike Eq. (37)-(39), Eq. (40) is unique in that the reverse reaction rate constant is controlled by both 𝑇 t,e− and 𝑇 t,h [98]. 
+
+C. Radiance Calculations 
+
+Radiance calculations are performed using version 15.3 of the radiation code, NEQAIR [99, 100]. Radiance is computed for the 117 to 173 nm, 323 to 497 nm, and 653 to 659 nm wavelength ranges, corresponding to the vacuum-ultraviolet (VUV), blue, and red spectral ranges respectively from the experiments of Cruden and Bogdanoff [6]. The spectral features of interest are summarized in Table 5. While measurements were also obtained in the near-infrared (NIR) range for a select number of shots, these are not discussed in the present work, as the NIR contribution to the total radiance is negligible compared to the VUV, blue, and red contributions. 
+
+Table 5 Spectral Features for Radiance Calculations 
+
+Spectral range [nm] Species Spectral feature Transition Wavelength [nm] 
+
+VUV 117 to 173 H Lyman 𝛼 𝑛 = 2 → 1 121.57 H2 Lyman band B1Σ − X1Σ 100 to 160 Blue 323 to 497 H Balmer 𝛽 𝑛 = 4 → 2 486.14 Balmer 𝛾 𝑛 = 5 → 2 434.05 Balmer 𝛿 𝑛 = 6 → 2 410.17 Balmer 𝜖 𝑛 = 7 → 2 397.00 Balmer continuum 𝑛 = ∞ → 2 <364.6 Red 653 to 659 H Balmer 𝛼 𝑛 = 3 → 2 656.28 
+
+22 The number densities of the explicitly treated H( 𝑛 ) states are passed directly to NEQAIR, while the internal energy states of H 2 are assumed to follow Boltzmann distributions about separate rovibrational and electronic temperatures. As discussed in section III.B, the evolution of 𝑒 rv ,H2 is tracked explicitly in the dissociation formulation of Carroll et al. [26]. Therefore, an energy-equivalent rovibrational temperature, 𝑇 rv ,H2 , is computed by inverting the relation 
+
+𝑒 rv ,H2 = 𝑘 B
+
+𝑚 H2
+
+Í𝜈 max 
+
+> 𝜈 =0
+
+Í𝐽 max (𝜈 ) 
+
+> 𝐽 =0
+
+𝜃 rv ,H2 (J,𝜈 ) 𝑄 H2 (J,𝜈 ) (𝑇 rv ,H2 )
+
+Í𝜈 max 
+
+> 𝜈 =0
+
+Í𝐽 max (𝜈 ) 
+
+> 𝐽 =0
+
+𝑄 H2 (J,𝜈 ) (𝑇 rv ,H2 ) . (41) Here, 𝑄 H2 ( 𝐽,𝜈 ) (𝑇 rv ,H2 ) = 𝑔 𝐽 (2𝐽 + 1) exp (− 𝜃 rv ,H2 (J,𝜈 ) /𝑇 rv ,H2 ), where 𝑔 𝐽 = 1/4 for all even 𝐽 (para-hydrogen) and 
+
+𝑔 𝐽 = 3/4 for all odd 𝐽 (ortho-hydrogen) [101, 102]. The electronic temperature of H 2 is assumed to be equal to 𝑇 t,e− .The computed signals are convolved with instrument line shapes (ILS) in wavelength space and spatial resolution functions (SRF) in physical space to capture the effects of camera resolution and shock motion from the experi-ments [103]. The ILSs are parametrized as a linearly weighted average of Gaussian and Lorentzian functions. The SRFs are composed of three functions: a triangular optical function, a square root of a Voigt camera function, and a square temporal function. The parameters used to specify all of these functions per camera and shot condition are given in the supplemental test data of [6] (test campaign number 56). 
+
+D. Shot Conditions 
+
+1. Freestream Conditions and Shock Locations 
+
+The simulations performed in the present work correspond to various shot conditions from the experiments of Cruden and Bogdanoff [6]. The freestream pressures and velocities for the considered shots are summarized in Table 6. The freestream composition and temperature are taken to be 89% H 2/ 11% He (by mole) and 300 K, respectively, for all shots. 
+
+Table 6 Shot Conditions 
+
+Shot no. 𝑃 0 [torr] 𝑢 0 [km/s] Shift in shock location [cm] 𝐿 [cm] Contaminant length [cm] 
+
+7 0.50 27.34 + 0.5 22.6 6.90 11 0.10 28.68 + 0.9 4.29 3.46 17 0.10 27.40 + 1.1 4.50 3.78 20 0.20 26.34 + 1.2 9.38 6.13 22 0.51 27.66 + 1.0 22.7 7.71 23 0.51 27.63 + 0.6 ∗ 22.7 8.66 25 0.20 27.80 + 1.2 8.86 6.57  
+
+> *This shift was used for the VUV and Red cameras. The Blue camera was instead shifted by + 1.1 cm.
+
+To compare between experimental and simulated profiles, the shock location is consistently defined as the intersec-tion point between the freestream pressure and the tangent line to the maximum gradient in the pressure profile. For 23 all shock profiles presented, the shock location is set at 𝑥 = 0 cm, such that all negative values of 𝑥 correspond to the pre-shock region, and all positive values of 𝑥 correspond to the post-shock region. Despite this consistent definition, there is still an uncertainty associated with the shock location in the experimental profiles due to potential time lags in the pressure transducers. At lower speeds, the uncertainty introduced by this delay time would be negligible. However, at shock speeds in excess of 26 km/s as investigated here, a delay time of 0.5 
+
+𝜇 s [104] can lead to a discrepancy in the shock location by up to 26 km/s × 0.5 𝜇 s = 1.3 cm. Fortunately, an estimate of the shift in the shock locations can be obtained from the measured radiance profiles. In particular, for shots 17, 20, 22, and 23 a distinct peak was captured in the VUV profiles at the shock front (due to the H 2 Lyman band feature) as illustrated in Fig. 10. The required shift in the shock location is estimated as the shift required to place this feature at 
+
+𝑥 = 0 cm. For shots 7, 11, and 25 for which the onset of this feature was not captured, the same approach is used but based on the Balmer 𝛽 feature. For shot 23 alone, the shock location as estimated from the Lyman band and Balmer 𝛽 
+
+feature is inconsistent, so a separate shift is used for the VUV/ Red and Blue cameras. The estimated shifts in shock locations are summarized in the fourth column of Table 6. All of the experimental results to be presented in section IV are shifted from the originally reported shock locations by these values.     
+
+> -2 0246
+> 010 20 30
+> Unshifted
+> Shifted
+
+Fig. 10 Unshifted and shifted integrated radiance profiles for the shot 22 VUV camera (117 to 173 nm). 
+
+2. Test Slug Lengths 
+
+As discussed in section III.A.3, it is necessary to specify test slug lengths to solve the governing equations Eq. (27)-(30). An estimate of these values can be computed using the relation derived by Mirels [2], namely 
+
+𝐿 = 𝑑 2
+
+16 𝛽 2
+
+( 𝜌 f
+
+𝜌 w
+
+)2 𝑢 f
+
+𝑢 w − 𝑢 f
+
+𝜌 w𝑢 f
+
+𝜇 w
+
+, (42) where 𝑑 = 10.16 cm is the driven section diameter of EAST, the subscript w denotes wall properties, and the subscript f denotes the post-shock state, taken here to be the post-shock frozen state. 𝛽 is computed using Mirels’s proposed 24 correlation for strong non-ideal shocks ‡,
+
+𝛽 = 1.59 
+
+( 𝜌 f 𝜇 f
+
+𝜌 w 𝜇 w
+
+)0.37 (
+
+1 + 1.796 + 0.802 (𝑢 w/𝑢 f)
+
+(𝑢 w/𝑢 f)2 − 1
+
+)
+
+, (43) where 𝑢 w is the shock speed in the laboratory frame of reference. Viscosities are evaluated using the collision integral fits of Palmer et al. [5]. The computed values of 𝐿 for each shot condition are summarized in the fifth column of Table 6. Practically, these estimates of 𝐿 need to satisfy the constraint imposed by measured contamination lengths from the experiments. Namely, since the driver gas in the experiments was composed of pure He, the onset of contamination should either precede or coincide with the contact surface. Therefore, the reported contamination lengths give lower bound values for 𝐿 . The contamination lengths reported by Cruden and Bogdanoff [6] (with the shock location shifts accounted for) are given in the final column of Table 6. As expected, the estimated test slug lengths are greater than the reported contamination lengths for all shot conditions. The impact of uncertainties in the test slug lengths on the computed radiance profiles will be discussed in section IV.C. 
+
+# IV. Results 
+
+The general features of the flowfield solutions are first discussed in section IV.A. Then, the computed radiance profiles are compared to the EAST measurements of Cruden and Bogdanoff [6] in section IV.B, and a corresponding sensitivity analysis for the kinetic rates and boundary layer treatment is presented in section IV.C. Finally, comparisons are made to the alternate kinetic models of Colonna et al. [8] and Liu et al. [9] in section IV.D. 
+
+A. Flowfield Solution 
+
+Figure 11 shows the simulated temperatures, mass fractions, and H( n) distributions (Boltzmann plots) for shot 23 from the EAST experiments. In the temperature plot, 𝑇 rv ,H2 is computed by inverting Eq. (41), and 𝑇 e,H is computed by inverting the analogous equation for the electronic energy of H, 
+
+𝑒 e,H = 𝑚 −1H
+
+Í𝑛 max  
+
+> 𝑛 =1
+
+𝐸 H(n) 𝑁 H(n)
+
+Í𝑛 max  
+
+> 𝑛 =1
+
+𝑁 H(n)
+
+= 𝑚 −1H
+
+Í𝑛 max  
+
+> 𝑛 =1
+
+𝐸 H(n) 𝑄 H(n) (𝑇 e,H)
+
+Í𝑛 max  
+
+> 𝑛 =1
+
+𝑄 H(n) (𝑇 e,H) . (44) In the post-shock region, the rovibrational energy of H 2, the electronic energy of H, and the electron translational energy all begin in a state of non-equilibrium with the heavy-gas translational mode. Then, each of these modes follow the same general steps to reach equilibrium; namely, an initial rise from the pre-shock condition, followed by a QSS region, and finally a relaxation to equilibrium with the heavy-gas translational mode. These QSS conditions 
+
+> ‡Equation (43) was proposed by Mirels for the case with a Prandtl number of 0.72. It is assumed that this correlation is also appropriate for the H2/ He shocks considered here, as the frozen Prandtl number is estimated to be approximately 0.68 for all shot conditions (based on the collision integral fits of Palmer et al. [5]).
+
+25 0 2 4 6               
+
+> 0123410 4
+> -0.1 00.1 0.2 0.3
+> 05000 10000 15000
+> 0246
+> 10 -8
+> 10 -6
+> 10 -4
+> 10 -2
+> 10 0
+> 036912
+> 10 8
+> 10 11
+> 10 14
+> 10 17
+> 10 20
+> 10 11 12 13
+> 10 8
+> 10 10
+> 10 12
+
+Fig. 11 Simulated temperatures (left), mass fractions (middle), and H( 𝒏 ) distributions (right) for shot 23 ( 𝑷 0
+
+= 0.51 torr and 𝒖 0 = 27.63 km/s). 
+
+arise from the competition between the relevant production and consumption processes for each energy mode. For the rovibrational energy of H 2 and the electronic energy of H, these are the excitation and dissociation/ ionization of internal energy states; for the electron translational mode, these are the elastic and inelastic collision processes. For the rovibrational energy of H 2, the QSS plateau (characterized by an approximate 3,000 K difference between 
+
+𝑇 t,h and 𝑇 rv ,H2 ) is reached around 𝑥 ≈ 0.05 cm, and equilibrium with the heavy-gas translational mode is reached by 
+
+𝑥 ≈ 0.25 cm. For the electronic mode of H, 𝑇 e,H establishes a QSS condition by 𝑥 ≈ 0.1 cm, but does not equilibrate until further downstream at 𝑥 ≈ 4 to 5 cm. Similarly, for the electron translational mode, the QSS plateau (with an approximate 500 K difference between 𝑇 t,h and 𝑇 t,e− ) is reached around 𝑥 ≈ 0.1 cm, but equilibrium with the heavy-gas translational mode is not reached until 𝑥 ≈ 4 to 5 cm, when H, H +, and e − have reached the Saha equilibrium condition. Together, these results suggest that while H 2 rovibrational relaxation and dissociation occur rapidly in the post-shock flow, H electronic relaxation and ionization occur over a significantly longer timescale. These trends are also reflected in the mass fraction and H( n) Boltzmann plots. Namely, the mass fraction plot shows the rapid dissociation of H 2, in contrast to the relatively slow ionization of H and production of H + and e − .Consistent with this slow ionization trend, the Boltzmann plots show non-Boltzmann H( n) distributions (characterized by depleted tails for the n > 2 states), which do not relax to a Boltzmann distribution until 𝑥 ≈ 4 cm. Similar trends of the rapid dissociation of H 2 within 𝑥 ® 0.5 cm of the shock front and the slow ionization of H over several centimeters were observed for all shot conditions. 
+
+B. Radiation 
+
+1. Atomic H Features 
+
+Figures 12 and 13 show the radiance profiles for shot 23 for the dominant atomic H features, i.e., the Lyman-𝛼 
+
+(𝑛 = 2 → 1) and Balmer-𝛼 (𝑛 = 3 → 2) lines, respectively. The integrated radiance for the Lyman-𝛼 feature is only shown for 𝑥 ≥ 1 cm, as there is an overlap with the H 2 Lyman band for earlier post-shock locations. In general, both of these features are predicted accurately by the computational model. While there is a slight overprediction of the 26 radiance in the induction zone from 𝑥 ≈ 0 to 3 cm, the slope in the subsequent rise for the 𝑥 ¦ 3 cm region are captured well for both features. The spectral plot for the Balmer-𝛼 feature in particular shows an excellent agreement in both shape and magnitude in the post-induction zone.            
+
+> 123456
+> 0246810 12
+> 118 120 122 124 126 128 130
+> 0300 600 900 1200 1500
+
+Fig. 12 Integrated radiance over 117 to 130 nm (left) and mean spectral radiance over 𝒙 = 3 to 4 cm (right) for the Lyman-𝜶 feature.           
+
+> -2 0246
+> 0246810
+> 653 654 655 656 657 658 659
+> 02000 4000 6000 8000
+
+Fig. 13 Integrated radiance over 653 to 659 nm (left) and mean spectral radiance over 𝒙 = 3 to 4 cm (right) for the Balmer-𝜶 feature. 
+
+In contrast, the integrated radiance for the higher-order Balmer series features shown in Figure 14 is predicted accurately for 𝑥 ® 2 cm, but is then underpredicted in the far post-shock region. Notably, the predicted radiance is approximately a factor of two lower than the experimental values at 𝑥 = 6 cm, where the gas is expected to be near or at equilibrium. The corresponding mean spectral radiance plots show that this is due to an underprediction of the magnitudes of all of the features in this spectral range. The integrated radiance profiles for all other simulated shot conditions are given in Fig. 15. The Lyman-𝛼 feature was not measured for shots 7 and 11. For the higher-order Balmer series features at 𝑃 0 = 0.1 and 0.2 torr, the integrated wavelength range is limited to only include the Balmer-𝛽 feature. This is done to minimize the impact of contaminants on the radiance profiles, which appear in the 330 to 475 nm range for these lower pressure conditions. While the radiance in the induction zones for the Lyman-𝛼 and Balmer-𝛼 features are overpredicted for some shot conditions, the 27 -2 0 2 4 6        
+
+> 0510 15
+> 330 360 390 420 450
+> 0100 200 300
+> 475 480 485 490 495
+> 0200 400 600 800 1000
+
+Fig. 14 Integrated radiance over 323 to 497 nm (left) and mean spectral radiance over 𝒙 = 3 to 4 cm for the Balmer-𝜸 through continuum (middle) and Balmer-𝜷 (right) features. 
+
+locations and magnitudes for the post-induction zone radiance are well predicted for nearly all shot conditions. For the higher-order Balmer series features, the radiance in the induction zones are predicted accurately. However, the radiance in the far post-shock region is underpredicted for all shots besides shot 11. All together, the results presented in Fig. 12 - 15 suggest that the proposed model of the present work gives relatively accurate predictions of both the trends and magnitudes of atomic H radiation for the simulated shock conditions. This implies that, using the kinetic model of the present work, the electron and heavy-particle-impact processes are sufficient for reproducing the majority of the trends in the EAST data for H radiation. This will be discussed further in the context of alternate kinetic models from the literature in section IV.D. 
+
+2. 𝐻 2 Lyman Band 
+
+The measured and computed radiance profiles for the H 2 Lyman band for shot 23 are shown in Fig. 16. Recall that in the calculations, all H 2 rovibrational and electronic states are assumed to follow Boltzmann distributions about 
+
+𝑇 rv ,H2 and 𝑇 t,e− , respectively. Despite the simplicity of this assumption, the results of Fig. 16 show that the majority of the features in the Lyman band are captured well by the computational model. In particular, there is excellent agreement in both the shape and magnitude of the radiance for most of the plotted spectral range. However, there is an underprediction of the highest magnitude peaks between approximately 154 and 162 nm, which results in a corresponding underprediction of the integrated radiance at the shock front when compared to the experiments. For the integrated radiance, the shape of the profile is impacted significantly by two effects: physical shock spreading due to viscosity, and the resolution of the measurements (represented by the SRF). As viscous effects are neglected in the calculations and the spatial motion is represented as a square, the shape of the simulated profile appears more rectangular than the experiments. The integrated radiance profiles for all other simulated shot conditions are shown in Fig. 17 (excluding shots 7 and 11 for which the Lyman band was not measured). In contrast to the results for shot 23, the integrated radiance at the shock front is overpredicted by the computational model at the lower pressure shot conditions ( 𝑃 0 = 0.1 and 0.2 torr). 28 1 2 3 4                                    
+
+> 00.2 0.4 0.6 0.8
+> 123456
+> 01234
+> 123456
+> 0510 15
+> -2 024
+> 00.5 11.5
+> -2 024
+> 00.2 0.4
+> -2 0246
+> 0123
+> -2 024
+> 00.25 0.5
+> -2 0246
+> 0246810 12
+> -2 024
+> 012
+> -2 024
+> 00.1 0.2 0.3 0.4 0.5
+> -2 024
+> 00.05 0.1
+
+(a) 𝑷 0 = 0.1 torr        
+
+> -2 0246
+> 00.5 11.5
+> -2 024
+> 00.05 0.1
+
+(b) 𝑷 0 = 0.2 torr        
+
+> -2 0246
+> 0510 15 20
+> -2 024
+> 012
+
+(c) 𝑷 0 = 0.5 torr 
+
+Fig. 15 Integrated radiance for the Lyman-𝜶 (top), Balmer-𝜶 (center) and higher-order Balmer series (bottom) features at increasing freestream pressures (left to right). Colored and black lines correspond to measured and simulated radiance values, respectively. Integrated wavelength ranges are indicated on each figure.         
+
+> -2 -1 012
+> 0510 15 20
+> 130 140 150 160 170
+> 0200 400 600 800
+
+Fig. 16 Integrated radiance over 130 to 173 nm (left) and mean spectral radiance over 𝒙 = -0.5 to 0.5 cm (right) for the Lyman band feature. 
+
+29 Additionally, the predicted shock widths are noticeably smaller than the measured profiles at these conditions. This is likely due to the neglecting of viscosity/ diffusion in the calculations of the present work, as these effects will broaden the shock to have a non-zero thickness that is inversely proportional to the freestream pressure. For shot 22 at 0.5 torr, the same underprediction of the radiance at the shock front as was seen for shot 23 is observed.                   
+
+> -2 -1 012
+> 0510 15
+> (a) 𝑷 0= 0.1 torr
+> -2 -1 012
+> 0510 15 20
+> (b) 𝑷 0= 0.2 torr
+> -2 -1 012
+> 0510 15 20 25
+> (c) 𝑷 0= 0.5 torr
+
+Fig. 17 Integrated radiance for the Lyman band feature (130 to 173 nm) at increasing freestream pressures (left to right). Colored and black lines correspond to measured and simulated radiance values, respectively. 
+
+While there are clearly some discrepancies between the measured and computed radiance values of the H 2 Lyman band as shown in Fig. 16 and 17, the integrated radiance is predicted within a factor of two for nearly all shot conditions using the very simple Boltzmann and inviscid core flow assumptions of the present work. Future work should incorporate viscous effects as well as a non-Boltzmann model for H 2 electronic states to improve the agreement between the measured and simulated radiance profiles. 
+
+C. Sensitivity Analysis 
+
+1. Kinetic Rates 
+
+To illustrate the sensitivity of the computed radiance values to uncertainties in the kinetic rates, several calculations are performed for the shot 23 conditions with the rate constants modified from the baseline model presented in the previous sections. Figure 18 shows the radiance for the Balmer-𝛼 feature, where either the electron-impact excitation and ionization rate constants have been increased or decreased by 15% (based on the estimated uncertainty from section II.A), or the heavy-particle-impact excitation and ionization rate constants have been replaced by those of Park [66] or Drawin [53]. In general, the significantly smaller uncertainty in the electron-impact rates leads to a much smaller variation in the radiance when compared to the heavy-particle-impact rates. For the heavy-particle-impact rates, the use of either the Park or Drawin rate constants leads to a considerably faster or slower equilibration process, respectively. Additionally, the variation in the electron-impact rates leads to changes in the slope of the post-induction zone radiance but not the length of the induction zone itself, while the opposite is true for the heavy-particle-impact rates. This is consistent with the understanding that heavy-particle-impact ionization is responsible for producing 30 the initial electrons in the kinetic model, so the heavy-particle-impact processes act as a rate-limiting step for the subsequent electron-impact processes. As the degree of ionization increases further downstream however, excitation and ionization become dominated by electron-impact collisions.         
+
+> -2 0246
+> 0246810
+> -2 0246
+> 0246810
+
+Fig. 18 Sensitivity of the Balmer-𝜶 integrated radiance over 653 to 659 nm to changes in the electron-impact (left) and heavy-particle-impact (right) excitation and ionization rates. 
+
+To illustrate the sensitivity of the radiance profiles to the heavy-particle-impact rates in a more granular fashion, Fig. 19 shows the radiance for the Lyman-𝛼 and Balmer-𝛼 features, where only one of the heavy-particle-impact mono-quantum excitation rate constants has been modified. There are two key observations from these results. Firstly, there is a much larger sensitivity of the radiance to the 𝑛 = 1 → 2 transition when compared to the higher-order transitions, such that the length of the induction zone is almost entirely controlled by the 𝑛 = 1 → 2 rate constant. Secondly, the radiation in the induction zone for the Lyman-𝛼 and Balmer-𝛼 features can be reduced without significantly changing the post-induction zone radiance by increasing the 𝑛 = 2 → 3 and 𝑛 = 3 → 4 rate constants, respectively. This suggests that while the radiance predictions of the baseline model are reasonably accurate, the predictions in the induction zone could potentially be improved by modifying the baseline heavy-particle-impact rate constants. Figure 20 shows the radiance for the H 2 Lyman band, where either the QSS non-recombining dissociation rate constants, 𝑘 d,nr , for all third-bodies have been modified by a factor of two, or the pre-QSS correction in the dissociation model has been neglected. Carroll et al. [27] found that the uncertainty in 𝑘 d,nr for all relevant third-bodies was approximately a factor of two. Only the results for the H 2 Lyman band are shown, as minimal differences were seen in the atomic H features. When the rate of H 2 dissociation is increased (either by increasing 𝑘 d,nr or by neglecting pre-QSS effects), H 2 is consumed more quickly and hence the predicted radiance of the Lyman band is decreased, and vice versa. In particular, increasing or decreasing 𝑘 d,nr by a factor of two leads to over a magnitude decrease or increase, respectively, in the radiance, while neglecting pre-QSS effects reduces the radiance by approximately a factor of two. This large sensitivity implies that an accurate characterization of H 2 dissociation rates, including rovibrational non-equilibrium and pre-QSS effects, is critical for predictions of the Lyman band radiance. 31 1 2 3 4 5 6              
+
+> 0510 15
+> 123456
+> 0510 15
+> 123456
+> 0510 15
+> -2 0246
+> 0246810
+
+(a) 𝒌 M≠e− (1 → 2)    
+
+> -2 0246
+> 0246810
+
+(b) 𝒌 M≠e− (2 → 3)    
+
+> -2 0246
+> 0246810
+
+(c) 𝒌 M≠e− (3 → 4)
+
+Fig. 19 Sensitivity of the Lyman-𝜶 integrated radiance over 117 to 130 nm (top) and Balmer-𝜶 integrated radiance over 653 to 659 nm (bottom) to changes in the heavy-particle-impact excitation rate constants.         
+
+> -2 -1 012
+> 10 -2
+> 10 -1
+> 10 0
+> 10 1
+> 10 2
+> 130 140 150 160 170
+> 10 0
+> 10 1
+> 10 2
+> 10 3
+> 10 4
+
+Fig. 20 Sensitivity of the Lyman band integrated radiance over 130 to 173 nm (left) and mean spectral radiance over 𝒙 = -0.5 to 0.5 cm (right) to changes in the dissociation rates. 
+
+2. Boundary Layer Treatment 
+
+The impact of varying either the treatment of the boundary layer in the governing equations or the test slug length on the Balmer-𝛼 radiance is shown in Fig. 21. In the “No Boundary Layer Treatment” case, the standard Rankine-Hugoniot governing equations are solved with no corrections applied for boundary layer effects; in the “Time-of-Flight Correction” case, the time-of-flight correction of Clarke et al. [83] is applied a posteriori to the Rankine-Hugoniot solution to account for spatial transformation effects, but the coupled compression effects solved in Eq. (27)-(30) are neglected. While the time-of-flight correction significantly improves the agreement between the simulations and 32 experiments, without the coupled compression effect, it is not sufficient to reproduce the slope in the post-induction zone radiance. This is especially true at the 𝑃 0 = 0.1 and 0.2 torr conditions (not shown), where the rise in the post-induction zone radiance is almost entirely due to boundary layer effects. Separately, varying the test slug length by ±25% shows that there is a relatively weak dependence of the radiance to uncertainties in 𝐿 .        
+
+> -2 0246
+> 0246810
+> -2 0246
+> 0246810
+
+Fig. 21 Sensitivity of the Lyman-𝜶 integrated radiance over 117 to 130 nm to the boundary layer treatment method (left) or the test slug length (right). 
+
+A key observation to make here is that of all of the tested uncertainties, only the electron-impact rates and the boundary layer treatment lead to significant changes in the slope of the post-induction zone radiance. Therefore, if a less physical treatment of the boundary layer was used, the electron-impact rate constants would have to be modified beyond their uncertainty bounds to compensate for this error. The agreement for the slope of the post-induction zone radiance, along with the relatively small uncertainties in the electron-impact rate constants, supports the validity of the boundary layer treatment in the present work. 
+
+D. Comparison to Alternate Kinetic Models 
+
+Finally, the second-level electronic temperatures of H, computed as 
+
+𝑇 e,H(2,3) = 𝐸 H(𝑛 =3) − 𝐸 H(𝑛 =2)
+
+𝑘 B ln 
+
+( 𝑁 H(n=2) /𝑔 H(n=2) 
+
+> 𝑁 H(n=3)/𝑔 H(n=3)
+
+) , (45) are shown in Fig. 22 alongside the predicted profiles by Colonna et al. [8], and the values extracted via Stark analysis of the Balmer-𝛼 line from the EAST experiments. There are two versions of the StS model by Colonna et al.; the first includes the species H 2, H + 
+
+> 2
+
+, H, H +, He, He +, and e − (referred to as their “reduced” model), while the only difference in the second is the inclusion of the additional species H + 
+
+> 3
+
+and H − (referred to as their “full” model). In both versions, the vibrational states of H 2, the electronic states of H 2, H, and He, and a non-Maxwellian electron energy distribution function are treated explicitly, such that over 100 pseudo-species are included. Both versions use the heavy-particle-impact excitation and ionization rate constants of Drawin [53]. 33 0 1 2 3 4 5 6      
+
+> 5000 7000 9000 11000
+> 0123456
+> 5000 7000 9000 11000
+
+Fig. 22 Second-level electronic temperatures of H for shot 7 (left) and shot 22 (right). 
+
+Overall, the present model predicts 𝑇 e,H(2,3) more faithfully than either model of Colonna et al., despite only treating 11 species explicitly. The agreement in the induction zone temperatures is particularly satisfying, and indicates that the heavy-particle-impact rate constants of the low-lying states are reasonably accurate, as the H( n) populations in the induction zone are effectively only a function of the heavy-particle-impact rates (as implied by the results presented in section IV.C.1). Without the inclusion of H + 
+
+> 3
+
+and H − , the model of Colonna et al. predicts a significantly slower relaxation, which results in a 𝑇 e,H(2,3) profile that severely underpredicts the experiments. With the inclusion of H +
+
+> 3
+
+and H − , a faster relaxation process is predicted, with profiles that are more comparable, but still overpredict, the experiments. Based on these results, Colonna et al. argued that the inclusion of H + 
+
+> 3
+
+and H − is necessary, as these species provide an alternate pathway to ionization in the early post-shock region. However, the pathway that they postulate, namely H 2 + H2 → H+ 
+
+> 3
+
++ H− → · · · → H+ + e− + . . . , begins in the immediate post-shock region. As a result, it proceeds too quickly to reproduce the experimentally-observed induction zone behavior. Figure 23 similarly shows the predicted electron number densities of the present work, alongside those of Colonna et al., Liu et al. [10], and the experimentally-extracted values. The experimental values have been extracted via Stark analysis of the Balmer-𝛼 line for shots 11, 17, and 20 (shown as red symbols), and of the Balmer-𝛾 line for shots 7, 22, and 25 (shown as blue symbols) [6]. The kinetic model of Liu et al. is based on a one-temperature framework which only treats the bulk species H 2, H, H +, He, He +, and e − . Their rate constants are the same as those of Leibowitz [19, 20], except for the H electron and heavy-particle-impact ionization rate constants for which an ad hoc modification factor was applied. For shots 11, 17, and 20, the simulated values of all models are smaller than the experimental values, and significant portions of the simulated profiles are below the detection limits of the experiments. For shot 11, the post-induction zone rise in 𝑁 e− is best captured by the present work. As discussed in section IV.C.2, this is effectively entirely due to the treatment of boundary layer effects, which were neglected in the simulations of Colonna et al. and Liu et al. For shots 7, 22, and 25, the models of the present work, Liu et al., and Colonna et al. with H + 
+
+> 3
+
+and H − generally overpredict 34 0 1 2 3 4                                        
+
+> 01234510 15
+> 0123456
+> 012310 15
+> 0123456
+> 0246810 15
+> 01234
+> 0246810 10 14
+> (a) 𝑷 0= 0.1 torr
+> 0123456
+> 01234510 15
+> (b) 𝑷 0= 0.2 torr
+> 0123456
+> 0246810 12 10 15
+> (c) 𝑷 0= 0.5 torr
+
+Fig. 23 Electron number densities at increasing freestream pressures (left to right). Red and blue symbols indicate values extracted from the EAST experiments via the Balmer-𝜶 and Balmer-𝜸 lines, respectively. 
+
+the experimental results (except Colonna et al. in the far post-shock region for shot 22). As in Fig. 22, the model of Colonna et al. without H + 
+
+> 3
+
+and H − significantly underpredicts the experiments. Most notably however, the models of Colonna et al. and Liu et al. both predict a steady rise in 𝑁 e− starting at the shock front and with no inflection point, and hence miss the induction zone behavior seen in the experiments and reproduced by the present work. As was shown in section IV.C.1, this induction zone behavior is controlled by the heavy-particle-impact processes, and thus suggests that the heavy-particle-impact rate constants are mischaracterized in these alternate models. Ultimately, the results of both Fig. 22 and 23 imply that the present model gives improved predictions of the experimental profiles when compared to the models of Colonna et al. and Liu et al., despite not including the trace species H + 
+
+> 3
+
+, H − , or H + 
+
+> 2
+
+,and without the use of tuned rate constants. 
+
+# V. Conclusion 
+
+In this work, the kinetics and radiation for high-speed H 2/ He shocks were investigated using an 11-species thermochemical model, which explicitly treats the non-Boltzmann kinetics of atomic H in a state-specific framework. A detailed literature review of the electron and heavy-particle-impact kinetics of atomic H was conducted to construct this model. Then, a novel method for the treatment of coupled boundary layer effects in 1-D steady shocks was derived, and used to simulate H 2/ He shocks corresponding to the experiments of Cruden and Bogdanoff [6]. The simulated radiance profiles compared reasonably well to the experimental profiles, especially for the dominant mono-quantum 35 Lyman-𝛼 and Balmer-𝛼 features of atomic H. To probe the impact of modeling uncertainties on the predicted radiance, an uncertainty analysis of the kinetics and boundary layer treatment was performed. From this, the sensitivity of the induction zone behavior to the heavy-particle-impact rates and boundary layer treatment method was revealed. Finally, the predictions of the present work were found to reproduce the experiments more accurately than the previous studies by Colonna et al. [8] and Liu et al. [10]. Overall, the present results suggest several key findings about the kinetic modeling and prediction of radiation in H 2/ He shock environments. Firstly, there is currently a lack of reliable and consistent kinetic data available for heavy-particle-impact excitation and ionization of atomic H in the literature. Moreover, there is a large sensitivity for the predicted radiance in the induction zone to these heavy-particle-impact rates. Secondly, the correct treatment of boundary layer effects, including coupled compression effects, is critical for the accurate reproduction of experimental results, especially at the lower pressure conditions investigated in the present work ( 𝑃 0 = 0.1 and 0.2 torr). Thirdly, while there are still some discrepancies remaining, the proposed kinetic model reproduces the experimental results more accurately than alternate models from the literature, despite not using any tuned rate constants, and by only explicitly treating the kinetics of H 2 dissociation and H ionization. To further improve radiance predictions for H 2/ He shocks, future work should include the investigation of viscous effects and non-Boltzmann electronic state distributions for H 2. Additionally, the studies by Park [105], Cruden and Bogdanoff [6], and Coelho and Lino da Silva [13] have all suggested that the trace methane (CH 4) present in the atmospheres of the ice and gas giants may have a non-negligible impact on radiative heating. Therefore, CH 4 and its associated dissociated/ ionized species should be incorporated into the kinetics, and the resulting model should be verified against the recent experiments of Steer et al. [106] and Cruden and Tibère-Inglesse [104]. 
+
+# Appendix A: Impact of Radiative Processes 
+
+To simplify the solution procedure, radiative processes have been neglected in the present governing equations. This is equivalent to assuming that all radiation is completely self-absorbed/ optically thick. To assess the sensitivity of the results to this assumption, radiative transitions for H are incorporated into the kinetic model. Considering both bound-bound and free-bound (radiative recombination) transitions, the contribution of radiation to the chemical source term of H( n) is given by 
+
+¤𝜔 H(n),rad =
+
+> 𝑛 max
+
+Õ 
+
+> 𝑛 ′=𝑛 +1
+
+𝑁 H(n′ ) 𝐴 𝑛 ′ →𝑛 Λ𝑛 ′ →𝑛 −
+
+> 𝑛 −1
+
+Õ 
+
+> 𝑛 ′=1
+
+𝑁 H(n) 𝐴 𝑛 →𝑛 ′ Λ𝑛 →𝑛 ′ + 𝑁 H+ 𝑁 e− 𝐴 ∞→ 𝑛 Λ∞→ 𝑛 . (46) Here, the escape factor formulation is used to account for absorption, with values of Λ = 0 and Λ = 1 corresponding to the optically thick and thin limits, respectively. The corresponding total energy and electron energy radiative source 36 terms are given by 
+
+¤Ωrad = −
+
+> 𝑛 max
+
+Õ
+
+> 𝑛 =2
+> 𝑛 −1
+
+Õ 
+
+> 𝑛 ′=1
+
+𝑁 H(n) 𝐴 𝑛 →𝑛 ′ Λ𝑛 →𝑛 ′ (𝐸 H(𝑛 ) − 𝐸 H(𝑛 ′ ) ) − 
+
+> 𝑛 max
+
+Õ
+
+> 𝑛 =1
+
+𝑁 H+ 𝑁 e− 𝐴 ∞→ 𝑛 Λ∞→ 𝑛 (𝐸 H+ − 𝐸 H(𝑛 ) ) (47) and 
+
+¤Ωe− ,rad = −
+
+> 𝑛 max
+
+Õ
+
+> 𝑛 =1
+
+𝑁 H+ 𝑁 e− 𝐴 ∞→ 𝑛 Λ∞→ 𝑛 (𝐸 H+ − 𝐸 H(𝑛 ) ), (48) respectively. Bound-bound Einstein coefficients ( 𝐴 𝑛 →𝑛 ′ ) are taken from the NIST database [107] while free-bound rate constants ( 𝐴 ∞→ 𝑛 ) are taken from Janev et al. [25]. H 2 and free-free (Bremsstrahlung) radiation are neglected. To compute escape factors, the local temperature and number density values from the optically-thick calculations of section IV.A are used as inputs into NEQAIR’s escape factor routine (under the local approximation with a characteristic distance of 1.0 cm as recommended by [100]). The resulting escape factors for the 𝛼 , 𝛽 , and 𝛾 lines of the Lyman, Balmer, and Paschen series for the shot 23 conditions are shown in Fig. 24. From these results, it is clear that the escape factor for each transition varies considerably with 𝑥 . Therefore, to obtain a conservative estimate of radiative losses, the maximum value (in 𝑥 ) of each transition’s escape factor is used in Eq. (46)-(48) for the Lyman, Balmer, and Paschen series. All higher-order and free-bound transitions are assumed to be optically thin.       
+
+> 0123456
+> 10 -15
+> 10 -10
+> 10 -5
+> 10 0
+
+Fig. 24 Escape factors as computed by NEQAIR for the shot 23 case. 
+
+The resulting integrated radiance profiles for the Lyman-𝛼 and Balmer-𝛼 features for shot 23 are shown in Fig 25. The impact of radiative processes are found to be negligible. Similar results were obtained for all shot conditions. 
+
+# Appendix B: Impact of H +
+
+2
+
+Throughout the present work, the associative ionization reaction which results in the production of H + 
+
+> 2
+
+, i.e., H(n ≥ 2) + H(n = 1) ↔ H+ 
+
+> 2
+
++ e− , (49) 37 1 2 3 4 5 6    
+
+> 0246810 12
+> -2 0246
+> 0246810
+
+Fig. 25 Integrated radiance profiles for the Lyman-𝜶 (117 to 130 nm, left) and the Balmer-𝜶 (653 to 659 nm, right) features with and without radiative processes. 
+
+has been neglected. However, for high-speed flows in air mixtures, associative ionization reactions are known to play a key role in the post-shock ionization process [108, 109]. To assess the impact of associative ionization for H 2/ He mixtures, reaction (49) is incorporated in the present kinetic model using the state-specific rate constants of Mihajlov et al. [70] and Srećković et al. [71]. Figure 26 shows the computed mass fraction and Lyman-𝛼 / Balmer-𝛼 integrated radiance profiles for shot 23 with and without H + 
+
+> 2
+
+. Other than the non-zero mass fraction of H + 
+
+> 2
+
+, the inclusion of H + 
+
+> 2
+
+has a negligible impact on all computed quantities of interest. The same result was found for all shot conditions. This suggests that H + 
+
+> 2
+
+can be neglected in simulations of H 2/ He shocks, at least at conditions similar to those considered in the present work.             
+
+> 0246
+> 10 -8
+> 10 -6
+> 10 -4
+> 10 -2
+> 10 0
+> 123456
+> 0246810 12
+> -2 0246
+> 0246810
+
+Fig. 26 Simulated mass fractions (left) and integrated radiance profiles for the Lyman-𝜶 (117 to 130 nm, middle) and the Balmer-𝜶 (653 to 659 nm, right) features with and without H + 
+
+> 2
+
+in the kinetic model. 
+
+This is the opposite conclusion to that reached in the recent ice giant aerothermal uncertainty analysis study of Rataczak et al. [17]. Specifically, Rataczak et al. found that the inclusion of H + 
+
+> 2
+
+had a significant impact on ionization profiles and hence radiative heating predictions, despite using the same associative ionization rate constants as the present analysis. This seeming contradiction is likely due to the fact that Rataczak et al. used a traditional two-temperature kinetic model which assumed that the electronic states of H follow a Boltzmann distribution about a mixture-averaged vibrational-electronic temperature, 𝑇 ve . To illustrate the impact of such an assumption, Fig. 27 shows 38 the effective macroscopic associative ionization rate constant for shot 23, where 
+
+𝑘 AI =
+
+Í𝑛 max  
+
+> 𝑛 =1
+
+𝑁 H(𝑛 ) 𝑘 AI ,H(𝑛 ) (𝑇 t,h)
+
+Í𝑛 max  
+
+> 𝑛 =1
+
+𝑁 H(𝑛 )
+
+(50) is computed a posteriori by either using the exact non-Boltzmann H( n) distribution from the present StS simulation, or a “reconstructed” Boltzmann H( n) distribution at 𝑇 e,H or 𝑇 rv ,H2 . While the 𝑇 e,H Boltzmann case overpredicts the StS rate constant by approximately a factor of two, the 𝑇 rv ,H2 Boltzmann case overpredicts the StS rate constant by two orders of magnitude. These results further underscore the importance of treating non-Boltzmann H( n) distributions in H2/ He shock simulations.        
+
+> -1 0123456
+> 10 7
+> 10 8
+> 10 9
+> 10 10
+> 10 11
+
+Fig. 27 Macroscopic associative ionization rate constants computed a posteriori for the shot 23 case with H + 
+
+> 2
+
+.
+
+# Acknowledgments 
+
+This work is supported by the NASA entry systems modeling project under grant number 80NSSC21K1751. 
+
+# References 
+
+[1] Johnson, L. C., “Approximations for Collisional and Radiative Transition Rates in Atomic Hydrogen,” The Astrophysical Journal , Vol. 174, 1972, p. 227. https://doi.org/10.1086/151486. [2] Mirels, H., “Test Time in Low-Pressure Shock Tubes,” The Physics of Fluids , Vol. 6, No. 9, 1963, p. 1201–1214. https://doi.org/10.1063/1.1706887. [3] National Research Council, Vision and Voyages for Planetary Science in the Decade 2013-2022 , The National Academies Press, Washington, DC, 2011. https://doi.org/10.17226/13117. [4] National Academies of Sciences, Engineering, and Medicine, Origins, Worlds, and Life: A Decadal Strategy for Planetary Science and Astrobiology 2023-2032 , The National Academies Press, Washington, DC, 2022. https://doi.org/10.17226/26522. 
+
+39 [5] Palmer, G., Prabhu, D., and Cruden, B. A., “Aeroheating Uncertainties in Uranus and Saturn Entries by the Monte Carlo Method,” Journal of Spacecraft and Rockets , Vol. 51, No. 3, 2014, pp. 801–814. https://doi.org/10.2514/1.a32768. [6] Cruden, B. A., and Bogdanoff, D. W., “Shock Radiation Tests for Saturn and Uranus Entry Probes,” Journal of Spacecraft and Rockets , Vol. 54, No. 6, 2017, pp. 1246–1257. https://doi.org/10.2514/1.a33891. [7] Higdon, K. J., Cruden, B. A., Brandis, A. M., Liechty, D. S., Goldstein, D. B., and Varghese, P. L., “Direct Simulation Monte Carlo Shock Simulation of Saturn Entry Probe Conditions,” Journal of Thermophysics and Heat Transfer , Vol. 32, No. 3, 2018, pp. 680–690. https://doi.org/10.2514/1.t5275. [8] Colonna, G., Pietanza, L. D., and Laricchiuta, A., “Ionization kinetic model for Hydrogen-Helium atmospheres in hypersonic shock tubes,” International Journal of Heat and Mass Transfer , Vol. 156, 2020, p. 119916. https://doi.org/10.1016/j.ijheatmasstransfer.2020.119916. [9] Liu, Y., James, C. M., Morgan, R. G., and McIntyre, T. J., “Using Aerothermodynamic Similarity to Experimentally Study Nonequilibrium Giant Planet Entry,” Journal of Spacecraft and Rockets , Vol. 57, No. 5, 2020, p. 1008–1020. https://doi.org/10.2514/1.a34713. [10] Liu, Y., James, C. M., Morgan, R. G., Jacobs, P. A., Gollan, R., and McIntyre, T. J., “Electron Number Density Measurements in a Saturn Entry Condition,” AIAA Journal , Vol. 60, No. 3, 2022, p. 1303–1315. https://doi.org/10.2514/1.j060560. [11] Hansson, K., Carroll, A. T., Poovathingal, S. J., and Boyd, I. D., “Analysis of Chemical Kinetic Parameters for Hydrogen Atmospheres,” AIAA Scitech 2021 Forum , American Institute of Aeronautics and Astronautics, 2021. https://doi.org/10.2514/6.2021-0706. [12] Carroll, A. T., and Brandis, A. M., “Stagnation Point Convective Heating Correlations for Entry into H2/He Atmospheres,” AIAA SCITECH 2023 Forum , American Institute of Aeronautics and Astronautics, 2023. https://doi.org/10.2514/6.2023-0208. [13] Coelho, J., and da Silva, M. L., “Aerothermodynamic analysis of Neptune ballistic entry and aerocapture flows,” Advances in Space Research , Vol. 71, No. 8, 2023, pp. 3408–3432. https://doi.org/10.1016/j.asr.2022.12.024. [14] Scoggins, J. B., Hinkle, A. D., and Shellabarger, E., “Aeroheating Environment of Aerocapture Systems for Uranus Orbiters,” 
+
+AIAA Scitech 2024 Forum , American Institute of Aeronautics and Astronautics, 2024. https://doi.org/10.2514/6.2024-0951. [15] Steer, J., Collen, P., Glenn, A., Hambidge, C., Doherty, L. J., McGilvray, M., Sopek, T., Loehle, S., and Walpot, L., “Commissioning of Upgrades to T6 to Study Giant Planet Entry,” Journal of Spacecraft and Rockets , 2024, p. 1–18. https://doi.org/10.2514/1.a35893. [16] Steuer, D. C., Donaldson, N., Dürnhofer, C. A., Leiser, D., Fasoulas, S., and Loehle, S., “Investigation on the Usability of Arc-Jet Generators for the Experimental Simulation of Giant Planet Entry,” AIAA Aviation FORUM AND ASCEND 2024 ,American Institute of Aeronautics and Astronautics, 2024. https://doi.org/10.2514/6.2024-3552. 
+
+40 [17] Rataczak, J. A., Boyd, I. D., and McMahon, J. W., “Uncertainty Quantification and Sensitivity Analysis of Ice Giant Aerocap-ture Aerothermodynamics,” Journal of Thermophysics and Heat Transfer , 2025, p. 1–22. https://doi.org/10.2514/1.t7134. [18] Stalker, R. J., and Edwards, B. P., “Hypersonic Blunt-Body Flows in Hydrogen-Neon Mixtures,” Journal of Spacecraft and Rockets , Vol. 35, No. 6, 1998, p. 729–735. https://doi.org/10.2514/2.3399. [19] Leibowitz, L. P., “Measurements of the structure of an ionizing shock wave in a hydrogen-helium mixture,” The Physics of Fluids , Vol. 16, No. 1, 1973, pp. 59–68. https://doi.org/10.1063/1.1694174. [20] Leibowitz, L. P., and Kuo, T.-J., “Ionizational Nonequilibrium Heating During Outer Planetary Entries,” AIAA Journal ,Vol. 14, No. 9, 1976, pp. 1324–1329. https://doi.org/10.2514/3.61465. [21] Park, C., Jaffe, R. L., and Partridge, H., “Chemical-Kinetic Parameters of Hyperbolic Earth Entry,” Journal of Thermophysics and Heat Transfer , Vol. 15, No. 1, 2001, pp. 76–90. https://doi.org/10.2514/2.6582. [22] Boyd, I. D., “Monte Carlo simulation of nonequilibrium flow in a low-power hydrogen arcjet,” Physics of Fluids , Vol. 9, No. 10, 1997, pp. 3086–3095. https://doi.org/10.1063/1.869474. [23] Janev, R. K., Langer, W. D., Post, D. E., and Evans, K., Elementary Processes in Hydrogen-Helium Plasmas , Springer Berlin Heidelberg, 1987. https://doi.org/10.1007/978-3-642-71935-6. [24] Janev, R. K., and Smith, J. J., Cross sections for collision processes of hydrogen atoms with electrons, protons and multiply charged ions , International Atomic Energy Agency (IAEA), 1993. [25] Janev, R. K., Reiter, D., and Samm, U., “Collision processes in low-temperature hydrogen plasmas,” Tech. rep., Institut für Plasmaphysik EURATOM Association, Trilateral Euregio Cluster, 2003. [26] Carroll, A. T., Blanquart, G., Brandis, A. M., and Cruden, B. A., “Treatment of Thermal Nonequilibrium Dissociation: Theory and Application to H 2,” Journal of Thermophysics and Heat Transfer , 2026, p. 1–16. https://doi.org/10.2514/1.t7242. [27] Carroll, A. T., Wolmer, J., Blanquart, G., Brandis, A. M., and Cruden, B. A., “Treatment of Thermal Nonequilibrium Dissociation: Rate Constant Review for H 2,” Journal of Thermophysics and Heat Transfer , 2026 (in press). [28] Mansbach, P., and Keck, J., “Monte Carlo Trajectory Calculations of Atomic Excitation and Ionization by Thermal Electrons,” 
+
+Physical Review , Vol. 181, No. 1, 1969, pp. 275–289. https://doi.org/10.1103/physrev.181.275. [29] Park, C., “Electron impact excitation rate coefficients for hydrogen, helium and alkali atoms,” Journal of Quantitative Spectroscopy and Radiative Transfer , Vol. 11, No. 1, 1971, pp. 7–36. https://doi.org/10.1016/0022-4073(71)90158-0. [30] Vriens, L., and Smeets, A. H. M., “Cross-section and rate formulas for electron-impact ionization, excitation, de-excitation, and total depopulation of excited atoms,” Physical Review A , Vol. 22, No. 3, 1980, pp. 940–951. https://doi.org/10.1103/physreva.22.940. 
+
+41 [31] Bray, I., and Stelbovics, A. T., Calculation of Electron Scattering on Hydrogenic Targets , Elsevier, 1995, p. 209–254. https://doi.org/10.1016/s1049-250x(08)60164-0. [32] Bartschat, K., “Computational methods for electron–atom collisions in plasma applications,” Journal of Physics D: Applied Physics , Vol. 46, No. 33, 2013, p. 334004. https://doi.org/10.1088/0022-3727/46/33/334004. [33] Scholz, T. T., Walters, H. R. J., Burke, P. G., and Scott, M. P., “Effective collision strengths for 1s–2s and 1s–2p elec-tron–hydrogen atom scattering,” Monthly Notices of the Royal Astronomical Society , Vol. 242, No. 4, 1990, pp. 692–697. https://doi.org/10.1093/mnras/242.4.692. [34] Aggarwal, K. M., Berrington, K. A., Burke, P. G., Kingston, A. E., and Pathak, A., “Electron collision cross sections at low energies for all transitions between the n=1, 2, 3, 4 and 5 levels of atomic hydrogen,” Journal of Physics B: Atomic, Molecular and Optical Physics , Vol. 24, No. 6, 1991, pp. 1385–1410. https://doi.org/10.1088/0953-4075/24/6/024. [35] Callaway, J., “Effective Collision Strengths for Hydrogen and Hydrogen-Like Ions,” Atomic Data and Nuclear Data Tables ,Vol. 57, No. 1-2, 1994, pp. 9–20. https://doi.org/10.1006/adnd.1994.1009. [36] Anderson, H., Ballance, C. P., Badnell, N. R., and Summers, H. P., “An R-matrix with pseudo-states approach to the electron-impact excitation of H I for diagnostic applications in fusion plasmas,” Journal of Physics B: Atomic, Molecular and Optical Physics , Vol. 33, No. 6, 2000, pp. 1255–1262. https://doi.org/10.1088/0953-4075/33/6/311. [37] Anderson, H., Ballance, C. P., Badnell, N. R., and Summers, H. P., “An R-matrix with pseudo-states approach to the electron-impact excitation of H I for diagnostic applications in fusion plasmas,” Journal of Physics B: Atomic, Molecular and Optical Physics , Vol. 35, No. 6, 2002, pp. 1613–1615. https://doi.org/10.1088/0953-4075/35/6/701. [38] Przybilla, N., and Butler, K., “Non-LTE Line Formation for Hydrogen Revisited,” The Astrophysical Journal , Vol. 609, No. 2, 2004, pp. 1181–1191. https://doi.org/10.1086/421316. [39] Griffin, D. C., Ballance, C. P., Pindzola, M. S., Robicheaux, F., Loch, S. D., Ludlow, J. A., Witthoeft, M. C., Colgan, J., Fontes, C. J., and Schultz, D. R., “The validity of classical trajectory and perturbative quantal methods for electron-impact ionization from excited states in H-like ions,” Journal of Physics B: Atomic, Molecular and Optical Physics , Vol. 38, No. 12, 2005, p. L199–L206. https://doi.org/10.1088/0953-4075/38/12/l01. [40] Pindzola, M. S., and Robicheaux, F., “Total ionization cross section for electron-hydrogen scattering using a time-dependent close-coupling method,” Physical Review A , Vol. 54, No. 3, 1996, p. 2142–2145. https://doi.org/10.1103/physreva.54.2142. [41] Bartschat, K., and Bray, I., “Electron-impact ionization of atomic hydrogen from the 1S and 2S states,” Journal of Physics B: Atomic, Molecular and Optical Physics , Vol. 29, No. 15, 1996, p. L577–L583. https://doi.org/10.1088/0953-4075/29/15/005. [42] Witthoeft, M. C., Loch, S. D., and Pindzola, M. S., “Time-dependent close-coupling theory for e + H elastic and inelastic scattering,” Physical Review A , Vol. 70, No. 2, 2004. https://doi.org/10.1103/physreva.70.022711. 
+
+42 [43] Shah, M. B., Elliott, D. S., and Gilbody, H. B., “Pulsed crossed-beam study of the ionisation of atomic hydrogen by electron impact,” Journal of Physics B: Atomic and Molecular Physics , Vol. 20, No. 14, 1987, p. 3501–3514. https://doi.org/10.1088/0022-3700/20/14/022. [44] Defrance, P., Claeys, W., Cornet, A., and Poulaert, G., “Electron impact ionisation of metastable atomic hydrogen,” Journal of Physics B: Atomic and Molecular Physics , Vol. 14, No. 1, 1981, p. 111–117. https://doi.org/10.1088/0022-3700/14/1/013. [45] Barklem, P. S., “Non-LTE Balmer line formation in late-type spectra: effects of atomic processes involving hydrogen atoms,” 
+
+Astronomy & Astrophysics , Vol. 466, No. 1, 2007, pp. 327–337. https://doi.org/10.1051/0004-6361:20066686. [46] Hill, J., Geddes, J., and Gilbody, H. B., “1s-2s excitation of fast hydrogen atoms in collisions with atomic and molecular hydrogen,” Journal of Physics B: Atomic and Molecular Physics , Vol. 12, No. 17, 1979, p. 2875–2882. https://doi.org/10.1088/0022-3700/12/17/016. [47] Hill, J., Geddes, J., and Gilbody, H. B., “Excitation of fast metastable hydrogen atoms to the n=3 state in pas-sage through gases,” Journal of Physics B: Atomic and Molecular Physics , Vol. 13, No. 5, 1980, p. 951–958. https://doi.org/10.1088/0022-3700/13/5/020. [48] Hunter, H. T., Kirkpatrick, M. I., Alvarez, I., Cisneros, C., Phaneuf, R. A., and Barnett, C. F., “Atomic data for fusion,” Tech. rep., Oak Ridge National Lab. (ORNL), Oak Ridge, TN (United States), 07 1990. https://doi.org/10.2172/6570226. [49] Riley, M. E., and Ritchie, A. B., “Excitation and ionization in H(1s)-H(1s) collisions,” Journal of Physics B: Atomic, Molecular and Optical Physics , Vol. 32, No. 22, 1999, p. 5279–5288. https://doi.org/10.1088/0953-4075/32/22/306. [50] Al Atawneh, S. J., and Tőkési, K., “Excitation cross sections in a collision between two ground-state hydro-gen atoms,” Journal of Physics B: Atomic, Molecular and Optical Physics , Vol. 54, No. 6, 2021, p. 065202. https://doi.org/10.1088/1361-6455/abece3. [51] Colonna, G., Pietanza, L. D., D’Ammando, G., Celiberto, R., Capitelli, M., and Laricchiuta, A., “Vibrational kinet-ics of electronically excited states in H 2 discharges,” The European Physical Journal D , Vol. 71, No. 11, 2017. https://doi.org/10.1140/epjd/e2017-80080-3. [52] Colonna, G., Laricchiuta, A., and Pietanza, L. D., “Modeling plasma heating by ns laser pulse,” Spectrochimica Acta Part B: Atomic Spectroscopy , Vol. 141, 2018, pp. 85–93. https://doi.org/10.1016/j.sab.2018.01.009. [53] Drawin, H. W., “Influence of atom-atom collisions on the collisional-radiative ionization and recombination coeffi-cients of hydrogen plasmas,” Zeitschrift für Physik A Hadrons and nuclei , Vol. 225, No. 5, 1969, pp. 483–493. https://doi.org/10.1007/bf01392775. [54] Drawin, H., and Emard, F., “Atom-atom excitation and ionization in shock waves of the noble gases,” Physics Letters A ,Vol. 43, No. 4, 1973, pp. 333–335. https://doi.org/10.1016/0375-9601(73)90331-9. 
+
+43 [55] Thomson, J., “Ionization by moving electrified particles,” The London, Edinburgh, and Dublin Philosophical Magazine and Journal of Science , Vol. 23, No. 136, 1912, pp. 449–457. https://doi.org/10.1080/14786440408637241. [56] Barklem, P. S., Belyaev, A. K., Guitou, M., Feautrier, N., Gadéa, F. X., and Spielfiedel, A., “On inelas-tic hydrogen atom collisions in stellar atmospheres,” Astronomy & Astrophysics , Vol. 530, 2011, p. A94. https://doi.org/10.1051/0004-6361/201116745. [57] Fleischmann, H. H., and Dehmel, R. C., “On Drawin 's formula for ionization in atom-atom collisions,” Zeitschrift für Physik ,Vol. 252, No. 5, 1972, pp. 435–442. https://doi.org/10.1007/bf01379737. [58] Steenbock, W., and Holweger, H., “Statistical equilibrium of lithium in cool stars of different metallicity,” Astronomy & Astrophysics , Vol. 130, No. 2, 1984, pp. 319–323. [59] Lambert, D. L., “Quantitative stellar spectroscopy with large optical telescopes,” Physica Scripta , Vol. T47, 1993, pp. 186–198. https://doi.org/10.1088/0031-8949/1993/t47/030. [60] Belyaev, A. K., and Barklem, P. S., “Cross sections for low-energy inelastic H + Li collisions,” Physical Review A , Vol. 68, No. 6, 2003. https://doi.org/10.1103/physreva.68.062703. [61] Barklem, P. S., Belyaev, A. K., and Asplund, M., “Inelastic H+Li and H − +Li + collisions and non-LTE Li I line formation in stel-lar atmospheres,” Astronomy & Astrophysics , Vol. 409, No. 2, 2003, p. L1–L4. https://doi.org/10.1051/0004-6361:20031199. [62] Belyaev, A. K., Barklem, P. S., Dickinson, A. S., and Gadéa, F. X., “Cross sections for low-energy inelastic H + Na collisions,” 
+
+Physical Review A , Vol. 81, No. 3, 2010. https://doi.org/10.1103/physreva.81.032706. [63] Barklem, P. S., Belyaev, A. K., Dickinson, A. S., and Gadéa, F. X., “Inelastic Na+H collision data for non-LTE applications in stellar atmospheres,” Astronomy & Astrophysics , Vol. 519, 2010, p. A20. https://doi.org/10.1051/0004-6361/201015152. [64] Guitou, M., Belyaev, A. K., Barklem, P. S., Spielfiedel, A., and Feautrier, N., “Inelastic Mg+H collision processes at low energies,” Journal of Physics B: Atomic, Molecular and Optical Physics , Vol. 44, No. 3, 2011, p. 035202. https://doi.org/10.1088/0953-4075/44/3/035202. [65] Barklem, P. S., Belyaev, A. K., Spielfiedel, A., Guitou, M., and Feautrier, N., “Inelastic Mg+H collision data for non-LTE applications in stellar atmospheres,” Astronomy & Astrophysics , Vol. 541, 2012, p. A80. https://doi.org/10.1051/0004-6361/201219081. [66] Park, C., “Nonequilibrium Ionization and Radiation in Hydrogen-Helium Mixtures,” Journal of Thermophysics and Heat Transfer , Vol. 26, No. 2, 2012, pp. 231–243. https://doi.org/10.2514/1.t3689. [67] Livingston, F. R., and Poon, P. T. Y., “Relaxation Distance and Equilibrium Electron Density Measurements in Hydrogen-Helium Plasmas,” AIAA Journal , Vol. 14, No. 9, 1976, pp. 1335–1337. https://doi.org/10.2514/3.61466. 
+
+44 [68] Mihajlov, A. A., Ignjatović, L. M., Djurić, Z., and Ljepojević, N. N., “The rate coefficients for the processes of (n-n’)-mixing in collisions of Rydberg atoms H*(n) with H(1s) atoms,” Journal of Physics B: Atomic, Molecular and Optical Physics ,Vol. 37, No. 22, 2004, pp. 4493–4506. https://doi.org/10.1088/0953-4075/37/22/008. [69] Dimitrijević, M. S., Srećković, V. A., Ignjatović, L. M., and Marinković, B. P., “The role of some collisional processes in AGNs: Rate coefficients needed for modeling,” New Astronomy , Vol. 84, 2021, p. 101529. https://doi.org/10.1016/j.newast.2020.101529. [70] Mihajlov, A. A., Ignjatović, L. M., Srećković, V. A., and Dimitrijević, M. S., “Chemi-Ionization in Solar Photosphere: Influence on the Hydrogen Atom Excited States Population,” The Astrophysical Journal Supplement Series , Vol. 193, No. 1, 2011, p. 2. https://doi.org/10.1088/0067-0049/193/1/2. [71] Srećković, V. A., Dimitrijević, M. S., and Ignjatović, L. M., “Atom-Rydberg atom chemi-ionization/recombination processes in the hydrogen clouds in Broad Line Region of AGNs,” Monthly Notices of the Royal Astronomical Society , 2018. https://doi.org/10.1093/mnras/sty2256. [72] Janev, R. K., and Mihajlov, A. A., “Excitation and deexcitation processes in slow collisions of Rydberg atoms with ground-state parent atoms,” Physical Review A , Vol. 20, No. 5, 1979, p. 1890–1904. https://doi.org/10.1103/physreva.20.1890. [73] Birely, J. H., and McNeal, R. J., “Formation of H (2𝑝 ) and H (2𝑠 ) in Collisions of 1-25-keV Hydrogen Atoms with the Rare Gases,” Phys. Rev. A , Vol. 5, 1972, pp. 257–265. https://doi.org/10.1103/PhysRevA.5.257. [74] Sauers, I., and Thomas, E. W., “Small-angle scattering of metastable hydrogen formed by collisions of neutral hydrogen atoms with gas targets,” Phys. Rev. A , Vol. 10, 1974, pp. 822–828. https://doi.org/10.1103/PhysRevA.10.822. [75] Grosser, J., and Krüger, W., “Hydrogen 2s and 2p excitation in low energy H, D+, He collisions,” Zeitschrift für Physik. A, Atoms and nuclei , Vol. 318, No. 1, 1984, pp. 25–30. [76] Van Zyl, B., and Gealy, M. W., “Lyman-𝛼 emission from low-energy H impact on rare-gas atoms,” Phys. Rev. A , Vol. 35, 1987, pp. 3741–3748. https://doi.org/10.1103/PhysRevA.35.3741. [77] Vegiri, A., “Theoretical investigation of metastable hydrogen de-excitation in collisions with He and Ne,” Journal of Physics B: Atomic, Molecular and Optical Physics , Vol. 31, No. 3, 1998, p. 473–489. https://doi.org/10.1088/0953-4075/31/3/015. [78] Bates, D. R., and Lewis, J. T., “Inelastic Heavy Particle Collisions Involving the Crossing of Potential Energy Curves III: Charge Transfer from Negative Ions of Atomic Hydrogen to Protons,” Proceedings of the Physical Society. Section A , Vol. 68, No. 3, 1955, p. 173–180. https://doi.org/10.1088/0370-1298/68/3/306. [79] Szucs, S., Karemera, M., Terao, M., and Brouillard, F., “Experimental study of the mutual neutralisation of H+and H-between 5 and 2000 eV,” Journal of Physics B: Atomic and Molecular Physics , Vol. 17, No. 8, 1984, p. 1613–1622. https://doi.org/10.1088/0022-3700/17/8/021. 
+
+45 [80] Stenrup, M., Larson, A., and Elander, N., “Mutual neutralization in low-energy H + + H− collisions: A quantum ab initio study,” Phys. Rev. A , Vol. 79, 2009, p. 012713. https://doi.org/10.1103/PhysRevA.79.012713. [81] Furudate, M., “Nonequilibrium Calculation of High-Temperature Radiating H 2-He Flowfield,” Journal of Thermophysics and Heat Transfer , Vol. 23, No. 4, 2009, p. 651–659. https://doi.org/10.2514/1.43961. [82] Mirels, H., “Flow Nonuniformity in Shock Tubes Operating at Maximum Test Times,” The Physics of Fluids , Vol. 9, No. 10, 1966, p. 1907–1912. https://doi.org/10.1063/1.1761542. [83] Clarke, J., Di Mare, L., and McGilvray, M., “Spatial Transformations for Reacting Gas Shock Tube Experiments,” AIAA Journal , Vol. 61, No. 8, 2023, p. 3365–3374. https://doi.org/10.2514/1.j062604. [84] Clarke, J., Brody, S., Steer, J., McGilvray, M., and Di Mare, L., “Quasi-one-dimensional non-equilibrium method for shock tube and stagnation line flows,” Physics of Fluids , Vol. 36, No. 9, 2024. https://doi.org/10.1063/5.0218676. [85] Appleton, J. P., and Bray, K. N. C., “The conservation equations for a non-equilibrium plasma,” Journal of Fluid Mechanics ,Vol. 20, No. 4, 1964, p. 659–672. https://doi.org/10.1017/s0022112064001458. [86] Alves, L. L., “The IST-LISBON database on LXCat,” Journal of Physics: Conference Series , Vol. 565, 2014, p. 012007. https://doi.org/10.1088/1742-6596/565/1/012007. [87] Zammit, M. C., Savage, J. S., Fursa, D. V., and Bray, I., “Complete Solution of Electronic Excitation and Ionization in Electron-Hydrogen Molecule Scattering,” Physical Review Letters , Vol. 116, No. 23, 2016. https://doi.org/10.1103/physrevlett.116.233201. [88] Park, C. H., Nonequilibrium Hypersonic Aerothermodynamics , 1989. [89] Beardsell, G., and Blanquart, G., “A cost-effective semi-implicit method for the time integration of fully com-pressible reacting flows with stiff chemistry,” Journal of Computational Physics , Vol. 414, 2020, p. 109479. https://doi.org/10.1016/j.jcp.2020.109479. [90] Park, C., “Assessment of two-temperature kinetic model for ionizing air,” Journal of Thermophysics and Heat Transfer ,Vol. 3, No. 3, 1989, pp. 233–244. https://doi.org/10.2514/3.28771. [91] Chaudhry, R. S., Boyd, I. D., Torres, E., Schwartzentruber, T. E., and Candler, G. V., “Implementation of a Chemical Kinetics Model for Hypersonic Flows in Air for High-Performance CFD,” AIAA Scitech 2020 Forum , American Institute of Aeronautics and Astronautics, 2020. https://doi.org/10.2514/6.2020-2191. [92] Singh, N., and Schwartzentruber, T., “Consistent kinetic–continuum dissociation model I. Kinetic formulation,” The Journal of Chemical Physics , Vol. 152, No. 22, 2020. https://doi.org/10.1063/1.5142752. [93] Magin, T. E., Panesi, M., Bourdon, A., Jaffe, R. L., and Schwenke, D. W., “Coarse-grain model for inter-nal energy excitation and dissociation of molecular nitrogen,” Chemical Physics , Vol. 398, 2012, p. 90–95. https://doi.org/10.1016/j.chemphys.2011.10.009. 
+
+46 [94] Liu, Y., Panesi, M., Sahai, A., and Vinokur, M., “General multi-group macroscopic modeling for thermo-chemical non-equilibrium gas mixtures,” The Journal of Chemical Physics , Vol. 142, No. 13, 2015. https://doi.org/10.1063/1.4915926. [95] Venturi, S., Sharma, M. P., Lopez, B., and Panesi, M., “Data-Inspired and Physics-Driven Model Reduction for Dissociation: Application to the O 2 + O System,” The Journal of Physical Chemistry A , Vol. 124, No. 41, 2020, p. 8359–8372. https://doi.org/10.1021/acs.jpca.0c04516. [96] Vincenti, W., and Kruger, C., Introduction to Physical Gas Dynamics , Wiley, 1965. [97] Oxenius, J., Kinetic Theory of Particles and Photons , Springer Berlin Heidelberg, 1986. https://doi.org/10.1007/978-3-642-70728-5. [98] Annaloro, J., Teulet, P., Bultel, A., Cressault, Y., and Gleizes, A., “Non-uniqueness of the multi-temperature law of mass action. Application to 2T plasma composition calculation by means of a collisional-radiative model,” The European Physical Journal D , Vol. 71, No. 12, 2017. https://doi.org/10.1140/epjd/e2017-80284-5. [99] Cruden, B. A., and Brandis, A. M., “Updates to the NEQAIR Radiation Solver,” 6th International Workshop on Radiation of High Temperature Gases in Atmospheric Entry , 2014. [100] Brandis, A. M., and Cruden, B. A., “NEQAIR v15.0 Release Notes: Nonequilibrium and Equilibrium Radiative Transport and Spectra Program,” Tech. Rep. ARC-E-DAA-TN72963, National Aeronautics and Space Administration, 2019. [101] Colonna, G., D’Angola, A., and Capitelli, M., “Statistical thermodynamic description of H2 molecules in nor-mal ortho/para mixture,” International Journal of Hydrogen Energy , Vol. 37, No. 12, 2012, p. 9656–9668. https://doi.org/10.1016/j.ijhydene.2012.03.103. [102] Popovas, A., and Jørgensen, U. G., “Partition functions - I. Improved partition functions and thermodynamic quantities for normal, equilibrium, and ortho and para molecular hydrogen,” Astronomy & Astrophysics , Vol. 595, 2016, p. A130. https://doi.org/10.1051/0004-6361/201527209. [103] Cruden, B. A., “Absolute Radiation Measurements in Earth and Mars Entry Conditions,” Radiation and Gas-surface Interaction Phenomena in High-Speed Reentry Lecture Series , 2014. [104] Cruden, B. A., and Tibère-Inglesse, A. C., “Impact of Trace CH 4 on Shock Layer Radiation in Outer Planet Entry,” AIAA SCITECH 2024 Forum , American Institute of Aeronautics and Astronautics, 2024. https://doi.org/10.2514/6.2024-2084. [105] Park, C., “Nonequilibrium Chemistry and Radiation for Neptune Entry,” Journal of Spacecraft and Rockets , Vol. 48, No. 6, 2011, pp. 897–903. https://doi.org/10.2514/1.51810. [106] Steer, J., Collen, P. L., Glenn, A. B., Hambidge, C., Doherty, L. J., McGilvray, M., Loehle, S., and Walpot, L., “Shock Radiation Tests for Ice Giant Entry Probes Including CH 4 in the T6 Free-Piston Driven Wind Tunnel,” AIAA SCITECH 2023 Forum , American Institute of Aeronautics and Astronautics, 2023. https://doi.org/10.2514/6.2023-1729. 
+
+47 [107] Kramida, A., Ralchenko, Y., Reader, J., and NIST ASD Team, NIST Atomic Spectra Database (ver. 5.12). National Institute of Standards and Technology, Gaithersburg, MD., 2024. [108] Boyd, I. D., and Josyula, E., “Analysis of Associative Ionization Rates for Hypersonic Flows,” Journal of Thermophysics and Heat Transfer , Vol. 35, No. 3, 2021, p. 484–493. https://doi.org/10.2514/1.t6109. [109] Aiken, T. T., Boyd, I. D., and Adamovich, I. V., “Three-temperature collisional-radiative model of ionization and recombina-tion in hypersonic air plasmas,” Physics of Plasmas , Vol. 32, No. 10, 2025. https://doi.org/10.1063/5.0294530. 
+
+48
