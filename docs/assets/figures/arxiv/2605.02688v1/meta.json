@@ -1,0 +1,62 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2605.02688v1/fig-001.webp",
+      "caption": "Figure 5: Parity plot comparing model-predicted adsorption energies with first-principles calculations, along with a representative atomic configuration with 6/12 coverage for Pt3Ni(111).",
+      "page": 6,
+      "index": 1,
+      "width": 527,
+      "height": 458
+    },
+    {
+      "url": "assets/figures/arxiv/2605.02688v1/fig-002.webp",
+      "caption": "Figure 1: Effect of lateral adsorbate-adsorbate interactions on volcano plot and electrochemical observables. Repulsive interactions flatten the volcano peak, whereas attractive interactions narrow the peak, resulting in a three-dimensional volcano depiction with lateral interactions as the third dimension. For the cyclic voltammetry (CV) response, repulsive interactions shift the CV peak to lower potentials and reduce its intensity. Conversely, attractive interactions result in the opposite pattern. The coverage-potential curve becomes steeper for attractive interactions, while repulsive interactions cause a more gradual shift.",
+      "page": 2,
+      "index": 2,
+      "width": 1087,
+      "height": 504
+    },
+    {
+      "url": "assets/figures/arxiv/2605.02688v1/fig-003.webp",
+      "caption": "Figure 6: Volcano ridge representation for HER catalysts, illustrating catalytic activity as a function of adsorption energy and effective lateral interactions. This three-dimensional framework captures the coupled influence of adsorption energy and interaction strength on catalytic performance. The color scale corresponds to the effective lateral interaction parameter, J̃11. All activities are calculated using a transfer coefficient of α = 0.5.",
+      "page": 7,
+      "index": 3,
+      "width": 871,
+      "height": 608
+    },
+    {
+      "url": "assets/figures/arxiv/2605.02688v1/fig-004.webp",
+      "caption": "Figure 2: Parity plot comparing adsorption energies obtained from the coverage-dependent model with corresponding predicted values for Pt(111), including a representative monolayer with 6/12 coverage.",
+      "page": 3,
+      "index": 4,
+      "width": 527,
+      "height": 462
+    },
+    {
+      "url": "assets/figures/arxiv/2605.02688v1/fig-005.webp",
+      "caption": "Figure 7: a Activity map of the investigated alloys represented as a function of the effective adsorption free energies of two distinct sites, ∆G̃1 and ∆G̃2. This map highlights the non-linear relationship between site-specific descriptors. b Corresponding multi-peaked volcano plot obtained by mapping the multidimensional activity landscape onto a single effective descriptor (∆G̃). While this projection can, in principle, be performed along either ∆G̃1 or ∆G̃2, the choice of ∆G̃2 is arbitrary and does not affect the qualitative features of the resulting activity trends. This representation captures the combined influence of adsorption energetics and lateral interactions across different sites, revealing multiple activity peaks.",
+      "page": 8,
+      "index": 5,
+      "width": 1087,
+      "height": 400
+    },
+    {
+      "url": "assets/figures/arxiv/2605.02688v1/fig-006.webp",
+      "caption": "Figure 3: Hydrogen coverage as a function of electrode potential on Pt(111) and Pt3Ni(111) surfaces (dashed lines represent experimental data and solid lines are model predictions). The consistency between model predictions and experimental coverage-potential measurements [24] demonstrates that the model reliably accounts for adsorption energetics and lateral interactions on these surfaces.",
+      "page": 4,
+      "index": 6,
+      "width": 527,
+      "height": 372
+    },
+    {
+      "url": "assets/figures/arxiv/2605.02688v1/fig-007.webp",
+      "caption": "Figure 4: Simplified catalytic volcano plot constructed using the effective hydrogen adsorption free energy descriptor, ∆G̃H∗ , which incorporates both coverage dependence and lateral adsorbateadsorbate interactions. This descriptor enables the unification of activity trends across different surface coverages into a single curve. The calculated volcano illustrates the relationship between the effective adsorption free energy and catalytic activity, demonstrating how the inclusion of interaction effects modifies the position and shape of the activity maximum. The volcano is obtained using a transfer coefficient of α = 0.5.",
+      "page": 5,
+      "index": 7,
+      "width": 527,
+      "height": 446
+    }
+  ]
+}

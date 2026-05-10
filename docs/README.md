@@ -6,40 +6,34 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-05-09
-- 运行时间：2026-05-09 20:43:19 UTC
+- 最新运行日期：2026-05-10
+- 运行时间：2026-05-10 20:17:38 UTC
 - 运行状态：成功
-- 本次总论文数：6
-- 精读区：2
-- 速读区：4
+- 本次总论文数：4
+- 精读区：1
+- 速读区：3
 
 ### 今日简报（AI）
-今日深挖能源催化前沿，重点解析了双原子催化析水机制与铂薄膜应力对反应活性的调控。
-研究揭示了配位工程与沉积应力在提升析氢效率中的核心作用，并展示了机器学习在机理探索中的潜力。
-建议关注催化剂微观结构优化及电池颗粒裂纹对性能衰减的深层影响。
-- 详情：[/202605/09/README](/202605/09/README)
+今日深入探讨了材料应力对电化学性能的调控，重点解析了溅射铂薄膜中应变诱导的析氢反应增强机制。
+核心结论指出沉积应力是决定表面反应活性的关键，且通过单一描述符即可实现多位点电催化活性的统一映射。
+建议关注“应变工程”在能源催化领域的应用，尝试从物理形变视角突破电化学性能瓶颈。
+- 详情：[/202605/10/README](/202605/10/README)
 
 ### 精读区论文标签
-1. [Coordination Engineering of Dual-Atom Catalysts for Overall Water Splitting: Mechanistic Insights from Constant-Potential First-Principles and Machine Learning](/202605/09/2605.00609v1-coordination-engineering-of-dual-atom-catalysts-for-overall-water-splitting-mechanistic-insights-from-constant-potential-first-principles-and-machine-learning)  
+1. [From Deposition Stress to Surface Reactivity: Strain-Dependent Hydrogen Evolution on Sputtered Platinum Thin Films](/202605/10/2605.06348v1-from-deposition-stress-to-surface-reactivity-strain-dependent-hydrogen-evolution-on-sputtered-platinum-thin-films)  
    标签：评分：9.0/10、query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries
-   evidence：使用双原子催化剂进行全解水的HER和OER机制见解
-2. [From Deposition Stress to Surface Reactivity: Strain-Dependent Hydrogen Evolution on Sputtered Platinum Thin Films](/202605/09/2605.06348v1-from-deposition-stress-to-surface-reactivity-strain-dependent-hydrogen-evolution-on-sputtered-platinum-thin-films)  
-   标签：评分：8.0/10、query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries
-   evidence：应变相关的析氢反应（HER）活性
+   evidence：铂薄膜上应变相关的析氢反应 (HER)
 
 ### 速读区论文标签
-1. [Sparkling bubbles in chiral active fluids](/202605/09/2605.03404v1-sparkling-bubbles-in-chiral-active-fluids)  
+1. [Sparkling bubbles in chiral active fluids](/202605/10/2605.03404v1-sparkling-bubbles-in-chiral-active-fluids)  
    标签：评分：7.0/10、query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries
-   evidence：旋转气泡的形成与动态不稳定性
-2. [On the role of crack electrolyte wetting in the degradation and performance of battery active particles](/202605/09/2605.01806v1-on-the-role-of-crack-electrolyte-wetting-in-the-degradation-and-performance-of-battery-active-particles)  
+   evidence：活性流体中旋转气泡的动态不稳定性与形成
+2. [On the role of crack electrolyte wetting in the degradation and performance of battery active particles](/202605/10/2605.01806v1-on-the-role-of-crack-electrolyte-wetting-in-the-degradation-and-performance-of-battery-active-particles)  
    标签：评分：6.0/10、query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries
-   evidence：电池电解液润湿和界面反应的电化学-力学耦合模型
-3. [State-Specific Kinetic Modeling of Atomic H for H$_2$/ He Entry Flows](/202605/09/2605.02382v1-state-specific-kinetic-modeling-of-atomic-h-for-h2-he-entry-flows)  
+   evidence：电池颗粒中电解液润湿的电化学-力学耦合模型
+3. [Unified Mapping of Multi-Site Electrocatalytic Activity Using a Single Descriptor](/202605/10/2605.02688v1-unified-mapping-of-multi-site-electrocatalytic-activity-using-a-single-descriptor)  
    标签：评分：6.0/10、query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries
-   evidence：H2进入流中原子氢的动力学建模及速率常数文献综述
-4. [A de novo CO2 Reductase Featuring a Cysteine-Ligated Cobalt Porphyrin Cofactor](/202605/09/biorxiv-10-64898-2026-05-07-723500-v1-a-de-novo-co2-reductase-featuring-a-cysteine-ligated-cobalt-porphyrin-cofactor)  
-   标签：评分：6.0/10、query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries
-   evidence：抑制竞争性析氢反应路径
+   evidence：使用吸附描述符映射多位点系统的电催化活性
 
 
 <div class="dpr-home-promo-card">

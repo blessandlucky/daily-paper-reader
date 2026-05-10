@@ -1,0 +1,69 @@
+{
+  "label": "2026-05-10",
+  "date": "2026-05-10",
+  "generated_at": "2026-05-10T20:17:52",
+  "count": 4,
+  "papers": [
+    {
+      "paper_id": "202605/10/2605.06348v1-from-deposition-stress-to-surface-reactivity-strain-dependent-hydrogen-evolution-on-sputtered-platinum-thin-films",
+      "section": "deep",
+      "title_en": "From Deposition Stress to Surface Reactivity: Strain-Dependent Hydrogen Evolution on Sputtered Platinum Thin Films",
+      "authors": "Sabrina Baha, Alejandro E. Perez Mendoza, Leonardo H. Morais, Aleksander Kostka, Shivam Shukla, Ellen Suhr, Andre Oliveira, Annika Gatzki, Henrik H. Kristoffersen, Jan Rossmeisl, Corina Andronescu, Alfred Ludwig",
+      "date": "2026-05-07",
+      "pdf": "https://arxiv.org/pdf/2605.06348v1",
+      "score": "9.0",
+      "evidence": "铂薄膜上应变相关的析氢反应 (HER)",
+      "tldr": "本研究探讨了磁控溅射铂（Pt）薄膜中沉积应力对析氢反应（HER）活性的影响。通过调节溅射压力制备了不同应力状态的Pt薄膜，并结合实验表征与密度泛函理论（DFT）计算，揭示了微观结构、残余应变与电催化性能之间的关系。研究发现，低压下形成的致密薄膜具有更高的HER活性，而应变通过改变氢吸附能和表面覆盖度来调控反应动力学，为优化薄膜电催化剂提供了新思路。",
+      "tags": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "abstract_en": "Strain has emerged as a promising approach for tuning electrocatalytic properties, yet its role in sputter-deposited thin films remains poorly understood. In this work, magnetron-sputtered platinum (Pt) thin films with different stress states were prepared by varying the sputter pressure. The resulting changes in microstructure, residual strain, and hydrogen evolution reaction (HER) activity were investigated using complementary characterization techniques and density functional theory (DFT) calculations. Structural analysis reveals a transition of (111)-textured Pt thin films from dense and smooth films at low pressures, to more porous microstructures with increased roughness at higher pressures. Electrochemical measurements show that films deposited at low sputter pressure exhibit the highest HER activity, while higher sputter pressures lead to reduced activity despite increased surface area. DFT calculations demonstrate that lattice strain alters hydrogen adsorption energetics and surface coverage on Pt(111), providing a mechanistic explanation for the observed activity trends. Overall, the results highlight that HER activity in sputtered Pt thin films is governed by the interplay of residual strain, microstructure, and hydrogen coverage.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202605/10/2605.03404v1-sparkling-bubbles-in-chiral-active-fluids",
+      "section": "quick",
+      "title_en": "Sparkling bubbles in chiral active fluids",
+      "authors": "Alessandro Petrini, Raphaël Maire, Umberto Marini Bettolo Marconi, Lorenzo Caprini",
+      "date": "2026-05-05",
+      "pdf": "https://arxiv.org/pdf/2605.03404v1",
+      "score": "7.0",
+      "evidence": "活性流体中旋转气泡的动态不稳定性与形成",
+      "tldr": "本研究探讨了由具有奇相互作用（横向力）的排斥粒子组成的惯性手性活性流体。通过粗粒化流体动力学理论，研究发现手性会诱导产生旋转气泡的不均匀相。在特定填充率下，这些气泡表现出动态不稳定性，即不断破碎并重新形成，呈现出类似超饱和液体的“闪烁”行为。该研究揭示了手性活性物质中的非线性集体现象，并为颗粒旋转器或旋转胶体的实验验证提供了理论基础。",
+      "tags": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "abstract_en": "We study an inertial chiral active fluid, formed by repulsive particles that transfer angular momentum through odd interactions, i.e. transverse forces. Chirality induces an inhomogeneous phase, consisting of rotating bubbles, whose formation is favored at an optimal packing fraction. In this regime, we discover that bubbles may be dynamically unstable, breaking up and reforming in the steady state, thereby showing a spontaneous sparkling-like behavior reminiscent of supersaturated liquids. Bubbles and sparkling bubbles are predicted by a coarse-grained hydrodynamic theory, revealing the intrinsic non-linearity of these collective phenomena, and call for experimental verifications in granular spinners or spinning colloids.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202605/10/2605.01806v1-on-the-role-of-crack-electrolyte-wetting-in-the-degradation-and-performance-of-battery-active-particles",
+      "section": "quick",
+      "title_en": "On the role of crack electrolyte wetting in the degradation and performance of battery active particles",
+      "authors": "S. Luza-Vega, Y. Zhao, E. Martínez-Pañeda",
+      "date": "2026-05-03",
+      "pdf": "https://arxiv.org/pdf/2605.01806v1",
+      "score": "6.0",
+      "evidence": "电池颗粒中电解液润湿的电化学-力学耦合模型",
+      "tldr": "本研究探讨了锂离子电池正极颗粒裂纹中电解液浸润对性能和退化的影响。通过对比全耦合电化学-力学模型与传统均匀通量模型，发现裂纹尖端的反应速率可放大8倍。研究揭示了均匀通量模型会显著低估电池容量（1C倍率下低估25%）和拉伸应力，强调了在建模中考虑裂纹-电解液耦合的重要性。",
+      "tags": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "abstract_en": "Cathode particle fracture is widely recognised as a major degradation mechanism in lithium-ion batteries, yet cracking also permits electrolyte wetting of newly exposed internal surfaces, modifying interfacial reaction pathways. The mechanistic role of electrolyte wetting in redistributing reactions within cracked particles remains unclear. Here, we isolate this effect through a controlled comparison between (i) a fully coupled electro-chemo-mechanical model resolving lithium concentration, electrostatic potential, and stress fields in both the active material and the electrolyte inside and outside cracks, and (ii) a single-particle chemo-mechanical model employing the conventional uniform flux assumption. The coupled model predicts strong spatial heterogeneity in interfacial reaction rates, with flux amplification approximately 8x relative to the imposed uniform flux at the crack tip. Reaction redistribution, and thus lithium flux, is governed predominantly by local solid-state lithium concentration and stress variations, while electrolyte potential gradients inside cracks remain secondary under the conditions considered. Uniform flux models can underpredict delivered capacity by 25% at 1C-rate; this discrepancy increases at higher rates. They also underestimate tensile stresses throughout the delithiation process by 10%, directly affecting crack driving conditions. These results demonstrate that neglecting crack-electrolyte coupling leads to systematic underestimation of both utilisation limits and fatigue-relevant stress histories.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202605/10/2605.02688v1-unified-mapping-of-multi-site-electrocatalytic-activity-using-a-single-descriptor",
+      "section": "quick",
+      "title_en": "Unified Mapping of Multi-Site Electrocatalytic Activity Using a Single Descriptor",
+      "authors": "A. Dana, D. Terrones, S. Gelin, I. Dabo",
+      "date": "2026-05-04",
+      "pdf": "https://arxiv.org/pdf/2605.02688v1",
+      "score": "6.0",
+      "evidence": "使用吸附描述符映射多位点系统的电催化活性",
+      "tldr": "本研究针对多位点电催化剂活性预测的复杂性，提出了一种基于平均场统计力学的统一描述符映射方法。通过引入考虑侧向相互作用的有效吸附自由能，构建了覆盖度一致的火山曲线，并将多维活性景观投影至单一有效坐标，为复杂合金催化剂的筛选提供了物理可解释的通用框架。",
+      "tags": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "abstract_en": "We present a precise and general method to map the activity of electrocatalysts across multiple sites. Starting from a mean-field statistical mechanics model, we introduce an effective adsorption free energy descriptor that explicitly incorporates lateral adsorbate-adsorbate interactions, enabling the construction of coverage-consistent volcano relationships. Extending this approach, we show that adsorption energetics and interaction strength define a two-dimensional activity landscape that gives rise to a \"volcano ridge\" that captures the coupled influence of binding and interactions on catalytic performance. For multi-site systems, we demonstrate that the inherently nonlinear coupling between distinct adsorption environments leads to multi-peaked activity trends that cannot be represented by conventional single-site descriptors. To address this, we introduce a reduced descriptor mapping that projects the multidimensional activity landscape onto a single effective coordinate while preserving the underlying physics of site heterogeneity and lateral interactions. The resulting framework generalizes Sabatier-type analysis to complex alloy catalysts and provides a physically interpretable route for screening electrocatalytic materials of arbitrary compositional complexity.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}
