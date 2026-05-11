@@ -1,0 +1,94 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2605.07670v1/fig-001.webp",
+      "caption": "Table 2: The local structural properties of the extracted environment with different radii.",
+      "page": 11,
+      "index": 1,
+      "width": 979,
+      "height": 227
+    },
+    {
+      "url": "assets/figures/arxiv/2605.07670v1/fig-002.webp",
+      "caption": "Figure 3: The local environment with radius (a) 8.5 Å, (b) 9.0 Å, and (c) 9.5 Å. (d) A radar plot showing the alignment of different properties with varying radius.",
+      "page": 11,
+      "index": 2,
+      "width": 976,
+      "height": 718
+    },
+    {
+      "url": "assets/figures/arxiv/2605.07670v1/fig-003.webp",
+      "caption": "Figure 6: Top four active sites of MAC among 30 sampled sites, free energy change, and bond lengths between neighboring atoms to the carbon attached to hydrogen are given. Bond lengths are in Angstroms (Å).",
+      "page": 15,
+      "index": 3,
+      "width": 902,
+      "height": 842
+    },
+    {
+      "url": "assets/figures/arxiv/2605.07670v1/fig-004.webp",
+      "caption": "Table 3: Examined local features, their explanations, and importance.",
+      "page": 21,
+      "index": 4,
+      "width": 976,
+      "height": 866
+    },
+    {
+      "url": "assets/figures/arxiv/2605.07670v1/fig-005.webp",
+      "caption": "Figure 2: (a) The MAC structure obtained after melt-quench simulation. (b) Ring statistics and (c) Hybridization distribution in MAC.",
+      "page": 10,
+      "index": 5,
+      "width": 976,
+      "height": 610
+    },
+    {
+      "url": "assets/figures/arxiv/2605.07670v1/fig-006.webp",
+      "caption": "Figure 5: Projected DOS analysis of the s orbital of adsorbed hydrogen and the p orbital of carbon attached to the hydrogen. (a) α, (b) β, (c) γ-GY, and (d) MAC LE 28",
+      "page": 14,
+      "index": 6,
+      "width": 945,
+      "height": 1216
+    },
+    {
+      "url": "assets/figures/arxiv/2605.07670v1/fig-007.webp",
+      "caption": "Figure 8: (a) Energy and (b) force predictions of the fine-tuned model against the test dataset, (c) energy fitting across individual frames from a DFT structural relaxation trajectory, and (d) a correlation plot showing per-atom displacements from pre-relaxation to post-relaxation structures, comparing MLIP and DFT relaxation patterns.",
+      "page": 18,
+      "index": 7,
+      "width": 979,
+      "height": 856
+    },
+    {
+      "url": "assets/figures/arxiv/2605.07670v1/fig-008.webp",
+      "caption": "Figure 1: (a), (b), (c), and (d) show the distribution of sp2 and sp carbon per unit cell in graphene, α-GY, β-GY, and γ-GY, respectively. The best hydrogen adsorption site for each species, ranked by ΔGH, is also shown in the same figure.",
+      "page": 8,
+      "index": 8,
+      "width": 948,
+      "height": 717
+    },
+    {
+      "url": "assets/figures/arxiv/2605.07670v1/fig-009.webp",
+      "caption": "Table 1. Unit cell parameters and structural properties of graphene and graphynes",
+      "page": 8,
+      "index": 9,
+      "width": 985,
+      "height": 231
+    },
+    {
+      "url": "assets/figures/arxiv/2605.07670v1/fig-010.webp",
+      "caption": "Figure 9: (a) MAC structure after MACE MLIP relaxation, (b) ΔGH heatmap of MAC surface, (c) ΔGH distribution and cumulative analysis.",
+      "page": 19,
+      "index": 10,
+      "width": 976,
+      "height": 527
+    },
+    {
+      "url": "assets/figures/arxiv/2605.07670v1/fig-011.webp",
+      "caption": "Figure 7: Schematic representation of the MLIP workflow for predicting the free energy change landscape of H adsorption and governing structural factors.",
+      "page": 16,
+      "index": 11,
+      "width": 976,
+      "height": 649
+    }
+  ]
+}

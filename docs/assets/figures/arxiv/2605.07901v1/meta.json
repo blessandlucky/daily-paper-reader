@@ -1,0 +1,110 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2605.07901v1/fig-001.webp",
+      "caption": "Figure 2: Regime map of all experimental data in the H–B parameter space. Orange circles (○): liquid column impact during the collapse phase, producing a vortex ring (L-B Impact); dark grey diamonds (◇): late liquid column impact near the end of collapse, no ring (Late Impact); dark grey squares (◻): direct air bubble impact on the far cavitation boundary, no ring (B-B Impact). The grey-hatched region (B < 0.2) indicates parameter combinations where the minimum air bubble size could not be achieved experimentally. The three representative cases discussed in §3 are highlighted with larger filled markers.",
+      "page": 6,
+      "index": 1,
+      "width": 760,
+      "height": 450
+    },
+    {
+      "url": "assets/figures/arxiv/2605.07901v1/fig-002.webp",
+      "caption": "Figure 7: Growth trajectory of the cavitation bubble: experiment (blue circles) versus the Rayleigh–Plesset model (maroon curve). Here 𝑥 is the distance of the far bubble boundary from the solid surface and 𝑡 = 0 is the instant of bubble generation. The model is fitted by adjusting 𝑃o and 𝑅o to match the experimental growth stage. Fitted parameters: (a) Case 1 (H = 0.44, B = 0.37): 𝑃o = 0.95 × 106 Pa, 𝑅o = 5.8 mm; (b) Case 2 (H = 0.72, B = 0.37): 𝑃o = 0.38 × 106 Pa, 𝑅o = 5.8 mm; (c) Case 3 (H = 0.24, B = 0.63): 𝑃o = 0.35 × 106 Pa, 𝑅o = 9.3 mm.",
+      "page": 11,
+      "index": 2,
+      "width": 766,
+      "height": 661
+    },
+    {
+      "url": "assets/figures/arxiv/2605.07901v1/fig-003.webp",
+      "caption": "Figure 10: Air bubble boundary position 𝐿 = 𝑧 − 𝑑hole as a function of time. Blue circles: experimental data (compression then expansion). Black dashed curve: prediction of equation 4.5, applied from the point of maximum compression (𝑧 = 𝑧in). Red dotted line: maximum slope of the model curve, from which the terminal liquid column speed 𝑈lc is extracted. Negative 𝐿 indicates the interface lies inside the blind hole. (a) Case 1 (H = 0.44, B = 0.37), 𝑧tuned = 3.3 mm, 𝑈lc = 5.2 m/s; (b) Case 2 (H = 0.72, B = 0.37), 𝑧tuned = 3.9 mm, 𝑈lc = 4.2 m/s; (c) Case 3 (H = 0.24, B = 0.63), 𝑧tuned = 5.6 mm, 𝑈lc = 7.9 m/s.",
+      "page": 15,
+      "index": 3,
+      "width": 766,
+      "height": 661
+    },
+    {
+      "url": "assets/figures/arxiv/2605.07901v1/fig-004.webp",
+      "caption": "Figure 3: Image sequence for Case 1 (H = 0.44, B = 0.37, 𝑡cav = 3300 𝜇s). Image 1: bubble nucleation. Image 2: onset of air bubble compression (downward yellow arrow). Image 3: entry of the penetrating bubble into the blind hole. Image 4: maximum penetrating bubble depth. Image 5: onset of air bubble expansion (upward yellow arrow) and exit of the penetrating bubble (maroon box). Image 6: maximum cavitation bubble radius; the conical tip of the liquid column is visible (maroon box). Image 7: liquid column impact on the far cavitation boundary (L-B impact; upward red arrow shows column motion). Image 8: vortex ring pinching off from the collapsing bubble (maroon box). Image 9: complete collapse. The complete temporal sequence of the process for this case is shown in supplementary movie 1.",
+      "page": 7,
+      "index": 4,
+      "width": 720,
+      "height": 442
+    },
+    {
+      "url": "assets/figures/arxiv/2605.07901v1/fig-005.webp",
+      "caption": "Figure 12: Vortex-ring characteristics: (a) Variation of the vertical distance traveled by the vortex ring with time. Here, 𝑥 represents the distance from the solid surface. Blue circles denote the center positions of the vortex ring, and the dashed curve represents a third-degree polynomial fit with 𝑅 2 = 0.99. (b) Variation of the vortex ring speed (𝑈) with time. The speed exhibits a continuous quadratic decay, decreasing from 5 m/s to 2.5 m/s over a few milliseconds.",
+      "page": 18,
+      "index": 5,
+      "width": 686,
+      "height": 285
+    },
+    {
+      "url": "assets/figures/arxiv/2605.07901v1/fig-006.webp",
+      "caption": "Figure 8: Space–time trajectories of three boundaries for each case. Cyan curves: far boundary of the cavitation bubble during growth and collapse stages; Orange curves: air bubble upper boundary; Yellow circles: top of the liquid column (or penetrating bubble). A purple circle marks the predicted interaction point where the liquid column (or air bubble) meets the far cavitation boundary. (a) Case 1 (H = 0.44, B = 0.37): liquid column impact at 𝑡 = 1900 𝜇s, 𝑥 = 12.07 mm, during the collapse phase; (b) Case 2 (H = 0.72, B = 0.37): late impact at 𝑡 = 1965 𝜇s, 𝑥 = 7.24 mm, near end of collapse; (c) Case 3 (H = 0.24, B = 0.63): air bubble boundary reaches far cavitation boundary at 𝑡 = 2461 𝜇s, 𝑥 = 8.19 mm.",
+      "page": 13,
+      "index": 6,
+      "width": 766,
+      "height": 661
+    },
+    {
+      "url": "assets/figures/arxiv/2605.07901v1/fig-007.webp",
+      "caption": "Figure 4: Cavitation time map for the three representative cases. The 𝑥-axis is dimensionless time 𝑡/𝑡cav, where 𝑡cav is the total bubble lifetime for each case. Coloured bars indicate the duration of each process: blue, cavitation bubble growth; dark blue, collapse; orange, air bubble compression; dark orange, expansion; green, penetrating bubble entry; dark green, exit. Instantaneous events are shown as text annotations: ‘LB’, liquid column-bubble boundary impact; ‘VR’, vortex ring formation; ‘LI’, late impact; ‘BB’, air bubble impact on far boundary; ‘NR’, no ring formed.",
+      "page": 8,
+      "index": 7,
+      "width": 760,
+      "height": 468
+    },
+    {
+      "url": "assets/figures/arxiv/2605.07901v1/fig-008.webp",
+      "caption": "Figure 1: (a) Schematic of the experimental setup; numbered components are described in the text. The inset defines the key geometric parameters ℎ, 𝑅max, 𝑑hole, and 𝑑top. (b) Representative experimental image (spatial resolution 5.8–13.4 pixels/mm). Red lines: top surface of the acrylic block; green contour: air bubble inside the blind hole; blue-filled circle: electrode contact point. (c) Composite image of the vortex ring trajectory for Case 1 (H = 0.44, B = 0.37), formed by superimposing frames at 500 𝜇s intervals from 𝑡 = 3225 𝜇s to 𝑡 = 10000 𝜇s.",
+      "page": 4,
+      "index": 8,
+      "width": 802,
+      "height": 585
+    },
+    {
+      "url": "assets/figures/arxiv/2605.07901v1/fig-009.webp",
+      "caption": "Figure 13: Schematic summarizing the three interaction outcomes between a growing cavitation bubble and a confined air bubble. Light grey hemisphere: cavitation bubble at maximum growth. Dark grey cylinder: expanding air bubble. Light blue: liquid column. (a) Case 1 (H = 0.44, B = 0.37): the liquid column (L-B impact) strikes the far cavitation boundary during the collapse phase, producing a vortex ring. (b) Case 2 (H = 0.72, B = 0.37): the liquid column exits the hole only near the very end of collapse (Late Impact, black arrows denote the collapsing jet), producing no ring. (c) Case 3 (H = 0.24, B = 0.63): the expanding air bubble bypasses the short liquid column and directly impacts the far boundary (B-B impact), producing no ring.",
+      "page": 19,
+      "index": 9,
+      "width": 702,
+      "height": 358
+    },
+    {
+      "url": "assets/figures/arxiv/2605.07901v1/fig-010.webp",
+      "caption": "Figure 11: Space–time map for Case 1 (H = 0.44, B = 0.37), showing all observed processes on a single plot. The 𝑦-axis is distance from the top surface (𝑥) of the block (negative values are inside the blind hole); 𝑡 = 0 is bubble generation. Grey circles: far boundary of the cavitation bubble during growth; maroon circles: during collapse; cyan circles: air bubble upper boundary; grey circles: penetrating bubble boundary; purple circles: liquid column top; orange circles: vortex ring centre. The kink in the maroon (collapse) trajectory marks the liquid column impact, immediately followed by ring formation (orange circles). Schematics at selected time stamps illustrate the physical state of the system.",
+      "page": 17,
+      "index": 10,
+      "width": 681,
+      "height": 641
+    },
+    {
+      "url": "assets/figures/arxiv/2605.07901v1/fig-011.webp",
+      "caption": "Figure 5: Image sequence for Case 2 (H = 0.72, B = 0.37, 𝑡cav = 2200 𝜇s). Image 1: bubble nucleation. Image 2: onset of air bubble compression. Image 3: onset of air bubble expansion. Image 4: maximum cavitation bubble radius. Image 5: complete collapse; the red dashed box highlights the toroidal deformation of the liquid column caused by the collapsing jet. No vortex ring forms. See supplementary movie 2 for the temporal evolution of the interaction in this case.",
+      "page": 9,
+      "index": 11,
+      "width": 702,
+      "height": 249
+    },
+    {
+      "url": "assets/figures/arxiv/2605.07901v1/fig-012.webp",
+      "caption": "Figure 6: Image sequence for Case 3 (H = 0.24, B = 0.63, 𝑡cav = 3750 𝜇s). Image 1: bubble nucleation. Image 2: onset of air bubble compression. Image 3: entry of the penetrating bubble. Image 4: onset of air bubble expansion and exit of the penetrating bubble. Image 5: maximum cavitation bubble radius. Image 6: direct impact of the expanding air bubble on the far cavitation boundary (B-B impact; red dashed box). Image 7: complete collapse; no vortex ring forms. The complete temporal sequence of the process for this case is shown in supplementary movie 3.",
+      "page": 9,
+      "index": 12,
+      "width": 523,
+      "height": 444
+    },
+    {
+      "url": "assets/figures/arxiv/2605.07901v1/fig-013.webp",
+      "caption": "Table 1: Summary of the three representative cases. 𝑅max: maximum cavitation bubble radius; 𝑡cav: total bubble lifetime from generation to complete collapse.",
+      "page": 5,
+      "index": 13,
+      "width": 799,
+      "height": 181
+    }
+  ]
+}

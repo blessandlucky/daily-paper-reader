@@ -1,0 +1,62 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2605.07966v1/fig-001.webp",
+      "caption": "Fig. 3 Radial dynamics of the proximal and distal side of the vapor bubble corresponding to “Bubble 1” in Fig. 1. (a) Schematic depicting the bubble dynamics modeled over time, with labels indicating the proximal and distal side of the bubble wall with respect to the ultrasound. (b) Bubble radius over time computed using Eq. (3) for the proximal and distal side compared with the experiment for the bubble labeled “Bubble 1” in Fig. 1. Typically, the proximal side collapses faster than the distal side, with a time difference of the order of ∆t ∼ O(10−9 s), which corresponds to an asymmetric collapse and the formation of a jet. The error bars represent the measurement error in bubble radius due to image processing and the error in the recording time due to the camera frame rate used.",
+      "page": 7,
+      "index": 1,
+      "width": 466,
+      "height": 455
+    },
+    {
+      "url": "assets/figures/arxiv/2605.07966v1/fig-002.webp",
+      "caption": "Fig. 5 Variation of amplification factors as a function of the wavenumber inside the droplet and dependence of bubble-pair jetting on higher harmonics. (a) The variation of the first three modes of the amplification factor, αm,n, given by Eq. (2), as a function of the generalized wavenumber for a PFP droplet in water. The dashed line indicates the value of fRd/cd beyond which the higher modes present larger amplification than the mode, m = 0. The insets show the typically expected extrema pressure profiles for a given dominant mode. The corresponding animations for the different modes are available as Supplementary Movies 5 – 7. (b) The droplet radius and the maximum significant harmonic component of the incoming wave are plotted for the droplets that present bubble-pair jetting. The dashed line represents the value above which the higher modes are dominant. Note that only the highest harmonic is shown for the viewer’s convenience, although all the lower harmonics are also excited for each case. The measured drop radii have an error of±0.32 µm, and the maximum measured harmonic is limited by the bandwidth of the hydrophone (fmax = 30 MHz).",
+      "page": 10,
+      "index": 2,
+      "width": 390,
+      "height": 617
+    },
+    {
+      "url": "assets/figures/arxiv/2605.07966v1/fig-003.webp",
+      "caption": "Fig. 7 The role of the evaporative instability in indicating the likelihood of bubble jetting. Two different vaporization events with the same physical parameters (Rd ≈ 9.2 µm, fin = 5 MHz, Ppnp ≈ 4 MPa, and ∆Ts ≈ 11 ◦C) are compared. (a) Zoomed-in snapshots of a vaporization event, presenting a bubble growing with a “smooth” surface, allowing it to form a microjet during collapse. The scale bar corresponds to 5 µm and the interframe time is 100 ns (t/tin = 0.5). (b) Similar to (a), but for a non-jetting case, where the bubble exhibits a “rough” surface and is unstable during its growth. (c) The magnitude of the excess pressure below the spinodal limit of PFP at T = 40 ◦C in a given ultrasound cycle, at a fixed location and only for instants where this value is larger than zero. (d) The total time of instability experienced by a bubble that is nucleated at a given phase of the ultrasound. The expected instability times for the jetting and the non-jetting cases are marked. (e) The figure of merit, F , given by Eq. (7) for the two driving signals, pavg ± 2σ. The time axis in the graphs above (c – e) is given such that t = 0 corresponds to the instant when the minimum pressure is achieved at the location of interest (z/Rd = −0.4).",
+      "page": 14,
+      "index": 3,
+      "width": 777,
+      "height": 467
+    },
+    {
+      "url": "assets/figures/arxiv/2605.07966v1/fig-004.webp",
+      "caption": "Fig. 1 Snapshots from the ultra-high-speed recording of the ADV process. The dynamics of vapor bubbles within a perfluoropentane (PFP, C5F12) droplet of initial radius Rd = 9.4 µm (T = 37 ◦C, fin = 3.5 MHz) is depicted. The snapshots are labeled with their non-dimensional time, t/td (td = 0.285 µs). The ultrasound propagates from the bottom to the top of the image. The corresponding video is available as Supplementary Movie 1.",
+      "page": 4,
+      "index": 4,
+      "width": 777,
+      "height": 371
+    },
+    {
+      "url": "assets/figures/arxiv/2605.07966v1/fig-005.webp",
+      "caption": "Fig. 8 Experimental characterization of ADV. (a) Schematic of the ultra-high-speed microscopic imaging setup. The zoom-in depicts the PFP droplet placed on the agarose chamber. The inset shows example images of jetting bubbles within droplets illuminated using either the Xe flash lamps (left) or the laser (right). (b) Example of an experimental pressure signal measured using a 75-µm needle hydrophone for the 5 MHz HIFU. (c) Experimental pressure signal for the 3.5 MHz HIFU.",
+      "page": 17,
+      "index": 5,
+      "width": 389,
+      "height": 497
+    },
+    {
+      "url": "assets/figures/arxiv/2605.07966v1/fig-006.webp",
+      "caption": "Fig. 4 Nucleation of multiple bubbles and the formation of bubble-pair jets in a vaporizing PFP droplet. (a) Snapshots from an ultra-high-speed recording of an ADV process and subsequent collapse dynamics of incepted vapor bubbles. The initial radius of the PFP droplet is Rd = 10.7 µm (T = 39 ◦C, fin = 5 MHz). The snapshots are labeled with their non-dimensional time, t/tin. The corresponding video is available as Supplementary Movie 3. (b) Steady-state solution of the traveling acoustic wave inside the droplet shown in (a), obtained for different instants by solving Eq. (1). The snapshots are labeled by their non-dimensional time, t/tin, and show instants when each vapor bubble is expected to nucleate in (a). The instant for Bubble 3 is not provided due to the uncertainty in nucleation position and the acoustic field within the droplet. The spinodal pressure evaluated from the Redlich-Kwong equation [43] is depicted for reference. The animation for the steady-state acoustic wave solution is available as Supplementary Movie 4.",
+      "page": 9,
+      "index": 6,
+      "width": 776,
+      "height": 650
+    },
+    {
+      "url": "assets/figures/arxiv/2605.07966v1/fig-007.webp",
+      "caption": "Fig. 2 Computed pressure field along the droplet centerline for the undisturbed incident wave and the transmitted wave in the presence of the droplet, corresponding to the experiment depicted in Fig. 1. The snapshots are labeled by their non-dimensional times, t/tin, and contain insets of the respective experimental frames. The ultrasound here propagates from left to right. The dotted line indicates the spinodal pressure of liquid PFP evaluated using the RedlichKwong equation of state [43]. (a) Instant of minimum pressure coinciding with the nucleation of “Bubble 1”. (b) Expansion of “Bubble 1”. (c) Instant of minimum pressure at the nucleation location of “Bubble 2”. The wave profile inside the droplet presents a wavelength, λd ∼ O(2Rd). (d) An asymmetric, steep pressure gradient within the droplet leads to the formation of a microjet. (e) Instant of minimum pressure at the nucleation location of “Bubble 3”. (f) Sustained existence of the acoustic jet created in (c), due to the presence of acoustic wavelengths of the order of the droplet radius. The corresponding animation for the steady-state acoustic wave solution is available in the Supplementary Movie 2.",
+      "page": 5,
+      "index": 7,
+      "width": 776,
+      "height": 702
+    }
+  ]
+}

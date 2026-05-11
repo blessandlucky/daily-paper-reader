@@ -1,0 +1,62 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2605.07504v1/fig-001.webp",
+      "caption": "FIG. 1. a) Snapshots of a drop deforming in a turbulent field at We = 1.8. Times are normalized with the eddy turnover time at the drop scale, td = (d2/ε)1/3. b) Temporal evolution of the normalized excess surface energy ξ (eq. (5)) and the straining ϑ (eq. (4)) scaled by 1/10 for better visualization. The black markers denote the times of the snapshots in a). c) Temporal evolution the outer and (minus) inner straining.",
+      "page": 2,
+      "index": 1,
+      "width": 512,
+      "height": 427
+    },
+    {
+      "url": "assets/figures/arxiv/2605.07504v1/fig-002.webp",
+      "caption": "FIG. 2. Statistics of the outer and inner straining. a) Probability distribution function of the outer straining at different Weber numbers (as indicated in the legend) normalized with inertial units. b) Same as a) but for the inner straining. c) Temporal autocorrelation of the outer straining. d) Same as",
+      "page": 2,
+      "index": 2,
+      "width": 496,
+      "height": 421
+    },
+    {
+      "url": "assets/figures/arxiv/2605.07504v1/fig-003.webp",
+      "caption": "FIG. 6. a) Cross-correlation between outer straining and H at different Weber numbers (as indicated in the legend). b) Statistics of the interface energy ξc (eq. (5)) at breakup t = tb. The mean interface energy at breakup at the corresponding Weber number is represented a the top of the plot with large markers. c) Same as b but at time t = tb − td.",
+      "page": 7,
+      "index": 3,
+      "width": 503,
+      "height": 592
+    },
+    {
+      "url": "assets/figures/arxiv/2605.07504v1/fig-004.webp",
+      "caption": "FIG. 7. Different methods to estimate the damping coefficient of the inner straining model, eq. (B1). a) Results of a least square estimation between td H0 ϑI and −ξ. b) Ensembleaveraged area A relaxation of ellipsoidal drops at different We, fitted with eq. (B2) for CD = cd/ √ We and cd = 3.5.",
+      "page": 7,
+      "index": 4,
+      "width": 495,
+      "height": 279
+    },
+    {
+      "url": "assets/figures/arxiv/2605.07504v1/fig-005.webp",
+      "caption": "FIG. 3. Cross correlation between outer and inner straining. The negative peak ranges from −0.75 at We = 1.2, to −0.5 at We = 3.6, and is found at τ ≈ 0.08 tσ.",
+      "page": 3,
+      "index": 5,
+      "width": 461,
+      "height": 271
+    },
+    {
+      "url": "assets/figures/arxiv/2605.07504v1/fig-006.webp",
+      "caption": "FIG. 8. Re-interpretation of fig. 4. The yellow line corresponds to a fit to the model proposed by Coulaloglou and Tavlarides [12], eq. (C4), where the dimensionless constants c1 ≈ 14.8 and c2 ≈ 3.9 are obtained from a least-square fit to the data [27].",
+      "page": 8,
+      "index": 6,
+      "width": 465,
+      "height": 260
+    },
+    {
+      "url": "assets/figures/arxiv/2605.07504v1/fig-007.webp",
+      "caption": "FIG. 5. a) Cumulative probability distribution of breakup times (or survivor function S) obtained from DNS. b) Breakup rate from our model (solid line) and corrected with and equilibration time (dashed line). Symbols are as in Fig. 4, but show here to the inverse of the mean breakup time, i.e., without excluding breakup times with tb < t0. Error-bars correspond to plus/minus one standard deviation. With a dashed-dotted green line the fit proposed by Mart́ınez-Bazán et al. [39, 40] for bubble breakup, with Cg = 1.2 and Wec = 1.5.",
+      "page": 4,
+      "index": 7,
+      "width": 501,
+      "height": 487
+    }
+  ]
+}
