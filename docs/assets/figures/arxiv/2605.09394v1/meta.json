@@ -1,0 +1,222 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2605.09394v1/fig-001.webp",
+      "caption": "Table 5: Summary of the MAE (in eV) for six ft-MLIPs (from MACE-MH-1) to predict Er and Ea for the metal (M) and metal-oxide (MO) datasets. NFT-TS is the number of training configurations used in fine-tuning.",
+      "page": 11,
+      "index": 1,
+      "width": 748,
+      "height": 215
+    },
+    {
+      "url": "assets/figures/arxiv/2605.09394v1/fig-002.webp",
+      "caption": "Fig. 32",
+      "page": 38,
+      "index": 2,
+      "width": 706,
+      "height": 733
+    },
+    {
+      "url": "assets/figures/arxiv/2605.09394v1/fig-003.webp",
+      "caption": "Fig. 16",
+      "page": 26,
+      "index": 3,
+      "width": 759,
+      "height": 529
+    },
+    {
+      "url": "assets/figures/arxiv/2605.09394v1/fig-004.webp",
+      "caption": "Fig. 9",
+      "page": 21,
+      "index": 4,
+      "width": 758,
+      "height": 364
+    },
+    {
+      "url": "assets/figures/arxiv/2605.09394v1/fig-005.webp",
+      "caption": "Fig. 24",
+      "page": 30,
+      "index": 5,
+      "width": 759,
+      "height": 325
+    },
+    {
+      "url": "assets/figures/arxiv/2605.09394v1/fig-006.webp",
+      "caption": "Fig. 23",
+      "page": 30,
+      "index": 6,
+      "width": 750,
+      "height": 338
+    },
+    {
+      "url": "assets/figures/arxiv/2605.09394v1/fig-007.webp",
+      "caption": "Fig. 21",
+      "page": 29,
+      "index": 7,
+      "width": 750,
+      "height": 319
+    },
+    {
+      "url": "assets/figures/arxiv/2605.09394v1/fig-008.webp",
+      "caption": "Fig. 10",
+      "page": 22,
+      "index": 8,
+      "width": 759,
+      "height": 487
+    },
+    {
+      "url": "assets/figures/arxiv/2605.09394v1/fig-009.webp",
+      "caption": "Fig. 28",
+      "page": 34,
+      "index": 9,
+      "width": 726,
+      "height": 977
+    },
+    {
+      "url": "assets/figures/arxiv/2605.09394v1/fig-010.webp",
+      "caption": "Table 4: Summary table of the total number of configurations used in each fromscratch training set (NFS-TS), MAE of Er and Ea in eV for the metallic (M) and metal-oxide (MO) test set studies using different versions of the MLIP trained in this work, and comparisons of our model performance with the UMA and MACE models.",
+      "page": 10,
+      "index": 10,
+      "width": 752,
+      "height": 233
+    },
+    {
+      "url": "assets/figures/arxiv/2605.09394v1/fig-011.webp",
+      "caption": "Fig. 4: The NEB calculated reaction pathways for (a) C2H4* + CO → OCC2H4* on Cu(511) and (b) CHCOH* + CO → OCCHCOH* on Cu(100) surfaces, using DFT, MACE-MH-1 (OMAT), FS-MD, FS-All, and FT-All MLIP models. The initial and transition state structures for each model are depicted in (c) and (d).",
+      "page": 14,
+      "index": 11,
+      "width": 769,
+      "height": 450
+    },
+    {
+      "url": "assets/figures/arxiv/2605.09394v1/fig-012.webp",
+      "caption": "Fig. 27",
+      "page": 33,
+      "index": 12,
+      "width": 685,
+      "height": 230
+    },
+    {
+      "url": "assets/figures/arxiv/2605.09394v1/fig-013.webp",
+      "caption": "Fig. 29",
+      "page": 35,
+      "index": 13,
+      "width": 724,
+      "height": 733
+    },
+    {
+      "url": "assets/figures/arxiv/2605.09394v1/fig-014.webp",
+      "caption": "Fig. 12",
+      "page": 23,
+      "index": 14,
+      "width": 756,
+      "height": 380
+    },
+    {
+      "url": "assets/figures/arxiv/2605.09394v1/fig-015.webp",
+      "caption": "Fig. 11",
+      "page": 23,
+      "index": 15,
+      "width": 749,
+      "height": 345
+    },
+    {
+      "url": "assets/figures/arxiv/2605.09394v1/fig-016.webp",
+      "caption": "Fig. 19",
+      "page": 28,
+      "index": 16,
+      "width": 756,
+      "height": 371
+    },
+    {
+      "url": "assets/figures/arxiv/2605.09394v1/fig-017.webp",
+      "caption": "Fig. 3: Two reported pathways for the CO2RR to (a) C2 products on Cu(001) [50] using the , MACE-MH-1 (OMAT), FS-BMA, FS-All, and FT-All models and (b) C1 products on 7 different FCC (100) catalysts [54] using the FT-All model. The dashed lines are reported DFT values and solid lines are FT-All MLIP values. All pathway energies are reported with respect to gas phase CO and H2 and a clean catalyst surface.",
+      "page": 13,
+      "index": 17,
+      "width": 768,
+      "height": 286
+    },
+    {
+      "url": "assets/figures/arxiv/2605.09394v1/fig-018.webp",
+      "caption": "Fig. 1: (a) The total number of elements, excluding the adsorbates, in all the configurations of the training dataset across metallic (M) and metal-oxides (MO) catalysts. (b) The percentages of the types of surface termination in the training set. (c) Unique types of organic molecules in the training set, and (d) total number of occurrence of each type of adsorbates in the training set.",
+      "page": 8,
+      "index": 18,
+      "width": 769,
+      "height": 324
+    },
+    {
+      "url": "assets/figures/arxiv/2605.09394v1/fig-019.webp",
+      "caption": "Fig. 30",
+      "page": 36,
+      "index": 19,
+      "width": 724,
+      "height": 984
+    },
+    {
+      "url": "assets/figures/arxiv/2605.09394v1/fig-020.webp",
+      "caption": "Fig. 7",
+      "page": 19,
+      "index": 20,
+      "width": 738,
+      "height": 482
+    },
+    {
+      "url": "assets/figures/arxiv/2605.09394v1/fig-021.webp",
+      "caption": "Fig. 6: Bee-swarm plots for randomly selected test set adsorption energy predictions grouped by (a) surface termination and (b) surface composition in decreasing order of lattice mismatch. The dashed red lines indicates the 0.2 eV threshold for the acceptable accuracy for the adsorption energy error.",
+      "page": 17,
+      "index": 21,
+      "width": 768,
+      "height": 314
+    },
+    {
+      "url": "assets/figures/arxiv/2605.09394v1/fig-022.webp",
+      "caption": "Fig. 26",
+      "page": 32,
+      "index": 22,
+      "width": 664,
+      "height": 893
+    },
+    {
+      "url": "assets/figures/arxiv/2605.09394v1/fig-023.webp",
+      "caption": "Fig. 18",
+      "page": 27,
+      "index": 23,
+      "width": 758,
+      "height": 323
+    },
+    {
+      "url": "assets/figures/arxiv/2605.09394v1/fig-024.webp",
+      "caption": "Fig. 17",
+      "page": 27,
+      "index": 24,
+      "width": 751,
+      "height": 311
+    },
+    {
+      "url": "assets/figures/arxiv/2605.09394v1/fig-025.webp",
+      "caption": "Fig. 31",
+      "page": 37,
+      "index": 25,
+      "width": 319,
+      "height": 983
+    },
+    {
+      "url": "assets/figures/arxiv/2605.09394v1/fig-026.webp",
+      "caption": "Fig. 25",
+      "page": 31,
+      "index": 26,
+      "width": 758,
+      "height": 332
+    },
+    {
+      "url": "assets/figures/arxiv/2605.09394v1/fig-027.webp",
+      "caption": "Fig. 5: (a) Comparison of the MACE-MH-1 (OMAT), FS-All, FT-MD(MO), and FTAll MLIPs (solid lines) for OER pathway predictions on OH covered α-IrO3 with the DFT reported values (dashed lines). (b) Comparison of the FT-All model performance (solid lines) OER pathway prediction on O and OH covered rutile-IrO2 (100) and (110) surface terminations with DFT values (dashed lines).",
+      "page": 16,
+      "index": 27,
+      "width": 767,
+      "height": 270
+    }
+  ]
+}

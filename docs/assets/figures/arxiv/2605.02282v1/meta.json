@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2605.02282v1/fig-001.webp",
+      "caption": "Figure 1. The plot of f δ 2 (blue line) and f δ 2 − θc 2 c 2 (red line) in (A), and their derivatives in (B) and (C)",
+      "page": 8,
+      "index": 1,
+      "width": 948,
+      "height": 263
+    }
+  ]
+}

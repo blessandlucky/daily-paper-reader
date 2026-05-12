@@ -1,0 +1,46 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2605.07437v1/fig-001.webp",
+      "caption": "Figure 1ï Stimulated electrocatalysis in transition metal oxides. Schematic comparison between conventional electrocatalysis described by a single electronic state and the present concept invoking multiple accessible electronic intermediate states. (a) Under an applied anodic potential, surface deprotonation generates oxygenated intermediates (*OH, *O), typically treated within a single-state framework. (b) In this work, an additional selective external stimulus (magnetic field) enables access to multiple spin and electronic states of the OER intermediates, dynamically modifying adsorption properties and reactivity. The external stimulation expands the accessible energy landscape of reactivity process, stabilizing otherwise high-energy configurations and activating alternative reaction channels. (c) Conceptual energy diagrams highlighting how conventional scaling relations constrain activity to a single volcano optimum, while accessing multiple electronic states allows deviation from linear scaling, enabling optimized binding of key intermediates and potentially breaking linear scaling relations (LSR).",
+      "page": 15,
+      "index": 1,
+      "width": 933,
+      "height": 386
+    },
+    {
+      "url": "assets/figures/arxiv/2605.07437v1/fig-002.webp",
+      "caption": "Figure 4ï Operando UV-Vis Spectroelectrochemistry measurements. (a) In situ spectroelectrochemistry setup used to monitor effect of magnetic stimulation on the OER. (b) Representative differential absorption spectra at different applied potentials with and without magnetic field collected under steady state conditions (see Fig. S11 and Supplementary Note 6 for an extended potential range). (c-f) Differential absorption at 542 nm measured at scan rate of 10 mV s−1. (c) and (d) show data without magnetic stimulation for the forward and backwards scan respectively alongside the corresponding current density. We observe a sharp change in the optical signal that correlates with the Ni(II)/Ni(III) redox transition. (e) and (f) show data with a constant magnetic stimulation at 0.7 T for the forward and backwards scan respectively. A further change in the differential signal is observed at high applied potential. The data was collected in 0.1M KOH. See Supplementary Notes 5 and 7 for extended datasets and experimental details.",
+      "page": 18,
+      "index": 2,
+      "width": 889,
+      "height": 1025
+    },
+    {
+      "url": "assets/figures/arxiv/2605.07437v1/fig-003.webp",
+      "caption": "Figure 5ï Redox transitions as a function of potential. (a-b) Experimental coverage (θ) of redox transitions as a function of potential without magnetic field in the forward (a) and reverse (b) direction. The Ni(II)/Ni(III) redox transition (red) fits well to the Langmuir electroadsorption isotherm while for the oxo formation step (blue), a good fit is obtained for a Frumkin model with a fitted interaction energy of ~ 0.3 eV for the forward oxidation process. (c-d) Experimental coverage of redox transitions as a function of potential under an applied magnetic field of H = 0.7 T in the forward (c) and reverse (d) directions. In this case, the Ni(II)/Ni(III) redox transition (red) exhibits Langmuir-type coverage and oxo formation step (blue) exhibits Frumkin-type coverage. In addition, a new redox transition is observed after the OER onset (purple) which can also be well-described with a Langmuir model. A comparison of the different model outputs is shown Supplementary Note 8.",
+      "page": 19,
+      "index": 3,
+      "width": 923,
+      "height": 471
+    },
+    {
+      "url": "assets/figures/arxiv/2605.07437v1/fig-004.webp",
+      "caption": "Figure 3ï Enhancement of OER activity under applied magnetic field. (a) Currentvoltage characteristics of the Ni-Fe oxide at a scan rate of 10 mV/s in 0.1 M KOH with and without applied magnetic field. (b) Current density enhancement at 2.0 VRHE as a function of applied magnetic field strength. (c) Magnetic hysteresis loops of the as prepared catalyst, at 295 K based on magneto-optical Faraday spectroscopy measurements at λ = 542 nm. See Supplementary Information for extended dataset and magnetic signal analysis.",
+      "page": 17,
+      "index": 4,
+      "width": 933,
+      "height": 571
+    },
+    {
+      "url": "assets/figures/arxiv/2605.07437v1/fig-005.webp",
+      "caption": "Figure 2ï Theoretical exploration of the electronic and geometric diversity of FeNiOOH along the OER pathway. (a) Modelling structure of the NiFeOOH model, highlighting the active Ni, Fe and O sites. (b, c) Relative stability of possible oxidation states associated with different reaction intermediates during OER in (b) HS and (c) LS configurations. Colours indicate the localisation of the oxidation centre. For the 1O*, oxidation may localise on Ni (red), Fe (light blue), or O (dark blue). For the 2O*, additional mixed configurations appear, including Fe-Ni coupled oxidation (orange), together with Ni-, Fe-, and O-centred states. (d) Variation of Ni-O (squares) and Fe-O (circles) bond lengths as a function of oxidation states and active sites. (e) Free energy profile of the OER pathway on NiFeOOH. Blue dashed lines denote pathways within low-spin states; orange dashed lines correspond to high-spin pathways; red dashed lines represent the globally optimal route obtained by allowing spin-state crossover between LS and HS configurations at each intermediate step.",
+      "page": 16,
+      "index": 5,
+      "width": 943,
+      "height": 539
+    }
+  ]
+}

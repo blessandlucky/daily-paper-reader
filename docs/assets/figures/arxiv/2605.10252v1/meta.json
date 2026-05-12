@@ -1,0 +1,38 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2605.10252v1/fig-001.webp",
+      "caption": "FIG. 2. Four anode chemistries placed onto the stable branch of the saddle-node closure at 𝛼 = 0.05. Markers: graphite (blue circle), silicon composite (green square), lithium metal (red triangle), anode-free Li/Cu (purple diamond). Anodefree sits at 𝐾/𝐾 ≈ 0.95, within 5% of the critical point. The ordering is preserved across 𝛼 ∈ [0.01,0.5].",
+      "page": 6,
+      "index": 1,
+      "width": 960,
+      "height": 552
+    },
+    {
+      "url": "assets/figures/arxiv/2605.10252v1/fig-002.webp",
+      "caption": "FIG. 3. (a) CE-residual autocorrelation length 𝜉 vs cycle number for the four chemistries (continuous 1/𝑒 crossing, 30- cycle sliding window). (b) Theoretical critical-slowing-down exponent 𝜏 ∝ (𝐾 − 𝐾) / from Eq. (10), with each chemistry placed at its measured 𝐾/𝐾 .",
+      "page": 7,
+      "index": 2,
+      "width": 960,
+      "height": 343
+    },
+    {
+      "url": "assets/figures/arxiv/2605.10252v1/fig-003.webp",
+      "caption": "FIG. 4. (a) Critical current ratio 𝑗 /𝑗 vs 𝐾/𝐾 for 𝑝 = 1,2,3. Anode-free at 𝐾/𝐾 = 0.954 marked. (b) Critical temperature shift 𝛥𝑇 vs 𝐾/𝐾 for 𝐸 = 0.4 eV, 𝑇 = 298 K.",
+      "page": 8,
+      "index": 3,
+      "width": 960,
+      "height": 398
+    },
+    {
+      "url": "assets/figures/arxiv/2605.10252v1/fig-004.webp",
+      "caption": "FIG. 1. (a) Saddle-node bifurcation of the closure 𝑑𝑢/𝑑𝜏 = 𝐾 − 𝑢/(1 + 𝛼𝑢 ) for 𝛼 = 1. Solid: stable branch.",
+      "page": 4,
+      "index": 4,
+      "width": 960,
+      "height": 341
+    }
+  ]
+}

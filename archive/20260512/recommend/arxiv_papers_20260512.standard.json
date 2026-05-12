@@ -1,0 +1,486 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-05-12T20:56:10.888170+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 6,
+    "deep_cap": 6,
+    "deep_selected": 6,
+    "quick_candidates": 6,
+    "quick_skim_target": 11,
+    "quick_selected": 6
+  },
+  "deep_dive": [
+    {
+      "id": "2605.07670v1",
+      "source": "arxiv",
+      "title": "Harnessing Structural Disorder: Unraveling Hydrogen Evolution in Monolayer Amorphous Carbon via First-Principles Simulations and Machine-Learned Potentials",
+      "abstract": "Disorder and defective coordination in the catalytic plane are crucial for enhancing the Hydrogen Evolution Reaction (HER) on two-dimensional catalysts. Amorphous materials are disordered, making them catalytically adaptive for many reactions. In this work, the HER capabilities of Monolayer Amorphous Carbon (MAC) were studied in comparison with crystalline carbon derivatives, such as pristine graphene (GE) and graphyne derivatives. MAC generated from melt-quench simulations revealed a diverse framework of predominantly sp2 and sp3 carbons with numerous 5-, 6-, and 7-membered rings. Density Functional Theory (DFT) calculations investigated free-energy variations in hydrogen adsorption for each material. According to Sabatier's principle, optimum activity is achieved when the Gibbs free energy (Delta GH) change approaches zero. Crystalline carbon materials possess limited active sites, with beta-graphyne showing the best Delta GH value of +0.34 eV. The adsorption study for MAC was conducted in 30 distinct local environments, where core structural properties were analyzed against varying radii. Calculations showed a Delta GH distribution for MAC ranging from -0.02 eV to +1.35 eV. To evaluate activity across the entire MAC surface, a MACE MLIP foundation model was finetuned, achieving optimal energy and force fitting of 1.67 meV/atom and 29.15 meV/A, respectively. The MLIP predicted Delta GH values from -0.91 eV to +1.70 eV, with approximately 15% of sites exhibiting values below +0.25 eV. Feature analysis revealed that 7-membered rings, curvature, and ripple height enhance HER activity. Our findings suggest that, with careful optimization of local features, MAC can be tuned to compete with noble metal catalysts.",
+      "authors": [
+        "Sreehari M S",
+        "Ashutosh Krishna Amaram",
+        "Raghavan Ranganathan"
+      ],
+      "primary_category": "cond-mat.mtrl-sci",
+      "categories": [
+        "cond-mat.mtrl-sci"
+      ],
+      "published": "2026-05-08T12:41:20+00:00",
+      "link": "https://arxiv.org/pdf/2605.07670v1",
+      "tags": [
+        "keyword:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries",
+        "query:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "hydrogen evolution reaction (HER) on amorphous carbon catalysts",
+      "llm_evidence_cn": "非晶碳催化剂上的析氢反应 (HER)",
+      "llm_evidence": "非晶碳催化剂上的析氢反应 (HER)",
+      "canonical_evidence": "非晶碳催化剂上的析氢反应 (HER)",
+      "llm_tldr_en": "Explores the HER performance of monolayer amorphous carbon using first-principles simulations and machine learning.",
+      "llm_tldr_cn": "利用第一性原理模拟和机器学习探索了单层非晶碳的析氢反应性能。",
+      "llm_tldr": "利用第一性原理模拟和机器学习探索了单层非晶碳的析氢反应性能。",
+      "llm_tags": [
+        "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries"
+      ],
+      "matched_query_tag": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "matched_query_text": "Hydrogen evolution reaction",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2605.07437v1",
+      "source": "arxiv",
+      "title": "Spin-lattice coupling enables adaptive adsorption in magnetically-driven electrocatalysts",
+      "abstract": "A major challenge in electrochemistry is to decouple the reactive intermediates of a catalytic cycle to optimise their energies independently. During the oxygen evolution reaction (OER), such energy interdependence results from the need to generate multiple adsorbates at the same site and sets the minimum overpotential. Here, we show that an external stimulus, such as a magnetic field, can relax the scaling relationships between intermediates during the OER. Spectroscopic measurements and Density Functional Theory simulations in Ni-Fe oxyhydroxides reveal that applying a magnetic field alters surface chemisorption and injects structural flexibility at the interface. We interpret these observations as a consequence of stimulated changes in the spin-lattice coupling, which allow access to quasi-degenerate oxygenated intermediates that modulate the reaction energy demands. Our findings redefine the scaling limitations as state-projected rather than intrinsic and establish external stimulation as a strategy to navigate multi-state energy landscapes in electrocatalysis and sensing applications.",
+      "authors": [
+        "Arnold Gaje",
+        "Lulu Li",
+        "Felipe A. Garcés-Pineda",
+        "Camilo A. Mesa",
+        "Ghazaleh Abdolhosseini",
+        "Aditya K. Kushwaha",
+        "Dora Zalka",
+        "Elzbieta Trzop",
+        "Nicolas Godin",
+        "Raffaella Torchio",
+        "María Escudero-Escribano",
+        "Eric Collet",
+        "Sixto Giménez",
+        "Niels Keller",
+        "José Ramón Galán-Mascarós",
+        "Núria López",
+        "Ernest Pastor"
+      ],
+      "primary_category": "cond-mat.mtrl-sci",
+      "categories": [
+        "cond-mat.mtrl-sci"
+      ],
+      "published": "2026-05-08T08:39:35+00:00",
+      "link": "https://arxiv.org/pdf/2605.07437v1",
+      "tags": [
+        "keyword:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries",
+        "query:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries"
+      ],
+      "llm_score": 8.5,
+      "llm_evidence_en": "Magnetic field regulation of OER intermediates and overpotential",
+      "llm_evidence_cn": "磁场调节析氧反应(OER)中间体和过电位",
+      "llm_evidence": "磁场调节析氧反应(OER)中间体和过电位",
+      "canonical_evidence": "磁场调节析氧反应(OER)中间体和过电位",
+      "llm_tldr_en": "This study demonstrates how magnetic fields can decouple OER intermediates to optimize catalytic performance.",
+      "llm_tldr_cn": "该研究展示了磁场如何解耦OER中间体以优化电催化性能。",
+      "llm_tldr": "该研究展示了磁场如何解耦OER中间体以优化电催化性能。",
+      "llm_tags": [
+        "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries"
+      ],
+      "matched_query_tag": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "matched_query_text": "Hydrogen evolution reaction",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2605.07966v1",
+      "source": "arxiv",
+      "title": "Bubble jetting in acoustic microdroplet vaporization",
+      "abstract": "Acoustic droplet vaporization denotes the phase-change of micron- and sub-micron-sized droplets upon the application of high-amplitude ultrasound. The asymmetric collapse of the incepted vapor bubbles within the droplets can give rise to high-speed liquid microjets. Here, we describe acoustically-driven and bubble-pair jetting arising within the vaporizing droplet, observed experimentally with ultra-high-speed imaging at the microscale. The existence of complex pressure fields due to the continued acoustic wave-droplet interaction and the nucleation of multiple bubbles within the droplet leads to rich dynamics, with the jets presenting behavioral self-similarity to millimetric bubbles under comparable conditions. Evaporative instabilities that develop during bubble growth impede jet formation during bubble collapse. Furthermore, the ability of the jets to pierce the droplet interface and penetrate into the surrounding fluid is discussed. These powerful microjets could be harnessed to induce cell permeabilization for targeted drug delivery and treatment of cancerous tissue.",
+      "authors": [
+        "Anunay Prasanna",
+        "Samuele Fiorini",
+        "Gazendra Shakya",
+        "Outi Supponen"
+      ],
+      "primary_category": "physics.flu-dyn",
+      "categories": [
+        "physics.flu-dyn",
+        "physics.med-ph"
+      ],
+      "published": "2026-05-08T16:29:29+00:00",
+      "link": "https://arxiv.org/pdf/2605.07966v1",
+      "tags": [
+        "keyword:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries",
+        "query:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries"
+      ],
+      "llm_score": 8.5,
+      "llm_evidence_en": "bubble dynamics, nucleation, and growth within vaporizing droplets",
+      "llm_evidence_cn": "汽化液滴内的气泡动力学、成核与生长",
+      "llm_evidence": "汽化液滴内的气泡动力学、成核与生长",
+      "canonical_evidence": "汽化液滴内的气泡动力学、成核与生长",
+      "llm_tldr_en": "Investigates bubble nucleation and jetting dynamics in acoustic microdroplet vaporization using high-speed imaging.",
+      "llm_tldr_cn": "利用超高速成像研究了声学微液滴汽化中的气泡成核和喷射动力学。",
+      "llm_tldr": "利用超高速成像研究了声学微液滴汽化中的气泡成核和喷射动力学。",
+      "llm_tags": [
+        "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries"
+      ],
+      "matched_query_tag": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "matched_query_text": "Bubble evolution dynamics",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2605.06348v1",
+      "source": "arxiv",
+      "title": "From Deposition Stress to Surface Reactivity: Strain-Dependent Hydrogen Evolution on Sputtered Platinum Thin Films",
+      "abstract": "Strain has emerged as a promising approach for tuning electrocatalytic properties, yet its role in sputter-deposited thin films remains poorly understood. In this work, magnetron-sputtered platinum (Pt) thin films with different stress states were prepared by varying the sputter pressure. The resulting changes in microstructure, residual strain, and hydrogen evolution reaction (HER) activity were investigated using complementary characterization techniques and density functional theory (DFT) calculations. Structural analysis reveals a transition of (111)-textured Pt thin films from dense and smooth films at low pressures, to more porous microstructures with increased roughness at higher pressures. Electrochemical measurements show that films deposited at low sputter pressure exhibit the highest HER activity, while higher sputter pressures lead to reduced activity despite increased surface area. DFT calculations demonstrate that lattice strain alters hydrogen adsorption energetics and surface coverage on Pt(111), providing a mechanistic explanation for the observed activity trends. Overall, the results highlight that HER activity in sputtered Pt thin films is governed by the interplay of residual strain, microstructure, and hydrogen coverage.",
+      "authors": [
+        "Sabrina Baha",
+        "Alejandro E. Perez Mendoza",
+        "Leonardo H. Morais",
+        "Aleksander Kostka",
+        "Shivam Shukla",
+        "Ellen Suhr",
+        "Andre Oliveira",
+        "Annika Gatzki",
+        "Henrik H. Kristoffersen",
+        "Jan Rossmeisl",
+        "Corina Andronescu",
+        "Alfred Ludwig"
+      ],
+      "primary_category": "cond-mat.mtrl-sci",
+      "categories": [
+        "cond-mat.mtrl-sci"
+      ],
+      "published": "2026-05-07T14:31:59+00:00",
+      "link": "https://arxiv.org/pdf/2605.06348v1",
+      "tags": [
+        "keyword:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries",
+        "query:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "Strain-dependent hydrogen evolution reaction (HER) on platinum films",
+      "llm_evidence_cn": "铂薄膜上应变相关的析氢反应(HER)",
+      "llm_evidence": "铂薄膜上应变相关的析氢反应(HER)",
+      "canonical_evidence": "铂薄膜上应变相关的析氢反应(HER)",
+      "llm_tldr_en": "This work investigates how deposition stress and microstructure in Pt films influence HER activity.",
+      "llm_tldr_cn": "该工作研究了铂薄膜中的沉积应力和微观结构如何影响析氢反应(HER)活性。",
+      "llm_tldr": "该工作研究了铂薄膜中的沉积应力和微观结构如何影响析氢反应(HER)活性。",
+      "llm_tags": [
+        "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries"
+      ],
+      "matched_query_tag": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "matched_query_text": "Hydrogen evolution reaction",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2605.07901v1",
+      "source": "arxiv",
+      "title": "Vortex ring formation from the interaction of a cavitation bubble with a confined air bubble: experiments and a timing criterion",
+      "abstract": "We study vortex ring formation arising from the interaction between a cavitation bubble and a confined air bubble in a cylindrical blind hole, using high-speed shadowgraphy imaging. As the cavitation bubble grows above the hole, it drives a downward flow that compresses the air bubble at the base. The air bubble subsequently expands, expelling the overlying liquid column upward as a coherent slug; impact of this slug on the far boundary of the collapsing cavitation bubble produces a vortex ring. Parametric experiments across the dimensionless stand-off distance $\\mathcal{H} = h/R_{\\max}$ and the air bubble fill fraction $\\mathcal{B} = (d_\\text{hole} - d_\\text{top})/d_\\text{hole}$ identify three regimes: (i) liquid column impact during collapse, producing a vortex ring ($\\mathcal{H} \\lesssim 0.5$, $\\mathcal{B} \\lesssim 0.5$); (ii) late impact near the end of collapse (large $\\mathcal{H}$); and (iii) direct air bubble impact after bypassing the liquid column (large $\\mathcal{B}$), with neither (ii) nor (iii) producing a ring. Two one-dimensional models, based on the Rayleigh-Plesset equation and isentropic air bubble expansion, predict the liquid column impact location and its speed $U_\\text{lc}$, respectively. A dimensionless timing parameter $Π= (h + R_{\\max}) / (U_\\text{lc} \\cdot t_\\text{cav}/2)$, comparing the liquid column travel time to the cavitation collapse half-period, distinguishes the three regimes: ring formation occurs for $1 \\lesssim Π\\lesssim 1.5$. The ring propagates from the hole at an initial speed of $5$ m/s, decelerating quadratically, and breaks apart via azimuthal instabilities at $Re \\approx 4500$.",
+      "authors": [
+        "Charul Gupta",
+        "Yashwant Singh",
+        "Lakshmana D Chandrala",
+        "Harish N Dixit",
+        "Badarinath Karri"
+      ],
+      "primary_category": "physics.flu-dyn",
+      "categories": [
+        "physics.flu-dyn"
+      ],
+      "published": "2026-05-08T15:41:29+00:00",
+      "link": "https://arxiv.org/pdf/2605.07901v1",
+      "tags": [
+        "keyword:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries",
+        "query:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "interaction of cavitation bubbles with confined air bubbles and vortex ring formation",
+      "llm_evidence_cn": "空化气泡与受限气泡的相互作用及涡环形成",
+      "llm_evidence": "空化气泡与受限气泡的相互作用及涡环形成",
+      "canonical_evidence": "空化气泡与受限气泡的相互作用及涡环形成",
+      "llm_tldr_en": "Studies the dynamics of cavitation and air bubble interactions using high-speed imaging and experiments.",
+      "llm_tldr_cn": "通过高速成像和实验研究了空化气泡与空气泡相互作用的动力学。",
+      "llm_tldr": "通过高速成像和实验研究了空化气泡与空气泡相互作用的动力学。",
+      "llm_tags": [
+        "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries"
+      ],
+      "matched_query_tag": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "matched_query_text": "Bubble evolution dynamics",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2605.10252v1",
+      "source": "arxiv",
+      "title": "Saddle-node bifurcation in interfacial morphology selects battery degradation phase",
+      "abstract": "We propose a minimal nonlinear closure ODE for the dynamic active-area factor of a battery interface and show that it exhibits a saddle-node bifurcation when the smoothing rate saturates with surface roughness. The closure is the simplest physically motivated extension of a recently introduced single-fixed-point closure [C. Bae, in preparation (2026)]: u = K - u/(1 + alphau^2), where u = xi - 1 is the dimensionless excess active area, K the dimensionless drive, and alpha a single saturation parameter. The bifurcation occurs at K_c = 1/(2sqrt(alpha)), separating a smooth passivating phase from a morphologically unstable phase. Mapping four canonical anode configurations -- graphite, silicon composite, lithium metal, and anode-free Li/Cu -- onto the closure via end-of-cycling steady-state xi extracted from publicly available long-cycle data populates the stable branch with monotonically increasing K/K_c ratios: graphite (~0.01), silicon composite (~0.24), lithium metal (~0.73), and anode-free (~0.95). The anode-free configuration sits within 5% of the saddle-node threshold, predicting a vanishingly small operational stability window in current density, temperature, and electrolyte composition. We test three falsifiable predictions of the framework -- a critical current density, a critical temperature shift, and a mean-field critical-slowing-down exponent -- and find them broadly consistent with publicly available data. We argue that this near-critical position is universal to nucleation-controlled deposition on non-passivating substrates.",
+      "authors": [
+        "Changdeuck Bae"
+      ],
+      "primary_category": "cond-mat.mtrl-sci",
+      "categories": [
+        "cond-mat.mtrl-sci"
+      ],
+      "published": "2026-05-11T09:22:01+00:00",
+      "link": "https://arxiv.org/pdf/2605.10252v1",
+      "tags": [
+        "query:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "interfacial morphology and battery degradation phases including lithium metal",
+      "llm_evidence_cn": "界面形貌与电池降解阶段，包括金属锂",
+      "llm_evidence": "界面形貌与电池降解阶段，包括金属锂",
+      "canonical_evidence": "界面形貌与电池降解阶段，包括金属锂",
+      "llm_tldr_en": "Models battery interface stability and morphological transitions across various anode configurations.",
+      "llm_tldr_cn": "对不同负极配置下的电池界面稳定性和形貌演变进行了建模。",
+      "llm_tldr": "对不同负极配置下的电池界面稳定性和形貌演变进行了建模。",
+      "llm_tags": [
+        "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries"
+      ],
+      "matched_query_tag": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "matched_query_text": "Dendrite growth",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "2605.02688v1",
+      "source": "arxiv",
+      "title": "Unified Mapping of Multi-Site Electrocatalytic Activity Using a Single Descriptor",
+      "abstract": "We present a precise and general method to map the activity of electrocatalysts across multiple sites. Starting from a mean-field statistical mechanics model, we introduce an effective adsorption free energy descriptor that explicitly incorporates lateral adsorbate-adsorbate interactions, enabling the construction of coverage-consistent volcano relationships. Extending this approach, we show that adsorption energetics and interaction strength define a two-dimensional activity landscape that gives rise to a \"volcano ridge\" that captures the coupled influence of binding and interactions on catalytic performance. For multi-site systems, we demonstrate that the inherently nonlinear coupling between distinct adsorption environments leads to multi-peaked activity trends that cannot be represented by conventional single-site descriptors. To address this, we introduce a reduced descriptor mapping that projects the multidimensional activity landscape onto a single effective coordinate while preserving the underlying physics of site heterogeneity and lateral interactions. The resulting framework generalizes Sabatier-type analysis to complex alloy catalysts and provides a physically interpretable route for screening electrocatalytic materials of arbitrary compositional complexity.",
+      "authors": [
+        "A. Dana",
+        "D. Terrones",
+        "S. Gelin",
+        "I. Dabo"
+      ],
+      "primary_category": "cond-mat.mtrl-sci",
+      "categories": [
+        "cond-mat.mtrl-sci"
+      ],
+      "published": "2026-05-04T15:02:42+00:00",
+      "link": "https://arxiv.org/pdf/2605.02688v1",
+      "tags": [
+        "keyword:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries",
+        "query:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries"
+      ],
+      "llm_score": 7.5,
+      "llm_evidence_en": "electrocatalytic activity mapping and adsorption free energy for multi-site systems",
+      "llm_evidence_cn": "多位点电催化活性映射与吸附自由能研究",
+      "llm_evidence": "多位点电催化活性映射与吸附自由能研究",
+      "canonical_evidence": "多位点电催化活性映射与吸附自由能研究",
+      "llm_tldr_en": "Proposes a unified descriptor for mapping multi-site electrocatalytic activity using adsorption energetics.",
+      "llm_tldr_cn": "提出了一种利用吸附能学映射多位点电催化活性的统一描述符。",
+      "llm_tldr": "提出了一种利用吸附能学映射多位点电催化活性的统一描述符。",
+      "llm_tags": [
+        "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries"
+      ],
+      "matched_query_tag": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "matched_query_text": "Hydrogen evolution reaction",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2605.02282v1",
+      "source": "arxiv",
+      "title": "On weak solutions for the stationary Cahn-Hillard-Navier-Stokes equations with singular potential",
+      "abstract": "The stationary Navier--Stokes--Cahn--Hilliard equations are considered, governing the motion of a compressible, two-phase fluid mixture with a diffuse interface. The free energy density in this paper has a singular logarithmic (Flory-uggins) form, ensuring that the mass fraction remains in the physical range and allowing for vacuum states. We prove the existence of weak solutions in a three-dimensional bounded domain under structural assumptions on the adiabatic exponent. The stationary setting poses two main mathematical challenges: the absence of an energy inequality driven by the evolution process to control the singular potential, and the degeneracy of the density near the vacuum. To address these issues, we introduce a specialized regularization of the logarithmic term that eliminates the quadratic growth induced by anti-diffusion, thereby restoring compactness. Uniform estimates are obtained through a special choice of artificial pressure and an interpolation argument that controls the desired norm of the density. A two-level limiting process then yields a weak solution that satisfies the physical bounds almost everywhere on the support of the density.To our knowledge, this is the first existence result for the steady compressible Navier--Stokes--Cahn--Hilliard system that incorporates both a singular free energy and vacuum regions.",
+      "authors": [
+        "Zhilei Liang",
+        "Sen Liu",
+        "Jiangyu Shuai",
+        "Dehua Wang"
+      ],
+      "primary_category": "math.AP",
+      "categories": [
+        "math.AP"
+      ],
+      "published": "2026-05-04T07:17:53+00:00",
+      "link": "https://arxiv.org/pdf/2605.02282v1",
+      "tags": [
+        "keyword:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries",
+        "query:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Navier-Stokes-Cahn-Hilliard equations for two-phase fluid mixture",
+      "llm_evidence_cn": "两相流体混合物的Navier-Stokes-Cahn-Hilliard方程",
+      "llm_evidence": "两相流体混合物的Navier-Stokes-Cahn-Hilliard方程",
+      "canonical_evidence": "两相流体混合物的Navier-Stokes-Cahn-Hilliard方程",
+      "llm_tldr_en": "Mathematical study of two-phase fluid mixtures, applicable to gas-liquid bubble evolution modeling.",
+      "llm_tldr_cn": "两相流体混合物的数学研究，可用于气液气泡演化建模。",
+      "llm_tldr": "两相流体混合物的数学研究，可用于气液气泡演化建模。",
+      "llm_tags": [
+        "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries"
+      ],
+      "matched_query_tag": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "matched_query_text": "Bubble evolution dynamics",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2605.07504v1",
+      "source": "arxiv",
+      "title": "Causal mechanisms of drop breakup in turbulent flows",
+      "abstract": "The fragmentation of drops and bubbles in turbulence determines the rate of many processes in engineering and environmental fluid flows. The nonlinear coupling between interfacial and hydrodynamic stresses poses a fundamental difficulty to model reduction, which we here address by decomposing the flow into outer and inner fields. We show that the outer field is independent of the drop dynamics and drives deformation, whereas the inner field responds to the deformation by dissipating the interfacial energy through the genesis of turbulent eddies. Drawing from these observations, we derive a simple analytical model that reproduces the breakup statistics obtained from ensembles of direct numerical simulations of drops and bubbles. Our results reveal a causal link between the intermittency of turbulent flows and the memoryless breakup statistics.",
+      "authors": [
+        "Daniel Morón",
+        "Ianto Cannon",
+        "Alberto Vela-Martín",
+        "Marc Avila"
+      ],
+      "primary_category": "physics.flu-dyn",
+      "categories": [
+        "physics.flu-dyn"
+      ],
+      "published": "2026-05-08T09:38:17+00:00",
+      "link": "https://arxiv.org/pdf/2605.07504v1",
+      "tags": [
+        "keyword:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries",
+        "query:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "causal mechanisms of bubble and drop breakup in turbulent flows",
+      "llm_evidence_cn": "湍流中气泡和液滴破碎的因果机制",
+      "llm_evidence": "湍流中气泡和液滴破碎的因果机制",
+      "canonical_evidence": "湍流中气泡和液滴破碎的因果机制",
+      "llm_tldr_en": "Develops an analytical model for drop and bubble breakup statistics in turbulent engineering flows.",
+      "llm_tldr_cn": "为工程湍流中的液滴和气泡破碎统计数据开发了一个解析模型。",
+      "llm_tldr": "为工程湍流中的液滴和气泡破碎统计数据开发了一个解析模型。",
+      "llm_tags": [
+        "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries"
+      ],
+      "matched_query_tag": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "matched_query_text": "Bubble evolution dynamics",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2605.10301v1",
+      "source": "arxiv",
+      "title": "Dripping-onto-droplet capillary breakup",
+      "abstract": "This experimental, numerical, and theoretical study investigates the capillary thinning and breakup of Newtonian filaments formed following the coalescence of a millimetric-nozzle-generated pendant drop with a lower droplet cap contained in a millimetric cylinder in ambient air, i.e., dripping-onto-droplet capillary breakup (DoD). Our mixed approach combines filament breakup experiments recorded with a high-speed camera and three-dimensional numerical simulations based on a variational multiscale framework for multiphase fluid flows. The results are analysed by considering the dynamics of fluid filament thinning, energy transfers, and scaling laws. Three flow regimes are highlighted: capillary-inertial, capillary-viscous, and mixed capillary-inertial-viscous. All regimes are affected by gravity. The findings are summarised in a two-dimensional diagram that correlates the filament breakup time with different flow regimes using the important dimensionless parameters of the problem, e.g., the Ohnesorge number (which relates the viscous stress to inertial and capillary stresses) and the Bond number (which balances the gravitational stress with the capillary one). This diagram can be used to quantify both the liquid viscosity and the liquid-gas surface tension (for Newtonian fluids). Lastly, we demonstrate that DoD can also be used as a rheometric test, giving access to the extensional relaxation time of polymer solutions (for viscoelastic fluids).",
+      "authors": [
+        "Ricardo El Khoury",
+        "Kindness Isukwem",
+        "Elie Hachem",
+        "Anselmo Pereira"
+      ],
+      "primary_category": "physics.flu-dyn",
+      "categories": [
+        "physics.flu-dyn"
+      ],
+      "published": "2026-05-11T09:57:09+00:00",
+      "link": "https://arxiv.org/pdf/2605.10301v1",
+      "tags": [
+        "keyword:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries",
+        "query:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "multiphase fluid flows and capillary breakup dynamics of droplets",
+      "llm_evidence_cn": "多相流体流动与液滴毛细断裂动力学",
+      "llm_evidence": "多相流体流动与液滴毛细断裂动力学",
+      "canonical_evidence": "多相流体流动与液滴毛细断裂动力学",
+      "llm_tldr_en": "Investigates the capillary thinning and breakup of Newtonian filaments in dripping-onto-droplet scenarios.",
+      "llm_tldr_cn": "研究了滴落到液滴场景中牛顿流体丝的毛细变细和断裂过程。",
+      "llm_tldr": "研究了滴落到液滴场景中牛顿流体丝的毛细变细和断裂过程。",
+      "llm_tags": [
+        "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries"
+      ],
+      "matched_query_tag": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "matched_query_text": "Bubble evolution dynamics",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2605.09394v1",
+      "source": "arxiv",
+      "title": "Systematic Fine-Tuning of MACE Interatomic Potentials for Catalysis",
+      "abstract": "Once trained, machine-learned interatomic potentials (MLIPs) provide a fast and accurate way to study catalytic reaction pathways, but their performance strongly depends on the training set. Here, we compare nine MLIPs trained with different data sets and strategies, including from-scratch (FS) training and fine-tuning (FT) of large foundation models. The models are evaluated on reaction energies, $E_{r}$, and reaction energy barriers, $E_{a}$, for 141 reactions, including CO$_2$ reduction to C$_2$ and C$_3$ products, propane dehydrogenation, hydrogen intercalation on Pd, and out-of-distribution oxygen evolution reaction (OER) on metal oxides. FS models trained with 5%--10% perturbed high-energy configurations from molecular dynamics or contour exploration reduce the error by more than twofold compared with models trained only on relaxation trajectories. In contrast, FT MLIPs are less sensitive to sampling and transfer well to out-of-distribution reactions. An MLIP fine-tuned on metallic catalysts achieves a 0.30 eV MAE for OER on iridium oxide polymorphs, outperforming out-of-the-box MACE-MH-1 by 0.08 eV and the best FS model by 0.14 eV. A model fine-tuned to O and OH adsorption on metal oxides gives a 0.19 eV reaction-barrier MAE for out-of-distribution CO$_2$RR on Cu, comparable to an FS model trained on in-distribution C--C bond-breaking reactions. Finally, a large MLIP fine-tuned on 49,860 configurations gives the best overall performance across metallic and metal-oxide catalysts and was used to screen a large left-out set of bimetallic alloys, achieving a 0.15 eV MAE for $E_{r}$, even for adsorbates on unseen Miller-index surfaces such as (532). This work identifies the training configurations needed for accurate FS and FT MLIPs for catalytic reaction modeling.",
+      "authors": [
+        "Nima Karimitari",
+        "Jacob Clary",
+        "Derek Vigil-Fowler",
+        "Ravishankar Sundararaman",
+        "Gábor Csányi",
+        "Christopher Sutton"
+      ],
+      "primary_category": "physics.chem-ph",
+      "categories": [
+        "physics.chem-ph",
+        "cond-mat.mtrl-sci"
+      ],
+      "published": "2026-05-10T07:43:42+00:00",
+      "link": "https://arxiv.org/pdf/2605.09394v1",
+      "tags": [
+        "keyword:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries",
+        "query:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "oxygen evolution reaction (OER) on metal oxides",
+      "llm_evidence_cn": "金属氧化物上的析氧反应 (OER)",
+      "llm_evidence": "金属氧化物上的析氧反应 (OER)",
+      "canonical_evidence": "金属氧化物上的析氧反应 (OER)",
+      "llm_tldr_en": "Evaluates machine-learned potentials for catalytic reactions including OER on metal oxides.",
+      "llm_tldr_cn": "评估机器学习势能在包括金属氧化物析氧反应在内的催化反应中的表现。",
+      "llm_tldr": "评估机器学习势能在包括金属氧化物析氧反应在内的催化反应中的表现。",
+      "llm_tags": [
+        "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries"
+      ],
+      "matched_query_tag": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "matched_query_text": "Hydrogen evolution reaction",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2605.10217v1",
+      "source": "arxiv",
+      "title": "Parabolic-growth universality and its nucleation-driven breakdown across lithium-battery anode chemistries",
+      "abstract": "Solid-electrolyte interphase (SEI) growth is widely modeled cell-by-cell with chemistry-specific closures, yet its underlying kinetic scaling is rarely tested across chemistries. By compiling cycle-resolved data from public long-cycle datasets covering four anode configurations -- graphite, silicon composite, lithium metal, and anode-free -- we show that the cumulative interphase-loss index Lambda_int obeys the parabolic law Lambda_int = A_chem * sqrt(1 - Theta_Li) in three of the four chemistries, with an exponent indistinguishable from alpha = 1/2 within experimental uncertainty. The chemistry-specific prefactor A_chem spans an order of magnitude, but the diffusion-limited parabolic kinetics is preserved. The fourth chemistry, anode-free configurations, deviates with a super-parabolic exponent alpha approx 0.77, consistent with a nucleation-controlled growth regime. We rationalize the result using the Tammann-Deal-Grove parabolic-growth framework adapted to interphase formation and identify the conditions under which universality is recovered. The observed regularity reduces SEI modeling complexity to a single rate constant per chemistry and provides a sharp falsifiable test for next-generation cell formats.",
+      "authors": [
+        "Changdeuck Bae"
+      ],
+      "primary_category": "cond-mat.mtrl-sci",
+      "categories": [
+        "cond-mat.mtrl-sci"
+      ],
+      "published": "2026-05-11T08:58:22+00:00",
+      "link": "https://arxiv.org/pdf/2605.10217v1",
+      "tags": [
+        "keyword:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries",
+        "query:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "nucleation-driven breakdown of interphase growth in lithium batteries",
+      "llm_evidence_cn": "锂电池界面增长的成核驱动失效研究",
+      "llm_evidence": "锂电池界面增长的成核驱动失效研究",
+      "canonical_evidence": "锂电池界面增长的成核驱动失效研究",
+      "llm_tldr_en": "Analyzes SEI growth kinetics and nucleation-driven breakdown across various lithium-battery anode chemistries.",
+      "llm_tldr_cn": "分析了不同锂电池负极化学体系中的SEI生长动力学和成核驱动失效。",
+      "llm_tldr": "分析了不同锂电池负极化学体系中的SEI生长动力学和成核驱动失效。",
+      "llm_tags": [
+        "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries"
+      ],
+      "matched_query_tag": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "matched_query_text": "Dendrite growth",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    }
+  ]
+}

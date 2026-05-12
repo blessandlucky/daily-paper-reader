@@ -1,0 +1,699 @@
+Title: Microsoft Word - Bae2026_Saddle-node bifurcation in interfacial morphology selects battery degradation phase_v101
+
+URL Source: https://arxiv.org/pdf/2605.10252v1
+
+Published Time: Tue, 12 May 2026 02:26:20 GMT
+
+Number of Pages: 12
+
+Markdown Content:
+# Saddle-node bifurcation in interfacial 
+
+# morphology selects battery degradation 
+
+# phase 
+
+Changdeuck Bae* 
+
+BEI corp., 125 Sandan-ro 19-gil, Ansan, Republic of Korea 
+
+*josiah.bae@beilab.ai 
+
+ResearcherID: A-6791-2010 
+
+https://orcid.org/0000-0001-5013-2288 
+
+Abstract 
+
+We propose a minimal nonlinear closure ODE for the dynamic active-area factor of a battery 
+
+interface and show that it exhibits a saddle-node bifurcation when the smoothing rate saturates 
+
+with surface roughness. The closure is the simplest physically motivated extension of a recently 
+
+introduced single-fixed-point closure [C. Bae, in preparation (2026)]: 𝑢  
+
+> ˙
+
+= 𝐾 − 𝑢 /(1 + 𝛼𝑢 ଶ),
+
+where 𝑢 = 𝜉 − 1 is the dimensionless excess active area, 𝐾 the dimensionless drive, and 𝛼 a single 
+
+saturation parameter. The bifurcation occurs at 𝐾 ௖ = 1/(2 √𝛼 ), separating a smooth passivating 
+
+phase from a morphologically unstable phase. Mapping four canonical anode configurations — 
+
+graphite, silicon composite, lithium metal, and anode-free Li/Cu — onto the closure via end-of-
+
+cycling steady-state 𝜉 extracted from publicly available long-cycle data populates the stable 
+
+branch with monotonically increasing 𝐾 /𝐾 ௖ ratios: graphite ( ~0.01 ), silicon composite ( ~0.24 ), 
+
+lithium metal ( ~0.73 ), and anode-free ( ~0.95 ). The anode-free configuration sits within 5% of the 
+
+saddle-node threshold, predicting a vanishingly small operational stability window in current 
+
+density, temperature, and electrolyte composition. We test three falsifiable predictions of the 
+
+framework — a critical current density, a critical temperature shift, and a mean-field critical-
+
+slowing-down exponent — and find them broadly consistent with publicly available data. We 
+
+argue that this near-critical position is universal to nucleation-controlled deposition on non-
+
+passivating substrates. I. INTRODUCTION 
+
+The cycle life of a rechargeable lithium battery is set, ultimately, by the dynamics of the solid–electrolyte 
+
+interphase (SEI) at the negative-electrode interface [1–4]. In its simplest description the SEI is a 
+
+passivating film of fixed area whose thickness slowly grows with time. This picture is adequate for 
+
+graphite anodes [5–7] but breaks down whenever the underlying electrode surface is itself dynamic — 
+
+through mechanical fracture in silicon-composite anodes [8–11], through plating and stripping in lithium-
+
+metal anodes [12–15], or through nucleation on bare current collectors in anode-free configurations 
+
+[16–18]. In each of these cases the active surface area 𝜉 — defined as the ratio of instantaneous to initial 
+
+area — becomes an essential cell-level state variable. 
+
+A recently proposed chemistry-agnostic framework [19] introduces a closure ODE for 𝜉 (𝑡 ),
+
+𝑑𝜉 
+
+𝑑𝑡 = 𝑘 ୥ୣ୬ |𝑗 (𝑡 )| ௣ − 𝑘 ୱ୫୭୭୲୦ (𝜉 − 1), (1) 
+
+in which 𝑘 ୥ୣ୬ |𝑗 |௣ generates new area in proportion to a power of the local current density 𝑗 and 
+
+𝑘 ୱ୫୭୭୲୦ (𝜉 − 1) smoothly relaxes excess area back toward 𝜉 = 1 . Equation (1) admits a single linearly 
+
+stable fixed point 𝜉 ∗ = 1 + ( 𝑘 ୥ୣ୬ /𝑘 ୱ୫୭୭୲୦ )| 𝑗 |௣ for any drive |𝑗 | > 0 . It cannot exhibit a phase transition, 
+
+a critical slowing down, or a sudden runaway in 𝜉 .
+
+Yet experiments routinely show a sharp transition from "stable cycling" to "morphological runaway" 
+
+when current density, temperature, or electrolyte composition crosses a threshold — most dramatically 
+
+for lithium-metal and anode-free cells [12–18]. We argue here that this is not a failure of Eq. (1) per se 
+
+but a failure of its linearity . The crucial physical feature missing from Eq. (1) is the observation that rough 
+
+surfaces are less effectively smoothed than smooth surfaces . Surface diffusion that flattens a small 
+
+bump moves an adatom only over a short lateral distance; on a corrugated surface, the same adatom 
+
+must traverse a longer effective path, and the smoothing flux saturates. 
+
+We capture this saturation by replacing the linear smoothing term in Eq. (1) with a saturable form 
+
+𝑘 ୱ୫୭୭୲୦ (𝜉 − 1)/[1 + 𝛼 (𝜉 − 1) ଶ], introducing one new dimensionless parameter 𝛼 . As we will show in 
+
+Sec. II, this modification turns the closure into a saddle-node system with a critical drive 
+
+𝐾 ௖ = 1
+
+2√𝛼 . (2) 
+
+Below 𝐾 ௖ two real fixed points exist (one stable, one unstable); at 𝐾 ௖ they merge in a saddle-node 
+
+bifurcation; above 𝐾 ௖ no fixed point exists and 𝜉 runs away to infinity. Mapping four canonical battery 
+
+anode chemistries onto the closure (Sec. III) places three of them — graphite, silicon composite, and 
+
+lithium metal — well below the bifurcation, while anode-free Li/Cu sits within 5% of 𝐾 ௖ regardless of the 
+
+choice of 𝛼 ∈ [0.01,0.5] . This places anode-free cells essentially on a critical point and predicts a 
+
+vanishingly small operational stability window — a sharp, falsifiable claim that we make quantitative in 
+
+Sec. IV. 
+
+The remainder of the paper is organized as follows. Section II derives the saddle-node closure 
+
+analytically. Section III maps four chemistries onto its single dimensionless drive 𝐾 . Section IV presents three falsifiable predictions and tests them against publicly available cycling data. Section V discusses the 
+
+generality of the closure beyond lithium batteries. Section VI summarizes and outlines open directions. 
+
+II. THE SADDLE-NODE CLOSURE 
+
+A. Saturable-smoothing extension of Eq. (1) 
+
+We replace the linear restoring term in Eq. (1) with a saturable form motivated by curvature-dependent 
+
+surface diffusion (see Appendix A for the microscopic derivation): 
+
+𝑑𝜉 
+
+𝑑𝑡 = 𝑘 ୥ୣ୬ |𝑗 |௣ − 𝑘 ୱ୫୭୭୲୦ (𝜉 − 1) 
+
+1 + 𝛼 (𝜉 − 1) ଶ . (3) 
+
+Introducing 𝑢 = 𝜉 − 1 , dimensionless time 𝜏 = 𝑘 ୱ୫୭୭୲୦ 𝑡 , and the dimensionless drive 
+
+𝐾 = 𝑘 ୥ୣ୬ |𝑗 |௣
+
+𝑘 ୱ୫୭୭୲୦ 
+
+, (4) 
+
+Eq. (3) becomes 
+
+𝑑𝑢 
+
+𝑑𝜏 = 𝐾 − 𝑢 
+
+1 + 𝛼 𝑢 ଶ ≡ 𝑓 (𝑢 ; 𝐾 , 𝛼 ). (5) 
+
+Equation (5) is the central object of this paper. 
+
+B. Fixed points and bifurcation 
+
+Setting 𝑑𝑢 /𝑑𝜏 = 0 gives 𝑢 /(1 + 𝛼𝑢 ଶ) = 𝐾 , which after multiplication by (1 + 𝛼𝑢 ଶ) rearranges to a 
+
+quadratic in 𝑢 :
+
+𝛼𝐾 𝑢 ଶ − 𝑢 + 𝐾 = 0. (6) 
+
+The two roots are 
+
+𝑢 ∗ = 1 ± √1 − 4 𝛼𝐾 ଶ
+
+2𝛼𝐾 . (7) 
+
+Real roots require 1 − 4 𝛼𝐾 ଶ ≥ 0 , i.e. 𝐾 ≤ 𝐾 ௖ = 1/(2 √𝛼 ). The discriminant vanishes at 𝐾 = 𝐾 ௖, where 
+
+the two roots merge at 𝑢 ௖ 
+
+> ∗
+
+= 1/ √𝛼 . For 𝐾 > 𝐾 ௖ no fixed point exists and 𝑢 (𝜏 ) → ∞ .
+
+Linear stability around either fixed point is governed by 
+
+𝜕 ௨𝑓 = − 1 − 𝛼 𝑢 ∗ଶ
+
+(1 + 𝛼 𝑢 ∗ଶ)ଶ . (8) 
+
+The lower root ( 𝛼𝑢 ∗ଶ < 1 ) is stable; the upper root ( 𝛼𝑢 ∗ଶ > 1 ) is unstable. Equation (5) thus exhibits the 
+
+canonical saddle-node bifurcation diagram (Fig. 1): a stable lower branch and an unstable upper branch 
+
+terminating at 𝐾 ௖.C. Universal local behavior 
+
+Near the bifurcation, write 𝐾 = 𝐾 ௖ − 𝛿𝐾 and 𝑢 = 𝑢 ௖ 
+
+> ∗
+
++ 𝜂 with |𝜂| ≪ 𝑢 ௖
+
+> ∗
+
+. Substituting into Eq. (5) and 
+
+Taylor expanding to leading order in 𝜂 and 𝛿𝐾 gives the canonical normal form 
+
+𝑑𝜂 
+
+𝑑𝜏 = −𝛿𝐾 + 𝐵 𝜂 ଶ, 𝐵 = 𝛼 𝑢 ௖
+
+> ∗
+
+. (9) 
+
+Equation (9) is the saddle-node normal form [20]. Its mean-field relaxation time diverges as 
+
+𝜏 ୰ୣ୪ୟ୶ ∝ (𝐾 ௖ − 𝐾) ିଵ /ଶ, (10) 
+
+with the universal saddle-node exponent 1/2 . This square-root divergence is the cleanest observable 
+
+consequence of the framework: any cell that approaches 𝐾 ௖ should exhibit a square-root critical slowing-
+
+down in its relaxation to small perturbations in current density, temperature, or stack pressure (see Sec. 
+
+IV.C). 
+
+D. Numerical trajectories 
+
+Figure 1(b) shows numerical solutions of Eq. (5) for 𝛼 = 1 (𝐾 ௖ = 0.5 ) at five values of 𝐾/𝐾 ௖ ∈
+
+{0.20,0.60,0.95,1.05,1.50} , started from 𝑢(0) = 0 (smooth surface). Subcritical trajectories ( 𝐾 < 𝐾 ௖)
+
+saturate exponentially at the stable fixed point. Supercritical trajectories ( 𝐾 > 𝐾 ௖) escape to infinity in 
+
+finite time. Near criticality ( 𝐾/𝐾 ௖ = 0.95 ) the approach is slow, displaying the predicted critical slowing-
+
+down (Sec. IV.C).  
+
+> FIG. 1. (a) Saddle-node bifurcation of the closure
+
+𝑑𝑢/𝑑𝜏 = 𝐾 − 𝑢/(1 + 𝛼𝑢 ଶ) for 𝛼 = 1 . Solid: stable branch.  
+
+> Dashed: unstable branch. The two branches meet at
+
+𝐾 ௖ = 1/(2 √𝛼 ) = 0.500 . (b) Trajectories 𝑢(𝜏) for five values of 
+
+𝐾/𝐾 ௖ started from 𝑢(0) = 0 . Subcritical solutions saturate; supercritical solutions diverge. 
+
+III. MAPPING FOUR ANODE CHEMISTRIES ONTO THE BIFURCATION 
+
+A. Steady-state extraction of 𝐾 
+
+For an experimentally cycled cell that has reached an apparent steady-state 𝜉 ୣ୬ୢ near end-of-life, we 
+
+invert Eq. (6) to extract the effective drive 𝐾 ୡ୦ୣ୫ = 𝑢 ୣ ୬ୢ 
+
+1 + 𝛼 𝑢 ୣ ୬ୢ  
+
+> ଶ
+
+, 𝑢 ୣ ୬ୢ = 𝜉 ୣ୬ୢ − 1. (11) 
+
+For a representative parameter 𝛼 = 0.05 (corresponding to 𝐾 ௖ = 2.236 , in the middle of the physically 
+
+reasonable range for lithium electrodeposits) we obtain the values listed in Table I. 
+
+Table I. Mapping of four anode chemistries onto the saddle-node closure at 𝛼 = 0.05 , with 𝐾 ௖ =
+
+1/(2 √𝛼 ) = 2.236 . End-of-cycling 𝜉 ୣ୬ୢ is taken from the literature-informed reference framework of Ref. 
+
+[19]; ratios 𝐾 /𝐾 ௖ are computed from Eq. (11).  
+
+> Chemistry
+
+𝜉 ୣ୬ୢ 𝑢 ୣ ୬ୢ 𝐾 𝐾 /𝐾 ௖                
+
+> Graphite 1.020 0.020 0.020 0.009
+> Si-composite 1.555 0.555 0.547 0.244
+> Li -metal 2.965 1.965 1.647 0.737
+> Anode -free 4.209 3.209 2.118 0.954
+
+The four chemistries populate the stable branch in monotonic order: graphite at 𝐾 /𝐾 ௖ ≈ 0.01 (deeply 
+
+subcritical), silicon composite at 0.24 (stable but with a measurable distance from 𝐾 ௖), lithium metal at 
+
+0.73 (approaching criticality), and anode-free at 0.95 (essentially on the critical point). Figure 2 plots 
+
+these chemistry positions on the bifurcation diagram of Fig. 1(a). 
+
+B. Robustness to the choice of 𝛼 
+
+The qualitative ordering is invariant to the choice of 𝛼 . For fixed 𝑢 ୣ ୬ୢ , 𝐾 /𝐾 ௖ = 2 √𝛼 · 𝑔 (𝑢 ୣ ୬ୢ , 𝛼 ) with 
+
+𝑔 (𝑢 , 𝛼 ) = 𝑢 /(1 + 𝛼𝑢 ଶ) is monotone in 𝛼 on the stable branch where 𝛼𝑢 ୣ ୬ୢ  
+
+> ଶ
+
+< 1 . Across 𝛼 ∈ [0.01,0.5] ,
+
+the ranking graphite < silicon < lithium < anode-free is preserved. The numerical 𝐾 /𝐾 ௖ value of anode-
+
+free varies between ≈ 0.61 at 𝛼 = 0.01 and ≈ 0.97 at 𝛼 = 0.05 , and the cell falls off the stable branch 
+
+(transitions to runaway) for 𝛼 ≳ 0.10 . At every choice of 𝛼 within its physically meaningful range, anode-
+
+free is closer to 𝐾 ௖ than any other chemistry. FIG. 2. Four anode chemistries placed onto the stable branch of the saddle-node closure at 𝛼 = 0.05 . Markers: graphite    
+
+> (blue circle), silicon composite (green square), lithium metal (red triangle), anode-free Li/Cu (purple diamond). Anode-
+> free sits at 𝐾/𝐾 ௖≈ 0.95 , within 5% of the critical point. The ordering is preserved across 𝛼 ∈ [0.01,0.5] .
+
+IV. FALSIFIABLE PREDICTIONS 
+
+The placement of anode-free near the critical point makes three quantitative predictions, each falsifiable 
+
+with existing experimental infrastructure. 
+
+A. Critical current density 
+
+Since 𝐾 ∝ |𝑗| ௣ with 𝑝 ∈ [1,2] for typical surface-restructuring kinetics, the critical current at which a cell 
+
+crosses 𝐾 ௖ is 
+
+𝑗 ௖
+
+𝑗 = ( 𝐾 ௖
+
+𝐾 )ଵ/௣. (12) 
+
+For anode-free at 𝐾/𝐾 ௖ = 0.95 and 𝑝 = 2 , Eq. (12) gives 𝑗 ௖/𝑗 ≈ 1.026 — a 2.6% current uplift suffices to 
+
+push the cell past 𝐾 ௖ into morphological runaway. This is a sharp prediction: anode-free Li/Cu cells 
+
+should exhibit a clearly defined current threshold near nominal C-rate, beyond which capacity fade 
+
+accelerates abruptly. For 𝑝 = 1 or 𝑝 = 3 the threshold shifts to 5.3% or 1.7%, respectively, but in every 
+
+case remains within the operational tolerance band of typical cycling protocols. 
+
+B. Critical temperature shift 
+
+The smoothing rate 𝑘 ୱ୫୭୭୲୦ is thermally activated according to an Arrhenius law, 
+
+𝑘 ୱ୫୭୭୲୦ (𝑇) ∝ 𝑒𝑥𝑝 (− 𝐸 ௔
+
+𝑘 ஻𝑇 ), (13) with 𝐸 ௔ the activation energy for surface mass transport. Combining Eqs. (4) and (13) and assuming 𝑘 ୥ୣ୬ 
+
+to be only weakly 𝑇 -dependent gives 𝐾 ∝ 𝑒𝑥𝑝(𝐸 ௔/𝑘 ஻𝑇) . The critical temperature shift required to move 
+
+the cell from 𝐾 to 𝐾 ௖ is 
+
+𝛥𝑇 ௖ = − 𝑘 ஻𝑇 ଶ
+
+𝐸 ௔
+
+𝑙𝑛 ( 𝐾 ௖
+
+𝐾 ). (14) 
+
+For 𝐸 ௔ = 0.4 eV (representative for surface diffusion in metallic lithium [21]), 𝑇 = 298 K, and 𝐾/𝐾 ௖ =
+
+0.95 , Eq. (14) gives 𝛥𝑇 ௖ ≈ −5 K. Anode-free cells should therefore be hyper-sensitive to temperature: a 
+
+5 K cooling restores stability, while a 5 K warming pushes the cell past 𝐾 ௖. This level of temperature 
+
+sensitivity is consistent with the recent operating-window analyses of Ref. [17]. 
+
+C. Critical slowing-down 
+
+By Eq. (10), the relaxation time of small perturbations in 𝜉 diverges as (𝐾 ௖ − 𝐾) ି ଵ /ଶ on approach to 
+
+criticality. Cell-level data — for which 𝜉 is not directly observable — provide a surrogate via the 
+
+autocorrelation length of Coulombic-efficiency residuals: as the system slows, fluctuations persist over 
+
+more cycles, and the empirical autocorrelation length grows. 
+
+We extract the autocorrelation length 𝜉 ୅େ of the CE-residual time series from the literature-informed 
+
+reference data of Ref. [19] using a 30-cycle sliding window with a continuous 1/𝑒 -crossing interpolation. 
+
+Figure 3(a) plots 𝜉 ୅େ versus cycle number for the four chemistries; Figure 3(b) overlays the predicted 𝜏 ∝ 
+
+(𝐾 ௖ − 𝐾) ି ଵ /ଶ scaling with the four chemistry positions marked. The ordering — anode-free shows the 
+
+strongest growth in 𝜉 ୅େ , graphite the weakest — is consistent with the theoretical prediction. A 
+
+definitive test will require longer cycle-resolved CE data on anode-free cells than the published record 
+
+currently provides.  
+
+> FIG. 3. (a) CE-residual autocorrelation length
+
+𝜉 ୅େ vs cycle number for the four chemistries (continuous 1/𝑒 crossing, 30- 
+
+> cycle sliding window). (b) Theoretical critical-slowing-down exponent
+
+𝜏 ∝ (𝐾 ௖ − 𝐾) ିଵ /ଶ from Eq. (10), with each  
+
+> chemistry placed at its measured
+
+𝐾/𝐾 ௖.D. Operational phase diagram 
+
+Combining the predictions of subsections A and B, we can map the cell's location in the (𝑗, 𝑇) plane to a 
+
+value of 𝐾/𝐾 ௖, defining an operational phase boundary. The boundary is given implicitly by 
+
+𝑗 ୠ୭୳୬ୢୟ୰୷ 
+
+> ௣
+
+𝑗 ୰ୣ୤  
+
+> ௣
+
+𝑒𝑥𝑝 [ 𝐸 ௔
+
+𝑘 ஻
+
+(1
+
+𝑇 − 1
+
+𝑇 ୰ୣ୤ 
+
+)] = 𝐾 ௖
+
+𝐾 ୰ୣ୤ 
+
+. (15) 
+
+For an anode-free cell calibrated at 𝑗 = 𝑗 ୰ୣ୤ , 𝑇 = 𝑇 ୰ୣ୤ = 298 K to 𝐾/𝐾 ௖ = 0.95 , Eq. (15) defines a sharp 
+
+curve in the (𝑙𝑜𝑔𝑗, 𝑇) plane separating the stable (subcritical) region from the runaway (supercritical) 
+
+region. Figure 4 displays the curve; Figure 5 shows the same in three dimensions. The narrow margin (a 
+
+few percent in current and a few kelvin in temperature) is the key operational consequence of the near-
+
+critical placement.  
+
+> FIG. 4. (a) Critical current ratio
+
+𝑗 ௖/𝑗 vs 𝐾/𝐾 ௖ for 𝑝 = 1,2,3 . Anode-free at 𝐾/𝐾 ௖ = 0.954 marked. (b) Critical  
+
+> temperature shift
+
+𝛥𝑇 ௖ vs 𝐾/𝐾 ௖ for 𝐸 ௔ = 0.4 eV, 𝑇 = 298 K. FIG. 5. (a) Phase boundary in the (𝑙𝑜𝑔 ଵ଴ (𝑗 /𝑗 ୰ୣ୤ ), 𝑇 ) plane: contour at 𝐾 /𝐾 ௖ = 1 separates stable from runaway  
+
+> regions. (b) Three-dimensional view of
+
+𝐾 /𝐾 ௖ on the same plane (clipped at 𝐾 /𝐾 ௖ ≤ 2 ). 
+
+V. GENERALITY BEYOND LITHIUM BATTERIES 
+
+The closure of Eq. (5) is not specific to lithium chemistry. Any electrochemical interface in which (i) 
+
+generation of fresh active area is power-law in local flux and (ii) smoothing weakens with surface 
+
+roughness should exhibit the same saddle-node structure with the same 𝐾 ௖ = 1/(2 √𝛼 ). Three concrete 
+
+generalizations: 
+
+1. Solid-oxide fuel cell (SOFC) electrodes under coking conditions. Carbon deposition generates fresh 
+
+catalyst area; surface diffusion of carbon-removal intermediates is the smoothing mechanism. 
+
+Threshold reactant compositions consistent with the saddle-node have been reported [22]. 
+
+2. CO ଶ-reduction electrocatalysts based on copper or silver. Surface restructuring under high 
+
+overpotential generates fresh facets [23]; capillarity-driven smoothing competes against this 
+
+restructuring. The runaway regime corresponds to dendritic catalyst growth and rapid deactivation. 
+
+3. Proton-exchange membrane (PEM) electrolyzer Pt nanoparticles . Pt agglomeration is driven by 
+
+local-current-density nonuniformity; particle-size reorganization through Ostwald ripening is the 
+
+smoothing mechanism [24]. Long-term performance loss in PEM cells consistent with the universal 
+
+𝜏 ∝ ( 𝐾 ௖ − 𝐾 )ିଵ /ଶ scaling has been hypothesized but not directly tested. 
+
+In each case the cell-level diagnostic is the same: monitor an integrated proxy for 𝜉 ୣ୬ୢ (active area at 
+
+end of operation) and check whether 𝐾 (𝜉 ୣ୬ୢ )/ 𝐾 ௖ → 1 .
+
+VI. DISCUSSION AND OUTLOOK 
+
+The saddle-node closure provides three things that the linear closure of Eq. (1) cannot. First, a sharp 
+
+criterion separating "stable degradation" from "morphological runaway." Second, a quantitative scaling 
+
+law for time-to-failure on approach to criticality. Third, a unifying framework that places different 
+
+chemistries on a single dimensionless axis. 
+
+The principal limitation of the framework is the parameter 𝛼 , which we have treated as a single free 
+
+constant. Microscopically, 𝛼 is the curvature of the smoothing kernel at zero roughness and depends on 
+
+solvent diffusivity, temperature, and substrate orientation. Direct measurement of 𝛼 requires 
+
+perturbative experiments: a small step in current density, followed by measurement of the relaxation 
+
+toward the new 𝜉 ∗, gives independent access to both 𝐾 and 𝛼 . Such experiments are routine in the 
+
+operando-AFM community [25, 26] and would close the principal loop in this framework. 
+
+A second limitation is that Eq. (5) is one-dimensional in 𝜉 . In practice, surface morphology is a 
+
+multidimensional state: roughness amplitude, correlation length, and local current density distribution 
+
+are all dynamical variables. Dimensional reduction to a single scalar is justified when relaxation along the 
+
+other dimensions is much faster than the cycling timescale, but must be tested case by case. We expect 
+
+the saddle-node structure to be robust under reduction; finer-grained models (rough-surface PDE, 
+
+phase-field) would refine the value of 𝛼 but should preserve the existence of 𝐾 ௖.Finally, we emphasize that the Letter does not claim to prove that anode-free cells operate at 𝐾 /𝐾 ௖ =
+
+0.95 ; the value depends on the choice of 𝛼 and on the surrogate 𝜉 ୣ୬ୢ extracted from cell-level data. 
+
+What we do claim is that the closure structure makes a quantitative, falsifiable prediction (current-
+
+density threshold, temperature sensitivity, critical slowing-down) that can be tested experimentally, and 
+
+that the trend across chemistries — anode-free closest to 𝐾 ௖, graphite farthest — is invariant to the 
+
+choice of 𝛼 .
+
+Looking forward, three directions seem most promising. (i) Direct extraction of 𝛼 via operando-AFM 
+
+relaxation experiments on each chemistry. (ii) A controlled cross-protocol study in which the same 
+
+anode-free cell is operated across small variations in 𝑗 and 𝑇 , mapping the empirical phase boundary 
+
+directly. (iii) Extension of the closure to spatially resolved ( 𝜉 (𝑥 , 𝑡 )) systems, where lateral correlation 
+
+length becomes a second control parameter and the scalar saddle-node may generalize to a co-
+
+dimension-two singularity. 
+
+ACKNOWLEDGMENTS 
+
+This work was supported by the National Research Foundation of Korea (NRF) grant funded by the Korea 
+
+government (MSIT) (RS-2023-00247245). 
+
+APPENDIX A: MICROSCOPIC ORIGIN OF SATURABLE SMOOTHING 
+
+Consider an interface of nominal area 𝐴 ଴ with instantaneous area 𝐴 (𝑡 ) = 𝐴 ଴ 𝜉 (𝑡 ). Generation of new 
+
+surface area is driven by electrochemically induced perturbations; in the simplest classical-nucleation 
+
+picture, the rate scales as a power of the local flux, 𝐴  
+
+> ˙
+> ା
+
+= 𝐴 ଴ 𝑘 ୥ୣ୬ |𝑗 |௣, with 𝑝 ∈ [1,2] .
+
+Smoothing is driven by surface mass transport. In a Burton–Cabrera–Frank step-flow picture, the local 
+
+step velocity 𝑣 is proportional to the chemical-potential gradient along the surface, 𝑣 = − 𝑀 𝜕 ௦𝜇 , where 
+
+𝑀 is the mobility and 𝜇 = 𝜇 ଴ + 𝛾 𝜅 𝛺 depends on the local curvature 𝜅 (𝛾 surface tension, 𝛺 atomic 
+
+volume). For small perturbations from a flat surface, the linearized smoothing rate is constant: 𝐴 
+
+> ˙ି
+
+=
+
+−𝑘 ୱ୫୭୭୲୦ (𝜉 − 1) . As roughness grows, the effective path length over which an adatom must diffuse 
+
+increases. A simple geometric argument — replacing the surface by a sinusoidal corrugation of amplitude 
+
+ℎ and lateral wavelength 𝐿 — gives an effective path length 𝐿 ୣ୤୤ /𝐿 ≈ ඥ1 + (2 𝜋 ℎ/ 𝐿 )ଶ ≈ 1 + 𝛼 (𝜉 − 1) ଶ
+
+for small ℎ, where 𝛼 encodes the squared corrugation amplitude per unit length. Inserting this into the 
+
+smoothing flux yields 
+
+𝐴 
+
+> ˙ି
+
+= − 𝑘 ୱ୫୭୭୲୦ (𝜉 − 1) 
+
+1 + 𝛼 (𝜉 − 1) ଶ , (A1) 
+
+the saturable-smoothing form used in Eq. (3). Equation (A1) reduces to the linear smoothing of Eq. (1) for 
+
+𝛼 → 0 and saturates to a constant ~𝑘 ୱ୫୭୭୲୦ /√𝛼 for large |𝜉 − 1| .APPENDIX B: CLOSED-FORM RELAXATION ON THE STABLE BRANCH 
+
+Equation (5) is separable. On the stable branch ( 𝐾 < 𝐾 ௖), with 𝑢 ି < 𝑢 ା the two real roots of Eq. (6), 
+
+𝑑𝑢 
+
+𝑑𝜏 = − 𝛼𝐾 (𝑢 − 𝑢 ି )( 𝑢 − 𝑢 ା)
+
+1 + 𝛼𝑢 ଶ . (B1) 
+
+Partial-fraction integration gives a closed-form trajectory 𝑢 (𝜏 ; 𝑢 ଴, 𝐾 , 𝛼 ) that approaches 𝑢 ି exponentially 
+
+with time constant 𝜏 ୰ୣ୪ୟ୶ = 1/| 𝑓 ᇱ(𝑢 ି )| , where 𝑓 ᇱ is given by Eq. (8). Using Eq. (7) and setting 𝐾 = 𝐾 ௖ −
+
+𝛿𝐾 , expansion in small 𝛿𝐾 yields 
+
+𝜏 ୰ୣ୪ୟ୶ ିଵ = 2 𝛼 𝑢 ௖ 
+
+> ∗
+
+ඥ𝛿𝐾 · 4 𝑢 ௖ 
+
+> ∗
+
+= 2 𝛼 𝑢 ௖ 
+
+> ∗ଷ/ଶ
+
+√𝛿𝐾 , (B2) 
+
+confirming the universal saddle-node exponent 𝜏 ୰ୣ୪ୟ୶ ∝ ( 𝛿𝐾 )ି ଵ /ଶ.
+
+REFERENCES 
+
+[1] E. Peled, J. Electrochem. Soc. 126 , 2047 (1979). 
+
+[2] D. Aurbach, J. Power Sources 89 , 206 (2000). 
+
+[3] M. W. Verbrugge and B. J. Koch, J. Electrochem. Soc. 150 , A374 (2003). 
+
+[4] K. Xu, Chem. Rev. 114 , 11503 (2014). 
+
+[5] M. B. Pinson and M. Z. Bazant, J. Electrochem. Soc. 160 , A243 (2013). 
+
+[6] F. Single, A. Latz, and B. Horstmann, Phys. Chem. Chem. Phys. 20 , 27151 (2018). 
+
+[7] J. M. Reniers, G. Mulder, and D. A. Howey, J. Electrochem. Soc. 166 , A3189 (2019). 
+
+[8] H. Wu and Y. Cui, Nano Today 7, 414 (2012). 
+
+[9] J. W. Choi and D. Aurbach, Nat. Rev. Mater. 1, 16013 (2016). 
+
+[10] L. von Kolzenberg, A. Latz, and B. Horstmann, Batteries Supercaps 5, e202100346 (2022). 
+
+[11] M. P. Bonkile et al. , J. Energy Storage 64 , 107101 (2023). 
+
+[12] D. Lin, Y. Liu, and Y. Cui, Nat. Nanotechnol. 12 , 194 (2017). 
+
+[13] P. Bai, J. Li, F. R. Brushett, and M. Z. Bazant, Joule 2, 2434 (2018). 
+
+[14] A. Pei, G. Zheng, F. Shi, Y. Li, and Y. Cui, Nano Lett. 17 , 1132 (2017). 
+
+[15] Y. Zhu et al. , Nat. Energy 7, 312 (2022). 
+
+[16] M. Genovese et al. , J. Electrochem. Soc. 165 , A3367 (2018). 
+
+[17] A. J. Louli et al. , Joule 4, 2589 (2020). [18] A. J. Louli et al. , Nat. Energy 7, 718 (2022). 
+
+[19] C. Bae, "Interfacial kinematics organize degradation across lithium-battery chemistries," in 
+
+preparation (2026). 
+
+[20] S. H. Strogatz, Nonlinear Dynamics and Chaos , 2nd ed. (Westview Press, 2014), chap. 3. 
+
+[21] A. P. Sutton and R. W. Balluffi, Interfaces in Crystalline Materials (Oxford Univ. Press, 1995), chap. 8. 
+
+[22] L. Yang et al. , Energy Environ. Sci. 5, 7066 (2012). 
+
+[23] R. Kortlever, J. Shen, K. J. P. Schouten, F. Calle-Vallejo, and M. T. M. Koper, J. Phys. Chem. Lett. 6,
+
+4073 (2015). 
+
+[24] X. Cheng et al. , J. Power Sources 165 , 739 (2007). 
+
+[25] A. Kushima et al. , Nano Energy 32 , 271 (2017). 
+
+[26] R. Kostecki et al. , J. Electrochem. Soc. 150 , A1196 (2003). 
+
+[27] B. Saha and K. Goebel, NASA Ames Prognostics Data Repository (2007). 
+
+[28] K. A. Severson et al. , Nat. Energy 4, 383 (2019). 
+
+[29] V. Sulzer et al. , J. Open Res. Software 9, 14 (2021). 
+
+[30] M. Doyle, T. F. Fuller, and J. Newman, J. Electrochem. Soc. 140 , 1526 (1993).

@@ -1,0 +1,62 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2605.10301v1/fig-001.webp",
+      "caption": "FIG. 4. Experimental and numerical results showing the instantaneous minimum dimensionless diameter d(t)/d0 as a function of the dimensionless time t/tb of liquid filaments at four Oh-Bo couples: (a) Oh = 0.03 and Bo = 1.31; (b) Oh = 0.32 and Bo = 1.47; (c) Oh = 0.58 and Bo = 1.50; and (d) Oh = 1.13 and Bo = 1.52. The sky-blue circles represent the experimental data, while the solid magenta lines denote the simulations.",
+      "page": 6,
+      "index": 1,
+      "width": 1062,
+      "height": 314
+    },
+    {
+      "url": "assets/figures/arxiv/2605.10301v1/fig-002.webp",
+      "caption": "FIG. 5. Numerical results showing d(t)/d0 against t/tb of liquid filaments at Bo = 0 (top row) and Bo = 2.62 (bottom row) for eleven different Oh: 0.0014, 0.006, 0.014, 0.035, and 0.1 (left column sub-figures; a and c); and 0.3, 0.7, 1.4, 3.5, 10.5, and 17.4 (right column sub-figures; b and d). A specific solid symbol denotes each numerical flow case, and the increase of Oh in each sub-figure is highlighted by the magenta arrows. The blue-dotted-dash line in the blue region denotes a diameter decay proportional to (1− t/tb) 2/3, while the red-dashed line in the red region represents a linear diameter proportional to (1− t/tb).",
+      "page": 6,
+      "index": 2,
+      "width": 514,
+      "height": 579
+    },
+    {
+      "url": "assets/figures/arxiv/2605.10301v1/fig-003.webp",
+      "caption": "FIG. 9. DoS versus DoD. (a.1 and b.1) Experimental snapshots illustrating the capillary thinning process of a 5 × 106g/molmolecular-weight polyethylene oxide solution (PEO; provided by Sigma-Aldrich) of 100 parts per million (ppm) by weight in deionised water using DoS (a.1) and DoD (b.1). White scale bar = 1.37mm. (a.2 and b.2) The snapshots are converted into curves showing the filaments’ minimum diameter as a function of time for DoS (a.2) and DoD (b.2). As underlined by the exponential fits in the pink boxes (dashed-pink lines), DoS and DoD lead to the same λe = 39ms. The experiments are performed at Bo = 1.3. The error bars are comparable in size to the symbols. Note that, to favour straightforward comparisons between DoS and DoD, only the thinning process (d(t) ≤ d0) is illustrated for the DoD case.",
+      "page": 11,
+      "index": 3,
+      "width": 1062,
+      "height": 268
+    },
+    {
+      "url": "assets/figures/arxiv/2605.10301v1/fig-004.webp",
+      "caption": "FIG. 2. (a) Schematic illustration of the experimental set-up for the investigation of the capillary thinning and breakup of Newtonian filaments formed following the coalescence of a millimetric-nozzle-generated pendant drop (of density ρ, viscosity η, surface tension σ and diameter d0) with a lower droplet cap contained in a 3D-printed-polylactic-acid cylindrical pool of millimetric diameter L and height L in ambient air under gravity, i.e., dripping-onto-droplet capillary breakup (DoD). The blue rectangle, delimited by the magenta-dashed lines, highlights the free-surface flow region. (b) Typical snapshots captured by the high-speed camera illustrating the capillary-thinning process from the droplets’ coalescence until the filament breakup at instant tb. (c) Snapshots showing the time evolution of a typical numerical simulation from the droplets’ coalescence until the filament breakup at instant tb. The used mesh (composed of approximately 106 elements) is adapted around each interface (liquid in red and surrounding air in blue), as illustrated by the black lines on the right side from the second to the fourth snapshot. Note that only the free-surface flow part is displayed in (b) and (c). Lastly, cylindrical pool dimensions L× L, the distance H between the bottom of the pool and the top of the lower droplet, and the nozzle diameter D are kept fixed for all the experiments and numerical simulations performed here (L = 4.35mm, H = 5.1mm, D = 1.37mm).",
+      "page": 3,
+      "index": 4,
+      "width": 1062,
+      "height": 266
+    },
+    {
+      "url": "assets/figures/arxiv/2605.10301v1/fig-005.webp",
+      "caption": "FIG. 6. Numerical results showing the dimensionless energy transfer (top row), the minimum dimensionless diameter (black asterisks in the middle row), and the dimensionless volume-averaged deformation rate (bottom row) associated with extension/compression (γ̇∗ e ; pink stars), and shear (γ̇∗ s ; cyan crosses) during the filament thinning at Bo = 0 (gravity free) for four Oh: (a) 0.014; (b) 0.14; (c) 0.35; and (d) 1.4. The blue-dotted-dash line in the flow region denotes a diameter decay proportional to (1− t/tb) 2/3, while the red-dashed line in the red region represents a linear diameter decay proportional to (1− t/tb).",
+      "page": 8,
+      "index": 5,
+      "width": 1062,
+      "height": 864
+    },
+    {
+      "url": "assets/figures/arxiv/2605.10301v1/fig-006.webp",
+      "caption": "FIG. 7. Numerical results showing the dimensionless energy transfer (top row), the minimum dimensionless diameter (black asterisks in the middle row), and the dimensionless volume-averaged deformation rate (bottom row) associated with extension/compression (γ̇∗ e ; pink stars), and shear (γ̇∗ s ; cyan crosses) during the filament thinning at Bo = 2.62 for four Oh: (a) 0.014; (b) 0.14; (c) 0.35; and (d) 1.4. The blue-dotted-dash line in the flow region denotes a diameter decay proportional to (1− t/tb) 2/3, while the red-dashed line in the red region represents a linear diameter decay proportional to (1− t/tb).",
+      "page": 9,
+      "index": 6,
+      "width": 1062,
+      "height": 864
+    },
+    {
+      "url": "assets/figures/arxiv/2605.10301v1/fig-007.webp",
+      "caption": "FIG. 3. Droplets’ coalescence followed by the capillary thinning and breakup of the formed filaments at four Oh-Bo couples: (a) Oh = 0.03 and Bo = 1.31; (b) Oh = 0.32 and Bo = 1.47; (c) Oh = 0.58 and Bo = 1.50; and (d) Oh = 1.13 and Bo = 1.52. The upper row of each sub-figure is composed of six successive glycerol-in-water snapshots showing the time evolution of the thinning process until the filaments’ breakup, while the corresponding numerical images (in blue) are displayed in the lower row. Note that only the free-surface part of the liquid is depicted. The time interval between subsequent snapshots is 1/5tb. White scale bar = 1.37mm.",
+      "page": 5,
+      "index": 7,
+      "width": 1062,
+      "height": 1181
+    }
+  ]
+}
