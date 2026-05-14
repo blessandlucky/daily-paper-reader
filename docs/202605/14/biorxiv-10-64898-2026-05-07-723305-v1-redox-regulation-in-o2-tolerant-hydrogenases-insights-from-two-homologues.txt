@@ -1,0 +1,766 @@
+Title: Redox Regulation in O2-Tolerant [FeFe] Hydrogenases: Insights from two homologues
+
+URL Source: https://www.biorxiv.org/content/10.64898/2026.05.07.723305v1.full.pdf
+
+Number of Pages: 11
+
+Markdown Content:
+1
+
+# Redox Regulation in O₂ -Tolerant [FeFe] Hydrogenases: Insights from two 
+
+# homologues. 
+
+Rinat Khundoker 1, Sean H. Majer 1, Alexey Silakov 1* 
+
+> 1
+
+Pennsylvania State University, Department of Chemistry, University Park, PA, 16802 
+
+* Corresponding author: Alexey Silakov,  aus40@psu.edu .
+
+ORCID: 
+
+S.H.M .: https://orcid.org/0000 -0002 -2667 -8480 
+
+A.S. : https://orcid.org/0000 -0002 -9285 -1253 
+
+ABSTRACT :
+
+O2-tolerance is a desirable property for [FeFe] hydrogenases, which are highly efficient H 2-producing catalysts. 
+
+While most such enzymes are highly sensitive to aerobic environments, a small number of explored representatives 
+
+exhibit exceptional stability and even H 2-producing activity under oxygenic conditions. However, t he genetic 
+
+signatures of the O 2-tolerance in this class of enzymes remain largely unknown. To address this knowledge gap, 
+
+we explored a close homologue of a well -characterized O 2-tolerant [FeFe] hydrogenase from Clostridium 
+
+beijerinckii (Cb HydA1) - a hydrogenase from Terrisporobacter glycolicus (Tg HydA 1). Our investigation indeed 
+
+confirms that Tg HydA 1 can transition to the O 2-stable H inact state, a hallmark of O 2 tolerance . The surprising 
+
+outcome is that despite the high amino acid similarity , Tg HydA 1 shows a substantially higher propensity to remain 
+
+in the H inact state than Cb HydA1 . Using protein film electrochemical experiments, we demonstrate that the root of 
+
+this behavior lies in roughly tenfold slower reactivation rates than those of Cb HydA1 at any applied potential. This 
+
+degree and direction of variation in reactivation kinetics have not been observed before for any other O 2-tolerant 
+
+[FeFe] hydrogenases or their variants to date , uncovering a yet -to -be -explored facet of reactivity alteration available 
+
+to these enzymes. Overall, t he results presented here highlight the importance of a holistic analysis of [FeFe] 
+
+hydrogenase sequence s in the context of their interaction with O 2 that encompasses the protein environment and 
+
+properties of the auxiliary metallocofactors. 
+
+KEYWORDS: [FeFe] Hydrogenase, O 2-tolerance, Homology, Protein film voltammetry 
+
+STATEMENTS AND DECLARATIONS 
+
+Competing interests: The authors declare no competing interests. 
+
+Ethics declaration: not applicable. 
+
+Consent to Participate: not applicable. 
+
+Consent to Publish: not applicable. 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted May 11, 2026. ;https://doi.org/10.64898/2026.05.07.723305 doi: bioRxiv preprint
+
+2
+
+INTRODUCTION 
+
+Hydrogenases represent a structurally diverse class of metalloenzymes that can catalyze the revers ible oxidation of 
+
+dihydrogen .[1 –4] [FeFe] hydrogenases comprise a family of such enzymes that contain a complex six -Fe active 
+
+cofactor called the H-cluster (see Fig. 1 ).[1, 5 –7] These enzymes are of particular interest to industrial applications 
+
+in H 2-producing biological and bio -hybrid systems. [8 –11] 
+
+Figure 1. Schematic representation of the active site of [FeFe] hydrogenases, the H -cluster. The r ed arrow indicates the open 
+
+coordination site. The Cys residue numbering is according to the Cb HydA1 amino acid sequence .
+
+Unfortunately, the vast majority of known [FeFe] hydrogenases can only operate under strictly anaerobic 
+
+conditions , significantly limiting their industrial use .[1, 2, 12] However, r ecent discoveries of a group A [FeFe] 
+
+hydrogenase from Clostridium beijerin ckii (Cb HydA1) that shows enhanced stab ility in the presence of O 2 renew 
+
+interest in this family of enzymes as potential H 2 catalyst s in renewable energy technology for H 2 production. [13 –
+
+16] The key feature of Cb HydA1 is its ability to rapidly and reversibly access an O 2-stable, inactive state, called 
+
+Hinact , under oxid iz ing conditions . Our research demonstrated that this state is one electron more oxidized th an the 
+
+active resting state H ox (see Scheme S1 in S upporting information) .[14] Past research by us [14, 17] , and others [7, 
+
+18 –20] concluded that a highly conserved proton channeling Cys residue (Cys367 in Cb HydA1) near the H -cluster 
+
+plays a key role in the stabilization of H inact (see Fig. 1 ). Our recent coupling of Cb HydA1 to a PsaE -deleted 
+
+cyanobacterial photosystem I (PSI ΔPsaE ) by engineering a Cb HydA1 -PsaE fusion showed the ability of the 
+
+PSI ΔPsaE :Cb HydA1 -PsaE nanoconstruct to produce H 2 under fully aerobic conditions .[21] This result is of particular 
+
+importance as it demonstrates the ability of Cb HydA1 to operate on air, i.e. , it exhibits some degree of O2-toleran ce. 
+
+Thus , we can apply this term the same way it has been used to designate a class of O2-tolerant [NiFe ] hydrogenases ,
+
+which rapidly interconvert between the active state and the “ready” inactive Ni(III) -Fe(II) state Ni -B without fully 
+
+inactivating into a Ni -A state . [22 –24] For completeness, we note that a subclass of [NiFeSe] hydrogenases can 
+
+maintain O 2-tolerance without interco nvert ing to the “overoxidized” Ni(III) species (Ni -B or Ni -A).[25 –28] 
+
+A more recent discovery of an O 2-tolerant group B [FeFe] hydrogenase demonstrates that this property is not 
+
+restricted to group A Cb HydA1 -homologues .[29] We also demonstrated further expansion of [FeFe] hydrogenase 
+
+repertoire by demonstrating the existence of an H 2-dependent H 2O2 reductase in Clostridium perfringens 
+
+(Cp er HydR) that utilizes an H -cluster to generate reducing equivalents from H 2 for the reduction of H 2O2 by a 
+
+coexisting rubreryth rin subdomain of the same protein. In our in vitro experiments, Cp er HydR was able to 
+
+withstand the presence of high concentrations of H 2O2 without losing activity. Overall, these studies indicate that 
+
+tolerance to strong oxidizing agents by [FeFe] hydrogenases is far more widespread in nature than previously 
+
+thought. [1, 30, 31] Then the question is, how can we recognize such a desirable trait? 
+
+Unfortunately, the genetic signatures that hallmark the O 2 tolerance of [FeFe] hydrogenase s have yet to be resolved, 
+
+presenting a barrier to identifying similar, better -performing enzymes for further optimization of bioengineered H2-
+
+producing systems. We proposed that increased protein flexibility allows Cys367 of Cb HydA1 to adopt rotamers 
+
+inaccessible to the O 2-sensitive enzymes. [14, 17] Therefore, the relationship between the ability of these [FeFe] 
+
+hydrogenases to safely inactivate and the amino acid sequence is expected to be complex. Indeed , s ite -specific 
+
+amino acid substitutions on the protein surface affected O 2-tolerance in Cb A5H, a near -identical homologue of 
+
+Cb HydA1 .[20] Cb HydA1 -PsaE fusion showed altered oxidative inactivation behav io r in protein film voltammetry 
+
+(PFV) experiments , emphasizing the importance of the overall protein dynamic .[21] Molecular dynamics 
+
+simulations also suggested the relevance of a nother set of hydrophobic residues near Cys 367 to the O 2-tolerance of 
+
+[FeFe] hydrogenases .[29] Overall, these past studies bring to light the challenge in deciphering the genetic 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted May 11, 2026. ;https://doi.org/10.64898/2026.05.07.723305 doi: bioRxiv preprint
+
+3
+
+signature s of O 2-tolerance, as it cannot be attributed to a small subset of amino acid alterations .
+
+To understand the degree of sequence similarity required to retain O 2-tolerance, our laboratory is interested in 
+
+investigat ing close homolog ues of Cb HydA1 . In this manuscript , we present a case of a group A [FeFe] hydrogenase 
+
+from Terrisporobacter (T.) glycolicus strain KPPR -9 (Tg HydA 1). T. glycolicus (previously known as Clostridium 
+
+glycolicum ) is an obligatory anaerobic, spore -forming, Gram -positive, rod -shaped bacterium that was first isolated 
+
+from mud as an anaerobe utilizing ethylene glycol as a carbon source. [32, 33] Kusel et al. showed that RD -1, a 
+
+strain of T. glycolicus extracted from the root of sea grass Halodule wrightii , is an acetogen and can ferment 
+
+fructose, glucose, maltose, and xylose into acetate and ethanol. [34] This organism can produce H 2 during 
+
+fermentation. T. glycolicus genome contains two different enzymes annotated as [FeFe] -hydrogenases, one of 
+
+which is highly homologous to Cb HydA1 (Locus tag: SAMN02910355_3663, NCBI Code: SFJ67572.1, we term 
+
+Tg HydA1) and is the focus of this study . The second putative [FeFe] hydrogenase (Locus tag: 
+
+SAMN02910355_3560, NCBI Code: SFJ66003.1, we term Tg HydA2) is likely of M2 type, i.e., containing two 
+
+accessory metallocofactors . It harbors “TTLCP” variation of the L2 conserved sequence instead of the typical group 
+
+A “TSCCP” code, i.e., lacking the conserved proton -channeling Cys required for bidirectional hydrogenase activity. 
+
+We show that Tg HydA1 exhibits a surprising divergence in the inactivation process despite high sequence similarity 
+
+with Cb HydA1 (84.21%, Fig. S1 ). Using electrochemical assays, we show that the phenomenological origin of this 
+
+discrepancy lies in a substantially altered energetics of the reactivation process, poising this enzyme towards H inact 
+
+state under typical laboratory in vitro conditions .
+
+RESULTS AND DISCUSSIONS 
+
+We cloned Tg HydA1 into the pET28a vector and transformed it into E. coli BL21(DE3) ∆iscR cells for heterologous 
+
+protein production. We augmented the gene with appropriate affinity tags to facilitate purification, a method we 
+
+successfully used previously to produce Cb HydA1. After isolation, we reconstituted the FeS clusters and 
+
+incorporated the H -cluster using a synthetic [2Fe] precursor using well established procedures. [14, 21, 35] 
+
+Figure 2. FTIR spectra of Tg HydA 1 obtained at room temperature (panel I) and at 15 K (panel II). A,D) as -prepared samples. 
+
+B,C) As -prepared Tg HydA 1 exposed to 5 mM sodium dithionite (DT) and 5 mM Ti(III) citrate, respectively. E,F ) freeze -
+
+quenching reduction with 5 mM DT after 3 min and 1 hr, respectively. 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted May 11, 2026. ;https://doi.org/10.64898/2026.05.07.723305 doi: bioRxiv preprint
+
+4
+
+We noticed that after a typical sample prepa ra tion (see supporting information), Tg HydA 1 is consistently found in 
+
+the inactive state (H inact ), despite employing strict anaerobic conditions and requiring an excess of strong reductants 
+
+during metallocofactor incorporation steps (see Fig. 2A ). In our previous work, similar sample preparation 
+
+procedures yielded fully active Cb HydA1 .[14, 17] We note that while the fo urier -transform infrared (FT IR ) spectra 
+
+of the H inact state are similar between Cb HydA1 and Tg HydA 1, there are noticeable differences in the exact positions 
+
+of the CO bands . These discrepancies indicat e small but detectable variation in the electronic structure of the H -
+
+cluster (see Table S1 ). Surprisingly, w e were un able to obtain IR spectra of the pure active states at room 
+
+temperature by incubating Tg HydA1 with a strong reductant, such as sodium dithionite (DT; Fig. 2B ). To test 
+
+whether the protein requires a stronger reductant for reactivation, we us ed Ti (III) -citrate . The results were very 
+
+similar ( Fig. 2C ), i.e. , the sample largely remained in the Hinact state . We noted, however, the appearance of 
+
+additional unidentified bands that somewhat increased in intensity between DT - and Ti(III) -citrate -treated samples .
+
+Based on the IR bands' positions, we preemptively assign them to the Htrans state as previously observed in 
+
+Dd HydA B ( Dd =Desulfovibrio desulfuricans ), [36] although we cannot fully exclude the H hyd (H +) assignment 
+
+either. A further investigation is needed to confirm this hypothesis, which is beyond the scope of this work. 
+
+Since Tg HydA1 shows a reasonable H 2 evolution rate of 136 ±24 μmol (H2) mg (prot) -1 min -1 (see below) , we are 
+
+incline d to think that the enzyme self -inactivates with in the timeframe required to load the sample into the IR cell 
+
+and record FTIR spectra of sufficient quality (ca. 30 min ). Given the high enzyme concentrations required for FTIR, 
+
+it is possible that the reductant may couple effectively with H2 evolution , leading to auto -oxidation of Tg HydA 1
+
+during a room -temperature measurement. Unfortunately, measuring a low -concentration protein sample in our 
+
+FTIR spectrometer is impractical. Therefore, t o test this hypothesis, we performed a freeze -quench experiment in 
+
+which we froze the Tg HydA1 sample shortly after adding sodium dithionite. Indeed, freezing the DT -treated sample 
+
+immediately after preparation (within 3 min) afforded detection of the active H ox state by a cryogenic FTIR at 15 K
+
+(Fig. 2E ). A similar experiment in which we waited 1 hour before the freeze -quench showed a complete conversion 
+
+of the enzyme back to the H inact state despite maintaining a strictly anaerobic (3% H 2, 97%N ) atmosphere (see Fig. 
+
+2F ). 
+
+These experiments reassured us that Tg HydA 1 is enzymatica lly active but tends to remain in the H inact state in the 
+
+absence of a strong reducing environment. This is a substantial departure from the typical behavior of Cb HydA1, 
+
+which remain s active unless exposed to an oxidant or placed in a low -pH environment (below pH 6.5) .[14, 17] 
+
+Hence, we attribute this effect to differences in the inactivation and reactivation kinetics. 
+
+Figure 3. Comparison of protein film cyclic voltammetry traces of Cb HydA1 and Tg HydA 1 performed at pH 8.5 and with 
+
+100 mV/s scan rate. The trace of Cb HydA1 was scaled up by a factor of 2 to match the maximum of the oxidizing current of 
+
+Tg HydA 1. Experiments were performed at room temperature under 1 atm H 2.
+
+To further investigate this behavior, we performed a series of protein film voltammetry experiments at various pH. 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted May 11, 2026. ;https://doi.org/10.64898/2026.05.07.723305 doi: bioRxiv preprint
+
+5
+
+The H + reduction (negative) current dominates the acquired cyclic voltammetry (CV) traces even at high pH, where 
+
+[FeFe] hydrogenases should be thermodynamically biased towards H2 oxidation (positive current) ,[37 –40] see Fig .
+
+S2. Another unusual feature of the traces observed was the presence of substantial hysteresis around the H +/H 2
+
+thermodynamic equilibrium potential between forward and reverse potential scans , most prominent at higher scan 
+
+rates (100 mV/s, see Fig . 3). When compared to CV traces of Cb HydA1 measured at identical conditions, the 
+
+inhibition of the H 2-oxidation current due to inactivation occurs at less oxidizing potential than Cb HydA1 ,
+
+concurring with the observed higher tendency of Tg HydA 1 to inactivate when presented with oxidizing 
+
+environment (above E 0(H +/H 2)) .
+
+To rationalize the kinetics of inactivation, we conducted a series of chronoamperometry experiments with 
+
+Cb HydA1 and Tg HydA 1 involving repeated steps between more oxidizing (inactivating) and more reducing 
+
+(activating) potentials starting with a fully activating potential (-800 mV vs NHE , see Fig. S3 and Fig. S4 ).[40, 41] 
+
+The analysis of the catalytic current progression after a potential step allows us to extract kinetic rates related to 
+
+interconversion between the active and inactive states. Following the work of Winkler et al .,[20] we adopted a
+
+model assuming the presence of two active states in a dynamic equilibrium :
+
+A(2) 𝑘 12 
+
+⇆
+
+> 𝑘 21
+
+A(1) 𝑘 𝑖𝑛𝑎𝑐𝑡 
+
+⇆
+
+> 𝑘 𝑟𝑒𝑎𝑐𝑡
+
+𝐻 𝑖𝑛𝑎𝑐𝑡  (1) 
+
+Our analysis of the heterogeneous EPR spectra of the H ox and H ox -CO states of Cb HydA1 concluded th at the H -
+
+cluster exhibits two spectroscopically distinct structural isoforms in the active state , fully consistent with the 
+
+aforementioned kinetic model. [17] While analytical equations for such a process are trivial to obtain , the 
+
+dependence of the exponential and pre -exponential factors on the kinetic constants is highly complex (see 
+
+Supporting Information ). Thus, fitting the chronoamperometry data to kinetic constants is an ill -posed problem that 
+
+requires regularization assumptions to yield meaningful result s. Winkler et al. [20] postulate d that the rates k21 and 
+
+k12 are independent of potential, consistent with our spectroscopic findings of two structural isoforms in dynamic 
+
+equilibrium .[17] 
+
+Considering that the Cys 367 rearrangement is likely the rate -limiting step in the oxidative inactivation, the 
+
+transition from the H ox state to the H inact state should have little -to -no potential dependence , leading to apparent 
+
+potential independence of k inact . Then the potential dependence of the kinetic process es derives solely from the rate 
+
+of reduction of the H inact state (k react ), i.e. it depends on the potential -dependent electron -transfer rates from the H -
+
+cluster as governed by the redox properties of the H -cluster in the H inact state and the accessory metallocofactors. 
+
+Fig. 4 displays the results of potential -step chronoamperometry fits performed at pH 8.5 with the model described 
+
+above . We have observed very similar kinetic rates for k 12 and k 21 between Cb HydA1 and Tg HydA 1. Since these 
+
+rates are associated with stochastic conversion between two active isoforms, the similarity between two enzymes 
+
+indicates a similar ity of their structural elasticity . The similarity in the k inact rates between the two species further 
+
+supports this conclusion .
+
+Figure 4. Potential dependence of kinetic constants extracted from chronoamperometry experiments of Tg HydA 1(filled 
+
+circles) and Cb HydA1 (hollow circles) using an AAI model described in the main text and schematically depicted in the bottom 
+
+left corner of the plot. 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted May 11, 2026. ;https://doi.org/10.64898/2026.05.07.723305 doi: bioRxiv preprint
+
+6
+
+The m ost notabl e result of this analysis is that the kreact values are universally about an order of magnitude lower 
+
+for Tg HydA 1 than th ose of Cb HydA1 at any given potential . This observation phenomenologically explains the 
+
+propensity of Tg HydA 1 to remain in the H inact state under conditions that normally a fford us accumulation of active 
+
+states in other [FeFe] hydrogenases. [14, 17, 37] 
+
+As to the underlying cause, past precedents have demonstrated that even amino acid modifications away from the 
+
+active site can influence the O 2-tolerance. [18, 21] However, no reported amino acid substitutions have resulted in 
+
+a decrease in the reactivation rate, as we have observed here. Furthe rmore, all previously explored amino acid 
+
+motifs in Cb HydA1 are completely con served in Tg HydA 1 (see Fig. S1). It is thus likely that there is no significant 
+
+alteration to the structural mobility between two proteins around the active site , as indeed suggested by the 
+
+similarity of k 12 , k 21 , and k inact rates . We thus propose that the effect originates largely from the differences in the 
+
+redox potentials of the metallocofactors , H -cluster , and the accessory [4Fe -4S] clusters. Given the dramatic change 
+
+in the k react (E) dependence and the observation of an H trans -like state in IR, we incline to suggest that the modification 
+
+of the H -cluster’s redox potential of inactivation and reactivation roots in an alteration away from the motifs 
+
+explored so far . However, further investigation into the electronic properties of the metallocofactors of Cb HydA1 
+
+and Tg HydA 1 is needed to clarify this point. 
+
+Our earl ier work demonstrated that once in the H inact state , the Cb HydA1 remained fairly stable for a long time 
+
+under fully aerobic conditions (<20% degradation after 44 hours at room temperature) .[14] However, we and others 
+
+have noted a gradual decrease in Cb HydA1 activ it y upon repeated cycles of exposure to O 2 and reactivation .[14, 
+
+18] It is thus likely that the protein ’s transition into the inactive state is not fast enough to avoid harmful ROS -
+
+generating O 2 reduction . Given the increased propensity to remain in the H inact state, we hypothesized that Tg HydA 1
+
+may exhibit less O 2-induced degradation when reacted with oxygen . To test this idea , we repeatedly exposed low -
+
+concentration protein samples (1 μM) to air at 4°C for 7 0 min in the absence of any oxygen -scavenging agents such 
+
+as sodium dithionite . Prior to each exposure, the enzyme was extensively activated under 1 atm H 2 for 7 0 min .
+
+Subsequently, we analyzed the H2-evolving activity of diluted sample aliquots (at 20 nM concentration) by gas 
+
+chromatography (see Materials and Methods). To separate general protein degradation during prolonged sample 
+
+treatment s from the effect of exposure to O 2, we have performed parallel experiments in which aliquots of the same 
+
+sample remained in side the anaerobic chamber (3%H 2, 97%N 2) but were otherwise treated identically . Notably, we 
+
+observed a substantial protein degradation at pH below 7.0, even in the absence of any sample treatment (see Fig. 
+
+S6 ). Therefore, we performed the experiments shown here at somewhat higher pH of 7.5 that allowed to 
+
+considerably stabilize Tg HydA1. Fig . 5 shows the comparison of the H 2 evolution activity of aerobically and 
+
+anaerobically treated (control) samples. 
+
+Figure 5. H2 evolution activity of Tg HydA 1 after repeated expose to air at pH 7.5. Prior to each exposure, a 1 μM protein 
+
+solution was activated by incubating under 1 atm H 2 for 7 0 min. Subsequently, samples were either taken out the anaerobic 
+
+chamber for 7 0 min on ice (red bars) or left in the chamber for the same period (blue bars). Activity assays were performed by 
+
+gas chromatography. Error bars are standard deviations calculated from measurements in triplicate. 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted May 11, 2026. ;https://doi.org/10.64898/2026.05.07.723305 doi: bioRxiv preprint
+
+7
+
+The key result of this experiment is that , even in the absence of sodium dithionite, exposure of TgHydA1 to air 
+
+results in only a minor loss of activity (<20% after three cycles) . Therefore, it appears that an increased propensity 
+
+for inactivation in Tg HydA1 indeed coincides with protein stability, at least with respect to the interaction with O 2.
+
+This trend is encouraging and warrants further investigation into why this protein demonstrated greater stability 
+
+upon aerobic inactivation and whether this translates in to enhanced O 2 tolerance. It would be interesting to see how 
+
+this protein performs under aerobic conditions when coupled to a photosystem I complex; a study planned for our 
+
+laboratory in the future. 
+
+Lastly, we would like to point out that acetogens, such as T. glycolicus (formally known as Clostridium glycolicum ),
+
+colonize leaf litter and mineral soil of oxygenated forest soils, [32, 34] suggesting that this organism can tolerate 
+
+periods of increased O 2 concentration. It is thus rather fitting to identify a Cb HydA1 -like (likely , O2-tolerant ) [FeFe] 
+
+hydrogenase in this system. It is also intriguing that the second putative [FeFe] hydrogenase in T. glycolicus is 
+
+missing the conserved proton -channeling Cys, a hallmark of the H 2-producing [FeFe] hydrogenases. Therefore, it 
+
+is more likely that the H 2-production by this or ganism is due to Tg HydA1. Ultimately, this realization may point at 
+
+T. glycolicus organism as a potential alternative H 2-bioreactor host. However, further investigation is needed to 
+
+uncover the physiological role of Tg HydA1 to take full advantage of this organism. 
+
+In conclusion, we have demonstrated that the ability to transition into the O 2-stable state in [FeFe] hydrogenase s
+
+shows a natural variation even between close homologues. Our study suggests that this deviation is controlled by 
+
+the rate of enzyme reactivation , likely through the thermodynamic properties of the metallocofactor s rather than 
+
+structural mobility . We also show that this propensity for inactivation is accompanied by an increased stability upon 
+
+O2 exposure . Therefore, t he data presented in this work encourage closer examination of the energetics of electron 
+
+transfer within the protein as a potentially important factor controlling O2 tolerance. Given that rapid reactivation 
+
+is likely a key to designing efficient H 2-producing systems, this work urges the development of a robust 
+
+understanding of the structure -function relationships that dictate O 2 tolerance in this class of enzymes .
+
+SUPPORTING INFORMATION .
+
+Details of protein sample preparations and experimental data collection and analysis, sequence alignment, protein 
+
+film voltammetry data. 
+
+AUTHOR CONTRIBUTIONS 
+
+The manuscript was written through the contributions of all authors. All authors have given approval to the final 
+
+version of the manuscript. 
+
+ACKNOWLEDGMENT S
+
+We greatfully thank Prof. John Golbeck for providing the cell line used in this work. This material is based upon 
+
+work supported by the National Science Foundation under Award Number CHE -1943748 to A.S. 
+
+ABBREVIATIONS 
+
+E.coli , Escherichia coli; Tg HydA1, [FeFe] hydrogenase 1 from Terrisporobacter glycolicus ; Cb HydA1, [FeFe] 
+
+hydrogenase 1 from Clostridium beijerin ckii ; PFV, Protein Film Voltametry; FTIR, Fourier Transform Infrared; 
+
+DATA AVAILABILITY 
+
+The authors declare that the data supporting the findings of this study are available within the paper and its 
+
+Supplementary Information file. Should any raw data files be needed in another format, they are available from the 
+
+corresponding author upon reas onable request. 
+
+REFERENCES 
+
+1. Lubitz W, Ogata H, Rüdiger O, Reijerse E (2014) Hydrogenases. Chem Rev 114:4081 –4148. 
+
+https://doi.org/10.1021/cr4005814 
+
+2. Morra S (2022) Fantastic [FeFe] -Hydrogenases and Where to Find Them. Front Microbiol 13:853626. 
+
+https://doi.org/10.3389/fmicb.2022.853626 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted May 11, 2026. ;https://doi.org/10.64898/2026.05.07.723305 doi: bioRxiv preprint
+
+8
+
+3. Wittkamp F, Senger M, Stripp ST, Apfel U -P (2018) [FeFe] -Hydrogenases: recent developments and future 
+
+perspectives. Chem Commun 54:5934 –5942. https://doi.org/10.1039/C8CC01275J 
+
+4. Birrell JA, Rodríguez -Maciá P, Reijerse EJ, et al (2021) The catalytic cycle of [FeFe] hydrogenase: A tale of 
+
+two sites. Coordination Chemistry Reviews 449:214191. https://doi.org/10.1016/j.ccr.2021.214191 
+
+5. Silakov A, Wenk B, Reijerse E, Lubitz W (2009) 14N HYSCORE investigation of the H -cluster of [FeFe] 
+
+hydrogenase: evidence for a nitrogen in the dithiol bridge. Phys Chem Chem Phys 11:6592. 
+
+https://doi.org/10.1039/b905841a 
+
+6. Artz JH, Zadvornyy OA, Mulder DW, et al (2020) Tuning Catalytic Bias of Hydrogen Gas Producing Hy-
+
+drogenases. J Am Chem Soc 142:1227 –1235. https://doi.org/10.1021/jacs.9b08756 
+
+7. Duan J, Rutz A, Kawamoto A, et al (2025) Structural determinants of oxygen resistance and Zn 2+ -mediated 
+
+stability of the [FeFe] -hydrogenase from Clostridium beijerinckii . Proc Natl Acad Sci USA 
+
+122:e2416233122. https://doi.org/10.1073/pnas.2416233122 
+
+8. Vincent KA, Cracknell JA, Parkin A, Armstrong FA (2005) Hydrogen cycling by enzymes: electrocatalysis 
+
+and implications for future energy technology. Dalton Trans 3397. https://doi.org/10.1039/b508520a 
+
+9. Le JM, Bren KL (2019) Engineered Enzymes and Bioinspired Catalysts for Energy Conversion. ACS Energy 
+
+Lett 4:2168 –2180. https://doi.org/10.1021/acsenergylett.9b01308 
+
+10. Webb S, Milton RD (2025) Towards Scalable Electroenzymatic Hydrogen Production with [FeFe]‐Hydro-
+
+genase. ChemElectroChem 12:e202400700. https://doi.org/10.1002/celc.202400700 
+
+11. Dezzani S, Alogaidi A, Pordea A, Morra S (2026) Clostridium beijerinckii displays a soluble [FeFe] -hydro-
+
+genase/formate dehydrogenase enzyme complex that links H2 and CO2 metabolism. Biochemical Journal 
+
+BCJ20253323. https://doi.org/10.1042/BCJ20253323 
+
+12. Vignais PM, Billoud B (2007) Occurrence, Classification, and Biological Function of Hydrogenases: An 
+
+Overview. Chem Rev 107:4206 –4272. https://doi.org/10.1021/cr050196r 
+
+13. Greening C, Biswas A, Carere CR, et al (2016) Genomic and metagenomic surveys of hydrogenase distribu-
+
+tion indicate H 2 is a widely utilised energy source for microbial growth and survival. The ISME Journal 
+
+10:761 –777. https://doi.org/10.1038/ismej.2015.153 
+
+14. Corrigan PS, Tirsch JL, Silakov A (2020) Investigation of the Unusual Ability of the [FeFe] Hydrogenase 
+
+from Clostridium beijerinckii to Access an O 2 -Protected State. J Am Chem Soc 142:12409 –12419. 
+
+https://doi.org/10.1021/jacs.0c04964 
+
+15. Morra S, Arizzi M, Valetti F, Gilardi G (2016) Oxygen Stability in the New [FeFe] -Hydrogenase from Clos-
+
+tridium beijerinckii SM10 (CbA5H). Biochemistry 55:5897 –5900. https://doi.org/10.1021/acs.bio-
+
+chem.6b00780 
+
+16. Cleary SE, Hall SJ, Galan‐Bataller R, et al (2024) Scalable Bioreactor Production of an O 2‐Protected [FeFe]‐ 
+
+Hydrogenase Enables Simple Aerobic Handling for Clean Chemical Synthesis. ChemCatChem 
+
+16:e202400193. https://doi.org/10.1002/cctc.202400193 
+
+17. Corrigan PS, Majer SH, Silakov A (2023) Evidence of Atypical Structural Flexibility of the Active Site Sur-
+
+rounding of an [FeFe] Hydrogenase from Clostridium beijerinkii . J Am Chem Soc 145:11033 –11044. 
+
+https://doi.org/10.1021/jacs.2c13458 
+
+18. Rutz A, Das CK, Fasano A, et al (2023) Increasing the O 2 Resistance of the [FeFe] -Hydrogenase CbA5H 
+
+through Enhanced Protein Flexibility. ACS Catal 13:856 –865. https://doi.org/10.1021/acscatal.2c04031 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted May 11, 2026. ;https://doi.org/10.64898/2026.05.07.723305 doi: bioRxiv preprint
+
+9
+
+19. Duan J, Senger M, Esselborn J, et al (2018) Crystallographic and spectroscopic assignment of the proton 
+
+transfer pathway in [FeFe] -hydrogenases. Nat Commun 9:4726. https://doi.org/10.1038/s41467 -018 -07140 -
+
+x
+
+20. Winkler M, Duan J, Rutz A, et al (2021) A safety cap protects hydrogenase from oxygen attack. Nat Commun 
+
+12:756. https://doi.org/10.1038/s41467 -020 -20861 -2
+
+21. Rumbaugh TD, Gorka MJ, Baker CS, et al (2024) Light -induced H 2 generation in a photosystem I -O2 -tolerant 
+
+[FeFe] hydrogenase nanoconstruct. Proc Natl Acad Sci USA 121:e2400267121. 
+
+https://doi.org/10.1073/pnas.2400267121 
+
+22. Burgdorf T, Löscher S, Liebisch P, et al (2005) Structural and Oxidation -State Changes at Its Nonstandard 
+
+Ni−Fe Site during Activation of the NAD -Reducing Hydrogenase from Ralstonia eutropha Detected by X -
+
+ray Absorption, EPR, and FTIR Spectroscopy. J Am Chem Soc 127:576 –592. 
+
+https://doi.org/10.1021/ja0461926 
+
+23. Pandelia M -E, Fourmond V, Tron -Infossi P, et al (2010) Membrane -Bound Hydrogenase I from the Hyper-
+
+thermophilic Bacterium Aquifex aeolicus: Enzyme Activation, Redox Intermediates and Oxygen Tolerance. 
+
+J Am Chem Soc 132:6991 –7004. https://doi.org/10.1021/ja 910838d 
+
+24. Wulff P, Thomas C, Sargent F, Armstrong FA (2016) How the oxygen tolerance of a [NiFe] -hydrogenase 
+
+depends on quaternary structure. J Biol Inorg Chem 21:121 –134. https://doi.org/10.1007/s00775 -015 -1327 -
+
+6
+
+25. Riethausen J, Rüdiger O, Gärtner W, et al (2013) Spectroscopic and Electrochemical Characterization of the 
+
+[NiFeSe] Hydrogenase from Desulfovibrio vulgaris Miyazaki F: Reversible Redox Behavior and Interactions 
+
+between Electron Transfer Centers. ChemBioChem 14:1714 –1719. https://doi.org/10.1002/cbic.201300120 
+
+26. Valente FMA, Oliveira ASF, Gnadt N, et al (2005) Hydrogenases in Desulfovibrio vulgaris Hildenborough: 
+
+structural and physiologic characterisation of the membrane -bound [NiFeSe] hydrogenase. J Biol Inorg Chem 
+
+10:667 –682. https://doi.org/10.1007/s00775 -005 -0022 -4
+
+27. Parkin A, Goldet G, Cavazza C, et al (2008) The Difference a Se Makes? Oxygen -Tolerant Hydrogen Pro-
+
+duction by the [NiFeSe] -Hydrogenase from Desulfomicrobium baculatum . J Am Chem Soc 130:13410 –
+
+13416. https://doi.org/10.1021/ja803657d 
+
+28. Marques MC, Coelho R, De Lacey AL, et al (2010) The Three -Dimensional Structure of [NiFeSe] Hydro-
+
+genase from Desulfovibrio vulgaris Hildenborough: A Hydrogenase without a Bridging Ligand in the Active 
+
+Site in Its Oxidised, “as -Isolated” State. Journal of Molecular Biology 396:893 –907. 
+
+https://doi.org/10.1016/j.jmb.2009.12.013 
+
+29. Ghosh S, Das CK, Uddin S, et al (2025) Protein Dynamics Affect O 2-Stability of Group B [FeFe] -Hydrogen-
+
+ase from Thermosediminibacter oceani . J Am Chem Soc 147:15170 –15180. 
+
+https://doi.org/10.1021/jacs.4c18483 
+
+30. Lu Y, Koo J (2019) O 2 sensitivity and H 2 production activity of hydrogenases —A review. Biotech &amp; 
+
+Bioengineering 116:3124 –3135. https://doi.org/10.1002/bit.27136 
+
+31. Schumann C, Fernández Méndez J, Berggren G, Lindblad P (2023) Novel concepts and engineering strategies 
+
+for heterologous expression of efficient hydrogenases in photosynthetic microorganisms. Front Microbiol 
+
+14:1179607. https://doi.org/10.3389/fmicb.2023. 1179607 
+
+32. Gaston LW, Stadtman ER (1963) Fermentation of ethylene glycol by Clostridium glycolicum , sp. N. J Bac-
+
+teriol 85:356 –362. https://doi.org/10.1128/jb.85.2.356 -362.1963 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted May 11, 2026. ;https://doi.org/10.64898/2026.05.07.723305 doi: bioRxiv preprint
+
+10 
+
+33. Jiang W, Abrar S, Romagnoli M, Carroll KC (2009) Clostridium glycolicum Wound Infections: Case Reports 
+
+and Review of the Literature. J Clin Microbiol 47:1599 –1601. https://doi.org/10.1128/JCM.02411 -08 
+
+34. Küsel K, Karnholz A, Trinkwalter T, et al (2001) Physiological Ecology of Clostridium glycolicum RD -1, an 
+
+Aerotolerant Acetogen Isolated from Sea Grass Roots. Appl Environ Microbiol 67:4734 –4741. 
+
+https://doi.org/10.1128/AEM.67.10.4734 -4741.2001 
+
+35. Corrigan P, Silakov A (2023) Anaerobic Infrared Spectroelectrochemical Methods for Studying Oxygen -
+
+Sensitive [FeFe] Hydrogenases. In: Weinert EE (ed) Oxygen Sensing. Springer US, New York, NY, pp 43 –
+
+62 
+
+36. Rodríguez‐Maciá P, Galle LM, Bjornsson R, et al (2020) Caught in the H inact : Crystal Structure and Spectros-
+
+copy Reveal a Sulfur Bound to the Active Site of an O 2‐stable State of [FeFe] Hydrogenase. Angew Chem 
+
+Int Ed 59:16786 –16794. https://doi.org/10.1002/anie.202005208 
+
+37. Taylor J, Mulder DW, Corrigan PS, et al (2025) A [FeFe] Hydrogenase –Rubrerythrin Chimeric Enzyme 
+
+Functions to Couple H 2 Oxidation to Reduction of H 2O2 in the Foodborne Pathogen Clostridium perfringens .
+
+J Am Chem Soc 147:9764 –9773. https://doi.org/10.1021/jacs.4c18425 
+
+38. Fasano A, Bailly A, Wozniak J, et al (2023) Catalytic bias and redox -driven inactivation of ancestral FeFe 
+
+hydrogenases from group B2 
+
+39. Armstrong FA, Evans RM, Hexter SV, et al (2016) Guiding Principles of Hydrogenase Catalysis Instigated 
+
+and Clarified by Protein Film Electrochemistry. Acc Chem Res 49:884 –892. https://doi.org/10.1021/acs.ac-
+
+counts.6b00027 
+
+40. Del Barrio M, Fourmond V (2019) Redox (In)activations of Metalloenzymes: A Protein Film Voltammetry 
+
+Approach. ChemElectroChem 6:4949 –4962. https://doi.org/10.1002/celc.201901028 
+
+41. Orain C, Saujet L, Gauquelin C, et al (2015) Electrochemical Measurements of the Kinetics of Inhibition of 
+
+Two FeFe Hydrogenases by O 2 Demonstrate That the Reaction Is Partly Reversible. J Am Chem Soc 
+
+137:12580 –12587. https://doi.org/10.1021/jacs.5b06934 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted May 11, 2026. ;https://doi.org/10.64898/2026.05.07.723305 doi: bioRxiv preprint
+
+11 
+
+GRAPHICAL ABSTRACT 
+
+.CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted May 11, 2026. ;https://doi.org/10.64898/2026.05.07.723305 doi: bioRxiv preprint

@@ -1,0 +1,46 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2605.13327v1/fig-001.webp",
+      "caption": "Figure 3: Single-event ablation efficiency η as a function of the number of sub-pulses per burst P for various incident event fluences during laser ablation in water (left) and air (right). The corresponding total burst duration is given on the top x-axis, and the inverse ablation efficiency η-1, corresponding to the specific energy for ablation, is shown on the right y-axis.",
+      "page": 6,
+      "index": 1,
+      "width": 950,
+      "height": 373
+    },
+    {
+      "url": "assets/figures/arxiv/2605.13327v1/fig-002.webp",
+      "caption": "Figure 5: Number-weighted probability density function (PDF, bars) and cumulative distribution function (CDF, lines) of nanoparticles generated after ablation with an incident event fluence of 18 J/cm2 in water with 10 events per position for single-pulse ablation (P = 1) and GHz-burst ablation with five sub-pulses (P = 5). The particle size distributions were obtained by transmission electron microscopy based on 2287 nanoparticles for P = 1 and 6920 nanoparticles for P = 5.",
+      "page": 10,
+      "index": 2,
+      "width": 477,
+      "height": 321
+    },
+    {
+      "url": "assets/figures/arxiv/2605.13327v1/fig-003.webp",
+      "caption": "Figure 1: a Representative oscilloscope trace of a GHz-burst with P = 5 sub-pulses measured using a fast photodiode. The inter-pulse delay of 205 ps is indicated. The shaded region exemplifies the temporal integration window used to determine individual sub-pulse energies. b Relative energy fractions Ei/E0 of the individual sub-pulses for P ≤ 5, obtained by integration of the photodiode voltage trace. c Schematic of the experimental configuration. PBS: polarizing beam splitter; QWP: quarter-wave plate; BPF: band-pass filter.",
+      "page": 3,
+      "index": 3,
+      "width": 948,
+      "height": 494
+    },
+    {
+      "url": "assets/figures/arxiv/2605.13327v1/fig-004.webp",
+      "caption": "Figure 4: a Images showing the relative reflectance change at the indicated delay times for (P = 1, top row) and GHz-burst ablation (P = 5, bottom row) in water at an incident event fluence of 18 J/cm2. The incidence direction of the laser is from the bottom of the images, the scale bar (top left) corresponds to 100 µm and applies to all images. b Temporal evolution of the cavitation bubble radius for P = 1 and P = 5 under identical conditions. The inset shows the early-time cavitation bubble radius (CB). The dashed black and dotted blue lines indicate the final ablation radius for P = 1 and P = 5, respectively. c Ablation efficiency for P = 1 and P = 5 at an incident event fluence of 18 J/cm2 under repeated irradiation of the same position with 10 events per position separated by 10 s.",
+      "page": 8,
+      "index": 4,
+      "width": 950,
+      "height": 524
+    },
+    {
+      "url": "assets/figures/arxiv/2605.13327v1/fig-005.webp",
+      "caption": "Figure 2: Transmittance T through the water layer as a function of event fluence Φ0 for different subpulse numbers P within the GHz-burst. The inset shows the threshold fluence for nonlinear losses ΦNL as a function of sub-pulse number P.",
+      "page": 5,
+      "index": 5,
+      "width": 477,
+      "height": 319
+    }
+  ]
+}

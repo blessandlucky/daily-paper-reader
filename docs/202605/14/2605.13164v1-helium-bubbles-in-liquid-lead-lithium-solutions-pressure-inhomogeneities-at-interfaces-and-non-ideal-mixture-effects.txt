@@ -1,0 +1,2107 @@
+Title: Helium Bubbles in Liquid Lead Lithium Solutions: Pressure Inhomogeneities at Interfaces and Non Ideal Mixture Effects
+
+URL Source: https://arxiv.org/pdf/2605.13164v1
+
+Published Time: Thu, 14 May 2026 01:09:44 GMT
+
+Number of Pages: 29
+
+Markdown Content:
+## Helium Bubbles in Liquid Lead–Lithium Solutions: Pressure Inhomogeneities at Interfaces and Non-Ideal Mixture Effects ∗
+
+Edgar Alvarez-Galera, † Jordi Mart´ ı, ‡ and Lluis Batet §
+
+Department of Physics, Polytechnic University of Catalonia–Barcelona Tech. C. Jordi Girona, 1-3 08034 Barcelona \\ 
+
+(Dated: May 14, 2026) The extremely low solubility of helium in liquid metals may lead to rapid supersaturation, pro-moting spontaneous formation of helium bubbles by nucleation. Once nucleated, the stability of these bubbles is governed by the properties of the helium–liquid metal interface. In particular, inter-facial tension between the immiscible phases controls bubble interactions and induces local pressure inhomogeneities. This work is motivated by the need of a better understanding of helium bubble formation in liquid Pb–Li alloys, which are of particular relevance for the design of breeding blankets in the future nuclear fusion reactors. We employ classical molecular dynamics simulations to inves-tigate helium segregation in a range of lead–lithium systems, including the limiting cases of pure lead and pure lithium. Changes in local pressure are evaluated from direct mechanical calculations, enabling the characterization of interfacial properties. Interfacial tension and radius of the bub-ble are subsequently determined across multiple thermodynamic conditions, spanning temperatures starting near the melting points of the constituent metals up to 1021 K. The impact of curvature and composition of the alloy on the interfacial behaviour are also investigated. 
+
+Usage: Secondary publications and information retrieval purposes. 
+
+Structure: The paper is organized as follows: In Sec. II we present the force-field models employed in this work. In Sec. III we review the MD theory of pressure tensors and interfacial tension calculations. The main results and discussion are reported in Sec. IV and some final remarks and conclusions are given in Sec. V. 
+
+I. INTRODUCTION 
+
+The formation of helium nanobubbles and the solubil-ity of helium in liquid metals (LM) and in liquid metal alloys (LMA) has been a subject of experimental and the-oretical interest over the past decades [1–10]. Among sev-eral LMA technological applications, the proposal of the lead–lithium eutectic (LLE) alloy as breeding material [4] in the framework of nuclear fusion projects ITER [11] and DEMO [12] is of outmost importance. Helium, released as a by-product during the tritium breeding, segregates due to its predominant repulsive in-teractions with the surrounding media. Understanding the mechanisms behind gas segregation in liquid solu-tions is crucial for optimizing tritium extraction in fu-sion breeding blankets and holds fundamental impor-tance. Despite the phenomenon of nucleation has been addressed from an elemental perspective during the last century [13–15], a complete and unified theory is still lacking, and it continues attracting scientific interest [16]. Nucleation plays a key role in diverse processes, rang-ing from droplet condensation [17], ice nucleation [18], aerosol sciences [19, 20], and cavitation [21], to the afore-        
+
+> ∗Ministerios, CSN/ARGOS, UPC and EUROfusion...
+> †Campus Diagonal Nord B4-201, 08034 Barcelona, Catalonia, Spain; edgar.alvarez.galera@upc.edu
+> ‡Campus Diagonal Nord B5-209, 08034 Barcelona, Catalonia, Spain; jordi.marti@upc.edu
+> §Campus Diagonal Sud H-32/02, Diagonal 647, 08028 Barcelona, Catalonia, Spain
+
+mentioned formation of helium nanobubbles [5, 7, 22–24]. In this work, helium bubble formation is interpreted as a cavitation process driven by the supersaturation of the noble gas within the liquid metal solution, triggered by segregation due to repulsive interactions between helium and the surrounding LM, rather than aggregation due to attractive forces among the solute atoms. This work employs classical molecular dynamics (MD) to investigate the behaviour of interfacial forces in helium/lead-lithium liquid alloys (He/LLLA) interfaces from an atomistic perspective. The study covers both: (i) planar; and, (ii) curved interfaces. Analysing all-atom trajectories in MD simulations enables the calculation of normal and tangential stress tensor components. These components, given the specific geometry, are: (i) profiles varying along the Cartesian coordinate perpendicular to the interface (i.e., z-dependent) [25]; and, (ii) radial pro-files (i.e., r-dependent) [26]. We pay special attention to changes in the interfacial tension induced by modifying the atomic composition of the LM solvent. Many properties related to lead–lithium alloys are known to show thermodynamic non-ideal mix-ture characteristics [27]. In a previous study [28] we demonstrated that the same force field employed in this work [29–31] reproduces a notable peculiarity for both solvent packing factors and helium solubilities across a wide range of lead to lithium ratios along the 1000 K isotherm, coherent with an experimentally-determined divergent behaviour of bulk properties such as volumet-ric thermal expansion coefficients [32, 33] or heat capaci-ties [34, 35]. In the present work we explore how pressure tensors and interfacial properties of He/LLLA, including 
+
+> arXiv:2605.13164v1 [cond-mat.mtrl-sci] 13 May 2026
+
+2how the radius of the bubbles are affected by the compo-sition of the LMA. These properties are studied at nom-inal conditions of T ≈ 1021 .4 K and P ≈ 1 bar, showing reasonable ensemble fluctuations when varying the ratio between lead and lithium atoms for a few selected states. The paper is organized as follows: In Sec. II we present the force-field models employed in this work. In Sec. III we review the MD theory of pressure tensors and interfa-cial tension calculations. The main results and discussion are reported in Sec. IV and some final remarks and con-clusions are given in Sec. V.   
+
+> II. MODELS A. Force fields
+
+Atomistic trajectories are governed by a classical Hamiltonian, typically decomposed into kinetic and po-tential terms. The latter includes: 
+
+a. EAM interactions for LLLA [29, 36] The Em-bedded Atom Model (EAM) description was used in Refs. 29, 35, 36 to model Li–Pb molten alloys, capturing the effective contribution of free-electron clouds [37, 38] and the large non-idealities in solution thermodynam-ics [27, 28]. The existence of a peculiarity in the 1000 K isotherm around the Pb-Li4 (Li80%-Pb20%) composition was discussed in Ref. 28, where it was shown to be in ac-cordance with experimental observations [33, 34, 39]. 
+
+b. Helium pairwise interactions [30, 31] The inter-actions of helium with other atoms can be considered to be purely pair-decomposable. As a noble gas, he-lium atoms have a closed and stable shell. This suggests that free electrons do not affect interactions in condensed phases. Consequently, the Pb–He [30] and the Li–He, He–He interactions [31] can be directly transferred from vacuum conditions where those potentials were built. In summary, the total Hamiltonian of the system reads as: 
+
+H = X
+
+> α∈T
+
+12mαNαX
+
+> i=1
+
+pαi · pαi
+
++ X
+
+> α∈B
+> Nα
+
+X
+
+> i=1
+
+"
+
+Φα(ϱαi ) + 12
+
+X
+
+> β∈B
+> Nβ
+
+X
+
+> j=1
+
+φα−β (rαβ ij )
+
+#
+
++ 12
+
+> NHe
+
+X
+
+> i=1
+
+X
+
+> γ∈T
+> Nγ
+
+X
+
+> j=1
+
+φHe −γ (rHe −γij ) , (1) where B ≡ { Li , Pb } and T ≡ { Li , Pb , He } denote the bi-nary (LM, excluding He) and ternary mixtures, respec-tively; mα and pαi are the mass and momentum of an atom i of species α; ϱαi ≡ P
+
+> β∈B
+
+(1 − δij δαβ ) nαβ ij is the effective electron-cloud density at the position of a LM atom due to the presence of other neighbouring LM atoms, expressed as the superposition of pairwise electron densities, nαβ ij ≡n(rαβ ij ); and, as usual, φαβ ij ≡ φα−β (rαβ ij )and rαβ ij ≡ | rβj −rαi | are the pair potential and distance be-tween two atoms i and j, of species α and β, respectively. The reliability of this force field was properly discussed in terms of its accuracy and transferability in Ref. 28.  
+
+> B. Technical details
+
+Positions and velocities are discretized in time, with a time step of ∆ t = 2 fs, and the integration algorithm is the standard velocity-Verlet [40]. Isothermal–isobaric (NPT) trajectories are generated using the standard Nos´ e–Hoover barostat [41–43]. All simulations include periodic boundary conditions (PBC) along the three di-rections of space. The sizes of simulation boxes are cho-sen as a trade-off between computational effort and re-duction of finite size effects.   
+
+> III. THEORY AND METHODS A. Thermodynamics of bubbles
+
+As a starting point, formation of helium clusters in a liquid metal solution can be interpreted as a nucleation process. Helium and supersaturated lead–lithium alloys are regarded as two immiscible phases, that remain sep-arated after the apparition of an interface. A hypotheti-cal supersaturated solution containing NHe helium atoms initially dissolved into the LM bath is metastable com-pared to a configuration in which helium atoms segregate and form clusters, due to the extremely low solubility of helium [1, 28, 44]. The thermodynamic driving force for this transition arises from the supersaturation of helium in the host liquid metal, which produces an effective bulk free-energy gain associated with phase separation. Within the framework of classical nucleation theory, the formation of a cluster involves two competing con-tributions to the free energy. First, the segregation of helium atoms into a dense phase lowers the bulk free en-ergy of the system. Second, creating an interface between the helium-rich cluster and the surrounding liquid metal imposes an energetic penalty proportional to the inter-facial area due to interfacial tension. As a result, the total free energy of cluster formation reflects the com-petition between a favourable bulk contribution and an unfavourable interfacial contribution. For a spherical cluster of radius R, the free-energy change associated with its formation can be written as: ∆G(R) = − 43 πR3∆g
+
+| {z }
+
+> (∆ G)bulk
+
++ 4 πR2γ(R)
+
+| {z }
+
+> (∆ G)interf
+
+, (2) where γ is the interfacial tension between the helium cluster and the surrounding liquid metal, and ∆ g ≡
+
+(β v 0)−1 ln Ψ is the bulk free-energy difference per unit volume between the two phases, being β the thermody-namic beta, v0 the volume of a helium monomer (with 3
+
+v−10 the density of the bubble), and Ψ denotes the su-persaturation ratio, defined as the fraction between the actual pressure of the system and the equilibrium par-tial pressure of dissolved helium. Assuming that he-lium is infinitely diluted, Henry’s law determines that Ψ can equivalently be expressed as fraction between the actual concentration of dissolved helium, and the equi-librium concentration at the local pressure. As a mat-ter of fact, (i) the bulk term divided by the number of clustered atoms measures the change in chemical po-tentials between the initial ( μd) and final ( μc) phases, (∆ G)bulk /N He = ∆ μ = μd − μc = β−1 ln Ψ –which de-termines the thermodynamic driving force due to solute excess– and (ii) the interfacial term accounts for the work required to form a dividing surface between the nucleated helium and the liquid solution. Far away from interfaces, helium bubbles and bulk he-lium (dissolved, within the LM solution) are assumed to have uniform densities, namely ρc 
+
+> He
+
+and ρd
+
+> He
+
+, respec-tively. In contrast, there are excess densities of helium at interfaces –assuming extra number of atoms due to adsorption, with interfacial concentration Γ– followed by monotonic decreases until reaching bulk helium densities. Bubbles are confined within the spherical regions of ra-dius R, with volume Vint = 43 πR3 and area Aint = 4 πR2,while helium atoms outside these spheres are considered to be within the liquid solution. Therefore, the total number of helium atoms within the simulation box can be written as the sum of the partial number of atoms (i) within the bubble, (ii) dissolved in the solution, and (iii) an excess quantity at the interface: 
+
+N ∗ 
+
+> He
+
+=
+
+Z
+
+d3r ρHe (|r − rCoM |) (3) = ρc
+
+> He
+
+Vint + ρd
+
+> He
+
+(V − Vint ) + Γ Aint , (4) where ρHe (r) denotes the helium number density profile with origin at the centre of mass (CoM) of the bubble, 
+
+r ≡ | r − rCoM |.Al-Awad [45] discussed the stability of helium nanobubbles (at T = 600 K) surrounded by both pure LLE and the corresponding solution supersaturated in helium, concluding that an ‘artificial’ shielding mecha-nism (related to PBC) was required in MD simulations to avoid helium partial dissolution. However, the loca-tion of extra atoms near the interface is not an artifact, rather it possesses a clear physical insight: a few helium atoms are adsorbed to the interface in order to minimize the total free energy. Adsorption refers to the adhesion of helium atoms from the solution to the surface of the cluster, where those extra atoms in the surface do not penetrate inside the bulk of the cluster. Regarding total density profiles centred in the CoM of helium clusters, 
+
+ρ(r) = ρLi (r) + ρPb (r) + ρHe (r) ,
+
+we should expect to observe: (i) two plateaus, with den-sities ρc 
+
+> He
+
+and ρLM + ρd
+
+> He
+
+, corresponding to short ( r → 0) and long ( r → ∞ ) distance limits, respectively; (ii) a depletion of atoms in the interfacial region.   
+
+> B. Pressure inhomogeneities and interfacial tension
+> 1. Pressure tensors
+
+a. Mechanical equilibrium In equilibrium, the pres-sure tensor Π and the hydrostatic equilibrium condition under a given orthonormal coordinate system {e1, e2, e3}
+
+respectively follow as 
+
+Π =
+
+> 3
+
+X
+
+> μ=1 3
+
+X
+
+> ν=1
+
+Πμν eμ ⊗ eν , and (5) 
+
+∇ · Π = 0 , (6) where eμ is the unit vector along the direction μ and the vector operator nabla is defined as ∇ ≡ 
+
+> 3
+
+X
+
+> μ=1
+
+eμ
+
+∂∂x μ
+
+.The proper choice of basis coordinates depend on the geometry of the interface under study: Cartesian coordi-nates are suitable for flat interfaces [25], while spherical coordinates are appropriate for spherical interfaces (e.g., droplets, bubbles, or cavities) [26]. 
+
+b. Calculation of pressure tensors From the fact that the mechanical approach to calculate interfacial ten-sions involves pressure tensors, we can derive some use-ful expressions. For an orthorhombic (rectangular prism) simulation cell of volume V = LxLy Lz , the virial expres-sion for the pressure tensor is decomposed into kinetic and configurational components [25, 46–54]: 
+
+P = PK + PV , (7) with its components reading as: 
+
+eμ · P · eν = ⟨Πμν ⟩
+
+=
+
+*
+
+1
+
+V
+
+X
+
+> α,i
+
+mα(vαi )μ(vαi )ν
+
++| {z }
+
+> kinetic
+
++
+
+*
+
+12V
+
+X
+
+> α,i
+
+X
+
+> β,j
+
+(rαβ ij )μ(f αβ ij )ν
+
++| {z }
+
+> virial or configurational
+
+. (8) The diagonal components can be computed from all-atom instantaneous positions and forces, while off-diagonal components (after the ensemble averaging, denoted by 
+
+⟨. . . ⟩) turn out to be zero. Vectors rαi , vαi denote the po-sition and velocity of the i-th atom (respectively), while 
+
+f αβ ij = (1 − δij δαβ )f αβ ij 
+
+rαβ ij 
+
+|rαβ ij | is the force exerted by i on 
+
+j, and rαβ ij ≡ rβj − rαi is the displacement vector between 4the former atoms. For the force field given in (1), scalar components of pair forces read 
+
+f αβ ij =
+
+
+
+− dΦ βj
+
+dϱβj
+
+dnαβ ij 
+
+drαβ ij 
+
++ dΦ αi
+
+dϱαi
+
+dnβα ji 
+
+drβα ji 
+
+!
+
+− dφαβ ij 
+
+drαβ ij 
+
+,
+
+if α, β ∈ { Li , Pb } ;
+
+− dφαβ ij 
+
+drαβ ij 
+
+, otherwise .
+
+Calculating pressure-related quantities from atomic trajectories is generally a delicate task due to the large fluctuations involved in the process. In particular, ap-proaching the interfacial tension from simulations at the nanoscale implies the calculation of fluctuating magni-tudes in the position space, not well-defined at a global level [55–57]. However, after sufficient statistical averag-ing, the final pressure tensors converge to smooth func-tions of positions. 
+
+c. Local pressure tensors In bulk systems, the pres-sure is spatially homogeneous. However, at the vicinity of interfaces, pressure variations emerge as a result of lo-cal interactions between the constituent species. The me-chanical route to compute the interfacial tension is based on the evaluation of pressure tensor local anisotropies, namely the difference between its normal and tangen-tial components across the interface. Instantaneous local values of pressure tensors are evaluated in finite layers of volume ∆ V = A ∆ξN , where ∆ ξN denotes the width of a layer in the direction normal to the interface and A
+
+the area of the plane parallel to the interface. This dis-cretization allows for the calculation of momentum flux across the defined boundaries of the control volume. The concept of localization is implemented by taking the dif-ferential limits ∆ ξN → 0, effectively collapsing the finite slab into a mathematical plane. This transition from a discrete volume to a continuous field allows the pressure to be defined at a specific point r in space. Following the work of Kirkwood and Buff [25, 47, 48], Thompson et al. [26], and Wen et al. [58], we express the local compo-nents of the pressure tensor along the normal coordinate 
+
+ξN (defined by the symmetry of the interface), as Πμν (ξN ) = lim  
+
+> ∆V→0
+
+∆Sμν (ξN )∆V
+
+= lim  
+
+> ∆V→0
+
+1∆V
+
+"
+
+∆n(ξN )β−1
+
++ 12
+
+X
+
+> α,i
+
+X
+
+> β,j
+
+[rαβ ij ]μ[f αβ ij ]ν ∆Ω ij (ξN )
+
+#
+
+≃
+
+"
+
+ρ(ξN )β−1
+
++ 12
+
+X
+
+> α,i
+
+X
+
+> β,j
+
+[rαβ ij ]μ[f αβ ij ]ν
+
+∂Ωαβ ij 
+
+∂ξ N
+
+#
+
+,
+
+where Sμν = Kμν + Wμν is the energy tensor, ∆ n(ξN )and ρ(ξN ) are the number of particles and particle den-
+
+> FIG. 1. Snapshot of a helium (red) bubble within a eutectic lead–lithium (brown, yellow, respectively) mixture.
+
+sity in a bin centred at ξN , respectively, and ∆Ω ij =∆Ω( ξN , ∆ξN , rαi , rβj ) is the path (contour) joining posi-tions of particles i and j, which is determined by means of the Irving–Kirkwood contour (IKC) [46]. This con-tour weights the contribution of each particle pair to the virial tensor based on the geometry of the interface and the orientation of the forces between particles relative to that interface, defining a straight path 
+
+r(λ) = 12 (rαi + rβj ) + λ
+
+2 (rβj − rαi )joining the positions of all atom pairs, given a free pa-rameter −1 ≤ λ ≤ 1. Calculations reported in this work use similar IKC parametrizations for planar interfaces as the ones shown in Refs. 51 and 59, while for spherical in-terfaces the IKC is expressed as in Ref. [26]. More details are provided in the A.  
+
+> 2. Interfacial tension
+
+In this work, we explore how pressure tensors and the interfacial properties of He/LLLA mixtures (interfa-cial tension, interfacial density, adsorption, etc.) are af-fected by the composition of the LMA. These properties are studied across selected states at a specific isotherm (1021.4 K) at which all possible lead–lithium alloys are molten. This is done by varying the ratio of lead to lithium atoms in the solvent. We pay special attention to changes of interfacial phenomena induced by modifi-cations of the atomic composition of the solvent. Lead– lithium mixtures are known to be thermodynamically non-ideal [27, 28], a fact that induces non-negligible mix-ing effects. 
+
+a. Spherical interfaces We consider isolated helium clusters embedded in a bulk liquid solution (see Fig. 1 for a representative configuration). The system size is 5selected to ensure that interactions between the cluster of interest and any periodic replicas or additional clusters are negligible. Clusters are assumed to be (i) spherical, and (ii) in equilibrium with the surrounding LM phase. As a general fact, the values of the interfacial tension depend on the curvature of the interface, which depends on the choice of the arbitrary dividing surface of radius 
+
+R. Historically, two natural choices for its definition have been proposed [26, 60, 61]: Re (equimolar radius) and 
+
+Rs (radius of the surface of tension). The former de-fines a surface where the atom density in the clustered and bulk gases is the same, while the latter defines the surface at which γs ≡ γ(Rs) satisfies the Young–Laplace equation [26, 62]: (∆ p)s = 2γs
+
+Rs
+
+, (9) where (∆ p)s ≡ pc − pd > 0 is the difference between the pressure of helium in the cluster and in the LM solution, and Rs stands for the radius of the spherical interface. The definition of Rs is not arbitrary but, on the grounds of mechanical considerations[26], it needs to be consistent with 
+
+Rs = ⟨r3⟩s
+
+1/3 , (10) where r ≡ | r − rCoM |. The discrepancy between the two former radii is typically quantified by the Tolman length [26, 61, 63], δT ≡ lim 
+
+> Rs→∞
+
+[Re − R s]. Here, let us introduce the shorthanded notation 
+
+⟨rn⟩s =
+
+Z ∞
+
+> 0
+
+rnfs(r) d r , (11) 
+
+fs(r) ≡ − 1(∆ p)s
+
+dpN (r)dr
+
+= + 1(∆ p)s
+
+2
+
+r [pN (r) − pT (r)] . (12) The pressure difference between the phases at each sides of spherical interfaces (inner–outer) then is (∆ p)s = −
+
+Z ∞
+
+> 0
+
+dpN (r)dr dr > 0 ,
+
+which normalizes Eq. (11) (0th-moment): 1 = ⟨r0⟩s =
+
+Z ∞
+
+> 0
+
+fs(r) d r . 
+
+Then, from Eq. (10), the cube of Rs is understood as the 3 rd -moment of the radial coordinate r, given a weighting function fs(r). This is, in essence, the method proposed by Thompson et al. [26]. Then, by substituting Eq. (10) into the YL equation (9), it follows that: 
+
+γs =
+
+ 18 (∆ p)s3
+
+Z ∞
+
+> 0
+
+r3fs(r) d r
+
+1/3
+
+. (13) 
+
+> FIG. 2. Snapshot of a He/LLE double layer, appearing after imposing PBC. Same colour coding as in Fig. 1.
+
+More generally, quantity ⟨rn⟩s evaluates the cumula-tive contribution of the n-th powers of r starting from the centre of the spherical phase up to long distances ( r →∞, where interfacial inhomogeneities vanish), weighted by the local differences between normal and tangential pressure components: ∆p(r) ≡ pN (r) − pT (r) ,
+
+where 
+
+
+
+pN (r) = Π rr (r) ,pT (r) = Πθθ (r) + Π ϕϕ (r)2 .
+
+This formulation naturally accounts for interfacial inho-mogeneities, since regions where the pressure tensor de-viates from isotropy contribute most significantly to the integral in Eq.(13). As a result, ⟨rn⟩s provides a compact measure of how microscopic structural variations across the interface influence macroscopic interfacial properties, linking local pressure anisotropies to global thermody-namic observables. 
+
+b. Planar interfaces Planar symmetries stand as the limiting case for spherical interfaces with infinite radius. Given a flat interface between the gas and liquid phases, whose direction is normal to the z-axis, we get: 
+
+
+
+fp(z) = 1
+
+Lz (∆ p)p
+
+[pN (z) − pT (z)] ,
+
+∆p(z) ≡ pN (z) − pT (z) .
+
+Here, Lz is the total length of a simulation box along the direction perpendicular to the flat interface, while normal and tangential components of pressure tensors respectively read as: 
+
+
+
+pN (z) = Π zz (z) ,pT (z) = Πxx (z) + Π yy (z)2 .6Hence, n moments now are evaluated along the whole 
+
+z-axis, 
+
+⟨zn⟩p =
+
+Z ∞−∞ 
+
+znfp(z) d z
+
+≃
+
+Z Lz /2 
+
+> −Lz/2
+
+znfp(z) d z . (14) In passing from the infinite integration limits to the finite size of the simulation boxes, we assumed that the inho-mogeneities in the pressure vanish far from the interface, namely ∆ p(z) ≃ 0 for both z ≪ z0 and z ≫ z0, where z0
+
+indicates the location of the interface. When a single interface is considered along the whole range of z (Np = 1), and the coordinate system is chosen to have its origin at the position of the interface, the expected value of z is 0 ≡ zp = ⟨z⟩p. In that case, fp(z)profiles are bell-shaped functions, b(z), and vanish far from the interface region. Several consecutive interfaces (Np > 1) may be considered by joining several equally-sized boxes, having a total simulation length of L′ 
+
+> z
+
+=
+
+NpLz . Without loss of generality, the expected value of 
+
+z reads: 
+
+⟨z⟩p = 1
+
+L′
+
+> z
+
+Z Lz /2 
+
+> −Lz/2
+
+z f p(z) d z
+
+= 1
+
+NpLz
+
+Z Lz /2 
+
+> −Lz/2
+
+z ∆p(z)(∆ p)p
+
+dz
+
+= 1
+
+NpNp
+
+X
+
+> s=1
+
+zs . (15) Now, the weighting function is decomposed into several bell-shaped functions, fp(z) = PNp 
+
+> s=1
+
+b(z − zs). Also no-tice that fp(z) would not be normalized to the unity but to the total number of interfaces, 
+
+Z ∞−∞ 
+
+fp(z) d z = Np .
+
+Fig. 2 shows a representative He/Pb16Li bilayer (i.e., 
+
+Np = 2), corresponding to the minimal number of in-terfaces that appear under PBC. This formalism yields, in essence, to well-known ex-pression for the planar interfacial tension between planar obtained from the integral of the pressure anisotropy pro-file [25, 59, 64]: 
+
+γp = 1
+
+Np
+
+Z ∞−∞ 
+
+∆p(z) d z . (16)  
+
+> 3. Ideal behaviour of pressure tensors in spherical geometries
+
+In the case of spherical interfaces, it seems convenient to remark that normal profiles are expected to obey the pN(r) 
+
+# r
+
+> 0
+> -dp N(r) /dr
+> FIG. 3. Ideal (red solid line) and non-ideal (blue dashed line) radial normal components of the pressure tensor (top panel) and the opposite of its derivative (bottom panel).
+
+following ideal expression [26]: 
+
+pid  
+
+> N
+
+(r) = 12 [pN (0) + pN (∞)] 
+
+− 12 [pN (0) − pN (∞)] 
+
+× tanh 
+
+ 2( r − rmid )
+
+rw
+
+
+
+,
+
+where rmid and rw are the midpoint and the width of the interface, respectively, whereas pN (0) and pN (∞) are the normal pressure tensor at zero and infinite distances, respectively. Then, the weighting function introduced in Eq.(11) reads as: 
+
+f id  
+
+> s
+
+(r) = − 1[pN (0) − pN (∞)] dpid 
+
+> N
+
+dr
+
+= 1
+
+rw
+
+
+
+1 − tanh 2
+
+ 2( r − rw)
+
+rw
+
+ 
+
+≥ 0.
+
+In other words, when considering radial paths centred at helium bubbles, the pressure is expected to decrease monotonically from the uniform pressure inside the bub-ble to the lower bulk pressure corresponding to the sur-rounding LM. Then, f id  
+
+> s
+
+(r) can be formally treated as a density probability function. The generalizability of this statement when LMAs behave as non-ideal mixtures will be discussed below in Section IV. In Figure 3, pid  
+
+> N
+
+(r) and its derivative − dpid 
+
+> N
+
+dr =f id  
+
+> s
+
+(r)∆p, where ∆p ≡ pN (0) − pN (∞) ,7are represented. We can observe the qualitative trend for the deviation of the profiles in the non-ideal case. In Fig. 3 qualitative trends of pN (r) , which include (i) the asymptotic approach to zero of both ideal and non-ideal profiles and, (ii) the fact that the derivative is negatively defined for all r in the ideal case, while the non-ideal derivative shows a small positive region. Pos-sible departures from the ideal case, due to local incre-ments of pN near the interface, are depicted with blue dashed lines, yielding to finite regions at which f id  
+
+> s
+
+(r)is allowed to show negative values. Despite there is no thermodynamic requirement enforcing pN (r) to be max-imum at r = 0, it can increase near the location of the interface. In any case, we expect that the normal pressure tensor should asymptotically reach two limit values: 
+
+pN (r) ≃
+
+(
+
+pN (0) , ∀r ≪ r0
+
+pN (∞), ∀r ≫ r∞
+
+,
+
+where r0 and r∞ are the arbitrary thresholds indicating the distances below and above which normal–tangential pressure differences vanish (∆ p = 0), respectively. We should also notice that, despite the local allowance of 
+
+− dpN
+
+dr < 0, the overall pressure difference must be strictly positive, (∆ p)s ≡ pN (0) − pN (∞) = −
+
+Z ∞
+
+> 0
+
+dpN
+
+dr dr > 0,
+
+in order to ensure the stability of the spherical cluster and in good agreement with the general theory of surface tension theory in spherical systems [47, 48, 62, 65–67].  
+
+> IV. RESULTS AND DISCUSSION
+
+Evaluating the accuracy of the values of interfacial ten-sion from the simulations is challenging due to the lack of reliable experimental characterization for He/Li, He/Pb and He/LLE interfaces. However, the values presented in this work are not meaningless. The following benchmarks can serve as useful reference points: 1. The knowledge of experimental values of the sur-face tension of bulk lithium[68, 69], around 0.3–0.4 N/m; 2. The experimental values of the surface tension of bulk LLE [70]; 3. The experimental surface tension of ultracold he-lium, which ranges between 0.35 N/m at ultra-low temperatures around 1K, down to 0.1 N/m at the boiling point around 4 K[71]. In this case, no data has been found at higher temperatures, but one clearly expects surface tension values to drop for increasing temperatures. These three data sets are considered for comparative pur-poses only because, despite sharing the same dimension-ality, surface tension and interfacial tension represent dis-tinct physical phenomena. The former generally refers to the property of a liquid surface in contact with a gas (usually air) or a vacuum, while the latter describes the tension existing at the boundary between any two immis-cible or partially miscible condensed phases, such as two liquids or a liquid and a solid.  
+
+> A. Pressure tensors and interfacial tension at He/LLE, He/Li and He/Pb interfaces
+
+As a starting point, we study the convergence of val-ues of interfacial tension as the size of the helium cluster increases. Let us consider the paradigmatic case of he-lium nanobubbles within the eutectic lead–lithium alloy (16% Li–84% Pb at T = 508 K). In Figure 4, we compare the interfacial tension of he-lium spherical clusters within LLE and in pure lithium and lead solvents, using two different parametrizations of the LM–EAM potential (Al–Awad et al. [29] and Be-lashchenko [36]). We can observe that, in the LLE, 
+
+γs rapidly converges to constant values. In particular, one can realize that there is an adequate matching be-tween (a) the interfacial tension from simulations of large cluster–LLE (Al-Awad’s model for Pb16Li[29], at 508 K), and (b) the experimental surface tension values of the eu-tectic alloy at the same temperature [70]. This agreement not only further corroborates the enhanced performance of Al-Awad’s parametrization for the lead–lithium alloy potential, but also indicates that helium clusters behave as bubbles rather than droplets. Consequently, the in-terfacial tension between the two immiscible phases is effectively identical to the surface tension of the liquid metal in contact with a gas or vacuum. Further, we can also point out that the parameterization of Al-Awad et al. of the EAM alloy potential is particularly suitable to represent the eutectic mixture, while for pure lead at its normal melting point interfacial tension deviates from its surface tension value in a quite large extent, showing how subtle are the differences in suitability for EAM models depending on the composition of the LM. As representative cases, radial pressure tensors, with origin in the CoM of helium clusters of NHe = 512 atoms, are displayed in Figures 5 and 6. Each panel shows ki-netic, 
+
+pk(r) = β−1 ⟨ρ(r)⟩ ,
+
+configurational, 
+
+pv (r) = 12
+
+*X
+
+> α,i
+
+X
+
+> β,j
+
+[rαβ ij ]μ[f αβ ij ]ν
+
+∂Ωαβ ij 
+
+∂r 
+
++
+
+, (17) and total, 
+
+pN (r) = pk(r) + pv (r) ,80.20.30.4
+
+# Pb, T = 601 K 0.30 0.45 0.60 
+
+# Pb16Li, T = 508 K 0 500 1000 0.30.60.9
+
+# Li, T = 454 K 
+
+# NHe 
+
+> γs /(N m −1)
+
+FIG. 4. Interfacial tension values for helium bubbles in the 3 indicated LMs, given a representative temperature for each one. Black lines represent experimental surface tension values for each LM at same temperatures (Pb–Passerone et al.[72], Pb16Li–Buxbaum[27], and Li–Ohse[73]). Top panel: Violet circles represent correspond to simulations of helium bubbles in pure Belashchenko-like lead[36, 74]. Middle panel: Blue dots and red circles represent interfa-cial tension values between helium cluster (made up by NHe 
+
+atoms) and Pb16Li at 508 K (namely, the LLE alloy), where the latter has been parametrized as in Refs. [29] and [36] (re-spectively). Bottom panel: Analogously, blue dots and red circles repre-sent simulations for He/Li spherical interfaces using the Al-Awad et al. [29] and Belashchenko [36] EAM potentials for lithium. 
+
+terms, evaluated above the normal melting points of each solvent. In Equation 17, the IKC can be expressed, in −0.002 0.000 0.002 0.004 Pb, T = 601 K 
+
+# −0.002 0.000 0.002 
+
+## Pb16Li, T = 508 K 
+
+# 10 20 30 
+
+# −0.003 0.000 0.003 0.006 Li, T = 454 K 
+
+# r / ˚A
+
+> pN / (eV ˚ A−3)
+
+FIG. 5. Kinetic (blue), configurational (orange) and total (green) radial normal pressure tensor components for inter-faces between helium spherical clusters of NHe = 512) and Al-Awad–EAM liquid metals [29] above their normal melting point temperatures: (a) Li at 454 K; (b) Pb at 601 K; and, (c) Pb16Li at 508 K. In addition, interfacial radii ( Rs) ob-tained after integrating the corresponding normalized profiles have been depicted as gray vertical lines, whose width indi-cate their uncertainty. 
+
+good agreement with Ref. [26], as: 
+
+∂Ωαβ ij 
+
+∂r s
+
+= lim 
+
+> ∆r→0
+
+∆Ω s(r, ∆r, r i, r j )∆r
+
+= 1
+
+r [θ(|λ+| − 1) + θ(|λ−| − 1) 
+
+− θ(|λ+| − 1) × θ(|λ−| − 1) +2 × θ(1 − | λ+|) × θ(1 − | λ−|)] ,
+
+where θ(x) denotes the Heaviside step function. Fig-ures 5 and 6 reveal depletion of atoms at the vicinity of interfaces (see vertical lines). Consequent reductions 9−0.002 0.000 0.002 0.004 Pb, T = 601 K 
+
+# −0.002 0.000 0.002 
+
+## Pb16Li, T = 508 K 
+
+# 10 20 30 
+
+# −0.003 0.000 0.003 0.006 Li, T = 454 K 
+
+# r / ˚A
+
+> pN / (eV ˚ A−3)
+
+FIG. 6. Kinetic (blue), configurational (orange) and total (green) radial normal pressure tensor components for inter-faces between helium spherical clusters of NHe = 512) and Belashchenko–EAM liquid metals [36] above their normal melting point temperatures: (a) Li at 454 K; (b) Pb at 601 K; and, (c) Pb16Li at 508 K. As in Fig. 5, vertical lines indicate the distance between the position of the interface and to the centre of the bubble (namely the radius of the interface). 
+
+in pk correlate with increments in pv . Here, the inter-pretation is clear: the strengthening of helium near in-terfaces empties that region, thus reducing the local ki-netic activity. Moreover, after summing the two contri-butions, one can realize that in the three reported states the two corresponding anomalies compensate, leading to non-increasing functions of the radial distance, roughly represented by Equation 17. 0.0 0.2 0.4 0.6 0.8 1.0
+
+# xPb 
+
+# 0.20 0.25 0.30 0.35 0.40 
+
+> γp / (N m −1)
+
+FIG. 7. Interfacial tension of a planar surface as function of the solvent atomic fraction (composition) along the 1021 K isotherm. Blue and orange circles correspond to IT values where lead–lithium alloys were modelled by AEAM-2023[29] and BEAM-2019 [36] potentials, respectively. Both cases con-sider TTS[31] and SBMILL[30] potentials for helium interac-tions. Dashed lines indicate ideal-mixture predictions. 
+
+B. Effects of concentration of lithium on the surface tension of He bubbles along the 1021 K isotherm 
+
+After the analysis of He/LM interfacial tension at the technologically interesting states, we analyse analogue values in the full range of lead concentrations ( xPb ≡
+
+1 − xLi ) in the LM. In particular, we report the values of γp as a function of xPb in Figure 7 for a planar in-terface, where we compare our results using the models of Al-Awad et al. [29] and Belashchenko [36] with the expected values of γp in the case of considering an ideal mixture. We can investigate the non-idealities observed in Figs. 7 and 8 by drawing on some physical insights. In this way, non-ideal mixture effects of the LM alloys were previously shown to be important with regard to solubil-ity of helium atoms [28]. As the most relevant trend, in Figure 7 we see that γp is maximized at some interme-diate composition, regardless of the chosen potentials for the lead–lithium alloy. So, in planar cases ( Rs → ∞ ) cur-vature vanishes homogeneously for all LM compositions, and changes on interfacial tension values are consider-ably reduced. Even so, a maximum appears in each set of calculations: In the case of Al-Awad’s Pb–Li[29], in-terfacial tension maximizes when the amounts of the two metals are similar ( xLi ≃ xPb ≃ 0.5) whereas in the case of Belashchenko’s Pb–Li[36], interfacial tension reaches its maximum value for xPb ≃ 0.3 ( xLi ≃ 0.7). In Figure 8 we can corroborate that this intermediate-10 0.00 0.25 0.50 0.75 1.00 
+
+> γs /(N m −1)
+
+# 20 30 40 
+
+> Rs / ˚A
+
+# 0.0 0.2 0.4 0.6 0.8 1.0
+
+# xPb 
+
+# 02000 4000 6000        
+
+> (∆ G)s / (eV)
+> FIG. 8. Interfacial tension (top), interfacial radii (middle), and interfacial free energy variations (bottom), as function of the solvent composition ( xPb = 1 −xLi ). All cases consider He/Pb–Li spherical interfaces, where all helium atoms segre-gated into a single spherical cluster of NHe = 512. Blue circles and orange (empty) diamonds indicate that the LM phase has been modelled with the Al-Awad’s[29] or Belashchenko’s[36] (respectively), combined with the same potentials for helium atoms (TTS for He–He and Li–He [31, 75], SBMILL for Pb– He).
+
+composition mixture effect is not only present but even more accentuated for spherical interfaces. There, we re-port a comparison between interfacial tension, the radius of the He/LLA interface ( Rs = 3
+
+p⟨r3⟩s) and the inter-facial free energy difference. As it was pointed out in Ref. [7], the last quantity can be computed as (∆ G)s = W (Rs) = 4 πRs2 γs(Rs)= −2π
+
+Z ∞
+
+> 0
+
+r3 dpN (r)dr dr > 0 . (18) In planar symmetries, interfacial tension is maximized at atomic fractions where the shell of first-neighbours contains more lithium atoms. As lithium–helium re-pulsions become stronger, interfacial tension reaches its maximum when lithium atoms are most concentrated at interfaces. In the case of spherical symmetries, in addition to the aforementioned effect due to the arrangement of solvent atoms at the vicinities of interfaces, curvature also ap-pears as a crucial factor. In Figure 8 we show that the val-ues of interfacial tension maximize at the following alloy compositions: (1) 44% Pb , 56% Li when the alloy model is parametrized as in Ref. [29]; and (2) 40% Pb , 60% Li when the alloy model is parametrized as in Ref. [36]. Figures 10 and 11 of the SI display the characteristic pressure tensors for each state shown in Figure 8. In all cases, the positions of maxima in pv (r) and minima in 
+
+pk(r) match consistently. This correlation indicates that the localized peak in forces effectively depletes particles from that specific radial distance from the bubble centre. Moreover, this position shifts to larger distances as the size of the bubbles increase. Interestingly, the sum of the two contributions –i.e., the total normal component of the pressure tensor profiles pN (r)– flattens for several compositions of the LM, from a short range of Li-rich alloys (0 ≤ xPb = 1 − xLi ≲ 0.1) to a wider range of Pb-rich alloys (0 .75 ≲ xPb ≤ 1), including the eutectic composition. In other words, the two contributions – namely, the depletion of atoms and the local increase of stress forces near the interface– compensate and behave as the ideal profile pid  
+
+> N
+
+(r), Eq. 17. For intermediate ranges (0 .1 ≲ xPb = 1 − xLi ≲ 0.75), where the solubility considerably decreases and interfa-cial repulsions increase, the kinetic and configurational parts tend to lack balance, yielding to a local increase of the total pressure tensor. Generally, this ‘defect’ appears at distances slightly larger than those where both the ki-netic and virial terms contribute. As it has been shown in Figure 3, this local loss of balance is translated into an increase of pN (r) at the interface: 
+
+pN (r) − pid  
+
+> N
+
+(r) = 
+
+(̸
+
+= 0 , ri < r < r o
+
+0, otherwise ;where ri, r o denote the inner and outer boundaries of the interface, respectively. In addition, while in the planar limiting case the location of the interfacial tension peak is found near an equimolar composition of the lead–lithium alloy, for curved interfaces it is shifted to mixtures richer 11 in lithium. Consequently, in the ‘ideal’ cases of compen-sating minimum kinetic and maximum virial contribu-tions the normal pressure is found to be maximum inside the bubble, whereas in the ‘non-ideal’ cases the normal pressure maximizes within the interface. Our analyses of pressure tensor suggest that curvature effects become more prominent when the normal compo-nent of the pressure tensors increases locally with respect to the ideal behaviour (see Eq. 17). Radii corresponding to the analysed interfacial tension values, Rs, are depicted in the bottom panel of Fig. 8. From this plot, one can observe an exaggerated expansion of helium bubbles in the AEAM-2023 88%Li − 12%Pb al-loy, which could explain the local reduction in interfacial tension values in the corresponding region. The last ob-servation points out the relevance of the curvature in the determination of the interfacial tension for spherical in-terfaces. This is a well-known feature, described by the Tolman expansion [26, 60, 61, 63]: 
+
+γs = γ∞
+
+
+
+1 − 2δT
+
+Rs
+
++ . . . 
+
+
+
+, (19) where δT denotes the Tolman length. Finally, the bottom panel of Fig. 8 presents the Gibbs free energy differences between the clustered and corre-sponding metastable phases, i.e., the work required to form the spherical dividing interface. Consistent with the interfacial tension values, these profiles indicate that the energetic cost involved in the formation of such interfaces is maximized at a solvent composition of approximately 60% Li–40% Pb. The values of (∆ G)s typically lie in the range 10 3 − 10 4 eV, indicating that the associated free energy barriers are on the order of keV.  
+
+> V. CONCLUSIONS
+
+In this work a detailed study of interfacial tensions and pressure tensors has been applied to helium–lead–lithium mixtures. Due to the rapid excess of the supersatura-tion threshold, noble gas atoms segregate from the liquid solution. Understanding this feature is crucial for the successful design of the future generation of nuclear fu-sion plants. The possible formation of helium bubbles in breeding is a concerning factor that needs to be quan-tified in order to enhance operational performance and safety. By using classical molecular dynamics, we provide an atomistic perspective on these complex mixtures, assess-ing a problem where practical technological requirements go hand in hand with theoretical fundamental scenar-ios. The modelling of the system relies on the choice for the interatomic potentials. Because of the nature of the proposed force field, helium tends to segregate and form one or several clusters. Single-cluster setups have been produced and analysed. In stable configurations, the emergent helium bubbles were considered to be im-miscible with the remaining solution. Then, interfacial tension values were determined from pressure tensor in-homogeneities near dividing interfaces. Planar interfaces have been studied as asymptotic limiting cases of zero curvature ( R → ∞ ). At the eutectic point of the lead–lithium system, the interfacial tension at the He/LLA interface, computed by means of the Al-Awad et al. EAM force field [29], is consistent with experimental surface tension values of the LLE. This agreement suggests that helium clusters can effectively be treated as bubbles, analogous to those formed at a liquid metal/vacuum interface. In contrast, the EAM model of Belashchenko seems to overestimate interfacial tension values. Even so, the two models co-herently predict a maxima in γ(xPb ), both under finite and zero interfacial curvatures. Helium generally exhibits preferential adsorption on the left side of the interface, which is reflected in local increases in the components of the kinetic pressure ten-sor. In this region, interatomic interactions are corre-spondingly stronger. Further, deviations from ideal mix-ing in lead–lithium alloys are especially pronounced in lithium-rich regions of the phase diagram. These effects are reflected in the maximization of interfacial tension at constant temperature, and are consistent with minimal solubilities at the provided isotherm [28]. These effects are also observed in the total pN (r) profiles, where the expected monotonic (non-increasing) behaviour is locally not satisfied. Curvature of spherical interfaces plays a fundamental role in the determination of the interfacial tension. Bubble radii and Gibbs free energy dependence on the solvent composition have also been determined at con-stant temperature and helium content. While the lat-ter resembles interfacial tension profiles, the former is a bit clumsier. For BEAM-2019 LM alloys [36], radii show no significant variations compared to AEAM-2023 ones [29]. With the last model, bubbles expand when 
+
+xLi /x Pb ≃ 0.19. This behaviour could be related to the so-discussed peculiarity related to the solvent pack-ing [28]. 
+
+> ACKNOWLEDGEMENTS
+
+The authors thank A.Al-Awad for fruitful discus-sions. J.M. and L.B. acknowledge financial support from the EUROfusion project (HORIZON-101052200-EUROfusion). J.M. and E.A.G. thank financial sup-port of project PID2024-157478NB-C32 funded by MCIN/AEI/10.13039/5011000-11033 and ERDF ‘A way of making Europe’ by the ‘European Union NextGen-erationEU/PRTR’. J.M. gratefully acknowledges finan-cial support from the Generalitat de Catalunya (Grant 2021 SGR 01411). E.A.G. was awarded a fellowship at the Polytechnic University of Catalonia (UPC) by the Spanish ‘Consejo de Seguridad Nuclear’ through the 
+
+ARGOS Chair of Nuclear Safety and Radiation Protec-tion. E.A.G. also thanks the UPC for financial support 12 through the doctoral grant extension for the fourth year. 
+
+[1] Hans Ulrich Borgstedt, Cezary Guminski, Hans Ulrich Borgstedt, and Cezary Guminski. IUPAC-NIST solu-bility data series. 75. nonmetals in liquid alkali metals. 
+
+Journal of Physical and Chemical Reference Data , 30(4): 835–1158, 2001. [2] Rainer Conrad. Irradiation experiments on liquid tritium breeding material Pb–17Li in the HFR petten. Fusion engineering and design , 14(3-4):289–297, 1991. [3] R Conrad, MA F¨ utterer, L Giancarli, R May, A Perujo, and T Sample. Libretto-3: performance of tritium perme-ation barriers under irradiation at the hfr petten. Journal of nuclear materials , 212:998–1002, 1994. [4] Michal Kordaˇ c and Luk´ aˇ s Koˇ sek. Helium bubble for-mation in Pb-16Li within the breeding blanket. Fusion Engineering and Design , 124:700–704, 2017. [5] Alberto Fraile and Tomas Polcar. Volume and pressure of helium bubbles inside liquid Pb16Li. a molecular dy-namics study. Nuclear Fusion , 60(4):046018, 2020. [6] Tim Haas, Christian Schubert, Moritz Eickhoff, and Her-bert Pfeifer. A review of bubble dynamics in liquid met-als. Metals , 11(4):664, 2021. [7] Edgar ´Alvarez-Galera, Jordi Mart´ ı, Ferran Mazzanti, and Llu´ ıs Batet. Nucleation of helium in pure liquid lithium. 
+
+The Journal of Chemical Physics , 159(2), 2023. [8] Jaroslav Kekrt, Michal Kordaˇ c, Ad´ ela Gottfriedov´ a, and Ladislav V´ ala. Concept design of a facility to determine helium solubility in Pb-16Li. Fusion Engineering and Design , 192:113826, 2023. [9] Abhishek Saraswat, Alberto Fraile, Sateesh Gedupudi, Rajendraprasad Bhattacharyay, and Paritosh Chaud-huri. A comprehensive review of experimental and nu-merical studies on liquid metal-gas two-phase flows and associated measurement challenges. Annals of Nuclear Energy , 213:111104, 2025. [10] Ad´ ela Gottfriedov´ a, Adriana August´ ınov´ a, Jaroslav Kekrt, Roman Petr´ aˇ s, Michal Kordaˇ c, and Ladislav V´ ala. Experimental facility for study of solubility of helium in liquid Pb-16Li: commissioning and first results. Available at SSRN 6232758 , 2026. [11] Iter organization. https://www.iter.org, 2023. [12] Demo project. https://demo-project.eu/, 2025. [13] Martin Volmer and A Weber. Keimbildung in ¨ubers¨ attigten gebilden. Zeitschrift f¨ ur physikalische Chemie , 119(1):277–301, 1926. [14] Richard Becker and Werner D¨ oring. Kinetische behand-lung der keimbildung in ¨ ubers¨ attigten d¨ ampfen. Annalen der physik , 416(8):719–752, 1935. [15] JD Gunton. Homogeneous nucleation. Journal of statis-tical physics , 95(5):903–923, 1999. [16] Adri´ an Llamas-Jaramillo, Ivan Latella, and David Reguera. Free-energy reconstruction from stable clusters (FRESC): A new method to evaluate nucleation barriers from simulation. The Journal of Chemical Physics , 164 (3), 2026. [17] Antoni Valencia. Kinetics of droplet condensation through a double free-energy barrier. The Journal of chemical physics , 125(14), 2006. [18] Pablo Montero de Hijes, Sebastian Falkner, and Christoph Dellago. Non-markovian dynamics in ice nu-cleation. The Journal of Chemical Physics , 164(9), 2026. doi:10.1063/5.0314412. [19] Dhyani Vadgama, Rohit Srivastava, and Satyam Shinde. Thermodynamical and optical properties of atmospheric pre-nucleation cluster containing sea salt, water and sul-furic acid: A density functional theory study. IEEE Jour-nal of Selected Topics in Applied Earth Observations and Remote Sensing , 2025. [20] Book of Abstracts: 22nd International Conference on Nu-cleation and Atmospheric Aerosols (ICNAA 2025) , Vi-enna, Austria, August 2025. University of Vienna. 24–29 August 2025. [21] TT Bazhirov, GE Norman, and VV Stegailov. Cavita-tion in liquid metals under negative pressures. molecular dynamics modeling and simulation. Journal of Physics: Condensed Matter , 20(11):114113, 2008. [22] L Batet, Jordi Fradera, E Mas de les Valls, and LA Sedano. Numeric implementation of a nucleation, growth and transport model for helium bubbles in lead– lithium hcll breeding blanket channels: Theory and code development. Fusion engineering and design , 86(4-5): 421–428, 2011. [23] Jordi Mart´ ı, Ferran Mazzanti, Grigori E Astrakharchik, Llu´ ıs Batet, Laura Portos-Amill, and Borja Pedre˜ no. Nucleation of helium in liquid lithium at 843 k and high pressures. Materials , 15(8):2866, 2022. doi: 10.3390/ma15082866. [24] Abdulrahman S Al-Awad, Lluis Batet, Ronny Rives, and Luis Sedano. Stochastic computer experiments of the thermodynamic irreversibility of bulk nanobubbles in su-persaturated and weak gas–liquid solutions. The Journal of chemical physics , 161(2), 2024. [25] John G Kirkwood and Frank P Buff. The statistical me-chanical theory of surface tension. The Journal of Chem-ical Physics , 17(3):338–343, 1949. [26] SM Thompson, KE Gubbins, JPRB Walton, RAR Chantry, and JS Rowlinson. A molecular dynamics study of liquid drops. The Journal of chemical physics , 81(1): 530–542, 1984. [27] Robert E Buxbaum. A chemical theory analysis of the so-lution thermodynamics of oxygen, nitrogen and hydrogen in lead-rich Li–Pb mixtures. Journal of the Less Common Metals , 97:27–38, 1984. [28] Edgar Alvarez-Galera, Daniel Laria, Ferran Mazzanti, Lluis Batet, and Jordi Marti. Henry’s constant of he-lium in liquid lead-lithium alloys. Journal of Molecular Liquids , 432:127719, 2025. [29] Abdulrahman S Al-Awad, Lluis Batet, and Luis Sedano. Parametrization of embedded-atom method potential for liquid lithium and lead-lithium eutectic alloy. Journal of Nuclear Materials , 587:154735, 2023. [30] Vladimir Sladek, Luk´ aˇ s Buˇ cinsk` y, J´ an Matuˇ ska, Michal Ilˇ cin, Vladim´ ır Lukeˇ s, and Viliam Laurinc. Ab initio x 1 0+ ground state potential curves of Pb · · · RG dimers (RG= He, Ne, Ar) including spin–orbit effects. simula-tion of diffusion coefficients. Physical Chemistry Chemi-13 
+
+cal Physics , 16(34):18519–18532, 2014. [31] XW Sheng and KT Tang. The development of a full range analytical interatomic potential. Physical Chem-istry Chemical Physics , 23(13):7748–7757, 2021. [32] Henner Ruppersberg and Walter Speicher. Density and compressibility of liquid Li-Pb alloys. Z. Naturforsch , 31: 47–52, 1976. [33] RA Khairulin, RN Abdullaev, SV Stankus, AS Agazhanov, and IV Savchenko. Volumetric properties of lithium–lead melts. International Journal of Thermophysics , 38(2):23, 2017. [34] J Saar and H Ruppersberg. Calculation of cp (t) for liquid Li/Pb alloys from experimental ρ (t) and ( δp/ δt) s data. Journal of Physics F: Metal Physics , 17(2):305, 1987. [35] Alberto Fraile, Santiago Cuesta-L´ opez, Alfredo Caro, Daniel Schwen, and J Manuel Perlado. Interatomic potential for the compound-forming Li–Pb liquid alloy. 
+
+Journal of nuclear materials , 448(1-3):103–108, 2014. [36] David Kirillovich Belashchenko. Inclusion of the coulomb interaction in the embedded-atom model: Lithium–lead system. High Temperature , 57:848–858, 2019. [37] Murray S Daw, Stephen M Foiles, and Michael I Baskes. The embedded-atom method: a review of theory and applications. Materials Science Reports , 9(7-8):251–310, 1993. [38] Torben Daeneke, Khashayar Khoshmanesh, Nasir Mah-mood, Isabela Alves De Castro, Dorna Esrafilzadeh, Steven J Barrow, Michael D Dickey, and Kourosh Kalantar-Zadeh. Liquid metals: fundamentals and ap-plications in chemistry. Chemical Society Reviews , 47 (11):4073–4111, 2018. [39] H Okamoto. Li-pb (lithium-lead). Journal of phase equi-libria , 14(6):770–770, 1993. [40] William C Swope, Hans C Andersen, Peter H Berens, and Kent R Wilson. A computer simulation method for the calculation of equilibrium constants for the formation of physical clusters of molecules: Application to small water clusters. The Journal of chemical physics , 76(1):637–649, 1982. [41] Shuichi Nos´ e. A unified formulation of the constant tem-perature molecular dynamics methods. The Journal of chemical physics , 81(1):511–519, 1984. [42] William G Hoover. Canonical dynamics: Equilibrium phase-space distributions. Physical review A , 31(3):1695, 1985. [43] Glenn J Martyna, Douglas J Tobias, and Michael L Klein. Constant pressure molecular dynamics algorithms. J. chem. Phys , 101(4177):10–1063, 1994. [44] Edgar Alvarez-Galera, Daniel Laria, L Batet, and J Mart´ ı. Henry’s constant of helium in liquid alkali met-als. Journal of Molecular Liquids , 395:123853, 2024. [45] Abdulrahman S. Al-Awad. Multiscale Multiphysics In-vestigation of Helium Bubble Formation and Dynamics in Liquid Lead-Lithium Eutectic . PhD thesis, DOCTORAL DEGREE IN NUCLEAR AND IONISING RADIATION ENGINEERING, Department of Physics (Universitat Polit` ecnica de Catalunya), 2025. [46] JH Irving and John G Kirkwood. The statistical me-chanical theory of transport processes. iv. the equations of hydrodynamics. The Journal of chemical physics , 18 (6):817–829, 1950. [47] Frank P Buff. The spherical interface. i. thermodynam-ics. The Journal of Chemical Physics , 19(12):1591–1594, 1951. [48] Frank P Buff. Spherical interface. ii. molecular theory. 
+
+The Journal of Chemical Physics , 23(3):419–427, 1955. [49] JPRB Walton, DJ Tildesley, JS Rowlinson, and JR Hen-derson. The pressure tensor at the planar surface of a liquid. Molecular physics , 48(6):1357–1368, 1983. [50] DH Tsai. The virial theorem and stress calculation in molecular dynamics. The Journal of Chemical Physics ,70(3):1375–1382, 1979. [51] Tamio Ikeshoji, Bjørn Hafskjold, and Hilde Furuholt. Molecular-level calculation scheme for pressure in inho-mogeneous systems of flat and spherical layers. Molecular Simulation , 29(2):101–109, 2003. [52] Guy J Gloor, George Jackson, Felipe J Blas, and Enrique de Miguel. Test-area simulation method for the direct determination of the interfacial tension of systems with continuous or discontinuous potentials. The Journal of chemical physics , 123(13), 2005. [53] Minerva Gonz´ alez-Melchor, Fernando Bresme, and Jos´ eAlejandre. Molecular dynamics simulations of the surface tension of ionic liquids. The Journal of chemical physics ,122(10), 2005. [54] ER Smith, DM Heyes, and D Dini. Towards the irving-kirkwood limit of the mechanical stress tensor. The Jour-nal of chemical physics , 146(22), 2017. [55] SH Park, JG Weng, and CL Tien. A molecular dynamics study on surface tension of microbubbles. International Journal of Heat and Mass Transfer , 44(10):1849–1856, 2001. doi:10.1016/S0017-9310(00)00244-1. [56] A Caro, D Schwen, and E Martinez. Structure of nanoscale gas bubbles in metals. Applied Physics Let-ters , 103(21):213115, 2013. doi:10.1063/1.4833775. [57] A Caro, D Schwen, J Hetherly, and E Martinez. The capillarity equation at the nanoscale: Gas bubbles in metals. Acta Materialia , 89:14–21, 2015. doi: 10.1016/j.actamat.2015.01.048. [58] Jun Wen, Daniele Dini, Haibao Hu, and Edward RSmith. Molecular droplets vs bubbles: Effect of curva-ture on surface tension and tolman length. Physics of Fluids , 33(7), 2021. [59] Wen-Liang Lu, Hong-Tao Liang, Xiang-Ming Ma, Zi-Feng Yuan, Xin Zhang, Yang Yang, et al. Atomistic simulation study of the fcc and bcc crystal-melt interface stresses. Surfaces and Interfaces , 28:101639, 2022. [60] P Montero de Hijes, Jorge R Espinosa, Eduardo Sanz, and Carlos Vega. Interfacial free energy of a liquid-solid interface: Its change with curvature. The Journal of Chemical Physics , 151(14), 2019. [61] Pablo Montero De Hijes, Jorge R Espinosa, Valentino Bianco, Eduardo Sanz, and Carlos Vega. Interfacial free energy and tolman length of curved liquid–solid inter-faces from equilibrium studies. The Journal of Physical Chemistry C , 124(16):8795–8805, 2020. [62] Thomas Young. Iii. an essay on the cohesion of fluids. 
+
+Philosophical transactions of the royal society of London ,(95):65–87, 1805. [63] Richard C Tolman. The effect of droplet size on surface tension. The journal of chemical physics , 17(3):333–337, 1949. [64] Jing Yang, C Calero, and J Mart´ ı. Diffusion and spectroscopy of water and lipids in fully hydrated dimyristoylphosphatidylcholine bilayer membranes. The Journal of chemical physics , 140(10), 2014. doi: 10.1063/1.4867385. 14 
+
+[65] Josiah Willard Gibbs. On the equilibrium of heteroge-neous substances. American journal of science , 3(96): 441–458, 1878. [66] Josiah Willard Gibbs. Scientific Papers of J. Willard Gibbs, in Two Volumes , volume 1. Longmans, Green, 1906. [67] P Montero de Hijes, K Shi, Eva G Noya, EE Santiso, KE Gubbins, E Sanz, and C Vega. The young–laplace equation for a solid–liquid interface. The Journal of Chemical Physics , 153(19), 2020. [68] Harry W Davison. Compilation of thermophysical proper-ties of liquid lithium , volume 4650. National Aeronautics and Space Administration, 1968. [69] SJ Zinkle. Summary of physical properties for lithium, Pb-17Li, and (lif) n • bef2 coolants. In APEX study meet-ing , pages 1–8. Sandia National Laboratories, 1998. [70] E. Mas De Les Valls, L. A. Sedano, L. Batet, I. Ricapito, A. Aiello, O. Gastaldi, and F. Gabriel. Lead–lithium eutectic material database for nuclear fusion technology. 
+
+Journal of nuclear materials , 376(3):353–357, 2008. [71] Christian Wohlfarth. Surface Tension of Pure Liq-uids and Binary Liquid Mixtures:(Supplement to IV/16 .Springer, 2008. [72] A Passerone, R Sangiorgi, and G Caracciolo. The surface tension of liquid lead. The Journal of Chemical Thermo-dynamics , 15(10):971–983, 1983. [73] Roland W Ohse. Handbook of thermodynamic and trans-port properties of alkali metals. 1985. [74] DK Belashchenko. Computer simulation of the properties of liquid metals: Gallium, lead, and bismuth. Russian Journal of Physical Chemistry A , 86(5):779–790, 2012. [75] Xiaowei Sheng, J Peter Toennies, and KT Tang. Conformal analytical potential for all the rare gas dimers over the full range of internuclear distances. 
+
+Physical Review Letters , 125(25):253402, 2020. doi: 10.1103/PhysRevLett.125.253402. [76] John Shipley Rowlinson and Benjamin Widom. Molecu-lar theory of capillarity . Courier Corporation, 2013. 15 
+
+SUPPLEMENTARY INFORMATION Appendix A: Mechanical calculations of pressure tensors 
+
+a. Stress and pressure tensors 
+
+The addition of kinetic and virial terms can be expressed as: 
+
+⟨Πμν ⟩ =
+
+*
+
+1
+
+V
+
+X
+
+> α,i
+
+mα(vαi )μ(vαi )ν
+
++
+
++
+
+*
+
+12V
+
+X
+
+> α,i
+
+X
+
+> β,j
+
+(rαβ ij )μ(f αβ ij )ν
+
++
+
+. (A1) 
+
+1. Local stress tensors 
+
+The mechanical approach for interfacial tension calculations is based on the evaluation of local variations of the local stress tensor components, along a series of paths normal to the interface that divides two immiscible phases. While the determination of local kinetic terms is somehow trivial, configurational or virial terms are computed by means of the Irving–Kirkwood contour (IKC) [46]. The IKC defines the straight path 
+
+r(λ) = (1 − λ)rαi + λrβj = 12 (rαi + rβj ) + λ′
+
+2 (rβj − rαi )joining the positions of all atom pairs, given a free parameter 0 ≤ λ ≤ 1 ⇔ − 1 ≤ λ′ ≤ 1. This contour weights the contribution of each particle pair to the virial tensor based on the interface geometry and the orientation of the interparticle forces relative to that interface. 
+
+• Considering the first parametrization (0 ≤ λ ≤ 1), the IKC for planar symmetries can be expressed, accordingly to Refs. 51 and 59, as 
+
+∂Ωαβ ij 
+
+∂z p
+
+= lim 
+
+> ∆z→0
+
+∆Ω p(z, ∆z, z αi , z βj )∆z
+
+= 1
+
+|zαβ ij | θ
+
+ z − zαi
+
+zij 
+
+
+
+θ zβj − zzij 
+
+!
+
+. (A2) 
+
+• Considering the second parametrization ( −1 ≤ λ ≤ 1), the IKC for spherical symmetries can be expressed, consistently with Ref. [26], as 
+
+∂Ωαβ ij 
+
+∂r s
+
+= lim 
+
+> ∆r→0
+
+∆Ω αβ ij (r, ∆r, r αi , r βj )∆r
+
+= 1
+
+r
+
+h
+
+θ(|λ+| − 1) + θ(|λ−| − 1) 
+
+−θ(|λ+| − 1) θ(|λ+| − 1) +2 θ(1 − | λ+|)θ(1 − | λ−|)
+
+i
+
+,
+
+where 
+
+λ± ≡ λmin 
+
+±
+
+"
+
+λmin 2 + 1 − 2 (rαi )2 + ( rβj )2
+
+(rαβ ij )2
+
+!
+
++ 4r2
+
+(rαβ ij )2
+
+#1/2
+
+,16 and 
+
+λmin ≡ (rαi )2 − (rβj )2
+
+(rαβ ij )2 .
+
+The two possible values of λ± determine each of the two possible intersections between an annulus of radius r
+
+and the segment that joins rαi to rβj . 
+
+> a. Planar symmetries
+
+The direction perpendicular to a flat interface is chosen to be the Cartesian coordinate ez . Then, stress tensors are discretized along z. The interfacial tension calculation method relies on the consideration of a hypothetical strip in the ( y, z ) plane, of length Lz in the z dimension (and unit length in the y dimension), proposed by Kirkwood and Buff [25]: IT is defined as the additional stress transferred to the strip beyond the uniform normal stress that would exist in the absence of an interface. Pressure tensors and the HEC under planar symmetry respectively read [49]: 
+
+Π(z) = [ ex ⊗ ex + ey ⊗ ey ] pT (z)+ [ ez ⊗ ez ] pN (z) (A3) and dpN (z)dz = 0 (A4) The HEC implies that the normal component of the stress tensor, pN (z) = pN (∞) = Π zz is constant. In other words, the excess pressure in the interface region, ∆ p(z) = pN (z) − pT (z) > 0, must be driven by a decrease in the tangential component with respect to the bulk value ( pT (z) − pT (∞) < 0), where 
+
+pT (z) = 12 (Π xx (z) + Π yy (z)) .
+
+In the vicinities of an interface, densities –and, consequently, kinetic terms of the pressure tensor– fluctuate along its perpendicular (normal) direction. The density profiles are characterized by particle number densities on differential volumes. The density in a planar slice whose normal direction is parallel to the z-axis is ρ(z) = dn(z)dV , where d n(z)denotes the number of particles that are found within a local slice centred at z of volume d V = Lx Ly dz. Lx ≡ xf −xi
+
+and Ly ≡ yf − yi denote the lengths of a rectangular-prism simulation box in the x and y axis (respectively), and d z
+
+the differential width of the slice. θ(x) denotes the Heaviside function. In the finite-size discretized formulation, the 
+
+z-axis is divided into M ∈ Z bins, so that L′ 
+
+> z
+
+≡ zf − zi = M ∆z = Nint Lz .
+
+a. Kinetic contributions Kinetic components of the local pressure tensor read [PK (z)] μν ≃ 1
+
+β
+
+ 1
+
+LxLy
+
+lim 
+
+> ∆z→0
+
+∆n(z)∆z
+
+
+
+δμν ,
+
+where ∆n(z)∆z = 1∆z
+
+> N
+
+X
+
+> α,i =1
+
+θ
+
+
+
+zαi − z + ∆z
+
+2
+
+
+
+θ
+
+
+
+z − zαi + ∆z
+
+2
+
+
+
+.
+
+b. Configurational contributions The IKC leads to a local pressure tensor for a planar interface in the x, y -plane [49]. By means of the IKC, the fine-grained (discretized along the direction with symmetry, z) can be expressed as [PV (z)] μν =
+
+*
+
+12LxLyNαX
+
+> α,i =1
+> Nβ
+
+X
+
+> β,j =1
+
+[rαβ ij ]μ[f αβ ij ]ν
+
+× ∂Ωp(z, ∆z, z i, z j )
+
+∂z δμν 
+
+
+
+(A5) 
+
+≃ 1
+
+LxLy ∆z
+
+*X
+
+> (i,j )
+> ∗
+
+[rij ]μ[fij ]ν δμν 
+
++
+
+, (A6) 17 where the factor 1 /2 removes double counting of pairs ( i, j ). The planar-case IKC expression (see equation A2) represents a coarse-grained Irving–Kirkwood parametrization [51]: ∆Ω( z, ∆z, z i, z j ) ≡ zb(z, z j , ∆z) − za(z, z i, ∆z)
+
+zij 
+
+=(see Tab. I) 
+
+. . . = ω(z, ∆z, z i, z j ) ∆z
+
+|zij | (A7) where [51, 59] 
+
+zc(z, z k, ∆z) = 
+
+
+
+zk, |zk − z| < ∆z
+
+> 2
+
+z + ∆z 
+
+> 2
+
+, zk − z > ∆z
+
+> 2
+
+z − ∆z 
+
+> 2
+
+, z k − z < − ∆z
+
+> 2
+
+(A8) and 
+
+ω(z, ∆z, z i, z j ) = ω0(∆ z, z i, z j ) θ
+
+ z − zi
+
+zij 
+
++ ∆z
+
+2|zij |
+
+
+
+×θ
+
+ zj − zzij 
+
++ ∆z
+
+2|zij |
+
+
+
+(A9) (being 0 ≤ ω0(z, z i, z j ) ≤ 1) calculates the degree of penetration of the pair i, j , that cross the finite-size layer ∆ z at 
+
+z, to the virial. The IKC defines the fraction of the pair i, j to the total virial. In the limiting case of a layer of infinitesimal width: 
+
+
+
+lim  
+
+> ∆z→0
+
+∆Ω( z, ∆z, z i, z j ) = lim 
+
+> ∆z→0
+
+∆z
+
+|zij | θ
+
+ z − zi
+
+zij 
+
+
+
+θ
+
+ zj − zzij 
+
+
+
+∂Ω
+
+∂z = lim 
+
+> ∆z→0
+
+∆Ω ∆z = 1
+
+|zij | θ
+
+ z − zi
+
+zij 
+
+
+
+θ
+
+ zj − zzij 
+
+
+
+The product of theta functions turns 1 when the z coordinate is found in between zi and zj , and is 0 otherwise. The total pressure tensor equals the mean value of the stress tensor evaluated at all z values: 
+
+Pμν = ¯Πμν = 1
+
+Lz
+
+Z +∞−∞ 
+
+Πμν (z) d z . (A10) All 9 components of the stress tensor can be summarized in two values: the normal and tangential terms, 
+
+pT (z) = 12 [Π xx (z) + Π yy (z)] ,pN (z) = pN (∞) = Π zz = constant (A11) respectively. They must satisfy: 
+
+• Homogeneity conditions We assume that the simulation box extends infinitely along the x, y directions (in practice, it is implemented using PBC). That means that all x, y points become equivalent after ensemble averaging, i.e., there is homogeneity in both x and y axis. Therefore ∀(x, y, z ) ∈ R3 and μ, ν ∈ { x, y, z } (finite volume approximation): lim  
+
+> ∆x→0
+
+Πμν (x + ∆x
+
+2 , y, z ) = lim  
+
+> ∆x→0
+
+Πμν (x − ∆x
+
+2 , y, z )
+
+⇒ ∂Πμν 
+
+∂x = 0 
+
+
+
+lim  
+
+> ∆y→0
+
+Πμν (x, y + ∆y
+
+2 , z ) = lim  
+
+> ∆y→0
+
+Πμν (x, y − ∆y
+
+2 , z )
+
+⇒ ∂Πμν 
+
+∂y = 0 
+
+
+
+lim  
+
+> ∆z→0
+
+Πμν (x, y, z + ∆z
+
+2 ) (?) 
+
+= lim  
+
+> ∆z→0
+
+Πμν (x, y, z − ∆z
+
+2 )
+
+⇒ ∂Πμν 
+
+∂z 
+
+> (?)
+
+= 0 
+
+
+
+All components of the stress tensor can depend only on z, Π μν = Π μν (z). 18 
+
+• Net force balance on diagonal components At the same time, assuming hydrostatic balance (there is no net flow), the diagonal components of the stress tensor on one face of the infinitesimal cube must balance by the component of the opposite face. Net force balance for Π xx (z) and Π yy (z) is trivially ensured by the homogeneity conditions, irrespective of the value of z. The HEC imposes an additional restriction: Πzz (z − ∆z
+
+2 ) = Π zz (z + ∆z
+
+2 ) (A12) Therefore, Π zz depends neither on x, y nor z. The component of the stress tensor in the direction normal to the interface, then, equals to the same at bulk conditions (very far from the interface). 
+
+• Isotropy in the x − y plane Πxx (z) = Π yy (z). 
+
+• Net force balance on off-diagonal components Off-diagonal components, however, Π μ,ν ̸ =μ(z), must be zero, since there is no counterforce that could balance a non-zero contribution. 
+
+TABLE I. Summary of IKC cases for planar symmetries. CASE  CONDITION  za zb zij  ≡ zj − zi ∆Ω( z, z i, z j ) ω(z,  ∆z, z i, z j )1 (1A)  zi + ∆ z/ 2 < z < z j − ∆z/ 2 z − ∆z/ 2 z + ∆ z/ 2 > 0 ∆zzij 
+
+> ∆z
+> |zij  | 1(1B)  zj + ∆ z/ 2 < z < z i − ∆z/ 2 z + ∆ z/ 2 z − ∆z/ 2 < 0 − ∆zzij
+> 2 (2A)  z − ∆z/ 2 < z i < z j < z  + ∆ z/ 2 zi zj > 0 zj − zi
+> |zij  | 1 zij
+> ∆z
+> (2B)  z − ∆z/ 2 < z j < z i < z  + ∆ z/ 2 zi zj < 0 − zj − zi
+> |zij  |
+> 3 (3A)  z − ∆z/ 2 < z i < z  + ∆ z/ 2 < z j zi z + ∆ z/ 2 > 0 z + ∆ z/ 2 − zi
+> |zij  | . . .  + z + ∆ z/ 2 − zi
+> ∆z
+> (3B)  zj < z  − ∆z/ 2 < z i < z  + ∆ z/ 2 zi z − ∆z/ 2 < 0 − z − ∆z/ 2 − zi
+> |zij  | − z − ∆z/ 2 − zi
+> ∆z
+> 4 (4A)  z − ∆z/ 2 < z j < z  + ∆ z/ 2 < z i z + ∆ z/ 2 zj < 0 − zj − z − ∆z/ 2
+> |zij  | . . .  − zj − z − ∆z/ 2∆z
+> (4B)  zi < z  − ∆z/ 2 < z j < z  + ∆ z/ 2 z − ∆z/ 2 zj > 0 zj − z + ∆ z/ 2
+> |zij  |
+> zj − z + ∆ z/ 2∆z
+> 5(5A)  zi < z j < z  − ∆z/ 2 z − ∆z/ 2 z − ∆z/ 2 > 00 0 0(5B)  zj < z i < z  − ∆z/ 2 z − ∆z/ 2 z − ∆z/ 2 < 0(5C)  z + ∆ z/ 2 < z i < z j z + ∆ z/ 2 z + ∆ z/ 2 > 0(5D)  z + ∆ z/ 2 < z j < z i z + ∆ z/ 2 z + ∆ z/ 2 < 0(CASE 3)  ⇔ | zi − z| < ∆z/ 2 and  |zj − z| > ∆z/ 2; (CASE 4)  ⇔ | zi − z| > ∆z/ 2 and  |zj − z| < ∆z/ 2
+
+19  
+
+> b. Spherical symmetries
+
+For spherically symmetric interfaces, stress tensors are discretized along radial directions, er . In addition, isotropy is assumed, so contributions are averaged over all possible angular orientations. Then, stress tensor components become functions strictly of the radial coordinate, r ≡ | r − rCoM |∗, with origin at the centre of masses of the spherical phase. The superindex ∗ indicates that distances take into account periodic boundary conditions (PBC). Similarly, stress tensors and the HEC under spherical symmetry read [26]: 
+
+Π(r) = [ eϕ ⊗ eϕ + eθ ⊗ eθ ] pT (r) + [ er ⊗ er ] pN (r) (A13) and dpN (r)dr + 2
+
+r ∆ps(r) = 0 , (A14) respectively; where we made use of the definition ∆ ps(r) ≡ pN (r) − pT (r). The interfacial tension at the interface of tension is assumed to satisfy the Young–Laplace equation [26, 61]. 
+
+a. Kinetic contribution Kinetic terms of local pressure tensors account for the products of velocity components of all particles that lie into a finite region of volume d V = A(r) d r located in the centre of a shell at r,
+
+Kμν (r) = 
+
+*X
+
+> α,i
+
+mα(vαi )μ(vαi )ν Θ
+
+
+
+r, r αi + dr
+
+2 , r αi − dr
+
+2
+
++
+
+(A15) where rαi ≡ | rαi − rCoM |∗, and Θ( x, a, b ) ≡ θ (a − x) θ (x − b)denotes the product of two Heaviside functions with opposite sign, A(r) = 4 πr 2 is the area of a shell of width d r., and ( r − dr/ 2, r + d r/ 2) are its inner and outer boundaries. As in molecular dynamics simulations the velocities are determined by the temperature of the thermostat, the latter average can be simply approximated to Kμν ≃ β−1n(r)δμν , where n(r) is the number of particles within the shell. In other words, the pressure tensor is diagonal: 
+
+PK (r) ≃ β−1⟨ρ(r)⟩ I , (A16) where I denotes the identity tensor, and 
+
+ρ(r) = dn(r)dV = 14πr 2
+
+dn(r)dr = X
+
+> α
+
+ρα(r)denotes radial density fluctuations with respect to the centre of the spherical phase. From a computational perspective, instantaneous radial density profiles are determined as the ratio between: (a) the number of atoms enclosed in a shell of thickness ∆ r, whose midpoint is found at r ; and (b) the volume of the shell [26]: 
+
+ρ(r) ≃ ∆n(r)4π(r2 + ∆ r/ 12)∆ r . (A17) 
+
+b. Virial contribution The normal component of the configurational (virial) contribution to radial pressure tensors reads: [PV (r)] N = er · PV (r) · er
+
+=
+
+*
+
+14πr 2
+
+12
+
+> Nα
+
+X
+
+> α,i =1
+> Nβ
+
+X
+
+> β,j =1
+
+r · f αβ ij 
+
+∂Ωαβ ij 
+
+∂r s
+
++
+
+, (A18) where r = |r| is the distance to the centre of mass of the sphere; r 
+
+> r
+
+· f αβ ij = r 
+
+> r
+
+· f (rαβ ij ) rαβ ij 
+
+> rαβ ij
+
+= |[fij ]αβ r | is the projection of the pair force fij to the normal direction ˆ r ≡ r/r ;
+
+∂Ωαβ ij 
+
+∂r s
+
+= lim 
+
+> ∆r→0
+
+∆Ω s(r, ∆r, r i, r j )∆r
+
+= 1
+
+r [θ(|λ+| − 1) + θ(|λ−| − 1) 
+
+− θ(|λ+| − 1) × θ(|λ−| − 1) +2 × θ(1 − | λ+|) × θ(1 − | λ−|)] . (A19) 20 represents the IKC and X
+
+> α,β
+> (i,j )
+> ′
+
+denotes the restricted sum over pair forces that cross a surface of radius r. All five possible scenarios have been represented in Tables II–III. 
+
+c. Total local pressure tensor Under spherical symmetry, the discrete pressure tensor normal and tangential components respectively read: 
+
+pN (r) = Prr (r) = er · P(r) · er
+
+= lim 
+
+> ∆r→0
+
+14πr 2 ∆r
+
+"
+
+⟨∆n(r)β−1⟩
+
++ 12
+
+* X
+
+> α,i
+
+X
+
+> β,j
+
+[rαβ ij ]μ[f αβ ij ]ν ∆Ω αβ ij 
+
++# 
+
+≃
+
+"
+
+ρ(r)β−1
+
++ 12
+
+* X
+
+> α,i
+
+X
+
+> β,j
+
+[rαβ ij ]μ[f αβ ij ]ν
+
+∂Ωαβ ij 
+
+∂r 
+
++# 
+
+. (A20) and 
+
+pT (r) = 12 [Pθθ (r) + Pϕϕ (r)] = 12 [eθ · P(r) · eθ + eϕ · P(r) · eϕ]= pN (r) + r
+
+2dpN (r)dr . (A21) While Eq. A20 straightly accounts for the sum of isotropic mechanical contributions (A16 and A18), Eq. A21 is a direct consequence of hydrostatic equilibrium (A14). 21 
+
+TABLE II. Representation of the IKC for a given pair of particles ( i, j ) and a spherical shell of radius r – Cases 1 and 2. Case Schematic Representation (1) 
+
+• i, j outside the circle; 
+
+• The straight line that joins i
+
+and j does not intersect with the surface of radius r;
+
+• No intersections ( λ / ∈ R)
+
+r + ∆ r/ 2r − ∆r/ 2i’ j’ i” j” ij(2) 
+
+• One particle inside and the other outside the circle. 
+
+• One intersection (only Acontributes): 
+
+(
+
+|λA| ≤ 1
+
+|λB | > 1
+
+rA rB
+
+rij 
+
+i jAB
+
+r = |rA| = |rB |
+
+r + ∆ r/ 2r − ∆r/ 222 
+
+TABLE III. Representation of the IKC for a given pair of particles ( i, j ) and a spherical shell of radius r – Case 3 and 4. Case Schematic Representation (4) 
+
+• Both i, j inside the circle. 
+
+• 2 intersections at rA, rB (λ
+
+has two real solutions) that DO NOT contribute. 
+
+rA rB
+
+rij 
+
+ijAB
+
+r = |rA| = |rB |
+
+r + ∆ r/ 2r − ∆r/ 2(5) 
+
+• Both i, j outside the circle; 
+
+• 2 intersections at rA, rB (λ
+
+has two real solutions) that contribute equally: 
+
+|r·(rj −ri)| = rij 2
+
+2
+
+s r2 
+
+> i
+
+− r2
+
+> j
+
+r2
+
+> ij
+
+2
+
++ 1 − 2
+
+ r2 
+
+> i
+
++ r2
+
+> j
+
+r2
+
+> ij
+
+
+
++ 4r2
+
+r2
+
+> ij
+
+.
+
+rA rB
+
+rij 
+
+i
+
+j
+
+A
+
+B
+
+r = |rA| = |rB |
+
+r + ∆ r/ 2r − ∆r/ 223 
+
+TABLE IV. Representation of the IKC for a given pair of particles ( i, j ) and a spherical shell of radius r – Case 5. Case Schematic Representation (3) 
+
+• Both i, j outside the circle 
+
+• The positions of A and B collapse, and the two inter-sections collapse into a sin-gle one: λA = λB (degener-ation). 
+
+• These terms do not con-tribute as the intersection position vector is perpendic-ular to the straight line that joins i and j:
+
+|rA,B · (rj − ri)| = 0 .
+
+rA rB
+
+rij i
+
+jA B
+
+r = |rA| = |rB |
+
+r + ∆ r/ 2r − ∆r/ 224 
+
+2. Interfacial tension 
+
+The interfacial tension intrinsically arises from a non-zero normal–tangential pressure difference; namely, a finite local stress anisotropy. Along transverse directions, pressure components are always assumed to remain independent of the presence of any interface, and their values equal both the total pressure ( p, imposed by the barostat) and the normal component very far from the interface, pN (∞). Obviously, when there is no interface, γ = 0, and there is no normal–tangential pressure difference ( pN (r) = pT (r) = p). Consistent with the notation used in Eq. 9, we define n-moments for given arbitrary symmetries as 
+
+⟨(ξN )n⟩sym =
+
+Z
+
+> Dx
+
+(ξN )nfsym (ξN ) d ξN (A22) where ξN is the coordinate along which the system shows the symmetry, and fsym (x) is a normalized distribution function of the latter, extended over the domain Df , which is related to the pressure difference ∆p(ξN ) ≡ pN (ξN ) − pT (ξN ) ,
+
+which measures local anisotropies of the pressure in directions perpendicular to the interface of tension. In addition, we define the function Γn(ξN ) ≡
+
+Z
+
+> Dx
+
+ ξN
+
+Λsym 
+
+n
+
+∆p(ξN ) d ξN . (A23) Considering Λ sym an arbitrary constant factor with units of length, Γ n is measured in units of interfacial tension. In following, we will see that: 1. Planar symmetries: 
+
+
+
+⟨z⟩p = 1
+
+γp
+
+Z ∞−∞ 
+
+dz z [pN (z) − pT (z)] = 1
+
+L′ 
+
+> z
+
+(∆ p)p
+
+Z ∞−∞ 
+
+dz z [pN (z) − pT (z)] = 1
+
+Nint Nint X
+
+> s=1
+
+zs
+
+Λp = L′ 
+
+> z
+
+= Nint Lz
+
+γp = Γ n=1 (z) = L′ 
+
+> z
+
+(∆ p)p
+
+2. Spherical symmetries: 
+
+
+
+(Rs)3 = ⟨r3⟩s = − 1(∆ p)s
+
+Z ∞
+
+> 0
+
+dr r 3 dpN
+
+dr
+
+= 2(∆ p)s
+
+Z ∞
+
+> 0
+
+dr r 2 [pN (r) − pT (r)] = Rs
+
+γs
+
+Z ∞
+
+> 0
+
+dr r 2 [pN (r) − pT (r)] Λs = Rs
+
+γs = Γ n=2 (r) = 1(Rs)2
+
+Z ∞
+
+> 0
+
+dr r 2 [pN (r) − pT (r)] =
+
+"
+
+− (∆ p)s2
+
+8
+
+Z ∞
+
+> 0
+
+dr r 3 dpN (r)dr
+
+#1/3
+
+= (∆ p)s Rs
+
+2
+
+a. Planar interfaces 
+
+Walton et al. already pointed out that, given a planar division between two surfaces, the surface tension and the 
+
+surface of tension correspond to the 0-th and 1-st moment of the difference ∆ pp(z) ≡ pN (z) − pT (z) ≡ [pN − pT ]p(z)[49]. Then, the definition of the pseudo-distribution function reads: 
+
+fp(z) ≡ 1
+
+γp
+
+∆pp(z) . (A24) 25 It seems an appropriate choice, consistent with 1
+
+Nint Nint X
+
+> s=1
+
+zs =
+
+R ∞−∞ z dz ∆pp(z)
+
+R ∞−∞ dz ∆pp(z) = ¯ z = ⟨z⟩p . (A25) The term of ‘pseudo-distribution’ is not accidental, but in Ref. 49 (using both Irving–Kirkwood and Harashima contours) one readily realizes that [ pN − pT ]( z) is positive-defined for most of the values of z, but (small) negative values may be possible in finite regions near the surfaces of tension. Aside from that, the definition of the positive overall pressure difference [59, 64] (∆ p)p = γp
+
+L′
+
+> z
+
+= 1
+
+Nint Lz
+
+Z ∞−∞ 
+
+dz ∆p(z) (A26) = ¯Πzz − 12 [ ¯Πxx + ¯Πyy ] > 0 (A27) ensures that the distribution is normalized to unity. It means that, though the normal-tangential pressure difference is allowed to be negative locally negative, the global difference always must be positive. Otherwise, it would lead to (non-physical) negative interfacial tension values. In Eq. A27, diagonal global-mean pressure-tensor components consistently read: ¯Πμμ = 1
+
+Nint Lz
+
+Z ∞−∞ 
+
+dz Πμμ (z) ,
+
+which yields to the approximated ‘virial-method’ expression for the planar-case interfacial tension [59]: 
+
+γp ≃ 1
+
+LxLy
+
+
+
+¯Szz − 12
+
+  ¯Sxx + ¯Syy 
+
+
+
+. (A28)  
+
+> b. Spherical interfaces
+
+Analogously to the definition of the n-th moment of fp(z) in the planar-symmetry case, we define –under spherical symmetry– both the pseudo-distribution 
+
+fs(r) ≡ − 1(∆ p)s
+
+dpN (r)dr (A29) = 2(∆ p)s r ∆ps(r) = Rs
+
+γs r ∆ps(r), (A30) and its n-th moment as 
+
+⟨rn⟩s = 2(∆ p)s
+
+Z ∞
+
+> 0
+
+rn−1∆ps(r) d r
+
+= − 1(∆ p)s
+
+Z ∞
+
+> 0
+
+rn dpN (r)dr , (A31) where n ∈ Z. The normalization factor is, essentially, the pressure difference between the phase inside the spherical region (cluster / droplet / bubble) and the surrounding ambient phase, at distances far from the interface: (∆ p)s = −
+
+Z ∞
+
+> 0
+
+dr dpN (r)dr . (A32) The 3rd-moment of fs(r) trivially yields the cube of the radius of tension, ⟨r3⟩s = ( Rs)3. The radius of the interface 26 of tension properly reads: 
+
+Rs =
+
+
+
+− 1(∆ p)s
+
+Z ∞
+
+> 0
+
+r3 dpN
+
+dr dr
+
+1/3
+
+=
+
+Z ∞
+
+> 0
+
+r3 dpN
+
+dr dr
+
+Z ∞
+
+> 0
+
+dpN
+
+dr dr
+
+
+
+> 1/3
+
+=
+
+Z ∞
+
+> 0
+
+dr r 2 ∆ps(r)
+
+Z ∞
+
+> 0
+
+dr r −1 ∆ps(r)
+
+
+
+> 1/3
+
+, (A33) and, after imposing the Young–Laplace (YL) equation, yields the final expression of Thompson et al. for the surface (interfacial) tension [26]: 
+
+γs = (∆ p)s Rs
+
+2=
+
+"
+
+− (∆ p)s2
+
+8
+
+Z ∞
+
+> 0
+
+r3 dpN
+
+dr dr
+
+#1/3
+
+.
+
+= − 12( Rs)2
+
+Z ∞
+
+> 0
+
+r3 dpN
+
+dr dr . (A34) One can additionally notice that: 
+
+• The Bakker–Buff equation[26, 48] and the integral condition for mechanical stability[26, 76] can be expressed as Γ n=2 (r) = γs and Γ n=−1(r) = γs, respectively. 
+
+• In both expressions, the radius of tension acts as the symmetry constant: Λ s = Rs in Eq. A23 for n = −1 and 
+
+n = 2. 
+
+• Also: 
+
+−
+
+Z ∞
+
+> 0
+
+r3 dpN
+
+dr dr = (∆ p)s (Rs)3 . (A35) 27 
+
+Appendix B: Extra results 
+
+In Figure 9 the convergence of interfacial tension values at T ≈ 1021 .4 K for pure Li, pure Pb and Pb16Li solvents has been additionally depicted. 0.10.20.30.4
+
+# Pb 0.10.20.30.4
+
+# Pb16Li 0 500 1000 0.20.40.6
+
+# Li 
+
+# NHe 
+
+> γs /(N m −1)
+
+FIG. 9. Interfacial tension values for varying helium cluster sizes at constant temperature (1021 K). Simulations have been performed using the Al-Awad force field (2023) [29]. 
+
+In Figures 10 and 11 additional pressure tensors obtained at the same temperature are reported. 28 −0.0025 0.0000 0.0025 0.0050 
+
+⇒ γs = (0.05 ± 0.02) N/m 96% Li–4% Pb 
+
+⇒ γs = (0.03 ± 0.01) N/m 92% Li–8% Pb 
+
+⇒ γs = (0.04 ± 0.02) N/m 88% Li–12% Pb 
+
+⇒ γs = (0.11 ± 0.02) N/m 84% Li–16% Pb 
+
+# −0.0025 0.0000 0.0025 0.0050 
+
+⇒ γs = (0.22 ± 0.02) N/m 80% Li–20% Pb 
+
+⇒ γs = (0.33 ± 0.02) N/m 76% Li–24% Pb 
+
+⇒ γs = (0.41 ± 0.02) N/m 72% Li–28% Pb 
+
+⇒ γs = (0.48 ± 0.02) N/m 68% Li–32% Pb 
+
+# −0.0025 0.0000 0.0025 0.0050 
+
+⇒ γs = (0.52 ± 0.02) N/m 64% Li–36% Pb 
+
+⇒ γs = (0.54 ± 0.02) N/m 60% Li–40% Pb 
+
+⇒ γs = (0.54 ± 0.02) N/m 56% Li–44% Pb 
+
+⇒ γs = (0.52 ± 0.02) N/m 52% Li–48% Pb 
+
+# −0.0025 0.0000 0.0025 0.0050 
+
+⇒ γs = (0.49 ± 0.02) N/m 48% Li–52% Pb 
+
+⇒ γs = (0.46 ± 0.02) N/m 44% Li–56% Pb 
+
+⇒ γs = (0.42 ± 0.02) N/m 40% Li–60% Pb 
+
+⇒ γs = (0.39 ± 0.02) N/m 36% Li–64% Pb 
+
+# −0.0025 0.0000 0.0025 0.0050 
+
+⇒ γs = (0.34 ± 0.02) N/m 32% Li–68% Pb 
+
+⇒ γs = (0.31 ± 0.02) N/m 28% Li–72% Pb 
+
+⇒ γs = (0.27 ± 0.02) N/m 24% Li–76% Pb 
+
+⇒ γs = (0.24 ± 0.02) N/m 20% Li–80% Pb 
+
+# 10 20 30 
+
+# −0.0025 0.0000 0.0025 0.0050 
+
+⇒ γs = (0.22 ± 0.02) N/m 16% Li–84% Pb 
+
+# 10 20 30 
+
+⇒ γs = (0.20 ± 0.02) N/m 12% Li–88% Pb 
+
+# 10 20 30 
+
+⇒ γs = (0.20 ± 0.02) N/m 8% Li–92% Pb 
+
+# 10 20 30 
+
+⇒ γs = (0.19 ± 0.02) N/m 4% Li–96% Pb 
+
+# r / ˚A
+
+> pN / (eV ˚ A−3)
+
+FIG. 10. Normal component of pressure tensors in the radial direction for helium bubbles of NHe = 512 atoms in 24 different lead–lithium alloys (AEAM model [29]). Kinetic ( pK ), virial ( pV ) and total ( pN = pK + pV ) profiles are depicted using blue, orange and green circles, respectively. In addition, pid N have been estimated by fitting the corresponding pN values, and drawn using green dashed lines. 29 −0.0050 
+
+# −0.0025 0.0000 0.0025 0.0050 0.0075 
+
+⇒ γs = (0.55 ± 0.02) N/m 96% Li–4% Pb 
+
+⇒ γs = (0.54 ± 0.02) N/m 92% Li–8% Pb 
+
+⇒ γs = (0.60 ± 0.02) N/m 88% Li–12% Pb 
+
+⇒ γs = (0.74 ± 0.02) N/m 84% Li–16% Pb 
+
+# −0.0050 
+
+# −0.0025 0.0000 0.0025 0.0050 0.0075 
+
+⇒ γs = (0.84 ± 0.02) N/m 80% Li–20% Pb 
+
+⇒ γs = (0.94 ± 0.02) N/m 76% Li–24% Pb 
+
+⇒ γs = (1.03 ± 0.02) N/m 72% Li–28% Pb 
+
+⇒ γs = (1.07 ± 0.02) N/m 68% Li–32% Pb 
+
+# −0.0050 
+
+# −0.0025 0.0000 0.0025 0.0050 0.0075 
+
+⇒ γs = (1.12 ± 0.02) N/m 64% Li–36% Pb 
+
+⇒ γs = (1.09 ± 0.02) N/m 60% Li–40% Pb 
+
+⇒ γs = (1.06 ± 0.02) N/m 56% Li–44% Pb 
+
+⇒ γs = (0.99 ± 0.02) N/m 52% Li–48% Pb 
+
+# −0.0050 
+
+# −0.0025 0.0000 0.0025 0.0050 0.0075 
+
+⇒ γs = (0.92 ± 0.02) N/m 48% Li–52% Pb 
+
+⇒ γs = (0.82 ± 0.02) N/m 44% Li–56% Pb 
+
+⇒ γs = (0.73 ± 0.02) N/m 40% Li–60% Pb 
+
+⇒ γs = (0.63 ± 0.02) N/m 36% Li–64% Pb 
+
+# −0.0050 
+
+# −0.0025 0.0000 0.0025 0.0050 0.0075 
+
+⇒ γs = (0.54 ± 0.02) N/m 32% Li–68% Pb 
+
+⇒ γs = (0.45 ± 0.02) N/m 28% Li–72% Pb 
+
+⇒ γs = (0.38 ± 0.02) N/m 24% Li–76% Pb 
+
+⇒ γs = (0.31 ± 0.02) N/m 20% Li–80% Pb 
+
+# 10 20 30 
+
+# −0.0050 
+
+# −0.0025 0.0000 0.0025 0.0050 0.0075 
+
+⇒ γs = (0.26 ± 0.02) N/m 16% Li–84% Pb 
+
+# 10 20 30 
+
+⇒ γs = (0.23 ± 0.02) N/m 12% Li–88% Pb 
+
+# 10 20 30 
+
+⇒ γs = (0.20 ± 0.02) N/m 8% Li–92% Pb 
+
+# 10 20 30 
+
+⇒ γs = (0.19 ± 0.02) N/m 4% Li–96% Pb 
+
+# r / ˚A
+
+> pN / (eV ˚ A−3)
+
+FIG. 11. Normal component of pressure tensors in the radial direction for helium bubbles of NHe = 512 atoms in 24 different lead–lithium alloys (BEAM model [36]). Kinetic ( pK ), virial ( pV ) and total ( pN = pK + pV ) profiles are depicted using blue, orange and green circles, respectively. In addition, pid N have been estimated by fitting the corresponding pN values, and drawn using green dashed lines.

@@ -1,0 +1,86 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2605.13164v1/fig-001.webp",
+      "caption": "FIG. 3. Ideal (red solid line) and non-ideal (blue dashed line) radial normal components of the pressure tensor (top panel) and the opposite of its derivative (bottom panel).",
+      "page": 6,
+      "index": 1,
+      "width": 461,
+      "height": 403
+    },
+    {
+      "url": "assets/figures/arxiv/2605.13164v1/fig-002.webp",
+      "caption": "TABLE II. Representation of the IKC for a given pair of particles (i, j) and a spherical shell of radius r – Cases 1 and 2. Case Schematic Representation",
+      "page": 21,
+      "index": 2,
+      "width": 758,
+      "height": 833
+    },
+    {
+      "url": "assets/figures/arxiv/2605.13164v1/fig-003.webp",
+      "caption": "FIG. 11. Normal component of pressure tensors in the radial direction for helium bubbles of NHe = 512 atoms in 24 different lead–lithium alloys (BEAM model [36]). Kinetic (pK), virial (pV ) and total (pN = pK + pV ) profiles are depicted using blue, orange and green circles, respectively. In addition, pidN have been estimated by fitting the corresponding pN values, and drawn using green dashed lines.",
+      "page": 29,
+      "index": 3,
+      "width": 1050,
+      "height": 1121
+    },
+    {
+      "url": "assets/figures/arxiv/2605.13164v1/fig-004.webp",
+      "caption": "TABLE III. Representation of the IKC for a given pair of particles (i, j) and a spherical shell of radius r – Case 3 and 4. Case Schematic Representation",
+      "page": 22,
+      "index": 4,
+      "width": 742,
+      "height": 945
+    },
+    {
+      "url": "assets/figures/arxiv/2605.13164v1/fig-005.webp",
+      "caption": "FIG. 8. Interfacial tension (top), interfacial radii (middle), and interfacial free energy variations (bottom), as function of the solvent composition (xPb = 1 − xLi). All cases consider He/Pb–Li spherical interfaces, where all helium atoms segregated into a single spherical cluster of NHe = 512. Blue circles and orange (empty) diamonds indicate that the LM phase has been modelled with the Al-Awad’s[29] or Belashchenko’s[36] (respectively), combined with the same potentials for helium atoms (TTS for He–He and Li–He [31, 75], SBMILL for Pb– He).",
+      "page": 10,
+      "index": 5,
+      "width": 513,
+      "height": 1032
+    },
+    {
+      "url": "assets/figures/arxiv/2605.13164v1/fig-006.webp",
+      "caption": "TABLE I. Summary of IKC cases for planar symmetries.",
+      "page": 18,
+      "index": 6,
+      "width": 519,
+      "height": 976
+    },
+    {
+      "url": "assets/figures/arxiv/2605.13164v1/fig-007.webp",
+      "caption": "TABLE IV. Representation of the IKC for a given pair of particles (i, j) and a spherical shell of radius r – Case 5. Case Schematic Representation",
+      "page": 23,
+      "index": 7,
+      "width": 694,
+      "height": 456
+    },
+    {
+      "url": "assets/figures/arxiv/2605.13164v1/fig-008.webp",
+      "caption": "FIG. 10. Normal component of pressure tensors in the radial direction for helium bubbles of NHe = 512 atoms in 24 different lead–lithium alloys (AEAM model [29]). Kinetic (pK), virial (pV ) and total (pN = pK + pV ) profiles are depicted using blue, orange and green circles, respectively. In addition, pidN have been estimated by fitting the corresponding pN values, and drawn using green dashed lines.",
+      "page": 28,
+      "index": 8,
+      "width": 1051,
+      "height": 1134
+    },
+    {
+      "url": "assets/figures/arxiv/2605.13164v1/fig-009.webp",
+      "caption": "FIG. 9. Interfacial tension values for varying helium cluster sizes at constant temperature (1021 K). Simulations have been performed using the Al-Awad force field (2023) [29].",
+      "page": 27,
+      "index": 9,
+      "width": 512,
+      "height": 895
+    },
+    {
+      "url": "assets/figures/arxiv/2605.13164v1/fig-010.webp",
+      "caption": "FIG. 7. Interfacial tension of a planar surface as function of the solvent atomic fraction (composition) along the 1021 K isotherm. Blue and orange circles correspond to IT values where lead–lithium alloys were modelled by AEAM-2023[29] and BEAM-2019 [36] potentials, respectively. Both cases consider TTS[31] and SBMILL[30] potentials for helium interactions. Dashed lines indicate ideal-mixture predictions.",
+      "page": 9,
+      "index": 10,
+      "width": 1063,
+      "height": 541
+    }
+  ]
+}
