@@ -1,0 +1,142 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2605.14951v1/fig-001.webp",
+      "caption": "Figure 10: Time variation of parameters of the PEMFC in the constant voltage mode when the initial startup temperature is -10 ◦C: (a) MFFF fuel cell; (b) SFF fuel cell. t = 0 in the figure corresponds to the instant when the electronic load is applied.",
+      "page": 15,
+      "index": 1,
+      "width": 971,
+      "height": 656
+    },
+    {
+      "url": "assets/figures/arxiv/2605.14951v1/fig-002.webp",
+      "caption": "Figure 15: Operation time and final temperature rise in the variable current mode at the initial startup temperature of -10 ◦C: (a) MFFF fuel cell; (b) SFF fuel cell.",
+      "page": 21,
+      "index": 2,
+      "width": 971,
+      "height": 355
+    },
+    {
+      "url": "assets/figures/arxiv/2605.14951v1/fig-003.webp",
+      "caption": "Figure 16: Water and heat production under different cases in the variable current mode: (a, c) MFFF fuel cell; (b, d) SFF fuel cell.",
+      "page": 21,
+      "index": 3,
+      "width": 971,
+      "height": 699
+    },
+    {
+      "url": "assets/figures/arxiv/2605.14951v1/fig-004.webp",
+      "caption": "Figure 3: Performance of the MFFF and SFF fuel cells at room temperature: (a) Polarization curves and power density curves; (b) Net power density curve.",
+      "page": 7,
+      "index": 4,
+      "width": 891,
+      "height": 329
+    },
+    {
+      "url": "assets/figures/arxiv/2605.14951v1/fig-005.webp",
+      "caption": "Figure 6: Temperature and voltage variations under constant current mode at 0.8 A/cm2 for different initial startup temperatures: (a) MFFF fuel cell; (b) SFF fuel cell.",
+      "page": 10,
+      "index": 5,
+      "width": 971,
+      "height": 346
+    },
+    {
+      "url": "assets/figures/arxiv/2605.14951v1/fig-006.webp",
+      "caption": "Figure 7: Time variation of parameters of the PEMFC under the constant current mode when the initial startup temperature is -10 ◦C: (a) MFFF fuel cell; (b) SFF fuel cell. t = 0 in the figure corresponds to the instant when the electronic load is applied.",
+      "page": 10,
+      "index": 6,
+      "width": 971,
+      "height": 638
+    },
+    {
+      "url": "assets/figures/arxiv/2605.14951v1/fig-007.webp",
+      "caption": "Figure 9: Time variation of parameters of the PEMFC in the constant voltage mode when the initial startup temperature is -7 ◦C: (a, c, e) MFFF fuel cell; (b, d, f) SFF fuel cell. t = 0 in the figure corresponds to the instant when the electronic load is applied.",
+      "page": 14,
+      "index": 7,
+      "width": 971,
+      "height": 1081
+    },
+    {
+      "url": "assets/figures/arxiv/2605.14951v1/fig-008.webp",
+      "caption": "Figure 1: Schematic diagram of fuel cell cold start experiment system.",
+      "page": 3,
+      "index": 8,
+      "width": 773,
+      "height": 506
+    },
+    {
+      "url": "assets/figures/arxiv/2605.14951v1/fig-009.webp",
+      "caption": "Figure 13: Time variation of parameters of the PEMFC in the ramping current mode when the initial startup temperature is -10 ◦C: (a) MFFF fuel cell; (b) SFF fuel cell. t = 0 in the figure corresponds to the instant when the electronic load is applied.",
+      "page": 18,
+      "index": 9,
+      "width": 971,
+      "height": 657
+    },
+    {
+      "url": "assets/figures/arxiv/2605.14951v1/fig-010.webp",
+      "caption": "Figure 8: Time variation of parameters of the PEMFC under the constant voltage mode when the initial startup temperature is -5 ◦C: (a, c, e) MFFF fuel cell; (b, d, f) SFF fuel cell. t = 0 in the figure corresponds to the instant when the electronic load is applied.",
+      "page": 13,
+      "index": 10,
+      "width": 971,
+      "height": 1060
+    },
+    {
+      "url": "assets/figures/arxiv/2605.14951v1/fig-011.webp",
+      "caption": "Figure 4: Time variation of parameters of the PEMFC under the constant current mode when the initial startup temperature is -5 ◦C: (a, c, e) MFFF fuel cell; (b, d, f) SFF fuel cell. t = 0 in the figure corresponds to the instant when the electronic load is applied.",
+      "page": 8,
+      "index": 11,
+      "width": 971,
+      "height": 1034
+    },
+    {
+      "url": "assets/figures/arxiv/2605.14951v1/fig-012.webp",
+      "caption": "Figure 2: (a) SFF. (b) MFF. (c) Diagram of the fuel cell structure. (d) Assembled fuel cell.",
+      "page": 4,
+      "index": 12,
+      "width": 795,
+      "height": 547
+    },
+    {
+      "url": "assets/figures/arxiv/2605.14951v1/fig-013.webp",
+      "caption": "Table 4: Parameters for variable current mode.",
+      "page": 19,
+      "index": 13,
+      "width": 754,
+      "height": 206
+    },
+    {
+      "url": "assets/figures/arxiv/2605.14951v1/fig-014.webp",
+      "caption": "Figure 12: Time variation of parameters of the PEMFC in the ramping current mode when the initial startup temperature is -7 ◦C: (a, c, e) MFFF fuel cell; (b, d, f) SFF fuel cell. t = 0 in the figure corresponds to the instant when the electronic load is applied.",
+      "page": 17,
+      "index": 14,
+      "width": 971,
+      "height": 1081
+    },
+    {
+      "url": "assets/figures/arxiv/2605.14951v1/fig-015.webp",
+      "caption": "Figure 5: Time variation of parameters of the PEMFC under the constant current mode when the initial startup temperature is -7 ◦C: (a, c, e) MFFF fuel cell; (b, d, f) SFF fuel cell. t = 0 in the figure corresponds to the instant when the electronic load is applied.",
+      "page": 9,
+      "index": 15,
+      "width": 971,
+      "height": 1056
+    },
+    {
+      "url": "assets/figures/arxiv/2605.14951v1/fig-016.webp",
+      "caption": "Figure 14: Changes of voltage and HFR in the variable current mode at the initial startup temperature of -10 ◦C: (a, c) MFFF fuel cell; (b, d) SFF fuel cell. t = 0 in the figure corresponds to the instant when the electronic load is applied.",
+      "page": 20,
+      "index": 16,
+      "width": 971,
+      "height": 745
+    },
+    {
+      "url": "assets/figures/arxiv/2605.14951v1/fig-017.webp",
+      "caption": "Figure 11: Time variation of parameters of the PEMFC in the ramping current mode when the initial startup temperature is -5 ◦C: (a, c, e) MFFF fuel cell; (b, d, f) SFF fuel cell. t = 0 in the figure corresponds to the instant when the electronic load is applied.",
+      "page": 16,
+      "index": 17,
+      "width": 971,
+      "height": 1081
+    }
+  ]
+}

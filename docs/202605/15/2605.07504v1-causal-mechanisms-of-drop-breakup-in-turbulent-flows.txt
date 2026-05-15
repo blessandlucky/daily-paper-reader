@@ -1,0 +1,266 @@
+Title: Causal mechanisms of drop breakup in turbulent flows
+
+URL Source: https://arxiv.org/pdf/2605.07504v1
+
+Published Time: Mon, 11 May 2026 01:11:30 GMT
+
+Number of Pages: 8
+
+Markdown Content:
+# Causal mechanisms of drop breakup in turbulent flows 
+
+Daniel Mor´ on, ∗ Ianto Cannon, and Marc Avila †
+
+University of Bremen, Center of Applied Space Technology and Microgravity (ZARM), Am Fallturm 2, 28359 Bremen, Germany. 
+
+Alberto Vela-Mart´ ın 
+
+Universidad Carlos III de Madrid, Escuela Polit´ ecnica Superior, Department of Aerospace Engineering,, 28911 Legan´ es, Spain. 
+
+(Dated: May 11, 2026) The fragmentation of drops and bubbles in turbulence determines the rate of many processes in engineering and environmental fluid flows. The nonlinear coupling between interfacial and hy-drodynamic stresses poses a fundamental difficulty to model reduction, which we here address by decomposing the flow into outer and inner fields. We show that the outer field is independent of the drop dynamics and drives deformation, whereas the inner field responds to the deformation by dissipating the interfacial energy through the genesis of turbulent eddies. Drawing from these observations, we derive a simple analytical model that reproduces the breakup statistics obtained from ensembles of direct numerical simulations of drops and bubbles. Our results reveal a causal link between the intermittency of turbulent flows and the memoryless breakup statistics. 
+
+The dynamics of disperse turbulent flows determine the rate of many natural and industrial processes, in-cluding rain formation [1, 2], the liquid-gas exchange be-tween oceans and atmosphere [3, 4], the emulsification of foods and chemicals [5, 6] or the atomization of liq-uids [7, 8]. In all of these examples, the disperse phase organizes in drops or bubbles (particles) of varying sizes and the evolution of the particle size distribution sets the heat, mass, momentum and reaction rate. The key orga-nizing mechanisms are particle breakup and coalescence. Both are controlled by the nonlinear coupling between the interface motion and the fluid velocity. This poses a profound challenge to modeling and, despite decades of research, quantitative predictions of particle breakup remain elusive [9]. The general phenomenological approach to breakup considers the exchange of kinetic and surface energies, which is governed by the dimensionless Weber number We = ρ ε 2/3 d5/3
+
+σ , (1) where, ρ, ε, d and σ are the density of the carrier fluid, the rate of energy dissipation per unit mass, the particle diameter and the surface tension, respectively. Breakup is assumed to occur when the energy of kinetic velocity fluctuations at scale d exceeds the surface energy [10, 11], We ≳ 1. The breakup rate (or frequency) is then typ-ically inferred from the frequency of ‘collisions’ of the particle with eddies of size ≲ d and model parameters are obtained from fits to the data [12–19]. The wide range of assumptions used to formulate the models has resulted in a broad range of predictions [20]. Further, the   
+
+> ∗daniel.moron@zarm.uni-bremen.de
+> †Also at University of Bremen, MAPEX Center for Materials and Processes, Am Biologischen Garten 2, 28359 Bremen, Germany.
+
+accurate experimental estimation of model parameters is challenging even in single-particle experiments [21–25]. The difficulties arise from limited observation windows in space and time, limited statistics, the inevitable flow inhomogeneities and anisotropies of laboratory experi-ments, and the methods to extract the parameters from the data [26]. Recent advances in computing have helped circumvent these experimental difficulties. Vela-Mart´ ın and Avila [27] performed thousands of direct numerical simulations (DNS) of a single-drop in homogeneous, isotropic tur-bulence. Their computed scaling of the breakup rate with We is consistent with a phenomenological model proposed by Coulaloglou and Tavlarides [12]. However, the applicability of their results beyond drop emulsions of nearly matched density and viscosity is unclear and a predictive mathematical model is missing. In this Let-ter , we derive a model for drop breakup starting from the governing equations and show that it reproduces the breakup statstics measured for drops and bubbles. The model constant that controls the scaling with We depends only on the properties of the turbulent flow of the carrier phase and can be a priori approximated from DNS data. 
+
+Weber number 1.2 1.3 1.4 1.6 1.8 2.9 3.6 Number of DNS 180 200 200 200 200 500 600 TABLE I. Direct numerical simulations in a triply periodic cubic box with length L analyzed in this Letter . The simula-tions are initialized with a drop of diameter d = 0 .3L inserted in a turbulent field, different for each simulation. The flow parameters are Re λ ≈ 58 (as the Taylor microscale Reynolds number), Cn ≲ 0.009 (as the Cahn number) and Pe = 13 Cn 
+
+(as the Peclet number and following Magaletti et al. [28]). The reader is referred to Vela-Mart´ ın and Avila [29] for de-tails on the numerical techniques and resolution. 
+
+In Fig. 1a, we show snapshots from DNS of a drop interacting with turbulence (cf. Table I). DNS fully re-
+
+> arXiv:2605.07504v1 [physics.flu-dyn] 8 May 2026
+
+2       
+
+> FIG. 1. a) Snapshots of a drop deforming in a turbulent field at We = 1 .8. Times are normalized with the eddy turnover time at the drop scale, td= ( d2/ε )1/3. b) Temporal evolution of the normalized excess surface energy ξ(eq. (5)) and the straining ϑ(eq. (4)) scaled by 1/10 for better visualization. The black markers denote the times of the snapshots in a). c) Temporal evolution the outer and (minus) inner straining.
+
+solves the nonlinear interaction of the turbulent and in-terface dynamics, but is prohibitively expensive for natu-ral and industrial processes and generates huge amounts of data that are difficult to distill down. We here con-sider the global exchange of kinetic and surface energies, 
+
+E = ⟨ ρ 
+
+> 2
+
+uiui⟩V and H = σA , where ui is the fluid veloc-ity, A the interfacial area and ⟨•⟩ V denotes integration over the whole fluid volume. Volume-integration of the governing equations yields the following equations for the energy balance [29–31]: dtE = P − ϵ − ϑ, (2) dtH = ϑ, (3) where P = ⟨uifi⟩V is the power input, fi the forcing that drives the turbulent flow, ϵ = 2 ⟨μS ij Sij ⟩V = ρV ε the dissipation rate, Sij the strain tensor and μ the dynamic viscosity [29]. The energy exchange is controlled by the coupling (straining) term 
+
+ϑ = − ⟨ σn iSij nj ⟩S , (4) where ni is the normal vector to the drop surface and 
+
+⟨•⟩ S denotes integration over the interface between the two fluids. We stress that eqs. (2)–(4) are exact, but their evaluation necessitates the resolution of all relevant spatial and temporal scales of the flow. In Fig. 1b, we show the temporal evolution of the ex-cess surface energy of the drop: 
+
+ξ = HH0
+
+− 1, (5) where H0 = σπd 2 is the energy of the initial spherical drop. Times are scaled with the eddy turnover time at the drop scale, td = ( d2/ε )1/3. The dynamics of ξ closely follows the dynamics of the straining. Specifically, pos-itive values of ϑ imply a net conversion rate of kinetic energy into surface energy and lead to increasing H,whereas negative values correspond to the generation of eddies as the drop relaxes towards equilibrium, H → H 0.Due to the chaotic nature of turbulence, the breakup time and energy depend sensitively on the initial conditions and are randomly distributed. Breakup times obey ex-ponential (memoryless) distributions for sufficiently long times [27], t ≫ t0, and breakup energies Gaussian-like distributions, see Fig. 6b (in Appendix A). We observe that, at low Weber numbers We ≲ 2, breakup on aver-age occurs when ξ ≳ 0.27 in agreement with previous experiments and DNS of bubble breakup [23, 32].       
+
+> FIG. 2. Statistics of the outer and inner straining. a) Proba-bility distribution function of the outer straining at different Weber numbers (as indicated in the legend) normalized with inertial units. b) Same as a) but for the inner straining. c) Temporal autocorrelation of the outer straining. d) Same as c) but for the inner straining, where tσ=pρd 3/σ is the cap-illary time.
+
+We derive an analytical model for drop breakup based on eq. (3) and a critical excess-energy threshold ξ ≥ ξc,independent of the Weber number. The derivation re-quires a simple, but accurate description of the drop-turbulence interaction, which is hidden in the straining term that governs the energy transfer, eq. (4). Follow-ing Vela-Mart´ ın and Avila [29], we decompose this term into outer (turbulence-induced) and inner (drop-induced) contributions, dtH = ϑO + ϑI . (6) This decomposition is motivated by the non-local nature of the coupling between vorticity and strain in turbu-lence [33, 34]. Non-locality means that eddies outside 3the boundary layer around the drop are able to produce significant strain at the interface. Vela-Mart´ ın and Avila [29] showed that the outer straining is positive on aver-age (interface stretching) and independent of the surface tension (see Fig. 2a and c), whereas the inner straining is negative on average (interface compressing) and depends both on the surface tension and the turbulence dynamics (see Fig. 2b and d).        
+
+> FIG. 3. Cross correlation between outer and inner straining. The negative peak ranges from −0.75 at We = 1 .2, to −0.5at We = 3 .6, and is found at τ≈0.08 tσ.
+
+We now consider the time scales over which inner and outer processes act and interact. In Fig. 2c we show that typical events of outer straining ϑO have a dura-tion of an inertial time unit td: its autocorrelation time (tϑO ≈ 0.65 td) is fairly constant among the Weber num-bers considered here. The inner straining ϑI acts at the capillary time scale, tσ = pρd 3/σ with tϑI ≈ 4.5tσ , see Fig. 2d. Further, we observe in Fig. 1c that intense outer straining events, ϑO > 0, typically precede intense inner compressing events, ϑI < 0. The delay between the two is quantified by their temporal cross-correlation in Fig. 3, which exhibits a clear negative peak at τ ≈ 0.08 tσ . In a nutshell, outer eddies generate stretching motions of duration ∼ tϑO at the interface and increase the surface energy. This is further supported by the strong positive cross correlation between the outer straining and the sur-face energy (shown in Fig. 6a of Appendix A). After a brief delay τ , these stretching motions are opposed by interfacial forces. Within a time window of duration tϑI ,the drop relaxes and injects energy back into the velocity field by generating turbulent motions in the drop and its surrounding boundary layer (inner eddies). We model this relaxation process as a linear damping, 
+
+ϑI ≈ − cd
+
+tσ
+
+(H − H 0) . (7) This is analogous to the oscillations of a drop in a qui-escent liquid described by Lamb [35], but with the kine-matic viscosity replaced by an eddy viscosity set by the capillary timescale. In Appendix B, we measure a damp-ing coefficient cd ≈ 3.5. By plugging eq. (7) into eq. (6) and scaling time with td, and energies with H0, we arrive at the dimensionless model equation dξ
+
+dˆ t = We 
+
+π ˆϑO − cd
+
+√We ξ, (8) where ˆϑO = ϑO /(ρεd 3) and tσ /t d = √We. At low We-ber numbers, surface tension dominates and the damp-ing time (that scales with tσ ) is shorter than the auto-correlation time of the outer straining (that scales with 
+
+td). We consider a rectangular pulse event of constant intensity ˆϑeO ρεd 3 and duration ˆ tϑO . In this case, the in-tegration of eq. (8) from ˆ t = 0 to ˆ t = ˆ tϑO yields 
+
+ξ  ˆtϑO
+
+ = We 3/2
+
+cd π ˆϑeO (1 − δ) , (9) where δ = e−cd ˆtϑO We −1/2
+
+. The breakup condition, ξ > ξc, is satisfied provided that ˆϑeO ≳ π ξ c cd
+
+1 − δ We −3/2. (10) The probability of breakup can then be estimated from the p.d.f. of ϑO as 
+
+Pb = P
+
+ ˆϑO ≥ ˆϑeO
+
+
+
+=
+
+Z ∞
+
+> ˆϑeO
+
+p d ˆϑO . (11) Note that p has a long exponential tail (Fig. 2a) rooted in the intermittency of the outer straining field SOij [36]; i.e. for a sufficiently large ˆϑO ,
+
+P
+
+ ˆϑO ≥ ˆϑeO
+
+
+
+∝ e−γ ˆϑeO . (12) Thus we arrive at 
+
+Pb ∝ e−χ We −3/2
+
+, (13) where χ = γ π ξ c cd/(1 − δ), and, given that the probabil-ity of breakup is proportional to the breakup frequency, 
+
+κ ∝ Pb, our model prediction for the breakup rate is ˆκ = ˆ κ∞ e−χ We −3/2
+
+, (14) where the constant ˆ κ∞ can be interpreted as the breakup rate at We → ∞ . To the best of our knowledge, ˆ κ∞ can-not be directly inferred from our DNS data, because our model relies on the assumption that breakup is triggered by a single extreme event, an assumption that is valid only at low We. By contrast, χ, can be estimated a priori from the properties of the turbulent outer field, γ = 2 .6and ˆ tϑO = 0 .65, the damping coefficient, cd = 3 .5, and the breakup threshold ξc = 0 .27. At the low Weber num-bers We ≲ 2 considered here, δ ≈ 0.15 and χ ≈ 8.5. In Fig. 4, we show that eq. (14), with ˆ κ∞ ≈ 10, agrees excellently with the breakup rates computed from our en-sembles of DNS and those obtained by Vela-Mart´ ın and Avila [27] over a wide range of We. The methodology to compute the breakup rate is detailed in [27] and involves 4                        
+
+> FIG. 4. Breakup rate of drops at different Weber numbers. Markers denote the breakup rate measured in the numerical simulations performed by Vela-Mart´ ın and Avila [27] and the ones analyzed here (shown with the same symbols as used in the preceding figures). The error bars are computed as in [27]. The blue solid line corresponds to equation (14), where the slope χ=γ π ξ ccd/(1 −δ) is obtained from the DNS results, tab. II and ˆ κ∞= 10 is fitted. The shaded region covers the 10 th to 90 th percentile interval obtained from Monte Carlo uncertainty propagation, where the parameters were sampled according to the standard deviations reported in table II. The magenta symbol depicts the breakup rate of bubbles extracted from the DNS of Perrard et al. [37]. Parameter γξccdˆtϑO
+> Mean value 2.6 0.27 3.5 0.65 Standard deviation 0.17 0.1 0.2 0.03 TABLE II. Parameters obtained from the DNS, with their corresponding standard deviations. For the calculation of the parameters we excluded the cases at We ≥3.
+
+two key aspects. First, the breakup rate is well defined in statistically steady state only [27], meaning that the time for the particle to equilibrate with the ambient tur-bulence, t0, must be excluded from the analysis. The equilibration time is visible in the cumulative distribu-tion function of breakup times (Fig. 5a), where a statis-tically steady state is reached at t > t 0 ≈ td. This state is characterized by a memoryless process with an exponen-tial tail and thus a constant breakup rate. It is crucial to account for t0 in the analysis, because otherwise the breakup rate depends on the observation time. Addition-ally, DNS are customarily terminated after a wall time, 
+
+tc, even if the particle has not broken. This truncation of the data must be accounted for in the maximum likeli-hood estimation of κ [38]. We applied this methodology to the bubble breakup times from the DNS of Perrard 
+
+et al. [37] (magenta symbols in Fig. 5a), and found that the corresponding breakup rate is accurately predicted by our model (Fig. 4). In previous studies, t0 was not considered in the anal-ysis and the breakup rate was computed as the inverse of the mean breakup time of the sample. Approximat-ing the mean requires much smaller sample sizes than the true breakup rate κ. However, the mean time is           
+
+> FIG. 5. a) Cumulative probability distribution of breakup times (or survivor function S) obtained from DNS. b) Breakup rate from our model (solid line) and corrected with and equili-bration time (dashed line). Symbols are as in Fig. 4, but show here to the inverse of the mean breakup time, i.e., without ex-cluding breakup times with tb< t 0. Error-bars correspond to plus/minus one standard deviation. With a dashed-dotted green line the fit proposed by Mart´ ınez-Baz´ an et al. [39, 40] for bubble breakup, with Cg= 1 .2 and We c= 1 .5.
+
+highly influenced by the way in which drops/bubbles are initiated in the DNS or experiments and accordingly presents much more scatter (see Fig. 5b). At low We, 
+
+t0 ≪ κ−1 and this influence is small. Accordingly, our model yields excellent agreement with the mean breakup time. Introducing the equilibration time into the model, i.e. ˆ tb = ˆ t0 + ˆ κ−1, reasonably approximates the data at all Weber numbers and qualitatively agrees with an em-pirical model proposed to approximate the mean breakup times of bubbles in experiments of jet flows [39, 40]. Despite the simplicity of our model, the agreement with the DNS data is strikingly good and calls for a crit-ical assessment. Particularly, modeling the strain due to inner eddies as a linear damping constitutes a strong as-sumption. This is justified by the data at low We ≲ 2(Fig. 7 in Appendix B), which shows that the damping coefficient (obtained with two different methods) scales with t−1 
+
+> σ
+
+. However, as We increases, the inner motions cease to be a passive, dissipative mechanism and couple back to the interfacial dynamics. Specifically, the cross-correlation between outer and inner straining (Fig. 3a) decreases. The mean value of the inner straining in-creases (Fig. 2b) and even becomes positive, thus stretch-ing the drop in average. In practice, the model continues to capture the trends of the data in Fig. 4 because the damping plays a lesser role as We increases. In partic-5ular, χ → γπξ cˆt−1 
+
+> ϑO
+
+We 1/2 as W e → ∞ and the damping becomes negligible, i.e., it does not have enough time to act. This limit of our model can be seen as a refinement of the model by Coulaloglou and Tavlarides [12], where the parameter γπξ cˆt−1 
+
+> ϑO
+
+would multiply We −1 in the expo-nent of eq. (14). Nevertheless,it fails to approximate the DNS breakup rates unless the parameter in the exponent is treated as a fit parameter (see Appendix C). A further assumption of our model is that breakup oc-curs when ξ(t) = ξc. First, there is not a single constant 
+
+ξc for which breakup occurs at all We (Fig. 6b). Second, a correct threshold of breakup should not be extracted at the exact moment of breakup, but rather at the mo-ment in time where breakup becomes irreversible [32, 41]. According to our recent work [42] this happens approx-imately at td before breakup. At this time, the spread of energies is still considerable, see Fig. 6c, and a more accurate estimate of this threshold would require a pre-dictability analysis of drop breakup, as recently carried out for extreme dissipation events in Kolmogorov flow [43] and rare decay events in turbulent pipe flow [44]. In summary, our analysis reveals a causal link between the inherent intermittency of the turbulent field and breakup. Key to this discovery, is the independence of the outer statistics on the drop dynamics and its causality to the inner motions. This establishes the foundations of our simple model, with the more complex workings of the damping and critical breakup energy playing a secondary, but important, role, deserving further investigation. We argue that the framework may be extended to more complex flow configurations, including non-Newtonian fluids, surfactant laden flows [45] and high Reynolds number turbulence. In all these situations, the forcing experienced by the particle should be equally governed primarily by the statistics of the outer (independent) field. Thus, to extend the model, one would only need to replace the tail of the p.d.f. of Fig. 2a by the appropriate one (e.g., through a change of the slope parameter γ). For highly viscous drops, the internal viscous timescale significantly enhances the damping forces and eventually becomes dominant, altering the breakup dynamics [46]. We expect the model to remain valid well beyond the flow conditions studied here by consideration of appropriate scalings of the outer forcing and damping. 
+
+> ACKNOWLEDGMENTS
+
+This work was Funded by the Deutsche Forschungsge-meinschaft (DFG, German Research Foundation) under Germany’s Excellence Strategy – EXC-3036 The Mar-tian Mindset, project number: 533607631. Part of this work was carried out during the Sixth Madrid Turbulence Workshop hosted by Prof. Javier Jim´ enez, and supported by the European Research Council (ERC) under the Ad-vanced Grant CAUST (ERC-AdG-101018287). Both are here gratefully acknowledged. Finally, we are grateful to Ali´ enor Rivi` ere for fruitful and insightful discussions and sharing her bubble breakup data with us. 
+
+> DATA AVAILABILITY
+
+The codes and the data used in this study are openly available at PANGAEA at doi.pangaea.de/10.1594/PANGAEA.994057.                      
+
+> [1] G. Falkovich, A. Fouxon, and M. Stepanov, Acceleration of rain initiation by cloud turbulence, Nature 419 , 151 (2002). [2] W. W. Grabowski and L.-P. Wang, Growth of cloud droplets in a turbulent environment, Annual review of fluid mechanics 45 , 293 (2013). [3] G. B. Deane and M. D. Stokes, Scale dependence of bub-ble creation mechanisms in breaking waves, Nature 418 ,839 (2002). [4] L. Deike, Mass transfer at the ocean–atmosphere inter-face: the role of wave breaking, droplets, and bubbles, Annual Review of Fluid Mechanics 54 , 191 (2022). [5] A. J. Mathijssen, M. Lisicki, V. N. Prakash, and E. J. Mossige, Culinary fluid mechanics and other currents in food science, Reviews of Modern Physics 95 , 025004 (2023). [6] A. H˚ akansson, Emulsion formation by homogenization: Current understanding and future perspectives, Annual review of food science and technology 10 , 239 (2019). [7] H. Watanabe, Y. Suzuki, T. Harada, Y. Matsushita, H. Aoki, and T. Miura, An experimental investigation of the breakup characteristics of secondary atomization of emulsified fuel droplet, Energy 35 , 806 (2010). [8] X. Jiang, G. A. Siamas, K. Jagus, and T. G. Karayian-nis, Physical modelling and advanced simulations of gas– liquid two-phase jet flows in atomization and sprays, Progress in energy and combustion science 36 ,131 (2010). [9] R. Ni, Deformation and breakup of bubbles and drops in turbulence, Annual Review of Fluid Mechanics 56 , 319 (2024). [10] A. Kolmogorov, On the disintegration of drops in a tur-bulent flow, in Dokl. Akad. Nauk SSSR , Vol. 66 (sn, 1949) p. 30. [11] J. O. Hinze, Fundamentals of the hydrodynamic mecha-nism of splitting in dispersion processes, AIChE journal
+> 1, 289 (1955). [12] C. Coulaloglou and L. L. Tavlarides, Description of in-teraction processes in agitated liquid-liquid dispersions, Chemical Engineering Science 32 , 1289 (1977). [13] G. Narsimhan, J. Gupta, and D. Ramkrishna, A model for transitional breakage probability of droplets in agi-
+
+6
+
+tated lean liquid-liquid dispersions, Chemical Engineer-ing Science 34 , 257 (1979). [14] H. Luo and H. F. Svendsen, Theoretical model for drop and bubble breakup in turbulent dispersions, AIChE journal 42 , 1225 (1996). [15] J. C. Lasheras, C. Eastwood, C. Martınez-Baz´ an, and J. L. Monta˜ nes, A review of statistical models for the break-up of an immiscible fluid immersed into a fully de-veloped turbulent flow, International Journal of Multi-phase Flow 28 , 247 (2002). [16] Y. Liao and D. Lucas, A literature review of theoretical models for drop and bubble breakup in turbulent disper-sions, Chemical Engineering Science 64 , 3389 (2009). [17] B. Lalanne, O. Masbernat, and F. Risso, A model for drop and bubble breakup frequency based on turbulence spectra, AIChE Journal 65 , 347 (2019). [18] Y. Qi, S. Tan, N. Corbitt, C. Urbanik, A. K. Salibindla, and R. Ni, Fragmentation in turbulence by small eddies, Nature communications 13 , 469 (2022). [19] A. Rivi` ere, L. Duchemin, C. Josserand, and S. Perrard, Bubble breakup reduced to a one-dimensional nonlinear oscillator, Physical Review Fluids 8, 094004 (2023). [20] S. Zhong and R. Ni, On the breakup frequency of bub-bles and droplets in turbulence: a compilation and evalu-ation of experimental data, International Journal of Mul-tiphase Flow 176 , 104842 (2024). [21] F. Risso and J. Fabre, Oscillations and breakup of a bub-ble immersed in a turbulent field, Journal of Fluid Me-chanics 372 , 323 (1998). [22] C. D. Eastwood, L. Armi, and J. Lasheras, The breakup of immiscible fluids in turbulent flows, Journal of Fluid Mechanics 502 , 309 (2004). [23] R. Andersson and B. Andersson, On the breakup of fluid particles in turbulent flows, AIChE Journal 52 , 2020 (2006). [24] J. Solsvik and H. A. Jakobsen, Single drop breakup ex-periments in stirred liquid–liquid tank, Chemical Engi-neering Science 131 , 219 (2015). [25] L. Beckedorff, G. C. Caridi, and A. Soldati, Jet-stirred homogeneous isotropic turbulent water tank for bubble and droplet fragmentation, Review of Scientific Instru-ments 96 (2025). [26] A. H˚ akansson, On the validity of different methods to es-timate breakup frequency from single drop experiments, Chemical Engineering Science 227 , 115908 (2020). [27] A. Vela-Mart´ ın and M. Avila, Memoryless drop breakup in turbulence, Science Advances 8, eabp9561 (2022). [28] F. Magaletti, F. Picano, M. Chinappi, L. Marino, and C. M. Casciola, The sharp-interface limit of the cahn– hilliard/navier–stokes model for binary fluids, Journal of Fluid Mechanics 714 , 95 (2013). [29] A. Vela-Mart´ ın and M. Avila, Deformation of drops by outer eddies in turbulence, Journal of Fluid Mechanics 
+
+929 , A38 (2021). [30] M. S. Dodd and A. Ferrante, On the interaction of taylor length scale size droplets and isotropic turbulence, Jour-nal of Fluid Mechanics 806 , 356 (2016). [31] N. Valle, F. X. Trias, and J. Castro, An energy-preserving level set method for multiphase flows, Journal of compu-tational physics 400 , 108991 (2020). [32] V. Vashisth and R. Andersson, Dynamics of bubble breakup under turbulent flow conditions, Chemical En-gineering Journal 511 , 162019 (2025). [33] K. Ohkitani and S. Kishiba, Nonlocal nature of vortex stretching in an inviscid fluid, Physics of Fluids 7, 411 (1995). [34] P. E. Hamlington, J. Schumacher, and W. J. Dahm, Lo-cal and nonlocal strain rate fields and vorticity alignment in turbulent flows, Physical Review E—Statistical, Non-linear, and Soft Matter Physics 77 , 026303 (2008). [35] H. Lamb, Hydrodynamics , 6th ed. (Cambridge University Press, Cambridge, 1932). [36] J. Jim´ enez, A. A. Wray, P. G. Saffman, and R. S. Rogallo, The structure of intense vorticity in isotropic turbulence, Journal of Fluid Mechanics 255 , 65 (1993). [37] S. Perrard, A. Rivi` ere, W. Mostert, and L. Deike, Bub-ble deformation by a turbulent flow, Journal of Fluid Mechanics 920 , A15 (2021). [38] J. F. Lawless, Statistical models and methods for lifetime data (John Wiley & Sons, 2011). [39] C. Mart´ ınez-Baz´ an, J. L. Monta˜ nes, and J. C. Lasheras, On the breakup of an air bubble injected into a fully de-veloped turbulent flow. part 1. breakup frequency, Jour-nal of Fluid Mechanics 401 , 157 (1999). [40] C. Mart´ ınez-Baz´ an, J. Rodr´ ıguez-Rodr´ ıguez, G. Deane, J. L. Monta˜ nes, and J. C. Lasheras, Considerations on bubble fragmentation models, Journal of fluid mechanics 
+
+661 , 159 (2010). [41] A. H˚ akansson, M. Crialesi-Esposito, L. Nilsson, and L. Brandt, A criterion for when an emulsion drop un-dergoing turbulent deformation has reached a critically deformed state, Colloids and Surfaces A: Physicochemi-cal and Engineering Aspects 648 , 129213 (2022). [42] I. Cannon, D. Mor´ on, A. Vela-Mart´ ın, and M. Avila, Strain-driven drop breakup in turbulence, Journal of Physics: Conference Series (2026). [43] A. Vela-Mart´ ın and M. Avila, Large-scale patterns set the predictability limit of extreme events in kolmogorov flow, Journal of Fluid Mechanics 986 , A2 (2024). [44] D. M. Montesdeoca, A. Vela-Mart´ ın, and M. Avila, Probabilistic thresholds of turbulence decay in transi-tional shear flows, Journal of Fluid Mechanics 1022 , A48 (2025). [45] I. Cannon, G. Soligo, and M. E. Rosti, Morphology of clean and surfactant-laden droplets in homogeneous isotropic turbulence, Journal of Fluid Mechanics 987 ,A31 (2024). [46] P. K. Farsoiya, Z. Liu, A. Daiss, R. O. Fox, and L. Deike, Role of viscosity in turbulent drop break-up, Journal of Fluid Mechanics 972 , A11 (2023). [47] A. Rivi` ere and S. Perrard, Bubble breakup probability in turbulent flows, Comptes Rendus. M´ ecanique 353 , 1351 (2025). 
+
+END MATTER Appendix A: The threshold of energy at breakup 
+
+The DNS statistics of the interface energy at breakup (Fig. 6b) show a substantial spread in the values of ξc
+
+at which drops fragment and a systematic shift towards larger ξc as We increases. As discussed in the main text, the breakup threshold should more appropriately be de-fined at the instant when breakup becomes irreversible. 7             
+
+> FIG. 6. a) Cross-correlation between outer straining and H
+> at different Weber numbers (as indicated in the legend). b) Statistics of the interface energy ξc(eq. (5)) at breakup t=tb.The mean interface energy at breakup at the corresponding Weber number is represented a the top of the plot with large markers. c) Same as b but at time t=tb−td.
+
+Based on our results (to be reported in a forthcoming Proceedings paper), this moment occurs approximately one inertial time unit prior to breakup. At that earlier time, the interface energy distribution (Fig. 6c) also ex-hibits significant variability. A more precise determination of the breakup threshold in terms of surface energy is left for future work. Here, we adopt the constant value ξc = 0 .27, as it is close both to the interface energy of two spherical daughter drops with the same total volume as the initial drop, and to the mean breakup energy observed in our DNS in the limit We → 0 (Fig. 6b). 
+
+> Appendix B: The damping rate and coefficient
+
+The inner straining is negative on average (Fig. 2b), its dynamics scale with the capillary time tσ (Fig. 2d) and negatively correlates with the outer straining, op-posite to what the surface energy does (compare Fig. 3 with Fig. 6a). Thus, a suitable model of the inner strain-ing, must be inversely proportional to the surface energy, yield on average a negative value and scale with tσ .The simplest model that complies with these require-ments is a linear damping: 
+
+td
+
+H0
+
+ϑI ≈ − CD ξ, (B1) where the damping rate CD is inversely proportional to 
+
+tσ . After normalizing by the inertial time td, CD ≈
+
+cd/√We. In what follows we show two different meth-ods we use to extract CD from our DNS data.              
+
+> FIG. 7. Different methods to estimate the damping coeffi-cient of the inner straining model, eq. (B1). a) Results of a least square estimation between td
+> H0ϑIand −ξ. b) Ensemble-averaged area Arelaxation of ellipsoidal drops at different We, fitted with eq. (B2) for CD=cd/√We and cd= 3 .5.
+
+In method 1 we perform a least square estimation between td 
+
+> H0
+
+ϑI and −ξ. We excluded from the estimation the transient time in our simulations t ≤ t0 and any point in time close to the breakup time tb, t ≥ tb − td. As the Weber decreases, we observe that CD increases, see fig. 7a. We find that the resultant damping rate can be approximated reasonably well for cd ≈ 3.5. The standard deviation of cd shown in table II has been computed using this method. In method 2 we perform additional DNS at different Weber numbers, but with an initial ellipsoidal drop. We performed Ni = 32 different simulations per Weber num-ber, and for each simulation i we study the evolution of the surface area Ai. The ensemble averaged surface area 
+
+A at each Weber number relaxes to an equilibrium area 
+
+A (∞) at time t → ∞ , as shown in Fig. 7b. We fit: 
+
+A (t) − A (∞)
+
+A (0) − A (∞) ≈ exp ( −CD t/t d) . (B2) The resultant CD is also well approximated with cd ≈
+
+CD
+
+√We for cd ≈ 3.5. We note that recently proposed models for drop and bubble breakup [17, 47] also assumed a linear damping, but with a damping rate scaling proportional to t−1 
+
+> d
+
+. In our model, this assumption would also give rise to a scal-ing with an exponent proportional to We −1. However, we refrain from using this simpler form because (i) it requires two fit parameters, thereby losing predictive power, and (ii) our data clearly supports that both the damping rate (Fig. 7) and the autocorrelation time of the inner strain-ing (Fig. 2d) scale with tσ .8       
+
+> Appendix C: Comparison with the scaling proposed by Coulaloglou and Tavlarides [12]
+> FIG. 8. Re-interpretation of fig. 4. The yellow line corre-sponds to a fit to the model proposed by Coulaloglou and Tavlarides [12], eq. (C4), where the dimensionless constants
+> c1≈14 .8 and c2≈3.9 are obtained from a least-square fit to the data [27].
+
+Here we compare our analytical model with the scal-ing proposed by Coulaloglou and Tavlarides [12]. In their formulation, droplet breakup is treated as a Poisson pro-cess driven by interactions with turbulent eddies, such that 
+
+κ ∝ t−1 
+
+> d
+
+Pbreak , (C1) where t−1 
+
+> d
+
+is the interaction frequency and Pbreak is the probability that an eddy provides sufficient energy for breakup. Breakup occurs when turbulent kinetic energy exceeds surface energy, with 
+
+Eturb ∼ ρε 2/3d11 /3, H ∼ σd 2, (C2) and We ∝ Eturb /H. Assuming an exponential distribu-tion of turbulent fluctuations—consistent with the statis-tics of outer straining measured in Fig. 2a—the breakup probability follows 
+
+Pbreak = exp 
+
+
+
+− H
+
+Eturb 
+
+
+
+= exp  −2 c2 We −1 . (C3) This yields 
+
+κ t d = c1 exp  −2 c2 We −1 , (C4) which provides a reasonable fit to the DNS results (Fig. 8). We stress that this fit requires the determi-nation of two constants: c1 and c2, while, in the case of our model, we only need to fit the constant ˆ κ∞, eq. (14). The model of Coulaloglou and Tavlarides [12] assumes that the time scale of the dissipative forces (in the flow and the drop surface) are very large compared to the time scale of energy injection by the energetic eddies. Thus, in their case, the dissipation is effectively 0. Then breakup happens when a sufficiently intense eddy interacts with the drop. Given the scarcity of these events, the memory-less scaling follows. In contrast, our formulation explicitly accounts for the competition between energy injection and dissipa-tion along the deformation pathway. This distinction is particularly relevant at low Weber numbers (We ≲ 2), where the time between energetic events is comparable to the dissipation timescale. In this regime, drop breakup requires overcoming not only the threshold in H, as in the Coulaloglou and Tavlarides [12] model, but also the damping imposed by both the drop and the surround-ing flow, which becomes increasingly significant as We decreases. The interplay of these effects leads to the stronger We −3/2 scaling observed in our data. In fact, in our model: eq. (14); at infinitesimal Weber numbers We → 0, δ → 0, and the scaling becomes constant 
+
+χ → χ0 = γ π ξ c cd ≈ 7.72. (C5) At large Weber numbers We → ∞ :11 − δ ≈√We 
+
+cdˆtϑO
+
++ 12 + O
+
+
+
+We −1/2
+
+. (C6) Then χ ≈ χ0We 1/2 + 0 .5χ0, and the breakup rate: ˆκWe ≫1 ≈ ˆκ∞ e− χ0 
+
+> cdˆtϑO
+> We −1
+
+. (C7) Note that the dependency on the dissipation cd vanishes at the high Weber number limit, in agreement with the derivation of Coulaloglou and Tavlarides [12].

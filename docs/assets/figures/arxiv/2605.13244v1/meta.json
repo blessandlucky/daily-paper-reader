@@ -1,0 +1,62 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2605.13244v1/fig-001.webp",
+      "caption": "FIG. 1. Block-size dependence of bulk-fluctuation estimators at T = 300K. Liquid isothermal compressibility βT [(a),(b)] and the planarlimit value δ planar",
+      "page": 8,
+      "index": 1,
+      "width": 1058,
+      "height": 732
+    },
+    {
+      "url": "assets/figures/arxiv/2605.13244v1/fig-002.webp",
+      "caption": "FIG. 4. Excess vapor and liquid pressures for spherical droplets. Excess vapor and liquid pressures ∆Pv and ∆Pl for spherical droplets as functions of droplet radius R, assumed Tolman length δ , and temperature T , evaluated from the IAPWS-IF97 industrial formulation. Panel (a) shows ∆Pv in kPa and panel (b) shows ∆Pl in MPa over R = 5–75nm, δ =−1.1 to −0.4Å, and T = 280,340,400K.",
+      "page": 19,
+      "index": 2,
+      "width": 1035,
+      "height": 450
+    },
+    {
+      "url": "assets/figures/arxiv/2605.13244v1/fig-003.webp",
+      "caption": "FIG. 5. Relative density deviations in liquid and vapor. Relative density deviations ∆ρl and ∆ρv, defined with respect to planar liquid–vapor coexistence (T,P0), are shown for water as functions of temperature T . The values were evaluated from the IAPWS-IF97 industrial formulation using capillary-equilibrium pressure shifts for spherical droplets with δTolman = −0.7Å. Panel (a) shows the liquid response, and panel (b) shows the vapor response. Colors indicate the droplet radius R, and both panels use logarithmic vertical scales.",
+      "page": 19,
+      "index": 3,
+      "width": 1038,
+      "height": 411
+    },
+    {
+      "url": "assets/figures/arxiv/2605.13244v1/fig-004.webp",
+      "caption": "FIG. 3. Chemical potentials µl and µv of water as functions of temperature T , evaluated from the IAPWS-IF97 industrial formulation. Dashed lines show µl(Psat(T ),T ) and µv(Psat(T ),T ) along planar liquid–vapor coexistence, where P0 = Psat(T ) and µl = µv. Solid lines show the same quantities evaluated at the shifted pressures Psat(T )+∆Pl(Tref) and Psat(T )+∆Pv(Tref) corresponding to a spherical droplet with R = 10nm, δ = −0.7Å, and Tref = 300K, for which ∆Pl(Tref) = 14.538MPa and ∆Pv(Tref) = 0.393kPa. The construction illustrates how curvature-induced pressure shifts displace the liquid and vapor branches away from their planar coexistence values; the shifts are held fixed at their reference-state values and the figure is intended only as a geometric illustration.",
+      "page": 17,
+      "index": 4,
+      "width": 1032,
+      "height": 448
+    },
+    {
+      "url": "assets/figures/arxiv/2605.13244v1/fig-005.webp",
+      "caption": "FIG. 6. Water-specific hierarchy support for the adopted density-based mixed balance. Shown is the signed ratio R = S2/S1, where S1 denotes the explicitly retained ∆-free sector of orders h0 and h1, and S2 denotes the explicitly retained sector of order h2 in the mixed balance inherited from Appendix E. The thermodynamic input is evaluated for water using the IAPWS-IF97 formulation. Over the nanometric regime emphasized in the manuscript and for moderate choices of δTolman, the magnitude |R| remains typically at the level 10−2–10−1, supporting the practical subdominance of the retained h2-sector relative to the retained ∆-free sector.",
+      "page": 27,
+      "index": 5,
+      "width": 897,
+      "height": 535
+    },
+    {
+      "url": "assets/figures/arxiv/2605.13244v1/fig-006.webp",
+      "caption": "FIG. 2. Planar-limit value δ planar Tolman along coexistence from IAPWS-IF97. Temperature dependence of δ planar Tolman(T ) evaluated on coexistence for T = 273–473K at P=Psat(T ). The red curve is obtained from Eq. (13) using analytic pressure derivatives of the saturated-liquid specific Gibbs free energy from IF97 Region 1 and the saturation-pressure relation from IF97 Region 4. The blue dashed curve shows the Blokhuis–Kuipers relation, while the blue symbols show the Bartell relation, Eqs. (3) and (2), evaluated at the same coexistence state and using the same γ∞(T ) input (Methods; Supplementary Note S3). Shaded regions quantify input-accuracy effects associated with IF97 and γ∞(T ); the inner band represents the k = 1 standard-uncertainty propagation, while the outer envelope corresponds to a conservative tolerance representation. These bands reflect deterministic input tolerances of empirical correlations rather than statistical sampling uncertainty.",
+      "page": 9,
+      "index": 6,
+      "width": 1058,
+      "height": 506
+    },
+    {
+      "url": "assets/figures/arxiv/2605.13244v1/fig-007.webp",
+      "caption": "TABLE I. Simulation settings for homogeneous-liquid (N,P,T ) benchmarks at T = 300 K. Shown are the key parameters for SPC/E and TIP4P/2005 simulations at coexistence pressure P0 = Psat(T ). Model-specific force-field values and detailed LAMMPS settings are given in Supplementary Notes S1 and S2.",
+      "page": 5,
+      "index": 7,
+      "width": 514,
+      "height": 267
+    }
+  ]
+}
