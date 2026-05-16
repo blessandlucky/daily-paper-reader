@@ -1,0 +1,38 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2605.10089v1/fig-001.webp",
+      "caption": "FIG. 3. Confinement-induced structural regimes in ionic liquids. Schematic illustration of the evolution of ionic organization as a function of confinement size H relative to the intrinsic ionic length scales. (a) Bulk-like regime (H ≫ ξcorr). In the absence of confinement, the ionic liquid exhibits an isotropic, dense, and disordered structure characterized by shortrange coordination and weak intermediate-range correlations. Cations (blue) and anions (red) are homogeneously distributed, forming a nanostructured liquid without long-range order. (b) Layered ordered regime (H ≃ ℓion). When the confinement size becomes comparable to the ionic diameter, steric constraints induce quasi-two-dimensional ordering. (Cross-sectional view perpendicular to the pore direction.) The system organizes into a densely packed layered arrangement parallel to the confining surfaces, with strong positional correlations within each layer while maintaining overall dense packing. (c) Correlated network regime (H ≤ ξcorr). At stronger confinement, comparable to or smaller than the electrostatic correlation length, the structure transitions to a heterogeneous, percolating ionic network. Cations and anions form interconnected clusters and channels with reduced local ordering and enhanced like-charge proximity, reflecting the dominance of collective electrostatic correlations. This sequence highlights the crossover from bulk-like liquid behavior to confinement-dominated structural organization governed by the interplay of steric constraints and electrostatic correlations.",
+      "page": 6,
+      "index": 1,
+      "width": 852,
+      "height": 521
+    },
+    {
+      "url": "assets/figures/arxiv/2605.10089v1/fig-002.webp",
+      "caption": "FIG. 1. Hierarchy of structural and electrostatic correlations in liquid electrolytes. Schematic illustration of the progressive coarse-graining from local coordination to collective electrostatics across increasing length scales. (a): First coordination shell (∼ 0.1 nm). A lithium ion (blue) is coordinated by a mixed environment comprising one counter-ion (red) and three solvent molecules (gray), defining a minimal anisotropic local solvation structure. The dashed circle indicates the coordination radius r, which delimits the first shell and sets the shortest structural length scale governing local ion–environment interactions. (b): Ion pairing and clustering (∼ 1 nm). At intermediate length scales, ions form dynamically fluctuating, quasi-neutral aggregates in which cations and anions are intercalated rather than segregated. These clusters include contact and solvent-shared ion pairs, as well as higher-order motifs, embedded in a background of solvent molecules. This regime reflects the competition between short-range coordination forces and longer-range Coulomb interactions, leading to heterogeneous but locally charge-balanced structures. (c): Collective electrostatics (> 5 nm). At larger scales, the system is more appropriately described in terms of collective charge density fluctuations and screened electrostatic fields. The discrete molecular structure is progressively coarse-grained into an effective medium, where many-body correlations give rise to emergent screening behavior and long-wavelength response. The bottom axis summarizes the corresponding structural length scales, highlighting the crossover from molecular coordination to mesoscale clustering and finally to continuum-like electrostatic behavior. Colors denote lithium ions (blue), anions (red), and solvent molecules (gray).",
+      "page": 2,
+      "index": 2,
+      "width": 852,
+      "height": 485
+    },
+    {
+      "url": "assets/figures/arxiv/2605.10089v1/fig-003.webp",
+      "caption": "FIG. 4. Schematic mechanisms of ionic transport in liquid electrolytes. Three idealized transport mechanisms are illustrated. (a) Vehicular transport. The ion migrates together with its solvation shell, forming a solvated complex that moves as a single unit through the liquid. In this regime, ion mobility is largely controlled by the diffusion of the entire solvated species and is therefore strongly coupled to the viscosity of the medium. (b) Hopping transport. The ion moves through successive exchanges between coordination sites. Rather than transporting its entire solvation environment, the ion transfers between neighboring solvent cages or transient coordination environments, producing a sequence of short displacement events. (c) Cluster or correlated transport. At higher salt concentrations, ions may move as part of correlated ionic aggregates. In this regime, cations and anions form transient clusters whose collective motion contributes to charge transport. Such correlated migration is commonly associated with strong electrostatic correlations and ion pairing in concentrated electrolytes and ionic liquids.",
+      "page": 7,
+      "index": 3,
+      "width": 852,
+      "height": 421
+    },
+    {
+      "url": "assets/figures/arxiv/2605.10089v1/fig-004.webp",
+      "caption": "FIG. 5. Multiscale computational framework for correlated electrolytes with integrated machine learning. (a) Molecular scale. Electronic-structure calculations (e.g., DFT) provide local charge distributions, polarization, and interaction parameters that define the microscopic building blocks. (b) Atomistic scale. Molecular dynamics simulations generate trajectories and structural/dynamical observables, including coordination environments, local composition, residence times, and binding energies. (c) Data-driven coarse variables. Machine-learning approaches extract low-dimensional descriptors and learn effective representations of ion association, clustering, and correlation statistics from atomistic data. (d) Mesoscale coarse-grained model. Reduced models constructed from these descriptors capture collective organization and transport at intermediate length scales through effective interactions and coarse-grained force fields. (e) Continuum scale. Macroscopic electrostatic response is described by continuum equations, here represented by Poisson’s equation ∇·(ε∇ϕ) = −ρ, yielding effective material properties and transport coefficients. (f) Device scale. Continuum predictions enable evaluation of device-level performance metrics, including current–voltage characteristics, power density, and degradation. The central band highlights the role of artificial intelligence and machine learning in linking scales through representation learning and surrogate modeling, enabling efficient parameterization and information transfer. Arrows indicate forward propagation across scales, while the bottom pathway denotes cross-scale feedback, whereby models and parameters are iteratively refined to ensure consistency across the hierarchy.",
+      "page": 9,
+      "index": 4,
+      "width": 744,
+      "height": 744
+    }
+  ]
+}
