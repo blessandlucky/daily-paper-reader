@@ -1,0 +1,38 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2605.22214v1/fig-001.webp",
+      "caption": "TABLE I. Configurations of surface tensions and resulting theoretical and measured Neumann angles in the liquid lens benchmark. The results are plotted in Fig. 2 (b).",
+      "page": 6,
+      "index": 1,
+      "width": 1062,
+      "height": 259
+    },
+    {
+      "url": "assets/figures/arxiv/2605.22214v1/fig-002.webp",
+      "caption": "FIG. 2. (a) Visualisation of liquid lens setup for configurations ‡ and † labelled in Table I. Symbols associated with the measured interior (square) and exterior (circle) angles between components are shown. Due to symmetry some angles are identical, so we take the average and plot them together. We set N = 6, and initially set C5 =C6 = 0 to capture an N = 4 subsystem. (b) Measured Neumann angles plotted against analytical predictions. (c) Maximum value of |Ci| over time for absent components with the configuration †, plotted with and without the reduction consistency term φ j in the flux. The lines for C5 and C6 overlap. (d) Fluid C3 plotted in a liquid lens setup with N = 4. We observe nucleation at triple points unless we apply φ j. (e) Time evolution of an initially stationary triple Janus droplet with the non-conservative surface tension force Fs = ∑i µi∇Ci and the conservative surface tension force given in Eq. 34. (f) Magnitude of the average velocity of the Janus droplet in the x direction over time.",
+      "page": 7,
+      "index": 2,
+      "width": 1054,
+      "height": 674
+    },
+    {
+      "url": "assets/figures/arxiv/2605.22214v1/fig-003.webp",
+      "caption": "FIG. 6. (a) Microfluidic design for generating triple-emulsion droplets, showing the initial state at t = 0. Physical dimensions of the design are annotated and the arrows denote flow directions from the inlets. The visualisation is cut off before the edge of the simulation domain on the right hand side. (b) Time evolution showing the formation of an emulsion droplet from the injected fluids. The surface tensions are configured to encourage cloaking of fluids 3 (yellow) and 4 (blue) by fluid 2 (pink).",
+      "page": 10,
+      "index": 3,
+      "width": 511,
+      "height": 912
+    },
+    {
+      "url": "assets/figures/arxiv/2605.22214v1/fig-004.webp",
+      "caption": "FIG. 5. (a) Visualisation of PaLS setup, with a droplet of fluid 2 (pink) on alternating patches of fluid 3 (yellow) and fluid 4 (blue) surrounded by fluid 1 (purple). Droplets on PaLS can become pinned on lubricant-lubricant-air contact lines8. Applying a large enough body force Fb allows the droplet to overcome the pinning force and subsequently travel over the surface. (b) Centre of mass velocity of droplets moving on PaLS, with varying Fb.",
+      "page": 9,
+      "index": 4,
+      "width": 1057,
+      "height": 264
+    }
+  ]
+}
