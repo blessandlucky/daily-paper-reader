@@ -1,0 +1,54 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2607.04633v1/fig-001.webp",
+      "caption": "Figure 1: Workflow for transferable electrolyte force field optimization and high-throughput physicochemical property dataset construction.",
+      "page": 7,
+      "index": 1,
+      "width": 882,
+      "height": 477
+    },
+    {
+      "url": "assets/figures/arxiv/2607.04633v1/fig-002.webp",
+      "caption": "Figure 4: Chemical space of screened electrolyte formulations from the EDB-1 database and cross-platform comparison of ionic conductivity. (a) Chemical space of the test 231 electrolyte formulations, covering LiPF6-based systems with common solvents (DEC, EC, DMC, DME, EMC); (b) Parity plot of MD-predicted versus experimental ionic conductivity for selected LiPF6-based electrolytes, with Pearson correlation coefficients (R) and rootmean-square errors (RMSE) presented for the Tianqiong platform and a selected GPU (RTX 4090).",
+      "page": 22,
+      "index": 2,
+      "width": 881,
+      "height": 1166
+    },
+    {
+      "url": "assets/figures/arxiv/2607.04633v1/fig-003.webp",
+      "caption": "Figure 2: Density and conductivity prediction performance of models before and after finetuning. (a)(b) respectively show the density and Onsager conductivity predicted by the initial OPLS force field with different charge scaling factors vs experimental values; (c) shows density predicted by initial and optimized force field within charge scaling factor of 0.7; (d) shows the conductivity predicted by optimized force field within charge scaling factor of 0.7, performance of formulas with LiPF6 is highlighted by red stars.",
+      "page": 17,
+      "index": 3,
+      "width": 944,
+      "height": 689
+    },
+    {
+      "url": "assets/figures/arxiv/2607.04633v1/fig-004.webp",
+      "caption": "Figure 6: t-SNE 2D embedding of the single-salt electrolyte property dataset. All embeddings are generated using five core physicochemical properties: density, Onsager ionic conductivity, Li+ self-diffusion coefficient, Green-Kubo shear viscosity, and relative dielectric constant. Panels are colored by (a) salt type, with LiPF6, LiBF4, LiClO4, quaternary ammonium salts (QAS), and other lithium salts highlighted; (b) salt concentration; (c) temperature; (d) experimental ionic conductivity; (e) MD-predicted Onsager ionic conductivity; (f) density; (g) Li+ self-diffusion coefficient; (h) shear viscosity; and (i) relative dielectric constant. Green-Kubo viscosity calculations frequently fail to reach full convergence for systems at low temperatures and high salt concentrations. As the t-SNE embedding requires complete data for all five properties per sample, formulations with non-convergent viscosity trajectories were excluded entirely, yielding a final set of 7868 valid single-salt electrolyte formulations out of 8077 total candidates.",
+      "page": 27,
+      "index": 4,
+      "width": 881,
+      "height": 884
+    },
+    {
+      "url": "assets/figures/arxiv/2607.04633v1/fig-005.webp",
+      "caption": "Figure 5: Parity plots of MD-predicted vs experimental ionic conductivity for single-salt electrolyte formulations screened from the EDB-1 database. (a) Conductivity calculated using the Onsager transport theory; (b) Conductivity calculated using the Nernst-Einstein (NE) approximation. Green circles represent all salt systems, red stars denote LiPF6-based formulations, and blue crosses indicate systems containing BF4 − or ClO4 − anions. Pearson correlation coefficients (R) and root-mean-square errors (RMSE) are provided for each subset.",
+      "page": 24,
+      "index": 5,
+      "width": 944,
+      "height": 337
+    },
+    {
+      "url": "assets/figures/arxiv/2607.04633v1/fig-006.webp",
+      "caption": "Figure 3: System-size and time dependence of transport properties at different salt concentrations. (a), (c) show the convergence of Li+ self-diffusion coefficient and Nernst-Einstein (NE) conductivity as functions of inverse box length, respectively. Dashed lines in (c) denote experimental conductivity values. Blue, orange, green, and purple symbols correspond to salt concentrations of 2.0, 1.5, 1.0, and 0.5 mol/L, respectively. (b), (d) show the time convergence of the corresponding properties at salt concentrations of 1.0 mol/L.",
+      "page": 20,
+      "index": 6,
+      "width": 866,
+      "height": 616
+    }
+  ]
+}

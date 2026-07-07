@@ -1,0 +1,78 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2606.31828v1/fig-001.webp",
+      "caption": "Figure 6: Energy-morphology representation of the compatibility score.",
+      "page": 11,
+      "index": 1,
+      "width": 741,
+      "height": 629
+    },
+    {
+      "url": "assets/figures/arxiv/2606.31828v1/fig-002.webp",
+      "caption": "Figure 2: Total surface free energy and dispersive/polar OWRK contributions.",
+      "page": 7,
+      "index": 2,
+      "width": 808,
+      "height": 477
+    },
+    {
+      "url": "assets/figures/arxiv/2606.31828v1/fig-003.webp",
+      "caption": "Figure 3: Wetting envelopes reconstructed from the OWRK method. The curves indicate the region of polar/dispersive liquid surface-tension composition compatible with surface wettability.",
+      "page": 7,
+      "index": 3,
+      "width": 761,
+      "height": 387
+    },
+    {
+      "url": "assets/figures/arxiv/2606.31828v1/fig-004.webp",
+      "caption": "Figure 5: Compatibility maps for the eight electrode/electrolyte pairs: (A) estimated work of adhesion W12; (B) estimated interfacial energy γ12; (C) compatibility index I = 0.5Senergy + 0.5Smorph,ely; (D) resulting compatibility ranking.",
+      "page": 10,
+      "index": 4,
+      "width": 950,
+      "height": 650
+    },
+    {
+      "url": "assets/figures/arxiv/2606.31828v1/fig-005.webp",
+      "caption": "Figure 1: Experimental workflow adopted for surface-based electrode/electrolyte compatibility screening. (a) Optical drop-shape analysis system used for contact-angle and SFE measurements; (b) detail of controlled droplet deposition on the sample surface; (c) confocal microscopy system used for three-dimensional surface-topography acquisition.",
+      "page": 3,
+      "index": 5,
+      "width": 950,
+      "height": 345
+    },
+    {
+      "url": "assets/figures/arxiv/2606.31828v1/fig-006.webp",
+      "caption": "Table 3: ISO 25178-2 roughness parameters of the analysed electrode and electrolyte materials.",
+      "page": 8,
+      "index": 6,
+      "width": 950,
+      "height": 223
+    },
+    {
+      "url": "assets/figures/arxiv/2606.31828v1/fig-007.webp",
+      "caption": "Figure 4: Power spectral density of the surface roughness.",
+      "page": 8,
+      "index": 7,
+      "width": 741,
+      "height": 415
+    },
+    {
+      "url": "assets/figures/arxiv/2606.31828v1/fig-008.webp",
+      "caption": "Table 1: ISO 25178 topographic parameters considered in the surface-morphology analysis.",
+      "page": 4,
+      "index": 8,
+      "width": 781,
+      "height": 255
+    },
+    {
+      "url": "assets/figures/arxiv/2606.31828v1/fig-009.webp",
+      "caption": "Table 4: Compatibility matrix: energetic descriptors, morphological score and integrated index.",
+      "page": 9,
+      "index": 9,
+      "width": 950,
+      "height": 277
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2606.29843v1/fig-001.webp",
+      "caption": "FIG. 3. (a): Kinetic energy time series the DNS run used to obtain the Eulerian velocity time signals. Solid line indicates the region from which data is extracted. (b): An indicative selection of the Eulerian points where the velocity time signals are recorded.",
+      "page": 15,
+      "index": 1,
+      "width": 750,
+      "height": 364
+    },
+    {
+      "url": "assets/figures/arxiv/2606.29843v1/fig-002.webp",
+      "caption": "FIG. 8. One-dimensional cuts of uz through the center of bubble along the vertical (top) and horizontal (bottom) directions for various reconstructions of the four bubbles in Fig. 7. Interpolation is 2d cubic order interpolation using scipy’s griddata functionality. The shaded region indicates the location of the bubbles. The bubble centers are (xc, zc), and D is the bubble diameter.",
+      "page": 7,
+      "index": 2,
+      "width": 977,
+      "height": 617
+    },
+    {
+      "url": "assets/figures/arxiv/2606.29843v1/fig-003.webp",
+      "caption": "FIG. 7. A sample 2d slice of the vertical velocity field uz (leftmost column): ground truth (top row), reconstruction using the diffusion model (middle row) and filling using interpolation (bottom row). On right are the zoomed in plots of the velocity field around each bubble. The red lines demarcate bubble-liquid interface.",
+      "page": 7,
+      "index": 3,
+      "width": 1018,
+      "height": 556
+    },
+    {
+      "url": "assets/figures/arxiv/2606.29843v1/fig-004.webp",
+      "caption": "FIG. 13. Pdf of (a) the out-of-plane derivative of uy, (b) the out-of-plane-derivative of uz, and (c) the divergence of the velocity field. For (a) and (b) we have plotted the pdfs standardized with the ground truth standard deviation.",
+      "page": 10,
+      "index": 4,
+      "width": 1052,
+      "height": 408
+    },
+    {
+      "url": "assets/figures/arxiv/2606.29843v1/fig-005.webp",
+      "caption": "FIG. 2. Schematic for the U-Net architecture used in the present work. The input is the noisy image Xt at step t which passes first through the down-sampling (decoding) stack and then the up-sampling (encoding) stack, with the output being the slightly less noisy image Xt−1. Each down-sampling stage decreases the resolution by a factor of 2. The starting resolution is 256 Attention is applied at the last three stages with the resolution 32, 16 and 8 respectively. The down-sampling and up-sampling stacks are linked via skip connections (concatenation).",
+      "page": 14,
+      "index": 5,
+      "width": 1061,
+      "height": 957
+    },
+    {
+      "url": "assets/figures/arxiv/2606.29843v1/fig-006.webp",
+      "caption": "FIG. 9. Pdf of horizontal velocity (a) and its derivatives (b, c) and pdf of vertical velocity (d) and its derivatives (e, f) for the ground truth, reconstruction and interpolation inside the bubble phase. All the pdfs are standardized by the variance of the ground truth data.",
+      "page": 8,
+      "index": 6,
+      "width": 881,
+      "height": 591
+    },
+    {
+      "url": "assets/figures/arxiv/2606.29843v1/fig-007.webp",
+      "caption": "FIG. 10. Pdfs of the transverse and longitudinal velocity increments δT,L r uz for r = D/3 (a,d), the corresponding transverse and longitudinal second-order structure functions (b,e), and the associated flatness (c,f). Only increments taken across the bubble–liquid interface are included.",
+      "page": 8,
+      "index": 7,
+      "width": 881,
+      "height": 592
+    },
+    {
+      "url": "assets/figures/arxiv/2606.29843v1/fig-008.webp",
+      "caption": "FIG. 5. (a): A zoom in of the uz(t) signal showing various possible reconstructions as well as filling by cubic interpolation. The shaded regions indicates the window where a bubble crosses the Eulerian point. (b): The energy spectrum in the frequency space E(ω).",
+      "page": 16,
+      "index": 8,
+      "width": 1061,
+      "height": 1001
+    }
+  ]
+}
