@@ -1,0 +1,164 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-07-08T21:32:04.498144+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 1,
+    "deep_cap": 6,
+    "deep_selected": 1,
+    "quick_candidates": 3,
+    "quick_skim_target": 11,
+    "quick_selected": 3
+  },
+  "deep_dive": [
+    {
+      "id": "2607.06064v1",
+      "source": "arxiv",
+      "title": "A Time-Domain Pressure-Interface Model for Gas Bubble Dynamics with Surface Tension: Well-Posedness, Classical Limits, and Resonance Branches",
+      "abstract": "We derive and analyze a time-domain pressure--interface evolution model for a compressible gas bubble in a compressible liquid with surface tension. Starting from the nonlinear two-phase Euler free-boundary problem and linearizing about a spherical Young--Laplace equilibrium, we obtain a coupled bulk--surface hyperbolic system for the liquid pressure, the gas pressure, and the normal displacement of the interface.   The time-domain analysis is complicated by the fact that the surface-tension quadratic form is indefinite: the \\(Y_0^0\\) component is the volume-changing breathing mode, the \\(Y_1^m (m = \\{-1,0,1\\})\\) components are neutral translations, and only the higher spherical harmonics give a coercive shape-mode energy. We exploit this decomposition. The coercive sector is treated by a \\(C^0\\)-semigroup argument, while the breathing mode is analyzed separately by Fourier--Laplace methods. This yields well-posedness for admissible finite-energy data and classical solutions under the natural compatibility conditions.   We then justify two limiting descriptions with quantitative error estimates. In an acoustic quasi-static regime, the model reduces to the linearized Rayleigh--Plesset equation for the breathing mode and to the linearized Rayleigh--Lamb equations for the shape modes. In a different regime, it reduces to the frozen-interface acoustic transmission model. Finally, a frequency-domain analysis identifies the corresponding Minnaert, Rayleigh--Lamb, and Fabry--Pérot-type resonance mechanisms as different components and limits of the same pressure--interface formulation.",
+      "authors": [
+        "Long Li",
+        "Mourad Sini"
+      ],
+      "primary_category": "math.AP",
+      "categories": [
+        "math.AP"
+      ],
+      "published": "2026-07-07T09:36:47+00:00",
+      "link": "https://arxiv.org/pdf/2607.06064v1",
+      "tags": [
+        "keyword:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries",
+        "query:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries"
+      ],
+      "llm_score": 8.5,
+      "llm_evidence_en": "Time-domain pressure-interface model for gas bubble dynamics with surface tension",
+      "llm_evidence_cn": "带表面张力的气泡动力学时域压力-界面模型",
+      "llm_evidence": "带表面张力的气泡动力学时域压力-界面模型",
+      "canonical_evidence": "带表面张力的气泡动力学时域压力-界面模型",
+      "llm_tldr_en": "Derives a rigorous mathematical model for compressible gas bubble dynamics and interface evolution.",
+      "llm_tldr_cn": "为可压缩气泡动力学和界面演化推导了严谨的数学模型。",
+      "llm_tldr": "为可压缩气泡动力学和界面演化推导了严谨的数学模型。",
+      "llm_tags": [
+        "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries"
+      ],
+      "matched_query_tag": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "matched_query_text": "Bubble evolution dynamics",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "2607.00960v1",
+      "source": "arxiv",
+      "title": "Lock-exchange flow regimes under low air Froude number bubble curtains",
+      "abstract": "The flow and density field characteristics around a bubble curtain in a laboratory scale lock-exchange setup are investigated using two-phase large-eddy simulations. We study the detailed hydrodynamics and show that there are three qualitatively distinct (sub)regimes within the previously classified breakthrough regime. The occurrence of these regimes depends not only on air Froude number that characterises the relative strength of the bubble curtain and the gravity current, but also on an additional non-dimensional parameter: the density ratio between the salt and fresh water. The dependence on this additional parameter is also observed in how effective bubble curtains are in blocking the transport of salt to the fresh part of the lock. Hence, it has important implications for the optimisation of bubble curtains in ship locks.",
+      "authors": [
+        "Shravan K. R. Raaghav",
+        "Herman J. H. Clercx",
+        "Matias Duran-Matute"
+      ],
+      "primary_category": "physics.flu-dyn",
+      "categories": [
+        "physics.flu-dyn"
+      ],
+      "published": "2026-07-01T13:56:59+00:00",
+      "link": "https://arxiv.org/pdf/2607.00960v1",
+      "tags": [
+        "keyword:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries",
+        "query:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries"
+      ],
+      "llm_score": 7.5,
+      "llm_evidence_en": "Two-phase large-eddy simulations of bubble curtains and hydrodynamics",
+      "llm_evidence_cn": "气泡幕及其流体动力学的双相大涡模拟",
+      "llm_evidence": "气泡幕及其流体动力学的双相大涡模拟",
+      "canonical_evidence": "气泡幕及其流体动力学的双相大涡模拟",
+      "llm_tldr_en": "Analyzes hydrodynamics of bubble curtains in density-stratified flows using two-phase simulations.",
+      "llm_tldr_cn": "通过双相模拟分析密度分层流动中气泡幕的流体动力学特征。",
+      "llm_tldr": "通过双相模拟分析密度分层流动中气泡幕的流体动力学特征。",
+      "llm_tags": [
+        "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries"
+      ],
+      "matched_query_tag": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "matched_query_text": "Bubble evolution dynamics",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2607.03301v1",
+      "source": "arxiv",
+      "title": "Accelerating droplet-laden Stokes flow simulations with hierarchical surrogate modeling",
+      "abstract": "We present a surrogate modeling strategy for Stokes flows with liquid droplets suspended in a carrier fluid. Our approach is based on a multi-fidelity framework. At the lowest fidelity, droplets are treated as passive tracers, neglecting their influence on the ambient flow field. Building on this approximation, we derive a PDE that represents the current modeling error. This error equation is then solved approximately to correct the flow field and the procedure is iterated. Two fidelities are employed in an alternating fashion: Stokes flow in the absence of droplets and flow around a single droplet in free space. By systematically combining these models, the method captures droplet-flow, droplet-boundary, and droplet-droplet interactions. For geometrically similar droplets, we further develop an efficient offline-online strategy that exploits this structure by reusing precomputed single-droplet solutions. Numerical experiments demonstrate the accuracy and efficiency of the proposed surrogate in a variety of tests, including scenarios with up to 10,000 droplets. Notably, we show that the proposed surrogate achieves substantially reduced computational cost compared to fully resolved multi-fluid simulations with state-of-the-art software.",
+      "authors": [
+        "Davide Pradovera",
+        "Thomas Frachon",
+        "Sara Zahedi"
+      ],
+      "primary_category": "math.NA",
+      "categories": [
+        "math.NA",
+        "physics.flu-dyn"
+      ],
+      "published": "2026-07-03T13:11:48+00:00",
+      "link": "https://arxiv.org/pdf/2607.03301v1",
+      "tags": [
+        "keyword:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries",
+        "query:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Surrogate modeling for droplet-laden Stokes flows and multiphase interactions",
+      "llm_evidence_cn": "含液滴斯托克斯流及多相相互作用的代理模型",
+      "llm_evidence": "含液滴斯托克斯流及多相相互作用的代理模型",
+      "canonical_evidence": "含液滴斯托克斯流及多相相互作用的代理模型",
+      "llm_tldr_en": "Develops a multi-fidelity framework for simulating droplet-flow and droplet-boundary interactions.",
+      "llm_tldr_cn": "开发了一种用于模拟液滴-流场及液滴-边界相互作用的多保真度框架。",
+      "llm_tldr": "开发了一种用于模拟液滴-流场及液滴-边界相互作用的多保真度框架。",
+      "llm_tags": [
+        "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries"
+      ],
+      "matched_query_tag": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "matched_query_text": "Bubble evolution dynamics",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2606.31266v1",
+      "source": "arxiv",
+      "title": "On existence of a collapsed bubble with surface tension in viscous incompressible fluid",
+      "abstract": "We consider the one-phase free boundary problem for the incompressible Navier-Stokes equations in $\\mathbb{R}^d$ ($d\\ge2$). The surface tension is taken into account. The initial domain, which is the outside of a bubble, is an exterior domain. We prove that there exists a bubble evolving by this free boundary problem which collapses in a finite time without blowing up of principal curvatures of its boundary. In other words, what is called a splash singularity is formed in a finite time. This type of result is also valid for a bounded initial domain. To construct such an example, we introduce the notion of a domain with $δ$-wing which is a flat Riemannian manifold that is not embedded in $\\mathbb{R}^d$, but it covers the $δ$-neighborhood of the original domain whose boundary is self-intersected.",
+      "authors": [
+        "Yoshikazu Giga",
+        "Zhongyang Gu"
+      ],
+      "primary_category": "math.AP",
+      "categories": [
+        "math.AP"
+      ],
+      "published": "2026-06-30T07:42:06+00:00",
+      "link": "https://arxiv.org/pdf/2606.31266v1",
+      "tags": [
+        "keyword:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries",
+        "query:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "Mathematical modeling of bubble evolution and collapse in viscous fluids",
+      "llm_evidence_cn": "粘性流体中气泡演化和坍塌的数学模型",
+      "llm_evidence": "粘性流体中气泡演化和坍塌的数学模型",
+      "canonical_evidence": "粘性流体中气泡演化和坍塌的数学模型",
+      "llm_tldr_en": "Provides a rigorous mathematical analysis of bubble collapse and singularity formation in incompressible fluids.",
+      "llm_tldr_cn": "对不可压缩流体中的气泡坍塌和奇异性形成进行了严谨的数学分析。",
+      "llm_tldr": "对不可压缩流体中的气泡坍塌和奇异性形成进行了严谨的数学分析。",
+      "llm_tags": [
+        "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries"
+      ],
+      "matched_query_tag": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "matched_query_text": "Bubble evolution dynamics",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    }
+  ]
+}

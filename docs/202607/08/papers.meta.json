@@ -1,0 +1,69 @@
+{
+  "label": "2026-07-08",
+  "date": "2026-07-08",
+  "generated_at": "2026-07-08T21:34:52",
+  "count": 4,
+  "papers": [
+    {
+      "paper_id": "202607/08/2607.06064v1-a-time-domain-pressure-interface-model-for-gas-bubble-dynamics-with-surface-tension-well-posedness-classical-limits-and-resonance-branches",
+      "section": "deep",
+      "title_en": "A Time-Domain Pressure-Interface Model for Gas Bubble Dynamics with Surface Tension: Well-Posedness, Classical Limits, and Resonance Branches",
+      "authors": "Long Li, Mourad Sini",
+      "date": "2026-07-07",
+      "pdf": "https://arxiv.org/pdf/2607.06064v1",
+      "score": "8.5",
+      "evidence": "带表面张力的气泡动力学时域压力-界面模型",
+      "tldr": "本研究针对含表面张力的可压缩液体中气泡动力学，推导并分析了一个时域压力-界面演化模型。通过对非线性两相欧拉自由边界问题进行线性化，建立了液体压力、气体压力与界面位移的耦合双曲系统。研究解决了表面张力二次型不定性带来的分析难题，证明了模型的适定性，并验证了其在声学准静态等极限情况下的有效性，统一了Minnaert和Rayleigh-Lamb等共振机制。",
+      "tags": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "abstract_en": "We derive and analyze a time-domain pressure--interface evolution model for a compressible gas bubble in a compressible liquid with surface tension. Starting from the nonlinear two-phase Euler free-boundary problem and linearizing about a spherical Young--Laplace equilibrium, we obtain a coupled bulk--surface hyperbolic system for the liquid pressure, the gas pressure, and the normal displacement of the interface.   The time-domain analysis is complicated by the fact that the surface-tension quadratic form is indefinite: the \\(Y_0^0\\) component is the volume-changing breathing mode, the \\(Y_1^m (m = \\{-1,0,1\\})\\) components are neutral translations, and only the higher spherical harmonics give a coercive shape-mode energy. We exploit this decomposition. The coercive sector is treated by a \\(C^0\\)-semigroup argument, while the breathing mode is analyzed separately by Fourier--Laplace methods. This yields well-posedness for admissible finite-energy data and classical solutions under the natural compatibility conditions.   We then justify two limiting descriptions with quantitative error estimates. In an acoustic quasi-static regime, the model reduces to the linearized Rayleigh--Plesset equation for the breathing mode and to the linearized Rayleigh--Lamb equations for the shape modes. In a different regime, it reduces to the frozen-interface acoustic transmission model. Finally, a frequency-domain analysis identifies the corresponding Minnaert, Rayleigh--Lamb, and Fabry--Pérot-type resonance mechanisms as different components and limits of the same pressure--interface formulation.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202607/08/2607.00960v1-lock-exchange-flow-regimes-under-low-air-froude-number-bubble-curtains",
+      "section": "quick",
+      "title_en": "Lock-exchange flow regimes under low air Froude number bubble curtains",
+      "authors": "Shravan K. R. Raaghav, Herman J. H. Clercx, Matias Duran-Matute",
+      "date": "2026-07-01",
+      "pdf": "https://arxiv.org/pdf/2607.00960v1",
+      "score": "7.5",
+      "evidence": "气泡幕及其流体动力学的双相大涡模拟",
+      "tldr": "本研究利用双相大涡模拟探讨了实验室规模闸室交换流中气泡幕周围的流动与密度场特性。研究重点分析了低空气弗劳德数下的流态，发现在突破状态下存在三个不同的子流态。这些流态不仅受气泡幕与重力流相对强度的影响，还取决于盐水与淡水的密度比。该发现揭示了密度比对气泡幕阻隔盐分传输效率的关键作用，为优化船闸气泡幕设计提供了理论依据。",
+      "tags": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "abstract_en": "The flow and density field characteristics around a bubble curtain in a laboratory scale lock-exchange setup are investigated using two-phase large-eddy simulations. We study the detailed hydrodynamics and show that there are three qualitatively distinct (sub)regimes within the previously classified breakthrough regime. The occurrence of these regimes depends not only on air Froude number that characterises the relative strength of the bubble curtain and the gravity current, but also on an additional non-dimensional parameter: the density ratio between the salt and fresh water. The dependence on this additional parameter is also observed in how effective bubble curtains are in blocking the transport of salt to the fresh part of the lock. Hence, it has important implications for the optimisation of bubble curtains in ship locks.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202607/08/2606.31266v1-on-existence-of-a-collapsed-bubble-with-surface-tension-in-viscous-incompressible-fluid",
+      "section": "quick",
+      "title_en": "On existence of a collapsed bubble with surface tension in viscous incompressible fluid",
+      "authors": "Yoshikazu Giga, Zhongyang Gu",
+      "date": "2026-06-30",
+      "pdf": "https://arxiv.org/pdf/2606.31266v1",
+      "score": "7.0",
+      "evidence": "粘性流体中气泡演化和坍塌的数学模型",
+      "tldr": "本研究探讨了含表面张力的不可压缩Navier-Stokes方程的单相自由边界问题。研究证明了在有限时间内，一个气泡可以在其边界主曲率不发散的情况下发生塌陷，即形成所谓的“飞溅奇点”（splash singularity）。为了构建这一实例，作者引入了“δ-翼区域”概念，这是一种非嵌入式的黎曼流形，用于覆盖边界自相交区域的邻域。该成果不仅适用于外部区域，也适用于有界初始区域。",
+      "tags": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "abstract_en": "We consider the one-phase free boundary problem for the incompressible Navier-Stokes equations in $\\mathbb{R}^d$ ($d\\ge2$). The surface tension is taken into account. The initial domain, which is the outside of a bubble, is an exterior domain. We prove that there exists a bubble evolving by this free boundary problem which collapses in a finite time without blowing up of principal curvatures of its boundary. In other words, what is called a splash singularity is formed in a finite time. This type of result is also valid for a bounded initial domain. To construct such an example, we introduce the notion of a domain with $δ$-wing which is a flat Riemannian manifold that is not embedded in $\\mathbb{R}^d$, but it covers the $δ$-neighborhood of the original domain whose boundary is self-intersected.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202607/08/2607.03301v1-accelerating-droplet-laden-stokes-flow-simulations-with-hierarchical-surrogate-modeling",
+      "section": "quick",
+      "title_en": "Accelerating droplet-laden Stokes flow simulations with hierarchical surrogate modeling",
+      "authors": "Davide Pradovera, Thomas Frachon, Sara Zahedi",
+      "date": "2026-07-03",
+      "pdf": "https://arxiv.org/pdf/2607.03301v1",
+      "score": "6.0",
+      "evidence": "含液滴斯托克斯流及多相相互作用的代理模型",
+      "tldr": "本研究提出了一种用于加速含液滴斯托克斯流模拟的多保真度代理建模策略。该方法以液滴作为被动示踪剂的低保真度模型为起点，通过求解误差方程迭代修正流场，系统地结合了无液滴流场与单液滴流场的解。该策略不仅能捕捉液滴与流体、边界及液滴间的复杂相互作用，还通过离线预计算进一步提升了效率，在处理多达一万个液滴的大规模场景时，其计算成本显著低于传统全分辨率模拟。",
+      "tags": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "abstract_en": "We present a surrogate modeling strategy for Stokes flows with liquid droplets suspended in a carrier fluid. Our approach is based on a multi-fidelity framework. At the lowest fidelity, droplets are treated as passive tracers, neglecting their influence on the ambient flow field. Building on this approximation, we derive a PDE that represents the current modeling error. This error equation is then solved approximately to correct the flow field and the procedure is iterated. Two fidelities are employed in an alternating fashion: Stokes flow in the absence of droplets and flow around a single droplet in free space. By systematically combining these models, the method captures droplet-flow, droplet-boundary, and droplet-droplet interactions. For geometrically similar droplets, we further develop an efficient offline-online strategy that exploits this structure by reusing precomputed single-droplet solutions. Numerical experiments demonstrate the accuracy and efficiency of the proposed surrogate in a variety of tests, including scenarios with up to 10,000 droplets. Notably, we show that the proposed surrogate achieves substantially reduced computational cost compared to fully resolved multi-fluid simulations with state-of-the-art software.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}
