@@ -1,0 +1,94 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2607.00613v1/fig-001.webp",
+      "caption": "Figure 3: Schematic of the TESLA active-learning workflow. Each iteration cycles through four stages — Training, Exploration, Screening, and Labeling — forming a closed active learning loop.",
+      "page": 6,
+      "index": 1,
+      "width": 850,
+      "height": 320
+    },
+    {
+      "url": "assets/figures/arxiv/2607.00613v1/fig-002.webp",
+      "caption": "Figure 6: (a) Schematic of the generalized particle insertion framework for electron, proton, and ion transfer processes. (b) Validation of redox free energy calculations using the OH/OH− redox couple. Force errors for both initial and final states remain strictly bounded across different coupling parameters. (c) Validation of deprotonation free energy for the hydronium ion (H3O+). Additional dense sampling near the endpoint (η = 0.90, 0.95) ensures high accuracy, yielding an error of less than 0.05 eV compared to DFT validation.",
+      "page": 11,
+      "index": 2,
+      "width": 943,
+      "height": 333
+    },
+    {
+      "url": "assets/figures/arxiv/2607.00613v1/fig-003.webp",
+      "caption": "Figure 9: Schematic of the ai2-kit spectroscopy workflow. A TESLA-trained MLP drives largescale MLMD sampling; a Deep Wannier (DW) model trained on Wannier-center outputs (at zero field and with small applied fields along x, y, z) predicts atomic dipoles and polarizabilities along the full trajectory; ensemble-averaged time-correlation functions and their Fourier transforms yield the final IR/Raman/SFG spectra.",
+      "page": 15,
+      "index": 3,
+      "width": 850,
+      "height": 383
+    },
+    {
+      "url": "assets/figures/arxiv/2607.00613v1/fig-004.webp",
+      "caption": "Figure 5: (a) Representative snapshot of the Au/CO2 system. (b) Evolution of the modeldeviation statistics during the TESLA workflow. (c,d) Validation accuracy of the trained MLP model, showing (c) energy and (d) force predictions against reference data. (e) Convergence of the free-energy difference at 200, 300, 400, and 500 K. (f) Temperature dependence of the free energy.",
+      "page": 10,
+      "index": 4,
+      "width": 943,
+      "height": 513
+    },
+    {
+      "url": "assets/figures/arxiv/2607.00613v1/fig-005.webp",
+      "caption": "Figure 8: Demonstration of the ec-MLP workflow applied to the Cu(111)/water interface under constant-potential MD simulations. (a) Schematic representation of the simulation cell subjected to an external bias of 0.4 V. (b) Water density profiles (ρ) near the positive electrode, at the potential of zero charge (PZC), and near the negative electrode. The red and blue shaded areas highlight the chemisorbed and physisorbed water layers, respectively. (c) Corresponding dipole density profiles (ρH2O cos θ).",
+      "page": 14,
+      "index": 5,
+      "width": 943,
+      "height": 509
+    },
+    {
+      "url": "assets/figures/arxiv/2607.00613v1/fig-006.webp",
+      "caption": "Figure 11: End-to-end MACE/OpenMM/VASP skill demonstration generated with build-tesla. (a) Model-deviation statistics across five active-learning iterations. (b) O–O radial distribution function (RDF) from MLMD compared with the reference AIMD result. (c,d) Validation accuracy of the trained MACE model, showing (c) energy and (d) force predictions against reference data.",
+      "page": 18,
+      "index": 6,
+      "width": 756,
+      "height": 548
+    },
+    {
+      "url": "assets/figures/arxiv/2607.00613v1/fig-007.webp",
+      "caption": "Figure 7: Schematic of the ec-MLP active-learning workflow in ai2-kit. The loop partitions the learning process into two coupled branches: a Deep Wannier (DW) model is first trained to predict atomic dipoles for long-range interactions, and its outputs are embedded as input features to train the ec-MLP model for short-range interactions. Together, they drive constant-potential MD exploration to sample and screen new candidate structures.",
+      "page": 13,
+      "index": 7,
+      "width": 850,
+      "height": 1012
+    },
+    {
+      "url": "assets/figures/arxiv/2607.00613v1/fig-008.webp",
+      "caption": "Figure 4: (a) Representative snapshot of the bulk water system. (b) Evolution of the modeldeviation statistics during the TESLA workflow. (c) Radial distribution function (O–O) computed from MLMD (red dashed line) overlaid with the AIMD reference (black solid line). (d,e) Parity plots comparing the MLP-predicted (d) energies and (e) atomic forces against the DFT reference. The insets display their respective error distributions.",
+      "page": 8,
+      "index": 8,
+      "width": 943,
+      "height": 402
+    },
+    {
+      "url": "assets/figures/arxiv/2607.00613v1/fig-009.webp",
+      "caption": "Figure 1: High-level architecture flowchart of ai2-kit.",
+      "page": 4,
+      "index": 9,
+      "width": 943,
+      "height": 534
+    },
+    {
+      "url": "assets/figures/arxiv/2607.00613v1/fig-010.webp",
+      "caption": "Figure 2: Comparison of four ways to express the same computational task: reading all LAMMPS trajectories from ./lammps-*/, randomly sampling 100 structures, and writing them as VASP POSCAR files in individual task folders. (a) Python implementation without ai2-kit (17 lines); (b) ai2-kit command-line interface (4 lines); (c) Python implementation with ai2-kit (5 lines); (d) natural-language description.",
+      "page": 5,
+      "index": 10,
+      "width": 943,
+      "height": 427
+    },
+    {
+      "url": "assets/figures/arxiv/2607.00613v1/fig-011.webp",
+      "caption": "Figure 10: Validation of the trained DP and DW models for the air–water interface. (a) Snapshot of the simulated air–water interface with a vacuum region representing the air phase. (b) Parity plot of the predicted energy per atom against the DFT reference values. The average value of the energy of was shifted to zero for better visualization. (c) Parity plot of the predicted atomic forces against the DFT reference values. (d) Parity plot comparing the DW-predicted dipole moments with the DFT reference values. (e) Parity plot comparing the DW-predicted polarizability tensor components with the DFT reference values. (f) Calculated and experimental58 IR spectra for the bulk-like region. (g) Calculated and experimental59 isotropic and anisotropic Raman spectra for the bulk-like region. (h) Calculated and experimental60 imaginary SFG spectra for the interfacial region, including the xxz and yyz polarization components.",
+      "page": 16,
+      "index": 11,
+      "width": 943,
+      "height": 419
+    }
+  ]
+}

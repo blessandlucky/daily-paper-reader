@@ -1,0 +1,78 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2607.06840v1/fig-001.webp",
+      "caption": "Figure 5: Experimental temporal evolution of 𝑇𝑒𝑥𝑐 derived from Fe I lines at the anode surface (z = 0 mm) for 100, 150, and 200 A. The measured 3,000–4,000 K values reflect the thermal boundary layer at the plasma–oxide interaction zone.",
+      "page": 11,
+      "index": 1,
+      "width": 452,
+      "height": 341
+    },
+    {
+      "url": "assets/figures/arxiv/2607.06840v1/fig-002.webp",
+      "caption": "Figure 7: Temporal evolution of the sample morphology during HPSR at 150 A. (a–c) Infrared thermal images at t = 100, 500, and 1000 s, showing the geometric transition from a wide oxide melt to a compact metallic sphere. (d–f) Corresponding macroscopic cross-sections of interrupted samples, confirming the core–shell morphology in which the denser metallic core is encapsulated by the lighter unreduced oxide layer.",
+      "page": 15,
+      "index": 2,
+      "width": 976,
+      "height": 435
+    },
+    {
+      "url": "assets/figures/arxiv/2607.06840v1/fig-003.webp",
+      "caption": "Figure 2: Experimental spatial and temporal evolution of 𝑛𝑒 (a) Time-averaged axial profiles of 𝑛𝑒 for 100, 150 and 200 A arc currents. (b) Temporal evolution of 𝑛𝑒 measured at z=0 and z=16mm; arrows mark the onset of the near-anode density drop coinciding with the final stage of reduction, when metallic Fe is exposed to the arc. All values are radially-averaged along the line of sight. z = 0 mm denotes the position ~1 mm above the melt surface; z = 16 mm lies 6 mm below the cathode tip; total arc length is 22 mm.",
+      "page": 7,
+      "index": 3,
+      "width": 502,
+      "height": 754
+    },
+    {
+      "url": "assets/figures/arxiv/2607.06840v1/fig-004.webp",
+      "caption": "Figure 4: Experimental spatial and temporal evolution of 𝑇𝑒𝑥𝑐 calculated using Balmer series Hydrogen lines(Hα, Hβ). (a) Time averaged axial profiles of 𝑇𝑒𝑥𝑐 for 100, 150 and 200 A arc currents (b) Temporal variation of 𝑇𝑒𝑥𝑐 at anode surface (z=0mm) and near cathode (z=16mm).",
+      "page": 10,
+      "index": 4,
+      "width": 502,
+      "height": 754
+    },
+    {
+      "url": "assets/figures/arxiv/2607.06840v1/fig-005.webp",
+      "caption": "Figure 6: Grayscale intensity map of the plasma illustrating its spatial stratification into four regions: (1) hot arc core, (2) intermediate zone, (3) fringe, and (4) plasma–oxide interface. The regions correspond to the temperatures inferred from different emitting species, demonstrating the multi-scale thermal structure of the HPSR plasma.",
+      "page": 14,
+      "index": 5,
+      "width": 890,
+      "height": 465
+    },
+    {
+      "url": "assets/figures/arxiv/2607.06840v1/fig-006.webp",
+      "caption": "Figure 1: Schematic of the experimental set up for HPSR, including the optical emission spectrometer and Infrared camera. Due to geometric constraint of the horizontal view port, the optical fiber can scan 16mm out of 22mm arc length. 𝑑𝑎𝑟𝑐: total arc length, 𝑑𝑚: measured arc length.",
+      "page": 4,
+      "index": 6,
+      "width": 902,
+      "height": 581
+    },
+    {
+      "url": "assets/figures/arxiv/2607.06840v1/fig-007.webp",
+      "caption": "Figure 9: Computed mid-plane distributions for a 200 A arc discharge [31]: (a) plasma temperature, (b) electron density, (c) H⁺ ion density, and (d) neutral H density.",
+      "page": 17,
+      "index": 7,
+      "width": 735,
+      "height": 754
+    },
+    {
+      "url": "assets/figures/arxiv/2607.06840v1/fig-008.webp",
+      "caption": "Figure 3: Experimental spatial and temporal evolution of 𝑇exc during HPSR (a) Time-averaged axial profiles of 𝑇exc for 100, 150 and 200 A arc currents. (b) Temporal evolution of 𝑇exc measured at z=0 and z=16mm: arrows mark the onset of the temperature drop at z = 0 mm coinciding with the final stage of reduction, when metallic Fe is exposed to the arc. All values are radially-averaged along the line of sight. z = 0 mm",
+      "page": 9,
+      "index": 8,
+      "width": 502,
+      "height": 754
+    },
+    {
+      "url": "assets/figures/arxiv/2607.06840v1/fig-009.webp",
+      "caption": "Figure 8: Infrared thermal images of the molten oxide surface during steady-state reduction at (a) 100 A, (b) 150 A, and (c) 200 A. The outlined region denotes the primary plasma–anode attachment zone used for temperature averaging; ε = 0.7, corresponding to the molten oxide layer encapsulating the metallic core during the primary reduction stages.",
+      "page": 16,
+      "index": 9,
+      "width": 976,
+      "height": 239
+    }
+  ]
+}

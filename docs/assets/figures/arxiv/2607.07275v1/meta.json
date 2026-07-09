@@ -1,0 +1,70 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2607.07275v1/fig-001.webp",
+      "caption": "Figure 3: Probability mass functions of kinematic and morphological quantities defined in Section 4.2 for two different bubble diameters d and gas volume fractions ε. Dotted line indicates the median, arrows indicate median shift, number of bins is 30. Unit of length is bubble diameter d.",
+      "page": 6,
+      "index": 1,
+      "width": 890,
+      "height": 335
+    },
+    {
+      "url": "assets/figures/arxiv/2607.07275v1/fig-002.webp",
+      "caption": "Figure 1: BubbleSH contains trajectories of bubble centroids (left) and spherical harmonics coefficients (right), calculated from simulated interface meshes (left)",
+      "page": 2,
+      "index": 2,
+      "width": 337,
+      "height": 484
+    },
+    {
+      "url": "assets/figures/arxiv/2607.07275v1/fig-003.webp",
+      "caption": "Figure 4: Probability mass functions of interaction quantities from Section 4.2 for two diameters d and gas fractions ε. Dotted line indicates the median, arrows indicate median shift, number of bins is 30, see Fig 3.",
+      "page": 7,
+      "index": 3,
+      "width": 365,
+      "height": 340
+    },
+    {
+      "url": "assets/figures/arxiv/2607.07275v1/fig-004.webp",
+      "caption": "Figure 5: Probability mass functions of predicted and ground truth trajectories from the Model (L = 5) experiment in Section 5.2 using quantities defined in Section 4.2.",
+      "page": 8,
+      "index": 4,
+      "width": 842,
+      "height": 237
+    },
+    {
+      "url": "assets/figures/arxiv/2607.07275v1/fig-005.webp",
+      "caption": "Figure 2: Snapshots of simulations of d = 6 mm bubbles with void fractions of 0.10 (top) and 0.30 (bottom). The background slice indicates the vorticity of the liquid phase.",
+      "page": 4,
+      "index": 5,
+      "width": 317,
+      "height": 581
+    },
+    {
+      "url": "assets/figures/arxiv/2607.07275v1/fig-006.webp",
+      "caption": "Figure 7: Visualizations of the shape of one bubble changing over time.",
+      "page": 17,
+      "index": 6,
+      "width": 746,
+      "height": 1135
+    },
+    {
+      "url": "assets/figures/arxiv/2607.07275v1/fig-007.webp",
+      "caption": "Table 2: Parameter configurations covered by the BubbleSH dataset. Temporal resolution ∆t is listed for each ε and d simulation parameter.",
+      "page": 5,
+      "index": 7,
+      "width": 523,
+      "height": 315
+    },
+    {
+      "url": "assets/figures/arxiv/2607.07275v1/fig-008.webp",
+      "caption": "Figure 6: Visualizations of centered 32 bubble centroid trajectories. Duration is 200 ms, number of timesteps is 100, filtered to exclude periodic boundary jumps.",
+      "page": 16,
+      "index": 8,
+      "width": 822,
+      "height": 428
+    }
+  ]
+}
