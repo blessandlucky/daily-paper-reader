@@ -1,0 +1,102 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2607.07025v1/fig-001.webp",
+      "caption": "Figure 1: Effect of the Cahn number on the computed bubble dynamics.",
+      "page": 11,
+      "index": 1,
+      "width": 592,
+      "height": 620
+    },
+    {
+      "url": "assets/figures/arxiv/2607.07025v1/fig-002.webp",
+      "caption": "Figure 8: Final order parameter profiles in two-dimensional tests at Pm = 10, with streamlines in black and magnetic field lines in red.",
+      "page": 15,
+      "index": 2,
+      "width": 756,
+      "height": 322
+    },
+    {
+      "url": "assets/figures/arxiv/2607.07025v1/fig-003.webp",
+      "caption": "Figure 7: Final three-dimensional bubble shapes for Pm = 10−2 with Ha = 0, 10, 20, and 30. In the legends, Bext denotes the direction of the external imposed magnetic field.",
+      "page": 15,
+      "index": 3,
+      "width": 790,
+      "height": 483
+    },
+    {
+      "url": "assets/figures/arxiv/2607.07025v1/fig-004.webp",
+      "caption": "Figure 9: Centroid, rise velocity, and divergence of the magnetic field in two-dimensional tests at Pm = 10.",
+      "page": 15,
+      "index": 4,
+      "width": 786,
+      "height": 234
+    },
+    {
+      "url": "assets/figures/arxiv/2607.07025v1/fig-005.webp",
+      "caption": "Figure 5: Final order parameter profiles and streamlines for three-dimensional tests at Ha = 30 and Pm = 10−2. Left and right panels show cross sections parallel and perpendicular to the horizontal magnetic field direction, respectively.",
+      "page": 14,
+      "index": 5,
+      "width": 870,
+      "height": 263
+    },
+    {
+      "url": "assets/figures/arxiv/2607.07025v1/fig-006.webp",
+      "caption": "Figure 6: Centroid, rise velocity, and divergence of the magnetic field in three-dimensional tests at Pm = 10−2. In the legends, “V” and “H” denote vertical and horizontal applied magnetic fields, respectively.",
+      "page": 14,
+      "index": 6,
+      "width": 786,
+      "height": 234
+    },
+    {
+      "url": "assets/figures/arxiv/2607.07025v1/fig-007.webp",
+      "caption": "Figure 4: Centroid, rise velocity, and divergence of the magnetic field in two-dimensional tests at Pm = 10−2.",
+      "page": 13,
+      "index": 7,
+      "width": 786,
+      "height": 234
+    },
+    {
+      "url": "assets/figures/arxiv/2607.07025v1/fig-008.webp",
+      "caption": "Figure 2: Bubble dynamics obtained from the present, inductionless MHD, and ALE computations. In the legends, present, IMHD, and ALE denote these three results, respectively.",
+      "page": 13,
+      "index": 8,
+      "width": 589,
+      "height": 620
+    },
+    {
+      "url": "assets/figures/arxiv/2607.07025v1/fig-009.webp",
+      "caption": "Figure 3: Final order parameter profiles and streamlines in two-dimensional tests at Pm = 10−2.",
+      "page": 13,
+      "index": 9,
+      "width": 756,
+      "height": 322
+    },
+    {
+      "url": "assets/figures/arxiv/2607.07025v1/fig-010.webp",
+      "caption": "Table 2: Final benchmark quantities and estimated convergence order.",
+      "page": 12,
+      "index": 10,
+      "width": 656,
+      "height": 210
+    },
+    {
+      "url": "assets/figures/arxiv/2607.07025v1/fig-011.webp",
+      "caption": "Figure 11: Centroid, rise velocity, and divergence of the magnetic field in a three-dimensional test with a horizontal magnetic field at Pm = 10.",
+      "page": 16,
+      "index": 11,
+      "width": 786,
+      "height": 235
+    },
+    {
+      "url": "assets/figures/arxiv/2607.07025v1/fig-012.webp",
+      "caption": "Figure 10: Three-dimensional magnetic field lines and streamlines for a horizontal magnetic field at Ha = 30 and Pm = 10. Left and right panels show cross sections parallel and perpendicular to the horizontal magnetic field direction, respectively.",
+      "page": 16,
+      "index": 12,
+      "width": 870,
+      "height": 264
+    }
+  ]
+}

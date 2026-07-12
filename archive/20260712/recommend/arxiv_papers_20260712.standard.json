@@ -1,0 +1,236 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-07-12T20:37:00.666157+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 1,
+    "deep_cap": 6,
+    "deep_selected": 1,
+    "quick_candidates": 4,
+    "quick_skim_target": 11,
+    "quick_selected": 4
+  },
+  "deep_dive": [
+    {
+      "id": "2607.06064v1",
+      "source": "arxiv",
+      "title": "A Time-Domain Pressure-Interface Model for Gas Bubble Dynamics with Surface Tension: Well-Posedness, Classical Limits, and Resonance Branches",
+      "abstract": "We derive and analyze a time-domain pressure--interface evolution model for a compressible gas bubble in a compressible liquid with surface tension. Starting from the nonlinear two-phase Euler free-boundary problem and linearizing about a spherical Young--Laplace equilibrium, we obtain a coupled bulk--surface hyperbolic system for the liquid pressure, the gas pressure, and the normal displacement of the interface.   The time-domain analysis is complicated by the fact that the surface-tension quadratic form is indefinite: the \\(Y_0^0\\) component is the volume-changing breathing mode, the \\(Y_1^m (m = \\{-1,0,1\\})\\) components are neutral translations, and only the higher spherical harmonics give a coercive shape-mode energy. We exploit this decomposition. The coercive sector is treated by a \\(C^0\\)-semigroup argument, while the breathing mode is analyzed separately by Fourier--Laplace methods. This yields well-posedness for admissible finite-energy data and classical solutions under the natural compatibility conditions.   We then justify two limiting descriptions with quantitative error estimates. In an acoustic quasi-static regime, the model reduces to the linearized Rayleigh--Plesset equation for the breathing mode and to the linearized Rayleigh--Lamb equations for the shape modes. In a different regime, it reduces to the frozen-interface acoustic transmission model. Finally, a frequency-domain analysis identifies the corresponding Minnaert, Rayleigh--Lamb, and Fabry--Pérot-type resonance mechanisms as different components and limits of the same pressure--interface formulation.",
+      "authors": [
+        "Long Li",
+        "Mourad Sini"
+      ],
+      "primary_category": "math.AP",
+      "categories": [
+        "math.AP"
+      ],
+      "published": "2026-07-07T09:36:47+00:00",
+      "link": "https://arxiv.org/pdf/2607.06064v1",
+      "tags": [
+        "keyword:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries",
+        "query:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries"
+      ],
+      "llm_score": 9.5,
+      "llm_evidence_en": "Time-domain pressure-interface model for gas bubble dynamics with surface tension.",
+      "llm_evidence_cn": "考虑表面张力的气泡动力学时域压力-界面模型。",
+      "llm_evidence": "考虑表面张力的气泡动力学时域压力-界面模型。",
+      "canonical_evidence": "考虑表面张力的气泡动力学时域压力-界面模型。",
+      "llm_tldr_en": "Derives a hyperbolic system to analyze the evolution and resonance of compressible gas bubbles in liquids.",
+      "llm_tldr_cn": "推导了一个双曲系统，用于分析液体中可压缩气泡的演化和共振。",
+      "llm_tldr": "推导了一个双曲系统，用于分析液体中可压缩气泡的演化和共振。",
+      "llm_tags": [
+        "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries"
+      ],
+      "matched_query_tag": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "matched_query_text": "Bubble evolution dynamics",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "2607.07933v1",
+      "source": "arxiv",
+      "title": "Atomistic Modeling for Electro-chemical Reactions",
+      "abstract": "Computational modeling plays a central role in advancing our understanding of electro-chemical reactions and may thus guide the rational development of sustainable energy technologies. Despite significant methodological progress, achieving predictive and quantitatively reliable simulations of electrified solid-liquid interfaces under operando conditions remains a major challenge. Recently, the European COST Action EU-CONCERT (EUropean COllaborative Network on electroCatalysis for Efficient Renewable Technologies) was launched with the aim of advancing atomistic modeling of electrochemical reactions through systematic benchmarking and cross-validation. This position paper outlines the consortium's view of the current state of the art, identifies the priority methodological challenges to be addressed, and defines the benchmark tests that are urgently needed. This paper should serve as a guide to the community and a roadmap for the EU-CONCERT COST Action.",
+      "authors": [
+        "K. Doblhoff-Dier",
+        "B. Ballotta",
+        "L. Bonati",
+        "V. J. Bukas",
+        "F. Calle-Vallejo",
+        "C. S. Cucinotta",
+        "K. S. Exner",
+        "M. García-Melchor",
+        "L. Giordano",
+        "K. Honkala",
+        "N. Hörmann",
+        "G. Kastlunger",
+        "M. M. Melander",
+        "Zehra B. Öcal",
+        "A. A. Reka",
+        "S. Steinmann",
+        "M. Vandichel",
+        "J. -X. Zhu",
+        "G. Cicero"
+      ],
+      "primary_category": "physics.chem-ph",
+      "categories": [
+        "physics.chem-ph"
+      ],
+      "published": "2026-07-08T21:29:07+00:00",
+      "link": "https://arxiv.org/pdf/2607.07933v1",
+      "tags": [
+        "keyword:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries",
+        "query:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries"
+      ],
+      "llm_score": 7.5,
+      "llm_evidence_en": "Atomistic modeling of electrified solid-liquid interfaces for electrochemical reactions.",
+      "llm_evidence_cn": "电化学反应中带电固液界面的原子级建模。",
+      "llm_evidence": "电化学反应中带电固液界面的原子级建模。",
+      "canonical_evidence": "电化学反应中带电固液界面的原子级建模。",
+      "llm_tldr_en": "Outlines the state-of-the-art in atomistic modeling for electrochemical reactions and sustainable energy.",
+      "llm_tldr_cn": "概述了电化学反应和可持续能源原子级建模的最新进展。",
+      "llm_tldr": "概述了电化学反应和可持续能源原子级建模的最新进展。",
+      "llm_tags": [
+        "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries:composite"
+      ],
+      "matched_query_tag": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries:composite",
+      "matched_query_text": "Papers central to 我正在撰写一篇聚焦「水系电池和水电解环境中气体动力学」的综述论文，核心主题为电池（尤其是金属电极体系）和水电解过程中的氢气泡/氧气泡/其他气体演化现象。虽然现有文献已分散覆盖背景、气泡演化及HER/OER影响，但我希望抓住最严谨、最吸睛的创新点：  系统整理各大电池及电催化反应的关键公式背景，以及电压/电池内部流道气阻的必要性；  气泡演化（成核-生长-聚合-脱离及多相流形成）仅作简要概述（已有大量微电极研究但至今无共识，故一笔带过）；  重点挖掘HER/OER对制氢制氧过程影响的最新进展或新视角。 核心亮点在于「调节手段」的完整汇总：按应用场景分为（1）电池、（2）水电解（特别参考第七章表格策略）、（3）性能提升三大类。目前该部分论文极为分散，缺乏系统3D/全面综述，急需深度搜索高影响力、近期论文以构建7-8幅核心图谱——整体示意图（最后绘制）、来源汇总、演化汇总、影响汇总（寻找新内容）、调节手段3D汇总。 请优先召回最新、最严谨、机制清晰的高质量论文，帮助我实现「分散文献→严谨吸睛综述」的突破。, especially work that connects or combines: m; g; Dendrite growth; Bubble evolution dynamics; Hydrogen evolution reaction; Gaseous bubble; Comprehensive review on gas bubble dynamics and regulation strategies in liquid electrolytes for metal batteries and water electrolysis, emphasizing novel synthesis of scattered literature into 7 8 high impact figures with focus on regulation methods (batteries vs. water electrolysis) and latest HER/OER insights beyond existing reviews..",
+      "matched_requirement_id": "req-composite-gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2607.04633v2",
+      "source": "arxiv",
+      "title": "Differentiable OPLS Force Field Parameterization for Ionic Electrolytes and High-Throughput Application to Lithium-ion Batteries",
+      "abstract": "The rational design of ionic electrolytes for lithium-ion batteries (LIBs) is severely constrained by the vast solvent-salt combinatorial space and low efficiency of empirical trial-and-error. While molecular dynamics (MD) bridges microscopic solvation structures and macroscopic physicochemical properties, classical force fields often lack sufficient accuracy for multicomponent systems. To address these challenges, we develop an automated differentiable OPLS-AA force field parameterization workflow tailored for general ionic electrolytes. It employs topology-guided atom typification to reduce parameter redundancy and optimizes Lennard-Jones parameters via the DMFF framework, with experimental density as the fitting target and ionic conductivity as an independent validation metric. Rigorous convergence tests yield a standardized simulation protocol with $\\sim$100,000-atom systems and 35-40 ns NVT runs to ensure reliable transport property quantification. High-throughput MD simulations of over 10,000 formulations spanning 67 solvents and 15 lithium salts are conducted on the Tianqiong platform, generating a comprehensive dataset covering five core properties: density, dielectric constant, viscosity, diffusion coefficient, and ionic conductivity. t-SNE visualization reveals partial clustering of distinct salt chemistries, continuous property gradients with concentration and temperature, and internal physical self-consistency, with solvent composition identified as another key performance regulator. Together, the accurate transferable force field and large-scale dataset provide a solid foundation for data-driven rational design of ionic electrolytes.",
+      "authors": [
+        "Haichao Huang",
+        "Zilin Chen",
+        "Qi Liu",
+        "Tianqi Zhao",
+        "Yunpei Liu",
+        "Guotao Qiu",
+        "Jianhui Chen",
+        "Zhen Li",
+        "Wenshuo Liang",
+        "Minsung Cho",
+        "Manxue Zhang",
+        "Feiyu Kang",
+        "Xiaolong Zou",
+        "Yidan Cao",
+        "Xushan Zhao",
+        "Ziqi Cheng",
+        "Ye Mei"
+      ],
+      "primary_category": "physics.chem-ph",
+      "categories": [
+        "physics.chem-ph",
+        "physics.comp-ph"
+      ],
+      "published": "2026-07-06T03:32:57+00:00",
+      "link": "https://arxiv.org/pdf/2607.04633v2",
+      "tags": [
+        "keyword:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries",
+        "query:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries"
+      ],
+      "llm_score": 6.5,
+      "llm_evidence_en": "Molecular dynamics and force field parameterization for ionic electrolytes in lithium-ion batteries.",
+      "llm_evidence_cn": "锂离子电池离子电解质的分子动力学和力场参数化。",
+      "llm_evidence": "锂离子电池离子电解质的分子动力学和力场参数化。",
+      "canonical_evidence": "锂离子电池离子电解质的分子动力学和力场参数化。",
+      "llm_tldr_en": "Develops a differentiable force field workflow to optimize electrolyte design for lithium-ion batteries.",
+      "llm_tldr_cn": "开发了可微分力场工作流，以优化锂离子电池的电解质设计。",
+      "llm_tldr": "开发了可微分力场工作流，以优化锂离子电池的电解质设计。",
+      "llm_tags": [
+        "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries:composite"
+      ],
+      "matched_query_tag": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries:composite",
+      "matched_query_text": "Papers central to 我正在撰写一篇聚焦「水系电池和水电解环境中气体动力学」的综述论文，核心主题为电池（尤其是金属电极体系）和水电解过程中的氢气泡/氧气泡/其他气体演化现象。虽然现有文献已分散覆盖背景、气泡演化及HER/OER影响，但我希望抓住最严谨、最吸睛的创新点：  系统整理各大电池及电催化反应的关键公式背景，以及电压/电池内部流道气阻的必要性；  气泡演化（成核-生长-聚合-脱离及多相流形成）仅作简要概述（已有大量微电极研究但至今无共识，故一笔带过）；  重点挖掘HER/OER对制氢制氧过程影响的最新进展或新视角。 核心亮点在于「调节手段」的完整汇总：按应用场景分为（1）电池、（2）水电解（特别参考第七章表格策略）、（3）性能提升三大类。目前该部分论文极为分散，缺乏系统3D/全面综述，急需深度搜索高影响力、近期论文以构建7-8幅核心图谱——整体示意图（最后绘制）、来源汇总、演化汇总、影响汇总（寻找新内容）、调节手段3D汇总。 请优先召回最新、最严谨、机制清晰的高质量论文，帮助我实现「分散文献→严谨吸睛综述」的突破。, especially work that connects or combines: m; g; Dendrite growth; Bubble evolution dynamics; Hydrogen evolution reaction; Gaseous bubble; Comprehensive review on gas bubble dynamics and regulation strategies in liquid electrolytes for metal batteries and water electrolysis, emphasizing novel synthesis of scattered literature into 7 8 high impact figures with focus on regulation methods (batteries vs. water electrolysis) and latest HER/OER insights beyond existing reviews..",
+      "matched_requirement_id": "req-composite-gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2607.07275v1",
+      "source": "arxiv",
+      "title": "BubbleSH: A Dataset of Rising Bubbles with Deformable Interfaces",
+      "abstract": "Bubbly flows exhibit complex multiscale dynamics, with deformable bubbles interacting through the surrounding liquid and giving rise to strongly coupled kinematic and morphological behavior. We present BubbleSH, a bubbly flows dataset consisting of transient, three-dimensional bubble-swarm dynamics obtained from high-fidelity direct numerical simulations of bubbles rising in a periodic domain. The dataset provides time-resolved bubble trajectories, velocities, and shape evolution, with bubble morphology compactly represented using spherical harmonics. Designed to be lightweight yet physically expressive, the dataset enables data-driven modeling of bubbly flow simulators where shape deformation and bubble-bubble interactions play a central role. We characterize the dataset with bubble kinematics, morphology, and interaction patterns, and introduce evaluation metrics for both trajectory and shape prediction. The sensitivity of bubble-swarm dynamics to local perturbations makes BubbleSH particularly well suited to generative models that learn distributions over possible future trajectories. We evaluate a permutationally and translationally equivariant probabilistic emulator on BubbleSH given the proposed metrics. Therefore, we establish a compact, high-fidelity dataset and a benchmark for developing and evaluating data-driven models of deformable, chaotic multiphase systems.",
+      "authors": [
+        "Rachna Ramesh",
+        "Kiet Bennema ten Brinke",
+        "Douwe Orij",
+        "Ivo Roghair",
+        "Vlado Menkovski"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "physics.flu-dyn"
+      ],
+      "published": "2026-07-08T11:06:29+00:00",
+      "link": "https://arxiv.org/pdf/2607.07275v1",
+      "tags": [
+        "keyword:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries",
+        "query:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "dataset of rising bubbles with shape evolution and interactions",
+      "llm_evidence_cn": "包含形状演化与相互作用的上升气泡数据集",
+      "llm_evidence": "包含形状演化与相互作用的上升气泡数据集",
+      "canonical_evidence": "包含形状演化与相互作用的上升气泡数据集",
+      "llm_tldr_en": "Presents a dataset for 3D bubble-swarm dynamics and shape evolution in bubbly flows.",
+      "llm_tldr_cn": "提供了一个用于研究气泡群动力学和形状演化的三维数据集。",
+      "llm_tldr": "提供了一个用于研究气泡群动力学和形状演化的三维数据集。",
+      "llm_tags": [
+        "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries"
+      ],
+      "matched_query_tag": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "matched_query_text": "Bubble evolution dynamics",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2607.07025v1",
+      "source": "arxiv",
+      "title": "Numerical solutions of an accurate diffuse interface model of the incompressible resistive MHD free surface flow",
+      "abstract": "In this paper, we derive a new model to simulate the incompressible resistive magnetohydrodynamic (MHD) free surface flow. A thermodynamically consistent diffuse interface method is adopted to characterize the moving interface in the modeling process. The formal convergence of the proposed MHD free surface flow model to the sharp interface model is established via a matched asymptotic argument, and the model can be solved without the need for sophisticated free surface capturing schemes. We design a fully decoupled linear finite element scheme that preserves the divergence-free constraint of the magnetic field at a discrete level. The reliability and robustness of the proposed model and algorithm are validated through numerical investigations of the magnetic damping effect on bubble dynamics. In particular, we provide a quantitative numerical comparison of the present results with those obtained from an inductionless MHD model and a sharp interface arbitrary Lagrangian--Eulerian model.",
+      "authors": [
+        "Maojun Li",
+        "Jiancheng Wang",
+        "Zeyu Xia",
+        "Liwei Xu"
+      ],
+      "primary_category": "math.NA",
+      "categories": [
+        "math.NA"
+      ],
+      "published": "2026-07-08T05:48:48+00:00",
+      "link": "https://arxiv.org/pdf/2607.07025v1",
+      "tags": [
+        "keyword:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries",
+        "query:gas bubble dynamics HER OER water electrolysis metal batteries bubble regulation strategies electrode gas management multiphase flow electrolysis bubble suppression electrochemical gas evolution gas management in batteries"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Diffuse interface model for incompressible resistive MHD free surface flow and moving interfaces",
+      "llm_evidence_cn": "用于不可压缩电阻性MHD自由表面流和移动界面的弥散界面模型",
+      "llm_evidence": "用于不可压缩电阻性MHD自由表面流和移动界面的弥散界面模型",
+      "canonical_evidence": "用于不可压缩电阻性MHD自由表面流和移动界面的弥散界面模型",
+      "llm_tldr_en": "Develops a thermodynamically consistent model for simulating magnetohydrodynamic free surface flows.",
+      "llm_tldr_cn": "开发了一种热力学一致的模型，用于模拟磁流体动力学自由表面流。",
+      "llm_tldr": "开发了一种热力学一致的模型，用于模拟磁流体动力学自由表面流。",
+      "llm_tags": [
+        "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries"
+      ],
+      "matched_query_tag": "query:gas-bubble-dynamics-her-oer-water-electrolysis-metal-batteries-bubble-regulation-strategies-electrode-gas-management-multiphase-flow-electrolysis-bubble-suppression-electrochemical-gas-evolution-gas-management-in-batteries",
+      "matched_query_text": "Bubble evolution dynamics",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}
