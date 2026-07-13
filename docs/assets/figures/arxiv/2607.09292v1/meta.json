@@ -1,0 +1,54 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2607.09292v1/fig-001.webp",
+      "caption": "FIG. 2. The variation of potential with position in a solution of NaCl in water between two charged electrodes. Note the close agreement between the numerical result found using KCM (blue line), and the analytic result found using Gouy-Chapman theory (red line). See the main text for an explanation of the small differences.",
+      "page": 11,
+      "index": 1,
+      "width": 974,
+      "height": 552
+    },
+    {
+      "url": "assets/figures/arxiv/2607.09292v1/fig-002.webp",
+      "caption": "FIG. 4. This is a representation of the Mg/H2O interface. The grey region to the left is Mg metal, and the blue region to the right is water. The vertical red lines indicate the boundaries of the cells used in the algorithm. Most cells contain just one phase. However, cell C2 contains a mixture of metal and water. The formation of these mixed cells is a consequence of metal atoms being transferred from the solid metal into solution, creating space that can then be filled with water.",
+      "page": 14,
+      "index": 2,
+      "width": 974,
+      "height": 738
+    },
+    {
+      "url": "assets/figures/arxiv/2607.09292v1/fig-003.webp",
+      "caption": "FIG. 6. The diffusion profiles for a 2D system that starts with a very narrow distribution in the center of the cell. The left hand figures (a, c, e) are from the KCM simulations, while the right hand figures (b, d, f) are from the analytic solution. The times for the figures are 0.0125 s (a and b), 0.0515 s (c and d), and 0.130 s (e and f). Note that the labels on the axes are given as fractions of the maximum values, taking values between 0 and 1.",
+      "page": 23,
+      "index": 3,
+      "width": 732,
+      "height": 1113
+    },
+    {
+      "url": "assets/figures/arxiv/2607.09292v1/fig-004.webp",
+      "caption": "FIG. 1. This figure shows the diffusion profiles at three different times. Both the solutions from the KCM method (solid lines), and the analytic solution (dashed lines) are shown. The time is in units of Å2/D, where D is the diffusion coefficient, and the concentration is in arbitrary units. Note that the two sets of solutions are almost indistinguishable.",
+      "page": 8,
+      "index": 4,
+      "width": 974,
+      "height": 549
+    },
+    {
+      "url": "assets/figures/arxiv/2607.09292v1/fig-005.webp",
+      "caption": "FIG. 3. The initial and final distributions of the electrons and protons with the associated potentials. The region below x = 100Å is the metal, and is where the excess electrons begin. The region above x = 110Å is the water in which the excess protons begin. Between them is the film of corrosion product. The potential has a much steeper slope in the film region than elsewhere because of the lower dielectric constant (10 in the film, 100 in the metal, 80 in the water).",
+      "page": 12,
+      "index": 5,
+      "width": 732,
+      "height": 1100
+    },
+    {
+      "url": "assets/figures/arxiv/2607.09292v1/fig-006.webp",
+      "caption": "FIG. 5. The simulation produces the expected dissolution of Mg into solution as Mg++, with the electrons accumulating in the metal at the interface. The potential is a result of the interfacial dipole produced by the charge distribution. In the metal the phase has the value 1, while in solution it has the value 0. At the interface it can take an intermediate value.",
+      "page": 20,
+      "index": 6,
+      "width": 974,
+      "height": 1134
+    }
+  ]
+}
